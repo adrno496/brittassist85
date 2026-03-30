@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services & Forfaits — Brittassit | Assistante indépendante</title>
+  <meta name="description" content="Découvrez les services et forfaits de Brittany Dreano, assistante indépendante : réseaux sociaux, gestion des mails, organisation et support administratif." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div id="progress-bar" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Brittassit — Accueil">
+        <img src="images/logo.png" alt="Logo Brittassit" width="44" height="44" />
+        <span>Brittassit</span>
+      </a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Réserver un appel 📞</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="dark-mode-toggle" aria-label="Basculer le mode sombre">🌙</button>
+        <button class="nav-hamburger" id="nav-hamburger" aria-expanded="false" aria-controls="nav-links" aria-label="Ouvrir le menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- HERO PAGE -->
+    <section class="page-hero" id="hero">
+      <div class="container">
+        <div class="page-hero-inner">
+          <div class="page-hero-text reveal">
+            <span class="eyebrow-text">Ce que je propose</span>
+            <h1>Mes services<br>& forfaits</h1>
+            <p>Des solutions sur-mesure pour vous libérer des tâches chronophages et vous permettre de vous concentrer sur ce que vous faites de mieux.</p>
+            <br>
+            <a href="contact.html" class="btn btn--primary">Réserver mon appel gratuit →</a>
+          </div>
+          <div class="page-hero-img reveal">
+            <img src="images/brittany-jaune.jpg" alt="Brittany Dreano en blazer jaune, assistante indépendante" width="480" height="480" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORFAITS -->
+    <section style="background: var(--creme);">
+      <div class="container">
+        <div class="section-intro reveal">
+          <h2>Les forfaits</h2>
+          <p>Chaque accompagnement est personnalisé. Ces forfaits sont des bases de réflexion pour notre échange.</p>
+        </div>
+        <div class="forfaits-grid">
+
+          <!-- STARTER -->
+          <div class="forfait-card forfait-card--starter reveal">
+            <h3>🌸 Starter</h3>
+            <p class="forfait-profil">Pour les entrepreneurs qui débutent la délégation</p>
+            <ul class="forfait-list">
+              <li>Gestion de la boîte mail (tri + réponses de base)</li>
+              <li>Planning hebdomadaire</li>
+              <li>2 publications réseaux sociaux / semaine</li>
+              <li>Suivi et relances clients</li>
+              <li>Rapport mensuel d'activité</li>
+            </ul>
+            <p class="forfait-price">Sur devis — à partir de X€/mois</p>
+            <!-- Remplacer X par votre tarif -->
+            <a href="contact.html" class="btn btn--outline-dark" style="width: 100%;">Je veux en savoir plus</a>
+          </div>
+
+          <!-- ESSENTIEL -->
+          <div class="forfait-card forfait-card--essentiel reveal" style="position: relative;">
+            <div class="forfait-badge">⭐ Populaire</div>
+            <h3>💼 Essentiel</h3>
+            <p class="forfait-profil">Pour les infopreneurs et coachs en croissance</p>
+            <ul class="forfait-list">
+              <li>Gestion complète de la boîte mail</li>
+              <li>Gestion de l'agenda et coordination</li>
+              <li>4 publications réseaux sociaux / semaine</li>
+              <li>Rédaction de contenus (posts, stories)</li>
+              <li>Support administratif (devis, factures)</li>
+              <li>Disponibilité prioritaire Lun–Ven</li>
+            </ul>
+            <p class="forfait-price">Sur devis — à partir de X€/mois</p>
+            <!-- Remplacer X par votre tarif -->
+            <a href="contact.html" class="btn btn--primary" style="width: 100%;">Je veux en savoir plus</a>
+          </div>
+
+          <!-- PREMIUM -->
+          <div class="forfait-card forfait-card--premium reveal" style="position: relative;">
+            <div class="forfait-badge forfait-badge--premium">🔥 Complet</div>
+            <h3>✨ Premium</h3>
+            <p class="forfait-profil">Pour les entrepreneurs qui veulent déléguer au maximum</p>
+            <ul class="forfait-list">
+              <li>Tout l'Essentiel inclus</li>
+              <li>Stratégie éditoriale réseaux sociaux</li>
+              <li>Gestion des messages DM & commentaires</li>
+              <li>Création de visuels Canva</li>
+              <li>Gestion complète de l'admin</li>
+              <li>Rapports et tableaux de bord</li>
+              <li>Accompagnement stratégique mensuel</li>
+            </ul>
+            <p class="forfait-price">Sur devis — à partir de X€/mois</p>
+            <!-- Remplacer X par votre tarif -->
+            <a href="contact.html" class="btn btn--secondary" style="width: 100%;">Je veux en savoir plus</a>
+          </div>
+
+        </div>
+        <p class="forfait-note reveal">
+          💬 Chaque accompagnement est 100% personnalisé. Parlons-en lors de l'appel découverte gratuit.
+        </p>
+      </div>
+    </section>
+
+    <!-- À LA CARTE -->
+    <section style="background: var(--rose-pale);">
+      <div class="container">
+        <div class="section-intro reveal">
+          <h2>Missions à la carte</h2>
+          <p>Besoin d'une aide ponctuelle ? Je propose aussi des missions one-shot sur des sujets précis.</p>
+        </div>
+        <div class="tags-container reveal">
+          <span class="tag">✍️ Rédaction de posts</span>
+          <span class="tag">📸 Création de visuels Canva</span>
+          <span class="tag">📧 Rédaction d'emails</span>
+          <span class="tag">🗂️ Organisation de fichiers</span>
+          <span class="tag">📊 Tableau de bord</span>
+          <span class="tag">📅 Planification de contenu</span>
+          <span class="tag">🔍 Recherche & veille</span>
+          <span class="tag">📋 Rédaction de devis / factures</span>
+          <span class="tag tag--yellow">💡 Mise en place Notion</span>
+          <span class="tag tag--yellow">📱 Audit réseaux sociaux</span>
+          <span class="tag tag--yellow">📦 Organisation Google Drive</span>
+          <span class="tag tag--yellow">✉️ Rédaction de newsletter</span>
+        </div>
+        <div style="text-align: center; margin-top: 40px;" class="reveal">
+          <a href="contact.html" class="btn btn--primary">Me contacter pour une mission ponctuelle</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="background: var(--creme);">
+      <div class="container">
+        <div class="section-intro reveal">
+          <h2>Questions fréquentes</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Comment se passe la première collaboration ?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Tout commence par un appel découverte gratuit de 30 minutes en visio. On fait connaissance, je comprends votre activité et vos besoins, et on voit si la collaboration nous correspond à toutes les deux. Ensuite, je vous envoie un devis personnalisé. Si vous êtes d'accord, on signe un contrat et on met en place les outils de travail communs.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Quels outils utilisez-vous ?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Je m'adapte à vos outils existants ! J'utilise couramment Gmail, Google Workspace (Docs, Drive, Calendar, Sheets), Canva, Notion, Trello, et la plupart des plateformes de réseaux sociaux (Instagram, LinkedIn, Facebook, TikTok). Si vous utilisez d'autres outils, n'hésitez pas à me le mentionner lors de l'appel découverte.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Comment se passe la communication au quotidien ?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Je m'adapte à votre façon de fonctionner : email, WhatsApp, Slack, Notion… On définit ensemble le mode de communication qui vous convient le mieux lors de l'onboarding. Je suis disponible du lundi au vendredi et je réponds sous 24h maximum.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Puis-je arrêter la collaboration quand je veux ?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Oui, bien sûr. Mes contrats prévoient généralement un préavis de 1 mois pour permettre une transition en douceur. Je tiens à ce que la collaboration soit bénéfique pour vous — si quelque chose ne convient plus, on en parle d'abord pour ajuster, et si vous souhaitez arrêter, je facilite au maximum la passation.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final">
+      <div class="container--narrow" style="text-align: center;">
+        <span class="eyebrow-text">Une question ? Un projet ?</span>
+        <h2 class="reveal">Parlons de votre situation 💬</h2>
+        <p class="reveal">L'appel découverte est gratuit, sans engagement, et complètement personnalisé. C'est votre première étape vers plus de liberté.</p>
+        <div class="reveal">
+          <a href="contact.html" class="btn btn--primary" style="font-size: 1.05rem; padding: 16px 40px;">Je réserve mon appel gratuit 🎯</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">
+            <img src="images/logo.png" alt="Logo Brittassit" width="40" height="40" loading="lazy" />
+            <span class="footer-logo">Brittassit</span>
+          </div>
+          <p class="footer-tagline"><em>Votre assistante indépendante</em></p>
+          <p class="footer-desc">Brittany Dreano — Assistante indépendante pour entrepreneurs et infopreneurs. 100% à distance.</p>
+          <p style="font-size: 0.8rem; opacity: 0.5;">SIRET : 94813181800023</p>
+        </div>
+        <div class="footer-section">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Services & Forfaits</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:brittanydreano.cm@gmail.com">brittanydreano.cm@gmail.com</a></li>
+            <li><a href="tel:+33667249727">06.67.24.97.27</a></li>
+            <li>Vendée (85) · 100% à distance</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copyright">© 2025 Brittassit — Brittany Dreano. Tous droits réservés.</span>
+        <div class="footer-legal">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sticky-cta-bar" id="sticky-cta-bar" role="complementary">
+    <span class="sticky-cta-text">Découvrez l'accompagnement qui vous convient 🌸</span>
+    <a href="contact.html" class="btn btn--primary" style="padding: 10px 24px; font-size: 0.88rem;">Réserver un appel gratuit →</a>
+  </div>
+
+  <script>
+  'use strict';
+  const darkBtn = document.getElementById('dark-mode-toggle');
+  const htmlEl  = document.documentElement;
+  if (darkBtn) {
+    if (localStorage.getItem('darkMode') === 'on') { htmlEl.classList.add('dark'); darkBtn.textContent = '☀️'; }
+    darkBtn.addEventListener('click', () => {
+      const isDark = htmlEl.classList.toggle('dark');
+      localStorage.setItem('darkMode', isDark ? 'on' : 'off');
+      darkBtn.textContent = isDark ? '☀️' : '🌙';
+    });
+  }
+  const progressBar = document.getElementById('progress-bar');
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (progressBar) { const docH = document.documentElement.scrollHeight - window.innerHeight; progressBar.style.width = (docH > 0 ? (window.scrollY / docH) * 100 : 0) + '%'; }
+    if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+  const hamburger = document.getElementById('nav-hamburger');
+  const navLinks  = document.getElementById('nav-links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => { const isOpen = navLinks.classList.toggle('open'); hamburger.setAttribute('aria-expanded', isOpen); hamburger.textContent = isOpen ? '✕' : '☰'; });
+    navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('open'); hamburger.setAttribute('aria-expanded', 'false'); hamburger.textContent = '☰'; }); });
+  }
+  const revealObs = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } }); }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+  const stickyCta = document.getElementById('sticky-cta-bar');
+  const heroSection = document.getElementById('hero');
+  if (stickyCta && heroSection) { new IntersectionObserver(([e]) => stickyCta.classList.toggle('visible', !e.isIntersecting), { threshold: 0 }).observe(heroSection); }
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-question').setAttribute('aria-expanded', 'false'); });
+      if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+    });
+  });
+  </script>
+
+</body>
+</html>
