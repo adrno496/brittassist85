@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Questionnaire — Brittassit</title>
+  <meta name="description" content="Dites-moi tout sur votre projet sans passer par le téléphone. Répondez à ce questionnaire pour que je comprenne vos besoins." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── TOKENS ── */
+    :root {
+      --creme:       #faf7f2;
+      --rose-pale:   #f9ece8;
+      --rose-med:    #e8b4a8;
+      --or:          #c9a96e;
+      --brun:        #3d2b1f;
+      --brun-light:  #6b4c3b;
+      --text:        #2e1f14;
+      --text-light:  #7a6055;
+      --white:       #ffffff;
+      --border:      #e2d5cc;
+      --success:     #6aaf7e;
+      --radius:      16px;
+      --radius-sm:   10px;
+      --shadow:      0 4px 32px rgba(61,43,31,.08);
+      --shadow-lg:   0 12px 60px rgba(61,43,31,.14);
+      --font-serif:  'Cormorant Garamond', Georgia, serif;
+      --font-sans:   'DM Sans', system-ui, sans-serif;
+      --transition:  .3s cubic-bezier(.4,0,.2,1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--creme);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* ── NAV ── */
+    .nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(250,247,242,.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 900px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-brand-name {
+      font-family: var(--font-serif); font-size: 1.4rem; font-weight: 500;
+      color: var(--brun); letter-spacing: .02em;
+    }
+    .nav-subtitle {
+      font-size: .78rem; color: var(--text-light); font-style: italic;
+    }
+    .nav-back {
+      font-size: .82rem; color: var(--brun-light); text-decoration: none;
+      display: flex; align-items: center; gap: 6px;
+      transition: color var(--transition);
+    }
+    .nav-back:hover { color: var(--brun); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, var(--rose-pale) 0%, var(--creme) 60%);
+      padding: 64px 24px 48px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .eyebrow {
+      display: inline-block;
+      font-size: .78rem; letter-spacing: .14em; text-transform: uppercase;
+      color: var(--or); font-weight: 500; margin-bottom: 12px;
+    }
+    .hero h1 {
+      font-family: var(--font-serif); font-size: clamp(2rem,5vw,3.2rem);
+      font-weight: 500; line-height: 1.15; color: var(--brun);
+      margin-bottom: 16px;
+    }
+    .hero p {
+      font-size: 1rem; color: var(--text-light); max-width: 560px; margin: 0 auto 8px;
+    }
+    .hero-note {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: white; border: 1px solid var(--border);
+      border-radius: 50px; padding: 6px 16px;
+      font-size: .78rem; color: var(--text-light); margin-top: 20px;
+    }
+
+    /* ── CONTAINER ── */
+    .container {
+      max-width: 900px; margin: 0 auto; padding: 0 24px;
+    }
+
+    /* ── SERVICE SELECTOR ── */
+    #service-selector {
+      padding: 56px 24px;
+    }
+    .selector-title {
+      text-align: center; margin-bottom: 40px;
+    }
+    .selector-title h2 {
+      font-family: var(--font-serif); font-size: 2rem; color: var(--brun);
+      font-weight: 500;
+    }
+    .selector-title p { color: var(--text-light); margin-top: 8px; }
+
+    .service-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 900px; margin: 0 auto;
+    }
+    .service-card {
+      background: white; border: 2px solid var(--border);
+      border-radius: var(--radius); padding: 28px 20px;
+      cursor: pointer; transition: all var(--transition);
+      text-align: center; position: relative; overflow: hidden;
+    }
+    .service-card::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, transparent, rgba(201,169,110,.04));
+      opacity: 0; transition: opacity var(--transition);
+    }
+    .service-card:hover { border-color: var(--or); transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .service-card:hover::before { opacity: 1; }
+    .service-card.active { border-color: var(--or); background: linear-gradient(135deg, #fffdf8, #faf5ec); }
+    .service-card-emoji { font-size: 2rem; margin-bottom: 12px; display: block; }
+    .service-card h3 {
+      font-family: var(--font-serif); font-size: 1.25rem; color: var(--brun);
+      margin-bottom: 6px;
+    }
+    .service-card p { font-size: .8rem; color: var(--text-light); line-height: 1.5; }
+    .service-card .badge {
+      position: absolute; top: 12px; right: 12px;
+      background: var(--or); color: white;
+      font-size: .68rem; font-weight: 500; letter-spacing: .06em;
+      padding: 3px 10px; border-radius: 50px; text-transform: uppercase;
+    }
+    .service-card .price {
+      font-size: .82rem; color: var(--or); font-weight: 500; margin-top: 10px;
+    }
+
+    /* ── QUESTIONNAIRE WRAPPER ── */
+    .questionnaire-wrapper {
+      display: none;
+      max-width: 720px; margin: 0 auto; padding: 40px 24px 80px;
+    }
+    .questionnaire-wrapper.active { display: block; }
+
+    /* ── PROGRESS ── */
+    .progress-bar-wrapper {
+      margin-bottom: 36px;
+    }
+    .progress-meta {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 10px;
+    }
+    .progress-label { font-size: .8rem; color: var(--text-light); }
+    .progress-step-count {
+      font-size: .8rem; color: var(--text-light);
+    }
+    .progress-track {
+      height: 4px; background: var(--border); border-radius: 50px; overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%; background: linear-gradient(90deg, var(--rose-med), var(--or));
+      border-radius: 50px; transition: width .5s cubic-bezier(.4,0,.2,1);
+    }
+
+    /* ── STEP ── */
+    .step { display: none; animation: stepIn .4s ease; }
+    .step.active { display: block; }
+    @keyframes stepIn {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .step-header { margin-bottom: 32px; }
+    .step-number {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--rose-pale); color: var(--brun-light);
+      font-size: .78rem; font-weight: 600; margin-bottom: 12px;
+    }
+    .step-header h2 {
+      font-family: var(--font-serif); font-size: 1.7rem; color: var(--brun);
+      font-weight: 500; line-height: 1.2; margin-bottom: 8px;
+    }
+    .step-header p { font-size: .9rem; color: var(--text-light); }
+
+    /* ── FORM ELEMENTS ── */
+    .field { margin-bottom: 22px; }
+    .field label {
+      display: block; font-size: .85rem; font-weight: 500; color: var(--brun);
+      margin-bottom: 8px;
+    }
+    .field label .required { color: var(--or); margin-left: 2px; }
+    .field label .hint {
+      font-size: .75rem; font-weight: 400; color: var(--text-light);
+      margin-left: 6px; font-style: italic;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%; padding: 13px 16px;
+      border: 1.5px solid var(--border); border-radius: var(--radius-sm);
+      background: white; color: var(--text);
+      font-family: var(--font-sans); font-size: .9rem;
+      transition: border-color var(--transition), box-shadow var(--transition);
+      outline: none; appearance: none;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--or); box-shadow: 0 0 0 3px rgba(201,169,110,.15);
+    }
+    textarea { resize: vertical; min-height: 100px; line-height: 1.6; }
+
+    select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b4c3b' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      padding-right: 40px;
+      cursor: pointer;
+    }
+
+    /* ── GRID FIELDS ── */
+    .fields-row {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    }
+    @media (max-width: 540px) { .fields-row { grid-template-columns: 1fr; } }
+
+    /* ── CHOICE CHIPS ── */
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+    .chip {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 8px 16px; border: 1.5px solid var(--border);
+      border-radius: 50px; font-size: .83rem; cursor: pointer;
+      background: white; color: var(--brun-light);
+      transition: all var(--transition); user-select: none;
+    }
+    .chip:hover { border-color: var(--rose-med); background: var(--rose-pale); }
+    .chip.selected { border-color: var(--or); background: #fffbf3; color: var(--brun); font-weight: 500; }
+    .chip input { display: none; }
+
+    /* ── RADIO CARDS ── */
+    .radio-cards { display: flex; flex-direction: column; gap: 12px; margin-top: 4px; }
+    .radio-card {
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 16px 18px; border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm); cursor: pointer;
+      background: white; transition: all var(--transition);
+    }
+    .radio-card:hover { border-color: var(--rose-med); background: #fffdf9; }
+    .radio-card.selected { border-color: var(--or); background: #fffbf3; }
+    .radio-card input { display: none; }
+    .radio-dot {
+      width: 18px; height: 18px; min-width: 18px;
+      border-radius: 50%; border: 2px solid var(--border);
+      margin-top: 1px; display: flex; align-items: center; justify-content: center;
+      transition: all var(--transition);
+    }
+    .radio-card.selected .radio-dot {
+      border-color: var(--or); background: var(--or);
+    }
+    .radio-card.selected .radio-dot::after {
+      content: ''; width: 6px; height: 6px;
+      background: white; border-radius: 50%;
+    }
+    .radio-card-text strong {
+      display: block; font-size: .88rem; color: var(--brun); line-height: 1.3;
+    }
+    .radio-card-text span { font-size: .78rem; color: var(--text-light); }
+
+    /* ── RANGE SLIDER ── */
+    .range-wrapper { margin-top: 6px; }
+    input[type="range"] {
+      -webkit-appearance: none; width: 100%; height: 4px;
+      background: var(--border); border-radius: 50px; outline: none; cursor: pointer;
+      border: none; padding: 0; box-shadow: none;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none; width: 20px; height: 20px;
+      border-radius: 50%; background: var(--or);
+      border: 3px solid white; box-shadow: 0 2px 8px rgba(0,0,0,.2); cursor: pointer;
+    }
+    .range-labels {
+      display: flex; justify-content: space-between;
+      font-size: .75rem; color: var(--text-light); margin-top: 8px;
+    }
+    .range-value {
+      display: inline-block; background: var(--or); color: white;
+      font-size: .82rem; font-weight: 600;
+      padding: 2px 12px; border-radius: 50px; margin-top: 8px;
+    }
+
+    /* ── SCALE BUTTONS ── */
+    .scale-buttons { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
+    .scale-btn {
+      width: 46px; height: 46px; border-radius: 50%;
+      border: 1.5px solid var(--border); background: white;
+      font-size: .9rem; font-weight: 500; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--brun-light); transition: all var(--transition);
+    }
+    .scale-btn:hover { border-color: var(--rose-med); background: var(--rose-pale); }
+    .scale-btn.selected { border-color: var(--or); background: var(--or); color: white; }
+
+    /* ── DIVIDER ── */
+    .section-divider {
+      border: none; border-top: 1px solid var(--border); margin: 28px 0;
+    }
+    .section-label {
+      font-family: var(--font-serif); font-size: 1.1rem; color: var(--brun);
+      font-style: italic; margin-bottom: 20px;
+    }
+
+    /* ── NAVIGATION BTNS ── */
+    .step-nav {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; margin-top: 36px;
+    }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 13px 28px; border-radius: 50px;
+      font-family: var(--font-sans); font-size: .88rem; font-weight: 500;
+      cursor: pointer; transition: all var(--transition);
+      border: none; text-decoration: none;
+    }
+    .btn-primary {
+      background: var(--brun); color: white;
+    }
+    .btn-primary:hover { background: var(--brun-light); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(61,43,31,.2); }
+    .btn-outline {
+      background: white; color: var(--brun-light);
+      border: 1.5px solid var(--border);
+    }
+    .btn-outline:hover { border-color: var(--brun-light); color: var(--brun); }
+    .btn:disabled { opacity: .4; cursor: not-allowed; pointer-events: none; }
+
+    /* ── RECAP CARD ── */
+    .recap-card {
+      background: white; border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 24px; margin-bottom: 20px;
+    }
+    .recap-card h4 {
+      font-family: var(--font-serif); font-size: 1.1rem; color: var(--brun);
+      margin-bottom: 14px; padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .recap-row {
+      display: flex; gap: 12px; margin-bottom: 10px;
+      font-size: .85rem;
+    }
+    .recap-row .lbl { color: var(--text-light); min-width: 160px; flex-shrink: 0; }
+    .recap-row .val { color: var(--brun); font-weight: 400; }
+
+    /* ── SUCCESS ── */
+    #success-screen {
+      display: none; text-align: center; padding: 80px 24px;
+      max-width: 560px; margin: 0 auto;
+    }
+    #success-screen.active { display: block; }
+    .success-icon {
+      width: 80px; height: 80px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--rose-pale), #fceee9);
+      border: 2px solid var(--rose-med);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 28px; font-size: 2.2rem;
+    }
+    #success-screen h2 {
+      font-family: var(--font-serif); font-size: 2rem; color: var(--brun);
+      margin-bottom: 14px; font-weight: 500;
+    }
+    #success-screen p { color: var(--text-light); margin-bottom: 8px; line-height: 1.7; }
+    .success-details {
+      background: var(--rose-pale); border-radius: var(--radius-sm);
+      padding: 20px; margin: 24px 0; text-align: left;
+    }
+    .success-details li {
+      font-size: .85rem; color: var(--brun-light); padding: 4px 0;
+      list-style: none; display: flex; align-items: center; gap: 8px;
+    }
+    .success-details li::before { content: '✓'; color: var(--success); font-weight: 700; }
+
+    /* ── INFO BOX ── */
+    .info-box {
+      background: var(--rose-pale); border-left: 3px solid var(--rose-med);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 18px; margin: 16px 0;
+      font-size: .83rem; color: var(--brun-light); line-height: 1.6;
+    }
+
+    /* ── VALIDATION ── */
+    .field-error {
+      font-size: .77rem; color: #c0392b; margin-top: 5px;
+      display: none;
+    }
+    .field-error.visible { display: block; }
+    input.error, textarea.error, select.error {
+      border-color: #c0392b;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .service-cards { grid-template-columns: 1fr 1fr; }
+      .step-nav { flex-direction: column-reverse; }
+      .step-nav .btn { width: 100%; justify-content: center; }
+    }
+    @media (max-width: 400px) {
+      .service-cards { grid-template-columns: 1fr; }
+    }
+
+    /* ── FOOTER ── */
+    .page-footer {
+      border-top: 1px solid var(--border); text-align: center;
+      padding: 28px 24px;
+      font-size: .78rem; color: var(--text-light);
+    }
+    .page-footer a { color: var(--brun-light); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-brand-name">Brittassit</span>
+      </a>
+      <span class="nav-subtitle">Assistante indépendante</span>
+      <a href="services.html" class="nav-back">← Retour aux services</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">Pas envie d'appeler ? Pas de problème ✨</span>
+      <h1>Parlez-moi de<br><em>votre projet</em></h1>
+      <p>Répondez à ce questionnaire en 5 minutes chrono. Je vous reviens sous 24h avec une proposition personnalisée.</p>
+      <div class="hero-note">🔒 Données confidentielles · Aucun engagement</div>
+    </div>
+  </section>
+
+  <!-- SERVICE SELECTOR -->
+  <section id="service-selector">
+    <div class="selector-title">
+      <h2>Quel accompagnement vous intéresse ?</h2>
+      <p>Choisissez le service qui correspond le mieux à votre situation actuelle.</p>
+    </div>
+    <div class="service-cards container">
+      <div class="service-card" onclick="selectService('starter')">
+        <span class="service-card-emoji">🌸</span>
+        <h3>Starter</h3>
+        <p>Je débute la délégation et j'ai besoin d'un premier soutien.</p>
+        <div class="price">À partir de 497€/mois</div>
+      </div>
+      <div class="service-card" onclick="selectService('essentiel')">
+        <div class="badge">⭐ Populaire</div>
+        <span class="service-card-emoji">💼</span>
+        <h3>Essentiel</h3>
+        <p>Je suis en croissance et j'ai besoin d'un support complet.</p>
+        <div class="price">À partir de 849€/mois</div>
+      </div>
+      <div class="service-card" onclick="selectService('premium')">
+        <div class="badge">🔥 Complet</div>
+        <span class="service-card-emoji">✨</span>
+        <h3>Premium</h3>
+        <p>Je veux déléguer au maximum et me concentrer sur l'essentiel.</p>
+        <div class="price">À partir de 1249€/mois</div>
+      </div>
+      <div class="service-card" onclick="selectService('carte')">
+        <span class="service-card-emoji">🎯</span>
+        <h3>À la carte</h3>
+        <p>J'ai un besoin ponctuel sur une mission spécifique.</p>
+        <div class="price">Sur devis</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       QUESTIONNAIRE — STARTER
+  ════════════════════════════════════════════ -->
+  <div class="questionnaire-wrapper" id="q-starter">
+
+    <div class="progress-bar-wrapper">
+      <div class="progress-meta">
+        <span class="progress-label" id="starter-prog-label">Étape 1 sur 5</span>
+        <span class="progress-step-count">🌸 Forfait Starter</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="starter-fill" style="width:20%"></div></div>
+    </div>
+
+    <!-- STEP 1 — CONTACT -->
+    <div class="step active" id="starter-s1">
+      <div class="step-header">
+        <div class="step-number">1</div>
+        <h2>On fait connaissance 👋</h2>
+        <p>Quelques infos pour personnaliser ma réponse.</p>
+      </div>
+      <div class="fields-row">
+        <div class="field">
+          <label>Prénom <span class="required">*</span></label>
+          <input type="text" id="s-prenom" placeholder="Votre prénom" />
+          <div class="field-error" id="s-prenom-err">Ce champ est requis.</div>
+        </div>
+        <div class="field">
+          <label>Nom</label>
+          <input type="text" id="s-nom" placeholder="Votre nom" />
+        </div>
+      </div>
+      <div class="field">
+        <label>Adresse email <span class="required">*</span></label>
+        <input type="email" id="s-email" placeholder="votre@email.com" />
+        <div class="field-error" id="s-email-err">Veuillez saisir un email valide.</div>
+      </div>
+      <div class="field">
+        <label>Téléphone <span class="hint">(optionnel)</span></label>
+        <input type="tel" id="s-tel" placeholder="06 xx xx xx xx" />
+      </div>
+      <div class="field">
+        <label>Comment avez-vous entendu parler de moi ? <span class="required">*</span></label>
+        <select id="s-source">
+          <option value="">— Sélectionnez —</option>
+          <option>Instagram</option>
+          <option>LinkedIn</option>
+          <option>Recommandation d'un proche</option>
+          <option>Google</option>
+          <option>Autre</option>
+        </select>
+        <div class="field-error" id="s-source-err">Veuillez faire un choix.</div>
+      </div>
+      <div class="step-nav">
+        <div></div>
+        <button class="btn btn-primary" onclick="nextStep('starter',1,5)">Continuer →</button>
+      </div>
+    </div>
+
+    <!-- STEP 2 — ACTIVITÉ -->
+    <div class="step" id="starter-s2">
+      <div class="step-header">
+        <div class="step-number">2</div>
+        <h2>Votre activité 💼</h2>
+        <p>Pour adapter mon accompagnement à votre secteur.</p>
+      </div>
+      <div class="field">
+        <label>Quel est votre métier / activité principale ? <span class="required">*</span></label>
+        <input type="text" id="s-metier" placeholder="Ex: Coach, Consultante, Créatrice de contenu…" />
+        <div class="field-error" id="s-metier-err">Ce champ est requis.</div>
+      </div>
+      <div class="field">
+        <label>Depuis combien de temps êtes-vous à votre compte ?</label>
+        <div class="radio-cards">
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="s-anciennete" value="moins-1an" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Moins d'un an</strong><span>Je viens de me lancer</span></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="s-anciennete" value="1-3ans" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>1 à 3 ans</strong><span>Je commence à me structurer</span></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="s-anciennete" value="plus-3ans" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Plus de 3 ans</strong><span>J'ai une activité établie</span></div>
+          </label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Combien de clients actifs gérez-vous en ce moment ?</label>
+        <select id="s-clients">
+          <option value="">— Sélectionnez —</option>
+          <option>Moins de 5</option>
+          <option>5 à 15</option>
+          <option>15 à 30</option>
+          <option>Plus de 30</option>
+        </select>
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="prevStep('starter',2)">← Retour</button>
+        <button class="btn btn-primary" onclick="nextStep('starter',2,5)">Continuer →</button>
+      </div>
+    </div>
+
+    <!-- STEP 3 — BESOINS STARTER -->
+    <div class="step" id="starter-s3">
+      <div class="step-header">
+        <div class="step-number">3</div>
+        <h2>Vos besoins concrets 📋</h2>
+        <p>Détaillons ensemble ce qui vous prend le plus de temps.</p>
+      </div>
+
+      <div class="field">
+        <label>Combien d'emails recevez-vous par jour en moyenne ?</label>
+        <div class="radio-cards">
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="s-emails" value="moins-10" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Moins de 10</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="s-emails" value="10-30" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>10 à 30</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="s-emails" value="plus-30" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Plus de 30</strong><span>Ma boîte déborde !</span></div>
+          </label>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <div class="field">
+        <label>Sur quels réseaux sociaux êtes-vous présent(e) ? <span class="hint">(plusieurs choix possibles)</span></label>
+        <div class="chips">
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="s-reseaux" value="Instagram" />📸 Instagram</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="s-reseaux" value="LinkedIn" />💼 LinkedIn</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="s-reseaux" value="Facebook" />👥 Facebook</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="s-reseaux" value="TikTok" />🎵 TikTok</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="s-reseaux" value="Pinterest" />📌 Pinterest</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="s-reseaux" value="Aucun" />🚫 Aucun pour l'instant</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>À quelle fréquence publiez-vous actuellement ?</label>
+        <select id="s-freq-pub">
+          <option value="">— Sélectionnez —</option>
+          <option>Jamais ou très rarement</option>
+          <option>1 fois par semaine</option>
+          <option>2-3 fois par semaine</option>
+          <option>Tous les jours</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Avez-vous déjà une charte graphique / identité visuelle ?</label>
+        <div class="radio-cards">
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="s-charte" value="oui" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Oui</strong><span>J'ai des couleurs, logo, etc.</span></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="s-charte" value="partiel" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Partiellement</strong><span>Quelques éléments mais pas encore structurés</span></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="s-charte" value="non" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Non</strong><span>À construire ensemble</span></div>
+          </label>
+        </div>
+      </div>
+
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="prevStep('starter',3)">← Retour</button>
+        <button class="btn btn-primary" onclick="nextStep('starter',3,5)">Continuer →</button>
+      </div>
+    </div>
+
+    <!-- STEP 4 — ORGANISATION -->
+    <div class="step" id="starter-s4">
+      <div class="step-header">
+        <div class="step-number">4</div>
+        <h2>Organisation & outils 🛠️</h2>
+        <p>Pour prendre les choses en main rapidement.</p>
+      </div>
+      <div class="field">
+        <label>Quels outils utilisez-vous déjà ? <span class="hint">(plusieurs choix possibles)</span></label>
+        <div class="chips">
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="s-outils" value="Gmail" />📧 Gmail</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="s-outils" value="Google Calendar" />📅 Google Calendar</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="s-outils" value="Google Drive" />📁 Google Drive</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="s-outils" value="Notion" />📓 Notion</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="s-outils" value="Trello" />📋 Trello</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="s-outils" value="Canva" />🎨 Canva</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="s-outils" value="WhatsApp" />💬 WhatsApp</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="s-outils" value="Slack" />⚡ Slack</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="s-outils" value="Aucun" />🚫 Aucun</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Comment gérez-vous vos relances clients actuellement ?</label>
+        <select id="s-relances">
+          <option value="">— Sélectionnez —</option>
+          <option>Manuellement, au cas par cas</option>
+          <option>J'ai un tableau de suivi (Excel, Notion…)</option>
+          <option>Un CRM (HubSpot, Brevo…)</option>
+          <option>Je ne fais pas de relances</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Avez-vous un logiciel de facturation ?</label>
+        <div class="radio-cards">
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="s-facturation" value="oui" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Oui</strong><span>Pennylane, Fresha, autre…</span></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="s-facturation" value="word-excel" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Word / Excel fait maison</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="s-facturation" value="non" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Pas encore</strong></div>
+          </label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Y a-t-il autre chose à me préciser sur votre organisation actuelle ?</label>
+        <textarea id="s-orga-note" placeholder="Méthodes de travail, contraintes particulières, outils spécifiques…"></textarea>
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="prevStep('starter',4)">← Retour</button>
+        <button class="btn btn-primary" onclick="nextStep('starter',4,5)">Continuer →</button>
+      </div>
+    </div>
+
+    <!-- STEP 5 — RÉCAP & ENVOI -->
+    <div class="step" id="starter-s5">
+      <div class="step-header">
+        <div class="step-number">5</div>
+        <h2>Pour finir 🎯</h2>
+        <p>Quelques dernières précisions avant que je vous revienne.</p>
+      </div>
+      <div class="field">
+        <label>Quand souhaitez-vous démarrer ?</label>
+        <div class="radio-cards">
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="s-demarrage" value="asap" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Dès que possible</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="s-demarrage" value="1mois" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Dans le mois qui vient</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="s-demarrage" value="3mois" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Dans 2 à 3 mois</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="s-demarrage" value="explore" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>J'explore pour l'instant</strong></div>
+          </label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Avez-vous déjà travaillé avec une assistante indépendante ?</label>
+        <div class="radio-cards">
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="s-experience" value="oui" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Oui</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="s-experience" value="non" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Non, c'est une première</strong></div>
+          </label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Votre message libre <span class="hint">(optionnel)</span></label>
+        <textarea id="s-message" placeholder="Décrivez librement votre situation, vos attentes, ce qui vous pèse le plus en ce moment…" style="min-height:130px;"></textarea>
+      </div>
+      <div class="info-box">
+        🌸 En soumettant ce questionnaire, vous recevrez une réponse personnalisée de Brittany sous <strong>24h ouvrées</strong>. Aucun engagement de votre part.
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="prevStep('starter',5)">← Retour</button>
+        <button class="btn btn-primary" onclick="submitForm('starter')">Envoyer mon questionnaire 🌸</button>
+      </div>
+    </div>
+
+  </div><!-- /q-starter -->
+
+
+  <!-- ═══════════════════════════════════════════
+       QUESTIONNAIRE — ESSENTIEL
+  ════════════════════════════════════════════ -->
+  <div class="questionnaire-wrapper" id="q-essentiel">
+
+    <div class="progress-bar-wrapper">
+      <div class="progress-meta">
+        <span class="progress-label" id="essentiel-prog-label">Étape 1 sur 6</span>
+        <span class="progress-step-count">💼 Forfait Essentiel</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="essentiel-fill" style="width:16%"></div></div>
+    </div>
+
+    <!-- E-S1 CONTACT -->
+    <div class="step active" id="essentiel-s1">
+      <div class="step-header">
+        <div class="step-number">1</div>
+        <h2>On fait connaissance 👋</h2>
+        <p>Quelques infos pour personnaliser ma réponse.</p>
+      </div>
+      <div class="fields-row">
+        <div class="field">
+          <label>Prénom <span class="required">*</span></label>
+          <input type="text" id="e-prenom" placeholder="Votre prénom" />
+          <div class="field-error" id="e-prenom-err">Ce champ est requis.</div>
+        </div>
+        <div class="field">
+          <label>Nom</label>
+          <input type="text" id="e-nom" placeholder="Votre nom" />
+        </div>
+      </div>
+      <div class="field">
+        <label>Adresse email <span class="required">*</span></label>
+        <input type="email" id="e-email" placeholder="votre@email.com" />
+        <div class="field-error" id="e-email-err">Email invalide.</div>
+      </div>
+      <div class="field">
+        <label>Téléphone <span class="hint">(optionnel)</span></label>
+        <input type="tel" id="e-tel" placeholder="06 xx xx xx xx" />
+      </div>
+      <div class="field">
+        <label>Comment avez-vous entendu parler de moi ? <span class="required">*</span></label>
+        <select id="e-source">
+          <option value="">— Sélectionnez —</option>
+          <option>Instagram</option><option>LinkedIn</option>
+          <option>Recommandation</option><option>Google</option><option>Autre</option>
+        </select>
+        <div class="field-error" id="e-source-err">Veuillez faire un choix.</div>
+      </div>
+      <div class="step-nav">
+        <div></div>
+        <button class="btn btn-primary" onclick="nextStep('essentiel',1,6)">Continuer →</button>
+      </div>
+    </div>
+
+    <!-- E-S2 ACTIVITÉ -->
+    <div class="step" id="essentiel-s2">
+      <div class="step-header">
+        <div class="step-number">2</div>
+        <h2>Votre activité & croissance 📈</h2>
+        <p>Pour comprendre votre contexte de développement.</p>
+      </div>
+      <div class="field">
+        <label>Quel est votre métier / activité principale ? <span class="required">*</span></label>
+        <input type="text" id="e-metier" placeholder="Coach, consultante, infopreneur(e), créateur(trice)…" />
+        <div class="field-error" id="e-metier-err">Ce champ est requis.</div>
+      </div>
+      <div class="field">
+        <label>Décrivez votre audience cible en quelques mots</label>
+        <input type="text" id="e-audience" placeholder="Ex: femmes entrepreneures 30-45 ans, gérants PME…" />
+      </div>
+      <div class="field">
+        <label>Quel est votre principal canal d'acquisition client ?</label>
+        <div class="chips">
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-canal" value="Instagram" />📸 Instagram</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-canal" value="LinkedIn" />💼 LinkedIn</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-canal" value="Newsletter" />📧 Newsletter</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-canal" value="Bouche-à-oreille" />🗣️ Bouche-à-oreille</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-canal" value="Pub payante" />💰 Publicité payante</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-canal" value="Autre" />✨ Autre</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Combien d'heures par semaine passez-vous sur des tâches administratives ?</label>
+        <div class="radio-cards">
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-temps-admin" value="moins-5h" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Moins de 5h</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-temps-admin" value="5-10h" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>5 à 10h</strong><span>C'est déjà beaucoup !</span></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-temps-admin" value="plus-10h" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Plus de 10h</strong><span>Je suis noyé(e) dans l'opérationnel</span></div>
+          </label>
+        </div>
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="prevStep('essentiel',2)">← Retour</button>
+        <button class="btn btn-primary" onclick="nextStep('essentiel',2,6)">Continuer →</button>
+      </div>
+    </div>
+
+    <!-- E-S3 MAILS & AGENDA -->
+    <div class="step" id="essentiel-s3">
+      <div class="step-header">
+        <div class="step-number">3</div>
+        <h2>Mails & agenda 📅</h2>
+        <p>C'est le cœur du forfait Essentiel — parlons-en en détail.</p>
+      </div>
+      <div class="field">
+        <label>Combien d'emails professionnels recevez-vous par jour ?</label>
+        <div class="radio-cards">
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-emails" value="moins-20" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Moins de 20</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-emails" value="20-50" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>20 à 50</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-emails" value="plus-50" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Plus de 50</strong><span>Ma boîte est saturée</span></div>
+          </label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Quels types d'emails sont les plus nombreux ? <span class="hint">(plusieurs choix)</span></label>
+        <div class="chips">
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-types-mail" value="Demandes clients" />📩 Demandes clients</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-types-mail" value="Partenariats" />🤝 Partenariats</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-types-mail" value="Facturation" />🧾 Facturation / compta</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-types-mail" value="Newsletters" />📬 Newsletters reçues</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-types-mail" value="Admin" />🗂️ Administratif</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-types-mail" value="Prise de RDV" />📆 Prises de RDV</label>
+        </div>
+      </div>
+      <hr class="section-divider">
+      <p class="section-label">Gestion de l'agenda</p>
+      <div class="field">
+        <label>Combien de RDV/réunions gérez-vous par semaine en moyenne ?</label>
+        <select id="e-rdv">
+          <option value="">— Sélectionnez —</option>
+          <option>Moins de 3</option>
+          <option>3 à 7</option>
+          <option>8 à 15</option>
+          <option>Plus de 15</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Avez-vous un outil de prise de RDV en ligne ?</label>
+        <div class="chips">
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-rdv-outil" value="Calendly" />📅 Calendly</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-rdv-outil" value="Google Calendar" />🗓️ Google Calendar</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-rdv-outil" value="Acuity" />⏰ Acuity</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-rdv-outil" value="Non" />🚫 Pas encore</label>
+        </div>
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="prevStep('essentiel',3)">← Retour</button>
+        <button class="btn btn-primary" onclick="nextStep('essentiel',3,6)">Continuer →</button>
+      </div>
+    </div>
+
+    <!-- E-S4 CONTENU -->
+    <div class="step" id="essentiel-s4">
+      <div class="step-header">
+        <div class="step-number">4</div>
+        <h2>Création de contenu ✍️</h2>
+        <p>Le forfait Essentiel inclut 4 publications par semaine — préparons ça ensemble.</p>
+      </div>
+      <div class="field">
+        <label>Sur quels réseaux voulez-vous publier ? <span class="hint">(plusieurs choix)</span></label>
+        <div class="chips">
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-reseaux" value="Instagram" />📸 Instagram</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-reseaux" value="LinkedIn" />💼 LinkedIn</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-reseaux" value="Facebook" />👥 Facebook</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-reseaux" value="TikTok" />🎵 TikTok</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-reseaux" value="Pinterest" />📌 Pinterest</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Quel type de contenu souhaitez-vous principalement ? <span class="hint">(plusieurs choix)</span></label>
+        <div class="chips">
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-type-contenu" value="Éducatif" />📚 Éducatif / conseils</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-type-contenu" value="Storytelling" />💬 Storytelling / personnel</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-type-contenu" value="Promotionnel" />🎯 Promotionnel / offres</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-type-contenu" value="Divertissement" />😄 Divertissement / viral</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-type-contenu" value="Coulisses" />🎬 Coulisses / behind the scenes</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-type-contenu" value="Témoignages" />⭐ Témoignages clients</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Quel est le ton de votre communication ?</label>
+        <div class="radio-cards">
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-ton" value="pro-serieux" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Professionnel & sérieux</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-ton" value="chaleureux-humain" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Chaleureux & humain</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-ton" value="decale-fun" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Décalé & fun</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-ton" value="mix" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Un mix de tout ça</strong></div>
+          </label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Avez-vous des comptes concurrents ou inspirants à me montrer ?</label>
+        <input type="text" id="e-inspi" placeholder="@compteinspiration ou URL…" />
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="prevStep('essentiel',4)">← Retour</button>
+        <button class="btn btn-primary" onclick="nextStep('essentiel',4,6)">Continuer →</button>
+      </div>
+    </div>
+
+    <!-- E-S5 ADMIN -->
+    <div class="step" id="essentiel-s5">
+      <div class="step-header">
+        <div class="step-number">5</div>
+        <h2>Support administratif 🧾</h2>
+        <p>Devis, factures, suivi — voyons comment vous êtes organisé(e).</p>
+      </div>
+      <div class="field">
+        <label>Comment créez-vous vos devis et factures actuellement ?</label>
+        <div class="radio-cards">
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-fact" value="logiciel" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Logiciel dédié</strong><span>Pennylane, Dolibarr, Sellsy…</span></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-fact" value="word-excel" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Word / Excel / Google Docs</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-fact" value="canva" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Canva ou templates visuels</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-fact" value="rien" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Pas encore de système clair</strong></div>
+          </label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Combien de devis / factures émettez-vous par mois ?</label>
+        <select id="e-nb-fact">
+          <option value="">— Sélectionnez —</option>
+          <option>Moins de 5</option>
+          <option>5 à 15</option>
+          <option>15 à 30</option>
+          <option>Plus de 30</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Quelles autres tâches admin souhaitez-vous déléguer ? <span class="hint">(plusieurs choix)</span></label>
+        <div class="chips">
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-admin-tasks" value="Suivi impayés" />💸 Suivi impayés</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-admin-tasks" value="Classement documents" />📁 Classement documents</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-admin-tasks" value="Contrats" />📋 Préparation de contrats</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-admin-tasks" value="Reporting" />📊 Reporting mensuel</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-admin-tasks" value="Onboarding client" />🤝 Processus onboarding client</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="e-admin-tasks" value="Veille" />🔍 Veille concurrentielle</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Y a-t-il des tâches spécifiques à votre métier à me préciser ?</label>
+        <textarea id="e-taches-specific" placeholder="Décrivez librement les tâches récurrentes qui vous prennent du temps…"></textarea>
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="prevStep('essentiel',5)">← Retour</button>
+        <button class="btn btn-primary" onclick="nextStep('essentiel',5,6)">Continuer →</button>
+      </div>
+    </div>
+
+    <!-- E-S6 FINALISATION -->
+    <div class="step" id="essentiel-s6">
+      <div class="step-header">
+        <div class="step-number">6</div>
+        <h2>Dernière ligne droite 🏁</h2>
+      </div>
+      <div class="field">
+        <label>Quand souhaitez-vous démarrer ?</label>
+        <div class="radio-cards">
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-demarrage" value="asap" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Dès que possible</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-demarrage" value="1mois" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Dans le mois qui vient</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-demarrage" value="3mois" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Dans 2 à 3 mois</strong></div>
+          </label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Quelle est votre principale attente vis-à-vis de cette collaboration ?</label>
+        <div class="radio-cards">
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-attente" value="temps" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Gagner du temps au quotidien</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-attente" value="croissance" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Accélérer ma croissance</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-attente" value="organisation" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>M'organiser mieux</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="e-attente" value="serenite" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Retrouver la sérénité</strong></div>
+          </label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Votre message libre</label>
+        <textarea id="e-message" placeholder="Tout ce que vous souhaitez me dire sur votre situation, vos objectifs, vos contraintes…" style="min-height:130px;"></textarea>
+      </div>
+      <div class="info-box">
+        💼 Je vous répondrai sous 24h ouvrées avec une proposition sur-mesure. Merci de la confiance que vous m'accordez !
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="prevStep('essentiel',6)">← Retour</button>
+        <button class="btn btn-primary" onclick="submitForm('essentiel')">Envoyer mon questionnaire 💼</button>
+      </div>
+    </div>
+
+  </div><!-- /q-essentiel -->
+
+
+  <!-- ═══════════════════════════════════════════
+       QUESTIONNAIRE — PREMIUM
+  ════════════════════════════════════════════ -->
+  <div class="questionnaire-wrapper" id="q-premium">
+
+    <div class="progress-bar-wrapper">
+      <div class="progress-meta">
+        <span class="progress-label" id="premium-prog-label">Étape 1 sur 6</span>
+        <span class="progress-step-count">✨ Forfait Premium</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="premium-fill" style="width:16%"></div></div>
+    </div>
+
+    <!-- P-S1 CONTACT -->
+    <div class="step active" id="premium-s1">
+      <div class="step-header">
+        <div class="step-number">1</div>
+        <h2>On fait connaissance 👋</h2>
+      </div>
+      <div class="fields-row">
+        <div class="field">
+          <label>Prénom <span class="required">*</span></label>
+          <input type="text" id="p-prenom" placeholder="Votre prénom" />
+          <div class="field-error" id="p-prenom-err">Ce champ est requis.</div>
+        </div>
+        <div class="field">
+          <label>Nom</label>
+          <input type="text" id="p-nom" placeholder="Votre nom" />
+        </div>
+      </div>
+      <div class="field">
+        <label>Adresse email <span class="required">*</span></label>
+        <input type="email" id="p-email" placeholder="votre@email.com" />
+        <div class="field-error" id="p-email-err">Email invalide.</div>
+      </div>
+      <div class="field">
+        <label>Téléphone <span class="hint">(optionnel)</span></label>
+        <input type="tel" id="p-tel" placeholder="06 xx xx xx xx" />
+      </div>
+      <div class="field">
+        <label>Votre site web / profil principal</label>
+        <input type="text" id="p-site" placeholder="www.monsiteouinstagram.com" />
+      </div>
+      <div class="field">
+        <label>Comment avez-vous entendu parler de moi ? <span class="required">*</span></label>
+        <select id="p-source">
+          <option value="">— Sélectionnez —</option>
+          <option>Instagram</option><option>LinkedIn</option>
+          <option>Recommandation</option><option>Google</option><option>Autre</option>
+        </select>
+        <div class="field-error" id="p-source-err">Veuillez faire un choix.</div>
+      </div>
+      <div class="step-nav">
+        <div></div>
+        <button class="btn btn-primary" onclick="nextStep('premium',1,6)">Continuer →</button>
+      </div>
+    </div>
+
+    <!-- P-S2 ACTIVITÉ & VISION -->
+    <div class="step" id="premium-s2">
+      <div class="step-header">
+        <div class="step-number">2</div>
+        <h2>Votre activité & vision 🚀</h2>
+        <p>Le forfait Premium, c'est un vrai partenariat. Je veux tout comprendre de votre business.</p>
+      </div>
+      <div class="field">
+        <label>Quel est votre métier / activité principale ? <span class="required">*</span></label>
+        <input type="text" id="p-metier" placeholder="Coach, consultante, infopreneur(e), CEO…" />
+        <div class="field-error" id="p-metier-err">Ce champ est requis.</div>
+      </div>
+      <div class="field">
+        <label>Décrivez votre positionnement en 2-3 phrases</label>
+        <textarea id="p-positionnement" placeholder="Qui aidez-vous, comment, et avec quel résultat concret ?"></textarea>
+      </div>
+      <div class="field">
+        <label>Quel est votre chiffre d'affaires annuel approximatif ?</label>
+        <div class="radio-cards">
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="p-ca" value="moins-50k" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Moins de 50k€</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="p-ca" value="50-100k" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>50k à 100k€</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="p-ca" value="100-200k" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>100k à 200k€</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="p-ca" value="plus-200k" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Plus de 200k€</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="p-ca" value="prefere-pas" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Je préfère ne pas répondre</strong></div>
+          </label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Avez-vous une équipe ou des prestataires ? <span class="hint">(plusieurs choix)</span></label>
+        <div class="chips">
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-equipe" value="Solo" />🙋 Je suis seul(e)</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-equipe" value="Freelances" />🤝 Freelances ponctuels</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-equipe" value="Salariés" />👥 Salariés</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-equipe" value="Prestataires" />🏢 Prestataires réguliers</label>
+        </div>
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="prevStep('premium',2)">← Retour</button>
+        <button class="btn btn-primary" onclick="nextStep('premium',2,6)">Continuer →</button>
+      </div>
+    </div>
+
+    <!-- P-S3 STRATÉGIE RÉSEAUX -->
+    <div class="step" id="premium-s3">
+      <div class="step-header">
+        <div class="step-number">3</div>
+        <h2>Stratégie réseaux sociaux 📱</h2>
+        <p>Le Premium inclut une vraie stratégie éditoriale — allons dans le détail.</p>
+      </div>
+      <div class="field">
+        <label>Sur quels réseaux êtes-vous présent(e) ? <span class="hint">(plusieurs choix)</span></label>
+        <div class="chips">
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-reseaux" value="Instagram" />📸 Instagram</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-reseaux" value="LinkedIn" />💼 LinkedIn</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-reseaux" value="TikTok" />🎵 TikTok</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-reseaux" value="Facebook" />👥 Facebook</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-reseaux" value="YouTube" />▶️ YouTube</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-reseaux" value="Pinterest" />📌 Pinterest</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-reseaux" value="Podcast" />🎙️ Podcast</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Quelle est votre communauté actuelle (abonnés) sur votre réseau principal ?</label>
+        <div class="radio-cards">
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="p-communaute" value="moins-1k" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Moins de 1k abonnés</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="p-communaute" value="1-5k" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>1k à 5k</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="p-communaute" value="5-20k" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>5k à 20k</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="p-communaute" value="plus-20k" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Plus de 20k</strong></div>
+          </label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Quels objectifs visez-vous avec les réseaux ? <span class="hint">(plusieurs choix)</span></label>
+        <div class="chips">
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-obj-reseaux" value="Notoriété" />📣 Développer ma notoriété</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-obj-reseaux" value="Ventes" />💰 Générer des ventes directes</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-obj-reseaux" value="Expertise" />🎓 Asseoir mon expertise</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-obj-reseaux" value="Communauté" />🤗 Fidéliser ma communauté</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-obj-reseaux" value="Partenariats" />🤝 Attirer des partenariats</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Souhaitez-vous que je gère aussi les DM et commentaires ?</label>
+        <div class="radio-cards">
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="p-dm" value="oui-tout" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Oui, tout déléguer</strong><span>Je souhaite ne plus m'en occuper</span></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="p-dm" value="oui-partiel" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Partiellement</strong><span>Je gère certaines conversations, vous les autres</span></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="p-dm" value="non" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Non, je garde la main</strong></div>
+          </label>
+        </div>
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="prevStep('premium',3)">← Retour</button>
+        <button class="btn btn-primary" onclick="nextStep('premium',3,6)">Continuer →</button>
+      </div>
+    </div>
+
+    <!-- P-S4 ADMIN COMPLÈTE -->
+    <div class="step" id="premium-s4">
+      <div class="step-header">
+        <div class="step-number">4</div>
+        <h2>Gestion complète de l'admin 🗂️</h2>
+        <p>Le Premium, c'est une délégation maximale. Voyons l'étendue de ce que vous souhaitez confier.</p>
+      </div>
+      <div class="field">
+        <label>Quelles tâches admin souhaitez-vous déléguer ? <span class="hint">(plusieurs choix)</span></label>
+        <div class="chips">
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-admin" value="Devis/Factures" />🧾 Devis & factures</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-admin" value="Relances" />📞 Relances impayés</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-admin" value="Contrats" />📋 Contrats clients</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-admin" value="Google Drive" />📁 Organisation Google Drive</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-admin" value="Notion" />📓 Mise en place Notion</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-admin" value="Agenda" />📅 Gestion agenda complète</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-admin" value="Mails" />📧 Boîte mail complète</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-admin" value="Newsletter" />📨 Newsletter mensuelle</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-admin" value="Reporting" />📊 Tableaux de bord / KPIs</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-admin" value="Veille" />🔍 Veille stratégique</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Quels accès seriez-vous prêt(e) à me donner ? <span class="hint">(plusieurs choix)</span></label>
+        <div class="chips">
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-acces" value="Gmail" />📧 Boîte Gmail</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-acces" value="Google Drive" />📁 Google Drive</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-acces" value="Reseaux" />📱 Réseaux sociaux</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-acces" value="Facturation" />🧾 Logiciel de facturation</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-acces" value="Calendrier" />📅 Calendrier</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Y a-t-il des tâches sur lesquelles vous souhaitez GARDER la main ?</label>
+        <textarea id="p-garder-main" placeholder="Ex: je veux valider les publications avant envoi, gérer moi-même les contrats, etc."></textarea>
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="prevStep('premium',4)">← Retour</button>
+        <button class="btn btn-primary" onclick="nextStep('premium',4,6)">Continuer →</button>
+      </div>
+    </div>
+
+    <!-- P-S5 RAPPORTS & STRATÉGIE -->
+    <div class="step" id="premium-s5">
+      <div class="step-header">
+        <div class="step-number">5</div>
+        <h2>Reporting & accompagnement stratégique 📊</h2>
+        <p>Le Premium inclut un point mensuel stratégique — voyons ce dont vous avez besoin.</p>
+      </div>
+      <div class="field">
+        <label>Quels indicateurs vous importent le plus ? <span class="hint">(plusieurs choix)</span></label>
+        <div class="chips">
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-kpi" value="CA" />💶 Chiffre d'affaires</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-kpi" value="Abonnés" />📈 Croissance abonnés</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-kpi" value="Engagement" />❤️ Taux d'engagement</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-kpi" value="Leads" />🎯 Nombre de leads</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-kpi" value="Factures" />🧾 Factures payées / impayées</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="p-kpi" value="Satisfaction" />⭐ Satisfaction client</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>À quelle fréquence souhaitez-vous un point de suivi avec moi ?</label>
+        <div class="radio-cards">
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="p-suivi" value="hebdo" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Hebdomadaire</strong><span>Un point rapide chaque semaine</span></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="p-suivi" value="bimensuel" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Toutes les deux semaines</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="p-suivi" value="mensuel" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Mensuel</strong><span>Un bilan complet par mois</span></div>
+          </label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Avez-vous des objectifs de croissance précis pour les 6 prochains mois ?</label>
+        <textarea id="p-objectifs" placeholder="Ex: doubler ma communauté, atteindre 100k€ de CA, lancer un programme en ligne…"></textarea>
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="prevStep('premium',5)">← Retour</button>
+        <button class="btn btn-primary" onclick="nextStep('premium',5,6)">Continuer →</button>
+      </div>
+    </div>
+
+    <!-- P-S6 FINALISATION -->
+    <div class="step" id="premium-s6">
+      <div class="step-header">
+        <div class="step-number">6</div>
+        <h2>On finalise ✨</h2>
+      </div>
+      <div class="field">
+        <label>Quand souhaitez-vous démarrer ?</label>
+        <div class="radio-cards">
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="p-demarrage" value="asap" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Dès que possible</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="p-demarrage" value="1mois" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Dans le mois qui vient</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="p-demarrage" value="3mois" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Dans 2 à 3 mois</strong></div>
+          </label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Votre message libre</label>
+        <textarea id="p-message" placeholder="Partagez tout ce qui vous semble important : vos peurs, vos attentes, vos contraintes, vos rêves pour votre business…" style="min-height:140px;"></textarea>
+      </div>
+      <div class="info-box">
+        ✨ Je prends le temps de lire chaque réponse avec attention. Vous recevrez une réponse personnalisée sous 24h ouvrées.
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="prevStep('premium',6)">← Retour</button>
+        <button class="btn btn-primary" onclick="submitForm('premium')">Envoyer mon questionnaire ✨</button>
+      </div>
+    </div>
+
+  </div><!-- /q-premium -->
+
+
+  <!-- ═══════════════════════════════════════════
+       QUESTIONNAIRE — À LA CARTE
+  ════════════════════════════════════════════ -->
+  <div class="questionnaire-wrapper" id="q-carte">
+
+    <div class="progress-bar-wrapper">
+      <div class="progress-meta">
+        <span class="progress-label" id="carte-prog-label">Étape 1 sur 4</span>
+        <span class="progress-step-count">🎯 Mission à la carte</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="carte-fill" style="width:25%"></div></div>
+    </div>
+
+    <!-- C-S1 CONTACT -->
+    <div class="step active" id="carte-s1">
+      <div class="step-header">
+        <div class="step-number">1</div>
+        <h2>Votre contact 👋</h2>
+      </div>
+      <div class="fields-row">
+        <div class="field">
+          <label>Prénom <span class="required">*</span></label>
+          <input type="text" id="c-prenom" placeholder="Votre prénom" />
+          <div class="field-error" id="c-prenom-err">Ce champ est requis.</div>
+        </div>
+        <div class="field">
+          <label>Nom</label>
+          <input type="text" id="c-nom" />
+        </div>
+      </div>
+      <div class="field">
+        <label>Email <span class="required">*</span></label>
+        <input type="email" id="c-email" placeholder="votre@email.com" />
+        <div class="field-error" id="c-email-err">Email invalide.</div>
+      </div>
+      <div class="field">
+        <label>Téléphone <span class="hint">(optionnel)</span></label>
+        <input type="tel" id="c-tel" placeholder="06 xx xx xx xx" />
+      </div>
+      <div class="step-nav">
+        <div></div>
+        <button class="btn btn-primary" onclick="nextStep('carte',1,4)">Continuer →</button>
+      </div>
+    </div>
+
+    <!-- C-S2 MISSION -->
+    <div class="step" id="carte-s2">
+      <div class="step-header">
+        <div class="step-number">2</div>
+        <h2>Votre mission 🎯</h2>
+        <p>Dites-moi exactement ce dont vous avez besoin.</p>
+      </div>
+      <div class="field">
+        <label>Quel(s) service(s) vous intéresse(nt) ? <span class="hint">(plusieurs choix possibles)</span></label>
+        <div class="chips">
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="c-service" value="Posts réseaux" />✍️ Rédaction de posts</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="c-service" value="Visuels Canva" />📸 Création visuels Canva</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="c-service" value="Emails" />📧 Rédaction d'emails</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="c-service" value="Classement fichiers" />🗂️ Organisation de fichiers</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="c-service" value="Tableau de bord" />📊 Tableau de bord</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="c-service" value="Planning contenu" />📅 Planification de contenu</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="c-service" value="Recherche veille" />🔍 Recherche & veille</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="c-service" value="Devis factures" />📋 Devis / Factures</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="c-service" value="Notion" />💡 Mise en place Notion</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="c-service" value="Audit réseaux" />📱 Audit réseaux sociaux</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="c-service" value="Google Drive" />📦 Organisation Google Drive</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="c-service" value="Newsletter" />✉️ Rédaction newsletter</label>
+          <label class="chip" onclick="toggleChip(this)"><input type="checkbox" name="c-service" value="Autre" />💬 Autre (je précise ci-dessous)</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Décrivez votre besoin en détail <span class="required">*</span></label>
+        <textarea id="c-besoin" placeholder="Ex: J'ai besoin de 10 posts Instagram pour le mois d'octobre sur la thématique…" style="min-height:120px;" ></textarea>
+        <div class="field-error" id="c-besoin-err">Merci de décrire votre besoin.</div>
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="prevStep('carte',2)">← Retour</button>
+        <button class="btn btn-primary" onclick="nextStep('carte',2,4)">Continuer →</button>
+      </div>
+    </div>
+
+    <!-- C-S3 CONTEXTE -->
+    <div class="step" id="carte-s3">
+      <div class="step-header">
+        <div class="step-number">3</div>
+        <h2>Un peu de contexte 📋</h2>
+      </div>
+      <div class="field">
+        <label>Quelle est votre activité ?</label>
+        <input type="text" id="c-activite" placeholder="Votre métier / secteur" />
+      </div>
+      <div class="field">
+        <label>Avez-vous une charte graphique ou un univers visuel ?</label>
+        <div class="radio-cards">
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="c-charte" value="oui" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Oui</strong><span>Je pourrai vous partager mes couleurs, logo…</span></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="c-charte" value="partiel" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Partiellement</strong></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="c-charte" value="non" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Non</strong></div>
+          </label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Quel est votre délai souhaité ?</label>
+        <div class="radio-cards">
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="c-delai" value="urgent" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Urgent</strong><span>Sous 48h–1 semaine</span></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="c-delai" value="normal" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Normal</strong><span>Sous 2 semaines</span></div>
+          </label>
+          <label class="radio-card" onclick="selectRadio(this)">
+            <input type="radio" name="c-delai" value="flexible" />
+            <div class="radio-dot"></div>
+            <div class="radio-card-text"><strong>Flexible</strong><span>Pas de contrainte particulière</span></div>
+          </label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Avez-vous un budget en tête ?</label>
+        <select id="c-budget">
+          <option value="">— Sélectionnez —</option>
+          <option>Moins de 100€</option>
+          <option>100 à 300€</option>
+          <option>300 à 600€</option>
+          <option>Plus de 600€</option>
+          <option>Je n'ai pas d'idée, je fais confiance</option>
+        </select>
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="prevStep('carte',3)">← Retour</button>
+        <button class="btn btn-primary" onclick="nextStep('carte',3,4)">Continuer →</button>
+      </div>
+    </div>
+
+    <!-- C-S4 FINALISATION -->
+    <div class="step" id="carte-s4">
+      <div class="step-header">
+        <div class="step-number">4</div>
+        <h2>Dernière étape 🎯</h2>
+      </div>
+      <div class="field">
+        <label>Avez-vous des exemples, inspirations ou documents à partager ?</label>
+        <textarea id="c-exemples" placeholder="Décrivez ou collez des liens vers des exemples qui vous inspirent…"></textarea>
+      </div>
+      <div class="field">
+        <label>Y a-t-il des contraintes ou informations importantes à me signaler ?</label>
+        <textarea id="c-contraintes" placeholder="Ton à adopter, mots à éviter, contraintes légales, cible précise…"></textarea>
+      </div>
+      <div class="field">
+        <label>Comment avez-vous entendu parler de moi ?</label>
+        <select id="c-source">
+          <option value="">— Sélectionnez —</option>
+          <option>Instagram</option><option>LinkedIn</option>
+          <option>Recommandation</option><option>Google</option><option>Autre</option>
+        </select>
+      </div>
+      <div class="info-box">
+        🎯 Je vous enverrai un devis détaillé sous 24h ouvrées, sans aucun engagement de votre part.
+      </div>
+      <div class="step-nav">
+        <button class="btn btn-outline" onclick="prevStep('carte',4)">← Retour</button>
+        <button class="btn btn-primary" onclick="submitForm('carte')">Envoyer ma demande 🎯</button>
+      </div>
+    </div>
+
+  </div><!-- /q-carte -->
+
+
+  <!-- ═══════ SUCCESS SCREEN ═══════ -->
+  <div id="success-screen">
+    <div class="success-icon">🌸</div>
+    <h2>Message envoyé !</h2>
+    <p>Merci d'avoir rempli ce questionnaire. Je l'ai bien reçu et je prends le temps de le lire avec attention.</p>
+    <p><strong>Vous recevrez ma réponse personnalisée sous 24h ouvrées.</strong></p>
+    <ul class="success-details">
+      <li>Un email de confirmation vient de vous être envoyé</li>
+      <li>Je préparerai une proposition adaptée à votre situation</li>
+      <li>Si besoin, je prendrai contact par le canal que vous préférez</li>
+    </ul>
+    <p style="font-size:.85rem;">En attendant, n'hésitez pas à explorer mon univers sur Instagram 💛</p>
+    <div style="margin-top:28px;">
+      <a href="services.html" class="btn btn-outline" style="margin-right:12px;">← Retour aux services</a>
+      <a href="index.html" class="btn btn-primary">Accueil →</a>
+    </div>
+  </div>
+
+
+  <footer class="page-footer">
+    © 2025 Brittassit — Brittany Dreano · Assistante indépendante · Vendée (85) · 100% à distance
+    · <a href="contact.html">Contact</a>
+  </footer>
+
+
+  <script>
+    /* ── CHIP TOGGLE ── */
+    function toggleChip(label) {
+      label.classList.toggle('selected');
+      label.querySelector('input').checked = label.classList.contains('selected');
+    }
+
+    /* ── RADIO CARD SELECT ── */
+    function selectRadio(label) {
+      const name = label.querySelector('input').name;
+      document.querySelectorAll(`[name="${name}"]`).forEach(inp => {
+        inp.closest('.radio-card').classList.remove('selected');
+      });
+      label.classList.add('selected');
+      label.querySelector('input').checked = true;
+    }
+
+    /* ── SERVICE SELECTOR ── */
+    function selectService(key) {
+      // highlight card
+      document.querySelectorAll('.service-card').forEach(c => c.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+
+      // hide all questionnaires
+      document.querySelectorAll('.questionnaire-wrapper').forEach(q => {
+        q.classList.remove('active');
+        q.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+        q.querySelector('.step').classList.add('active');
+      });
+
+      // show target
+      const q = document.getElementById('q-' + key);
+      q.classList.add('active');
+      q.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    /* ── VALIDATION ── */
+    function validateStep(prefix, step) {
+      let valid = true;
+      const rules = {
+        starter: {
+          1: [['s-prenom','text'],['s-email','email'],['s-source','select']],
+          2: [['s-metier','text']],
+          3: [], 4: [], 5: []
+        },
+        essentiel: {
+          1: [['e-prenom','text'],['e-email','email'],['e-source','select']],
+          2: [['e-metier','text']],
+          3: [], 4: [], 5: [], 6: []
+        },
+        premium: {
+          1: [['p-prenom','text'],['p-email','email'],['p-source','select']],
+          2: [['p-metier','text']],
+          3: [], 4: [], 5: [], 6: []
+        },
+        carte: {
+          1: [['c-prenom','text'],['c-email','email']],
+          2: [['c-besoin','textarea']],
+          3: [], 4: []
+        }
+      };
+
+      const fields = rules[prefix]?.[step] || [];
+      fields.forEach(([id, type]) => {
+        const el = document.getElementById(id);
+        const err = document.getElementById(id + '-err');
+        if (!el) return;
+        let ok = true;
+        if (type === 'email') {
+          ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value.trim());
+        } else if (type === 'select') {
+          ok = el.value !== '';
+        } else {
+          ok = el.value.trim().length > 0;
+        }
+        el.classList.toggle('error', !ok);
+        if (err) err.classList.toggle('visible', !ok);
+        if (!ok) valid = false;
+      });
+      return valid;
+    }
+
+    /* ── STEP NAVIGATION ── */
+    function nextStep(prefix, current, total) {
+      if (!validateStep(prefix, current)) return;
+      const cur = document.getElementById(`${prefix}-s${current}`);
+      const nxt = document.getElementById(`${prefix}-s${current + 1}`);
+      if (!nxt) return;
+      cur.classList.remove('active');
+      nxt.classList.add('active');
+      updateProgress(prefix, current + 1, total);
+      document.getElementById('q-' + prefix).scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function prevStep(prefix, current) {
+      const cur = document.getElementById(`${prefix}-s${current}`);
+      const prv = document.getElementById(`${prefix}-s${current - 1}`);
+      if (!prv) return;
+      cur.classList.remove('active');
+      prv.classList.add('active');
+      const totals = { starter:5, essentiel:6, premium:6, carte:4 };
+      updateProgress(prefix, current - 1, totals[prefix]);
+      document.getElementById('q-' + prefix).scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function updateProgress(prefix, step, total) {
+      const pct = Math.round((step / total) * 100);
+      document.getElementById(prefix + '-fill').style.width = pct + '%';
+      document.getElementById(prefix + '-prog-label').textContent = `Étape ${step} sur ${total}`;
+    }
+
+    /* ── COLLECT FORM DATA ── */
+    function collectData(prefix) {
+      const data = {};
+      const wrap = document.getElementById('q-' + prefix);
+      wrap.querySelectorAll('input[type="text"], input[type="email"], input[type="tel"], select, textarea').forEach(el => {
+        if (el.id) data[el.id] = el.value;
+      });
+      wrap.querySelectorAll('input[type="radio"]:checked').forEach(el => {
+        data[el.name] = el.value;
+      });
+      const checkboxGroups = {};
+      wrap.querySelectorAll('input[type="checkbox"]:checked').forEach(el => {
+        if (!checkboxGroups[el.name]) checkboxGroups[el.name] = [];
+        checkboxGroups[el.name].push(el.value);
+      });
+      Object.assign(data, checkboxGroups);
+      return data;
+    }
+
+    /* ── SUBMIT ── */
+    function submitForm(prefix) {
+      const data = collectData(prefix);
+      console.log('Questionnaire soumis —', prefix, data);
+
+      // Hide all
+      document.getElementById('service-selector').style.display = 'none';
+      document.querySelectorAll('.questionnaire-wrapper').forEach(q => q.classList.remove('active'));
+
+      // Show success
+      const ss = document.getElementById('success-screen');
+      ss.classList.add('active');
+      ss.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  </script>
+
+</body>
+</html>
