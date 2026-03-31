@@ -281,7 +281,7 @@ section { padding: 80px 0; }
 footer { background: var(--anthracite); color: rgba(253,250,247,0.75); padding: 60px 0 32px; }
 .footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
 .footer-brand { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
-.footer-brand img { width: 40px; height: 40px; object-fit: contain; filter: brightness(0) invert(1); opacity: 0.8; }
+.footer-brand img { width: 40px; height: 40px; object-fit: contain; background: rgba(255,255,255,0.92); border-radius: 8px; padding: 4px; }
 .footer-logo { font-family: var(--font-serif); font-size: 1.4rem; color: var(--rose-pastel); }
 .footer-tagline { color: var(--rose-pastel); font-style: italic; font-family: var(--font-serif); margin-bottom: 8px; font-size: 1rem; }
 .footer-desc { font-size: 0.88rem; margin-bottom: 16px; }
@@ -381,4 +381,274 @@ footer { background: var(--anthracite); color: rgba(253,250,247,0.75); padding: 
   .processus-steps { grid-template-columns: 1fr; }
   .sticky-cta-bar { flex-direction: column; gap: 8px; }
   .sticky-cta-text { display: none; }
+}
+
+/* ============================================================
+   FIX TASK 1 — Footer visible en mode sombre
+   Le footer utilise --anthracite comme fond, mais en dark mode
+   cette variable devient claire (#F0E8E0). On la fixe à dm-bg.
+============================================================ */
+html.dark footer {
+  background: var(--dm-bg);
+}
+
+/* ============================================================
+   TASK 2 — Icônes réseaux sociaux dans la navbar
+============================================================ */
+.nav-social {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.nav-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: var(--anthracite);
+  transition: color var(--transition), background var(--transition);
+}
+.nav-social a:hover {
+  color: var(--rose-fonce);
+  background: var(--rose-pale);
+}
+.nav-social svg { width: 17px; height: 17px; flex-shrink: 0; }
+
+/* Icônes réseaux dans l'overlay mobile (nav-links fullscreen) */
+.nav-social-overlay-wrap {
+  display: none; /* masqué sur desktop */
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.nav-social-overlay-wrap small {
+  font-size: 0.78rem;
+  color: var(--gris-moyen);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.nav-social-overlay {
+  display: flex;
+  gap: 16px;
+}
+.nav-social-overlay a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--rose-pale);
+  color: var(--anthracite);
+  transition: background var(--transition), color var(--transition), transform var(--transition);
+}
+.nav-social-overlay a:hover {
+  background: var(--rose-pastel);
+  color: var(--rose-fonce);
+  transform: translateY(-2px);
+}
+.nav-social-overlay svg { width: 20px; height: 20px; }
+
+/* Sur mobile (overlay ouvert) : afficher la ligne sociale */
+@media (max-width: 768px) {
+  .nav-links.open .nav-social-overlay-wrap { display: flex; }
+}
+
+/* ============================================================
+   TASK 3 — Hero deux colonnes avec carousel
+============================================================ */
+
+/* Conteneur interne du hero (remplace hero-content en tant que
+   seul enfant z-index:1 — maintenant il englobe texte + carousel) */
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding: 120px 24px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Réinitialise les styles de .hero-content quand il est dans .hero-inner */
+.hero-inner .hero-content {
+  position: static;
+  z-index: auto;
+  max-width: none;
+  padding: 0;
+  text-align: left;
+}
+.hero-inner .hero-subtitle  { margin: 0 0 16px; }
+.hero-inner .hero-actions   { justify-content: flex-start; }
+.hero-inner .hero-badges    { justify-content: flex-start; }
+
+/* ============================================================
+   CAROUSEL "DERNIERS POSTS"
+============================================================ */
+.posts-carousel {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+.posts-carousel__title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  color: var(--anthracite);
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+.carousel-viewport {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+.carousel-slide          { display: none; }
+.carousel-slide--active  { display: block; animation: slideFadeIn 0.45s ease; }
+
+@keyframes slideFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.post-card {
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.post-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.73rem;
+  font-weight: 600;
+  margin: 10px 10px 6px;
+}
+.post-badge--insta   { background: linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); color: #fff; }
+.post-badge--fb      { background: #1877F2; color: #fff; }
+.post-badge--li      { background: #0077B5; color: #fff; }
+
+/* Zone image (ratio 4:3) */
+.post-image-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--rose-pale);
+}
+.post-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.post-card:hover .post-image-wrap img { transform: scale(1.04); }
+
+/* Placeholder pour post sans image locale (Facebook) */
+.post-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #E8F4FD 0%, #BBDEFB 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.post-placeholder-inner {
+  text-align: center;
+}
+.post-placeholder-icon { font-size: 3rem; margin-bottom: 10px; }
+.post-placeholder-quote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #1877F2;
+  line-height: 1.55;
+}
+
+/* Overlay au survol */
+.post-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(44, 36, 32, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+.post-image-wrap:hover .post-overlay { opacity: 1; }
+.post-overlay-label {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  padding: 9px 18px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  transition: background 0.2s ease;
+}
+.post-overlay:hover .post-overlay-label { background: rgba(255, 255, 255, 0.25); }
+
+/* Toujours visible sur écran tactile (pas de hover) */
+@media (hover: none) {
+  .post-overlay { opacity: 1; background: rgba(44, 36, 32, 0.4); }
+}
+
+.post-text {
+  padding: 10px 12px 14px;
+  font-size: 0.79rem;
+  color: var(--gris-moyen);
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Points de navigation */
+.carousel-dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 12px;
+}
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(232, 160, 176, 0.4);
+  cursor: pointer;
+  padding: 0;
+  transition: background var(--transition), transform var(--transition);
+}
+.carousel-dot--active            { background: var(--rose-fonce); transform: scale(1.35); }
+.carousel-dot:hover:not(.carousel-dot--active) { background: rgba(232, 160, 176, 0.7); }
+
+/* ============================================================
+   TASK 4 — Responsive hero deux colonnes
+============================================================ */
+@media (max-width: 768px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    padding: 100px 16px 56px;
+    gap: 36px;
+  }
+  .hero-inner .hero-content  { text-align: center; }
+  .hero-inner .hero-actions  { justify-content: center; }
+  .hero-inner .hero-badges   { justify-content: flex-start; }
+  .hero-inner .hero-subtitle { margin: 0 auto 16px; }
 }

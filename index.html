@@ -9,9 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="/images/logo.png">
-  <link rel="shortcut icon" href="/images/logo.png">
-  <link rel="apple-touch-icon" href="/images/logo.png">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="shortcut icon" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
 </head>
 <body>
 
@@ -35,8 +35,35 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="questionnaires.html">Questionnaire</a></li>
         <li><a href="contact.html" class="nav-cta">Réserver un appel 📞</a></li>
+        <!-- Icônes réseaux sociaux (visible uniquement dans le menu mobile overlay) -->
+        <li class="nav-social-overlay-wrap" aria-label="Nos réseaux sociaux">
+          <small>Suivez-moi</small>
+          <div class="nav-social-overlay">
+            <a href="https://www.instagram.com/brittassist85?igsh=M3dqdmN3aHg2Mmdy" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100091531544199" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/brittassit85/?originalSubdomain=fr" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </li>
       </ul>
       <div class="nav-actions">
+        <!-- Icônes réseaux sociaux (desktop) -->
+        <div class="nav-social" aria-label="Nos réseaux sociaux">
+          <a href="https://www.instagram.com/brittassist85?igsh=M3dqdmN3aHg2Mmdy" target="_blank" rel="noopener noreferrer" aria-label="Brittassit sur Instagram">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100091531544199" target="_blank" rel="noopener noreferrer" aria-label="Brittassit sur Facebook">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/brittassit85/?originalSubdomain=fr" target="_blank" rel="noopener noreferrer" aria-label="Brittassit sur LinkedIn">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
         <button id="dark-mode-toggle" aria-label="Basculer le mode sombre">🌙</button>
         <button class="nav-hamburger" id="nav-hamburger" aria-expanded="false" aria-controls="nav-links" aria-label="Ouvrir le menu">☰</button>
       </div>
@@ -50,21 +77,91 @@
     <section id="hero" class="hero">
       <div class="hero-bg" style="background-image: url('images/bureau-rose-1.jpg');"></div>
       <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <span class="eyebrow-text">Votre assistante indépendante</span>
-        <h1>Libérez votre temps,<br>développez votre activité</h1>
-        <p class="hero-subtitle">J'accompagne les entrepreneurs et infopreneurs dans leur gestion administrative, réseaux sociaux et organisation — pour qu'ils se concentrent sur ce qui compte vraiment.</p>
-        <p class="hero-phrase">« Parce que votre énergie mérite mieux que les tâches chronophages. »</p>
-        <div class="hero-actions">
-          <a href="contact.html" class="btn btn--primary">Réserver mon appel découverte →</a>
-          <a href="services.html" class="btn btn--outline">Découvrir mes services</a>
+
+      <!-- Conteneur deux colonnes : texte (gauche) + carousel (droite) -->
+      <div class="hero-inner">
+
+        <!-- Colonne gauche : texte principal -->
+        <div class="hero-content">
+          <span class="eyebrow-text">Votre assistante indépendante</span>
+          <h1>Libérez votre temps,<br>développez votre activité</h1>
+          <p class="hero-subtitle">J'accompagne les entrepreneurs et infopreneurs dans leur gestion administrative, réseaux sociaux et organisation — pour qu'ils se concentrent sur ce qui compte vraiment.</p>
+          <p class="hero-phrase">« Parce que votre énergie mérite mieux que les tâches chronophages. »</p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn--primary">Réserver mon appel découverte →</a>
+            <a href="services.html" class="btn btn--outline">Découvrir mes services</a>
+          </div>
+          <div class="hero-badges">
+            <span class="badge-trust">✅ 7 ans d'expérience</span>
+            <span class="badge-trust">✅ 100% à distance</span>
+            <span class="badge-trust">✅ Réponse sous 24h</span>
+          </div>
         </div>
-        <div class="hero-badges">
-          <span class="badge-trust">✅ 7 ans d'expérience</span>
-          <span class="badge-trust">✅ 100% à distance</span>
-          <span class="badge-trust">✅ Réponse sous 24h</span>
-        </div>
-      </div>
+
+        <!-- Colonne droite : carousel "Derniers posts" -->
+        <aside class="posts-carousel" aria-label="Derniers posts sur les réseaux sociaux">
+          <h2 class="posts-carousel__title">Derniers posts</h2>
+
+          <div class="carousel-viewport" id="carousel-viewport">
+
+            <!-- Slide 1 — Instagram -->
+            <div class="carousel-slide carousel-slide--active" id="carousel-slide-0">
+              <div class="post-card">
+                <span class="post-badge post-badge--insta">📸 Instagram</span>
+                <div class="post-image-wrap">
+                  <img src="images/dernier%20post%20insta.png" alt="Dernier post Instagram de Brittassit" loading="lazy" />
+                  <a href="https://www.instagram.com/brittassist85?igsh=M3dqdmN3aHg2Mmdy"
+                     target="_blank" rel="noopener noreferrer" class="post-overlay" aria-label="Voir le post Instagram">
+                    <span class="post-overlay-label">Voir le post →</span>
+                  </a>
+                </div>
+                <p class="post-text">Tu crées du contenu… mais tu as l'impression de courir dans tous les sens ? 😵‍💫 Trop d'idées, pas assez de temps, une organisation bancale, des lancements repoussés… 🎁 Je t'offre le 1er mois pour tester → Envoie-moi "GO" en DM</p>
+              </div>
+            </div>
+
+            <!-- Slide 2 — Facebook -->
+            <div class="carousel-slide" id="carousel-slide-1">
+              <div class="post-card">
+                <span class="post-badge post-badge--fb">👍 Facebook</span>
+                <div class="post-image-wrap">
+                  <img src="images/dernier%20post%20facebook.jpg" alt="Dernier post Facebook de Brittassit" loading="lazy" />
+                  <a href="https://www.facebook.com/profile.php?id=100091531544199"
+                     target="_blank" rel="noopener noreferrer" class="post-overlay" aria-label="Voir le post Facebook">
+                    <span class="post-overlay-label">Voir le post →</span>
+                  </a>
+                </div>
+                <p class="post-text">Si tu es infopreneur, commence par déléguer ça : tes mails, ton organisation, tes réseaux sociaux… Déléguer, ce n'est pas tout lâcher. C'est faire de la place pour ce qui compte vraiment. Moi c'est Brittany 💜</p>
+              </div>
+            </div>
+
+            <!-- Slide 3 — LinkedIn -->
+            <div class="carousel-slide" id="carousel-slide-2">
+              <div class="post-card">
+                <span class="post-badge post-badge--li">💼 LinkedIn</span>
+                <div class="post-image-wrap">
+                  <img src="images/dernier%20post%20linkdin.jpg" alt="Dernier post LinkedIn de Brittassit" loading="lazy" />
+                  <a href="https://www.linkedin.com/in/brittassit85/?originalSubdomain=fr"
+                     target="_blank" rel="noopener noreferrer" class="post-overlay" aria-label="Voir le post LinkedIn">
+                    <span class="post-overlay-label">Voir le post →</span>
+                  </a>
+                </div>
+                <p class="post-text">Les infopreneurs font souvent les mêmes erreurs : vouloir tout gérer seul, attendre d'être à bout pour déléguer, penser que personne ne fera aussi bien. Tu as besoin de faire les bonnes choses… et de lâcher prise sur le reste.</p>
+              </div>
+            </div>
+
+          </div><!-- /.carousel-viewport -->
+
+          <!-- Points de navigation -->
+          <div class="carousel-dots" role="tablist" aria-label="Navigation du carousel">
+            <button class="carousel-dot carousel-dot--active" data-slide="0" role="tab" aria-selected="true"  aria-label="Post Instagram"></button>
+            <button class="carousel-dot"                     data-slide="1" role="tab" aria-selected="false" aria-label="Post Facebook"></button>
+            <button class="carousel-dot"                     data-slide="2" role="tab" aria-selected="false" aria-label="Post LinkedIn"></button>
+          </div>
+
+        </aside><!-- /.posts-carousel -->
+
+      </div><!-- /.hero-inner -->
+
       <div class="hero-arrow" aria-hidden="true">↓</div>
     </section>
 
@@ -339,6 +436,47 @@
   if (stickyCta && heroSection) {
     new IntersectionObserver(([e]) => stickyCta.classList.toggle('visible', !e.isIntersecting), { threshold: 0 }).observe(heroSection);
   }
+
+  /* ---- Carousel "Derniers posts" ---- */
+  (function () {
+    const slides   = document.querySelectorAll('.carousel-slide');
+    const dots     = document.querySelectorAll('.carousel-dot');
+    const viewport = document.getElementById('carousel-viewport');
+    if (!slides.length) return;
+
+    let current = 0;
+    let timer;
+
+    function goTo(index) {
+      slides[current].classList.remove('carousel-slide--active');
+      dots[current].classList.remove('carousel-dot--active');
+      dots[current].setAttribute('aria-selected', 'false');
+      current = (index + slides.length) % slides.length;
+      slides[current].classList.add('carousel-slide--active');
+      dots[current].classList.add('carousel-dot--active');
+      dots[current].setAttribute('aria-selected', 'true');
+    }
+
+    function startAuto() {
+      timer = setInterval(function () { goTo(current + 1); }, 3000);
+    }
+
+    dots.forEach(function (dot, i) {
+      dot.addEventListener('click', function () {
+        clearInterval(timer);
+        goTo(i);
+        startAuto();
+      });
+    });
+
+    /* Pause pendant le survol du carousel */
+    if (viewport) {
+      viewport.addEventListener('mouseenter', function () { clearInterval(timer); });
+      viewport.addEventListener('mouseleave', startAuto);
+    }
+
+    startAuto();
+  }());
   </script>
 
 </body>
