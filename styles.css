@@ -38,11 +38,12 @@
 }
 
 html.dark {
-  --creme:      #1E1916;
-  --rose-pale:  #252019;
-  --anthracite: #F0E8E0;
-  --blanc:      #2A2018;
-  --gris-moyen: #B8A8A0;
+  --creme:        #1E1916;
+  --rose-pale:    #252019;
+  --anthracite:   #F0E8E0;
+  --blanc:        #2A2018;
+  --gris-moyen:   #B8A8A0;
+  --jaune-pastel: #2C2510;
 }
 
 /* ---- Reset ---- */
