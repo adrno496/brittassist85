@@ -1720,13 +1720,11 @@
 
 
   <script>
-    /* ── WEB3FORMS KEY ──────────────────────────────────────────────────
-       1. Aller sur https://web3forms.com
-       2. Entrer l'email : brittanydreano.cm@gmail.com → cliquer "Get Access Key"
-       3. Vérifier l'email reçu → copier la clé
-       4. Remplacer VOTRE_CLÉ_WEB3FORMS ci-dessous par la vraie clé
-    ─────────────────────────────────────────────────────────────────── */
-    const WEB3FORMS_KEY = 'VOTRE_CLÉ_WEB3FORMS';
+    /* ── FORMSUBMIT — Aucune configuration requise.
+       Lors du 1er envoi, un email de confirmation sera envoyé à
+       brittanydreano.cm@gmail.com → cliquer "Confirm" → c'est tout.
+    ────────────────────────────────────────────────────────────────── */
+    const FORMSUBMIT_URL = 'https://formsubmit.co/ajax/brittanydreano.cm@gmail.com';
 
     const FORM_LABELS = {
       starter:  'Forfait Starter 🌸',
@@ -1891,16 +1889,15 @@
       if (btn) { btn.disabled = true; btn.textContent = 'Envoi en cours…'; }
 
       try {
-        await fetch('https://api.web3forms.com/submit', {
+        await fetch(FORMSUBMIT_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
           body: JSON.stringify({
-            access_key: WEB3FORMS_KEY,
-            subject: `[Brittassist] ${FORM_LABELS[prefix]} — ${prenom} ${nom}`.trim(),
-            from_name: `${prenom} ${nom}`.trim() || 'Inconnu',
+            _subject: `[Brittassist] ${FORM_LABELS[prefix]} — ${prenom} ${nom}`.trim(),
+            name: `${prenom} ${nom}`.trim() || 'Inconnu',
             email: email || 'non renseigné',
             message: lines.join('\n'),
-            botcheck: ''
+            _captcha: 'false'
           })
         });
       } catch (err) {

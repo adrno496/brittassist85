@@ -26,11 +26,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
 
   <!-- ============================================================
-       WEB3FORMS — CONFIGURATION (1 seule fois)
-       1. Aller sur https://web3forms.com
-       2. Entrer : brittanydreano.cm@gmail.com → cliquer "Get Access Key"
-       3. Vérifier l'email reçu → copier la clé
-       4. Remplacer VOTRE_CLÉ_WEB3FORMS dans le JS ci-dessous
+       FORMSUBMIT — Aucune configuration requise.
+       Lors du 1er envoi, un email de confirmation sera envoyé à
+       brittanydreano.cm@gmail.com → cliquer "Confirm" → c'est tout.
   ============================================================ -->
 
   <link rel="stylesheet" href="styles.css" />
@@ -301,8 +299,7 @@
      ⚠️ Remplacer ces 3 valeurs par vos vraies clés EmailJS
      Voir les instructions dans le <head> de cette page
   ============================================================ */
-  // ← Remplacer par votre clé obtenue sur https://web3forms.com
-  const WEB3FORMS_KEY = 'VOTRE_CLÉ_WEB3FORMS';
+  const FORMSUBMIT_URL = 'https://formsubmit.co/ajax/brittanydreano.cm@gmail.com';
 
   /* ---- Dark mode ---- */
   const darkBtn = document.getElementById('dark-mode-toggle');
@@ -391,20 +388,19 @@
       };
 
       try {
-        const res = await fetch('https://api.web3forms.com/submit', {
+        const res = await fetch(FORMSUBMIT_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
           body: JSON.stringify({
-            access_key: WEB3FORMS_KEY,
-            subject: `[Brittassist] Nouveau message de ${templateParams.from_name}`,
-            from_name: templateParams.from_name,
+            _subject: `[Brittassist] Nouveau message de ${templateParams.from_name}`,
+            name: templateParams.from_name,
             email: templateParams.from_email,
             message: `Téléphone : ${templateParams.phone}\nProfil : ${templateParams.profile_type}\nBesoin : ${templateParams.main_need}\n\n${templateParams.message}`,
-            botcheck: ''
+            _captcha: 'false'
           })
         });
         const result = await res.json();
-        if (!result.success) throw new Error(result.message);
+        if (result.success !== 'true' && result.success !== true) throw new Error('Échec envoi');
         const successMsg = document.getElementById('contact-success');
         if (successMsg) { successMsg.classList.add('show'); setTimeout(() => successMsg.classList.remove('show'), 8000); }
         contactForm.reset();
