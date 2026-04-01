@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://brittassit.fr/sitemap.xml
+Sitemap: https://brittassist.fr/sitemap.xml
