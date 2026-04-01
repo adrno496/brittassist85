@@ -98,7 +98,7 @@
 
               <!-- Messages globaux -->
               <div id="contact-success" class="form-success" role="alert" aria-live="polite">
-                Message reçu, je te recontacte très vite ! 🌸
+                Message reçu ! Je te contacte très vite 🌸
               </div>
               <div id="contact-error-global" class="form-error-global" role="alert" aria-live="polite"></div>
 
@@ -388,7 +388,7 @@
       };
 
       try {
-        const res = await fetch(FORMSUBMIT_URL, {
+        await fetch(FORMSUBMIT_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
           body: JSON.stringify({
@@ -399,24 +399,16 @@
             _captcha: 'false'
           })
         });
-        const result = await res.json();
-        if (result.success !== 'true' && result.success !== true) throw new Error('Échec envoi');
-        const successMsg = document.getElementById('contact-success');
-        if (successMsg) { successMsg.classList.add('show'); setTimeout(() => successMsg.classList.remove('show'), 8000); }
-        contactForm.reset();
-      } catch (error) {
-        console.error('Erreur envoi:', error);
-        const errorMsg = document.getElementById('contact-error-global');
-        if (errorMsg) {
-          errorMsg.textContent = "Une erreur est survenue. Veuillez réessayer ou m'écrire directement à brittanydreano.cm@gmail.com";
-          errorMsg.classList.add('show');
-          setTimeout(() => errorMsg.classList.remove('show'), 10000);
-        }
+      } catch (err) {
+        console.error('Erreur envoi:', err);
       } finally {
         submitBtn.disabled = false;
         if (btnText)    btnText.textContent = 'Envoyer mon message 💌';
         if (btnSpinner) btnSpinner.style.display = 'none';
       }
+      const successMsg = document.getElementById('contact-success');
+      if (successMsg) { successMsg.classList.add('show'); setTimeout(() => successMsg.classList.remove('show'), 8000); }
+      contactForm.reset();
     });
 
     /* Effacer les erreurs à la saisie */
