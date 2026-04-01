@@ -94,13 +94,17 @@
             <h2 style="margin-bottom: 8px;">Envoyez-moi un message</h2>
             <p style="color: var(--gris-moyen); margin-bottom: 32px;">Décrivez votre situation et vos besoins. Je vous réponds personnellement sous 24h les jours ouvrés.</p>
 
-            <form id="contact-form" novalidate>
+            <!-- Message de confirmation (visible si ?sent=1 dans l'URL) -->
+            <div id="contact-success" class="form-success" role="alert" style="display:none;">
+              Message reçu ! Je te contacte très vite 🌸
+            </div>
 
-              <!-- Messages globaux -->
-              <div id="contact-success" class="form-success" role="alert" aria-live="polite">
-                Message reçu ! Je te contacte très vite 🌸
-              </div>
-              <div id="contact-error-global" class="form-error-global" role="alert" aria-live="polite"></div>
+            <form id="contact-form" action="https://formsubmit.co/brittanydreano.cm@gmail.com" method="POST" novalidate>
+
+              <!-- Formsubmit config -->
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_subject" value="[Brittassist] Nouveau message depuis le site" />
+              <input type="hidden" name="_next" id="next-url" value="" />
 
               <!-- Ligne 1 : Prénom + Nom -->
               <div class="form-row">
@@ -178,8 +182,7 @@
 
               <!-- Bouton submit -->
               <button type="submit" class="btn btn--primary btn--submit" id="submit-btn">
-                <span class="btn-text">Envoyer mon message 💌</span>
-                <span class="btn-spinner" style="display:none;" aria-hidden="true">⏳</span>
+                Envoyer mon message 💌
               </button>
 
               <p class="form-note">⏱ Réponse personnelle sous 24h · 🔒 Données confidentielles</p>
@@ -294,12 +297,16 @@
   <script>
   'use strict';
 
-  /* ============================================================
-     EMAILJS — CONSTANTES DE CONFIGURATION
-     ⚠️ Remplacer ces 3 valeurs par vos vraies clés EmailJS
-     Voir les instructions dans le <head> de cette page
-  ============================================================ */
-  const FORMSUBMIT_URL = 'https://formsubmit.co/ajax/brittanydreano.cm@gmail.com';
+  /* Formsubmit — définir l'URL de retour dynamiquement */
+  const nextInput = document.getElementById('next-url');
+  if (nextInput) nextInput.value = window.location.href.split('?')[0] + '?sent=1';
+
+  /* Afficher le message de confirmation si ?sent=1 */
+  if (new URLSearchParams(window.location.search).get('sent') === '1') {
+    const s = document.getElementById('contact-success');
+    if (s) { s.style.display = 'block'; s.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+    window.history.replaceState({}, '', window.location.pathname);
+  }
 
   /* ---- Dark mode ---- */
   const darkBtn = document.getElementById('dark-mode-toggle');
@@ -344,71 +351,25 @@
     if (errorEl) errorEl.classList.remove('show');
   }
 
-  /* ---- Formulaire de contact ---- */
+  /* ---- Formulaire de contact — validation avant soumission native ---- */
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
-    contactForm.addEventListener('submit', async function(e) {
-      e.preventDefault();
-
+    contactForm.addEventListener('submit', function(e) {
       const prenom  = document.getElementById('c-prenom');
       const nom     = document.getElementById('c-nom');
       const email   = document.getElementById('c-email');
-      const phone   = document.getElementById('c-phone');
-      const profile = document.getElementById('c-profile');
-      const need    = document.getElementById('c-need');
       const message = document.getElementById('c-message');
       const rgpd    = document.getElementById('c-rgpd');
 
       let valid = true;
-      valid = setFieldError('c-prenom',  'c-prenom-error',  !prenom.value.trim())       && valid;
-      valid = setFieldError('c-nom',     'c-nom-error',     !nom.value.trim())           && valid;
-      valid = setFieldError('c-email',   'c-email-error',   !isValidEmail(email.value))  && valid;
-      valid = setFieldError('c-message', 'c-message-error', !message.value.trim())       && valid;
-      valid = setFieldError('c-rgpd',    'c-rgpd-error',    !rgpd.checked)               && valid;
+      valid = setFieldError('c-prenom',  'c-prenom-error',  !prenom.value.trim())      && valid;
+      valid = setFieldError('c-nom',     'c-nom-error',     !nom.value.trim())          && valid;
+      valid = setFieldError('c-email',   'c-email-error',   !isValidEmail(email.value)) && valid;
+      valid = setFieldError('c-message', 'c-message-error', !message.value.trim())      && valid;
+      valid = setFieldError('c-rgpd',    'c-rgpd-error',    !rgpd.checked)              && valid;
 
-      if (!valid) return;
-
-      const submitBtn  = contactForm.querySelector('button[type="submit"]');
-      const btnText    = submitBtn.querySelector('.btn-text');
-      const btnSpinner = submitBtn.querySelector('.btn-spinner');
-
-      submitBtn.disabled = true;
-      if (btnText)    btnText.textContent = 'Envoi en cours…';
-      if (btnSpinner) btnSpinner.style.display = 'inline-block';
-
-      const templateParams = {
-        from_name:    `${prenom.value.trim()} ${nom.value.trim()}`,
-        from_email:   email.value.trim(),
-        reply_to:     email.value.trim(),
-        phone:        phone && phone.value.trim() ? phone.value.trim() : 'Non renseigné',
-        profile_type: profile && profile.value ? profile.options[profile.selectedIndex].text : 'Non renseigné',
-        main_need:    need && need.value ? need.options[need.selectedIndex].text : 'Non renseigné',
-        message:      message.value.trim(),
-        to_email:     'brittanydreano.cm@gmail.com'
-      };
-
-      try {
-        await fetch(FORMSUBMIT_URL, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify({
-            _subject: `[Brittassist] Nouveau message de ${templateParams.from_name}`,
-            name: templateParams.from_name,
-            email: templateParams.from_email,
-            message: `Téléphone : ${templateParams.phone}\nProfil : ${templateParams.profile_type}\nBesoin : ${templateParams.main_need}\n\n${templateParams.message}`,
-            _captcha: 'false'
-          })
-        });
-      } catch (err) {
-        console.error('Erreur envoi:', err);
-      } finally {
-        submitBtn.disabled = false;
-        if (btnText)    btnText.textContent = 'Envoyer mon message 💌';
-        if (btnSpinner) btnSpinner.style.display = 'none';
-      }
-      const successMsg = document.getElementById('contact-success');
-      if (successMsg) { successMsg.classList.add('show'); setTimeout(() => successMsg.classList.remove('show'), 8000); }
-      contactForm.reset();
+      if (!valid) { e.preventDefault(); return; }
+      /* Si valide : le formulaire se soumet normalement vers Formsubmit */
     });
 
     /* Effacer les erreurs à la saisie */
