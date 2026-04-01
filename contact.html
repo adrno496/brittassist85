@@ -26,30 +26,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
 
   <!-- ============================================================
-       EMAILJS SDK — OBLIGATOIRE pour l'envoi du formulaire
-       
-       CONFIGURATION À FAIRE UNE SEULE FOIS :
-       1. Aller sur https://www.emailjs.com et créer un compte gratuit
-       2. Ajouter un service email :
-          - Dashboard → "Email Services" → "Add New Service"
-          - Choisir "Gmail" et se connecter avec brittanydreano.cm@gmail.com
-          - Nommer le service "brittassit_contact"
-          - Copier le SERVICE_ID généré
-       3. Créer un template d'email :
-          - Dashboard → "Email Templates" → "Create New Template"
-          - Nommer le template "template_contact_brittassit"
-          - Subject : [Brittassist] Nouveau message de {{from_name}}
-          - To : brittanydreano.cm@gmail.com
-          - Copier le TEMPLATE_ID généré
-       4. Récupérer la Public Key :
-          - Dashboard → "Account" → "General" → copier "Public Key"
-       5. Remplacer les 3 constantes dans le JS ci-dessous
+       WEB3FORMS — CONFIGURATION (1 seule fois)
+       1. Aller sur https://web3forms.com
+       2. Entrer : brittanydreano.cm@gmail.com → cliquer "Get Access Key"
+       3. Vérifier l'email reçu → copier la clé
+       4. Remplacer VOTRE_CLÉ_WEB3FORMS dans le JS ci-dessous
   ============================================================ -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-    // ← Remplacer 'VOTRE_PUBLIC_KEY_ICI' par votre vraie Public Key EmailJS
-    emailjs.init('VOTRE_PUBLIC_KEY_ICI');
-  </script>
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -118,7 +100,7 @@
 
               <!-- Messages globaux -->
               <div id="contact-success" class="form-success" role="alert" aria-live="polite">
-                ✅ Votre message a bien été envoyé ! Je vous réponds sous 24h. 🌸
+                Message reçu, je te recontacte très vite ! 🌸
               </div>
               <div id="contact-error-global" class="form-error-global" role="alert" aria-live="polite"></div>
 
@@ -319,9 +301,8 @@
      ⚠️ Remplacer ces 3 valeurs par vos vraies clés EmailJS
      Voir les instructions dans le <head> de cette page
   ============================================================ */
-  const EMAILJS_SERVICE_ID  = 'VOTRE_SERVICE_ID_ICI';   // ← ex: 'service_abc123'
-  const EMAILJS_TEMPLATE_ID = 'VOTRE_TEMPLATE_ID_ICI';  // ← ex: 'template_xyz789'
-  const EMAILJS_PUBLIC_KEY  = 'VOTRE_PUBLIC_KEY_ICI';   // ← ex: 'abcDEFghiJKL123'
+  // ← Remplacer par votre clé obtenue sur https://web3forms.com
+  const WEB3FORMS_KEY = 'VOTRE_CLÉ_WEB3FORMS';
 
   /* ---- Dark mode ---- */
   const darkBtn = document.getElementById('dark-mode-toggle');
@@ -410,12 +391,25 @@
       };
 
       try {
-        await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_KEY);
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({
+            access_key: WEB3FORMS_KEY,
+            subject: `[Brittassist] Nouveau message de ${templateParams.from_name}`,
+            from_name: templateParams.from_name,
+            email: templateParams.from_email,
+            message: `Téléphone : ${templateParams.phone}\nProfil : ${templateParams.profile_type}\nBesoin : ${templateParams.main_need}\n\n${templateParams.message}`,
+            botcheck: ''
+          })
+        });
+        const result = await res.json();
+        if (!result.success) throw new Error(result.message);
         const successMsg = document.getElementById('contact-success');
         if (successMsg) { successMsg.classList.add('show'); setTimeout(() => successMsg.classList.remove('show'), 8000); }
         contactForm.reset();
       } catch (error) {
-        console.error('EmailJS error:', error);
+        console.error('Erreur envoi:', error);
         const errorMsg = document.getElementById('contact-error-global');
         if (errorMsg) {
           errorMsg.textContent = "Une erreur est survenue. Veuillez réessayer ou m'écrire directement à brittanydreano.cm@gmail.com";
