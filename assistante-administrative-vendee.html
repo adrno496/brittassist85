@@ -3,6 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-23YNXWSP1S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-23YNXWSP1S');
+  </script>
   <title>Assistante administrative en Vendée (85) — Brittassist</title>
   <meta name="description" content="Assistante administrative en Vendée (85). Externalisez votre gestion administrative : devis, facturation, organisation. Service rapide et professionnel avec Brittassist." />
   <link rel="canonical" href="https://brittassist.fr/assistante-administrative-vendee.html" />
@@ -59,8 +67,8 @@
         <li><a href="services.html">Services</a></li>
         <li><a href="a-propos.html">À propos</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="questionnaires.html">Questionnaire</a></li>
-        <li><a href="contact.html" class="nav-cta">Réserver un appel 📞</a></li>
+        <li><a href="questionnaires.html" onclick="gtag('event', 'click', {'event_category': 'cta', 'event_label': 'contact'});">Questionnaire</a></li>
+        <li><a href="contact.html" class="nav-cta" onclick="gtag('event', 'click', {'event_category': 'cta', 'event_label': 'contact'});">Réserver un appel 📞</a></li>
       </ul>
       <div class="nav-actions">
         <div class="nav-social" aria-label="Nos réseaux sociaux">

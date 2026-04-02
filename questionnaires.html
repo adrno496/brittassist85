@@ -3,6 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-23YNXWSP1S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-23YNXWSP1S');
+  </script>
   <title>Questionnaire — Brittassist</title>
   <meta name="description" content="Dites-moi tout sur votre projet sans passer par le téléphone. Répondez à ce questionnaire pour que je comprenne vos besoins." />
   <link rel="canonical" href="https://brittassit.fr/questionnaires.html" />
@@ -813,7 +821,7 @@
       </div>
       <div class="step-nav">
         <button class="btn btn-outline" onclick="prevStep('starter',5)">← Retour</button>
-        <button class="btn btn-primary" onclick="submitForm('starter')">Envoyer mon questionnaire 🌸</button>
+        <button class="btn btn-primary" onclick="submitForm('starter'); gtag('event', 'click', {'event_category': 'cta', 'event_label': 'contact'});">Envoyer mon questionnaire 🌸</button>
       </div>
     </div>
 
@@ -1179,7 +1187,7 @@
       </div>
       <div class="step-nav">
         <button class="btn btn-outline" onclick="prevStep('essentiel',6)">← Retour</button>
-        <button class="btn btn-primary" onclick="submitForm('essentiel')">Envoyer mon questionnaire 💼</button>
+        <button class="btn btn-primary" onclick="submitForm('essentiel'); gtag('event', 'click', {'event_category': 'cta', 'event_label': 'contact'});">Envoyer mon questionnaire 💼</button>
       </div>
     </div>
 
@@ -1510,7 +1518,7 @@
       </div>
       <div class="step-nav">
         <button class="btn btn-outline" onclick="prevStep('premium',6)">← Retour</button>
-        <button class="btn btn-primary" onclick="submitForm('premium')">Envoyer mon questionnaire ✨</button>
+        <button class="btn btn-primary" onclick="submitForm('premium'); gtag('event', 'click', {'event_category': 'cta', 'event_label': 'contact'});">Envoyer mon questionnaire ✨</button>
       </div>
     </div>
 
@@ -1692,7 +1700,7 @@
       </div>
       <div class="step-nav">
         <button class="btn btn-outline" onclick="prevStep('carte',4)">← Retour</button>
-        <button class="btn btn-primary" onclick="submitForm('carte')">Envoyer ma demande 🎯</button>
+        <button class="btn btn-primary" onclick="submitForm('carte'); gtag('event', 'click', {'event_category': 'cta', 'event_label': 'contact'});">Envoyer ma demande 🎯</button>
       </div>
     </div>
 

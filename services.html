@@ -3,6 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-23YNXWSP1S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-23YNXWSP1S');
+  </script>
   <title>Services & Forfaits — Brittassist | Assistante indépendante</title>
   <meta name="description" content="Découvrez les services et forfaits de Brittany Dreano, assistante indépendante : réseaux sociaux, gestion des mails, organisation et support administratif." />
   <link rel="canonical" href="https://brittassit.fr/services.html" />
@@ -43,8 +51,8 @@
         <li><a href="services.html" class="active">Services</a></li>
         <li><a href="a-propos.html">À propos</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="questionnaires.html">Questionnaire</a></li>
-        <li><a href="contact.html" class="nav-cta">Réserver un appel 📞</a></li>
+        <li><a href="questionnaires.html" onclick="gtag('event', 'click', {'event_category': 'cta', 'event_label': 'contact'});">Questionnaire</a></li>
+        <li><a href="contact.html" class="nav-cta" onclick="gtag('event', 'click', {'event_category': 'cta', 'event_label': 'contact'});">Réserver un appel 📞</a></li>
       </ul>
       <div class="nav-actions">
         <div class="nav-social" aria-label="Nos réseaux sociaux">
@@ -289,7 +297,7 @@
 
   <div class="sticky-cta-bar" id="sticky-cta-bar" role="complementary">
     <span class="sticky-cta-text">Découvrez l'accompagnement qui vous convient 🌸</span>
-    <a href="contact.html" class="btn btn--primary" style="padding: 10px 24px; font-size: 0.88rem;">Réserver un appel gratuit →</a>
+    <a href="contact.html" class="btn btn--primary" style="padding: 10px 24px; font-size: 0.88rem;" onclick="gtag('event', 'click', {'event_category': 'cta', 'event_label': 'contact'});">Réserver un appel gratuit →</a>
   </div>
 
   <script>
