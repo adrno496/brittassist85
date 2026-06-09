@@ -1048,11 +1048,11 @@ html.dark .form-note {
    adaptés à la palette rose / jaune / crème BrittAssist
 ============================================================ */
 
-/* ---- Registry bar : bandeau fixe haut très discret ---- */
+/* ---- Registry bar : bandeau fixe haut, statut + réseaux à droite ---- */
 .registry-bar {
   position: fixed;
   top: 0; left: 0; right: 0;
-  height: 36px;
+  height: 40px;
   z-index: 1100;
   background: rgba(253, 250, 247, 0.92);
   backdrop-filter: blur(8px);
@@ -1060,7 +1060,6 @@ html.dark .form-note {
   border-bottom: 1px solid rgba(232, 160, 176, 0.25);
   display: flex;
   align-items: center;
-  justify-content: center;
   font-family: var(--font-sans);
   font-size: 11px;
   letter-spacing: 0.16em;
@@ -1068,12 +1067,25 @@ html.dark .form-note {
   color: var(--gris-moyen);
 }
 .registry-bar .inner {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 0 18px;
+}
+.registry-bar__spacer { width: 100%; }
+.registry-bar__status {
   display: flex;
   align-items: center;
-  gap: 18px;
-  padding: 0 24px;
-  flex-wrap: wrap;
+  gap: 14px;
   justify-content: center;
+  flex-wrap: wrap;
+  white-space: nowrap;
+}
+.registry-bar__social {
+  display: flex;
+  justify-content: flex-end;
 }
 .registry-bar .dot {
   width: 7px;
@@ -1090,11 +1102,24 @@ html.dark .form-note {
   0%, 100% { box-shadow: 0 0 0 0 rgba(232, 160, 176, 0.55); }
   50% { box-shadow: 0 0 0 6px rgba(232, 160, 176, 0); }
 }
-html.has-registry-bar #navbar { top: 36px; }
-@media (max-width: 640px) {
-  .registry-bar { font-size: 10px; height: 32px; }
-  .registry-bar .inner { gap: 12px; }
-  html.has-registry-bar #navbar { top: 32px; }
+html.has-registry-bar #navbar { top: 40px; }
+
+/* Tablette : on resserre, le statut peut wrapper */
+@media (max-width: 900px) {
+  .registry-bar { font-size: 10px; height: 38px; letter-spacing: 0.12em; }
+  .registry-bar .inner { grid-template-columns: 1fr auto; padding: 0 14px; gap: 12px; }
+  .registry-bar__spacer { display: none; }
+  html.has-registry-bar #navbar { top: 38px; }
+}
+
+/* Mobile : on ne garde que le badge "100 % à distance" + le dot + les réseaux */
+@media (max-width: 600px) {
+  .registry-bar { height: 36px; }
+  .registry-bar__status { gap: 8px; font-size: 9.5px; }
+  .registry-bar__status > span:nth-child(2),
+  .registry-bar__status > span:nth-child(3),
+  .registry-bar__status > span:nth-child(4) { display: none; }
+  html.has-registry-bar #navbar { top: 36px; }
 }
 
 /* ---- Section mark : § pilcrow + ligne fine ---- */

@@ -1,7 +1,7 @@
 ---
 interface Props {
   size?: number;
-  variant?: 'footer' | 'inline';
+  variant?: 'footer' | 'inline' | 'registry';
 }
 const { size = 18, variant = 'footer' } = Astro.props;
 
@@ -100,5 +100,29 @@ const links = [
   :global(html.dark) .social-links--inline a {
     background: var(--dm-surface);
     border-color: rgba(232, 160, 176, 0.18);
+  }
+
+  /* Variant : registry bar (compact, en haut du site) */
+  .social-links--registry {
+    gap: 4px;
+  }
+  .social-links--registry a {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    color: var(--gris-moyen);
+    border: 1px solid transparent;
+  }
+  .social-links--registry a:hover {
+    color: var(--rose-fonce);
+    background: rgba(232, 160, 176, 0.12);
+    transform: translateY(-1px);
+  }
+  .social-links--registry svg {
+    width: 14px;
+    height: 14px;
+  }
+  :global(html.dark) .social-links--registry a:hover {
+    background: rgba(232, 160, 176, 0.16);
   }
 </style>

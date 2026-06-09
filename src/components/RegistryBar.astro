@@ -1,14 +1,20 @@
 ---
-// Bandeau fixe haut : statut discret type "Accompagnement personnalisé · Réponse 24h"
+import SocialLinks from './SocialLinks.astro';
 ---
 
-<div class="registry-bar" role="complementary" aria-label="Information">
+<div class="registry-bar" role="complementary" aria-label="Informations et réseaux sociaux">
   <div class="inner">
-    <span class="dot" aria-hidden="true"></span>
-    <span>Accompagnement personnalisé</span>
-    <span class="sep">·</span>
-    <span>Réponse sous 24 h</span>
-    <span class="sep">·</span>
-    <span>100 % à distance</span>
+    <div class="registry-bar__spacer" aria-hidden="true"></div>
+    <div class="registry-bar__status">
+      <span class="dot" aria-hidden="true"></span>
+      <span>Accompagnement personnalisé</span>
+      <span class="sep">·</span>
+      <span>Réponse sous 24 h</span>
+      <span class="sep">·</span>
+      <span>100 % à distance</span>
+    </div>
+    <div class="registry-bar__social">
+      <SocialLinks variant="registry" size={14} />
+    </div>
   </div>
 </div>
