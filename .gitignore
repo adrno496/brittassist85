@@ -28,3 +28,4 @@ pnpm-debug.log*
 
 # Référence visuelle Axdia (copie locale, pas du code BrittAssist)
 site/
+.vercel

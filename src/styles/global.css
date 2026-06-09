@@ -379,7 +379,7 @@ footer { background: var(--anthracite); color: rgba(253,250,247,0.75); padding: 
   .processus-steps { grid-template-columns: 1fr 1fr; }
   .gallery-grid { grid-template-columns: 1fr; }
   .page-hero-inner { grid-template-columns: 1fr; }
-  .page-hero-img { display: none; }
+  .page-hero-img img { height: 320px !important; }
   .about-layout { grid-template-columns: 1fr; gap: 40px; }
 }
 
@@ -1648,6 +1648,172 @@ body.nav-open { overflow: hidden; }
   line-height: 1.7;
 }
 .lede strong { color: var(--anthracite); font-weight: 600; }
+
+/* ============================================================
+   HERO 2-COLONNES + RESPONSIVE COMPLET (refonte 2026)
+============================================================ */
+
+/* Layout 2 colonnes du hero d'accueil */
+.hero { padding: 0; }
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 24px 80px;
+  position: relative;
+  z-index: 1;
+}
+.hero .hero-content {
+  text-align: left;
+  max-width: none;
+  padding: 0;
+}
+.hero-visual { position: relative; }
+
+@media (max-width: 980px) {
+  .hero { min-height: auto; }
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 100px 20px 50px;
+  }
+  .hero .hero-content { text-align: center; }
+  .hero-visual { max-width: 380px; margin: 0 auto; }
+  .hero-cta { justify-content: center !important; }
+  .hero-badges { justify-content: center !important; }
+  .hero-stamp { display: none !important; }
+}
+
+/* Nav-cta : sur mobile, on cache le bouton CTA dans la barre nav,
+   on garde le hamburger pour ouvrir le menu où le CTA est dispo */
+@media (max-width: 768px) {
+  .nav-cta { display: none; }
+  .nav-actions { gap: 10px; }
+  #dark-mode-toggle { width: 40px; height: 40px; min-width: 40px; min-height: 40px; }
+}
+
+/* Section-folio plus serrée sur mobile */
+@media (max-width: 768px) {
+  .section-folio { padding: 56px 0; }
+  .section-folio__head { margin-bottom: 36px; }
+  .cta-final-folio { padding: 60px 0; }
+}
+
+/* Container plus serré sur mobile */
+@media (max-width: 640px) {
+  .section-folio { padding: 48px 0; }
+  .cta-final-folio { padding: 48px 0; }
+  .section-mark { margin-bottom: 22px; font-size: 10px; gap: 10px; }
+  .section-mark .pilcrow { font-size: 22px; }
+  .section-mark::after { max-width: 80px; }
+}
+
+/* Form mobile : padding réduit */
+@media (max-width: 700px) {
+  .contact-form { padding: 24px; }
+  .form-fieldset legend { font-size: 1.2rem; }
+}
+
+/* Domain grid : déjà auto-fit, OK partout */
+@media (max-width: 480px) {
+  .domain-card { padding: 28px 22px; }
+  .pain-card { padding: 24px 20px; }
+}
+
+/* Page-hero (pages internes) : padding mobile réduit */
+@media (max-width: 768px) {
+  .page-hero { padding: 110px 0 50px; }
+  html.has-registry-bar .page-hero { padding-top: 110px; }
+  .page-hero .container { padding: 0 20px; }
+}
+
+/* Ecosystem card mobile */
+@media (max-width: 700px) {
+  .ecosystem-card { padding: 28px 22px; }
+  .ecosystem-card__head { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .ecosystem-card__brand { font-size: 1.6rem; }
+}
+
+/* Stats block : 1 col sur très petits écrans */
+@media (max-width: 480px) {
+  .stats-block { grid-template-columns: 1fr; }
+  .stat { border-right: 0 !important; border-bottom: 1px solid rgba(232,160,176,0.3) !important; }
+  .stat:last-child { border-bottom: 0 !important; }
+}
+
+/* Nav-links mobile : améliore l'overlay (taille + padding pour CTA dans le menu) */
+@media (max-width: 768px) {
+  .nav-links.open {
+    padding: 100px 24px 40px;
+    overflow-y: auto;
+    justify-content: flex-start;
+    text-align: center;
+  }
+  .nav-links a {
+    font-size: 1.3rem;
+    font-family: var(--font-serif);
+    padding: 14px 24px;
+    width: 100%;
+    max-width: 320px;
+    border-bottom: 1px solid rgba(232,160,176,0.2);
+  }
+  .nav-links a.active {
+    color: var(--rose-fonce);
+    font-weight: 500;
+  }
+  /* CTA en bas du menu mobile */
+  .nav-links li:last-child a {
+    margin-top: 20px;
+    background: var(--rose-fonce-text, #B85574);
+    color: white !important;
+    border-radius: var(--radius-pill);
+    border-bottom: 0;
+    padding: 14px 32px;
+  }
+}
+
+/* Footer mobile : améliorations */
+@media (max-width: 640px) {
+  footer { padding: 48px 0 80px; }
+  .footer-top, .footer-top--four { gap: 32px; }
+  .footer-bottom { gap: 16px; }
+  .footer-legal { flex-direction: column; gap: 8px; align-items: center; }
+}
+
+/* H1 / H2 mobile : taille raisonnable */
+@media (max-width: 640px) {
+  h1 { font-size: clamp(1.9rem, 7vw, 2.6rem); line-height: 1.15; }
+  h2 { font-size: clamp(1.5rem, 5.5vw, 2.2rem); }
+  .section-folio__title { font-size: clamp(1.5rem, 5.5vw, 2.2rem); }
+  .section-folio__lede { font-size: 1rem; }
+  .lede { font-size: 1rem; }
+}
+
+/* Boutons mobile : pleine largeur sur très petits écrans pour faciliter le tap */
+@media (max-width: 480px) {
+  .hero-cta { flex-direction: column; align-items: stretch; }
+  .hero-cta .btn { width: 100%; justify-content: center; }
+  .cta-final-folio .btn { width: 100%; max-width: 320px; }
+}
+
+/* Registry bar : très compact sur mobile */
+@media (max-width: 480px) {
+  .registry-bar { font-size: 9px; height: 30px; letter-spacing: 0.12em; }
+  .registry-bar .inner { gap: 8px; padding: 0 16px; }
+  html.has-registry-bar #navbar { top: 30px; }
+}
+
+/* Local card (page Vendée) mobile */
+@media (max-width: 700px) {
+  .local-card { padding: 24px 20px; }
+}
+
+/* Sticky safety : éviter overflow horizontal partout */
+body, html { overflow-x: hidden; }
 
 /* FAQ via <details> natif */
 details.faq-item {
