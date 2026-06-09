@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionMark from '../components/SectionMark.astro';
 import Button from '../components/Button.astro';
+import SocialLinks from '../components/SocialLinks.astro';
 
 const title = "Contact & appel découverte — Brittassist";
 const description = "Réservez votre appel découverte gratuit de 30 min ou envoyez-moi un message. Je réponds personnellement sous 24 h les jours ouvrés.";
@@ -172,6 +173,10 @@ const description = "Réservez votre appel découverte gratuit de 30 min ou envo
         <div class="contact-direct__item">
           <span class="contact-direct__label">Disponibilité</span>
           <span>Lundi au vendredi · Réponse sous 24 h</span>
+        </div>
+        <div class="contact-direct__item">
+          <span class="contact-direct__label">Réseaux sociaux</span>
+          <SocialLinks variant="inline" />
         </div>
       </div>
     </div>
