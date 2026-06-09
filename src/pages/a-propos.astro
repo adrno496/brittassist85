@@ -1,0 +1,273 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionMark from '../components/SectionMark.astro';
+import Button from '../components/Button.astro';
+
+const title = "À propos — Brittany Dreano · Brittassist";
+const description = "Brittany Dreano, fondatrice de Brittassist. 7 ans d'expérience en assistance, basée en Vendée, 100 % à distance. Une assistante humaine qui s'appuie sur l'IA pour vous faire gagner du temps.";
+---
+
+<BaseLayout title={title} description={description}>
+  <header class="page-hero page-hero--yellow">
+    <div class="container">
+      <div class="page-hero-inner">
+        <div class="page-hero-text">
+          <p class="hero-eyebrow">À propos</p>
+          <h1>
+            Bonjour, je suis <em>Brittany</em>.
+          </h1>
+          <p class="lede">
+            Assistante digitale, je vous accompagne au quotidien — humainement,
+            avec les bons outils, et soutenue par l'intelligence artificielle —
+            pour que vous retrouviez le temps de faire grandir votre activité.
+          </p>
+        </div>
+        <div class="page-hero-img">
+          <img
+            src="/images/brittany-noel-starbucks.jpg"
+            alt="Brittany Dreano, fondatrice de Brittassist"
+            width="540"
+            height="640"
+            loading="eager"
+            fetchpriority="high"
+          />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section-folio">
+    <div class="container">
+      <SectionMark num="01" label="Mon histoire" />
+      <div class="about-grid reveal">
+        <div>
+          <h2>De salariée à <em>assistante indépendante</em>.</h2>
+          <p class="lede" style="margin-bottom: 20px;">
+            Sept ans à exercer le métier d'assistante en entreprise. Sept ans à
+            voir les mêmes blocages chez les dirigeants : trop de petites
+            choses à gérer, trop peu de temps pour l'essentiel.
+          </p>
+          <p class="lede" style="margin-bottom: 20px;">
+            J'ai sauté le pas pour devenir indépendante : pouvoir choisir mes
+            clients, m'investir vraiment dans leur quotidien, leur offrir un
+            accompagnement personnalisé — pas un service standardisé.
+          </p>
+          <p class="lede">
+            Aujourd'hui, je travaille avec des entrepreneurs, des artisans, des
+            commerçants, des TPE qui partagent une même envie : déléguer
+            intelligemment pour reprendre la main sur leur temps.
+          </p>
+        </div>
+
+        <div class="stats-block">
+          <div class="stat">
+            <div class="stat__num">7</div>
+            <div class="stat__label">ans d'expérience</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">100 %</div>
+            <div class="stat__label">à distance</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">24 h</div>
+            <div class="stat__label">de délai de réponse</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">Vendée</div>
+            <div class="stat__label">basée à La Roche-sur-Yon</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-folio bleed-rose">
+    <div class="container">
+      <SectionMark num="02" label="Ce qui me différencie" />
+      <div class="section-folio__head reveal">
+        <h2 class="section-folio__title">
+          Une assistante <em>humaine</em>, amplifiée par <em>l'IA</em>.
+        </h2>
+        <p class="section-folio__lede">
+          Je ne suis pas une "agence" ni un outil automatisé. Je suis une
+          personne — qui s'investit dans votre activité, qui prend le temps de
+          comprendre votre métier, et qui utilise les bons outils (dont l'IA)
+          pour aller plus vite, sans perdre la qualité.
+        </p>
+      </div>
+
+      <div class="values-grid reveal d-1">
+        <div class="value-card">
+          <span class="value-icon">💛</span>
+          <h3>Humaine avant tout</h3>
+          <p>
+            Vous parlez à une personne réelle, pas à un chatbot ni à un
+            standard. Je m'investis, j'apprends votre métier, je m'adapte à
+            votre rythme.
+          </p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">✨</span>
+          <h3>Outillée et moderne</h3>
+          <p>
+            J'utilise l'IA comme un outil quotidien — pour rédiger plus vite,
+            synthétiser, organiser — toujours sous mon contrôle. Vous gardez
+            l'humain, vous gagnez la vitesse.
+          </p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🤝</span>
+          <h3>Connectée à un écosystème</h3>
+          <p>
+            Quand vos besoins dépassent l'assistance, je m'appuie sur
+            <strong>Axdia</strong> et un réseau de partenaires de confiance.
+            Vous gardez un seul interlocuteur — moi.
+          </p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">⚡</span>
+          <h3>Fiable et réactive</h3>
+          <p>
+            Réponse sous 24 h ouvrées, suivi mensuel, ajustements en continu.
+            Je tiens mes engagements et je préviens si quelque chose change.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-folio">
+    <div class="container">
+      <SectionMark num="03" label="Mes compétences" />
+      <div class="section-folio__head reveal">
+        <h2 class="section-folio__title">Les outils que je manie au quotidien.</h2>
+        <p class="section-folio__lede">
+          Mon socle technique, en clair. Si vous utilisez un autre outil, on
+          peut généralement s'en accommoder — ou je vous propose une
+          alternative simple.
+        </p>
+      </div>
+      <div class="competence-tags reveal d-1">
+        <span class="competence-tag">Google Workspace</span>
+        <span class="competence-tag">Gmail</span>
+        <span class="competence-tag">Notion</span>
+        <span class="competence-tag">Trello</span>
+        <span class="competence-tag">Canva</span>
+        <span class="competence-tag">Google Sheets</span>
+        <span class="competence-tag">Instagram</span>
+        <span class="competence-tag">Facebook</span>
+        <span class="competence-tag">LinkedIn</span>
+        <span class="competence-tag">TikTok</span>
+        <span class="competence-tag">Calendly</span>
+        <span class="competence-tag">Zapier / Make (light)</span>
+        <span class="competence-tag">ChatGPT</span>
+        <span class="competence-tag">Claude</span>
+        <span class="competence-tag">Mistral</span>
+        <span class="competence-tag">Drive / Dropbox</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final-folio">
+    <div class="container container--narrow reveal">
+      <h2>On se <em>parle</em>&nbsp;?</h2>
+      <p>
+        Le mieux pour faire connaissance, c'est encore 30 minutes au téléphone.
+        Sans engagement, sans pression.
+      </p>
+      <Button href="/contact" variant="primary">
+        Réserver mon appel découverte <span class="btn-arrow">→</span>
+      </Button>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--rose-fonce);
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
+  h1 em, h2 em, h3 em { font-style: italic; color: var(--rose-fonce); }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+  @media (max-width: 900px) {
+    .about-grid { grid-template-columns: 1fr; gap: 36px; }
+  }
+
+  .stats-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: 2px solid var(--anthracite);
+    background: var(--blanc);
+  }
+  html.dark .stats-block { background: var(--dm-surface); border-color: var(--anthracite); }
+  .stat {
+    padding: 32px 24px;
+    text-align: center;
+    border-right: 1px solid rgba(232, 160, 176, 0.3);
+    border-bottom: 1px solid rgba(232, 160, 176, 0.3);
+  }
+  .stat:nth-child(2n) { border-right: 0; }
+  .stat:nth-child(n+3) { border-bottom: 0; }
+  .stat__num {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 2.4rem;
+    color: var(--rose-fonce);
+    line-height: 1.1;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  .stat__label {
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    color: var(--gris-moyen);
+    letter-spacing: 0.04em;
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+  }
+  .value-card {
+    background: var(--blanc);
+    border: 1px solid rgba(232, 160, 176, 0.18);
+    border-radius: var(--radius-lg);
+    padding: 32px 28px;
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  html.dark .value-card { background: var(--dm-surface); border-color: rgba(232, 160, 176, 0.14); }
+  .value-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+  .value-icon { font-size: 2rem; display: block; margin-bottom: 14px; }
+  .value-card h3 { font-size: 1.2rem; margin-bottom: 12px; }
+  .value-card p { color: var(--gris-moyen); font-size: 0.95rem; line-height: 1.65; }
+
+  .competence-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .competence-tag {
+    padding: 8px 16px;
+    background: var(--blanc);
+    border: 1px solid rgba(232, 160, 176, 0.3);
+    border-radius: var(--radius-pill);
+    font-size: 0.88rem;
+    color: var(--anthracite);
+    transition: border-color var(--transition), background var(--transition);
+  }
+  .competence-tag:hover { border-color: var(--rose-fonce); background: var(--rose-pale); }
+  html.dark .competence-tag { background: var(--dm-surface); }
+</style>

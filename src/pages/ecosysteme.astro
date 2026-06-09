@@ -1,0 +1,167 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionMark from '../components/SectionMark.astro';
+import Button from '../components/Button.astro';
+
+const title = "Écosystème de partenaires — Brittassist + Axdia";
+const description = "Brittassist est la porte d'entrée pour déléguer votre quotidien. Pour les besoins techniques avancés, je m'appuie sur Axdia et un écosystème de partenaires de confiance.";
+---
+
+<BaseLayout title={title} description={description}>
+  <header class="page-hero">
+    <div class="container">
+      <p class="hero-eyebrow">Mon écosystème</p>
+      <h1>
+        Un <em>écosystème de confiance</em> autour de vous.
+      </h1>
+      <p class="lede">
+        Brittassist est votre porte d'entrée pour déléguer votre quotidien et
+        gagner du temps. Quand votre activité grandit et que les besoins
+        deviennent plus techniques, je m'appuie sur des partenaires choisis —
+        avec qui je travaille en confiance.
+      </p>
+    </div>
+  </header>
+
+  <section class="section-folio">
+    <div class="container">
+      <SectionMark num="01" label="Axdia · partenaire technique principal" />
+
+      <article class="ecosystem-card ecosystem-card--featured reveal">
+        <div class="ecosystem-card__head">
+          <div class="ecosystem-card__brand">Axdia<span class="dot">.</span></div>
+          <span class="ecosystem-card__tag">Atelier IA français</span>
+        </div>
+        <p class="ecosystem-card__lede">
+          <strong>Axdia</strong> est l'atelier IA d'Axel Dreano. C'est mon
+          partenaire privilégié pour tout ce qui demande une expertise
+          technique avancée : développement, intégration d'IA, automatisations,
+          transformation digitale. Quand un projet dépasse mon périmètre
+          d'assistance, je l'oriente vers Axdia et je fais le pont pour vous.
+        </p>
+
+        <h3 style="font-size: 1.05rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gris-moyen); margin-bottom: 14px; font-family: var(--font-sans); font-weight: 500;">
+          Domaines couverts par Axdia
+        </h3>
+        <div class="ecosystem-card__services">
+          <span>Audits de site web</span>
+          <span>Audits de visibilité IA (AEO / GEO)</span>
+          <span>Agents IA conversationnels</span>
+          <span>Automatisations avancées (n8n, Make, custom)</span>
+          <span>Création / refonte de site internet</span>
+          <span>Applications &amp; SaaS sur mesure</span>
+          <span>CRM &amp; plateformes tout-en-un</span>
+          <span>Tunnels de vente</span>
+          <span>Outils métiers</span>
+          <span>Transformation digitale</span>
+        </div>
+
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <Button href="https://www.axdia.fr" external variant="primary">
+            Découvrir Axdia
+          </Button>
+          <Button href="/contact" variant="outline-dark">
+            En parler avec moi
+          </Button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-folio bleed-rose">
+    <div class="container">
+      <SectionMark num="02" label="Comment on travaille ensemble" />
+      <div class="section-folio__head reveal">
+        <h2 class="section-folio__title">
+          Vous restez avec <em>un seul interlocuteur</em>.
+        </h2>
+        <p class="section-folio__lede">
+          Le but, c'est de vous simplifier la vie — pas d'ajouter de la
+          complexité. Voici comment ça se passe quand vos besoins évoluent.
+        </p>
+      </div>
+
+      <div class="persona-grid reveal d-1">
+        <div class="persona">
+          <div class="persona__roman">I</div>
+          <h3 class="persona__title">On <em>commence ensemble</em></h3>
+          <p class="persona__desc">
+            Vous démarrez avec Brittassist pour déléguer vos tâches du
+            quotidien et gagner du temps. C'est moi qui rentre dans votre
+            activité, comprends vos habitudes.
+          </p>
+          <div class="persona__verdict">→ Assistance digitale humaine + IA</div>
+        </div>
+        <div class="persona">
+          <div class="persona__roman">II</div>
+          <h3 class="persona__title">Le besoin <em>évolue</em></h3>
+          <p class="persona__desc">
+            Vous avez envie d'un site, d'un agent IA pour vos clients, d'un
+            CRM, d'un audit, d'un tunnel de vente… Je détecte les besoins, je
+            propose le bon partenaire.
+          </p>
+          <div class="persona__verdict">→ Orientation vers le bon partenaire</div>
+        </div>
+        <div class="persona">
+          <div class="persona__roman">III</div>
+          <h3 class="persona__title">Je reste <em>impliquée</em></h3>
+          <p class="persona__desc">
+            Je vous accompagne dans le brief, je traduis votre besoin, je
+            facilite les échanges. Vous gardez un seul interlocuteur de
+            confiance — moi — pour tout l'écosystème.
+          </p>
+          <div class="persona__verdict">→ Coordination + suivi</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-folio">
+    <div class="container container--narrow">
+      <SectionMark num="03" label="Autres partenaires de confiance" />
+      <div class="reveal">
+        <p class="lede" style="margin-bottom: 28px;">
+          Au-delà d'Axdia, je collabore au fil du temps avec un cercle restreint
+          de professionnels que je connais et en qui j'ai confiance — comptable,
+          graphiste, photographe, juriste, web designer… Selon vos besoins, je
+          peux vous orienter vers la bonne personne.
+        </p>
+        <p class="lede" style="margin-bottom: 28px; color: var(--anthracite);">
+          <em>Cette liste s'enrichit au fil des collaborations. Si vous avez un
+          besoin spécifique, parlons-en : il y a probablement quelqu'un dans
+          mon réseau qui peut vous aider.</em>
+        </p>
+        <Button href="/contact" variant="primary">
+          Parler de votre besoin
+        </Button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final-folio">
+    <div class="container container--narrow reveal">
+      <h2>Une question, une <em>idée à creuser</em>&nbsp;?</h2>
+      <p>
+        Que ce soit pour démarrer avec Brittassist, ou pour un projet plus
+        technique avec Axdia ou un autre partenaire — on en parle en 30
+        minutes.
+      </p>
+      <Button href="/contact" variant="primary">
+        Réserver mon appel découverte <span class="btn-arrow">→</span>
+      </Button>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--rose-fonce);
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
+  h1 em, h2 em, h3 em { font-style: italic; color: var(--rose-fonce); }
+</style>

@@ -1,0 +1,181 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionMark from '../components/SectionMark.astro';
+import Button from '../components/Button.astro';
+
+const title = "Domaines d'intervention — Brittassist · Assistance digitale humaine + IA";
+const description = "Sept domaines pour vous libérer du quotidien : admin, emails, organisation, réseaux sociaux, support digital, automatisations simples, IA pratique. Aucun pack figé, accompagnement sur mesure.";
+
+const domains = [
+  {
+    num: 'i.',
+    icon: '📋',
+    title: 'Assistance administrative',
+    lede: "Tout ce qui vous prend du temps et ne vous rapporte rien directement : on s'en occupe.",
+    bullets: [
+      'Création et envoi de devis, factures, relances',
+      'Suivi clients, classement, archivage',
+      'Préparation des éléments pour votre comptable',
+      'Réponses aux demandes administratives courantes',
+    ],
+  },
+  {
+    num: 'ii.',
+    icon: '📧',
+    title: 'Gestion des emails',
+    lede: 'Reprenez la main sur votre boîte mail au lieu de la subir.',
+    bullets: [
+      'Tri, étiquetage, mise en place de règles automatiques',
+      'Réponses simples en votre nom',
+      'Synthèse IA quotidienne des emails entrants',
+      'Désencombrement et organisation initiale',
+    ],
+  },
+  {
+    num: 'iii.',
+    icon: '🗓️',
+    title: 'Organisation & suivi d\'activité',
+    lede: 'Un cadre clair pour piloter votre activité sans tout porter dans la tête.',
+    bullets: [
+      'Planning hebdo, suivi des tâches',
+      'Tableaux Notion / Trello / Google Sheets adaptés',
+      'Reporting mensuel simple et lisible',
+      'Mise en ordre des documents partagés',
+    ],
+  },
+  {
+    num: 'iv.',
+    icon: '📱',
+    title: 'Réseaux sociaux',
+    lede: 'Une présence active et cohérente, sans y passer vos soirées.',
+    bullets: [
+      "Création de visuels Canva à votre image",
+      "Rédaction de posts (Instagram, Facebook, LinkedIn) — accélérée par l'IA",
+      'Planification et publication',
+      "Réponses aux commentaires et messages courants",
+    ],
+  },
+  {
+    num: 'v.',
+    icon: '🛠️',
+    title: 'Support digital',
+    lede: 'Les outils de base, bien posés, dont vous saurez vous servir seul ensuite.',
+    bullets: [
+      "Google Workspace, Drive, calendriers partagés",
+      "Canva, Notion, Trello — configurés à votre image",
+      "Signatures, modèles de docs, modèles d'emails",
+      "Petites formations express si vous le souhaitez",
+    ],
+  },
+  {
+    num: 'vi.',
+    icon: '⚙️',
+    title: 'Outils & automatisations simples',
+    lede: 'Des petites mécaniques qui tournent toutes seules en fond.',
+    bullets: [
+      'Formulaires de contact reliés à votre email',
+      'Workflows Zapier / Make légers (1 à 3 étapes)',
+      "Relances automatiques de devis et factures",
+      "Synchronisation calendrier ↔ outils",
+    ],
+  },
+  {
+    num: 'vii.',
+    icon: '✨',
+    title: 'IA pratique au quotidien',
+    lede: "Utiliser ChatGPT, Claude et les bons outils, sans complexité ni jargon.",
+    bullets: [
+      "Idées de contenu, rédaction, reformulation",
+      "Synthèse de réunions, d'appels, de documents",
+      "Recherche d'informations ciblée",
+      "Prompts personnalisés à votre activité",
+    ],
+  },
+];
+---
+
+<BaseLayout title={title} description={description}>
+  <header class="page-hero page-hero--yellow">
+    <div class="container">
+      <p class="hero-eyebrow">Mes domaines d'intervention</p>
+      <h1>
+        Sept domaines pour vous <em>libérer du quotidien</em>.
+      </h1>
+      <p class="lede">
+        Pas de pack figé. Chaque accompagnement est construit avec vous, selon
+        votre activité, votre charge et votre budget. Voici les terrains sur
+        lesquels je peux vous aider — seuls ou combinés.
+      </p>
+    </div>
+  </header>
+
+  <section class="section-folio">
+    <div class="container">
+      <SectionMark num="01" label="Détail des domaines" />
+      <div class="domain-grid reveal">
+        {domains.map((d) => (
+          <article class="domain-card">
+            <span class="domain-card__num">{d.num}</span>
+            <div class="domain-card__icon">{d.icon}</div>
+            <h2 class="domain-card__title">{d.title}</h2>
+            <p class="domain-card__desc">{d.lede}</p>
+            <ul class="domain-card__bullets">
+              {d.bullets.map((b) => <li>{b}</li>)}
+            </ul>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-folio bleed-rose">
+    <div class="container container--narrow">
+      <SectionMark num="02" label="Pourquoi pas de pack figé&nbsp;?" />
+      <div class="reveal" style="max-width: 720px;">
+        <h2 style="margin-bottom: 20px;">Parce que <em>votre entreprise est unique</em>.</h2>
+        <p class="lede" style="margin-bottom: 18px;">
+          Un coiffeur indépendant, un artisan menuisier, un commerçant, un
+          coach, un formateur — vous n'avez ni la même charge, ni les mêmes
+          outils, ni le même budget. Vous imposer un pack reviendrait à vous
+          faire payer pour ce dont vous n'avez pas besoin.
+        </p>
+        <p class="lede" style="margin-bottom: 32px;">
+          Je préfère prendre 30 minutes pour comprendre votre réalité, puis
+          vous faire une proposition sur mesure — adaptable à mesure que votre
+          activité évolue.
+        </p>
+        <Button href="/contact" variant="primary">
+          Réserver mon appel découverte <span class="btn-arrow">→</span>
+        </Button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final-folio">
+    <div class="container container--narrow reveal">
+      <h2>Vos besoins dépassent ces <em>domaines</em>&nbsp;?</h2>
+      <p>
+        Audit de site web, agents IA, automatisations avancées, refonte web,
+        CRM… Pour les projets plus techniques, je m'appuie sur
+        <strong>Axdia</strong> et un écosystème de partenaires de confiance.
+      </p>
+      <Button href="/ecosysteme" variant="outline-dark">
+        Découvrir l'écosystème →
+      </Button>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--rose-fonce);
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
+  h1 em { font-style: italic; color: var(--rose-fonce); }
+  h2 em { font-style: italic; color: var(--rose-fonce); }
+</style>

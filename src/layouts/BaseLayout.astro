@@ -1,0 +1,142 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import RegistryBar from '../components/RegistryBar.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  canonical?: string;
+  noindex?: boolean;
+  showRegistryBar?: boolean;
+  bodyClass?: string;
+}
+
+const {
+  title,
+  description,
+  ogImage = '/images/brittany-pro-1.jpg',
+  canonical,
+  noindex = false,
+  showRegistryBar = true,
+  bodyClass = '',
+} = Astro.props;
+
+const siteUrl = 'https://www.brittassist.fr';
+const canonicalUrl = canonical ?? new URL(Astro.url.pathname, siteUrl).toString();
+const ogImageAbs = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+const rootClass = showRegistryBar ? 'has-registry-bar' : '';
+---
+
+<!doctype html>
+<html lang="fr" class={rootClass}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#FDFAF7" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex,nofollow" />}
+    <link rel="canonical" href={canonicalUrl} />
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/images/logo.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Brittassist" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImageAbs} />
+    <meta property="og:locale" content="fr_FR" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageAbs} />
+
+    <meta name="author" content="Brittany Dreano" />
+
+    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'LocalBusiness',
+      '@id': 'https://www.brittassist.fr/#business',
+      name: 'Brittassist',
+      description: 'Assistance digitale humaine soutenue par l\'intelligence artificielle. Pour entrepreneurs, artisans, commerçants et TPE.',
+      url: 'https://www.brittassist.fr',
+      email: 'brittany@brittassist.fr',
+      telephone: '+33667249727',
+      image: ogImageAbs,
+      areaServed: {
+        '@type': 'AdministrativeArea',
+        name: 'France',
+      },
+      address: {
+        '@type': 'PostalAddress',
+        addressRegion: 'Vendée',
+        addressCountry: 'FR',
+      },
+      founder: {
+        '@type': 'Person',
+        name: 'Brittany Dreano',
+      },
+      sameAs: [],
+      openingHours: 'Mo-Fr 09:00-18:00',
+    })} />
+
+    <progress id="progress-bar-meta" style="display:none" />
+
+    <slot name="head" />
+  </head>
+  <body class={bodyClass}>
+    <div id="progress-bar"></div>
+
+    {showRegistryBar && <RegistryBar />}
+    <Header />
+
+    <main id="main-content">
+      <slot />
+    </main>
+
+    <Footer />
+
+    <script>
+      const bar = document.getElementById('progress-bar');
+      if (bar) {
+        const updateBar = () => {
+          const scrollTop = window.scrollY;
+          const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+          const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+          bar.style.width = pct + '%';
+        };
+        updateBar();
+        window.addEventListener('scroll', updateBar, { passive: true });
+        window.addEventListener('resize', updateBar, { passive: true });
+      }
+
+      const reveals = document.querySelectorAll('.reveal');
+      if (reveals.length > 0 && 'IntersectionObserver' in window) {
+        const obs = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add('is-visible');
+                obs.unobserve(e.target);
+              }
+            });
+          },
+          { rootMargin: '0px 0px -80px 0px', threshold: 0.05 },
+        );
+        reveals.forEach((el) => obs.observe(el));
+      } else {
+        reveals.forEach((el) => el.classList.add('is-visible'));
+      }
+    </script>
+  </body>
+</html>

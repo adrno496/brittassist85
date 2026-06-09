@@ -1,0 +1,168 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = "Politique de confidentialité — Brittassist";
+const description = "Politique de confidentialité du site Brittassist : traitement des données personnelles, RGPD, cookies, droits de l'utilisateur.";
+---
+
+<BaseLayout title={title} description={description} showRegistryBar={false}>
+  <header class="page-hero">
+    <div class="container container--narrow" style="text-align: center;">
+      <p class="hero-eyebrow">Vos données</p>
+      <h1>Politique de confidentialité</h1>
+    </div>
+  </header>
+
+  <section class="section-folio">
+    <div class="container container--narrow legal-content">
+      <h2>1. Responsable du traitement</h2>
+      <p>
+        Le responsable du traitement des données personnelles collectées sur
+        ce site est <strong>Brittany Dreano</strong> (Brittassist, SIRET
+        948&nbsp;131&nbsp;818&nbsp;00023), joignable à
+        <a href="mailto:brittany@brittassist.fr">brittany@brittassist.fr</a>.
+      </p>
+
+      <h2>2. Données collectées</h2>
+      <p>
+        Les données personnelles collectées sur ce site sont strictement
+        celles que vous renseignez vous-même :
+      </p>
+      <ul>
+        <li>Nom et prénom</li>
+        <li>Adresse email</li>
+        <li>Numéro de téléphone (optionnel)</li>
+        <li>Profil et besoin (formulaires de contact / questionnaire)</li>
+        <li>Le contenu de votre message</li>
+      </ul>
+      <p>
+        Aucune donnée sensible (santé, opinions politiques, etc.) n'est
+        collectée.
+      </p>
+
+      <h2>3. Finalités du traitement</h2>
+      <p>Vos données sont utilisées uniquement pour :</p>
+      <ul>
+        <li>Répondre à votre demande de contact ou à votre questionnaire</li>
+        <li>Vous adresser un devis personnalisé si vous le sollicitez</li>
+        <li>Échanger avec vous dans le cadre d'une éventuelle collaboration</li>
+      </ul>
+      <p>
+        Vos données ne sont <strong>jamais revendues ni transmises à des
+        tiers</strong> à des fins commerciales.
+      </p>
+
+      <h2>4. Base légale</h2>
+      <p>
+        Le traitement repose sur votre <strong>consentement explicite</strong>
+        (case à cocher RGPD avant envoi des formulaires) et sur l'exécution
+        d'éventuelles relations précontractuelles ou contractuelles.
+      </p>
+
+      <h2>5. Durée de conservation</h2>
+      <p>
+        Vos données sont conservées le temps nécessaire au traitement de votre
+        demande, puis archivées pendant la durée légale applicable
+        (généralement 3 ans pour les prospects, 10 ans pour les clients pour
+        des raisons comptables et légales).
+      </p>
+
+      <h2>6. Sous-traitants et outils utilisés</h2>
+      <ul>
+        <li>
+          <strong>Vercel</strong> (hébergement du site) — données stockées aux
+          USA, hébergeur certifié.
+        </li>
+        <li>
+          <strong>Formsubmit</strong> (relais des formulaires vers email) —
+          aucune base de données persistante.
+        </li>
+        <li>
+          <strong>Google Workspace</strong> (réception de vos messages par
+          email professionnel).
+        </li>
+        <li>
+          <strong>Calendly</strong> (réservation d'appels découverte) — soumis
+          à sa propre politique.
+        </li>
+        <li>
+          <strong>Outils d'IA</strong> (ChatGPT, Claude, Mistral) utilisés
+          dans le cadre des prestations : versions professionnelles, sans
+          réutilisation des données pour l'entraînement des modèles.
+        </li>
+      </ul>
+
+      <h2>7. Cookies</h2>
+      <p>
+        Ce site n'utilise <strong>aucun cookie publicitaire</strong> ni
+        traceur tiers de marketing. Seuls de très rares cookies techniques
+        peuvent être utilisés pour mémoriser vos préférences (mode sombre,
+        par exemple) — ils ne suivent pas votre navigation.
+      </p>
+
+      <h2>8. Vos droits</h2>
+      <p>
+        Conformément au Règlement Général sur la Protection des Données
+        (RGPD), vous disposez à tout moment des droits suivants sur vos
+        données personnelles :
+      </p>
+      <ul>
+        <li>Droit d'accès</li>
+        <li>Droit de rectification</li>
+        <li>Droit à l'effacement (« droit à l'oubli »)</li>
+        <li>Droit à la limitation du traitement</li>
+        <li>Droit à la portabilité</li>
+        <li>Droit d'opposition</li>
+        <li>Droit de retirer votre consentement à tout moment</li>
+      </ul>
+      <p>
+        Pour exercer ces droits, envoyez simplement un email à
+        <a href="mailto:brittany@brittassist.fr">brittany@brittassist.fr</a>.
+        Vous pouvez également déposer une réclamation auprès de la
+        <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">CNIL</a>.
+      </p>
+
+      <h2>9. Sécurité</h2>
+      <p>
+        Toutes les mesures techniques et organisationnelles raisonnables sont
+        prises pour protéger vos données contre tout accès non autorisé,
+        modification, divulgation ou destruction. Le site est servi en HTTPS
+        et utilise des en-têtes de sécurité stricts.
+      </p>
+
+      <div class="legal-note">
+        <p>Dernière mise à jour : juin 2026</p>
+        <p>
+          Pour toute question relative à vos données :
+          <a href="mailto:brittany@brittassist.fr">brittany@brittassist.fr</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--rose-fonce);
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
+  .legal-content h2 { margin: 36px 0 16px; font-size: 1.4rem; color: var(--anthracite); }
+  .legal-content p { color: var(--gris-moyen); line-height: 1.7; margin-bottom: 12px; }
+  .legal-content ul { margin: 12px 0 18px 24px; color: var(--gris-moyen); line-height: 1.7; }
+  .legal-content ul li { margin-bottom: 6px; }
+  .legal-content a { color: var(--rose-fonce); text-decoration: underline; }
+  .legal-content strong { color: var(--anthracite); }
+  .legal-note {
+    margin-top: 48px;
+    padding: 24px;
+    background: var(--rose-pale);
+    border-radius: var(--radius-lg);
+  }
+  .legal-note p { font-size: 0.9rem; color: var(--gris-moyen); margin: 6px 0; }
+  html.dark .legal-note { background: rgba(232, 160, 176, 0.08); }
+</style>

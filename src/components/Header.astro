@@ -1,0 +1,109 @@
+---
+const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+
+const links = [
+  { href: '/', label: 'Accueil' },
+  { href: '/domaines-intervention', label: 'Domaines' },
+  { href: '/methode', label: 'Méthode' },
+  { href: '/a-propos', label: 'À propos' },
+  { href: '/ecosysteme', label: 'Écosystème' },
+  { href: '/contact', label: 'Contact' },
+];
+
+const isActive = (href: string) => {
+  if (href === '/') return currentPath === '/';
+  return currentPath === href || currentPath.startsWith(href + '/');
+};
+---
+
+<a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+<nav id="navbar" aria-label="Navigation principale">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" aria-label="BrittAssist — accueil">
+      <img src="/images/logo.png" alt="" width="44" height="44" />
+      <span>Brittassist</span>
+    </a>
+
+    <ul class="nav-links" id="nav-links">
+      {links.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            class={isActive(link.href) ? 'active' : ''}
+            aria-current={isActive(link.href) ? 'page' : undefined}
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <div class="nav-actions">
+      <button
+        id="dark-mode-toggle"
+        type="button"
+        aria-label="Basculer le mode sombre"
+      >
+        🌙
+      </button>
+      <a href="/contact" class="nav-cta">Appel découverte</a>
+      <button
+        class="nav-hamburger"
+        id="nav-hamburger"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        ☰
+      </button>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  if (navbar) {
+    const setScrolled = () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 10);
+    };
+    setScrolled();
+    window.addEventListener('scroll', setScrolled, { passive: true });
+  }
+
+  const hamburger = document.getElementById('nav-hamburger');
+  const links = document.getElementById('nav-links');
+  if (hamburger && links) {
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!expanded));
+      links.classList.toggle('open');
+      document.body.classList.toggle('nav-open');
+      hamburger.textContent = !expanded ? '✕' : '☰';
+    });
+    links.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        hamburger.setAttribute('aria-expanded', 'false');
+        links.classList.remove('open');
+        document.body.classList.remove('nav-open');
+        hamburger.textContent = '☰';
+      });
+    });
+  }
+
+  const darkBtn = document.getElementById('dark-mode-toggle');
+  const root = document.documentElement;
+  const stored = localStorage.getItem('brittassist-theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (stored === 'dark' || (stored === null && prefersDark)) {
+    root.classList.add('dark');
+    if (darkBtn) darkBtn.textContent = '☀️';
+  }
+  if (darkBtn) {
+    darkBtn.addEventListener('click', () => {
+      const isDark = root.classList.toggle('dark');
+      darkBtn.textContent = isDark ? '☀️' : '🌙';
+      localStorage.setItem('brittassist-theme', isDark ? 'dark' : 'light');
+    });
+  }
+</script>

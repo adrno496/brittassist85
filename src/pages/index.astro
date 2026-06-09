@@ -1,0 +1,409 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionMark from '../components/SectionMark.astro';
+import Button from '../components/Button.astro';
+
+const title = "Brittassist — Assistance digitale humaine + IA pour entrepreneurs et TPE";
+const description = "Gagnez du temps grâce à une assistance digitale humaine, soutenue par l'intelligence artificielle. Pour indépendants, artisans, commerçants et TPE. 100 % à distance, accompagnement sur mesure.";
+---
+
+<BaseLayout title={title} description={description}>
+  {/* ============ HERO ============ */}
+  <header class="hero">
+    <div class="hero-orbes" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-content reveal">
+        <p class="hero-eyebrow">Assistance digitale · Humain + IA</p>
+        <h1>
+          Gagnez du temps,<br />
+          retrouvez votre <em>cœur de métier</em>.
+        </h1>
+        <p class="hero-subtitle">
+          Je vous accompagne avec une assistance digitale humaine, soutenue par
+          l'intelligence artificielle — pour que vous restiez concentré sur ce
+          qui fait grandir votre entreprise.
+        </p>
+        <div class="hero-cta">
+          <Button href="/contact" variant="primary">
+            Réserver mon appel découverte <span class="btn-arrow">→</span>
+          </Button>
+          <Button href="/domaines-intervention" variant="outline-dark">
+            Découvrir mes domaines
+          </Button>
+        </div>
+        <div class="hero-badges">
+          <span class="hero-badge"><strong>7 ans</strong> d'expérience</span>
+          <span class="hero-badge"><strong>100 %</strong> à distance</span>
+          <span class="hero-badge"><strong>24 h</strong> de réponse</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal d-2">
+        <img
+          src="/images/brittany-pro-1.jpg"
+          alt="Portrait de Brittany Dreano, fondatrice de Brittassist"
+          width="540"
+          height="640"
+          loading="eager"
+          fetchpriority="high"
+        />
+        <div class="hero-stamp">
+          <div class="dossier-stamp">
+            Assistance
+            <span class="big">Brittassist</span>
+            Humain · IA · Local
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {/* ============ §01 — Pourquoi déléguer ============ */}
+  <section class="section-folio">
+    <div class="container">
+      <SectionMark num="01" label="Pourquoi déléguer ?" />
+      <div class="section-folio__head reveal">
+        <h2 class="section-folio__title">
+          Vous reconnaissez-vous dans ces <em>situations&nbsp;</em>?
+        </h2>
+        <p class="section-folio__lede">
+          Quand on dirige une petite entreprise, certaines tâches finissent par
+          ronger votre temps et votre énergie — sans pour autant faire grandir
+          votre activité.
+        </p>
+      </div>
+
+      <div class="pain-grid reveal d-1">
+        <div class="pain-card">
+          <span class="pain-icon">⏰</span>
+          <h3>Manque de temps</h3>
+          <p>Vous courez après les heures, l'administratif déborde sur le perso.</p>
+        </div>
+        <div class="pain-card">
+          <span class="pain-icon">📱</span>
+          <h3>Réseaux à l'abandon</h3>
+          <p>Vous savez qu'il faudrait publier, mais vous n'avez ni le temps ni l'envie.</p>
+        </div>
+        <div class="pain-card">
+          <span class="pain-icon">📧</span>
+          <h3>Mails en surcharge</h3>
+          <p>Vous recevez plus que vous n'arrivez à traiter, des choses passent à la trappe.</p>
+        </div>
+        <div class="pain-card">
+          <span class="pain-icon">🧠</span>
+          <h3>Charge mentale épuisante</h3>
+          <p>Trop d'outils, trop de fenêtres ouvertes, plus assez d'air pour penser stratégie.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ============ §02 — Mes domaines d'intervention ============ */}
+  <section class="section-folio bleed-rose">
+    <div class="container">
+      <SectionMark num="02" label="Mes domaines d'intervention" />
+      <div class="section-folio__head reveal">
+        <h2 class="section-folio__title">
+          Sept domaines pour vous libérer du <em>quotidien chronophage</em>.
+        </h2>
+        <p class="section-folio__lede">
+          Aucun pack figé : on construit ensemble un accompagnement qui colle à
+          votre activité, votre charge et votre budget.
+        </p>
+      </div>
+
+      <div class="domain-grid reveal d-1">
+        <article class="domain-card">
+          <span class="domain-card__num">i.</span>
+          <div class="domain-card__icon">📋</div>
+          <h3 class="domain-card__title">Assistance administrative</h3>
+          <p class="domain-card__desc">Devis, factures, suivi clients, classement.</p>
+        </article>
+        <article class="domain-card">
+          <span class="domain-card__num">ii.</span>
+          <div class="domain-card__icon">📧</div>
+          <h3 class="domain-card__title">Gestion des emails</h3>
+          <p class="domain-card__desc">Tri, réponses simples, règles automatiques, synthèse IA des entrants.</p>
+        </article>
+        <article class="domain-card">
+          <span class="domain-card__num">iii.</span>
+          <div class="domain-card__icon">🗓️</div>
+          <h3 class="domain-card__title">Organisation &amp; suivi</h3>
+          <p class="domain-card__desc">Planning, tableaux Notion / Trello, reporting d'activité.</p>
+        </article>
+        <article class="domain-card">
+          <span class="domain-card__num">iv.</span>
+          <div class="domain-card__icon">📱</div>
+          <h3 class="domain-card__title">Réseaux sociaux</h3>
+          <p class="domain-card__desc">Création de contenu (avec aide IA), planification, engagement.</p>
+        </article>
+        <article class="domain-card">
+          <span class="domain-card__num">v.</span>
+          <div class="domain-card__icon">🛠️</div>
+          <h3 class="domain-card__title">Support digital</h3>
+          <p class="domain-card__desc">Canva, Drive, Google Workspace, mise en place d'outils simples.</p>
+        </article>
+        <article class="domain-card">
+          <span class="domain-card__num">vi.</span>
+          <div class="domain-card__icon">⚙️</div>
+          <h3 class="domain-card__title">Automatisations simples</h3>
+          <p class="domain-card__desc">Petits workflows (Zapier / Make light), formulaires, signatures.</p>
+        </article>
+        <article class="domain-card">
+          <span class="domain-card__num">vii.</span>
+          <div class="domain-card__icon">✨</div>
+          <h3 class="domain-card__title">IA pratique au quotidien</h3>
+          <p class="domain-card__desc">Utiliser ChatGPT / Claude pour gagner du temps, sans complexité.</p>
+        </article>
+      </div>
+
+      <div style="text-align:center; margin-top: 48px;" class="reveal">
+        <Button href="/domaines-intervention" variant="outline-dark">
+          Voir le détail de chaque domaine →
+        </Button>
+      </div>
+    </div>
+  </section>
+
+  {/* ============ §03 — L'IA comme amplificateur ============ */}
+  <section class="section-folio">
+    <div class="container">
+      <SectionMark num="03" label="L'IA, votre nouvelle alliée" />
+      <div class="ai-block reveal">
+        <div class="ai-block__text">
+          <h2>
+            L'IA n'est pas un robot qui vous remplace. <br />
+            C'est un <em>outil que je manie pour vous</em>.
+          </h2>
+          <p class="lede">
+            Concrètement, l'IA me permet d'aller plus vite, plus précis, plus
+            loin — mais c'est toujours moi qui décide, vérifie et personnalise.
+            Vous gardez l'humain ; vous gagnez la vitesse de la machine.
+          </p>
+          <ul class="ai-block__list">
+            <li><strong>Rédaction accélérée</strong> — posts, emails, descriptions produits</li>
+            <li><strong>Synthèses</strong> de vos emails entrants et de réunions</li>
+            <li><strong>Idées de contenu</strong> à partir de votre univers</li>
+            <li><strong>Petites automatisations</strong> qui vous font gagner 1 h par jour</li>
+            <li><strong>Mise en place d'outils</strong> simples que vous saurez utiliser seul après</li>
+          </ul>
+        </div>
+        <div class="ai-block__visual">
+          <p class="quote">
+            L'IA fait gagner du temps. Le temps libéré, vous le passez à ce qui
+            fait vraiment grandir votre entreprise.
+          </p>
+          <p class="signature">— Brittany</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ============ §04 — Comment on travaille ============ */}
+  <section class="section-folio bleed-yellow">
+    <div class="container">
+      <SectionMark num="04" label="Comment on travaille ensemble" />
+      <div class="section-folio__head reveal">
+        <h2 class="section-folio__title">
+          Une méthode en <em>quatre temps</em>, sans engagement long.
+        </h2>
+        <p class="section-folio__lede">
+          De la première discussion à l'accompagnement régulier : un parcours
+          clair, ajustable à tout moment.
+        </p>
+      </div>
+
+      <div class="timeline reveal d-1">
+        <div class="timeline__step">
+          <div class="timeline__when">Étape 1</div>
+          <div class="timeline__roman">i.</div>
+          <h3 class="timeline__title">Découverte</h3>
+          <p class="timeline__desc">Vous me racontez votre activité, vos blocages, ce qui vous prend du temps inutilement.</p>
+          <span class="timeline__deliver">Appel 30 min</span>
+        </div>
+        <div class="timeline__step">
+          <div class="timeline__when">Étape 2</div>
+          <div class="timeline__roman">ii.</div>
+          <h3 class="timeline__title">Analyse</h3>
+          <p class="timeline__desc">J'identifie les tâches à déléguer, les outils à poser, là où l'IA peut faire gagner du temps.</p>
+          <span class="timeline__deliver">Synthèse écrite</span>
+        </div>
+        <div class="timeline__step">
+          <div class="timeline__when">Étape 3</div>
+          <div class="timeline__roman">iii.</div>
+          <h3 class="timeline__title">Proposition personnalisée</h3>
+          <p class="timeline__desc">Devis sur mesure adapté à votre activité, votre charge de travail et votre budget. Aucun pack figé.</p>
+          <span class="timeline__deliver">Devis sur mesure</span>
+        </div>
+        <div class="timeline__step">
+          <div class="timeline__when">Étape 4</div>
+          <div class="timeline__roman">iv.</div>
+          <h3 class="timeline__title">Accompagnement flexible</h3>
+          <p class="timeline__desc">On démarre, on ajuste, je m'adapte. Vous arrêtez quand vous voulez (préavis 1 mois).</p>
+          <span class="timeline__deliver">Suivi mensuel</span>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top: 48px;" class="reveal">
+        <Button href="/methode" variant="outline-dark">
+          Voir la méthode en détail →
+        </Button>
+      </div>
+    </div>
+  </section>
+
+  {/* ============ §05 — Quand vos besoins évoluent (Axdia) ============ */}
+  <section class="section-folio">
+    <div class="container">
+      <SectionMark num="05" label="Quand vos besoins évoluent" />
+      <div class="section-folio__head reveal">
+        <h2 class="section-folio__title">
+          Un <em>écosystème de confiance</em> pour aller plus loin.
+        </h2>
+        <p class="section-folio__lede">
+          Brittassist est la porte d'entrée pour déléguer votre quotidien.
+          Quand votre activité grandit et que les besoins deviennent
+          techniques, je m'appuie sur des partenaires de confiance — au premier
+          rang desquels <strong>Axdia</strong>, atelier IA français.
+        </p>
+      </div>
+
+      <div class="ecosystem-card ecosystem-card--featured reveal d-1">
+        <div class="ecosystem-card__head">
+          <div class="ecosystem-card__brand">Axdia<span class="dot">.</span></div>
+          <span class="ecosystem-card__tag">Partenaire technique principal</span>
+        </div>
+        <p class="ecosystem-card__lede">
+          Axdia est l'atelier IA d'Axel Dreano. Mon partenaire privilégié pour
+          tout ce qui demande une expertise technique avancée : développement,
+          IA, automatisations, transformation digitale.
+        </p>
+        <div class="ecosystem-card__services">
+          <span>Audits site web</span>
+          <span>Agents IA</span>
+          <span>Automatisations avancées</span>
+          <span>Création / refonte de site</span>
+          <span>CRM &amp; plateformes</span>
+          <span>Tunnels de vente</span>
+          <span>Outils métiers</span>
+          <span>Transformation digitale</span>
+        </div>
+        <Button href="https://www.axdia.fr" external variant="primary">
+          Découvrir Axdia
+        </Button>
+      </div>
+
+      <div style="text-align:center; margin-top: 48px;" class="reveal">
+        <Button href="/ecosysteme" variant="outline-dark">
+          Découvrir tout l'écosystème →
+        </Button>
+      </div>
+    </div>
+  </section>
+
+  {/* ============ CTA Final ============ */}
+  <section class="cta-final-folio">
+    <div class="container container--narrow reveal">
+      <h2>
+        Et si on se <em>parlait 30 minutes</em>&nbsp;?
+      </h2>
+      <p>
+        L'appel découverte est gratuit, sans engagement. On regarde ensemble ce
+        qui vous fait perdre du temps et comment je peux vous aider.
+      </p>
+      <Button href="/contact" variant="primary">
+        Réserver mon appel découverte <span class="btn-arrow">→</span>
+      </Button>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--rose-fonce);
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--rose-fonce);
+    font-weight: 500;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 14px;
+    margin: 28px 0;
+    flex-wrap: wrap;
+  }
+
+  .hero-badges {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+  }
+  .hero-badge {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--gris-moyen);
+  }
+  .hero-badge strong {
+    color: var(--rose-fonce);
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 4px;
+  }
+
+  .hero-visual {
+    position: relative;
+  }
+  .hero-visual img {
+    width: 100%;
+    max-width: 540px;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+  }
+  .hero-stamp {
+    position: absolute;
+    bottom: -28px;
+    left: -28px;
+    z-index: 2;
+  }
+
+  @media (max-width: 900px) {
+    .hero-stamp { left: 12px; bottom: -16px; transform: scale(0.85); transform-origin: bottom left; }
+  }
+
+  /* Pain grid */
+  .pain-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+  }
+  .pain-card {
+    background: var(--blanc);
+    border: 1px solid rgba(232, 160, 176, 0.18);
+    border-radius: var(--radius-lg);
+    padding: 32px 26px;
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  .pain-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+  .pain-icon { font-size: 2rem; display: block; margin-bottom: 14px; }
+  .pain-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
+  .pain-card p { color: var(--gris-moyen); font-size: 0.95rem; line-height: 1.6; }
+
+  html.dark .pain-card {
+    background: var(--dm-surface);
+    border-color: rgba(232, 160, 176, 0.14);
+  }
+</style>

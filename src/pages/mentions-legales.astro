@@ -1,0 +1,137 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = "Mentions légales — Brittassist";
+const description = "Mentions légales du site Brittassist : éditeur, hébergeur, propriété intellectuelle, responsabilité.";
+---
+
+<BaseLayout title={title} description={description} noindex={false} showRegistryBar={false}>
+  <header class="page-hero">
+    <div class="container container--narrow" style="text-align: center;">
+      <p class="hero-eyebrow">Informations légales</p>
+      <h1>Mentions légales</h1>
+    </div>
+  </header>
+
+  <section class="section-folio">
+    <div class="container container--narrow legal-content">
+      <h2>1. Éditeur du site</h2>
+      <p>Le présent site est édité par :</p>
+      <ul>
+        <li><strong>Nom :</strong> Brittany Dreano</li>
+        <li><strong>Dénomination commerciale :</strong> Brittassist</li>
+        <li><strong>Statut :</strong> Auto-entrepreneur (micro-entreprise)</li>
+        <li><strong>SIRET :</strong> 948 131 818 00023</li>
+        <li><strong>Adresse :</strong> Vendée (85), France</li>
+        <li><strong>Téléphone :</strong> <a href="tel:+33667249727">06.67.24.97.27</a></li>
+        <li><strong>Email :</strong> <a href="mailto:brittany@brittassist.fr">brittany@brittassist.fr</a></li>
+      </ul>
+
+      <h2>2. Hébergeur</h2>
+      <p>Ce site est hébergé par :</p>
+      <ul>
+        <li><strong>Société :</strong> Vercel, Inc.</li>
+        <li><strong>Adresse :</strong> 340 Pine Street, Suite 701, San Francisco, CA 94104, USA</li>
+        <li>
+          <strong>Site web :</strong>
+          <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">vercel.com</a>
+        </li>
+      </ul>
+
+      <h2>3. Propriété intellectuelle</h2>
+      <p>
+        L'ensemble du contenu de ce site (textes, images, visuels, logo,
+        structure) est la propriété exclusive de Brittany Dreano — Brittassist,
+        sauf mention contraire. Toute reproduction, distribution, modification
+        ou utilisation sans autorisation préalable est strictement interdite.
+      </p>
+      <p>© 2026 Brittassist — Brittany Dreano. Tous droits réservés.</p>
+
+      <h2>4. Responsabilité</h2>
+      <p>
+        Brittassist s'efforce de maintenir les informations publiées sur ce
+        site à jour et exactes. Cependant, elle ne peut garantir l'exactitude,
+        la complétude ou l'actualité des informations diffusées. L'utilisation
+        des informations et contenus disponibles sur ce site se fait sous
+        l'entière et seule responsabilité de l'utilisateur.
+      </p>
+      <p>
+        Brittassist ne pourra être tenue responsable des dommages directs ou
+        indirects résultant de l'utilisation de ce site ou de l'impossibilité
+        d'y accéder.
+      </p>
+
+      <h2>5. Liens hypertextes</h2>
+      <p>
+        Ce site peut contenir des liens vers des sites tiers, notamment
+        <a href="https://www.axdia.fr" target="_blank" rel="noopener noreferrer">axdia.fr</a>
+        (partenaire technique). Ces liens sont fournis à titre informatif.
+        Brittassist n'exerce aucun contrôle sur ces sites et décline toute
+        responsabilité quant à leur contenu ou leur disponibilité.
+      </p>
+      <p>
+        Toute création de lien hypertexte vers ce site doit faire l'objet
+        d'une autorisation préalable écrite de Brittany Dreano.
+      </p>
+
+      <h2>6. Droit applicable</h2>
+      <p>
+        Le présent site et ses mentions légales sont soumis au droit français.
+        Tout litige relatif à l'utilisation du site sera soumis à la
+        compétence exclusive des tribunaux français.
+      </p>
+
+      <div class="legal-note">
+        <p>Dernière mise à jour : juin 2026</p>
+        <p>
+          Pour toute question :
+          <a href="mailto:brittany@brittassist.fr">brittany@brittassist.fr</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--rose-fonce);
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
+
+  .legal-content h2 {
+    margin: 36px 0 16px;
+    font-size: 1.4rem;
+    color: var(--anthracite);
+  }
+  .legal-content p {
+    color: var(--gris-moyen);
+    line-height: 1.7;
+    margin-bottom: 12px;
+  }
+  .legal-content ul {
+    margin: 12px 0 18px 24px;
+    color: var(--gris-moyen);
+    line-height: 1.7;
+  }
+  .legal-content ul li { margin-bottom: 6px; }
+  .legal-content a { color: var(--rose-fonce); text-decoration: underline; }
+  .legal-content strong { color: var(--anthracite); }
+
+  .legal-note {
+    margin-top: 48px;
+    padding: 24px;
+    background: var(--rose-pale);
+    border-radius: var(--radius-lg);
+  }
+  .legal-note p {
+    font-size: 0.9rem;
+    color: var(--gris-moyen);
+    margin: 6px 0;
+  }
+  html.dark .legal-note { background: rgba(232, 160, 176, 0.08); }
+</style>
