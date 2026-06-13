@@ -1,4 +1,44 @@
+# robots.txt — brittassist.fr
+# Tous les robots sont les bienvenus sur l'ensemble du site.
 User-agent: *
 Allow: /
 
-Sitemap: https://brittassist.fr/sitemap.xml
+# --- Robots des moteurs d'IA : explicitement autorisés à lire et citer le site ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Plan du site (sitemap XML généré automatiquement par Astro)
+Sitemap: https://brittassist.fr/sitemap-index.xml

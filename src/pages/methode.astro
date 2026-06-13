@@ -56,9 +56,55 @@ const steps = [
     ],
   },
 ];
+
+// FAQ structurée (FAQPage) — reprend mot pour mot les questions/réponses
+// affichées dans l'accordéon ci-dessous, pour être éligible aux résultats
+// enrichis Google et exploitable par les moteurs IA.
+const faqItems = [
+  {
+    q: "Combien de temps entre l'appel et le démarrage ?",
+    a: "En général, on peut démarrer sous 7 à 10 jours après l'appel découverte, le temps de signer le devis et de poser les premiers outils. Pour les besoins urgents, on peut aller plus vite si je suis disponible.",
+  },
+  {
+    q: "Et si mes besoins évoluent en cours de route ?",
+    a: "C'est même prévu. Tous les mois, on fait un point ensemble pour ajuster le volume, ajouter ou retirer des tâches. Votre saison haute vous pousse à déléguer plus ? On augmente. Période calme ? On réduit.",
+  },
+  {
+    q: "Comment on communique au quotidien ?",
+    a: "Selon ce qui vous va le mieux : email, WhatsApp, Slack ou Notion. Je m'adapte à votre outil principal. Je suis joignable du lundi au vendredi et je réponds toujours sous 24 h.",
+  },
+  {
+    q: "Puis-je arrêter quand je veux ?",
+    a: "Oui. Un mois de préavis et c'est tout, pour que je puisse boucler proprement ce qui était en cours. Pas d'engagement de durée minimum.",
+  },
+  {
+    q: "Et si j'ai besoin de quelque chose de plus technique ?",
+    a: "Audit de site, agent IA conversationnel, automatisations avancées, CRM, refonte web ? Je vous oriente vers Axdia (mon partenaire technique) ou un autre partenaire de confiance, et je reste impliquée pour faire le pont. Plus d'infos sur la page Écosystème.",
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+};
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout
+  title={title}
+  description={description}
+  datePublished="2026-04-01"
+  dateModified="2026-06-14"
+>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(faqSchema)}
+  />
   <header class="page-hero">
     <div class="container">
       <p class="hero-eyebrow">Ma méthode</p>
@@ -71,6 +117,7 @@ const steps = [
         temps de comprendre votre activité, vos contraintes et vos envies. Voici
         le chemin, étape par étape.
       </p>
+      <p class="page-updated">Mis à jour en juin 2026</p>
     </div>
   </header>
 

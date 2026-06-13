@@ -12,6 +12,8 @@ interface Props {
   noindex?: boolean;
   showRegistryBar?: boolean;
   bodyClass?: string;
+  datePublished?: string;
+  dateModified?: string;
 }
 
 const {
@@ -22,12 +24,23 @@ const {
   noindex = false,
   showRegistryBar = true,
   bodyClass = '',
+  datePublished = '2026-04-01',
+  dateModified,
 } = Astro.props;
 
-const siteUrl = 'https://www.brittassist.fr';
-const canonicalUrl = canonical ?? new URL(Astro.url.pathname, siteUrl).toString();
+const siteUrl = 'https://brittassist.fr';
+// On retire l'extension .html pour que le canonical corresponde aux URLs
+// propres servies par Vercel (cleanUrls). L'accueil reste « / ».
+const cleanPath = Astro.url.pathname.replace(/\.html$/, '');
+const canonicalUrl = canonical ?? new URL(cleanPath, siteUrl).toString();
 const ogImageAbs = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 const rootClass = showRegistryBar ? 'has-registry-bar' : '';
+
+// Date de dernière mise à jour du site (signal de fraîcheur pour Google et les
+// moteurs IA). Valeur fournie par la page, sinon date globale ci-dessous —
+// à incrémenter lors d'une mise à jour de contenu.
+const SITE_LAST_MODIFIED = '2026-06-14';
+const lastModified = dateModified ?? SITE_LAST_MODIFIED;
 ---
 
 <!doctype html>
@@ -65,32 +78,62 @@ const rootClass = showRegistryBar ? 'has-registry-bar' : '';
 
     <script type="application/ld+json" set:html={JSON.stringify({
       '@context': 'https://schema.org',
-      '@type': 'LocalBusiness',
-      '@id': 'https://www.brittassist.fr/#business',
-      name: 'Brittassist',
-      description: 'Assistance digitale humaine soutenue par l\'intelligence artificielle. Pour entrepreneurs, artisans, commerçants et TPE.',
-      url: 'https://www.brittassist.fr',
-      email: 'brittanydreano.cm@gmail.com',
-      telephone: '+33667249727',
-      image: ogImageAbs,
-      areaServed: {
-        '@type': 'AdministrativeArea',
-        name: 'France',
-      },
-      address: {
-        '@type': 'PostalAddress',
-        addressRegion: 'Vendée',
-        addressCountry: 'FR',
-      },
-      founder: {
-        '@type': 'Person',
-        name: 'Brittany Dreano',
-      },
-      sameAs: [],
-      openingHours: 'Mo-Fr 09:00-18:00',
+      '@graph': [
+        {
+          '@type': 'WebSite',
+          '@id': `${siteUrl}/#website`,
+          url: `${siteUrl}/`,
+          name: 'Brittassist',
+          inLanguage: 'fr-FR',
+          publisher: { '@id': `${siteUrl}/#business` },
+        },
+        {
+          '@type': ['LocalBusiness', 'ProfessionalService'],
+          '@id': `${siteUrl}/#business`,
+          name: 'Brittassist',
+          description: 'Assistance digitale humaine soutenue par l\'intelligence artificielle. Pour entrepreneurs, artisans, commerçants et TPE.',
+          url: `${siteUrl}/`,
+          email: 'brittanydreano.cm@gmail.com',
+          telephone: '+33667249727',
+          image: ogImageAbs,
+          founder: {
+            '@type': 'Person',
+            name: 'Brittany Dreano',
+          },
+          areaServed: {
+            '@type': 'AdministrativeArea',
+            name: 'France',
+          },
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: 'La Roche-sur-Yon',
+            addressRegion: 'Vendée',
+            addressCountry: 'FR',
+          },
+          sameAs: [
+            'https://www.instagram.com/brittassist85',
+            'https://www.facebook.com/profile.php?id=100091531544199',
+            'https://www.linkedin.com/in/brittassit85/',
+          ],
+          openingHours: 'Mo-Fr 09:00-18:00',
+        },
+        {
+          '@type': 'WebPage',
+          '@id': `${canonicalUrl}#webpage`,
+          url: canonicalUrl,
+          name: title,
+          description,
+          isPartOf: { '@id': `${siteUrl}/#website` },
+          about: { '@id': `${siteUrl}/#business` },
+          inLanguage: 'fr-FR',
+          datePublished,
+          dateModified: lastModified,
+          primaryImageOfPage: ogImageAbs,
+        },
+      ],
     })} />
 
-    <progress id="progress-bar-meta" style="display:none" />
+    <progress id="progress-bar-meta" hidden />
 
     <slot name="head" />
   </head>

@@ -66,6 +66,39 @@ section { padding: 80px 0; }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 .container--narrow { max-width: 860px; margin: 0 auto; padding: 0 24px; }
 
+/* ---- Utilitaires ----
+   Remplacent les anciens attributs style="" inline, afin d'autoriser une
+   Content-Security-Policy stricte (sans 'unsafe-inline' sur style-src). */
+.u-center { text-align: center; }
+.u-mt-28 { margin-top: 28px; }
+.u-mt-48 { margin-top: 48px; }
+.u-mb-18 { margin-bottom: 18px; }
+.u-mb-20 { margin-bottom: 20px; }
+.u-mb-28 { margin-bottom: 28px; }
+.u-mb-32 { margin-bottom: 32px; }
+.u-maxw-720 { max-width: 720px; }
+.u-ink { color: var(--anthracite); }
+.u-btn-row { display: flex; gap: 14px; flex-wrap: wrap; }
+.footer-siret { font-size: 0.8rem; opacity: 0.6; }
+.form-note { margin-top: 16px; font-size: 0.85rem; color: var(--gris-moyen); }
+.eco-services-label {
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gris-moyen);
+  margin-bottom: 14px;
+  font-family: var(--font-sans);
+  font-weight: 500;
+}
+/* Date de mise à jour visible (signal de fraîcheur pour lecteurs et moteurs IA) */
+.page-updated {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--gris-moyen);
+  margin-top: 14px;
+  letter-spacing: 0.02em;
+}
+
 /* ---- Progress bar ---- */
 #progress-bar { position: fixed; top: 0; left: 0; height: 3px; width: 0%; background: var(--rose-fonce); z-index: 9999; transition: width 0.1s linear; }
 
