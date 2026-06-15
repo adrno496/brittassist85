@@ -18,7 +18,7 @@ export default defineConfig({
         "default-src 'self'",
         "img-src 'self' data: https:",
         "font-src 'self' https://fonts.bunny.net data:",
-        "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://formsubmit.co https://*.formsubmit.co",
+        "connect-src 'self' https://axdiaos.vercel.app https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://formsubmit.co https://*.formsubmit.co",
         "form-action 'self' https://brittassist.fr https://www.brittassist.fr https://formsubmit.co https://*.formsubmit.co",
         "base-uri 'self'",
         "object-src 'none'",
