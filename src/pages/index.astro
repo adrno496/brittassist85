@@ -1,412 +1,502 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import SectionMark from '../components/SectionMark.astro';
 import Button from '../components/Button.astro';
+import Monogram from '../components/Monogram.astro';
 
-const title = "Brittassist · Assistance digitale humaine + IA · Vendée";
-const description = "Assistance digitale humaine + IA pour entrepreneurs, artisans et TPE. Gagnez du temps — 100 % à distance. Appel découverte gratuit.";
+const title = "Private Office externalisé pour dirigeants · BrittAssist";
+const description =
+  "Executive & lifestyle assistance pour entrepreneurs et dirigeants : administratif, déplacements, réservations, coordination et demandes sur mesure. Vous gardez les décisions, j’absorbe le reste. À partir de 700 € / mois.";
+
+const flow = [
+  'Recherche des trains et des vols compatibles avec l’horaire',
+  'Comparaison des options : durée, correspondances, coût réel',
+  'Sélection selon vos préférences de voyage habituelles',
+  'Hôtel calme, à distance de marche du rendez-vous',
+  'Transferts aéroport et gare réservés',
+  'Table retenue pour le dîner client de mercredi',
+  'Confirmations centralisées, puis transmises',
+  'Itinéraire complet envoyé la veille',
+  'Suivi pendant le déplacement',
+  'Modification prise en charge si le programme bouge',
+];
+
+const universes = [
+  {
+    name: 'Executive Admin',
+    desc: 'Facturation, contrats, échéances et documents tenus à jour.',
+  },
+  {
+    name: 'Agenda & Coordination',
+    desc: 'Rendez-vous, confirmations, arbitrages d’horaires et coordination des interlocuteurs.',
+  },
+  {
+    name: 'Travel',
+    desc: 'Vols, trains, hôtels, transferts et itinéraires complets.',
+  },
+  {
+    name: 'Lifestyle',
+    desc: 'Restaurants, événements, cadeaux et attentions à ne pas oublier.',
+  },
+  {
+    name: 'Private Coordination',
+    desc: 'Prestataires, interventions à domicile et organisation personnelle.',
+  },
+  {
+    name: 'International',
+    desc: 'Échanges en anglais et coordination avec des interlocuteurs étrangers.',
+  },
+];
+
+const comparisons = [
+  {
+    ask: '« Réserve-moi un hôtel. »',
+    care:
+      'Avant de réserver : vérification de l’adresse exacte du rendez-vous, du temps de transfert réel, des horaires d’arrivée et de vos préférences connues.',
+  },
+  {
+    ask: '« Prends-moi cette réservation. »',
+    care:
+      'La confirmation ne reste pas au fond d’une boîte mail : elle est centralisée avec les autres, et elle vous revient au moment où elle sert.',
+  },
+  {
+    ask: '« Le prestataire ne répond pas. »',
+    care:
+      'Je reviens vers vous avec des solutions et une recommandation, pas avec un transfert de message.',
+  },
+  {
+    ask: '« Occupe-toi de ça. »',
+    care:
+      'La demande est suivie jusqu’à ce qu’elle soit terminée, bloquée, ou qu’une décision soit réellement nécessaire.',
+  },
+];
+
+const scope = [
+  'Administratif', 'Facturation', 'Contrats', 'Coordination', 'Agenda',
+  'Déplacements', 'Réservations', 'Organisation personnelle', 'Suivi prestataires',
+  'Support ponctuel aux équipes', 'Recherches', 'Échanges en anglais', 'Reporting',
+];
+
+const steps = [
+  {
+    num: '01',
+    name: 'Vous demandez',
+    desc: 'WhatsApp, e-mail ou le canal convenu. Pas de formulaire, pas de cahier des charges.',
+  },
+  {
+    num: '02',
+    name: 'Je clarifie',
+    desc: 'Uniquement les informations réellement nécessaires pour avancer.',
+  },
+  {
+    num: '03',
+    name: 'J’organise',
+    desc: 'Recherche, coordination, réservation, suivi, prestataires.',
+  },
+  {
+    num: '04',
+    name: 'Je ferme la boucle',
+    desc: 'Terminé. En cours. En attente. Ou décision nécessaire.',
+  },
+];
 ---
 
 <BaseLayout title={title} description={description}>
-  {/* ============ HERO ============ */}
+  <!-- ── Hero ─────────────────────────────────────────────── -->
   <header class="hero">
-    <div class="hero-orbes" aria-hidden="true"></div>
-    <div class="hero-inner">
-      <div class="hero-content reveal">
-        <p class="hero-eyebrow">Assistance digitale · Humain + IA</p>
-        <h1>
-          Gagnez du temps,<br />
-          retrouvez votre <em>cœur de métier</em>.
-        </h1>
-        <p class="hero-subtitle">
-          Je vous accompagne avec une assistance digitale humaine, soutenue par
-          l'intelligence artificielle, pour que vous restiez concentré sur ce
-          qui fait grandir votre entreprise.
-        </p>
-        <div class="hero-cta">
-          <Button href="/contact" variant="primary">
-            Réserver mon appel découverte <span class="btn-arrow">→</span>
-          </Button>
-          <Button href="/domaines-intervention" variant="outline-dark">
-            Découvrir mes domaines
-          </Button>
-        </div>
-        <div class="hero-badges">
-          <span class="hero-badge"><strong>7 ans</strong> d'expérience</span>
-          <span class="hero-badge"><strong>100 %</strong> à distance</span>
-          <span class="hero-badge"><strong>24 h</strong> de réponse</span>
-        </div>
+    <div class="container">
+      <p class="eyebrow">Executive &amp; Lifestyle Assistance</p>
+      <h1 class="hero__title">Votre Private Office. Sans avoir à le construire en interne.</h1>
+      <p class="hero__sub">
+        J’accompagne entrepreneurs et dirigeants dans l’organisation de leur
+        quotidien professionnel et personnel : administratif, déplacements,
+        réservations, coordination et demandes sur mesure.
+      </p>
+      <p class="hero__punch">Vous gardez les décisions. J’absorbe le reste.</p>
+      <div class="hero__actions btn-row">
+        <Button href="/private-office" variant="ivoire">Découvrir l’accompagnement</Button>
+        <Button href="/contact" variant="lien">Échanger sur mes besoins</Button>
+      </div>
+      <p class="hero__price">À partir de 700 € / mois</p>
+    </div>
+  </header>
+
+  <!-- ── Identification ───────────────────────────────────── -->
+  <section class="band band--ivoire">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Le point de bascule</p>
+        <h2>Votre entreprise a grandi. Votre charge mentale aussi.</h2>
       </div>
 
-      <div class="hero-visual reveal d-2">
-        <img
-          src="/images/tany.jpeg"
-          alt="Brittany Dreano, fondatrice de Brittassist, au travail sur son ordinateur portable"
-          width="540"
-          height="960"
-          loading="eager"
-          fetchpriority="high"
-        />
-        <div class="hero-stamp">
-          <div class="dossier-stamp">
-            Assistance
-            <span class="big">Brittassist</span>
-            Humain · IA · Local
+      <ul class="frictions reveal">
+        <li>Un billet de train.</li>
+        <li>Une facture à retrouver.</li>
+        <li>Un prestataire à relancer.</li>
+        <li>Un restaurant à réserver.</li>
+        <li>Un contrat à envoyer.</li>
+        <li>Un hôtel à comparer.</li>
+      </ul>
+
+      <p class="lede u-mt-40 reveal">
+        Individuellement, rien de compliqué. Ensemble, ces micro-décisions
+        consomment une part considérable de votre attention.
+      </p>
+
+      <hr class="rule reveal" />
+
+      <p class="closing closing--wide reveal">
+        Votre temps est devenu trop précieux pour être consommé par ce qui peut
+        être parfaitement orchestré par quelqu’un d’autre.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Section signature ────────────────────────────────── -->
+  <section class="band band--noir">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Le principe</p>
+        <h2>Une demande. Je gère le reste.</h2>
+      </div>
+
+      <div class="request">
+        <div class="request__bubble reveal">
+          <p class="request__meta">Message reçu — lundi, 18 h 42</p>
+          <p class="request__text">
+            « Je dois être à Madrid mardi avant 14 h. Retour jeudi soir. Hôtel
+            calme près du rendez-vous. Dîner client mercredi. Budget 1 200 €. »
+          </p>
+          <p class="request__time">Temps passé par le dirigeant : 40 secondes</p>
+        </div>
+
+        <ol class="request__steps">
+          {flow.map((étape, i) => (
+            <li>
+              <span class="idx" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+              <span>{étape}</span>
+            </li>
+          ))}
+        </ol>
+      </div>
+
+      <div class="request__conclusion reveal">
+        <p class="closing closing--wide">
+          Vous envoyez une demande. Vous ne recevez pas une nouvelle liste de
+          problèmes à gérer.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Univers de prise en charge ───────────────────────── -->
+  <section class="band band--noir-doux">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Périmètre</p>
+        <h2>Six univers de prise en charge.</h2>
+      </div>
+
+      <div class="universes reveal">
+        {universes.map((u) => (
+          <div class="universe">
+            <p class="universe__name">{u.name}</p>
+            <p class="universe__desc">{u.desc}</p>
+          </div>
+        ))}
+      </div>
+
+      <p class="universes__note reveal">
+        Cette liste n’est volontairement pas exhaustive. Votre quotidien ne
+        rentre pas dans des cases. Mon accompagnement non plus.
+      </p>
+
+      <div class="u-mt-40 reveal">
+        <Button href="/services" variant="lien">Voir le détail des six univers</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Différenciation ──────────────────────────────────── -->
+  <section class="band band--ivoire">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">La différence</p>
+        <h2>Une assistante exécute. Un Private Office anticipe.</h2>
+      </div>
+
+      <div class="compare reveal">
+        {comparisons.map((c) => (
+          <div class="compare__row">
+            <p class="compare__ask">{c.ask}</p>
+            <p class="compare__care">{c.care}</p>
+          </div>
+        ))}
+      </div>
+
+      <p class="compare__sign reveal">
+        Une demande. Une personne responsable. Une boucle fermée.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Offres ───────────────────────────────────────────── -->
+  <section class="band band--noir" id="accompagnement">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Accompagnement</p>
+        <h2>Trois manières de travailler ensemble.</h2>
+      </div>
+
+      <div class="offers">
+        <article class="offer offer--lead reveal">
+          <div>
+            <h3 class="offer__name">Executive Private Office</h3>
+            <p class="offer__price">700 € / mois</p>
+            <p class="offer__for">
+              Pour l’entrepreneur ou le dirigeant qui veut cesser d’être le
+              point de passage de toutes les petites décisions.
+            </p>
+            <div class="offer__cta">
+              <Button href="/contact" variant="ivoire">Échanger sur mon organisation</Button>
+            </div>
+          </div>
+          <div>
+            <p class="offer__scope-label">Peut comprendre, selon le périmètre</p>
+            <ul class="offer__scope">
+              {scope.map((s) => <li>{s}</li>)}
+            </ul>
+          </div>
+        </article>
+
+        <div class="offers offers--duo">
+          <article class="offer reveal">
+            <div>
+              <h3 class="offer__name">Private Office sur mesure</h3>
+              <p class="offer__price">Sur devis</p>
+              <p class="offer__for">
+                Disponibilité plus importante, plusieurs entreprises, forte
+                volumétrie, déplacements fréquents, coordination quotidienne,
+                besoins spécifiques.
+              </p>
+              <div class="offer__cta">
+                <Button href="/contact" variant="or">Construire mon accompagnement</Button>
+              </div>
+            </div>
+          </article>
+
+          <article class="offer reveal d-1">
+            <div>
+              <h3 class="offer__name">Mission ponctuelle</h3>
+              <p class="offer__price">Sur devis</p>
+              <p class="offer__for">
+                Un voyage, un événement, une recherche ou une organisation
+                spécifique, sans récurrence.
+              </p>
+              <div class="offer__cta">
+                <Button href="/contact" variant="or">Décrire ma mission</Button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── L’expérience ─────────────────────────────────────── -->
+  <section class="band band--rose">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">L’expérience</p>
+        <h2>Moins de choses dans votre tête.</h2>
+      </div>
+
+      <div class="steps">
+        {steps.map((s, i) => (
+          <div class={`step reveal d-${i}`}>
+            <span class="step__num">{s.num}</span>
+            <h3 class="step__name">{s.name}</h3>
+            <p class="step__desc">{s.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Cas ──────────────────────────────────────────────── -->
+  <section class="band band--ivoire">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Deux prises en charge</p>
+        <h2>Ce que « je m’en occupe » veut dire.</h2>
+      </div>
+
+      <div class="cases">
+        <article class="case reveal">
+          <div class="case__row case__row--demande">
+            <span class="case__label">Demande</span>
+            <p class="case__text">
+              « Madrid mardi avant 14 h, retour jeudi soir, hôtel calme près du
+              rendez-vous, dîner client mercredi, budget 1 200 €. »
+            </p>
+          </div>
+          <div class="case__row">
+            <span class="case__label">Prise en charge</span>
+            <p class="case__text">
+              Comparaison des vols et des trains, sélection d’un hôtel à sept
+              minutes à pied du rendez-vous, transferts réservés, table retenue
+              pour le dîner client, confirmations centralisées et itinéraire
+              complet envoyé la veille.
+            </p>
+          </div>
+          <div class="case__row">
+            <span class="case__label">Résultat</span>
+            <p class="case__text">
+              Un seul message envoyé. Aucun arbitrage à reprendre. Le
+              déplacement s’est déroulé sans qu’une seule question ne remonte.
+            </p>
+          </div>
+        </article>
+
+        <article class="case reveal d-1">
+          <div class="case__row case__row--demande">
+            <span class="case__label">Demande</span>
+            <p class="case__text">
+              « Je ne sais plus qui m’a payé, ce que j’ai signé, ni ce que je
+              dois relancer. »
+            </p>
+          </div>
+          <div class="case__row">
+            <span class="case__label">Prise en charge</span>
+            <p class="case__text">
+              Reprise de l’ensemble des factures et des contrats, mise en place
+              d’un suivi unique des échéances, relances effectuées à date, et
+              points de blocage remontés avec une recommandation.
+            </p>
+          </div>
+          <div class="case__row">
+            <span class="case__label">Résultat</span>
+            <p class="case__text">
+              Les échéances ont cessé d’être une source d’inquiétude. Les
+              relances partent sans qu’il faille y penser.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── La personne ──────────────────────────────────────── -->
+  <section class="band band--noir-doux">
+    <div class="container">
+      <div class="person">
+        <div class="person__media reveal">
+          <img
+            src="/images/portrait-brittany.jpg"
+            alt="Brittany Dreano, fondatrice de BrittAssist"
+            width="760"
+            height="950"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+
+        <div class="person__text reveal d-1">
+          <p class="eyebrow">La personne</p>
+          <h2>La personne derrière votre Private Office.</h2>
+          <p class="lede u-mt-24">
+            Sept ans d’assistance en entreprise avant de devenir indépendante.
+            L’habitude de traiter des univers très différents dans une même
+            journée — un contrat, un déplacement, un prestataire, une table à
+            réserver — sans que l’un fasse tomber l’autre.
+          </p>
+          <p class="lede u-mt-24">
+            L’anglais pour les interlocuteurs étrangers. Et surtout la
+            compréhension de la façon dont un entrepreneur fonctionne : ce qui
+            l’encombre, ce qu’il ne délègue jamais, et ce qu’il n’aurait jamais
+            dû garder. Une demande envoyée un mardi ne se perd pas d’ici jeudi.
+          </p>
+
+          <blockquote class="person__quote">
+            Mon travail n’est pas de devenir une personne supplémentaire à
+            manager. Mon travail est précisément de vous enlever des sujets à
+            manager.
+          </blockquote>
+
+          <div class="u-mt-40">
+            <Button href="/a-propos" variant="lien">En savoir plus sur mon parcours</Button>
           </div>
         </div>
       </div>
     </div>
-  </header>
+  </section>
 
-  {/* ============ §01, Pourquoi déléguer ============ */}
-  <section class="section-folio">
+  <!-- ── Lifestyle ────────────────────────────────────────── -->
+  <section class="band band--ivoire">
     <div class="container">
-      <SectionMark num="01" label="Pourquoi déléguer ?" />
-      <div class="section-folio__head reveal">
-        <h2 class="section-folio__title">
-          Vous reconnaissez-vous dans ces <em>situations&nbsp;</em>?
-        </h2>
-        <p class="section-folio__lede">
-          Quand on dirige une petite entreprise, certaines tâches finissent par
-          ronger votre temps et votre énergie, sans pour autant faire grandir
-          votre activité.
-        </p>
+      <div class="lifestyle">
+        <figure class="plate plate--photo plate--c reveal">
+          <div class="plate__media media--tany">
+            <img
+              src="/images/tany.jpeg"
+              alt="Brittany Dreano au travail, en fin de journée"
+              width="941"
+              height="1672"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="plate__inner">
+            <span class="plate__kicker">Tempo</span>
+            <p class="plate__line">
+              Le calme n’arrive pas par hasard. Quelqu’un l’a organisé.
+            </p>
+          </div>
+        </figure>
+
+        <div class="lifestyle__lines">
+          <figure class="lifestyle__line reveal d-1">
+            <span class="plate__kicker">Séjour</span>
+            <p>
+              Le vrai luxe n’est pas l’hôtel. C’est de ne pas avoir eu à
+              l’organiser.
+            </p>
+          </figure>
+          <figure class="lifestyle__line reveal d-2">
+            <span class="plate__kicker">Table</span>
+            <p>
+              Ce dîner peut ne vous prendre que 90 secondes : le temps de
+              m’envoyer un message.
+            </p>
+          </figure>
+        </div>
       </div>
 
-      <div class="pain-grid reveal d-1">
-        <div class="pain-card">
-          <span class="pain-icon">⏰</span>
-          <h3>Manque de temps</h3>
-          <p>Vous courez après les heures, l'administratif déborde sur le perso.</p>
-        </div>
-        <div class="pain-card">
-          <span class="pain-icon">📱</span>
-          <h3>Réseaux à l'abandon</h3>
-          <p>Vous savez qu'il faudrait publier, mais vous n'avez ni le temps ni l'envie.</p>
-        </div>
-        <div class="pain-card">
-          <span class="pain-icon">📧</span>
-          <h3>Mails en surcharge</h3>
-          <p>Vous recevez plus que vous n'arrivez à traiter, des choses passent à la trappe.</p>
-        </div>
-        <div class="pain-card">
-          <span class="pain-icon">🧠</span>
-          <h3>Charge mentale épuisante</h3>
-          <p>Trop d'outils, trop de fenêtres ouvertes, plus assez d'air pour penser stratégie.</p>
-        </div>
-      </div>
+      <p class="plates__note reveal">
+        L’hôtel, le restaurant et le voyage ne sont pas le produit. Le produit
+        est la vie mieux orchestrée qu’ils représentent.
+      </p>
     </div>
   </section>
 
-  {/* ============ §02, Mes domaines d'intervention ============ */}
-  <section class="section-folio bleed-rose">
-    <div class="container">
-      <SectionMark num="02" label="Mes domaines d'intervention" />
-      <div class="section-folio__head reveal">
-        <h2 class="section-folio__title">
-          Sept domaines pour vous libérer du <em>quotidien chronophage</em>.
-        </h2>
-        <p class="section-folio__lede">
-          Aucun pack figé : on construit ensemble un accompagnement qui colle à
-          votre activité, votre charge et votre budget.
-        </p>
-      </div>
-
-      <div class="domain-grid reveal d-1">
-        <article class="domain-card">
-          <span class="domain-card__num">i.</span>
-          <div class="domain-card__icon">📋</div>
-          <h3 class="domain-card__title">Assistance administrative</h3>
-          <p class="domain-card__desc">Devis, factures, suivi clients, classement.</p>
-        </article>
-        <article class="domain-card">
-          <span class="domain-card__num">ii.</span>
-          <div class="domain-card__icon">📧</div>
-          <h3 class="domain-card__title">Gestion des emails</h3>
-          <p class="domain-card__desc">Tri, réponses simples, règles automatiques, synthèse IA des entrants.</p>
-        </article>
-        <article class="domain-card">
-          <span class="domain-card__num">iii.</span>
-          <div class="domain-card__icon">🗓️</div>
-          <h3 class="domain-card__title">Organisation &amp; suivi</h3>
-          <p class="domain-card__desc">Planning, tableaux Notion / Trello, reporting d'activité.</p>
-        </article>
-        <article class="domain-card">
-          <span class="domain-card__num">iv.</span>
-          <div class="domain-card__icon">📱</div>
-          <h3 class="domain-card__title">Réseaux sociaux</h3>
-          <p class="domain-card__desc">Création de contenu (avec aide IA), planification, engagement.</p>
-        </article>
-        <article class="domain-card">
-          <span class="domain-card__num">v.</span>
-          <div class="domain-card__icon">🛠️</div>
-          <h3 class="domain-card__title">Support digital</h3>
-          <p class="domain-card__desc">Canva, Drive, Google Workspace, mise en place d'outils simples.</p>
-        </article>
-        <article class="domain-card">
-          <span class="domain-card__num">vi.</span>
-          <div class="domain-card__icon">⚙️</div>
-          <h3 class="domain-card__title">Automatisations simples</h3>
-          <p class="domain-card__desc">Petits workflows (Zapier / Make light), formulaires, signatures.</p>
-        </article>
-        <article class="domain-card">
-          <span class="domain-card__num">vii.</span>
-          <div class="domain-card__icon">✨</div>
-          <h3 class="domain-card__title">IA pratique au quotidien</h3>
-          <p class="domain-card__desc">Utiliser ChatGPT / Claude pour gagner du temps, sans complexité.</p>
-        </article>
-      </div>
-
-      <div class="u-center u-mt-48 reveal">
-        <Button href="/domaines-intervention" variant="outline-dark">
-          Voir le détail de chaque domaine →
-        </Button>
-      </div>
-    </div>
-  </section>
-
-  {/* ============ §03, L'IA comme amplificateur ============ */}
-  <section class="section-folio">
-    <div class="container">
-      <SectionMark num="03" label="L'IA, votre nouvelle alliée" />
-      <div class="ai-block reveal">
-        <div class="ai-block__text">
-          <h2>
-            L'IA n'est pas un robot qui vous remplace. <br />
-            C'est un <em>outil que je manie pour vous</em>.
-          </h2>
-          <p class="lede">
-            Concrètement, l'IA me permet d'aller plus vite, plus précis, plus
-            loin, mais c'est toujours moi qui décide, vérifie et personnalise.
-            Vous gardez l'humain ; vous gagnez la vitesse de la machine.
-          </p>
-          <ul class="ai-block__list">
-            <li><strong>Rédaction accélérée</strong>, posts, emails, descriptions produits</li>
-            <li><strong>Synthèses</strong> de vos emails entrants et de réunions</li>
-            <li><strong>Idées de contenu</strong> à partir de votre univers</li>
-            <li><strong>Petites automatisations</strong> qui vous font gagner 1 h par jour</li>
-            <li><strong>Mise en place d'outils</strong> simples que vous saurez utiliser seul après</li>
-          </ul>
-        </div>
-        <div class="ai-block__visual">
-          <p class="quote">
-            L'IA fait gagner du temps. Le temps libéré, vous le passez à ce qui
-            fait vraiment grandir votre entreprise.
-          </p>
-          <p class="signature">Brittany</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  {/* ============ §04, Comment on travaille ============ */}
-  <section class="section-folio bleed-yellow">
-    <div class="container">
-      <SectionMark num="04" label="Comment on travaille ensemble" />
-      <div class="section-folio__head reveal">
-        <h2 class="section-folio__title">
-          Une méthode en <em>quatre temps</em>, sans engagement long.
-        </h2>
-        <p class="section-folio__lede">
-          De la première discussion à l'accompagnement régulier : un parcours
-          clair, ajustable à tout moment.
-        </p>
-      </div>
-
-      <div class="timeline reveal d-1">
-        <div class="timeline__step">
-          <div class="timeline__when">Étape 1</div>
-          <div class="timeline__roman">i.</div>
-          <h3 class="timeline__title">Découverte</h3>
-          <p class="timeline__desc">Vous me racontez votre activité, vos blocages, ce qui vous prend du temps inutilement.</p>
-          <span class="timeline__deliver">Appel 30 min</span>
-        </div>
-        <div class="timeline__step">
-          <div class="timeline__when">Étape 2</div>
-          <div class="timeline__roman">ii.</div>
-          <h3 class="timeline__title">Analyse</h3>
-          <p class="timeline__desc">J'identifie les tâches à déléguer, les outils à poser, là où l'IA peut faire gagner du temps.</p>
-          <span class="timeline__deliver">Synthèse écrite</span>
-        </div>
-        <div class="timeline__step">
-          <div class="timeline__when">Étape 3</div>
-          <div class="timeline__roman">iii.</div>
-          <h3 class="timeline__title">Proposition personnalisée</h3>
-          <p class="timeline__desc">Devis sur mesure adapté à votre activité, votre charge de travail et votre budget. Aucun pack figé.</p>
-          <span class="timeline__deliver">Devis sur mesure</span>
-        </div>
-        <div class="timeline__step">
-          <div class="timeline__when">Étape 4</div>
-          <div class="timeline__roman">iv.</div>
-          <h3 class="timeline__title">Accompagnement flexible</h3>
-          <p class="timeline__desc">On démarre, on ajuste, je m'adapte. Vous arrêtez quand vous voulez (préavis 1 mois).</p>
-          <span class="timeline__deliver">Suivi mensuel</span>
-        </div>
-      </div>
-
-      <div class="u-center u-mt-48 reveal">
-        <Button href="/methode" variant="outline-dark">
-          Voir la méthode en détail →
-        </Button>
-      </div>
-    </div>
-  </section>
-
-  {/* ============ §05, Quand vos besoins évoluent (Axdia) ============ */}
-  <section class="section-folio">
-    <div class="container">
-      <SectionMark num="05" label="Quand vos besoins évoluent" />
-      <div class="section-folio__head reveal">
-        <h2 class="section-folio__title">
-          Un <em>écosystème de confiance</em> pour aller plus loin.
-        </h2>
-        <p class="section-folio__lede">
-          Brittassist est la porte d'entrée pour déléguer votre quotidien.
-          Quand votre activité grandit et que les besoins deviennent
-          techniques, je m'appuie sur des partenaires de confiance comme
-          <strong>Axdia</strong>, atelier IA français.
-        </p>
-      </div>
-
-      <div class="ecosystem-card ecosystem-card--featured reveal d-1">
-        <div class="ecosystem-card__head">
-          <div class="ecosystem-card__brand">Axdia<span class="dot">.</span></div>
-          <span class="ecosystem-card__tag">Partenaire technique principal</span>
-        </div>
-        <p class="ecosystem-card__lede">
-          Axdia est l'atelier IA d'Axel Dreano. Mon partenaire privilégié pour
-          tout ce qui demande une expertise technique avancée : développement,
-          IA, automatisations, transformation digitale.
-        </p>
-        <div class="ecosystem-card__services">
-          <span>Audits site web</span>
-          <span>Agents IA</span>
-          <span>Automatisations avancées</span>
-          <span>Création / refonte de site</span>
-          <span>CRM &amp; plateformes</span>
-          <span>Tunnels de vente</span>
-          <span>Outils métiers</span>
-          <span>Transformation digitale</span>
-        </div>
-        <Button href="https://www.axdia.fr" external variant="primary">
-          Découvrir Axdia
-        </Button>
-      </div>
-
-      <div class="u-center u-mt-48 reveal">
-        <Button href="/ecosysteme" variant="outline-dark">
-          Découvrir tout l'écosystème →
-        </Button>
-      </div>
-    </div>
-  </section>
-
-  {/* ============ CTA Final ============ */}
-  <section class="cta-final-folio">
+  <!-- ── CTA final ────────────────────────────────────────── -->
+  <section class="cta-final">
+    <Monogram variant="ghost" />
     <div class="container container--narrow reveal">
       <h2>
-        Et si on se <em>parlait 30 minutes</em>&nbsp;?
+        Il y a probablement déjà quelque chose que vous ne devriez plus être en
+        train de gérer vous-même.
       </h2>
-      <p>
-        L'appel découverte est gratuit, sans engagement. On regarde ensemble ce
-        qui vous fait perdre du temps et comment je peux vous aider.
+      <p class="lede">
+        Parlons de votre organisation actuelle et identifions ce que votre
+        Private Office pourrait absorber.
       </p>
-      <Button href="/contact" variant="primary">
-        Réserver mon appel découverte <span class="btn-arrow">→</span>
-      </Button>
+      <div class="cta-final__actions">
+        <Button href="/contact" variant="ivoire">Échanger avec Brittany</Button>
+      </div>
+      <p class="cta-final__fine">
+        Accompagnement à partir de 700 € / mois &nbsp;•&nbsp; Sur mesure
+        &nbsp;•&nbsp; Confidentiel
+      </p>
     </div>
   </section>
 </BaseLayout>
-
-<style>
-  .hero-eyebrow {
-    font-family: var(--font-sans);
-    font-size: 0.78rem;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--rose-fonce);
-    margin-bottom: 18px;
-    font-weight: 500;
-  }
-
-  .hero h1 em {
-    font-style: italic;
-    color: var(--rose-fonce);
-    font-weight: 500;
-  }
-
-  .hero-cta {
-    display: flex;
-    gap: 14px;
-    margin: 28px 0;
-    flex-wrap: wrap;
-  }
-
-  .hero-badges {
-    display: flex;
-    gap: 28px;
-    flex-wrap: wrap;
-    margin-top: 32px;
-  }
-  .hero-badge {
-    font-family: var(--font-sans);
-    font-size: 0.9rem;
-    color: var(--gris-moyen);
-  }
-  .hero-badge strong {
-    color: var(--rose-fonce);
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-right: 4px;
-  }
-
-  .hero-visual {
-    position: relative;
-  }
-  .hero-visual img {
-    width: 100%;
-    max-width: 480px;
-    aspect-ratio: 9/16;
-    object-fit: cover;
-    object-position: center;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-lg);
-    margin: 0 auto;
-    display: block;
-  }
-  .hero-stamp {
-    position: absolute;
-    bottom: -28px;
-    left: -28px;
-    z-index: 2;
-  }
-
-  @media (max-width: 900px) {
-    .hero-stamp { left: 12px; bottom: -16px; transform: scale(0.85); transform-origin: bottom left; }
-  }
-
-  /* Pain grid */
-  .pain-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 24px;
-  }
-  .pain-card {
-    background: var(--blanc);
-    border: 1px solid rgba(232, 160, 176, 0.18);
-    border-radius: var(--radius-lg);
-    padding: 32px 26px;
-    transition: transform var(--transition), box-shadow var(--transition);
-  }
-  .pain-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
-  .pain-icon { font-size: 2rem; display: block; margin-bottom: 14px; }
-  .pain-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
-  .pain-card p { color: var(--gris-moyen); font-size: 0.95rem; line-height: 1.6; }
-
-  html.dark .pain-card {
-    background: var(--dm-surface);
-    border-color: rgba(232, 160, 176, 0.14);
-  }
-</style>

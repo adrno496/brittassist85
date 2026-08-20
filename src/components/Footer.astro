@@ -1,78 +1,45 @@
 ---
-import SocialLinks from './SocialLinks.astro';
+import Monogram from './Monogram.astro';
 const year = new Date().getFullYear();
 ---
 
-<footer role="contentinfo">
+<footer class="site-footer" role="contentinfo">
   <div class="container">
-    <div class="footer-top footer-top--four">
+    <div class="footer__grid">
       <div>
-        <div class="footer-brand">
-          <img src="/images/logo.png" alt="Logo Brittassist" width="40" height="40" loading="lazy" />
-          <span class="footer-logo">Brittassist</span>
+        <div class="footer__brand">
+          <Monogram variant="foot" />
+          <span class="footer__name">BrittAssist</span>
         </div>
-        <p class="footer-tagline"><em>Assistance digitale humaine + IA</em></p>
-        <p class="footer-desc">
-          Brittany Dreano accompagne les entrepreneurs, artisans, commerçants
-          et TPE pour gagner du temps et se concentrer sur l'essentiel.
-        </p>
-        <p class="footer-siret">
-          SIRET 948 131 818 00023 · Vendée (85)
+        <p class="footer__role">
+          Executive &amp; Lifestyle Assistant.<br />
+          Private Office externalisé.
         </p>
       </div>
 
-      <div class="footer-section">
-        <h3>Naviguer</h3>
-        <ul class="footer-links">
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/domaines-intervention">Domaines d'intervention</a></li>
-          <li><a href="/methode">Méthode</a></li>
-          <li><a href="/a-propos">À propos</a></li>
-          <li><a href="/ecosysteme">Écosystème</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-section">
-        <h3>Écosystème</h3>
-        <ul class="footer-links">
+      <nav aria-label="Liens de pied de page">
+        <ul class="footer__links">
+          <li><a href="/contact">Contact</a></li>
           <li>
-            <a href="https://www.axdia.fr" target="_blank" rel="noopener">
-              Axdia, partenaire tech ↗
+            <a href="https://www.linkedin.com/in/brittassit85/" target="_blank" rel="noopener">
+              LinkedIn
             </a>
           </li>
-          <li><a href="/ecosysteme">Tous les partenaires</a></li>
-          <li><a href="/assistante-administrative-vendee">Vendée &amp; local</a></li>
-          <li><a href="/questionnaire">Questionnaire</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-section">
-        <h3>Contact</h3>
-        <ul class="footer-links">
-          <li><a href="mailto:brittanydreano.cm@gmail.com">brittanydreano.cm@gmail.com</a></li>
-          <li><a href="tel:+33667249727">06.67.24.97.27</a></li>
           <li>
-            <a href="https://calendly.com/brittassist85/rendez-vous-decouverte" target="_blank" rel="noopener">
-              Réserver un appel ↗
+            <a href="https://www.instagram.com/brittassist85" target="_blank" rel="noopener">
+              Instagram
             </a>
           </li>
-          <li>Du lundi au vendredi · Réponse sous 24 h</li>
+          <li><a href="/mentions-legales">Mentions légales</a></li>
+          <li><a href="/cgv">CGV</a></li>
+          <li><a href="/politique-confidentialite">Politique de confidentialité</a></li>
         </ul>
-
-        <h3 class="u-mt-28">Suivez Brittassist</h3>
-        <SocialLinks variant="footer" />
-      </div>
+      </nav>
     </div>
 
-    <div class="footer-bottom">
-      <span class="footer-copyright">
-        © {year} Brittassist, Brittany Dreano. Tous droits réservés.
-      </span>
-      <div class="footer-legal">
-        <a href="/mentions-legales">Mentions légales</a>
-        <a href="/cgv">CGV</a>
-        <a href="/politique-confidentialite">Confidentialité</a>
-      </div>
+    <div class="footer__bottom">
+      <span>© {year} BrittAssist — Brittany Dreano</span>
+      <span>SIRET 948 131 818 00023</span>
     </div>
   </div>
 </footer>

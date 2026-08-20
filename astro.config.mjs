@@ -41,7 +41,10 @@ export default defineConfig({
       filter: (page) =>
         !page.includes('/mentions-legales') &&
         !page.includes('/cgv') &&
-        !page.includes('/politique-confidentialite'),
+        !page.includes('/politique-confidentialite') &&
+        // Page de préparation transmise après un premier échange : noindex,
+        // hors navigation, donc hors sitemap.
+        !page.includes('/questionnaire'),
     }),
   ],
 });

@@ -90,7 +90,7 @@
     btn.id = 'cookie-trigger';
     btn.type = 'button';
     btn.setAttribute('aria-label', 'Gérer les préférences cookies');
-    btn.textContent = '🍪 Cookies';
+    btn.textContent = 'Cookies';
     btn.addEventListener('click', function () {
       window.brittassistOpenCookieSettings();
     });
@@ -112,9 +112,9 @@
     wrap.innerHTML =
       '<div class="cookie-banner__inner">' +
         '<div class="cookie-banner__text">' +
-          '<strong id="cookie-banner-title">🍪 Cookies & vie privée</strong>' +
+          '<strong id="cookie-banner-title">Cookies &amp; vie privée</strong>' +
           '<p id="cookie-banner-desc">' + intro + ' ' +
-          '<a href="politique-confidentialite.html">En savoir plus</a>.</p>' +
+          '<a href="/politique-confidentialite">En savoir plus</a>.</p>' +
         '</div>' +
         '<div class="cookie-banner__actions">' +
           '<button type="button" id="cookie-refuse" class="cookie-banner__btn cookie-banner__btn--ghost">Refuser</button>' +

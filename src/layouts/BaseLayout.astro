@@ -2,7 +2,6 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import RegistryBar from '../components/RegistryBar.astro';
 
 interface Props {
   title: string;
@@ -10,7 +9,6 @@ interface Props {
   ogImage?: string;
   canonical?: string;
   noindex?: boolean;
-  showRegistryBar?: boolean;
   bodyClass?: string;
   datePublished?: string;
   dateModified?: string;
@@ -19,12 +17,11 @@ interface Props {
 const {
   title,
   description,
-  ogImage = '/images/brittany-pro-1.jpg',
+  ogImage = '/images/brittany-pro-2.jpg',
   canonical,
   noindex = false,
-  showRegistryBar = true,
   bodyClass = '',
-  datePublished = '2026-04-01',
+  datePublished = '2026-08-20',
   dateModified,
 } = Astro.props;
 
@@ -34,22 +31,23 @@ const siteUrl = 'https://brittassist.fr';
 const cleanPath = Astro.url.pathname.replace(/\.html$/, '');
 const canonicalUrl = canonical ?? new URL(cleanPath, siteUrl).toString();
 const ogImageAbs = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
-const rootClass = showRegistryBar ? 'has-registry-bar' : '';
 
 // Date de dernière mise à jour du site (signal de fraîcheur pour Google et les
-// moteurs IA). Valeur fournie par la page, sinon date globale ci-dessous —
-// à incrémenter lors d'une mise à jour de contenu.
-const SITE_LAST_MODIFIED = '2026-06-14';
+// moteurs IA). Valeur fournie par la page, sinon date globale ci-dessous.
+const SITE_LAST_MODIFIED = '2026-08-20';
 const lastModified = dateModified ?? SITE_LAST_MODIFIED;
+
+const FONTS_CSS =
+  'https://fonts.bunny.net/css?family=instrument-serif:400,400i|manrope:300,400,500,600&display=swap';
 ---
 
 <!doctype html>
-<html lang="fr" class={rootClass}>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content="#FDFAF7" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0B0B0B" />
 
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -60,7 +58,7 @@ const lastModified = dateModified ?? SITE_LAST_MODIFIED;
     <link rel="apple-touch-icon" href="/images/logo.png" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Brittassist" />
+    <meta property="og:site_name" content="BrittAssist" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
@@ -74,7 +72,23 @@ const lastModified = dateModified ?? SITE_LAST_MODIFIED;
 
     <meta name="author" content="Brittany Dreano" />
 
+    {/* Le LCP est du texte : les deux fichiers latins sont préchargés. */}
     <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="https://fonts.bunny.net/instrument-serif/files/instrument-serif-latin-400-normal.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="https://fonts.bunny.net/manrope/files/manrope-latin-400-normal.woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href={FONTS_CSS} />
 
     <script type="application/ld+json" set:html={JSON.stringify({
       '@context': 'https://schema.org',
@@ -83,27 +97,29 @@ const lastModified = dateModified ?? SITE_LAST_MODIFIED;
           '@type': 'WebSite',
           '@id': `${siteUrl}/#website`,
           url: `${siteUrl}/`,
-          name: 'Brittassist',
+          name: 'BrittAssist',
+          alternateName: 'BrittAssist — Private Office',
           inLanguage: 'fr-FR',
           publisher: { '@id': `${siteUrl}/#business` },
         },
         {
-          '@type': ['LocalBusiness', 'ProfessionalService'],
+          '@type': ['ProfessionalService', 'LocalBusiness'],
           '@id': `${siteUrl}/#business`,
-          name: 'Brittassist',
-          description: 'Assistance digitale humaine soutenue par l\'intelligence artificielle. Pour entrepreneurs, artisans, commerçants et TPE.',
+          name: 'BrittAssist',
+          description:
+            "Private Office externalisé pour entrepreneurs et dirigeants : executive assistant et lifestyle assistant. Administratif, agenda, déplacements, réservations, coordination et demandes sur mesure, prises en charge de bout en bout.",
+          slogan: 'Vous gardez les décisions. J’absorbe le reste.',
           url: `${siteUrl}/`,
           email: 'brittanydreano.cm@gmail.com',
           telephone: '+33667249727',
           image: ogImageAbs,
-          founder: {
-            '@type': 'Person',
-            name: 'Brittany Dreano',
-          },
-          areaServed: {
-            '@type': 'AdministrativeArea',
-            name: 'France',
-          },
+          priceRange: '€€€',
+          knowsLanguage: ['fr-FR', 'en'],
+          founder: { '@type': 'Person', name: 'Brittany Dreano' },
+          areaServed: [
+            { '@type': 'Country', name: 'France' },
+            { '@type': 'Place', name: 'International (à distance)' },
+          ],
           address: {
             '@type': 'PostalAddress',
             addressLocality: 'La Roche-sur-Yon',
@@ -111,11 +127,42 @@ const lastModified = dateModified ?? SITE_LAST_MODIFIED;
             addressCountry: 'FR',
           },
           sameAs: [
+            'https://www.linkedin.com/in/brittassit85/',
             'https://www.instagram.com/brittassist85',
             'https://www.facebook.com/profile.php?id=100091531544199',
-            'https://www.linkedin.com/in/brittassit85/',
           ],
           openingHours: 'Mo-Fr 09:00-18:00',
+          hasOfferCatalog: {
+            '@type': 'OfferCatalog',
+            name: 'Accompagnements BrittAssist',
+            itemListElement: [
+              {
+                '@type': 'Offer',
+                name: 'Executive Private Office',
+                description:
+                  "Prise en charge continue du quotidien professionnel et personnel d’un dirigeant : administratif, agenda, déplacements, réservations, coordination, suivi prestataires.",
+                price: '700',
+                priceCurrency: 'EUR',
+                eligibleDuration: {
+                  '@type': 'QuantitativeValue',
+                  value: 1,
+                  unitCode: 'MON',
+                },
+              },
+              {
+                '@type': 'Offer',
+                name: 'Private Office sur mesure',
+                description:
+                  "Disponibilité renforcée, plusieurs entreprises, forte volumétrie, déplacements fréquents, coordination quotidienne.",
+              },
+              {
+                '@type': 'Offer',
+                name: 'Mission ponctuelle',
+                description:
+                  "Voyage, événement, recherche ou organisation spécifique, sans récurrence.",
+              },
+            ],
+          },
         },
         {
           '@type': 'WebPage',
@@ -133,14 +180,14 @@ const lastModified = dateModified ?? SITE_LAST_MODIFIED;
       ],
     })} />
 
-    <progress id="progress-bar-meta" hidden />
-
     <slot name="head" />
+
+    {/* Consentement CNIL : Google Analytics n'est chargé qu'après acceptation. */}
+    <script src="/consent.js" is:inline></script>
   </head>
   <body class={bodyClass}>
     <div id="progress-bar"></div>
 
-    {showRegistryBar && <RegistryBar />}
     <Header />
 
     <main id="main-content">
@@ -163,8 +210,9 @@ const lastModified = dateModified ?? SITE_LAST_MODIFIED;
         window.addEventListener('resize', updateBar, { passive: true });
       }
 
-      const reveals = document.querySelectorAll('.reveal');
-      if (reveals.length > 0 && 'IntersectionObserver' in window) {
+      const reveals = document.querySelectorAll('.reveal, .request__steps');
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!reduced && reveals.length > 0 && 'IntersectionObserver' in window) {
         const obs = new IntersectionObserver(
           (entries) => {
             entries.forEach((e) => {

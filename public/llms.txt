@@ -1,32 +1,49 @@
-# Brittassist
+# BrittAssist
 
-> Assistance digitale humaine, soutenue par l'intelligence artificielle, pour entrepreneurs, indépendants, artisans, commerçants et TPE. Délégation de l'administratif, des emails, de l'organisation, des réseaux sociaux et des petites automatisations. 100 % à distance, fondée et opérée par Brittany Dreano, basée en Vendée (La Roche-sur-Yon, 85).
+> Private Office externalisé pour entrepreneurs et dirigeants. Executive & lifestyle assistance : administratif, agenda, déplacements, réservations, coordination de prestataires, organisation personnelle et demandes sur mesure, prises en charge de bout en bout. Fondé et opéré par Brittany Dreano, à distance depuis la Vendée (85), en français et en anglais.
 
-Brittassist accompagne les dirigeants de petites structures qui manquent de temps : on délègue les tâches chronophages (devis/factures, tri des emails, planning, publication sur les réseaux, mise en place d'outils simples) à une assistante humaine qui s'appuie sur l'IA pour aller plus vite, sans jamais perdre le contrôle humain. Aucun pack figé : chaque accompagnement est construit sur mesure après un appel découverte gratuit de 30 minutes, sans engagement de durée (préavis 1 mois).
+BrittAssist n'est pas un service d'exécution de tâches à l'heure : c'est un niveau de prise en charge. Le dirigeant envoie une demande — souvent une seule phrase, par WhatsApp ou par e-mail — et il ne reçoit pas en retour une nouvelle liste de problèmes à gérer. La demande est clarifiée, organisée, coordonnée et suivie jusqu'à ce qu'elle soit terminée, bloquée, ou qu'une décision lui revienne réellement.
+
+Principe directeur : « Vous gardez les décisions. J'absorbe le reste. »
 
 Points clés :
-- Assistance humaine + IA (l'IA est un outil manié par Brittany, pas un remplacement).
-- 7 ans d'expérience en assistance, 100 % à distance, réponse sous 24 h ouvrées.
-- Zone : Vendée et toute la France (à distance).
-- Pour les besoins techniques avancés (site web, agent IA, automatisations poussées, CRM, audit), orientation vers le partenaire Axdia (atelier IA).
+- Un interlocuteur unique : Brittany Dreano, toujours la même personne, qui mémorise les préférences et n'a pas à les redemander.
+- Une boucle fermée : chaque demande finit dans l'un de quatre statuts — Terminé, En cours, En attente, Décision nécessaire.
+- Un périmètre large, qui traverse le professionnel et le personnel.
+- Sept ans d'assistance en entreprise avant l'installation en indépendante.
+- Anglais courant pour les interlocuteurs et les réservations à l'étranger.
+- Confidentialité contractuelle (5 ans après la fin de la collaboration).
+
+Six univers de prise en charge :
+1. Executive Admin — facturation, contrats, échéances, documents, préparation des éléments comptables.
+2. Agenda & Coordination — rendez-vous, confirmations, arbitrages d'horaires, coordination des interlocuteurs.
+3. Travel — vols, trains, hôtels, transferts, itinéraires complets, suivi pendant le déplacement.
+4. Lifestyle — restaurants, dîners clients, événements, cadeaux, recherches sur mesure.
+5. Private Coordination — prestataires, interventions à domicile, démarches et organisation personnelles.
+6. International — échanges en anglais et coordination avec des interlocuteurs étrangers.
+
+Hors périmètre, explicitement : tenue comptable et déclarations fiscales, conseil juridique et rédaction d'actes, développement technique et intégration de logiciels, production éditoriale et présence en ligne de la marque. Sur ces sujets, BrittAssist identifie le bon interlocuteur et en assure la coordination.
+
+Accompagnements :
+- Executive Private Office — à partir de 700 € / mois. Pour l'entrepreneur ou le dirigeant qui veut cesser d'être le point de passage de toutes les petites décisions. Périmètre défini dans une proposition personnalisée.
+- Private Office sur mesure — sur devis. Disponibilité renforcée, plusieurs entreprises, forte volumétrie, déplacements fréquents, coordination quotidienne.
+- Mission ponctuelle — sur devis. Un voyage, un événement, une recherche ou une organisation spécifique, sans récurrence.
+
+Aucun tarif horaire, aucun forfait en heures : le périmètre et ses limites sont définis contractuellement, pas vendus au volume.
 
 ## Pages principales
-- [Accueil](https://brittassist.fr/): présentation, domaines d'intervention, méthode et écosystème.
-- [Domaines d'intervention](https://brittassist.fr/domaines-intervention): les 7 domaines (administratif, emails, organisation, réseaux sociaux, support digital, automatisations simples, IA pratique).
-- [Méthode](https://brittassist.fr/methode): le parcours en 4 temps (découverte, analyse, proposition sur mesure, accompagnement flexible) et la FAQ.
-- [À propos](https://brittassist.fr/a-propos): Brittany Dreano, son parcours et ses valeurs.
-- [Assistante administrative en Vendée](https://brittassist.fr/assistante-administrative-vendee): page locale (La Roche-sur-Yon, Les Sables-d'Olonne, Challans, Montaigu, Luçon…).
-- [Écosystème](https://brittassist.fr/ecosysteme): partenaires de confiance, dont Axdia pour les projets techniques.
-- [Contact](https://brittassist.fr/contact): appel découverte gratuit, formulaire et coordonnées.
-- [Questionnaire de découverte](https://brittassist.fr/questionnaire): formulaire détaillé (5 min) pour préparer l'accompagnement.
+- [Accueil](https://brittassist.fr/) : positionnement, principe de la boucle fermée, six univers, offres, exemples de prise en charge.
+- [Le Private Office](https://brittassist.fr/private-office) : ce que c'est et ce que ce n'est pas, le canal de demande, les quatre temps, les quatre statuts, le partage entre ce qui est absorbé et ce qui reste au dirigeant.
+- [Services](https://brittassist.fr/services) : le détail des six univers, exemples concrets, limites du périmètre.
+- [À propos](https://brittassist.fr/a-propos) : Brittany Dreano, parcours et standards de service.
+- [Contact](https://brittassist.fr/contact) : rendez-vous en ligne et message direct.
 
 ## Contact
-- Email : brittanydreano.cm@gmail.com
+- E-mail : brittanydreano.cm@gmail.com
 - Téléphone : +33 6 67 24 97 27
 - Rendez-vous : https://calendly.com/brittassist85/rendez-vous-decouverte
-- Instagram : https://www.instagram.com/brittassist85
-- Facebook : https://www.facebook.com/profile.php?id=100091531544199
 - LinkedIn : https://www.linkedin.com/in/brittassit85/
+- Instagram : https://www.instagram.com/brittassist85
 
 ## Mentions
 - [Mentions légales](https://brittassist.fr/mentions-legales)

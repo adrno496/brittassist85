@@ -1,78 +1,60 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import SectionMark from '../components/SectionMark.astro';
 import Button from '../components/Button.astro';
-import SocialLinks from '../components/SocialLinks.astro';
 
-const title = "Contact & appel découverte, Brittassist";
-const description = "Réservez votre appel découverte gratuit de 30 min ou envoyez-moi un message. Je réponds personnellement sous 24 h les jours ouvrés.";
+const title = "Échanger avec Brittany · BrittAssist";
+const description =
+  "Trente minutes pour décrire votre organisation actuelle et identifier ce qu’un Private Office pourrait absorber. Rendez-vous en ligne ou message direct.";
 ---
 
 <BaseLayout title={title} description={description}>
-  <header class="page-hero">
+  <header class="hero hero--page">
     <div class="container">
-      <p class="hero-eyebrow">Contact</p>
-      <h1>Prenons <em>contact</em>.</h1>
-      <p class="lede">
-        Trois façons de me joindre : un appel découverte gratuit de 30 min, le
-        formulaire ci-dessous, ou directement par email / téléphone. Je
-        réponds personnellement sous 24 h ouvrées.
+      <p class="eyebrow">Contact</p>
+      <h1 class="hero__title">Parlons de votre organisation actuelle.</h1>
+      <p class="hero__sub">
+        Trente minutes suffisent. Vous décrivez comment votre semaine se passe
+        réellement, j’identifie ce qui peut être absorbé dès le premier mois.
+        Aucun cahier des charges à préparer.
       </p>
+      <div class="hero__actions btn-row">
+        <Button
+          href="https://calendly.com/brittassist85/rendez-vous-decouverte"
+          external
+          variant="ivoire"
+        >
+          Réserver un créneau
+        </Button>
+        <Button href="#message" variant="lien">Écrire directement</Button>
+      </div>
     </div>
   </header>
 
-  <section class="section-folio">
+  <!-- ── Formulaire ───────────────────────────────────────── -->
+  <section class="band band--noir-doux" id="message">
     <div class="container">
-      <SectionMark num="01" label="Les options" />
-      <div class="contact-grid">
-        <div class="contact-card reveal">
-          <span class="contact-card__icon">📞</span>
-          <h2>Appel découverte gratuit</h2>
-          <p>30 minutes, en visio ou téléphone, pour faire connaissance et identifier vos vrais besoins.</p>
-          <Button href="https://calendly.com/brittassist85/rendez-vous-decouverte" external variant="primary">
-            Réserver un créneau
-          </Button>
-        </div>
-
-        <div class="contact-card reveal d-1">
-          <span class="contact-card__icon">✍️</span>
-          <h2>Questionnaire de découverte</h2>
-          <p>Pas envie d'appeler tout de suite&nbsp;? Remplissez le questionnaire (5 min), je reviens vers vous avec une première lecture.</p>
-          <Button href="/questionnaire" variant="outline-dark">
-            Remplir le questionnaire
-          </Button>
-        </div>
-
-        <div class="contact-card reveal d-2">
-          <span class="contact-card__icon">💬</span>
-          <h2>Message direct</h2>
-          <p>Une question rapide&nbsp;? Le formulaire ci-dessous arrive directement dans ma boîte mail.</p>
-          <a href="#form" class="btn btn--outline-dark">Aller au formulaire</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-folio bleed-rose" id="form">
-    <div class="container container--narrow">
-      <SectionMark num="02" label="Formulaire de contact" />
-      <div class="section-folio__head reveal">
-        <h2 class="section-folio__title">Écrivez-moi.</h2>
-        <p class="section-folio__lede">
-          Décrivez votre situation et vos besoins. Je vous réponds
-          personnellement sous 24 h les jours ouvrés.
+      <div class="band__head reveal">
+        <p class="eyebrow">Message direct</p>
+        <h2>Ou écrivez-moi en trois lignes.</h2>
+        <p class="lede">
+          Dites-moi simplement ce qui vous prend du temps en ce moment. Je
+          reviens vers vous personnellement.
         </p>
       </div>
 
+      <div id="form-sent" class="form-sent" hidden>
+        <strong>Message bien reçu.</strong> Je reviens vers vous personnellement,
+        depuis&nbsp;<a href="mailto:brittanydreano.cm@gmail.com">brittanydreano.cm@gmail.com</a>.
+      </div>
+
       <form
-        class="contact-form reveal"
+        class="form reveal"
         data-axdia-form
-        data-subject="Message direct (site)"
-        data-next="/contact?sent=true"
+        data-subject="Demande Private Office (site)"
         action="https://formsubmit.co/brittanydreano.cm%40gmail.com"
         method="POST"
       >
-        <input type="hidden" name="_subject" value="Nouveau contact Brittassist" />
+        <input type="hidden" name="_subject" value="Nouvelle demande BrittAssist" />
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_template" value="table" />
         <input type="hidden" name="_next" value="https://brittassist.fr/contact?sent=true" />
@@ -90,222 +72,88 @@ const description = "Réservez votre appel découverte gratuit de 30 min ou envo
 
         <div class="form-row">
           <div class="form-group">
-            <label for="email">Email <span class="required">*</span></label>
+            <label for="email">E-mail <span class="required">*</span></label>
             <input type="email" id="email" name="email" required autocomplete="email" />
           </div>
           <div class="form-group">
-            <label for="phone">Téléphone <span class="optional">(optionnel)</span></label>
+            <label for="phone">Téléphone <span class="optional">(facultatif)</span></label>
             <input type="tel" id="phone" name="telephone" autocomplete="tel" />
           </div>
         </div>
 
         <div class="form-group">
-          <label for="profile">Votre profil <span class="required">*</span></label>
-          <select id="profile" name="profil" required>
-            <option value="">Sélectionnez…</option>
-            <option>Artisan</option>
-            <option>Commerçant</option>
-            <option>Indépendant / freelance</option>
-            <option>Coach / formateur</option>
-            <option>TPE / petite entreprise</option>
-            <option>Entrepreneur / solopreneur</option>
-            <option>Autre</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="need">Votre besoin principal <span class="required">*</span></label>
-          <select id="need" name="besoin" required>
-            <option value="">Sélectionnez…</option>
-            <option>Assistance administrative</option>
-            <option>Gestion des emails</option>
-            <option>Organisation &amp; suivi d'activité</option>
-            <option>Réseaux sociaux</option>
-            <option>Support digital</option>
-            <option>Automatisations simples</option>
-            <option>IA pratique au quotidien</option>
-            <option>Accompagnement global</option>
-            <option>Je ne sais pas encore, on en parle</option>
-            <option>Besoin plus technique → Axdia ou autre partenaire</option>
-          </select>
-        </div>
-
-        <div class="form-group">
           <label for="message">Votre message <span class="required">*</span></label>
-          <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre activité, ce qui vous prend du temps, ce que vous aimeriez déléguer…"></textarea>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+            placeholder="Ce qui vous prend du temps en ce moment, en quelques lignes."
+          ></textarea>
         </div>
 
-        <div class="form-group form-checkbox">
-          <label>
-            <input type="checkbox" name="rgpd" required />
+        <div class="form-check">
+          <input type="checkbox" id="rgpd" name="rgpd" required />
+          <label for="rgpd">
             <span>
-              Je donne mon <strong>consentement RGPD</strong> au traitement de
-              mes données personnelles (nom, email, téléphone) dans le seul but
-              de répondre à ma demande. <a href="/politique-confidentialite">Politique de confidentialité</a>.
+              Je consens au traitement de mes données (nom, e-mail, téléphone)
+              dans le seul but de répondre à ma demande.
+              <a href="/politique-confidentialite">Politique de confidentialité</a>.
             </span>
           </label>
         </div>
 
-        <Button type="submit" variant="primary">
-          Envoyer mon message <span class="btn-arrow">→</span>
-        </Button>
+        <Button type="submit" variant="ivoire">Envoyer</Button>
+        <p class="form-note">
+          Vos informations restent confidentielles et ne sont transmises à
+          aucun tiers commercial.
+        </p>
       </form>
     </div>
   </section>
 
-  <section class="section-folio">
+  <!-- ── Contact direct ───────────────────────────────────── -->
+  <section class="band band--noir band--tight">
     <div class="container">
-      <SectionMark num="03" label="Contact direct" />
-      <div class="contact-direct reveal">
-        <div class="contact-direct__item">
-          <span class="contact-direct__label">Email</span>
-          <a href="mailto:brittanydreano.cm@gmail.com" class="contact-email-link">
+      <p class="eyebrow reveal">Coordonnées</p>
+      <div class="direct reveal">
+        <div>
+          <span class="direct__label">E-mail</span>
+          <a class="direct__value" href="mailto:brittanydreano.cm@gmail.com">
             brittanydreano.cm@gmail.com
           </a>
         </div>
-        <div class="contact-direct__item">
-          <span class="contact-direct__label">Téléphone</span>
-          <a href="tel:+33667249727" class="contact-email-link">
-            06 67 24 97 27
+        <div>
+          <span class="direct__label">Téléphone</span>
+          <a class="direct__value" href="tel:+33667249727">06 67 24 97 27</a>
+        </div>
+        <div>
+          <span class="direct__label">Rendez-vous</span>
+          <a
+            class="direct__value"
+            href="https://calendly.com/brittassist85/rendez-vous-decouverte"
+            target="_blank"
+            rel="noopener"
+          >
+            Réserver un créneau ↗
           </a>
         </div>
-        <div class="contact-direct__item">
-          <span class="contact-direct__label">Localisation</span>
-          <span>Vendée (85) · 100 % à distance</span>
-        </div>
-        <div class="contact-direct__item">
-          <span class="contact-direct__label">Disponibilité</span>
-          <span>Lundi au vendredi · Réponse sous 24 h</span>
-        </div>
-        <div class="contact-direct__item">
-          <span class="contact-direct__label">Réseaux sociaux</span>
-          <SocialLinks variant="inline" />
+        <div>
+          <span class="direct__label">Cadre</span>
+          <span class="direct__value">Vendée (85) · France et international</span>
         </div>
       </div>
     </div>
   </section>
 </BaseLayout>
 
-<style>
-  .hero-eyebrow {
-    font-family: var(--font-sans);
-    font-size: 0.78rem;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--rose-fonce);
-    margin-bottom: 18px;
-    font-weight: 500;
+<script>
+  // formsubmit renvoie sur /contact?sent=true après l'envoi de l'e-mail.
+  if (new URLSearchParams(window.location.search).get('sent') === 'true') {
+    const el = document.getElementById('form-sent');
+    if (el) {
+      el.hidden = false;
+      el.scrollIntoView({ block: 'center' });
+    }
   }
-  h1 em, h2 em { font-style: italic; color: var(--rose-fonce); }
-
-  .contact-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
-  }
-  @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
-  .contact-card {
-    background: var(--blanc);
-    border: 1px solid rgba(232, 160, 176, 0.2);
-    border-radius: var(--radius-lg);
-    padding: 36px 32px;
-    text-align: center;
-    transition: transform var(--transition), box-shadow var(--transition);
-  }
-  html.dark .contact-card { background: var(--dm-surface); border-color: rgba(232, 160, 176, 0.14); }
-  .contact-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
-  .contact-card__icon { font-size: 2.4rem; display: block; margin-bottom: 16px; }
-  .contact-card h2 { font-size: 1.3rem; margin-bottom: 14px; }
-  .contact-card p { color: var(--gris-moyen); font-size: 0.95rem; margin-bottom: 22px; line-height: 1.6; }
-
-  .contact-form {
-    background: var(--blanc);
-    border: 1px solid rgba(232, 160, 176, 0.2);
-    border-radius: var(--radius-lg);
-    padding: 40px;
-  }
-  html.dark .contact-form { background: var(--dm-surface); border-color: rgba(232, 160, 176, 0.14); }
-  .form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  @media (max-width: 700px) { .form-row { grid-template-columns: 1fr; gap: 0; } }
-  .form-group { margin-bottom: 20px; }
-  .form-group label {
-    display: block;
-    font-size: 0.88rem;
-    font-weight: 500;
-    margin-bottom: 8px;
-    color: var(--anthracite);
-  }
-  .form-group .required { color: var(--rose-fonce); }
-  .form-group .optional { color: var(--gris-moyen); font-weight: 400; font-size: 0.82rem; }
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    width: 100%;
-    padding: 12px 14px;
-    border: 1px solid rgba(232, 160, 176, 0.4);
-    border-radius: var(--radius);
-    font-family: var(--font-sans);
-    font-size: 0.95rem;
-    background: var(--creme);
-    color: var(--anthracite);
-    transition: border-color var(--transition), background var(--transition);
-  }
-  .form-group input:focus,
-  .form-group select:focus,
-  .form-group textarea:focus {
-    outline: none;
-    border-color: var(--rose-fonce);
-    background: var(--blanc);
-  }
-  html.dark .form-group input,
-  html.dark .form-group select,
-  html.dark .form-group textarea {
-    background: var(--dm-bg);
-    color: var(--anthracite);
-  }
-  .form-checkbox label {
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-    font-size: 0.88rem;
-    line-height: 1.5;
-    color: var(--gris-moyen);
-    font-weight: 400;
-  }
-  .form-checkbox input[type="checkbox"] {
-    width: auto;
-    margin-top: 3px;
-    flex-shrink: 0;
-  }
-  .form-checkbox a { color: var(--rose-fonce); text-decoration: underline; }
-
-  .contact-direct {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 28px;
-  }
-  .contact-direct__item {
-    padding: 24px 0;
-    border-top: 1px solid rgba(232, 160, 176, 0.3);
-  }
-  .contact-direct__label {
-    display: block;
-    font-family: var(--font-sans);
-    font-size: 0.75rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--gris-moyen);
-    margin-bottom: 10px;
-  }
-  .contact-email-link {
-    font-family: var(--font-serif);
-    font-size: 1.2rem;
-    color: var(--rose-fonce);
-    transition: color var(--transition);
-  }
-  .contact-email-link:hover { color: var(--anthracite); }
-</style>
+</script>

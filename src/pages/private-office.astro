@@ -1,0 +1,265 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+import Monogram from '../components/Monogram.astro';
+
+const title = "Le Private Office : comment ça fonctionne · BrittAssist";
+const description =
+  "Un Private Office externalisé : un canal unique, une personne responsable, une boucle fermée. Comment une demande de dirigeant est prise en charge de bout en bout, du message reçu au sujet clos.";
+
+const steps = [
+  {
+    num: '01',
+    name: 'Vous demandez',
+    desc: 'WhatsApp, e-mail ou le canal convenu. Une phrase suffit. Pas de formulaire, pas de cahier des charges.',
+  },
+  {
+    num: '02',
+    name: 'Je clarifie',
+    desc: 'Une question, deux au maximum, et seulement sur ce qui bloque réellement l’exécution.',
+  },
+  {
+    num: '03',
+    name: 'J’organise',
+    desc: 'Recherche, comparaison, coordination, réservation, relance des prestataires, centralisation des confirmations.',
+  },
+  {
+    num: '04',
+    name: 'Je ferme la boucle',
+    desc: 'Le sujet revient vers vous avec un statut clair, jamais avec une question ouverte de plus.',
+  },
+];
+
+const statuses = [
+  { num: 'Terminé', desc: 'Le sujet est clos. Les confirmations sont centralisées, vous n’avez rien à faire.' },
+  { num: 'En cours', desc: 'C’est engagé, la date de retour est connue, vous n’avez pas à relancer.' },
+  { num: 'En attente', desc: 'Le blocage vient de l’extérieur. Je le suis, et je vous dis quand je relance.' },
+  { num: 'Décision', desc: 'Un arbitrage vous revient vraiment. Il arrive avec les options et une recommandation.' },
+];
+---
+
+<BaseLayout title={title} description={description}>
+  <header class="hero hero--page">
+    <div class="container">
+      <div class="hero__grid">
+        <div>
+          <p class="eyebrow">Le Private Office</p>
+          <h1 class="hero__title">Un cabinet privé, sans structure interne à créer.</h1>
+          <p class="hero__sub">
+            Un dirigeant qui recrute une assistante hérite d’un poste à
+            encadrer, à former et à occuper. Un Private Office externalisé
+            donne le même niveau de prise en charge, sans en assumer la
+            structure.
+          </p>
+        </div>
+        <div class="hero__media media--bureau">
+          <img
+            src="/images/bureau-portable.jpg"
+            alt="Plan de travail : ordinateur portable ouvert, en cours de traitement d’une demande"
+            width="1320"
+            height="700"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Définition ───────────────────────────────────────── -->
+  <section class="band band--ivoire">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Définition</p>
+        <h2>Ce que c’est. Ce que ce n’est pas.</h2>
+      </div>
+
+      <div class="duo reveal">
+        <div>
+          <h3 class="duo__title">Ce que c’est</h3>
+          <ul class="list-plain">
+            <li>Un point d’entrée unique pour tout ce qui n’a plus besoin de votre attention.</li>
+            <li>Une personne qui connaît vos préférences et n’a pas à les redemander.</li>
+            <li>Une prise en charge qui va jusqu’au résultat, pas jusqu’à la première difficulté.</li>
+            <li>Un périmètre qui traverse le professionnel et le personnel, parce que votre agenda ne les sépare pas.</li>
+            <li>Une confidentialité qui va de soi, sur des sujets qui touchent souvent à votre vie privée.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="duo__title">Ce que ce n’est pas</h3>
+          <ul class="list-plain">
+            <li>Une plateforme où l’interlocuteur change à chaque demande.</li>
+            <li>Un forfait d’heures à consommer avant la fin du mois.</li>
+            <li>Une exécution littérale qui vous renvoie la première question venue.</li>
+            <li>Une personne de plus à briefer, à suivre et à relancer.</li>
+            <li>Un outil, un logiciel, ou une automatisation déguisée.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Le canal ─────────────────────────────────────────── -->
+  <section class="band band--noir">
+    <div class="container">
+      <div class="band__head band__head--wide reveal">
+        <p class="eyebrow">Le canal</p>
+        <h2>Une phrase, envoyée d’où vous êtes.</h2>
+        <p class="lede">
+          La demande part du canal que vous utilisez déjà — WhatsApp le plus
+          souvent, e-mail si vous préférez. Depuis un taxi, entre deux
+          rendez-vous, à 22 h. Le format n’a aucune importance : c’est mon
+          travail de le transformer en quelque chose d’exécutable.
+        </p>
+      </div>
+
+      <div class="request">
+        <div class="request__bubble reveal">
+          <p class="request__meta">Message reçu — jeudi, 7 h 12</p>
+          <p class="request__text">
+            « Le fournisseur n’a toujours pas envoyé l’avoir. Et il faut
+            décaler le point de lundi. »
+          </p>
+          <p class="request__time">Temps passé par le dirigeant : 15 secondes</p>
+        </div>
+
+        <ol class="request__steps">
+          <li><span class="idx" aria-hidden="true">01</span><span>Reprise de l’historique des échanges avec le fournisseur</span></li>
+          <li><span class="idx" aria-hidden="true">02</span><span>Relance écrite, puis appel si le retour ne vient pas</span></li>
+          <li><span class="idx" aria-hidden="true">03</span><span>Vérification du montant attendu sur la facture d’origine</span></li>
+          <li><span class="idx" aria-hidden="true">04</span><span>Nouveau créneau proposé aux participants du point de lundi</span></li>
+          <li><span class="idx" aria-hidden="true">05</span><span>Invitations mises à jour, confirmations récupérées</span></li>
+          <li><span class="idx" aria-hidden="true">06</span><span>Retour unique : deux sujets, deux statuts, aucune question ouverte</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Le déroulé ───────────────────────────────────────── -->
+  <section class="band band--rose">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Le déroulé</p>
+        <h2>Quatre temps, toujours les mêmes.</h2>
+      </div>
+      <div class="steps">
+        {steps.map((s, i) => (
+          <div class={`step reveal d-${i}`}>
+            <span class="step__num">{s.num}</span>
+            <h3 class="step__name">{s.name}</h3>
+            <p class="step__desc">{s.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── La boucle fermée ─────────────────────────────────── -->
+  <section class="band band--noir-doux">
+    <div class="container">
+      <div class="band__head band__head--wide reveal">
+        <p class="eyebrow">La boucle fermée</p>
+        <h2>Un sujet confié est un sujet qui ne revient pas vous chercher.</h2>
+        <p class="lede">
+          C’est le seul engagement qui compte vraiment. Une demande ne reste
+          jamais dans un état indéterminé : elle finit toujours dans l’un de
+          ces quatre statuts.
+        </p>
+      </div>
+
+      <div class="steps">
+        {statuses.map((s, i) => (
+          <div class={`step reveal d-${i}`}>
+            <span class="step__num">{s.num}</span>
+            <p class="step__desc">{s.desc}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="request__conclusion reveal">
+        <p class="closing closing--wide">
+          Une demande. Une personne responsable. Une boucle fermée.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Le périmètre ─────────────────────────────────────── -->
+  <section class="band band--ivoire">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Le partage</p>
+        <h2>Ce que j’absorbe. Ce qui reste chez vous.</h2>
+      </div>
+
+      <div class="duo reveal">
+        <div>
+          <h3 class="duo__title">J’absorbe</h3>
+          <ul class="list-plain">
+            <li>La recherche, la comparaison et le choix d’exécution.</li>
+            <li>Les relances, les confirmations et le suivi jusqu’au bout.</li>
+            <li>La coordination des prestataires et des interlocuteurs.</li>
+            <li>La mémoire des échéances, des préférences et des détails.</li>
+            <li>Les échanges en anglais avec vos contacts étrangers.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="duo__title">Vous gardez</h3>
+          <ul class="list-plain">
+            <li>Les décisions qui engagent votre entreprise ou votre argent.</li>
+            <li>Les arbitrages qui dépendent d’une information que vous seul avez.</li>
+            <li>Les relations que vous voulez continuer à porter vous-même.</li>
+            <li>La signature, toujours.</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="rule reveal" />
+
+      <p class="closing reveal">Vous gardez les décisions. J’absorbe le reste.</p>
+    </div>
+  </section>
+
+  <!-- ── Confidentialité ──────────────────────────────────── -->
+  <section class="band band--noir band--tight">
+    <div class="container">
+      <div class="duo reveal">
+        <div>
+          <p class="eyebrow">Confidentialité</p>
+          <h2>Ce qui passe par moi n’en sort pas.</h2>
+        </div>
+        <div>
+          <p class="lede">
+            Un Private Office touche à des informations sensibles : contrats,
+            montants, agendas, déplacements, parfois la vie privée. La
+            confidentialité est contractuelle, et les accès qui me sont confiés
+            sont limités à ce qui est strictement nécessaire à la mission.
+          </p>
+          <div class="u-mt-24">
+            <Button href="/cgv" variant="lien">Lire les conditions</Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA final ────────────────────────────────────────── -->
+  <section class="cta-final">
+    <Monogram variant="ghost" />
+    <div class="container container--narrow reveal">
+      <h2>Le plus simple reste d’en parler trente minutes.</h2>
+      <p class="lede">
+        Décrivez votre organisation actuelle. J’identifie ce qui peut être
+        absorbé dès le premier mois.
+      </p>
+      <div class="cta-final__actions">
+        <Button href="/contact" variant="ivoire">Échanger avec Brittany</Button>
+      </div>
+      <p class="cta-final__fine">
+        Accompagnement à partir de 700 € / mois &nbsp;•&nbsp; Sur mesure
+        &nbsp;•&nbsp; Confidentiel
+      </p>
+    </div>
+  </section>
+</BaseLayout>

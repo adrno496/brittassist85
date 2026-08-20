@@ -1,47 +1,58 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import SectionMark from '../components/SectionMark.astro';
 import Button from '../components/Button.astro';
 
-const title = "Questionnaire de découverte, Brittassist";
-const description = "Pas envie d'appeler tout de suite ? Remplissez ce questionnaire (5 minutes) pour que je comprenne votre activité et vous propose un accompagnement sur mesure.";
+// Page volontairement non indexée et absente de la navigation : elle est
+// transmise par Brittany après un premier échange, pour préparer le
+// périmètre. L'accueil ne doit jamais renvoyer vers un formulaire long.
+const title = "Préparer votre Private Office · BrittAssist";
+const description =
+  "Formulaire de préparation transmis après un premier échange, pour définir le périmètre de votre Private Office.";
+
+const domaines = [
+  'Executive Admin — facturation, contrats, échéances',
+  'Agenda & Coordination — rendez-vous, confirmations',
+  'Travel — vols, trains, hôtels, transferts',
+  'Lifestyle — restaurants, événements, cadeaux',
+  'Private Coordination — prestataires, organisation personnelle',
+  'International — échanges en anglais',
+];
 ---
 
-<BaseLayout title={title} description={description}>
-  <header class="page-hero page-hero--yellow">
+<BaseLayout title={title} description={description} noindex={true}>
+  <header class="hero hero--page">
     <div class="container">
-      <p class="hero-eyebrow">Questionnaire</p>
-      <h1>
-        Parlez-moi de votre <em>activité</em>.
-      </h1>
-      <p class="lede">
-        Pas envie d'appeler tout de suite&nbsp;? Pas de problème. Répondez à ce
-        questionnaire en 5 minutes, je reviens vers vous sous 24 h avec une
-        première lecture de vos besoins et une proposition adaptée.
+      <p class="eyebrow">Préparation</p>
+      <h1 class="hero__title">Quelques éléments avant de définir le périmètre.</h1>
+      <p class="hero__sub">
+        Ce formulaire n’est pas un préalable à notre échange : il le prolonge.
+        Répondez à ce que vous pouvez, laissez le reste — nous compléterons
+        ensemble.
       </p>
     </div>
   </header>
 
-  <section class="section-folio">
+  <section class="band band--noir-doux">
     <div class="container container--narrow">
-      <SectionMark num="01" label="Vos réponses" />
+      <div id="form-sent" class="form-sent" hidden>
+        <strong>Bien reçu.</strong> Je reviens vers vous avec une première
+        lecture du périmètre.
+      </div>
 
       <form
-        class="contact-form reveal"
+        class="form reveal"
         data-axdia-form
-        data-subject="Questionnaire de découverte"
-        data-next="/questionnaire?sent=true"
+        data-subject="Préparation du périmètre (questionnaire)"
         action="https://formsubmit.co/brittanydreano.cm%40gmail.com"
         method="POST"
       >
-        <input type="hidden" name="_subject" value="Nouveau questionnaire Brittassist" />
+        <input type="hidden" name="_subject" value="Préparation Private Office — BrittAssist" />
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_template" value="table" />
         <input type="hidden" name="_next" value="https://brittassist.fr/questionnaire?sent=true" />
 
-        <fieldset class="form-fieldset">
-          <legend>1. Qui êtes-vous ?</legend>
-
+        <fieldset>
+          <legend>Vous</legend>
           <div class="form-row">
             <div class="form-group">
               <label for="firstname">Prénom <span class="required">*</span></label>
@@ -52,296 +63,133 @@ const description = "Pas envie d'appeler tout de suite ? Remplissez ce questionn
               <input type="text" id="lastname" name="nom" required autocomplete="family-name" />
             </div>
           </div>
-
           <div class="form-row">
             <div class="form-group">
-              <label for="email">Email <span class="required">*</span></label>
+              <label for="email">E-mail <span class="required">*</span></label>
               <input type="email" id="email" name="email" required autocomplete="email" />
             </div>
             <div class="form-group">
-              <label for="phone">Téléphone <span class="optional">(optionnel)</span></label>
+              <label for="phone">Téléphone <span class="optional">(facultatif)</span></label>
               <input type="tel" id="phone" name="telephone" autocomplete="tel" />
             </div>
           </div>
         </fieldset>
 
-        <fieldset class="form-fieldset">
-          <legend>2. Votre activité</legend>
-
+        <fieldset>
+          <legend>Votre activité</legend>
           <div class="form-group">
-            <label for="profile">Votre profil <span class="required">*</span></label>
-            <select id="profile" name="profil" required>
+            <label for="profil">Votre rôle <span class="required">*</span></label>
+            <select id="profil" name="profil" required>
               <option value="">Sélectionnez…</option>
-              <option>Artisan</option>
-              <option>Commerçant</option>
-              <option>Indépendant / freelance</option>
-              <option>Coach / formateur</option>
-              <option>TPE / petite entreprise</option>
-              <option>Entrepreneur / solopreneur</option>
+              <option>Dirigeant d’entreprise</option>
+              <option>Entrepreneur indépendant</option>
+              <option>Profession libérale</option>
+              <option>Investisseur</option>
               <option>Autre</option>
             </select>
           </div>
-
-          <div class="form-group">
-            <label for="metier">Votre métier / activité <span class="required">*</span></label>
-            <input type="text" id="metier" name="metier" required placeholder="Ex. menuisier, coach sportif, naturopathe…" />
-          </div>
-
           <div class="form-row">
             <div class="form-group">
-              <label for="anciennete">Depuis combien de temps&nbsp;?</label>
-              <select id="anciennete" name="anciennete">
-                <option value="">Sélectionnez…</option>
-                <option>Moins d'1 an</option>
-                <option>1 à 3 ans</option>
-                <option>3 à 5 ans</option>
-                <option>Plus de 5 ans</option>
-              </select>
+              <label for="metier">Secteur d’activité</label>
+              <input type="text" id="metier" name="metier" autocomplete="organization" />
             </div>
             <div class="form-group">
-              <label for="taille">Taille de votre entreprise&nbsp;?</label>
+              <label for="taille">Taille de la structure</label>
               <select id="taille" name="taille">
                 <option value="">Sélectionnez…</option>
-                <option>Seul(e)</option>
-                <option>2 à 5 personnes</option>
-                <option>6 à 20 personnes</option>
-                <option>Plus de 20</option>
+                <option>Seul</option>
+                <option>2 à 10 personnes</option>
+                <option>11 à 50 personnes</option>
+                <option>Plus de 50 personnes</option>
+                <option>Plusieurs entités</option>
               </select>
             </div>
           </div>
         </fieldset>
 
-        <fieldset class="form-fieldset">
-          <legend>3. Ce qui vous prend du temps</legend>
-
+        <fieldset>
+          <legend>Ce que vous portez encore</legend>
           <div class="form-group">
-            <label>Sur quels domaines aimeriez-vous être aidé(e)&nbsp;? <span class="required">*</span><br /><span class="optional">(plusieurs choix possibles)</span></label>
-            <div class="checkbox-grid">
-              <label class="checkbox-item">
-                <input type="checkbox" name="domaines[]" value="Assistance administrative" />
-                <span>Assistance administrative</span>
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" name="domaines[]" value="Gestion des emails" />
-                <span>Gestion des emails</span>
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" name="domaines[]" value="Organisation & suivi d'activité" />
-                <span>Organisation &amp; suivi d'activité</span>
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" name="domaines[]" value="Réseaux sociaux" />
-                <span>Réseaux sociaux</span>
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" name="domaines[]" value="Support digital" />
-                <span>Support digital (outils, Canva, Drive…)</span>
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" name="domaines[]" value="Automatisations simples" />
-                <span>Automatisations simples</span>
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" name="domaines[]" value="IA pratique au quotidien" />
-                <span>IA pratique au quotidien</span>
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" name="domaines[]" value="Je ne sais pas encore" />
-                <span>Je ne sais pas encore</span>
-              </label>
+            <label id="domaines-label">
+              Les univers sur lesquels vous aimeriez être déchargé
+              <span class="optional">(plusieurs réponses possibles)</span>
+            </label>
+            <div class="check-grid" role="group" aria-labelledby="domaines-label">
+              {domaines.map((d) => (
+                <label class="check-item">
+                  <input type="checkbox" name="domaines[]" value={d} />
+                  <span>{d}</span>
+                </label>
+              ))}
             </div>
-          </div>
-
-          <div class="form-group">
-            <label for="contexte">Décrivez ce qui vous prend le plus de temps aujourd'hui <span class="required">*</span></label>
-            <textarea id="contexte" name="contexte" rows="5" required placeholder="Ex. je passe une heure par jour sur mes mails, je n'ai pas le temps de publier sur les réseaux, mes factures s'accumulent…"></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="objectif">Si tout se passe bien, qu'est-ce qui aura changé dans 3 mois&nbsp;?</label>
-            <textarea id="objectif" name="objectif" rows="3" placeholder="Ex. j'aurai une vraie présence sur Instagram, mes mails seront sous contrôle, je dégagerai 5 h par semaine…"></textarea>
           </div>
         </fieldset>
 
-        <fieldset class="form-fieldset">
-          <legend>4. Cadre et démarrage</legend>
+        <fieldset>
+          <legend>Le contexte</legend>
+          <div class="form-group">
+            <label for="contexte">Comment se passe une semaine, en ce moment ?</label>
+            <textarea id="contexte" name="contexte" rows="5"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="objectif">Qu’aimeriez-vous ne plus avoir à faire dans trois mois ?</label>
+            <textarea id="objectif" name="objectif" rows="5"></textarea>
+          </div>
+        </fieldset>
 
+        <fieldset>
+          <legend>Le cadre</legend>
           <div class="form-row">
             <div class="form-group">
-              <label for="timing">Quand aimeriez-vous démarrer&nbsp;?</label>
+              <label for="timing">À partir de quand ?</label>
               <select id="timing" name="timing">
                 <option value="">Sélectionnez…</option>
                 <option>Dès que possible</option>
-                <option>D'ici 2 à 4 semaines</option>
-                <option>D'ici 1 à 3 mois</option>
-                <option>Je me renseigne pour plus tard</option>
+                <option>Dans le mois</option>
+                <option>Dans les trois mois</option>
+                <option>J’explore</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="budget">Budget envisagé <span class="optional">(optionnel)</span></label>
+              <label for="budget">Format envisagé</label>
               <select id="budget" name="budget">
-                <option value="">Préfère en parler…</option>
-                <option>Moins de 300 € / mois</option>
-                <option>300 à 600 € / mois</option>
-                <option>600 à 1 200 € / mois</option>
-                <option>Plus de 1 200 € / mois</option>
-                <option>Plutôt une mission ponctuelle</option>
+                <option value="">Sélectionnez…</option>
+                <option>Executive Private Office</option>
+                <option>Private Office sur mesure</option>
+                <option>Mission ponctuelle</option>
+                <option>À définir ensemble</option>
               </select>
             </div>
           </div>
-
-          <div class="form-group">
-            <label for="message">Autre chose à me dire ?</label>
-            <textarea id="message" name="message" rows="3" placeholder="Une précision, une contrainte, une envie…"></textarea>
-          </div>
         </fieldset>
 
-        <div class="form-group form-checkbox">
-          <label>
-            <input type="checkbox" name="rgpd" required />
+        <div class="form-check">
+          <input type="checkbox" id="rgpd" name="rgpd" required />
+          <label for="rgpd">
             <span>
-              Je donne mon <strong>consentement RGPD</strong> au traitement de
-              mes données personnelles dans le seul but de répondre à ma
-              demande. <a href="/politique-confidentialite">En savoir plus</a>.
+              Je consens au traitement de mes données dans le seul but de
+              préparer notre échange.
+              <a href="/politique-confidentialite">Politique de confidentialité</a>.
             </span>
           </label>
         </div>
 
-        <Button type="submit" variant="primary">
-          Envoyer mes réponses <span class="btn-arrow">→</span>
-        </Button>
-
+        <Button type="submit" variant="ivoire">Envoyer</Button>
         <p class="form-note">
-          Je vous réponds personnellement sous 24 h ouvrées.
+          Vos réponses restent confidentielles et ne sont transmises à aucun
+          tiers commercial.
         </p>
       </form>
     </div>
   </section>
-
-  <section class="cta-final-folio">
-    <div class="container container--narrow reveal">
-      <h2>Vous préférez <em>parler directement</em>&nbsp;?</h2>
-      <p>Aucun souci, un appel découverte de 30 minutes peut vous convenir mieux.</p>
-      <Button href="https://calendly.com/brittassist85/rendez-vous-decouverte" external variant="primary">
-        Réserver un appel
-      </Button>
-    </div>
-  </section>
 </BaseLayout>
 
-<style>
-  .hero-eyebrow {
-    font-family: var(--font-sans);
-    font-size: 0.78rem;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--rose-fonce);
-    margin-bottom: 18px;
-    font-weight: 500;
+<script>
+  if (new URLSearchParams(window.location.search).get('sent') === 'true') {
+    const el = document.getElementById('form-sent');
+    if (el) {
+      el.hidden = false;
+      el.scrollIntoView({ block: 'center' });
+    }
   }
-  h1 em, h2 em { font-style: italic; color: var(--rose-fonce); }
-
-  .form-fieldset {
-    border: none;
-    padding: 0;
-    margin: 0 0 40px;
-  }
-  .form-fieldset legend {
-    font-family: var(--font-serif);
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: var(--anthracite);
-    margin-bottom: 22px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid rgba(232, 160, 176, 0.3);
-    width: 100%;
-  }
-
-  .contact-form {
-    background: var(--blanc);
-    border: 1px solid rgba(232, 160, 176, 0.2);
-    border-radius: var(--radius-lg);
-    padding: 40px;
-  }
-  html.dark .contact-form { background: var(--dm-surface); border-color: rgba(232, 160, 176, 0.14); }
-
-  .form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  @media (max-width: 700px) { .form-row { grid-template-columns: 1fr; gap: 0; } }
-  .form-group { margin-bottom: 20px; }
-  .form-group label {
-    display: block;
-    font-size: 0.88rem;
-    font-weight: 500;
-    margin-bottom: 8px;
-    color: var(--anthracite);
-  }
-  .form-group .required { color: var(--rose-fonce); }
-  .form-group .optional { color: var(--gris-moyen); font-weight: 400; font-size: 0.82rem; }
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    width: 100%;
-    padding: 12px 14px;
-    border: 1px solid rgba(232, 160, 176, 0.4);
-    border-radius: var(--radius);
-    font-family: var(--font-sans);
-    font-size: 0.95rem;
-    background: var(--creme);
-    color: var(--anthracite);
-    transition: border-color var(--transition), background var(--transition);
-  }
-  .form-group input:focus,
-  .form-group select:focus,
-  .form-group textarea:focus {
-    outline: none;
-    border-color: var(--rose-fonce);
-    background: var(--blanc);
-  }
-  html.dark .form-group input,
-  html.dark .form-group select,
-  html.dark .form-group textarea {
-    background: var(--dm-bg);
-    color: var(--anthracite);
-  }
-  .form-checkbox label {
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-    font-size: 0.88rem;
-    line-height: 1.5;
-    color: var(--gris-moyen);
-    font-weight: 400;
-  }
-  .form-checkbox input[type="checkbox"] { width: auto; margin-top: 3px; flex-shrink: 0; }
-  .form-checkbox a { color: var(--rose-fonce); text-decoration: underline; }
-
-  .checkbox-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-  }
-  @media (max-width: 600px) { .checkbox-grid { grid-template-columns: 1fr; } }
-  .checkbox-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 12px 16px;
-    background: var(--creme);
-    border: 1px solid rgba(232, 160, 176, 0.3);
-    border-radius: var(--radius);
-    cursor: pointer;
-    transition: background var(--transition), border-color var(--transition);
-    font-size: 0.9rem;
-    font-weight: 400 !important;
-    margin-bottom: 0 !important;
-    color: var(--anthracite);
-  }
-  html.dark .checkbox-item { background: var(--dm-bg); }
-  .checkbox-item:hover { border-color: var(--rose-fonce); background: var(--rose-pale); }
-  .checkbox-item input[type="checkbox"] { width: auto; flex-shrink: 0; margin: 0; }
-  .checkbox-item:has(input:checked) { border-color: var(--rose-fonce); background: var(--rose-pale); }
-</style>
+</script>

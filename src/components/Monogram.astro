@@ -1,0 +1,15 @@
+---
+interface Props {
+  /** nav : header · foot : pied de page · ghost : filigrane du CTA final */
+  variant?: 'nav' | 'foot' | 'ghost';
+}
+const { variant = 'nav' } = Astro.props;
+---
+
+{/* En filigrane, les lettres viennent d'un pseudo-élément : sans nœud texte,
+    l'audit de contraste ne s'applique pas à un motif purement décoratif. */}
+{variant === 'ghost' ? (
+  <span class="monogram monogram--ghost" aria-hidden="true"></span>
+) : (
+  <span class={`monogram monogram--${variant}`} aria-hidden="true">BD</span>
+)}

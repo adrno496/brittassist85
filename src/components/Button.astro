@@ -1,26 +1,25 @@
 ---
 interface Props {
   href?: string;
-  variant?: 'primary' | 'outline' | 'outline-dark' | 'secondary';
-  size?: 'sm' | 'md' | 'lg';
+  /** ivoire / or : sur fond sombre · noir / contour : sur fond clair · lien : lien-flèche */
+  variant?: 'ivoire' | 'or' | 'noir' | 'contour' | 'lien';
   external?: boolean;
   ariaLabel?: string;
   type?: 'button' | 'submit';
   classExtra?: string;
 }
+
 const {
   href,
-  variant = 'primary',
-  size = 'md',
+  variant = 'ivoire',
   external = false,
   ariaLabel,
   type = 'button',
   classExtra = '',
 } = Astro.props;
 
-const classes = ['btn', `btn--${variant}`, size !== 'md' ? `btn--${size}` : '', classExtra]
-  .filter(Boolean)
-  .join(' ');
+const base = variant === 'lien' ? 'btn-lien' : `btn btn--${variant}`;
+const classes = [base, classExtra].filter(Boolean).join(' ');
 ---
 
 {href ? (
@@ -32,10 +31,11 @@ const classes = ['btn', `btn--${variant}`, size !== 'md' ? `btn--${size}` : '', 
     rel={external ? 'noopener noreferrer' : undefined}
   >
     <slot />
-    {external && <span aria-hidden="true" class="btn-arrow"> ↗</span>}
+    {variant === 'lien' && <span class="arrow" aria-hidden="true">→</span>}
   </a>
 ) : (
   <button type={type} class={classes} aria-label={ariaLabel}>
     <slot />
+    {variant === 'lien' && <span class="arrow" aria-hidden="true">→</span>}
   </button>
 )}

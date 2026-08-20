@@ -1,0 +1,210 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+import Monogram from '../components/Monogram.astro';
+
+const title = "Six univers de prise en charge · BrittAssist";
+const description =
+  "Executive admin, agenda et coordination, travel, lifestyle, private coordination, international : les six univers d’un Private Office externalisé pour entrepreneurs et dirigeants.";
+
+const universes = [
+  {
+    num: '01',
+    name: 'Executive Admin',
+    intro: 'Facturation, contrats, échéances et documents tenus à jour.',
+    examples: [
+      'Émission et suivi des factures',
+      'Relances des impayés',
+      'Préparation et envoi des contrats',
+      'Suivi des signatures',
+      'Classement et archivage des pièces',
+      'Suivi des échéances et des renouvellements',
+      'Préparation des éléments pour le comptable',
+      'Notes de frais et justificatifs',
+    ],
+  },
+  {
+    num: '02',
+    name: 'Agenda & Coordination',
+    intro: 'Rendez-vous, confirmations, arbitrages d’horaires et coordination des interlocuteurs.',
+    examples: [
+      'Prise et confirmation des rendez-vous',
+      'Arbitrage des créneaux et des priorités',
+      'Reprogrammation en cas d’imprévu',
+      'Coordination entre plusieurs participants',
+      'Préparation de la journée la veille',
+      'Rappels utiles, au bon moment',
+      'Suivi des comptes rendus et des suites à donner',
+      'Interface avec vos équipes sur un sujet ponctuel',
+    ],
+  },
+  {
+    num: '03',
+    name: 'Travel',
+    intro: 'Vols, trains, hôtels, transferts et itinéraires complets.',
+    examples: [
+      'Recherche et comparaison des trajets',
+      'Réservation des vols et des trains',
+      'Sélection de l’hôtel selon le lieu réel du rendez-vous',
+      'Transferts aéroport, gare et sur place',
+      'Location de véhicule',
+      'Itinéraire complet envoyé avant le départ',
+      'Centralisation de toutes les confirmations',
+      'Modification et suivi pendant le déplacement',
+    ],
+  },
+  {
+    num: '04',
+    name: 'Lifestyle',
+    intro: 'Restaurants, événements, cadeaux et attentions à ne pas oublier.',
+    examples: [
+      'Réservation de restaurants',
+      'Organisation de dîners clients',
+      'Recherche et réservation d’activités',
+      'Billetterie et événements',
+      'Cadeaux professionnels et personnels',
+      'Dates à ne pas manquer',
+      'Recherches et comparatifs sur mesure',
+      'Commandes et livraisons suivies',
+    ],
+  },
+  {
+    num: '05',
+    name: 'Private Coordination',
+    intro: 'Prestataires, interventions à domicile et organisation personnelle.',
+    examples: [
+      'Recherche et sélection de prestataires',
+      'Prise de rendez-vous et coordination des interventions',
+      'Suivi des devis et des travaux',
+      'Relances jusqu’au résultat',
+      'Démarches administratives personnelles',
+      'Organisation familiale ponctuelle',
+      'Gestion des abonnements et des contrats du foyer',
+      'Rendez-vous médicaux et administratifs',
+    ],
+  },
+  {
+    num: '06',
+    name: 'International',
+    intro: 'Échanges en anglais et coordination avec des interlocuteurs étrangers.',
+    examples: [
+      'Échanges écrits et téléphoniques en anglais',
+      'Coordination avec des prestataires étrangers',
+      'Réservations à l’international',
+      'Fuseaux horaires et créneaux compatibles',
+      'Suivi des formalités liées au voyage',
+      'Relecture et mise au propre de vos e-mails en anglais',
+    ],
+  },
+];
+---
+
+<BaseLayout title={title} description={description}>
+  <header class="hero hero--page">
+    <div class="container">
+      <p class="eyebrow">Périmètre</p>
+      <h1 class="hero__title">Six univers de prise en charge.</h1>
+      <p class="hero__sub">
+        Ce ne sont pas six prestations à commander séparément, mais six
+        territoires sur lesquels une demande peut arriver. La plupart des
+        journées en traversent plusieurs sans prévenir.
+      </p>
+    </div>
+  </header>
+
+  <section class="band band--noir">
+    <div class="container">
+      <div class="suite">
+        {universes.map((u) => (
+          <article class="suite__item reveal">
+            <div>
+              <span class="suite__num">{u.num}</span>
+              <h2 class="suite__name">{u.name}</h2>
+            </div>
+            <div>
+              <p class="suite__intro">{u.intro}</p>
+              <ul class="list-plain suite__examples">
+                {u.examples.map((e) => <li>{e}</li>)}
+              </ul>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <p class="universes__note reveal">
+        Cette liste n’est volontairement pas exhaustive. Votre quotidien ne
+        rentre pas dans des cases. Mon accompagnement non plus.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Les limites, dites franchement ───────────────────── -->
+  <section class="band band--ivoire">
+    <div class="container">
+      <div class="duo reveal">
+        <div>
+          <p class="eyebrow">Les limites</p>
+          <h2>Ce qui n’entre pas dans mon périmètre.</h2>
+        </div>
+        <div>
+          <p class="lede u-mb-24">
+            Le dire clairement fait partie du service : vous saurez toujours si
+            un sujet est chez moi ou non.
+          </p>
+          <ul class="list-plain">
+            <li>La tenue comptable et les déclarations fiscales.</li>
+            <li>Le conseil juridique et la rédaction d’actes.</li>
+            <li>Le développement technique et l’intégration de logiciels.</li>
+            <li>La production éditoriale et la présence en ligne de la marque.</li>
+          </ul>
+          <p class="lede u-mt-24">
+            Sur ces sujets, je ne bricole pas : j’identifie le bon
+            interlocuteur, je le mets en place et j’en assure la coordination.
+            Vous gardez un seul point de contact.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Rappel offre ─────────────────────────────────────── -->
+  <section class="band band--noir band--tight">
+    <div class="container">
+      <div class="duo reveal">
+        <div>
+          <p class="eyebrow">Accompagnement</p>
+          <h2>Un périmètre, pas un catalogue.</h2>
+        </div>
+        <div>
+          <p class="lede">
+            L’Executive Private Office démarre à 700 € par mois. Le périmètre
+            exact se dessine au premier échange, en fonction de ce qui vous
+            encombre réellement — pas en cochant des lignes dans une liste.
+          </p>
+          <div class="btn-row u-mt-40">
+            <Button href="/contact" variant="ivoire">Échanger sur mon organisation</Button>
+            <Button href="/private-office" variant="lien">Comment ça fonctionne</Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <Monogram variant="ghost" />
+    <div class="container container--narrow reveal">
+      <h2>Il y a probablement un de ces six univers que vous portez encore seul.</h2>
+      <p class="lede">
+        Trente minutes suffisent à identifier lequel, et ce qu’il coûte
+        réellement à votre semaine.
+      </p>
+      <div class="cta-final__actions">
+        <Button href="/contact" variant="ivoire">Échanger avec Brittany</Button>
+      </div>
+      <p class="cta-final__fine">
+        Accompagnement à partir de 700 € / mois &nbsp;•&nbsp; Sur mesure
+        &nbsp;•&nbsp; Confidentiel
+      </p>
+    </div>
+  </section>
+</BaseLayout>

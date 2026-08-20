@@ -1,51 +1,52 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const title = "Politique de confidentialité, Brittassist";
-const description = "Politique de confidentialité du site Brittassist : traitement des données personnelles, RGPD, cookies, droits de l'utilisateur.";
+const title = "Politique de confidentialité · BrittAssist";
+const description =
+  "Traitement des données personnelles sur brittassist.fr : finalités, base légale, sous-traitants, transferts hors UE, cookies et droits RGPD.";
 ---
 
-<BaseLayout title={title} description={description} showRegistryBar={false}>
-  <header class="page-hero">
-    <div class="container container--narrow u-center">
-      <p class="hero-eyebrow">Vos données</p>
-      <h1>Politique de confidentialité</h1>
+<BaseLayout title={title} description={description}>
+  <header class="hero hero--page">
+    <div class="container">
+      <p class="eyebrow">Vos données</p>
+      <h1 class="hero__title">Politique de confidentialité</h1>
     </div>
   </header>
 
-  <section class="section-folio">
-    <div class="container container--narrow legal-content">
+  <section class="band band--noir-doux">
+    <div class="container container--narrow prose">
       <h2>1. Responsable du traitement</h2>
       <p>
-        Le responsable du traitement des données personnelles collectées sur
-        ce site est <strong>Brittany Dreano</strong> (Brittassist, SIRET
+        Le responsable du traitement des données personnelles collectées sur ce
+        site est <strong>Brittany Dreano</strong> (BrittAssist, SIRET
         948&nbsp;131&nbsp;818&nbsp;00023), joignable à
         <a href="mailto:brittanydreano.cm@gmail.com">brittanydreano.cm@gmail.com</a>.
       </p>
 
       <h2>2. Données collectées</h2>
       <p>
-        Les données personnelles collectées sur ce site sont strictement
-        celles que vous renseignez vous-même :
+        Les données personnelles collectées sur ce site sont strictement celles
+        que vous renseignez vous-même :
       </p>
       <ul>
         <li>Nom et prénom</li>
-        <li>Adresse email</li>
-        <li>Numéro de téléphone (optionnel)</li>
-        <li>Profil et besoin (formulaires de contact / questionnaire)</li>
+        <li>Adresse e-mail</li>
+        <li>Numéro de téléphone (facultatif)</li>
+        <li>Éléments de contexte renseignés dans les formulaires</li>
         <li>Le contenu de votre message</li>
       </ul>
       <p>
-        Aucune donnée sensible (santé, opinions politiques, etc.) n'est
-        collectée.
+        Aucune donnée sensible (santé, opinions politiques, etc.) n’est
+        collectée par ce site.
       </p>
 
       <h2>3. Finalités du traitement</h2>
-      <p>Vos données sont utilisées uniquement pour :</p>
       <ul>
-        <li>Répondre à votre demande de contact ou à votre questionnaire</li>
-        <li>Vous adresser un devis personnalisé si vous le sollicitez</li>
-        <li>Échanger avec vous dans le cadre d'une éventuelle collaboration</li>
+        <li>Répondre à votre demande de contact</li>
+        <li>Préparer un échange et, le cas échéant, une proposition</li>
+        <li>Échanger avec vous dans le cadre d’une éventuelle collaboration</li>
+        <li>Mesurer l’audience du site de façon agrégée, après votre consentement</li>
       </ul>
       <p>
         Vos données ne sont <strong>jamais revendues ni transmises à des
@@ -55,8 +56,9 @@ const description = "Politique de confidentialité du site Brittassist : traitem
       <h2>4. Base légale</h2>
       <p>
         Le traitement repose sur votre <strong>consentement explicite</strong>
-        (case à cocher RGPD avant envoi des formulaires) et sur l'exécution
-        d'éventuelles relations précontractuelles ou contractuelles.
+        (case à cocher avant envoi des formulaires, bandeau de consentement
+        pour la mesure d’audience) et sur l’exécution de relations
+        précontractuelles ou contractuelles.
       </p>
 
       <h2>5. Durée de conservation</h2>
@@ -64,89 +66,78 @@ const description = "Politique de confidentialité du site Brittassist : traitem
         Vos données sont conservées le temps nécessaire au traitement de votre
         demande, puis archivées pendant la durée légale applicable
         (généralement 3 ans pour les prospects, 10 ans pour les clients pour
-        des raisons comptables et légales).
+        des raisons comptables et légales). Votre choix en matière de cookies
+        est conservé au maximum 13 mois.
       </p>
 
       <h2>6. Sous-traitants et outils utilisés</h2>
       <p>
-        Pour faire fonctionner ce site et traiter vos demandes, je m'appuie sur
+        Pour faire fonctionner ce site et traiter vos demandes, je m’appuie sur
         un nombre limité de prestataires techniques, en précisant pour chacun
-        le lieu d'hébergement&nbsp;:
+        le lieu d’hébergement :
       </p>
       <ul>
-        <li>
-          <strong>Vercel</strong> (hébergement du site) &mdash; serveurs situés
-          aux <strong>États-Unis</strong>.
-        </li>
-        <li>
-          <strong>FormSubmit</strong> (relais des formulaires vers ma boîte
-          email) &mdash; service situé aux <strong>États-Unis</strong>, sans
-          base de données persistante.
-        </li>
-        <li>
-          <strong>Calendly</strong> (réservation des appels découverte) &mdash;
-          service situé aux <strong>États-Unis</strong>, soumis à sa propre
-          politique de confidentialité.
-        </li>
-        <li>
-          <strong>Google Workspace</strong> (réception de vos messages par
-          email professionnel) &mdash; <strong>Google Ireland / États-Unis</strong>.
-        </li>
-        <li>
-          <strong>Outils d'IA</strong> (ChatGPT, Claude, Mistral) utilisés
-          dans le cadre des prestations&nbsp;: versions professionnelles, sans
-          réutilisation des données pour l'entraînement des modèles.
-        </li>
+        <li><strong>Vercel</strong> (hébergement du site) — serveurs situés aux <strong>États-Unis</strong>.</li>
+        <li><strong>FormSubmit</strong> (relais des formulaires vers ma boîte e-mail) — service situé aux <strong>États-Unis</strong>, sans base de données persistante.</li>
+        <li><strong>Calendly</strong> (prise de rendez-vous) — service situé aux <strong>États-Unis</strong>, soumis à sa propre politique de confidentialité.</li>
+        <li><strong>Google Workspace</strong> (réception de vos messages) — <strong>Google Ireland / États-Unis</strong>.</li>
+        <li><strong>Google Analytics</strong> (mesure d’audience, chargé uniquement après votre consentement) — <strong>Google Ireland / États-Unis</strong>.</li>
+        <li><strong>AxdiaOS</strong> (réception et suivi des demandes envoyées via les formulaires) — hébergement <strong>Union européenne</strong>.</li>
+        <li><strong>Outils d’assistance à la rédaction</strong> utilisés dans le cadre des prestations : versions professionnelles, sans réutilisation des données pour l’entraînement des modèles.</li>
       </ul>
 
       <h2>7. Transferts de données hors Union européenne</h2>
       <p>
         Certains des outils ci-dessus (Vercel, FormSubmit, Calendly, Google)
-        sont édités par des sociétés établies aux <strong>États-Unis</strong>&nbsp;:
-        l'utilisation du site peut donc entraîner un <strong>transfert de vos
-        données hors de l'Union européenne</strong>.
+        sont édités par des sociétés établies aux <strong>États-Unis</strong> :
+        l’utilisation du site peut donc entraîner un <strong>transfert de vos
+        données hors de l’Union européenne</strong>.
       </p>
       <p>
-        Ces transferts sont encadrés par les garanties prévues par le RGPD&nbsp;:
+        Ces transferts sont encadrés par les garanties prévues par le RGPD :
         adhésion des prestataires concernés au
-        <strong>EU&ndash;U.S. Data Privacy Framework</strong> (décision
-        d'adéquation de la Commission européenne) et/ou signature de
-        <strong>Clauses Contractuelles Types</strong> de la Commission
-        européenne. Aucune donnée n'est transférée vers un pays tiers sans l'une
-        de ces garanties.
+        <strong>EU–U.S. Data Privacy Framework</strong> (décision d’adéquation
+        de la Commission européenne) et/ou signature de <strong>Clauses
+        Contractuelles Types</strong>. Aucune donnée n’est transférée vers un
+        pays tiers sans l’une de ces garanties.
       </p>
       <p>
         Je veille à limiter ces transferts au strict nécessaire et privilégie,
-        lorsque c'est possible, des solutions hébergées dans l'Union européenne
-        (les polices d'écriture du site, par exemple, sont servies via un
-        service respectueux du RGPD, sans appel à Google Fonts).
+        lorsque c’est possible, des solutions hébergées dans l’Union européenne
+        — les polices d’écriture du site, par exemple, sont servies par Bunny
+        Fonts, sans appel à Google Fonts.
       </p>
 
-      <h2>8. Cookies</h2>
+      <h2>8. Cookies et mesure d’audience</h2>
       <p>
-        Ce site n'utilise <strong>aucun cookie publicitaire</strong> ni
-        traceur tiers de marketing. Seuls de très rares cookies techniques
-        peuvent être utilisés pour mémoriser vos préférences (mode sombre,
-        par exemple), ils ne suivent pas votre navigation.
+        Ce site n’utilise <strong>aucun cookie publicitaire</strong> ni traceur
+        de marketing. La seule mesure d’audience utilisée est
+        <strong>Google Analytics</strong>, configuré en <em>Consent Mode v2</em>
+        avec refus par défaut : aucun cookie de mesure n’est déposé tant que
+        vous n’avez pas accepté explicitement via le bandeau.
       </p>
+      <ul>
+        <li>Si vous refusez, aucun script de mesure n’est chargé et les cookies éventuellement présents sont supprimés.</li>
+        <li>Si vous acceptez, la mesure est activée avec anonymisation de l’adresse IP, à des fins statistiques agrégées uniquement.</li>
+        <li>Vous pouvez modifier votre choix à tout moment via le bouton « Cookies » en bas à gauche de l’écran.</li>
+      </ul>
 
       <h2>9. Vos droits</h2>
       <p>
         Conformément au Règlement Général sur la Protection des Données
-        (RGPD), vous disposez à tout moment des droits suivants sur vos
-        données personnelles :
+        (RGPD), vous disposez à tout moment des droits suivants :
       </p>
       <ul>
-        <li>Droit d'accès</li>
+        <li>Droit d’accès</li>
         <li>Droit de rectification</li>
-        <li>Droit à l'effacement (« droit à l'oubli »)</li>
+        <li>Droit à l’effacement (« droit à l’oubli »)</li>
         <li>Droit à la limitation du traitement</li>
         <li>Droit à la portabilité</li>
-        <li>Droit d'opposition</li>
+        <li>Droit d’opposition</li>
         <li>Droit de retirer votre consentement à tout moment</li>
       </ul>
       <p>
-        Pour exercer ces droits, envoyez simplement un email à
+        Pour exercer ces droits, écrivez à
         <a href="mailto:brittanydreano.cm@gmail.com">brittanydreano.cm@gmail.com</a>.
         Vous pouvez également déposer une réclamation auprès de la
         <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">CNIL</a>.
@@ -156,43 +147,14 @@ const description = "Politique de confidentialité du site Brittassist : traitem
       <p>
         Toutes les mesures techniques et organisationnelles raisonnables sont
         prises pour protéger vos données contre tout accès non autorisé,
-        modification, divulgation ou destruction. Le site est servi en HTTPS
-        et utilise des en-têtes de sécurité stricts.
+        modification, divulgation ou destruction. Le site est servi en HTTPS et
+        applique une politique de sécurité de contenu stricte.
       </p>
 
-      <div class="legal-note">
-        <p>Dernière mise à jour : juin 2026</p>
-        <p>
-          Pour toute question relative à vos données :
-          <a href="mailto:brittanydreano.cm@gmail.com">brittanydreano.cm@gmail.com</a>
-        </p>
-      </div>
+      <p class="page-updated">
+        Dernière mise à jour : août 2026 ·
+        <a href="mailto:brittanydreano.cm@gmail.com">brittanydreano.cm@gmail.com</a>
+      </p>
     </div>
   </section>
 </BaseLayout>
-
-<style>
-  .hero-eyebrow {
-    font-family: var(--font-sans);
-    font-size: 0.78rem;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--rose-fonce);
-    margin-bottom: 18px;
-    font-weight: 500;
-  }
-  .legal-content h2 { margin: 36px 0 16px; font-size: 1.4rem; color: var(--anthracite); }
-  .legal-content p { color: var(--gris-moyen); line-height: 1.7; margin-bottom: 12px; }
-  .legal-content ul { margin: 12px 0 18px 24px; color: var(--gris-moyen); line-height: 1.7; }
-  .legal-content ul li { margin-bottom: 6px; }
-  .legal-content a { color: var(--rose-fonce); text-decoration: underline; }
-  .legal-content strong { color: var(--anthracite); }
-  .legal-note {
-    margin-top: 48px;
-    padding: 24px;
-    background: var(--rose-pale);
-    border-radius: var(--radius-lg);
-  }
-  .legal-note p { font-size: 0.9rem; color: var(--gris-moyen); margin: 6px 0; }
-  html.dark .legal-note { background: rgba(232, 160, 176, 0.08); }
-</style>
