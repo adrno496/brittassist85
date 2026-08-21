@@ -940,7 +940,9 @@ p { font-size: clamp(0.98rem, 1.15vw, 1.05rem); }
 
 /* Cadrages : chaque photo a son point d'intérêt propre.
    Les fichiers restent intacts, seul le recadrage CSS change. */
-.media--blazer img { object-position: center 24%; }
+/* Ce portrait comporte un blazer jaune vif : on le pousse au monochrome
+   pour qu'il tienne dans la palette noir / ivoire / champagne. */
+.media--parcours img { filter: grayscale(0.94) contrast(1.08) brightness(0.84); }
 .media--tany img   { object-position: center 40%; }
 .media--bureau img { object-position: 42% center; filter: grayscale(0.9) contrast(1.1) brightness(0.78); }
 
