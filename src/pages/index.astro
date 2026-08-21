@@ -104,19 +104,35 @@ const steps = [
   <!-- ── Hero ─────────────────────────────────────────────── -->
   <header class="hero">
     <div class="container">
-      <p class="eyebrow">Executive &amp; Lifestyle Assistance</p>
-      <h1 class="hero__title">Votre Private Office. Sans avoir à le construire en interne.</h1>
-      <p class="hero__sub">
-        J’accompagne entrepreneurs et dirigeants dans l’organisation de leur
-        quotidien professionnel et personnel : administratif, déplacements,
-        réservations, coordination et demandes sur mesure.
-      </p>
-      <p class="hero__punch">Vous gardez les décisions. J’absorbe le reste.</p>
-      <div class="hero__actions btn-row">
-        <Button href="/private-office" variant="ivoire">Découvrir l’accompagnement</Button>
-        <Button href="/contact" variant="lien">Échanger sur mes besoins</Button>
+      <div class="hero__grid">
+        <div>
+          <p class="eyebrow">Executive &amp; Lifestyle Assistance</p>
+          <h1 class="hero__title">Votre Private Office. Sans avoir à le construire en interne.</h1>
+          <p class="hero__sub">
+            J’accompagne entrepreneurs et dirigeants dans l’organisation de
+            leur quotidien professionnel et personnel : administratif,
+            déplacements, réservations, coordination et demandes sur mesure.
+          </p>
+          <p class="hero__punch">Vous gardez les décisions. J’absorbe le reste.</p>
+          <div class="hero__actions btn-row">
+            <Button href="/private-office" variant="ivoire">Découvrir l’accompagnement</Button>
+            <Button href="/contact" variant="lien">Échanger sur mes besoins</Button>
+          </div>
+          <p class="hero__price">À partir de 700 € / mois</p>
+        </div>
+
+        <div class="hero__media hero__media--portrait media--tanymac">
+          <img
+            src="/images/tanymac.jpeg"
+            alt="Brittany Dreano à son poste de travail, carnet BrittAssist et ordinateur"
+            width="1080"
+            height="1349"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
       </div>
-      <p class="hero__price">À partir de 700 € / mois</p>
     </div>
   </header>
 

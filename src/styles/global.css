@@ -495,6 +495,12 @@ p { font-size: clamp(0.98rem, 1.15vw, 1.05rem); }
 }
 @media (max-width: 900px) { .hero__grid { grid-template-columns: 1fr; gap: 40px; } }
 
+/* Visuel vertical (accueil) : la photo est deja dans la palette noir/or,
+   elle ne recoit qu'un leger reglage de contraste. */
+.hero__media.hero__media--portrait img { aspect-ratio: 4 / 5; }
+.media--tanymac img { filter: grayscale(0.12) contrast(1.05) brightness(0.94); }
+@media (max-width: 900px) { .hero__media.hero__media--portrait img { aspect-ratio: 1 / 1; } }
+
 .hero__media { position: relative; }
 .hero__media img {
   width: 100%;
@@ -513,7 +519,8 @@ p { font-size: clamp(0.98rem, 1.15vw, 1.05rem); }
    Le trafic vient d'Instagram et de LinkedIn — la promesse, la phrase
    émotionnelle, le CTA et le prix sont visibles sans geste. */
 @media (max-width: 620px) {
-  .hero { padding: 116px 0 52px; }
+  .hero { padding: 116px 0 52px; min-height: auto; }
+  .hero__grid { align-items: start; }
   .hero .eyebrow { margin-bottom: 16px; font-size: 0.64rem; letter-spacing: 0.22em; }
   .hero__title { font-size: clamp(2.05rem, 9vw, 2.7rem); max-width: 100%; }
   .hero__sub { margin-top: 20px; font-size: 0.95rem; line-height: 1.58; }
