@@ -1360,3 +1360,58 @@ a.direct__value:hover { color: var(--ink-sur-noir); border-bottom-color: var(--o
   }
   .reveal, .request__steps li { opacity: 1 !important; transform: none !important; }
 }
+
+/* ============================================================
+   26. PAGES DE PRESTATION (/services/<slug>)
+============================================================ */
+.fil {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--ink-sur-noir-tenu);
+  margin-bottom: clamp(18px, 2.6vw, 26px);
+}
+.fil a {
+  border-bottom: 1px solid transparent;
+  transition: color var(--moyen) var(--ease), border-color var(--moyen) var(--ease);
+}
+.fil a:hover { color: var(--ink-sur-noir); border-bottom-color: var(--or-fane); }
+
+/* Univers cliquable : les prestations voisines renvoient les unes vers les autres */
+a.universe--lien { transition: background var(--moyen) var(--ease); }
+a.universe--lien:hover { background: rgba(248, 246, 242, 0.03); }
+a.universe--lien:hover .universe__name { color: var(--or); }
+
+/* FAQ — structure lisible et exploitable par les moteurs de réponse */
+.faq { display: grid; gap: clamp(24px, 3.4vw, 40px); max-width: 76ch; }
+.faq__item { border-top: 1px solid rgba(26, 24, 23, 0.16); padding-top: clamp(18px, 2.4vw, 26px); }
+.faq__q {
+  font-family: var(--display);
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  line-height: 1.24;
+  color: var(--ink-sur-clair);
+  margin-bottom: 12px;
+}
+.faq__a { font-size: 0.99rem; line-height: 1.7; color: var(--ink-sur-clair-doux); }
+.band--noir .faq__item, .band--noir-doux .faq__item { border-top-color: rgba(248, 246, 242, 0.14); }
+.band--noir .faq__q, .band--noir-doux .faq__q { color: var(--ink-sur-noir); }
+.band--noir .faq__a, .band--noir-doux .faq__a { color: var(--ink-sur-noir-doux); }
+
+/* Index des prestations sur /services */
+.index-prestations { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(24px, 3vw, 44px); }
+@media (max-width: 900px) { .index-prestations { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .index-prestations { grid-template-columns: 1fr; } }
+.index-groupe { border-top: var(--filet-or); padding-top: 20px; }
+.index-groupe h3 {
+  font-family: var(--texte);
+  font-size: 0.74rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--ink-sur-noir); margin-bottom: 16px;
+}
+.index-groupe a {
+  display: block;
+  font-size: 0.97rem;
+  color: var(--ink-sur-noir-doux);
+  padding: 7px 0;
+  border-bottom: 1px solid transparent;
+  transition: color var(--moyen) var(--ease), border-color var(--moyen) var(--ease);
+}
+.index-groupe a:hover { color: var(--ink-sur-noir); border-bottom-color: var(--or-fane); }

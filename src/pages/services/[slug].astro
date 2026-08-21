@@ -1,0 +1,213 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Button from '../../components/Button.astro';
+import Monogram from '../../components/Monogram.astro';
+import { prestations } from '../../data/prestations';
+
+export function getStaticPaths() {
+  return prestations.map((p) => ({ params: { slug: p.slug }, props: { p } }));
+}
+
+const { p } = Astro.props;
+const siteUrl = 'https://brittassist.fr';
+const url = `${siteUrl}/services/${p.slug}`;
+
+// Pages sœurs du même univers : maillage interne entre prestations proches.
+const voisines = prestations.filter((x) => x.univers === p.univers && x.slug !== p.slug);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': `${url}#service`,
+      name: p.perimetre,
+      alternateName: p.h1.replace(/\.$/, ''),
+      description: p.description,
+      serviceType: p.univers,
+      url,
+      provider: { '@id': `${siteUrl}/#business` },
+      areaServed: [
+        { '@type': 'Country', name: 'France' },
+        { '@type': 'Place', name: 'International (à distance)' },
+      ],
+      availableChannel: {
+        '@type': 'ServiceChannel',
+        serviceUrl: `${siteUrl}/contact`,
+      },
+      offers: {
+        '@type': 'Offer',
+        price: '700',
+        priceCurrency: 'EUR',
+        description: "Inclus dans l'Executive Private Office, à partir de 700 € par mois.",
+      },
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${url}#faq`,
+      mainEntity: p.faq.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${url}#fil`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: `${siteUrl}/` },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: `${siteUrl}/services` },
+        { '@type': 'ListItem', position: 3, name: p.perimetre, item: url },
+      ],
+    },
+  ],
+};
+---
+
+<BaseLayout title={p.title} description={p.description}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+
+  <header class="hero hero--page">
+    <div class="container">
+      <nav class="fil" aria-label="Fil d’Ariane">
+        <a href="/services">Services</a>
+        <span aria-hidden="true">·</span>
+        <span>{p.perimetre}</span>
+      </nav>
+      <p class="eyebrow">{p.univers}</p>
+      <h1 class="hero__title">{p.h1}</h1>
+      <p class="hero__sub">{p.lede}</p>
+      <div class="hero__actions btn-row">
+        <Button href="/contact" variant="ivoire">Échanger sur mon organisation</Button>
+        <Button href="/private-office" variant="lien">Comment ça fonctionne</Button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Le problème ──────────────────────────────────────── -->
+  <section class="band band--ivoire">
+    <div class="container">
+      <div class="duo reveal">
+        <div>
+          <p class="eyebrow">Le constat</p>
+          <h2>{p.probleme.titre}</h2>
+        </div>
+        <div>
+          {p.probleme.paragraphes.map((t, i) => (
+            <p class={i === 0 ? 'lede' : 'lede u-mt-24'}>{t}</p>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Ce qui est pris en charge ────────────────────────── -->
+  <section class="band band--noir">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Prise en charge</p>
+        <h2>Ce que j’absorbe.</h2>
+      </div>
+      <ul class="list-plain suite__examples reveal">
+        {p.absorbe.map((x) => <li>{x}</li>)}
+      </ul>
+
+      <div class="request__conclusion reveal">
+        <p class="eyebrow">Ce qui reste chez vous</p>
+        <ul class="list-plain">
+          {p.reste.map((x) => <li>{x}</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Exemple ──────────────────────────────────────────── -->
+  <section class="band band--noir-doux">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Exemple type</p>
+        <h2>Ce que « je m’en occupe » veut dire ici.</h2>
+      </div>
+      <article class="case reveal">
+        <div class="case__row case__row--demande">
+          <span class="case__label">Demande</span>
+          <p class="case__text">{p.exemple.demande}</p>
+        </div>
+        <div class="case__row">
+          <span class="case__label">Prise en charge</span>
+          <p class="case__text">{p.exemple.prise}</p>
+        </div>
+        <div class="case__row">
+          <span class="case__label">Résultat</span>
+          <p class="case__text">{p.exemple.resultat}</p>
+        </div>
+      </article>
+      <p class="form-note reveal">
+        Exemple illustratif, construit pour montrer le déroulé d’une prise en
+        charge. Il ne reproduit pas une mission identifiable.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── FAQ ──────────────────────────────────────────────── -->
+  <section class="band band--ivoire">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Questions fréquentes</p>
+        <h2>Ce qu’on me demande le plus souvent.</h2>
+      </div>
+      <div class="faq reveal">
+        {p.faq.map((f) => (
+          <div class="faq__item">
+            <h3 class="faq__q">{f.q}</h3>
+            <p class="faq__a">{f.a}</p>
+          </div>
+        ))}
+      </div>
+
+      <hr class="rule reveal" />
+      <p class="closing closing--wide reveal">{p.cloture}</p>
+    </div>
+  </section>
+
+  <!-- ── Maillage interne ─────────────────────────────────── -->
+  {voisines.length > 0 && (
+    <section class="band band--noir band--tight">
+      <div class="container">
+        <div class="band__head reveal">
+          <p class="eyebrow">Dans le même univers</p>
+          <h2>{p.univers}</h2>
+        </div>
+        <div class="universes reveal">
+          {voisines.map((v) => (
+            <a class="universe universe--lien" href={`/services/${v.slug}`}>
+              <p class="universe__name">{v.perimetre}</p>
+              <p class="universe__desc">{v.lede.split('.')[0]}.</p>
+            </a>
+          ))}
+        </div>
+        <div class="u-mt-40 reveal">
+          <Button href="/services" variant="lien">Voir les six univers</Button>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="cta-final">
+    <Monogram variant="ghost" />
+    <div class="container container--narrow reveal">
+      <h2>{p.perimetre} n’est qu’une ligne de votre quotidien.</h2>
+      <p class="lede">
+        L’Executive Private Office les prend toutes. Parlons de votre
+        organisation actuelle et identifions ce qu’il pourrait absorber.
+      </p>
+      <div class="cta-final__actions">
+        <Button href="/contact" variant="ivoire">Échanger avec Brittany</Button>
+      </div>
+      <p class="cta-final__fine">
+        Accompagnement à partir de 700 € / mois &nbsp;•&nbsp; Sur mesure
+        &nbsp;•&nbsp; Confidentiel
+      </p>
+    </div>
+  </section>
+</BaseLayout>

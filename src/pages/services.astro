@@ -2,6 +2,16 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Button from '../components/Button.astro';
 import Monogram from '../components/Monogram.astro';
+import { prestations } from '../data/prestations';
+
+// Index des pages de prestation, regroupées par univers : maillage interne
+// et point d'entrée pour les recherches longue traîne.
+const groupes = universesOrder();
+function universesOrder() {
+  const ordre: string[] = [];
+  for (const p of prestations) if (!ordre.includes(p.univers)) ordre.push(p.univers);
+  return ordre.map((u) => ({ univers: u, items: prestations.filter((p) => p.univers === u) }));
+}
 
 const title = "Six univers de prise en charge · BrittAssist";
 const description =
@@ -135,6 +145,32 @@ const universes = [
         Cette liste n’est volontairement pas exhaustive. Votre quotidien ne
         rentre pas dans des cases. Mon accompagnement non plus.
       </p>
+    </div>
+  </section>
+
+  <!-- ── Index des prestations ────────────────────────────── -->
+  <section class="band band--noir-doux">
+    <div class="container">
+      <div class="band__head band__head--wide reveal">
+        <p class="eyebrow">Le détail</p>
+        <h2>Chaque ligne du périmètre, prise séparément.</h2>
+        <p class="lede">
+          Ces pages existent pour qui cherche une réponse à un besoin précis.
+          Dans les faits, elles ne se commandent pas à l’unité : elles font
+          partie du même accompagnement.
+        </p>
+      </div>
+
+      <div class="index-prestations reveal">
+        {groupes.map((g) => (
+          <div class="index-groupe">
+            <h3>{g.univers}</h3>
+            {g.items.map((i) => (
+              <a href={`/services/${i.slug}`}>{i.perimetre}</a>
+            ))}
+          </div>
+        ))}
+      </div>
     </div>
   </section>
 
