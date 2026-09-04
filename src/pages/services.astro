@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Button from '../components/Button.astro';
 import Monogram from '../components/Monogram.astro';
 import { prestations } from '../data/prestations';
+import { metiers } from '../data/metiers';
 
 // Index des pages de prestation, regroupées par univers : maillage interne
 // et point d'entrée pour les recherches longue traîne.
@@ -170,6 +171,96 @@ const universes = [
             ))}
           </div>
         ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Pour qui : entrée par métier ─────────────────────── -->
+  <section class="band band--ivoire" id="pour-qui">
+    <div class="container">
+      <div class="band__head band__head--wide reveal">
+        <p class="eyebrow">Pour qui</p>
+        <h2>Le même périmètre, des quotidiens très différents.</h2>
+        <p class="lede">
+          Un artisan du bâtiment et un avocat ne délèguent pas les mêmes choses,
+          et n’ont pas les mêmes échéances. Ces pages décrivent la prise en
+          charge avec le vocabulaire et les contraintes de chaque métier.
+        </p>
+      </div>
+
+      <div class="universes reveal">
+        {metiers.map((m) => (
+          <a class="universe universe--lien" href={`/assistante/${m.slug}`}>
+            <p class="universe__name">{m.nom}</p>
+            <p class="universe__desc">{m.lede}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Où : entrée par zone ─────────────────────────────── -->
+  <section class="band band--noir band--tight" id="zones">
+    <div class="container">
+      <div class="band__head band__head--wide reveal">
+        <p class="eyebrow">Zones d’intervention</p>
+        <h2>Basée en Vendée, disponible partout.</h2>
+        <p class="lede">
+          Le travail se fait à distance, partout en France et à l’international.
+          La proximité change une chose : la possibilité de se rencontrer au
+          démarrage, ou quand un sujet le mérite vraiment.
+        </p>
+      </div>
+
+      <div class="index-prestations reveal">
+        <div class="index-groupe">
+          <h3>Vendée et littoral</h3>
+          <a href="/assistante-independante/la-roche-sur-yon">La Roche-sur-Yon</a>
+          <a href="/assistante-independante/les-sables-d-olonne">Les Sables-d’Olonne</a>
+          <a href="/assistante-independante/vendee">Toute la Vendée</a>
+        </div>
+        <div class="index-groupe">
+          <h3>Pays de la Loire</h3>
+          <a href="/assistante-independante/nantes">Nantes et sa métropole</a>
+        </div>
+        <div class="index-groupe">
+          <h3>Partout ailleurs</h3>
+          <a href="/assistante-independante/a-distance">France et international, à distance</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Avant de décider : entrée par question ───────────── -->
+  <section class="band band--noir-doux band--tight">
+    <div class="container">
+      <div class="band__head band__head--wide reveal">
+        <p class="eyebrow">Avant de décider</p>
+        <h2>Les questions qui viennent en premier.</h2>
+        <p class="lede">
+          Ce que ça coûte, ce que ça remplace, ce que ça ne remplace pas. Ces
+          guides répondent sans argumentaire — y compris quand la réponse est
+          qu’une autre solution vous conviendrait mieux.
+        </p>
+      </div>
+
+      <div class="index-prestations reveal">
+        <div class="index-groupe">
+          <h3>Décider</h3>
+          <a href="/guides/assistante-independante-ou-salariee">Indépendante ou salariée</a>
+          <a href="/guides/prix-assistante-de-direction-externalisee">Combien ça coûte</a>
+        </div>
+        <div class="index-groupe">
+          <h3>Comparer</h3>
+          <a href="/guides/assistante-virtuelle-ou-private-office">Assistante virtuelle ou Private Office</a>
+          <a href="/guides/secretariat-externalise">Les formes de secrétariat externalisé</a>
+        </div>
+        <div class="index-groupe">
+          <h3>Comprendre</h3>
+          <a href="/guides/qu-est-ce-qu-un-private-office">Qu’est-ce qu’un Private Office</a>
+          <a href="/guides/executive-assistant-role">Le métier d’executive assistant</a>
+          <a href="/guides/comment-deleguer">Commencer à déléguer</a>
+        </div>
       </div>
     </div>
   </section>

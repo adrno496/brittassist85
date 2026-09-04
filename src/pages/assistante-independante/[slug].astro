@@ -1,0 +1,241 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Button from '../../components/Button.astro';
+import Monogram from '../../components/Monogram.astro';
+import { zones } from '../../data/zones';
+import { metiers } from '../../data/metiers';
+
+export function getStaticPaths() {
+  return zones.map((z) => ({ params: { slug: z.slug }, props: { z } }));
+}
+
+const { z } = Astro.props;
+const siteUrl = 'https://brittassist.fr';
+const url = `${siteUrl}/assistante-independante/${z.slug}`;
+
+const autresZones = zones.filter((x) => x.slug !== z.slug);
+// Maillage descendant vers les pages « pour qui » les plus lues.
+const profilsLies = metiers.slice(0, 4);
+
+const areaServed =
+  z.schema.type === 'Country'
+    ? { '@type': 'Country', name: z.schema.nom }
+    : {
+        '@type': z.schema.type,
+        name: z.schema.nom,
+        ...(z.schema.region
+          ? { containedInPlace: { '@type': 'AdministrativeArea', name: z.schema.region } }
+          : {}),
+      };
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': `${url}#service`,
+      name: `Private Office externalisé — ${z.nom}`,
+      description: z.description,
+      serviceType: 'Assistance de direction externalisée',
+      url,
+      provider: { '@id': `${siteUrl}/#business` },
+      areaServed,
+      availableChannel: {
+        '@type': 'ServiceChannel',
+        serviceUrl: `${siteUrl}/contact`,
+        servicePhone: '+33667249727',
+      },
+      offers: {
+        '@type': 'Offer',
+        price: '700',
+        priceCurrency: 'EUR',
+        description: "Executive Private Office, à partir de 700 € par mois.",
+      },
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${url}#faq`,
+      mainEntity: z.faq.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${url}#fil`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: `${siteUrl}/` },
+        { '@type': 'ListItem', position: 2, name: 'Zones d’intervention', item: `${siteUrl}/services#zones` },
+        { '@type': 'ListItem', position: 3, name: z.nom, item: url },
+      ],
+    },
+  ],
+};
+---
+
+<BaseLayout title={z.title} description={z.description} dateModified="2026-09-04">
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+
+  <header class="hero hero--page">
+    <div class="container">
+      <nav class="fil" aria-label="Fil d’Ariane">
+        <a href="/services">Services</a>
+        <span aria-hidden="true">·</span>
+        <span>{z.nom}</span>
+      </nav>
+      <p class="eyebrow">{z.eyebrow}</p>
+      <h1 class="hero__title">{z.h1}</h1>
+      <p class="hero__sub">{z.lede}</p>
+      <div class="hero__actions btn-row">
+        <Button href="/contact" variant="ivoire">Échanger sur mon organisation</Button>
+        <Button href="/private-office" variant="lien">Comment ça fonctionne</Button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Le contexte local ────────────────────────────────── -->
+  <section class="band band--ivoire">
+    <div class="container">
+      <div class="duo reveal">
+        <div>
+          <p class="eyebrow">Le territoire</p>
+          <h2>{z.contexte.titre}</h2>
+        </div>
+        <div>
+          {z.contexte.paragraphes.map((t, i) => (
+            <p class={i === 0 ? 'lede' : 'lede u-mt-24'}>{t}</p>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Ce que la distance change ────────────────────────── -->
+  <section class="band band--noir">
+    <div class="container">
+      <div class="duo reveal">
+        <div>
+          <p class="eyebrow">Proximité</p>
+          <h2>{z.proximite.titre}</h2>
+        </div>
+        <div>
+          {z.proximite.paragraphes.map((t, i) => (
+            <p class={i === 0 ? 'lede' : 'lede u-mt-24'}>{t}</p>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Profils accompagnés sur ce territoire ────────────── -->
+  <section class="band band--noir-doux">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Profils accompagnés</p>
+        <h2>Qui, concrètement.</h2>
+      </div>
+      <div class="universes reveal">
+        {z.profils.map((p) => (
+          <div class="universe">
+            <p class="universe__name">{p.nom}</p>
+            <p class="universe__desc">{p.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Exemple ──────────────────────────────────────────── -->
+  <section class="band band--ivoire">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Exemple type</p>
+        <h2>Une demande, prise de bout en bout.</h2>
+      </div>
+      <article class="case reveal">
+        <div class="case__row case__row--demande">
+          <span class="case__label">Demande</span>
+          <p class="case__text">{z.exemple.demande}</p>
+        </div>
+        <div class="case__row">
+          <span class="case__label">Prise en charge</span>
+          <p class="case__text">{z.exemple.prise}</p>
+        </div>
+        <div class="case__row">
+          <span class="case__label">Résultat</span>
+          <p class="case__text">{z.exemple.resultat}</p>
+        </div>
+      </article>
+      <p class="form-note reveal">
+        Exemple illustratif, construit pour montrer le déroulé d’une prise en
+        charge. Il ne reproduit pas une mission identifiable.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── FAQ ──────────────────────────────────────────────── -->
+  <section class="band band--noir">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Questions fréquentes</p>
+        <h2>Ce qu’on me demande ici.</h2>
+      </div>
+      <div class="faq reveal">
+        {z.faq.map((f) => (
+          <div class="faq__item">
+            <h3 class="faq__q">{f.q}</h3>
+            <p class="faq__a">{f.a}</p>
+          </div>
+        ))}
+      </div>
+
+      <hr class="rule reveal" />
+      <p class="closing closing--wide reveal">{z.cloture}</p>
+    </div>
+  </section>
+
+  <!-- ── Maillage ─────────────────────────────────────────── -->
+  <section class="band band--noir-doux band--tight">
+    <div class="container">
+      <div class="index-prestations reveal">
+        <div class="index-groupe">
+          <h3>Autres zones</h3>
+          {autresZones.map((a) => (
+            <a href={`/assistante-independante/${a.slug}`}>{a.nom}</a>
+          ))}
+        </div>
+        <div class="index-groupe">
+          <h3>Par métier</h3>
+          {profilsLies.map((p) => (
+            <a href={`/assistante/${p.slug}`}>{p.nom}</a>
+          ))}
+        </div>
+        <div class="index-groupe">
+          <h3>Avant de décider</h3>
+          <a href="/guides/qu-est-ce-qu-un-private-office">Qu’est-ce qu’un Private Office</a>
+          <a href="/guides/prix-assistante-de-direction-externalisee">Combien ça coûte</a>
+          <a href="/guides/assistante-independante-ou-salariee">Indépendante ou salariée</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <Monogram variant="ghost" />
+    <div class="container container--narrow reveal">
+      <h2>Le premier échange sert à savoir si c’est utile pour vous.</h2>
+      <p class="lede">
+        Trente minutes, sans engagement, pour comprendre votre organisation
+        actuelle et dire honnêtement ce qu’un Private Office y changerait.
+      </p>
+      <div class="cta-final__actions">
+        <Button href="/contact" variant="ivoire">Échanger avec Brittany</Button>
+      </div>
+      <p class="cta-final__fine">
+        Accompagnement à partir de 700 € / mois &nbsp;•&nbsp; Sur mesure
+        &nbsp;•&nbsp; Confidentiel
+      </p>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,152 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+import Monogram from '../components/Monogram.astro';
+import { guides } from '../data/guides';
+import { metiers } from '../data/metiers';
+import { zones } from '../data/zones';
+
+// Hub des guides : point d'entrée unique pour les requêtes informationnelles,
+// et page qui distribue le maillage vers les trois familles de contenus.
+const title = 'Guides : comprendre, comparer, décider · BrittAssist';
+const description =
+  "Coût d’une assistante, salariée ou indépendante, assistante virtuelle ou Private Office, comment déléguer : les réponses de fond, sans argumentaire.";
+
+const categories: string[] = [];
+for (const g of guides) if (!categories.includes(g.categorie)) categories.push(g.categorie);
+const groupes = categories.map((c) => ({
+  categorie: c,
+  items: guides.filter((g) => g.categorie === c),
+}));
+
+const siteUrl = 'https://brittassist.fr';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      '@id': `${siteUrl}/guides#page`,
+      url: `${siteUrl}/guides`,
+      name: title,
+      description,
+      inLanguage: 'fr-FR',
+      isPartOf: { '@id': `${siteUrl}/#website` },
+    },
+    {
+      '@type': 'ItemList',
+      '@id': `${siteUrl}/guides#liste`,
+      name: 'Guides BrittAssist',
+      itemListElement: guides.map((g, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: g.nom,
+        url: `${siteUrl}/guides/${g.slug}`,
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${siteUrl}/guides#fil`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: `${siteUrl}/` },
+        { '@type': 'ListItem', position: 2, name: 'Guides', item: `${siteUrl}/guides` },
+      ],
+    },
+  ],
+};
+---
+
+<BaseLayout title={title} description={description} dateModified="2026-09-04">
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+
+  <header class="hero hero--page">
+    <div class="container">
+      <p class="eyebrow">Guides</p>
+      <h1 class="hero__title">Comprendre, comparer, décider.</h1>
+      <p class="hero__sub">
+        Ces pages ne vendent rien. Elles répondent aux questions qu’on se pose
+        avant de déléguer : ce que ça coûte, ce que ça remplace, ce que ça ne
+        remplace pas, et par quoi commencer. Y compris quand la réponse est que
+        ce n’est pas pour vous.
+      </p>
+    </div>
+  </header>
+
+  <section class="band band--noir">
+    <div class="container">
+      <div class="suite">
+        {groupes.map((gr) => (
+          <article class="suite__item reveal">
+            <div>
+              <h2 class="suite__name">{gr.categorie}</h2>
+            </div>
+            <div>
+              <div class="universes">
+                {gr.items.map((g) => (
+                  <a class="universe universe--lien" href={`/guides/${g.slug}`}>
+                    <p class="universe__name">{g.nom}</p>
+                    <p class="universe__desc">{g.lede}</p>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Maillage vers les deux autres familles ───────────── -->
+  <section class="band band--ivoire">
+    <div class="container">
+      <div class="band__head band__head--wide reveal">
+        <p class="eyebrow">Aller plus loin</p>
+        <h2>Le reste du site, par entrée.</h2>
+        <p class="lede">
+          Les guides répondent aux questions générales. Ces pages-là répondent à
+          la vôtre : selon votre métier, votre territoire, ou la ligne précise du
+          périmètre qui vous encombre.
+        </p>
+      </div>
+
+      <div class="index-prestations reveal">
+        <div class="index-groupe">
+          <h3>Par métier</h3>
+          {metiers.map((m) => (
+            <a href={`/assistante/${m.slug}`}>{m.nom}</a>
+          ))}
+        </div>
+        <div class="index-groupe">
+          <h3>Par zone</h3>
+          {zones.map((z) => (
+            <a href={`/assistante-independante/${z.slug}`}>{z.nom}</a>
+          ))}
+        </div>
+        <div class="index-groupe">
+          <h3>Par besoin</h3>
+          <a href="/services">Les six univers de prise en charge</a>
+          <a href="/private-office">Le fonctionnement, étape par étape</a>
+          <a href="/a-propos">Qui est Brittany Dreano</a>
+          <a href="/contact">Échanger sur votre organisation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <Monogram variant="ghost" />
+    <div class="container container--narrow reveal">
+      <h2>Il reste toujours une question que la page ne traite pas.</h2>
+      <p class="lede">
+        C’est en général celle qui compte. Trente minutes, sans engagement,
+        suffisent à y répondre sur votre situation précise.
+      </p>
+      <div class="cta-final__actions">
+        <Button href="/contact" variant="ivoire">Échanger avec Brittany</Button>
+      </div>
+      <p class="cta-final__fine">
+        Accompagnement à partir de 700 € / mois &nbsp;•&nbsp; Sur mesure
+        &nbsp;•&nbsp; Confidentiel
+      </p>
+    </div>
+  </section>
+</BaseLayout>

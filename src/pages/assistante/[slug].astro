@@ -1,0 +1,274 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Button from '../../components/Button.astro';
+import Monogram from '../../components/Monogram.astro';
+import { metiers } from '../../data/metiers';
+import { zones } from '../../data/zones';
+import { prestations } from '../../data/prestations';
+
+export function getStaticPaths() {
+  return metiers.map((m) => ({ params: { slug: m.slug }, props: { m } }));
+}
+
+const { m } = Astro.props;
+const siteUrl = 'https://brittassist.fr';
+const url = `${siteUrl}/assistante/${m.slug}`;
+
+// Maillage descendant : les prestations les plus utilisées par ce métier.
+const liees = m.liens
+  .map((s) => prestations.find((p) => p.slug === s))
+  .filter((p): p is (typeof prestations)[number] => Boolean(p));
+
+// Maillage latéral : les autres pages « pour qui ».
+const autres = metiers.filter((x) => x.slug !== m.slug);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': `${url}#service`,
+      name: `Assistance de direction externalisée — ${m.nom}`,
+      description: m.description,
+      serviceType: 'Private Office externalisé',
+      url,
+      provider: { '@id': `${siteUrl}/#business` },
+      audience: {
+        '@type': 'BusinessAudience',
+        name: m.nom,
+        description: m.secteur,
+      },
+      areaServed: [
+        { '@type': 'Country', name: 'France' },
+        { '@type': 'Place', name: 'International (à distance)' },
+      ],
+      availableChannel: {
+        '@type': 'ServiceChannel',
+        serviceUrl: `${siteUrl}/contact`,
+      },
+      offers: {
+        '@type': 'Offer',
+        price: '700',
+        priceCurrency: 'EUR',
+        description: "Executive Private Office, à partir de 700 € par mois.",
+      },
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: `Ce qui est pris en charge pour : ${m.nom}`,
+        itemListElement: m.absorbe.map((a) => ({
+          '@type': 'Offer',
+          itemOffered: { '@type': 'Service', name: a },
+        })),
+      },
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${url}#faq`,
+      mainEntity: m.faq.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${url}#fil`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: `${siteUrl}/` },
+        { '@type': 'ListItem', position: 2, name: 'Pour qui', item: `${siteUrl}/services#pour-qui` },
+        { '@type': 'ListItem', position: 3, name: m.nom, item: url },
+      ],
+    },
+  ],
+};
+---
+
+<BaseLayout title={m.title} description={m.description} dateModified="2026-09-04">
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+
+  <header class="hero hero--page">
+    <div class="container">
+      <nav class="fil" aria-label="Fil d’Ariane">
+        <a href="/services">Services</a>
+        <span aria-hidden="true">·</span>
+        <span>{m.nom}</span>
+      </nav>
+      <p class="eyebrow">{m.secteur}</p>
+      <h1 class="hero__title">{m.h1}</h1>
+      <p class="hero__sub">{m.lede}</p>
+      <div class="hero__actions btn-row">
+        <Button href="/contact" variant="ivoire">Échanger sur mon organisation</Button>
+        <Button href="/private-office" variant="lien">Comment ça fonctionne</Button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Le constat sectoriel ─────────────────────────────── -->
+  <section class="band band--ivoire">
+    <div class="container">
+      <div class="duo reveal">
+        <div>
+          <p class="eyebrow">Le constat</p>
+          <h2>{m.constat.titre}</h2>
+        </div>
+        <div>
+          {m.constat.paragraphes.map((t, i) => (
+            <p class={i === 0 ? 'lede' : 'lede u-mt-24'}>{t}</p>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Ce qui revient toutes les semaines ───────────────── -->
+  <section class="band band--noir band--tight">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Toutes les semaines</p>
+        <h2>Ce qui revient, dans ce métier.</h2>
+      </div>
+      <ul class="frictions reveal">
+        {m.frictions.map((f) => <li>{f}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── Ce qui est pris en charge ────────────────────────── -->
+  <section class="band band--noir-doux">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Prise en charge</p>
+        <h2>Ce que j’absorbe.</h2>
+      </div>
+      <ul class="list-plain suite__examples reveal">
+        {m.absorbe.map((x) => <li>{x}</li>)}
+      </ul>
+
+      <div class="request__conclusion reveal">
+        <p class="eyebrow">Ce qui reste chez vous</p>
+        <ul class="list-plain">
+          {m.reste.map((x) => <li>{x}</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Exemple ──────────────────────────────────────────── -->
+  <section class="band band--ivoire">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Exemple type</p>
+        <h2>Ce que « je m’en occupe » veut dire ici.</h2>
+      </div>
+      <article class="case reveal">
+        <div class="case__row case__row--demande">
+          <span class="case__label">Demande</span>
+          <p class="case__text">{m.exemple.demande}</p>
+        </div>
+        <div class="case__row">
+          <span class="case__label">Prise en charge</span>
+          <p class="case__text">{m.exemple.prise}</p>
+        </div>
+        <div class="case__row">
+          <span class="case__label">Résultat</span>
+          <p class="case__text">{m.exemple.resultat}</p>
+        </div>
+      </article>
+      <p class="form-note reveal">
+        Exemple illustratif, construit pour montrer le déroulé d’une prise en
+        charge. Il ne reproduit pas une mission identifiable.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Prestations les plus utilisées par ce métier ─────── -->
+  <section class="band band--noir">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Le détail</p>
+        <h2>Les lignes du périmètre les plus utilisées ici.</h2>
+      </div>
+      <div class="universes reveal">
+        {liees.map((p) => (
+          <a class="universe universe--lien" href={`/services/${p.slug}`}>
+            <p class="universe__name">{p.perimetre}</p>
+            <p class="universe__desc">{p.lede.split('.')[0]}.</p>
+          </a>
+        ))}
+      </div>
+      <div class="u-mt-40 reveal">
+        <Button href="/services" variant="lien">Voir le périmètre complet</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ──────────────────────────────────────────────── -->
+  <section class="band band--ivoire">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Questions fréquentes</p>
+        <h2>Ce qu’on me demande dans ce secteur.</h2>
+      </div>
+      <div class="faq reveal">
+        {m.faq.map((f) => (
+          <div class="faq__item">
+            <h3 class="faq__q">{f.q}</h3>
+            <p class="faq__a">{f.a}</p>
+          </div>
+        ))}
+      </div>
+
+      <hr class="rule reveal" />
+      <p class="closing closing--wide reveal">{m.cloture}</p>
+    </div>
+  </section>
+
+  <!-- ── Maillage latéral ─────────────────────────────────── -->
+  <section class="band band--noir band--tight">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Autres profils</p>
+        <h2>Vous ne vous reconnaissez pas ici ?</h2>
+      </div>
+      <div class="index-prestations reveal">
+        <div class="index-groupe">
+          <h3>Par métier</h3>
+          {autres.map((a) => (
+            <a href={`/assistante/${a.slug}`}>{a.nom}</a>
+          ))}
+        </div>
+        <div class="index-groupe">
+          <h3>Par zone</h3>
+          {zones.map((z) => (
+            <a href={`/assistante-independante/${z.slug}`}>{z.nom}</a>
+          ))}
+        </div>
+        <div class="index-groupe">
+          <h3>Avant de décider</h3>
+          <a href="/guides/assistante-independante-ou-salariee">Indépendante ou salariée</a>
+          <a href="/guides/prix-assistante-de-direction-externalisee">Combien ça coûte</a>
+          <a href="/guides/comment-deleguer">Commencer à déléguer</a>
+          <a href="/guides">Tous les guides</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <Monogram variant="ghost" />
+    <div class="container container--narrow reveal">
+      <h2>Trente minutes suffisent à savoir si c’est la bonne réponse.</h2>
+      <p class="lede">
+        Parlons de votre organisation actuelle, du volume réel et de ce qui
+        pourrait sortir de votre champ de vision dès le premier mois.
+      </p>
+      <div class="cta-final__actions">
+        <Button href="/contact" variant="ivoire">Échanger avec Brittany</Button>
+      </div>
+      <p class="cta-final__fine">
+        Accompagnement à partir de 700 € / mois &nbsp;•&nbsp; Sur mesure
+        &nbsp;•&nbsp; Confidentiel
+      </p>
+    </div>
+  </section>
+</BaseLayout>

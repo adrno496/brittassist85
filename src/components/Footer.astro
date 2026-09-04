@@ -1,5 +1,8 @@
 ---
 import Monogram from './Monogram.astro';
+import { metiers } from '../data/metiers';
+import { zones } from '../data/zones';
+import { guides } from '../data/guides';
 const year = new Date().getFullYear();
 ---
 
@@ -36,6 +39,31 @@ const year = new Date().getFullYear();
         </ul>
       </nav>
     </div>
+
+    <!-- Plan du site : maillage sitewide vers les trois familles de pages
+         (métier, zone, guide). C'est le principal chemin de découverte. -->
+    <nav class="footer__seo" aria-label="Plan du site">
+      <div class="index-prestations">
+        <div class="index-groupe">
+          <h3>Par métier</h3>
+          {metiers.map((m) => (
+            <a href={`/assistante/${m.slug}`}>{m.nom}</a>
+          ))}
+        </div>
+        <div class="index-groupe">
+          <h3>Zones d’intervention</h3>
+          {zones.map((z) => (
+            <a href={`/assistante-independante/${z.slug}`}>{z.nom}</a>
+          ))}
+        </div>
+        <div class="index-groupe">
+          <h3>Guides</h3>
+          {guides.map((g) => (
+            <a href={`/guides/${g.slug}`}>{g.nom}</a>
+          ))}
+        </div>
+      </div>
+    </nav>
 
     <div class="footer__bottom">
       <span>© {year} BrittAssist — Brittany Dreano</span>

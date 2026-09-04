@@ -1,0 +1,207 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Button from '../../components/Button.astro';
+import Monogram from '../../components/Monogram.astro';
+import { guides } from '../../data/guides';
+
+export function getStaticPaths() {
+  return guides.map((g) => ({ params: { slug: g.slug }, props: { g } }));
+}
+
+const { g } = Astro.props;
+const siteUrl = 'https://brittassist.fr';
+const url = `${siteUrl}/guides/${g.slug}`;
+
+const autres = guides.filter((x) => x.slug !== g.slug);
+
+// Mot-clé de fraîcheur : ces pages sont mises à jour, pas publiées une fois.
+const dateLisible = new Date(g.dateModified).toLocaleDateString('fr-FR', {
+  year: 'numeric',
+  month: 'long',
+});
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      '@id': `${url}#article`,
+      headline: g.h1,
+      description: g.description,
+      url,
+      mainEntityOfPage: { '@id': `${url}#webpage` },
+      inLanguage: 'fr-FR',
+      datePublished: '2026-09-04',
+      dateModified: g.dateModified,
+      author: {
+        '@type': 'Person',
+        name: 'Brittany Dreano',
+        jobTitle: 'Executive & Lifestyle Assistant',
+        url: `${siteUrl}/a-propos`,
+      },
+      publisher: { '@id': `${siteUrl}/#business` },
+      about: { '@id': `${siteUrl}/#business` },
+      articleSection: g.categorie,
+      // Reprend la réponse courte : c'est elle que les moteurs de réponse citent.
+      abstract: g.reponseCourte.join(' '),
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${url}#faq`,
+      mainEntity: g.faq.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${url}#fil`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: `${siteUrl}/` },
+        { '@type': 'ListItem', position: 2, name: 'Guides', item: `${siteUrl}/guides` },
+        { '@type': 'ListItem', position: 3, name: g.nom, item: url },
+      ],
+    },
+  ],
+};
+---
+
+<BaseLayout title={g.title} description={g.description} dateModified={g.dateModified}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+
+  <header class="hero hero--page">
+    <div class="container">
+      <nav class="fil" aria-label="Fil d’Ariane">
+        <a href="/guides">Guides</a>
+        <span aria-hidden="true">·</span>
+        <span>{g.nom}</span>
+      </nav>
+      <p class="eyebrow">{g.categorie}</p>
+      <h1 class="hero__title">{g.h1}</h1>
+      <p class="hero__sub">{g.lede}</p>
+    </div>
+  </header>
+
+  <!-- ── Réponse courte ───────────────────────────────────── -->
+  <section class="band band--ivoire band--tight">
+    <div class="container">
+      <div class="band__head band__head--wide reveal">
+        <p class="eyebrow">En bref</p>
+        <h2>La réponse, tout de suite.</h2>
+      </div>
+      <ul class="list-plain reveal">
+        {g.reponseCourte.map((r) => <li>{r}</li>)}
+      </ul>
+      <p class="page-updated reveal">Mis à jour en {dateLisible}.</p>
+    </div>
+  </section>
+
+  <!-- ── Corps du guide ───────────────────────────────────── -->
+  <section class="band band--noir">
+    <div class="container">
+      <article class="prose reveal">
+        {g.sections.map((s) => (
+          <>
+            <h2>{s.h2}</h2>
+            {s.blocs.map((b) => (
+              <>
+                {b.h3 && <h3>{b.h3}</h3>}
+                {b.paragraphes?.map((p) => <p>{p}</p>)}
+                {b.liste && (
+                  <ul>
+                    {b.liste.map((li) => <li>{li}</li>)}
+                  </ul>
+                )}
+              </>
+            ))}
+          </>
+        ))}
+      </article>
+    </div>
+  </section>
+
+  <!-- ── Comparaison ──────────────────────────────────────── -->
+  {g.comparaison && (
+    <section class="band band--ivoire">
+      <div class="container">
+        <div class="band__head band__head--wide reveal">
+          <p class="eyebrow">Comparaison</p>
+          <h2>{g.comparaison.titre}</h2>
+          {g.comparaison.intro && <p class="lede">{g.comparaison.intro}</p>}
+        </div>
+        <div class="compare reveal">
+          {g.comparaison.lignes.map((l) => (
+            <div class="compare__row">
+              <p class="compare__ask">{l.gauche}</p>
+              <p class="compare__care">{l.droite}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- ── FAQ ──────────────────────────────────────────────── -->
+  <section class="band band--noir-doux">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Questions fréquentes</p>
+        <h2>Ce qui revient sur ce sujet.</h2>
+      </div>
+      <div class="faq reveal">
+        {g.faq.map((f) => (
+          <div class="faq__item">
+            <h3 class="faq__q">{f.q}</h3>
+            <p class="faq__a">{f.a}</p>
+          </div>
+        ))}
+      </div>
+
+      <hr class="rule reveal" />
+      <p class="closing closing--wide reveal">{g.cloture}</p>
+    </div>
+  </section>
+
+  <!-- ── Maillage ─────────────────────────────────────────── -->
+  <section class="band band--noir band--tight">
+    <div class="container">
+      <div class="index-prestations reveal">
+        <div class="index-groupe">
+          <h3>Pour aller plus loin</h3>
+          {g.liens.map((l) => <a href={l.href}>{l.label}</a>)}
+        </div>
+        <div class="index-groupe">
+          <h3>Les autres guides</h3>
+          {autres.slice(0, 4).map((a) => (
+            <a href={`/guides/${a.slug}`}>{a.nom}</a>
+          ))}
+        </div>
+        <div class="index-groupe">
+          <h3>Tous les guides</h3>
+          <a href="/guides">Voir l’ensemble des guides</a>
+          <a href="/services">Le périmètre couvert</a>
+          <a href="/private-office">Le fonctionnement</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <Monogram variant="ghost" />
+    <div class="container container--narrow reveal">
+      <h2>Une réponse générale ne remplace pas un avis sur votre situation.</h2>
+      <p class="lede">
+        Trente minutes suffisent à savoir si un Private Office est la bonne
+        réponse pour vous — et à le dire franchement si ce n’est pas le cas.
+      </p>
+      <div class="cta-final__actions">
+        <Button href="/contact" variant="ivoire">Échanger avec Brittany</Button>
+      </div>
+      <p class="cta-final__fine">
+        Accompagnement à partir de 700 € / mois &nbsp;•&nbsp; Sur mesure
+        &nbsp;•&nbsp; Confidentiel
+      </p>
+    </div>
+  </section>
+</BaseLayout>
