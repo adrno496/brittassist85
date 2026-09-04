@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { lastmodPour } from './src/data/dates.mjs';
 
 export default defineConfig({
   site: 'https://brittassist.fr',
@@ -45,6 +46,14 @@ export default defineConfig({
         // Page de préparation transmise après un premier échange : noindex,
         // hors navigation, donc hors sitemap.
         !page.includes('/questionnaire'),
+      // <lastmod> sur chaque URL : c'est le signal que Google utilise pour
+      // décider s'il re-télécharge le sitemap. Sans lui, une publication met
+      // beaucoup plus longtemps à être découverte.
+      serialize(item) {
+        const { pathname } = new URL(item.url);
+        item.lastmod = new Date(`${lastmodPour(pathname)}T00:00:00Z`).toISOString();
+        return item;
+      },
     }),
   ],
 });
