@@ -41,6 +41,10 @@ const isActive = (href: string) =>
     </ul>
 
     <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Activer le thème clair" title="Activer le thème clair">
+        <span class="theme-toggle__icon" aria-hidden="true">☼</span>
+        <span class="theme-toggle__text">Clair</span>
+      </button>
       <a href="/contact" class="nav-cta">Échanger avec Brittany</a>
       <button
         class="nav-hamburger"
@@ -57,6 +61,28 @@ const isActive = (href: string) =>
 </nav>
 
 <script>
+  const themeToggle = document.getElementById('theme-toggle');
+  if (themeToggle) {
+    const updateThemeToggle = () => {
+      const light = document.documentElement.dataset.theme === 'light';
+      const label = light ? 'Activer le thème sombre' : 'Activer le thème clair';
+      themeToggle.setAttribute('aria-label', label);
+      themeToggle.setAttribute('title', label);
+      const icon = themeToggle.querySelector('.theme-toggle__icon');
+      const text = themeToggle.querySelector('.theme-toggle__text');
+      if (icon) icon.textContent = light ? '☾' : '☼';
+      if (text) text.textContent = light ? 'Sombre' : 'Clair';
+    };
+    updateThemeToggle();
+    themeToggle.addEventListener('click', () => {
+      const light = document.documentElement.dataset.theme !== 'light';
+      document.documentElement.dataset.theme = light ? 'light' : 'dark';
+      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', light ? '#F8F6F2' : '#0B0B0B');
+      try { localStorage.setItem('brittassist-theme', light ? 'light' : 'dark'); } catch (_) { /* Navigation privée. */ }
+      updateThemeToggle();
+    });
+  }
+
   const navbar = document.getElementById('navbar');
   if (navbar) {
     const setScrolled = () => navbar.classList.toggle('scrolled', window.scrollY > 12);

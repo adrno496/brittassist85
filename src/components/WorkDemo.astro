@@ -1,0 +1,107 @@
+---
+import Button from './Button.astro';
+
+const scenarios = [
+  {
+    id: 'voyage',
+    label: 'Un déplacement',
+    demande: '« J’ai un rendez-vous à Nantes mardi matin. Trouve-moi un trajet qui me laisse de la marge. »',
+    etapes: [
+      { nom: 'Cadrer', texte: 'Heure exacte, lieu, départ souhaité et contraintes de retour.' },
+      { nom: 'Comparer', texte: 'Horaires, correspondances, prix total et souplesse des billets.' },
+      { nom: 'Proposer', texte: 'Une option recommandée et l’alternative utile à arbitrer.' },
+    ],
+    retour: '« Le train de 7 h 14 laisse 35 minutes de marge. L’option échangeable coûte 18 € de plus. Je réserve laquelle ? »',
+  },
+  {
+    id: 'facture',
+    label: 'Une facture',
+    demande: '« Je ne retrouve pas la facture de ce fournisseur pour le comptable. »',
+    etapes: [
+      { nom: 'Identifier', texte: 'Fournisseur, période, montant et référence disponibles.' },
+      { nom: 'Rechercher', texte: 'Messagerie et dossier partagé accessibles dans le périmètre convenu.' },
+      { nom: 'Clore', texte: 'La bonne pièce est classée, ou le fournisseur est sollicité si elle manque.' },
+    ],
+    retour: '« J’ai retrouvé la facture de juin et l’ai déposée dans le dossier du comptable. La référence et le montant correspondent. »',
+  },
+  {
+    id: 'prestataire',
+    label: 'Un prestataire',
+    demande: '« Le prestataire n’a pas répondu depuis une semaine. Où en est-on ? »',
+    etapes: [
+      { nom: 'Reprendre', texte: 'Le devis, l’échange précédent et l’échéance promise.' },
+      { nom: 'Relancer', texte: 'Le bon interlocuteur avec une demande et une date de retour précises.' },
+      { nom: 'Suivre', texte: 'Réponse, prochaine action et éventuel arbitrage remontés au dirigeant.' },
+    ],
+    retour: '« J’ai relancé ce matin. Une réponse est annoncée jeudi ; je reviens vers vous à cette date ou je propose une autre solution. »',
+  },
+];
+---
+
+<section class="band band--rose work-demo" data-work-demo aria-labelledby="work-demo-title">
+  <div class="container">
+    <div class="band__head band__head--wide reveal">
+      <p class="eyebrow">Démonstration interactive</p>
+      <h2 id="work-demo-title">Voyez comment une demande avance.</h2>
+      <p class="lede">Choisissez une situation. La démonstration montre les étapes, puis le type de réponse que vous pourriez recevoir.</p>
+    </div>
+
+    <div class="work-demo__choices" aria-label="Choisir une situation">
+      {scenarios.map((scenario, i) => (
+        <button type="button" data-demo-select={i} aria-controls={`demo-${scenario.id}`} aria-pressed={i === 0 ? 'true' : 'false'}>
+          <span aria-hidden="true">{String(i + 1).padStart(2, '0')}</span> {scenario.label}
+        </button>
+      ))}
+    </div>
+
+    <div class="work-demo__panels">
+      {scenarios.map((scenario) => (
+        <article class="work-demo__panel" id={`demo-${scenario.id}`} data-demo-panel>
+          <div class="work-demo__message">
+            <p class="work-demo__kicker">Votre demande</p>
+            <h3>{scenario.label}</h3>
+            <p class="work-demo__quote">{scenario.demande}</p>
+          </div>
+          <div class="work-demo__process">
+            <p class="work-demo__kicker">La prise en charge</p>
+            <ol>
+              {scenario.etapes.map((etape, i) => (
+                <li>
+                  <span class="work-demo__index">{String(i + 1).padStart(2, '0')}</span>
+                  <div><strong>{etape.nom}</strong><p>{etape.texte}</p></div>
+                </li>
+              ))}
+            </ol>
+            <div class="work-demo__return">
+              <p class="work-demo__kicker">Le retour possible</p>
+              <p>{scenario.retour}</p>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <div class="work-demo__foot">
+      <p>Scénarios fictifs : ils illustrent la méthode de travail, sans présenter de missions ou résultats clients.</p>
+      <Button href="/contact" variant="noir">Parler de ma propre demande</Button>
+    </div>
+  </div>
+</section>
+
+<script>
+  const demo = document.querySelector<HTMLElement>('[data-work-demo]');
+  if (demo) {
+    const choices = [...demo.querySelectorAll<HTMLButtonElement>('[data-demo-select]')];
+    const panels = [...demo.querySelectorAll<HTMLElement>('[data-demo-panel]')];
+    demo.classList.add('is-enhanced');
+    const select = (index: number) => {
+      choices.forEach((choice, i) => choice.setAttribute('aria-pressed', String(i === index)));
+      panels.forEach((panel, i) => {
+        panel.hidden = i !== index;
+        panel.classList.toggle('is-active', i === index);
+      });
+    };
+    choices.forEach((choice, index) => choice.addEventListener('click', () => select(index)));
+    select(0);
+  }
+</script>
