@@ -3,7 +3,7 @@ import sitemap from '@astrojs/sitemap';
 import { lastmodPour } from './src/data/dates.mjs';
 
 export default defineConfig({
-  site: 'https://brittassist.fr',
+  site: 'https://www.brittassist.fr',
   trailingSlash: 'never',
   build: {
     format: 'file',
@@ -20,7 +20,7 @@ export default defineConfig({
         "img-src 'self' data: https:",
         "font-src 'self' https://fonts.bunny.net data:",
         "connect-src 'self' https://axdiaos.vercel.app https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://formsubmit.co https://*.formsubmit.co",
-        "form-action 'self' https://brittassist.fr https://www.brittassist.fr https://formsubmit.co https://*.formsubmit.co",
+        "form-action 'self' https://www.brittassist.fr https://formsubmit.co https://*.formsubmit.co",
         "base-uri 'self'",
         "object-src 'none'",
         "upgrade-insecure-requests",
@@ -40,9 +40,6 @@ export default defineConfig({
   integrations: [
     sitemap({
       filter: (page) =>
-        !page.includes('/mentions-legales') &&
-        !page.includes('/cgv') &&
-        !page.includes('/politique-confidentialite') &&
         // Page de préparation transmise après un premier échange : noindex,
         // hors navigation, donc hors sitemap.
         !page.includes('/questionnaire'),

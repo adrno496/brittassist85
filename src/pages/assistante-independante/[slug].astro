@@ -10,7 +10,7 @@ export function getStaticPaths() {
 }
 
 const { z } = Astro.props;
-const siteUrl = 'https://brittassist.fr';
+const siteUrl = 'https://www.brittassist.fr';
 const url = `${siteUrl}/assistante-independante/${z.slug}`;
 
 const autresZones = zones.filter((x) => x.slug !== z.slug);

@@ -20,6 +20,20 @@ export const DATE_SOCLE = '2026-08-20';
 
 /** Pages métier, zone et guide publiées le 4 septembre 2026. */
 export const DATE_SEO_METIERS_ZONES_GUIDES = '2026-09-04';
+export const DATE_NOUVEAUX_GUIDES = '2026-09-27';
+
+const NOUVEAUX_GUIDES = new Set([
+  '/guides/confidentialite-assistante-externalisee',
+  '/guides/premier-mois-assistante-externalisee',
+  '/guides/choisir-assistante-externalisee',
+  '/guides/modele-brief-assistante-externalisee',
+  '/guides/suivi-demandes-assistante-externalisee',
+]);
+const GUIDES_REVISES = new Set([
+  '/guides/assistante-independante-ou-salariee',
+  '/guides/prix-assistante-de-direction-externalisee',
+]);
+const PAGES_REVISEES = new Set(['/', '/private-office', '/services', '/contact', '/tarifs']);
 
 /** Préfixes d'URL de la vague de publication de septembre 2026. */
 const CHEMINS_SEPTEMBRE = /^\/(guides|assistante|assistante-independante)(\/|$)/;
@@ -31,5 +45,12 @@ const CHEMINS_SEPTEMBRE = /^\/(guides|assistante|assistante-independante)(\/|$)/
  */
 export function lastmodPour(pathname) {
   const chemin = pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
+  if (chemin === '/guides' || NOUVEAUX_GUIDES.has(chemin) || GUIDES_REVISES.has(chemin) || PAGES_REVISEES.has(chemin)) return DATE_NOUVEAUX_GUIDES;
+  return CHEMINS_SEPTEMBRE.test(chemin) ? DATE_SEO_METIERS_ZONES_GUIDES : DATE_SOCLE;
+}
+
+export function publicationPour(pathname) {
+  const chemin = pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
+  if (NOUVEAUX_GUIDES.has(chemin) || chemin === '/tarifs') return DATE_NOUVEAUX_GUIDES;
   return CHEMINS_SEPTEMBRE.test(chemin) ? DATE_SEO_METIERS_ZONES_GUIDES : DATE_SOCLE;
 }

@@ -9,7 +9,7 @@ export function getStaticPaths() {
 }
 
 const { g } = Astro.props;
-const siteUrl = 'https://brittassist.fr';
+const siteUrl = 'https://www.brittassist.fr';
 const url = `${siteUrl}/guides/${g.slug}`;
 
 const autres = guides.filter((x) => x.slug !== g.slug);
@@ -31,19 +31,17 @@ const jsonLd = {
       url,
       mainEntityOfPage: { '@id': `${url}#webpage` },
       inLanguage: 'fr-FR',
-      datePublished: '2026-09-04',
+      datePublished: g.datePublished ?? '2026-09-04',
       dateModified: g.dateModified,
       author: {
-        '@type': 'Person',
-        name: 'Brittany Dreano',
-        jobTitle: 'Executive & Lifestyle Assistant',
-        url: `${siteUrl}/a-propos`,
+        '@id': `${siteUrl}/a-propos#brittany-dreano`,
       },
       publisher: { '@id': `${siteUrl}/#business` },
       about: { '@id': `${siteUrl}/#business` },
       articleSection: g.categorie,
       // Reprend la réponse courte : c'est elle que les moteurs de réponse citent.
       abstract: g.reponseCourte.join(' '),
+      ...(g.sources ? { citation: g.sources.map((s) => s.href) } : {}),
     },
     {
       '@type': 'FAQPage',
@@ -67,7 +65,7 @@ const jsonLd = {
 };
 ---
 
-<BaseLayout title={g.title} description={g.description} dateModified={g.dateModified}>
+<BaseLayout title={g.title} description={g.description} ogType="article" datePublished={g.datePublished ?? '2026-09-04'} dateModified={g.dateModified}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
 
   <header class="hero hero--page">
@@ -120,6 +118,22 @@ const jsonLd = {
       </article>
     </div>
   </section>
+
+  {g.sources && (
+    <section class="band band--ivoire band--tight">
+      <div class="container">
+        <div class="band__head reveal">
+          <p class="eyebrow">Références</p>
+          <h2>Sources utiles pour vérifier ces points.</h2>
+        </div>
+        <ul class="list-plain reveal">
+          {g.sources.map((source) => (
+            <li><a href={source.href} target={source.href.startsWith('http') ? '_blank' : undefined} rel={source.href.startsWith('http') ? 'noopener noreferrer' : undefined}>{source.label}</a></li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
 
   <!-- ── Comparaison ──────────────────────────────────────── -->
   {g.comparaison && (

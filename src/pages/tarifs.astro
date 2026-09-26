@@ -1,0 +1,179 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+import Monogram from '../components/Monogram.astro';
+
+const title = 'Tarifs de l’assistance de direction externalisée · BrittAssist';
+const description = 'Private Office BrittAssist dès 700 € par mois : ce que couvre le forfait, les missions sur devis, les frais, la TVA et les étapes avant de commencer.';
+
+const formules = [
+  {
+    nom: 'Executive Private Office',
+    prix: 'À partir de 700 € / mois',
+    description: 'Un accompagnement récurrent pour déléguer une partie du quotidien professionnel et personnel du dirigeant.',
+    detail: 'Le devis précise les types de demandes, les outils, le volume attendu, les limites et les modalités de suivi. Le montant dépend du périmètre convenu.',
+  },
+  {
+    nom: 'Private Office sur mesure',
+    prix: 'Sur devis',
+    description: 'Pour plusieurs sociétés, une disponibilité renforcée ou une coordination quotidienne plus large.',
+    detail: 'La proposition est construite à partir des interlocuteurs, de la fréquence des demandes, des déplacements et du niveau de coordination nécessaire.',
+  },
+  {
+    nom: 'Mission ponctuelle',
+    prix: 'Sur devis',
+    description: 'Pour un déplacement, un événement, une recherche ou un dossier délimité, sans accompagnement mensuel.',
+    detail: 'Le résultat attendu, les étapes et le prix sont fixés avant le début de la mission.',
+  },
+];
+
+const etapes = [
+  { num: '01', name: 'Premier échange', desc: 'Vous décrivez les demandes qui reviennent, vos outils et ce que vous voulez garder à votre main.' },
+  { num: '02', name: 'Périmètre écrit', desc: 'Brittany propose un cadre adapté : sujets pris en charge, limites, fonctionnement et tarif.' },
+  { num: '03', name: 'Accord avant démarrage', desc: 'La mission commence après acceptation de la proposition. Les accès sont limités à ce qui est utile.' },
+];
+---
+
+<BaseLayout title={title} description={description}>
+  <header class="hero hero--page">
+    <div class="container">
+      <p class="eyebrow">Tarifs &amp; devis</p>
+      <h1 class="hero__title">Combien coûte un Private Office externalisé ?</h1>
+      <p class="hero__sub">
+        L’Executive Private Office démarre à 700 € par mois. Le prix final dépend
+        des demandes à prendre en charge : un périmètre clair est défini avec
+        vous avant toute prestation.
+      </p>
+      <div class="hero__actions btn-row">
+        <Button href="/contact" variant="ivoire">Parler de mon besoin</Button>
+        <Button href="#formules" variant="lien">Voir les trois formats</Button>
+      </div>
+    </div>
+  </header>
+
+  <section class="band band--ivoire band--tight">
+    <div class="container">
+      <div class="duo reveal">
+        <div>
+          <p class="eyebrow">À retenir</p>
+          <h2>Un périmètre, pas un compteur d’heures.</h2>
+        </div>
+        <div>
+          <p class="lede">Le tarif mensuel rémunère une prise en charge définie au devis. Les tâches ne se commandent pas séparément à partir d’un catalogue : elles sont réunies selon votre organisation réelle.</p>
+          <p class="lede u-mt-24">Les prix affichés sont nets de TVA selon les <a href="/cgv">conditions générales actuelles</a> de BrittAssist. Aucune prestation supplémentaire n’est facturée sans accord écrit préalable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--noir" id="formules">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Accompagnements</p>
+        <h2>Trois formats selon votre besoin.</h2>
+      </div>
+      <div class="suite">
+        {formules.map((formule, i) => (
+          <article class="suite__item reveal">
+            <div>
+              <span class="suite__num">{String(i + 1).padStart(2, '0')}</span>
+              <h3 class="suite__name">{formule.nom}</h3>
+              <p class="offer__price">{formule.prix}</p>
+            </div>
+            <div>
+              <p class="suite__intro">{formule.description}</p>
+              <p class="lede u-mt-24">{formule.detail}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--noir-doux">
+    <div class="container">
+      <div class="band__head band__head--wide reveal">
+        <p class="eyebrow">Périmètre</p>
+        <h2>Ce que le devis précise.</h2>
+        <p class="lede">Un accompagnement peut réunir plusieurs domaines. Le devis précise ce qui est effectivement prévu pour vous.</p>
+      </div>
+      <div class="duo reveal">
+        <div>
+          <h3 class="duo__title">Selon le besoin</h3>
+          <ul class="list-plain">
+            <li>Agenda, rendez-vous et coordination des interlocuteurs</li>
+            <li>Administratif, facturation et suivi des échéances</li>
+            <li>Déplacements, réservations et organisation personnelle</li>
+            <li>Suivi de prestataires et échanges en anglais</li>
+          </ul>
+          <p class="u-mt-24"><a href="/services">Voir le détail des services</a></p>
+        </div>
+        <div>
+          <h3 class="duo__title">Ce qui reste distinct</h3>
+          <ul class="list-plain">
+            <li>Billets, hôtels, achats et prestations de tiers : réglés par vous ou refacturés sur justificatifs</li>
+            <li>Comptabilité, déclarations fiscales et actes juridiques : confiés aux professionnels compétents</li>
+            <li>Décisions d’engagement et signatures : conservées par le dirigeant</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--rose">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Avant de commencer</p>
+        <h2>Comment le prix est établi.</h2>
+      </div>
+      <div class="steps">
+        {etapes.map((etape) => (
+          <div class="step reveal">
+            <span class="step__num">{etape.num}</span>
+            <h3 class="step__name">{etape.name}</h3>
+            <p class="step__desc">{etape.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--ivoire">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Questions fréquentes</p>
+        <h2>Les points à éclaircir avant un devis.</h2>
+      </div>
+      <div class="faq reveal">
+        <div class="faq__item">
+          <h3 class="faq__q">Le prix de 700 € couvre-t-il tous les services ?</h3>
+          <p class="faq__a">C’est le point de départ de l’accompagnement mensuel, pas un forfait illimité. La proposition précise les demandes couvertes et le volume attendu.</p>
+        </div>
+        <div class="faq__item">
+          <h3 class="faq__q">Y a-t-il des frais supplémentaires ?</h3>
+          <p class="faq__a">Les achats et réservations effectués pour votre compte sont distincts du forfait. Ils sont réglés par vous ou refacturés à l’euro près, sur justificatifs. Un élargissement de mission se discute avant facturation.</p>
+        </div>
+        <div class="faq__item">
+          <h3 class="faq__q">Quelle est la durée d’engagement ?</h3>
+          <p class="faq__a">Selon les CGV actuelles, l’accompagnement mensuel est conclu pour une durée indéterminée et résiliable avec un préavis d’un mois par e-mail. Les modalités retenues figurent aussi dans votre proposition.</p>
+        </div>
+        <div class="faq__item">
+          <h3 class="faq__q">Peut-on commencer par une seule mission ?</h3>
+          <p class="faq__a">Oui, si le besoin a un résultat et un périmètre délimités : déplacement, recherche ou organisation spécifique. Le prix est fixé au devis.</p>
+        </div>
+      </div>
+      <p class="form-note u-mt-24 reveal">Les <a href="/cgv">conditions générales de vente</a> et la proposition personnalisée détaillent le cadre contractuel.</p>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <Monogram variant="ghost" />
+    <div class="container container--narrow reveal">
+      <h2>Le bon tarif part de votre organisation réelle.</h2>
+      <p class="lede">Décrivez les sujets que vous souhaitez confier. Brittany vous dira quel format est adapté et préparera une proposition claire.</p>
+      <div class="cta-final__actions">
+        <Button href="/contact" variant="ivoire">Échanger avec Brittany</Button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

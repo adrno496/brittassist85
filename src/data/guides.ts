@@ -42,7 +42,9 @@ export interface Guide {
   faq: { q: string; a: string }[];
   /** Maillage : guides et pages liés */
   liens: { href: string; label: string }[];
+  sources?: { href: string; label: string }[];
   cloture: string;
+  datePublished?: string;
   dateModified: string;
 }
 
@@ -59,9 +61,9 @@ export const guides: Guide[] = [
       "La comparaison se fait presque toujours entre un salaire brut et un tarif de prestation. C’est la seule façon de se tromper à coup sûr, parce qu’un salaire ne représente qu’une partie du coût d’un poste — et parce qu’un poste n’achète pas la même chose qu’une prestation.",
     reponseCourte: [
       "Une assistante salariée coûte nettement plus que son salaire brut : il faut y ajouter les charges patronales, les congés payés, le matériel, le recrutement et le temps d’encadrement du dirigeant.",
-      "Une assistante indépendante externalisée n’a aucune de ces charges annexes, mais n’offre ni présence physique continue, ni exclusivité, ni lien de subordination.",
-      "En pratique, le salariat devient pertinent quand le besoin est constant, quotidien et supérieur à un mi-temps régulier.",
-      "En dessous, l’externalisation est presque toujours plus rationnelle — et surtout beaucoup plus rapide à mettre en place.",
+      "Le client d’une assistante indépendante ne porte pas les charges d’un poste salarié, mais paie la prestation et ses éventuels frais ; il ne bénéficie pas d’une présence physique continue ni d’un lien de subordination.",
+      "Le salariat devient pertinent lorsque le besoin est régulier, durable et demande une présence ou une disponibilité intégrée à l’entreprise.",
+      "L’externalisation peut convenir à un périmètre plus souple, sans créer un poste ; le bon choix dépend du travail réel, du budget et du niveau de présence attendu.",
       "Le vrai critère n’est pas le prix mensuel, mais la régularité du besoin.",
     ],
     sections: [
@@ -76,20 +78,20 @@ export const guides: Guide[] = [
           {
             h3: 'Les charges patronales',
             paragraphes: [
-              "Selon le niveau de rémunération et les allègements applicables, elles représentent en France un ordre de grandeur de vingt-cinq à quarante-cinq pour cent du salaire brut : plutôt le bas de la fourchette près du SMIC, plutôt le haut sur un poste qualifié. Le chiffre exact dépend de votre convention collective et de votre situation — c’est une question à poser à votre expert-comptable, pas à une page web.",
+              "Le montant des cotisations patronales dépend de la rémunération, des allègements et de la situation de l’entreprise. Le simulateur Mon-entreprise de l’Urssaf permet d’estimer le coût total d’une embauche avec vos propres données ; faites vérifier le résultat pour votre cas par votre expert-comptable.",
             ],
           },
           {
             h3: 'Le temps réellement travaillé',
             paragraphes: [
-              "Une année compte environ deux cent cinquante-cinq à deux cent soixante jours ouvrés. Retirez cinq semaines de congés payés, les jours fériés tombant en semaine, les RTT éventuelles, la formation et les absences : un salarié est présent de l’ordre de deux cent quinze à deux cent vingt jours. Vous payez donc douze mois pour environ dix mois et demi de présence effective — et la charge de travail, elle, ne prend pas de congés.",
+              "Un salarié acquiert en principe cinq semaines de congés payés pour une année complète de travail. Les jours fériés, RTT éventuelles, formations et absences varient selon le contrat et l’entreprise. Pour comparer les options, partez de votre calendrier et de votre besoin de continuité plutôt que d’un nombre universel de jours travaillés.",
             ],
           },
           {
             h3: 'Le coût d’entrée',
             liste: [
               'Le recrutement : annonce, tri, entretiens, et le temps du dirigeant, qui est le poste le plus cher.',
-              'La période de montée en compétence : trois à six mois avant l’autonomie réelle sur un poste de direction.',
+              'La prise en main de vos outils, de vos interlocuteurs et de vos procédures, dont la durée varie selon le poste.',
               'Le poste de travail : matériel, licences logicielles, espace, téléphonie.',
               'Le risque d’échec du recrutement, qui remet le compteur à zéro.',
             ],
@@ -97,7 +99,7 @@ export const guides: Guide[] = [
           {
             h3: 'Le coût invisible : l’encadrement',
             paragraphes: [
-              "C’est celui que personne ne budgète et qui pèse le plus. Un salarié se manage : priorités à donner, travail à vérifier, entretiens à tenir, absences à couvrir, difficultés à traiter. Pour un dirigeant qui envisage une assistante précisément parce qu’il est saturé, hériter d’un poste à encadrer est un paradoxe qu’il découvre souvent trop tard.",
+              "Le temps d’encadrement compte aussi : priorités à donner, travail à vérifier, entretiens à tenir et absences à organiser. Son poids varie selon l’autonomie de la personne et la structure de l’entreprise ; il mérite d’être inclus dans la comparaison.",
             ],
           },
         ],
@@ -107,8 +109,8 @@ export const guides: Guide[] = [
         blocs: [
           {
             paragraphes: [
-              "Le prix affiché est le prix payé. Une prestation d’assistance externalisée se facture soit à l’heure, soit au forfait mensuel, soit à la mission. Il n’y a ni charges patronales, ni congés payés, ni matériel, ni recrutement, ni indemnités de rupture, et la TVA est récupérable si vous y êtes assujetti.",
-              "Il n’y a pas non plus de temps d’encadrement : une prestataire indépendante s’organise seule, arrive formée, et n’a pas besoin qu’on lui donne ses priorités chaque matin. C’est souvent le gain le plus sous-estimé.",
+              "Une prestation d’assistance externalisée se facture à l’heure, au forfait ou à la mission selon l’offre. Le client ne supporte pas les charges d’un poste salarié, mais doit comparer le prix du devis, les éventuels frais et le périmètre réellement couvert. Chez BrittAssist, les tarifs actuels sont nets de TVA selon les CGV : il n’y a donc pas de TVA facturée à récupérer sur cette prestation.",
+              "Une prestataire indépendante organise son travail, mais le démarrage exige toujours un cadrage : priorités, accès, interlocuteurs et décisions qui restent au dirigeant. Ce temps fait partie de la comparaison.",
               "En contrepartie, vous n’achetez pas une présence : vous achetez un résultat sur un périmètre défini. Il n’y a ni exclusivité, ni disponibilité physique permanente, ni lien de subordination — et il ne peut pas y en avoir, sous peine de requalification de la relation.",
             ],
           },
@@ -122,14 +124,14 @@ export const guides: Guide[] = [
               "La question n’est pas « lequel est le moins cher », mais « mon besoin est-il constant ? ». Trois indices suffisent à décider.",
             ],
             liste: [
-              'Le volume : si vous pouvez décrire, aujourd’hui, cinq jours de travail par semaine à occuper pendant douze mois, le salariat se défend. Si vous hésitez à décrire trois jours, il ne se défend pas.',
+              'Le volume : un besoin stable et durable peut justifier un poste ; une charge variable ou limitée à quelques domaines peut orienter vers l’externalisation.',
               'La présence : si le travail exige d’être physiquement dans vos locaux — accueil, gestion d’un site, manipulation de matériel — la question est tranchée d’avance.',
               'Votre disponibilité de manager : si vous n’avez pas de temps à consacrer à l’encadrement d’un nouveau poste, recruter aggravera votre situation avant de l’améliorer.',
             ],
           },
           {
             paragraphes: [
-              "Il existe aussi une trajectoire fréquente, et honnête : externaliser d’abord, recruter ensuite. L’externalisation permet de faire apparaître le volume réel et de structurer les process ; si, au bout d’un an, le besoin s’avère être un vrai temps plein stable, le recrutement se fait sur des bases claires — avec une fiche de poste écrite à partir de l’expérience, plutôt que d’une intuition.",
+              "Une autre possibilité consiste à externaliser une partie du travail, puis à recruter si le besoin devient durable et clairement défini. Le suivi des demandes aide alors à écrire une fiche de poste à partir de tâches observées.",
             ],
           },
         ],
@@ -143,12 +145,12 @@ export const guides: Guide[] = [
         {
           gauche: 'Une assistante salariée',
           droite:
-            'Une présence, une exclusivité, une disponibilité continue et la possibilité de confier n’importe quelle tâche. En échange : une charge fixe, un encadrement à assurer et un engagement de long terme.',
+            'Une présence définie par le contrat de travail, une disponibilité intégrée à l’entreprise et des tâches encadrées par le poste. En échange : un coût employeur et un management à prévoir.',
         },
         {
           gauche: 'Une assistante indépendante',
           droite:
-            'Une prise en charge sur un périmètre défini, sans charge fixe ni management, opérationnelle immédiatement et réversible. En échange : pas de présence physique continue, pas d’exclusivité, un périmètre borné.',
+            'Une prise en charge sur un périmètre défini, sans créer de poste salarié. En échange : un devis à cadrer, une phase de mise en route et pas de présence physique continue.',
         },
         {
           gauche: 'Un Private Office externalisé',
@@ -172,7 +174,7 @@ export const guides: Guide[] = [
       },
       {
         q: 'À partir de quel volume le recrutement devient-il plus rentable ?',
-        a: "Il n’existe pas de seuil universel, mais l’expérience situe le basculement autour d’un besoin stable supérieur à un mi-temps, sur une charge prévisible et durable. En dessous, le coût d’un poste — charges, encadrement, périodes creuses — est rarement compensé.",
+        a: "Il n’existe pas de seuil universel. Comparez un coût employeur simulé pour votre situation, le temps de travail réellement nécessaire et le devis d’externalisation à périmètre comparable.",
       },
     ],
     liens: [
@@ -180,8 +182,13 @@ export const guides: Guide[] = [
       { href: '/guides/comment-deleguer', label: 'Par quoi commencer quand on n’a jamais délégué' },
       { href: '/private-office', label: 'Comment fonctionne un Private Office' },
     ],
+    sources: [
+      { href: 'https://mon-entreprise.urssaf.fr/assistants', label: 'Urssaf — simulateur du coût total d’une embauche' },
+      { href: 'https://www.service-public.fr/particuliers/vosdroits/F2258', label: 'Service-Public — congés payés du salarié' },
+      { href: 'https://www.urssaf.fr/accueil/employeur/embaucher-gerer-salaries/embaucher/declaration-prealable-embauche.html', label: 'Urssaf — lien de subordination et obligations d’embauche' },
+    ],
     cloture: 'La bonne question n’est pas le prix. C’est la régularité du besoin.',
-    dateModified: '2026-09-04',
+    dateModified: '2026-09-27',
   },
 
   {
@@ -190,16 +197,15 @@ export const guides: Guide[] = [
     nom: 'Prix d’une assistante externalisée',
     title: 'Combien coûte une assistante de direction externalisée ? · BrittAssist',
     description:
-      "Tarif horaire, forfait mensuel, mission, offshore : ce que recouvrent les prix d’une assistance externalisée et comment estimer son budget.",
+      "Tarif horaire, forfait mensuel ou mission : comment comparer les devis d’assistance externalisée et comprendre le prix BrittAssist à partir de 700 € par mois.",
     h1: 'Combien coûte une assistante de direction externalisée ?',
     lede:
-      "Les fourchettes annoncées vont de dix à quatre-vingts euros de l’heure. L’écart ne s’explique pas par la qualité seule : il s’explique surtout par le fait que ces offres ne vendent pas la même chose.",
+      "Un tarif horaire, un forfait d’heures et un accompagnement au périmètre ne couvrent pas le même service. Avant de comparer des montants, il faut comparer les demandes prises en charge, l’autonomie et la continuité attendues.",
     reponseCourte: [
-      "À l’heure : comptez environ 25 à 55 € HT pour une assistante indépendante en France, et 8 à 25 € pour une plateforme d’assistants virtuels offshore.",
-      "Au forfait mensuel : les offres démarrent en général autour de 400 à 700 € HT pour un périmètre limité, et se situent souvent entre 700 et 2 500 € HT pour une prise en charge continue.",
-      "En mission ponctuelle : le prix se fixe au dossier, sur un périmètre et un délai définis à l’avance.",
-      "Ces montants sont des ordres de grandeur de marché, hors TVA, en France, et varient selon le niveau d’expérience et l’étendue du périmètre.",
-      "Le facteur de prix décisif n’est ni le volume ni la vitesse : c’est le niveau d’autonomie attendu.",
+      "Chez BrittAssist, l’Executive Private Office démarre à 700 € par mois, nets de TVA selon les CGV actuelles ; le périmètre exact figure dans une proposition personnalisée.",
+      "Une mission ponctuelle et un accompagnement plus large sont chiffrés sur devis, avant le démarrage.",
+      "Pour comparer d’autres offres, demandez ce qui est inclus, le niveau d’autonomie attendu, les frais éventuels et la façon dont les sujets sont suivis jusqu’au résultat.",
+      "Il n’existe pas de prix de marché unique : le montant dépend de la durée, du périmètre, de l’expérience et du modèle de facturation.",
     ],
     sections: [
       {
@@ -222,7 +228,7 @@ export const guides: Guide[] = [
           {
             h3: 'Le forfait d’heures à consommer',
             paragraphes: [
-              "C’est un modèle mixte, très répandu : vingt heures par mois, à utiliser avant la fin du mois. Il combine malheureusement les inconvénients des deux autres — vous comptez toujours, et vous perdez ce que vous n’avez pas consommé. Il pousse aussi à confier des tâches sans intérêt en fin de mois pour ne pas gaspiller le solde.",
+              "Certains prestataires proposent un volume d’heures par mois. Vérifiez si les heures non utilisées sont reportées, si les dépassements sont facturés et quels sujets entrent dans le forfait. Ce modèle convient quand le volume se mesure facilement.",
             ],
           },
           {
@@ -238,12 +244,12 @@ export const guides: Guide[] = [
         blocs: [
           {
             paragraphes: [
-              "Trois facteurs expliquent presque tout l’écart entre une offre à douze euros de l’heure et une offre à cinquante.",
+              "Trois facteurs aident à comprendre pourquoi deux devis peuvent être très différents.",
             ],
             liste: [
               'Le niveau d’autonomie. Exécuter une consigne précise et prendre en charge un sujet flou jusqu’à sa résolution ne demandent ni la même expérience ni le même jugement. Le premier se délègue à bas coût ; le second est ce que vous cherchez si vous êtes saturé.',
-              'La continuité de l’interlocuteur. Une personne stable connaît vos préférences au bout d’un mois. Un pool tournant vous fait réexpliquer votre contexte à chaque demande — et ce temps-là, c’est le vôtre.',
-              'La localisation et le cadre. Une prestataire française facture ses charges, son assurance responsabilité civile professionnelle et un cadre contractuel de confidentialité soumis au droit français. Une plateforme offshore ne porte pas les mêmes coûts, ni les mêmes garanties.',
+              'La continuité de l’interlocuteur. Un contact stable peut conserver votre contexte et vos préférences ; demandez comment chaque offre assure la transmission et le suivi des demandes.',
+              'Le cadre de service. Comparez le contrat, la confidentialité, les accès aux données, les horaires convenus et les frais. Ces points doivent être vérifiés pour chaque prestataire, quel que soit son lieu d’exercice.',
             ],
           },
         ],
@@ -257,14 +263,14 @@ export const guides: Guide[] = [
             ],
             liste: [
               'Notez pendant une semaine tout ce que vous faites et qui ne demande pas votre niveau de compétence : classement, relances, réservations, mise en forme, recherches, prise de rendez-vous.',
-              'Additionnez. La plupart des dirigeants trouvent entre cinq et douze heures.',
+              'Additionnez ces plages de temps pour obtenir votre propre volume de départ, sans supposer qu’il sera identique à celui d’une autre entreprise.',
               'Valorisez cette durée à votre propre coût horaire — celui de votre TJM, de votre marge horaire, ou du chiffre d’affaires que vous générez par heure travaillée.',
-              'Comparez au forfait envisagé. Si le forfait est inférieur, la question du coût est réglée ; il ne reste que celle de la confiance, qui est une autre discussion.',
+              'Comparez ensuite les devis sur un périmètre équivalent, en tenant compte du temps que vous garderez pour cadrer et valider les demandes.',
             ],
           },
           {
             paragraphes: [
-              "Chez BrittAssist, l’Executive Private Office démarre à sept cents euros par mois. Ce n’est ni un volume d’heures ni un catalogue : c’est un périmètre, défini au premier échange à partir de ce qui vous encombre réellement, et révisé quand il évolue.",
+              "Chez BrittAssist, l’Executive Private Office démarre à 700 € par mois, nets de TVA selon les CGV actuelles. Ce n’est ni un volume d’heures ni un catalogue : c’est un périmètre défini au premier échange, puis précisé dans la proposition personnalisée.",
             ],
           },
         ],
@@ -281,20 +287,24 @@ export const guides: Guide[] = [
       },
       {
         q: 'Le forfait est-il engageant ?',
-        a: "L’accompagnement se cale sur une durée qui laisse le temps au dispositif de produire ses effets — le premier mois est toujours le moins efficace — et les modalités exactes figurent au devis et aux conditions générales. Ce qui est certain, c’est qu’un forfait qui ne correspond plus à la réalité doit être révisé, dans un sens comme dans l’autre.",
+        a: "Les modalités exactes figurent au devis et aux conditions générales. Selon les CGV actuelles de BrittAssist, l’accompagnement mensuel est conclu pour une durée indéterminée et peut être résilié avec un préavis d’un mois par e-mail. Un périmètre qui ne correspond plus au besoin se rediscute.",
       },
       {
-        q: 'Une plateforme offshore à douze euros de l’heure, est-ce vraiment moins cher ?',
-        a: "Sur la facture, oui. En pratique, cela dépend de ce que vous confiez. Sur des tâches simples, répétitives et bien spécifiées, le rapport est excellent. Sur des sujets qui demandent du contexte, du jugement et de la relance jusqu’au résultat, le temps que vous passez à briefer, vérifier et reprendre finit par coûter davantage que l’écart de tarif.",
+        q: 'Une offre horaire moins chère revient-elle toujours moins cher ?',
+        a: "Cela dépend de la tâche et du temps de coordination que vous gardez. Pour un travail simple et bien défini, une offre horaire peut convenir. Pour des sujets qui demandent du contexte et des relances, comparez aussi le temps nécessaire pour expliquer, vérifier et reprendre le travail.",
       },
     ],
     liens: [
       { href: '/guides/assistante-independante-ou-salariee', label: 'Indépendante ou salariée : le vrai calcul' },
       { href: '/guides/assistante-virtuelle-ou-private-office', label: 'Assistante virtuelle ou Private Office' },
+      { href: '/tarifs', label: 'Les tarifs et le devis BrittAssist' },
       { href: '/services', label: 'Le périmètre couvert' },
     ],
+    sources: [
+      { href: 'https://www.brittassist.fr/cgv', label: 'BrittAssist — conditions générales et modalités tarifaires' },
+    ],
     cloture: 'Un prix se compare à ce qu’il libère, pas à un tarif horaire.',
-    dateModified: '2026-09-04',
+    dateModified: '2026-09-27',
   },
 
   {
@@ -749,6 +759,7 @@ export const guides: Guide[] = [
     ],
     liens: [
       { href: '/guides/assistante-independante-ou-salariee', label: 'Indépendante ou salariée' },
+      { href: '/guides/modele-brief-assistante-externalisee', label: 'Rédiger sa première demande' },
       { href: '/private-office', label: 'Le fonctionnement, étape par étape' },
       { href: '/contact', label: 'Faire le point sur votre organisation' },
     ],
@@ -872,6 +883,325 @@ export const guides: Guide[] = [
     ],
     cloture: 'Le métier ne consiste pas à faire plus. Il consiste à trier mieux.',
     dateModified: '2026-09-04',
+  },
+  {
+    slug: 'confidentialite-assistante-externalisee',
+    categorie: 'Organiser',
+    nom: 'Confidentialité et accès à distance',
+    title: 'Assistante externalisée et confidentialité : les accès à prévoir · BrittAssist',
+    description: "Documents, messagerie, agenda et données clients : comment cadrer les accès et la confidentialité d’une assistante externalisée, sans partager tous vos comptes.",
+    h1: 'Comment travailler avec une assistante externalisée sans perdre le contrôle de vos données ?',
+    lede: "Déléguer suppose de transmettre des informations. Cela ne suppose pas d’ouvrir toute votre messagerie, de partager votre mot de passe principal ou de laisser des accès actifs après la mission.",
+    reponseCourte: [
+      "Définissez les tâches confiées avant les accès : une personne ne reçoit que les documents et droits nécessaires à son périmètre.",
+      "Privilégiez un compte nominatif avec des permissions limitées et une authentification renforcée quand l’outil le permet. Évitez les identifiants partagés.",
+      "Prévoyez par écrit la confidentialité, les instructions de traitement des données personnelles et la fin des accès. Les clauses exactes dépendent de votre activité et se valident avec votre conseil.",
+      "Au démarrage, testez l’organisation sur un petit nombre de dossiers. À la fin, retirez les accès et récupérez les livrables dans un format utilisable sans la prestataire.",
+    ],
+    sections: [
+      {
+        h2: 'Commencer par le périmètre, pas par les mots de passe',
+        blocs: [
+          { paragraphes: ["Listez les demandes à déléguer : tenir un agenda, préparer les pièces du comptable, émettre des factures, suivre des réservations. Pour chaque demande, indiquez quelles données sont indispensables et qui valide l’action finale. Ce tri rend les droits d’accès beaucoup plus simples à attribuer."] },
+          { h3: 'Un exemple concret', paragraphes: ["Pour préparer des pièces comptables, un dossier partagé contenant les justificatifs utiles peut suffire. L’accès à toute la boîte mail du dirigeant, à l’ensemble du stockage et aux comptes bancaires n’est pas une condition normale de cette tâche. Si un outil impose des droits trop larges, convenez d’une autre façon de transmettre les éléments."] },
+          { h3: 'Une limite explicite', paragraphes: ["BrittAssist ne réalise ni tenue comptable, ni déclaration fiscale, ni acte juridique. Les documents sont rassemblés et suivis en lien avec les professionnels compétents. Les décisions et signatures restent à votre main."] },
+        ],
+      },
+      {
+        h2: 'Créer des accès que vous pouvez contrôler et retirer',
+        blocs: [
+          { liste: [
+            'Créer, quand c’est possible, un compte nominatif distinct pour la prestataire.',
+            'Limiter chaque droit à l’outil, au dossier et à la durée nécessaires.',
+            'Activer l’authentification multifacteur sur les outils qui le proposent.',
+            'Tenir une liste des comptes, dossiers partagés et personnes qui peuvent y accéder.',
+            'Prévoir la suppression ou la révocation de ces droits à la fin de la mission.',
+          ] },
+          { paragraphes: ["Pour l’agenda, la délégation ou le partage d’un calendrier est souvent préférable à l’envoi du mot de passe du compte principal. Pour les documents, un espace partagé réservé à la mission facilite à la fois le suivi et la sortie. Le bon réglage dépend des outils déjà utilisés dans votre entreprise."] },
+        ],
+      },
+      {
+        h2: 'Clarifier les données personnelles et la confidentialité',
+        blocs: [
+          { paragraphes: ["Si la mission implique de traiter des données personnelles pour votre compte, le rôle de chacun et les instructions de traitement doivent être examinés. La CNIL rappelle que la sous-traitance de données personnelles se cadre par contrat et par des garanties de sécurité adaptées. Une clause générale de confidentialité ne règle pas à elle seule tous les sujets de protection des données."] },
+          { paragraphes: ["Posez les questions avant de transmettre un fichier : qui y accède, pour quelle tâche, où il est stocké, combien de temps il reste nécessaire et comment il sera restitué ou supprimé ? En cas de données sensibles ou de secteur réglementé, faites valider le dispositif par votre conseil et le responsable de la protection des données, s’il y en a un."] },
+          { h3: 'Notre périmètre', paragraphes: ["Pour un cabinet de santé, BrittAssist intervient sur l’administration de l’entreprise et l’organisation du praticien, sans accès aux dossiers patients ni aux données de santé. Le cadrage initial sert aussi à tracer cette frontière."] },
+        ],
+      },
+      {
+        h2: 'Terminer la mission proprement',
+        blocs: [
+          { paragraphes: ["Une bonne sortie se prépare dès le départ. Réunissez les dossiers et échéances dans un emplacement qui vous appartient. Demandez un état des sujets terminés, en cours et en attente. Révoquez les accès nominatifs, vérifiez les partages de dossiers et décidez du sort des copies de travail selon le contrat."] },
+          { paragraphes: ["Le résultat attendu est simple : votre activité doit continuer avec ses documents, ses échéances et ses historiques, même si la personne qui vous accompagne change."] },
+        ],
+      },
+    ],
+    faq: [
+      { q: 'Faut-il donner accès à toute ma boîte mail ?', a: "Non. Selon la mission, un dossier partagé, une adresse dédiée, une délégation limitée ou un transfert ciblé peuvent suffire. L’accès global doit être justifié par un besoin réel et encadré." },
+      { q: 'Puis-je transmettre mon mot de passe ?', a: "Évitez les identifiants partagés. Un compte distinct ou une fonction de délégation permet de savoir qui a fait quoi et de couper l’accès sans changer le mot de passe principal." },
+      { q: 'Une clause de confidentialité suffit-elle pour le RGPD ?', a: "Pas nécessairement. Si la prestataire traite des données personnelles pour votre compte, il faut examiner les obligations de sous-traitance et les mesures de sécurité adaptées avec un professionnel compétent." },
+      { q: 'Que se passe-t-il à la fin de la collaboration ?', a: "Les livrables et l’état des dossiers vous sont remis, les accès sont retirés et le sort des copies de travail est traité selon le contrat. Cette étape doit être prévue dès le démarrage." },
+    ],
+    liens: [
+      { href: '/guides/premier-mois-assistante-externalisee', label: 'Organiser le premier mois' },
+      { href: '/guides/choisir-assistante-externalisee', label: 'Choisir une assistante externalisée' },
+      { href: '/guides/comment-deleguer', label: 'Choisir les premières tâches à déléguer' },
+      { href: '/assistante-independante/a-distance', label: 'Comment fonctionne l’accompagnement à distance' },
+    ],
+    sources: [
+      { href: 'https://www.cnil.fr/fr/qualification-juridique-sous-traitance', label: 'CNIL — qualification juridique de la sous-traitance' },
+      { href: 'https://www.cnil.fr/fr/securite-gerer-la-sous-traitance', label: 'CNIL — sécurité et gestion de la sous-traitance' },
+    ],
+    cloture: 'Un accès utile est un accès précis, traçable et révocable.',
+    datePublished: '2026-09-27',
+    dateModified: '2026-09-27',
+  },
+  {
+    slug: 'premier-mois-assistante-externalisee',
+    categorie: 'Organiser',
+    nom: 'Le premier mois avec une assistante externalisée',
+    title: 'Premier mois avec une assistante externalisée : plan de démarrage · BrittAssist',
+    description: "Un plan concret sur quatre semaines pour déléguer à une assistante externalisée : périmètre, accès, premières demandes, suivi et ajustement.",
+    h1: 'Le premier mois avec une assistante externalisée : que préparer ?',
+    lede: "Le démarrage n’exige pas un manuel de procédures. Il exige de savoir ce qui vous prend du temps, qui décide, où se trouvent les informations et à quoi ressemble une demande terminée.",
+    reponseCourte: [
+      "Semaine 1 : choisissez trois types de demandes récurrentes, les interlocuteurs concernés et les décisions que vous souhaitez conserver.",
+      "Semaine 2 : mettez en place un canal de demande et des accès limités aux seuls dossiers utiles ; envoyez de vraies demandes de faible risque.",
+      "Semaine 3 : vérifiez que chaque sujet revient avec un statut clair : terminé, en cours, en attente ou décision nécessaire.",
+      "Semaine 4 : faites le point sur les demandes closes, les blocages, les accès et le périmètre du mois suivant.",
+    ],
+    sections: [
+      {
+        h2: 'Avant le premier échange : repérer les demandes qui reviennent',
+        blocs: [
+          { paragraphes: ["Pendant une semaine, notez les sujets qui reviennent sans chercher à les classer parfaitement : un rendez-vous à confirmer, un document à retrouver, un fournisseur à relancer, une facture à émettre, un trajet à organiser. Les tâches que vous remettez régulièrement au soir sont souvent de bons premiers candidats."] },
+          { paragraphes: ["Choisissez ensuite trois catégories. Pour chacune, indiquez le résultat souhaité, la personne à contacter si une information manque et le moment où votre accord reste nécessaire. Cette liste de départ est plus utile qu’un inventaire de cinquante tâches théoriques."] },
+        ],
+      },
+      {
+        h2: 'Semaine 1 : fixer les limites et le rythme',
+        blocs: [
+          { liste: [
+            'Désigner le canal où les demandes entrent et celui où les urgences se signalent.',
+            'Définir ce qui peut être décidé sans vous et ce qui demande votre validation.',
+            'Choisir un format court pour le suivi des sujets ouverts.',
+            'Lister les outils et les documents nécessaires, puis créer les accès adaptés.',
+          ] },
+          { paragraphes: ["Une demande claire n’a pas besoin d’être longue. « Confirmez le rendez-vous avec le cabinet avant jeudi, puis ajoutez-le à mon agenda » contient déjà un objectif, un délai et un résultat vérifiable. Si un élément manque, la prestataire doit poser la question une fois et poursuivre."] },
+        ],
+      },
+      {
+        h2: 'Semaines 2 et 3 : travailler sur des cas réels',
+        blocs: [
+          { paragraphes: ["Commencez avec des sujets qui comptent mais dont l’erreur se corrige facilement : prise de rendez-vous, comparaison de trajets, préparation de pièces, relance d’un prestataire. Gardez les engagements financiers, les signatures et les accès sensibles pour une étape où la méthode est éprouvée."] },
+          { paragraphes: ["Demandez un retour sur chaque dossier : terminé, en cours, en attente d’un tiers ou décision nécessaire de votre part. Si le statut « en cours » persiste sans prochaine action ni date, la demande n’est pas vraiment suivie. Le point hebdomadaire sert à lever ces blocages, pas à refaire toutes les demandes."] },
+          { h3: 'Exemple de suivi', paragraphes: ["« Hôtel pour mardi : deux options comparées, option A recommandée pour sa proximité, réservation en attente de votre accord sur le budget avant vendredi 12 h. » Vous gardez l’arbitrage, sans refaire la recherche."] },
+        ],
+      },
+      {
+        h2: 'Semaine 4 : décider ce qui reste dans le périmètre',
+        blocs: [
+          { paragraphes: ["Reprenez les sujets confiés et demandez-vous lesquels ont été clos sans vous revenir, lesquels ont bloqué et pourquoi. Vérifiez aussi si les accès sont adaptés : ni insuffisants pour travailler, ni trop larges pour le périmètre réel."] },
+          { paragraphes: ["Le mois suivant peut élargir une catégorie qui fonctionne, retirer une tâche rarement utile ou préciser les délais de réponse. Si votre besoin est devenu une présence physique quotidienne ou un poste à encadrer, il faut envisager une autre organisation. Le bon périmètre est celui qui tient dans la durée."] },
+        ],
+      },
+    ],
+    faq: [
+      { q: 'Dois-je préparer toutes mes procédures avant de commencer ?', a: "Non. Trois catégories de demandes réelles, leurs résultats attendus et les décisions qui restent à votre main suffisent pour démarrer. La procédure utile se précise avec les premiers cas." },
+      { q: 'Quelles tâches confier en premier ?', a: "Celles qui reviennent souvent, consomment votre attention et se terminent par un résultat clair : rendez-vous, relances, classement, pièces comptables, déplacements simples. Les sujets qui engagent votre entreprise restent soumis à votre validation." },
+      { q: 'Comment vérifier que la délégation fonctionne ?', a: "Regardez les demandes effectivement closes, le nombre de décisions qui vous reviennent et les blocages encore ouverts. Un suivi court avec une prochaine action et une échéance donne plus d’information qu’un décompte d’heures." },
+      { q: 'Et si mon besoin change après un mois ?', a: "Le premier mois sert aussi à ajuster le périmètre. Les tâches nouvelles, les pics de volume et les limites de disponibilité se discutent explicitement avant de modifier l’accompagnement." },
+    ],
+    liens: [
+      { href: '/guides/comment-deleguer', label: 'Choisir quoi déléguer' },
+      { href: '/guides/modele-brief-assistante-externalisee', label: 'Rédiger une demande claire' },
+      { href: '/guides/suivi-demandes-assistante-externalisee', label: 'Suivre les demandes confiées' },
+      { href: '/guides/confidentialite-assistante-externalisee', label: 'Cadrer les accès et la confidentialité' },
+      { href: '/private-office', label: 'La méthode BrittAssist' },
+    ],
+    cloture: 'Le premier mois sert à installer une méthode que vous pourrez garder.',
+    datePublished: '2026-09-27',
+    dateModified: '2026-09-27',
+  },
+  {
+    slug: 'choisir-assistante-externalisee',
+    categorie: 'Décider',
+    nom: 'Choisir une assistante externalisée',
+    title: 'Comment choisir une assistante externalisée ? Critères et questions · BrittAssist',
+    description: "Périmètre, autonomie, confidentialité, suivi et devis : les questions à poser avant de choisir une assistante de direction externalisée.",
+    h1: 'Comment choisir une assistante de direction externalisée ?',
+    lede: "Un bon échange commercial ne suffit pas à prévoir la collaboration. Demandez plutôt comment les demandes entrent, qui décide, ce qui est suivi et ce qui se passe si le périmètre change.",
+    reponseCourte: [
+      "Décrivez d’abord deux ou trois demandes réelles. Une prestataire doit pouvoir expliquer ce qu’elle prend en charge, ce qu’elle vous remonte et ce qui reste hors de son métier.",
+      "Comparez les devis sur le périmètre, le mode de suivi, les délais convenus, les frais et les modalités de fin de mission, pas seulement sur le prix affiché.",
+      "Vérifiez la confidentialité et les accès nécessaires avant de transmettre des documents. Les droits doivent pouvoir être limités et retirés.",
+      "Demandez un exemple de compte rendu ou de statut de demande. Vous devez pouvoir voir ce qui est terminé, en attente et soumis à votre décision.",
+    ],
+    sections: [
+      {
+        h2: 'Partir de vos demandes, pas d’une liste de compétences',
+        blocs: [
+          { paragraphes: ["Préparez trois exemples : une demande récurrente, un imprévu et un sujet sensible. Pour chacun, indiquez le résultat attendu et le moment où vous souhaitez valider. Une réponse précise montre mieux la méthode de travail qu’une longue liste de tâches possibles."] },
+          { liste: [
+            'La personne comprend-elle le résultat attendu ou attend-elle des consignes pour chaque étape ?',
+            'Sait-elle dire quelles décisions, signatures ou opérations spécialisées restent chez vous ou chez un professionnel compétent ?',
+            'Avec qui échange-t-elle si une information manque : vous, votre équipe, votre comptable ou un autre prestataire ?',
+          ] },
+        ],
+      },
+      {
+        h2: 'Comparer le fonctionnement prévu au contrat',
+        blocs: [
+          { paragraphes: ["Un tarif horaire, un forfait d’heures et un accompagnement mensuel ne couvrent pas nécessairement le même travail. Demandez ce qui déclenche une demande, le canal utilisé, les plages de disponibilité convenues, le mode de validation et le traitement d’une hausse de volume. Faites inscrire au devis ce qui compte pour votre activité."] },
+          { h3: 'Les questions qui évitent les malentendus', liste: [
+            'Quelles demandes sont incluses et lesquelles feront l’objet d’un devis distinct ?',
+            'Qui paie les achats ou réservations effectués pour votre compte, et après quel accord ?',
+            'Comment voit-on les sujets ouverts, leurs prochaines actions et leurs échéances ?',
+            'Comment les documents et accès sont-ils restitués ou retirés à la fin ?',
+          ] },
+          { paragraphes: ["Une prestataire sérieuse peut aussi conclure qu’un besoin de présence quotidienne dans vos locaux appelle un recrutement ou une autre forme d’assistance. Cette limite est utile à connaître avant de signer."] },
+        ],
+      },
+      {
+        h2: 'Vérifier la confidentialité avec des gestes concrets',
+        blocs: [
+          { paragraphes: ["Demandez quels documents seront utilisés, quels comptes seront ouverts et qui conservera la maîtrise des accès. Un compte nominatif limité à la mission est préférable à un mot de passe partagé lorsque les outils le permettent. Si des données personnelles sont traitées pour votre compte, faites examiner le cadre contractuel et les mesures adaptées à votre activité."] },
+          { paragraphes: ["Enfin, prévoyez un point de révision après les premières demandes. Ce point sert à corriger le périmètre et la méthode à partir du travail réel, sans supposer qu’un premier devis peut anticiper chaque exception."] },
+        ],
+      },
+    ],
+    faq: [
+      { q: 'Faut-il demander une liste complète de toutes les tâches possibles ?', a: "Non. Deux ou trois demandes typiques, leurs limites et leur résultat attendu permettent une comparaison plus fiable qu’un catalogue. Le devis doit ensuite fixer le périmètre retenu." },
+      { q: 'Le tarif le plus bas est-il le meilleur choix ?', a: "Pas forcément. Comparez aussi la continuité de l’interlocuteur, le temps de coordination qui vous reste, les frais et les limites de chaque offre." },
+      { q: 'Peut-on commencer sans donner accès à tous les outils ?', a: "Oui, si les premières demandes le permettent. Définissez les tâches, puis ouvrez uniquement les accès utiles, avec des droits révocables." },
+    ],
+    liens: [
+      { href: '/guides/prix-assistante-de-direction-externalisee', label: 'Comparer les modèles de prix' },
+      { href: '/guides/confidentialite-assistante-externalisee', label: 'Cadrer les accès et la confidentialité' },
+      { href: '/tarifs', label: 'Lire les tarifs et modalités BrittAssist' },
+    ],
+    sources: [
+      { href: 'https://www.cnil.fr/fr/securite-gerer-la-sous-traitance', label: 'CNIL — sécurité et gestion de la sous-traitance' },
+    ],
+    cloture: 'Choisissez une façon de travailler que vous pourrez vérifier, pas une promesse générale.',
+    datePublished: '2026-09-27',
+    dateModified: '2026-09-27',
+  },
+  {
+    slug: 'modele-brief-assistante-externalisee',
+    categorie: 'Méthode',
+    nom: 'Modèle de brief pour déléguer',
+    title: 'Modèle de brief pour une assistante externalisée · BrittAssist',
+    description: "Un modèle de demande prêt à adapter : résultat, échéance, contexte, budget, autorisation et retour attendu pour déléguer sans multiplier les échanges.",
+    h1: 'Quel brief envoyer à une assistante externalisée ?',
+    lede: "Une demande utile peut tenir en quelques lignes. Elle précise le résultat, le délai et les décisions que vous gardez, sans dicter chaque étape de la réalisation.",
+    reponseCourte: [
+      "Indiquez le résultat vérifiable : « rendez-vous confirmé et inscrit à l’agenda » plutôt que « occupe-toi du rendez-vous ».",
+      "Ajoutez une échéance, les personnes ou documents utiles et les contraintes qui changent réellement la réponse.",
+      "Fixez la limite d’autonomie : ce qui peut être envoyé ou réservé, le plafond éventuel et le point où votre accord est requis.",
+      "Précisez le retour attendu : une confirmation finale, une recommandation entre options ou une question si une décision manque.",
+    ],
+    sections: [
+      {
+        h2: 'Un modèle court à copier et adapter',
+        blocs: [
+          { paragraphes: ["Ce canevas sert de départ. Supprimez les lignes inutiles pour une demande simple ; pour un sujet sensible, ajoutez le contexte et les validations nécessaires."] },
+          { liste: [
+            'Résultat attendu : ce qui doit être vrai lorsque la demande sera terminée.',
+            'Échéance : date et heure utiles, ou niveau de priorité si aucune date n’est fixe.',
+            'Contexte : interlocuteurs, documents, préférences et contraintes indispensables.',
+            'Autonomie : ce qui peut être décidé, le budget maximal et ce qui nécessite mon accord.',
+            'Retour : format souhaité et moment où me signaler un blocage.',
+          ] },
+          { h3: 'Exemple fictif', paragraphes: ["« Merci de trouver deux trajets en train pour mon rendez-vous à Nantes mardi avant 9 h 30. Départ de La Roche-sur-Yon ; retour le même jour. Budget maximum : 120 €. Envoie-moi les deux options avec horaires et conditions de modification avant jeudi 15 h. Ne réserve rien avant mon accord. » Cet exemple montre le format du brief ; il ne décrit pas une mission client."] },
+        ],
+      },
+      {
+        h2: 'Adapter le brief à la nature du sujet',
+        blocs: [
+          { h3: 'Une tâche répétée', paragraphes: ["Précisez la fréquence, l’événement qui déclenche le travail et l’endroit où le résultat doit être consigné. Après quelques cycles, la demande peut devenir une procédure courte plutôt qu’un nouveau brief chaque semaine."] },
+          { h3: 'Une demande urgente', paragraphes: ["Dites ce qui rend l’échéance réelle : un client attend une réponse, un départ approche ou une option expire. Indiquez un canal de contact si la décision doit vous revenir rapidement. Le mot « urgent » seul ne dit ni l’action prioritaire ni la limite d’autonomie."] },
+          { h3: 'Une demande sensible', paragraphes: ["N’envoyez que les informations nécessaires sur le canal convenu. Vérifiez les destinataires, les droits d’accès et l’étape de validation avant tout envoi externe ou engagement financier."] },
+        ],
+      },
+      {
+        h2: 'Laisser une marge de méthode, garder les arbitrages',
+        blocs: [
+          { paragraphes: ["Le brief décrit l’objectif et les contraintes ; il n’a pas besoin de prescrire chaque clic. Si plusieurs solutions sont acceptables, demandez une recommandation argumentée. Si une information manque, la prestataire peut formuler une question précise et continuer sur les étapes qui ne dépendent pas de votre réponse."] },
+          { paragraphes: ["Le bon test est simple : une personne qui n’était pas dans votre tête peut-elle savoir quand le sujet est terminé et à quel moment elle doit vous demander de trancher ? Si oui, le brief est suffisant pour commencer."] },
+        ],
+      },
+    ],
+    faq: [
+      { q: 'Faut-il écrire un long document pour chaque demande ?', a: "Non. Le résultat, l’échéance et la limite d’autonomie tiennent souvent en trois phrases. Gardez un document plus détaillé pour les processus répétitifs ou les sujets à risque." },
+      { q: 'Puis-je envoyer une demande par message vocal ?', a: "Oui si ce canal est convenu. Reformulez par écrit les montants, dates, destinataires et validations qui pourraient être ambigus." },
+      { q: 'Que faire si je ne connais pas la meilleure solution ?', a: "Décrivez le problème, vos contraintes et la décision que vous souhaitez garder. Demandez une recommandation avec les options pertinentes plutôt qu’une exécution déjà figée." },
+    ],
+    liens: [
+      { href: '/guides/comment-deleguer', label: 'Choisir les premières tâches à déléguer' },
+      { href: '/guides/suivi-demandes-assistante-externalisee', label: 'Suivre ensuite les demandes sans microgestion' },
+      { href: '/guides/premier-mois-assistante-externalisee', label: 'Organiser le premier mois' },
+    ],
+    cloture: 'Un brief clair vous évite de reprendre la demande en cours de route.',
+    datePublished: '2026-09-27',
+    dateModified: '2026-09-27',
+  },
+  {
+    slug: 'suivi-demandes-assistante-externalisee',
+    categorie: 'Organiser',
+    nom: 'Suivre les demandes déléguées',
+    title: 'Suivi des demandes déléguées : tableau et méthode · BrittAssist',
+    description: "Un tableau de suivi simple pour une assistante externalisée : statuts, prochaine action, échéance, blocage et décision attendue du dirigeant.",
+    h1: 'Comment suivre les demandes confiées à une assistante externalisée ?',
+    lede: "Suivre ne veut pas dire vérifier chaque geste. Un tableau court permet de savoir ce qui est clos, ce qui attend un tiers et ce qui demande réellement une décision de votre part.",
+    reponseCourte: [
+      "Tenez une ligne par sujet avec cinq informations : demande, responsable de la prochaine action, statut, échéance et blocage éventuel.",
+      "Utilisez quatre statuts lisibles : à faire, en cours, en attente et terminé. Ajoutez « décision nécessaire » lorsque le prochain geste appartient au dirigeant.",
+      "Pour chaque sujet en attente, notez de qui dépend la réponse et la date de relance prévue. Sans prochaine action, un statut n’aide pas à piloter.",
+      "Faites un point à la fréquence adaptée au volume des demandes et aux échéances ; archivez les sujets clos pour garder une vue courte.",
+    ],
+    sections: [
+      {
+        h2: 'Le tableau minimal : cinq colonnes qui suffisent',
+        blocs: [
+          { liste: [
+            'Sujet : un libellé reconnaissable, par exemple « devis fournisseur à confirmer ».',
+            'Statut : à faire, en cours, en attente, décision nécessaire ou terminé.',
+            'Prochaine action et responsable : « relancer le fournisseur mardi — Brittany » ou « valider l’option B — dirigeant ».',
+            'Échéance : la date qui compte pour le client ou pour la prochaine action.',
+            'Lien ou référence : le document ou l’échange qui permet de reprendre le dossier.',
+          ] },
+          { paragraphes: ["Un tableur, un outil de tâches ou un document partagé peut suffire. Choisissez celui que vous consultez déjà. La valeur vient d’une mise à jour régulière et de règles communes, pas d’un logiciel supplémentaire."] },
+        ],
+      },
+      {
+        h2: 'Distinguer un blocage d’une décision',
+        blocs: [
+          { paragraphes: ["« En attente » signifie qu’une réponse extérieure manque : fournisseur, client, cabinet ou administration. Indiquez la personne sollicitée et la relance prévue. « Décision nécessaire » signifie que plusieurs options sont prêtes mais que votre accord ou votre arbitrage manque. La distinction évite de vous adresser chaque retard comme une nouvelle tâche."] },
+          { h3: 'Exemple fictif', paragraphes: ["« Déplacement client : deux trains compatibles identifiés ; option A moins chère mais non échangeable ; décision sur le billet attendue avant vendredi 12 h ; réservation après validation. » L’état du sujet et votre unique décision tiennent sur une ligne. Cet exemple illustre le format de suivi, pas un résultat de mission."] },
+        ],
+      },
+      {
+        h2: 'Lire le tableau pour améliorer la délégation',
+        blocs: [
+          { paragraphes: ["Lors d’un point régulier, commencez par les décisions qui vous appartiennent, puis les échéances proches et enfin les sujets bloqués. Les demandes terminées peuvent être regroupées dans un bref récapitulatif. Il n’est pas nécessaire de relire toutes les étapes d’un dossier clos."] },
+          { paragraphes: ["Si les mêmes blocages reviennent, cherchez la cause : information manquante au brief, droit d’accès trop limité, validation trop tardive ou périmètre mal défini. Le tableau sert à corriger la méthode et à préciser le devis si la charge réelle a changé."] },
+        ],
+      },
+    ],
+    faq: [
+      { q: 'Faut-il suivre les heures passées ?', a: "Cela dépend du contrat. Pour piloter les demandes, le statut, la prochaine action et l’échéance sont souvent plus utiles qu’un décompte de temps seul." },
+      { q: 'À quelle fréquence recevoir un point ?', a: "Fixez une fréquence compatible avec le volume et les délais réels. Les décisions urgentes se signalent sur le canal convenu ; les sujets ordinaires peuvent être regroupés dans un point régulier." },
+      { q: 'Comment éviter un tableau qui ne se met jamais à jour ?', a: "Gardez peu de colonnes, désignez la personne qui actualise chaque ligne et associez chaque sujet ouvert à une prochaine action datée." },
+    ],
+    liens: [
+      { href: '/guides/modele-brief-assistante-externalisee', label: 'Rédiger une demande claire' },
+      { href: '/guides/premier-mois-assistante-externalisee', label: 'Installer cette méthode au premier mois' },
+      { href: '/services/reporting', label: 'Voir le périmètre du reporting BrittAssist' },
+    ],
+    cloture: 'Le bon suivi montre les décisions à prendre, puis laisse le travail avancer.',
+    datePublished: '2026-09-27',
+    dateModified: '2026-09-27',
   },
 ];
 

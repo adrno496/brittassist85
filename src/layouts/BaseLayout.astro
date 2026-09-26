@@ -2,12 +2,13 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { lastmodPour } from '../data/dates.mjs';
+import { lastmodPour, publicationPour } from '../data/dates.mjs';
 
 interface Props {
   title: string;
   description: string;
   ogImage?: string;
+  ogType?: 'website' | 'article';
   canonical?: string;
   noindex?: boolean;
   bodyClass?: string;
@@ -19,14 +20,15 @@ const {
   title,
   description,
   ogImage = '/images/og-brittassist.jpg',
+  ogType = 'website',
   canonical,
   noindex = false,
   bodyClass = '',
-  datePublished = '2026-08-20',
+  datePublished,
   dateModified,
 } = Astro.props;
 
-const siteUrl = 'https://brittassist.fr';
+const siteUrl = 'https://www.brittassist.fr';
 // On retire l'extension .html pour que le canonical corresponde aux URLs
 // propres servies par Vercel (cleanUrls). L'accueil reste « / ».
 const cleanPath = Astro.url.pathname.replace(/\.html$/, '');
@@ -37,6 +39,7 @@ const ogImageAbs = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`
 // IA). Valeur fournie par la page, sinon celle déduite du chemin — la même
 // source que le <lastmod> du sitemap, pour que les deux ne divergent jamais.
 const lastModified = dateModified ?? lastmodPour(cleanPath);
+const published = datePublished ?? publicationPour(cleanPath);
 
 const FONTS_CSS =
   'https://fonts.bunny.net/css?family=instrument-serif:400,400i|manrope:300,400,500,600&display=swap';
@@ -58,18 +61,20 @@ const FONTS_CSS =
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/images/logo.png" />
 
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content="BrittAssist" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={ogImageAbs} />
+    <meta property="og:image:alt" content="BrittAssist, assistance de direction externalisée par Brittany Dreano" />
     <meta property="og:locale" content="fr_FR" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageAbs} />
+    <meta name="twitter:image:alt" content="BrittAssist, assistance de direction externalisée par Brittany Dreano" />
 
     <meta name="author" content="Brittany Dreano" />
 
@@ -114,9 +119,8 @@ const FONTS_CSS =
           email: 'brittanydreano.cm@gmail.com',
           telephone: '+33667249727',
           image: ogImageAbs,
-          priceRange: '€€€',
           knowsLanguage: ['fr-FR', 'en'],
-          founder: { '@type': 'Person', name: 'Brittany Dreano' },
+          founder: { '@id': `${siteUrl}/a-propos#brittany-dreano` },
           areaServed: [
             { '@type': 'Country', name: 'France' },
             { '@type': 'Place', name: 'International (à distance)' },
@@ -132,7 +136,6 @@ const FONTS_CSS =
             'https://www.instagram.com/brittassist85',
             'https://www.facebook.com/profile.php?id=100091531544199',
           ],
-          openingHours: 'Mo-Fr 09:00-18:00',
           hasOfferCatalog: {
             '@type': 'OfferCatalog',
             name: 'Accompagnements BrittAssist',
@@ -166,6 +169,15 @@ const FONTS_CSS =
           },
         },
         {
+          '@type': 'Person',
+          '@id': `${siteUrl}/a-propos#brittany-dreano`,
+          name: 'Brittany Dreano',
+          url: `${siteUrl}/a-propos`,
+          image: `${siteUrl}/images/portrait-brittany-parcours.jpg`,
+          jobTitle: 'Executive & Lifestyle Assistant',
+          worksFor: { '@id': `${siteUrl}/#business` },
+        },
+        {
           '@type': 'WebPage',
           '@id': `${canonicalUrl}#webpage`,
           url: canonicalUrl,
@@ -174,7 +186,7 @@ const FONTS_CSS =
           isPartOf: { '@id': `${siteUrl}/#website` },
           about: { '@id': `${siteUrl}/#business` },
           inLanguage: 'fr-FR',
-          datePublished,
+          datePublished: published,
           dateModified: lastModified,
           primaryImageOfPage: ogImageAbs,
         },
@@ -214,6 +226,7 @@ const FONTS_CSS =
       const reveals = document.querySelectorAll('.reveal, .request__steps');
       const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       if (!reduced && reveals.length > 0 && 'IntersectionObserver' in window) {
+        document.documentElement.classList.add('has-reveal');
         const obs = new IntersectionObserver(
           (entries) => {
             entries.forEach((e) => {

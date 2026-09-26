@@ -545,25 +545,102 @@ p { font-size: clamp(0.98rem, 1.15vw, 1.05rem); }
    10. FRICTIONS (« Votre charge mentale aussi »)
 ============================================================ */
 .frictions {
-  display: flex; flex-direction: column;
   border-top: var(--filet-clair);
-  max-width: 48ch;
+  max-width: 940px;
 }
-.frictions li {
+.frictions__intro {
+  color: var(--ink-sur-clair-doux);
+  margin-bottom: 22px;
+}
+.friction { border-bottom: var(--filet-clair); }
+.friction__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  cursor: pointer;
+  padding: clamp(16px, 2vw, 22px) 0;
   font-family: var(--display);
   font-size: clamp(1.25rem, 2.5vw, 1.9rem);
   line-height: 1.25;
-  padding: clamp(14px, 2vw, 20px) 0;
-  border-bottom: var(--filet-clair);
   color: var(--ink-sur-clair);
 }
-.frictions li::before {
+.friction__summary::-webkit-details-marker { display: none; }
+.friction__summary::marker { content: ''; }
+.friction__summary > span:first-child::before {
   content: '—';
   color: var(--or);
   margin-right: 16px;
   font-family: var(--texte);
   font-size: 0.8rem;
   vertical-align: middle;
+}
+.friction__toggle {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--or-fane);
+  border-radius: 50%;
+  color: var(--ink-sur-clair-doux);
+  font-family: var(--texte);
+  font-size: 1.05rem;
+  line-height: 1;
+  transition: transform var(--moyen) var(--ease), background var(--moyen) var(--ease);
+}
+.friction[open] .friction__toggle { transform: rotate(45deg); background: var(--or-tres-fane); }
+.friction__summary:hover .friction__toggle { background: var(--or-tres-fane); }
+.friction__content { padding: 2px 0 clamp(24px, 3vw, 34px) 24px; }
+.friction__demo {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(14px, 2.5vw, 26px);
+}
+.friction__step {
+  border-top: var(--filet-or);
+  padding-top: 14px;
+  display: flex;
+  gap: 12px;
+}
+.friction[open] .friction__step { animation: friction-step-in 520ms var(--ease) both; }
+.friction[open] .friction__step:nth-child(2) { animation-delay: 100ms; }
+.friction[open] .friction__step:nth-child(3) { animation-delay: 200ms; }
+@keyframes friction-step-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.friction__number {
+  flex: 0 0 auto;
+  color: #856221;
+  font-size: 0.67rem;
+  letter-spacing: 0.08em;
+  padding-top: 5px;
+}
+.friction__step h3 {
+  font-family: var(--texte);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-sur-clair);
+  margin-bottom: 6px;
+}
+.friction__step p { font-size: 0.88rem; line-height: 1.55; color: var(--ink-sur-clair-doux); }
+.friction__link {
+  display: inline-block;
+  margin-top: 21px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--ink-sur-clair);
+  border-bottom: 1px solid var(--or-fane);
+}
+.friction__link:hover { border-bottom-color: var(--or); }
+.frictions__note { margin-top: 15px; font-size: 0.78rem; color: var(--ink-sur-clair-doux); }
+@media (max-width: 700px) {
+  .friction__content { padding-left: 0; }
+  .friction__demo { grid-template-columns: 1fr; gap: 18px; }
 }
 
 /* ============================================================
@@ -607,10 +684,9 @@ p { font-size: clamp(0.98rem, 1.15vw, 1.05rem); }
   border-bottom: var(--filet-sombre);
   font-size: 0.94rem;
   color: var(--ink-sur-noir-doux);
-  opacity: 0;
-  transform: translateY(10px);
   transition: opacity var(--lent) var(--ease), transform var(--lent) var(--ease);
 }
+.has-reveal .request__steps:not(.is-visible) li { opacity: 0; transform: translateY(10px); }
 .request__steps.is-visible li { opacity: 1; transform: none; }
 .request__steps.is-visible li:nth-child(1)  { transition-delay: 60ms; }
 .request__steps.is-visible li:nth-child(2)  { transition-delay: 180ms; }
@@ -1350,10 +1426,9 @@ a.direct__value:hover { color: var(--ink-sur-noir); border-bottom-color: var(--o
    Lente, discrète. Neutralisée si l'utilisateur préfère moins de mouvement.
 ============================================================ */
 .reveal {
-  opacity: 0;
-  transform: translateY(16px);
   transition: opacity var(--lent) var(--ease), transform var(--lent) var(--ease);
 }
+.has-reveal .reveal:not(.is-visible) { opacity: 0; transform: translateY(16px); }
 .reveal.is-visible { opacity: 1; transform: none; }
 .reveal.d-1 { transition-delay: 120ms; }
 .reveal.d-2 { transition-delay: 240ms; }

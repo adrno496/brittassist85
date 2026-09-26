@@ -19,7 +19,7 @@ const groupes = categories.map((c) => ({
   items: guides.filter((g) => g.categorie === c),
 }));
 
-const siteUrl = 'https://brittassist.fr';
+const siteUrl = 'https://www.brittassist.fr';
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -55,7 +55,7 @@ const jsonLd = {
 };
 ---
 
-<BaseLayout title={title} description={description} dateModified="2026-09-04">
+<BaseLayout title={title} description={description}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
 
   <header class="hero hero--page">

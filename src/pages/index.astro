@@ -3,9 +3,66 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Button from '../components/Button.astro';
 import Monogram from '../components/Monogram.astro';
 
-const title = "Private Office externalisé pour dirigeants · BrittAssist";
+const title = "Assistante de direction externalisée pour dirigeants · BrittAssist";
 const description =
-  "Executive & lifestyle assistance pour entrepreneurs et dirigeants : administratif, déplacements, réservations, coordination et demandes sur mesure. Vous gardez les décisions, j’absorbe le reste. À partir de 700 € / mois.";
+  "Brittany Dreano accompagne les dirigeants depuis La Roche-sur-Yon, à distance partout en France : administratif, agenda, déplacements et coordination. Private Office dès 700 € / mois.";
+
+const frictions = [
+  {
+    titre: 'Un billet de train.',
+    lien: '/services/organisation-deplacements',
+    etapes: [
+      { nom: 'Je vérifie', texte: 'L’heure du rendez-vous, les gares, votre marge de trajet et vos préférences.' },
+      { nom: 'Je compare', texte: 'Les trains compatibles, le prix total et les conditions d’échange ou d’annulation.' },
+      { nom: 'Je vous restitue', texte: 'Une option recommandée ; la réservation part après votre accord si celui-ci est requis.' },
+    ],
+  },
+  {
+    titre: 'Une facture à retrouver.',
+    lien: '/services/facturation',
+    etapes: [
+      { nom: 'Je repère', texte: 'Le fournisseur, la date, le montant et les espaces où la pièce peut se trouver.' },
+      { nom: 'Je vérifie', texte: 'La référence et la version du document avant de le transmettre ou de le classer.' },
+      { nom: 'Je vous restitue', texte: 'La facture et son emplacement ; si elle manque, la demande précise à adresser au fournisseur.' },
+    ],
+  },
+  {
+    titre: 'Un prestataire à relancer.',
+    lien: '/services/suivi-prestataires',
+    etapes: [
+      { nom: 'Je reprends', texte: 'Le devis, les échanges précédents et l’échéance convenue.' },
+      { nom: 'Je relance', texte: 'Le bon interlocuteur avec une question claire et une date de retour demandée.' },
+      { nom: 'Je vous restitue', texte: 'La réponse, la prochaine action ou un blocage qui demande votre arbitrage.' },
+    ],
+  },
+  {
+    titre: 'Un restaurant à réserver.',
+    lien: '/services/reservations',
+    etapes: [
+      { nom: 'Je cadre', texte: 'Le nombre d’invités, le lieu, l’horaire, le budget et les contraintes alimentaires.' },
+      { nom: 'Je recherche', texte: 'Des tables disponibles qui conviennent au contexte du rendez-vous.' },
+      { nom: 'Je confirme', texte: 'La réservation selon les consignes convenues, puis l’adresse et les détails utiles.' },
+    ],
+  },
+  {
+    titre: 'Un contrat à envoyer.',
+    lien: '/services/gestion-des-contrats',
+    etapes: [
+      { nom: 'Je contrôle', texte: 'La bonne version, les pièces à joindre, le destinataire et votre validation.' },
+      { nom: 'Je transmets', texte: 'Le document validé par le canal convenu, sans rédiger d’acte juridique.' },
+      { nom: 'Je suis', texte: 'La réception, la signature attendue et la prochaine échéance.' },
+    ],
+  },
+  {
+    titre: 'Un hôtel à comparer.',
+    lien: '/services/organisation-deplacements',
+    etapes: [
+      { nom: 'Je situe', texte: 'Le lieu exact du rendez-vous, l’arrivée, le départ et le temps de transfert.' },
+      { nom: 'Je compare', texte: 'Le prix total, le calme, les conditions d’annulation et les horaires utiles.' },
+      { nom: 'Je recommande', texte: 'Une sélection courte avec ses compromis, puis la réservation après validation.' },
+    ],
+  },
+];
 
 const flow = [
   'Recherche des trains et des vols compatibles avec l’horaire',
@@ -106,12 +163,12 @@ const steps = [
     <div class="container">
       <div class="hero__grid">
         <div>
-          <p class="eyebrow">Executive &amp; Lifestyle Assistance</p>
-          <h1 class="hero__title">Votre Private Office. Sans avoir à le construire en interne.</h1>
+          <p class="eyebrow">Assistante de direction externalisée · Vendée</p>
+          <h1 class="hero__title">Votre assistante de direction externalisée. Votre Private Office.</h1>
           <p class="hero__sub">
-            J’accompagne entrepreneurs et dirigeants dans l’organisation de
-            leur quotidien professionnel et personnel : administratif,
-            déplacements, réservations, coordination et demandes sur mesure.
+            Je suis Brittany Dreano, basée à La Roche-sur-Yon. J’accompagne à
+            distance des entrepreneurs et dirigeants partout en France :
+            administratif, agenda, déplacements, réservations et coordination.
           </p>
           <p class="hero__punch">Vous gardez les décisions. J’absorbe le reste.</p>
           <div class="hero__actions btn-row">
@@ -119,6 +176,7 @@ const steps = [
             <Button href="/contact" variant="lien">Échanger sur mes besoins</Button>
           </div>
           <p class="hero__price">À partir de 700 € / mois</p>
+          <p><a href="/tarifs">Comprendre les tarifs et le périmètre</a></p>
         </div>
 
         <div class="hero__media hero__media--portrait media--tanymac">
@@ -144,14 +202,32 @@ const steps = [
         <h2>Votre entreprise a grandi. Votre charge mentale aussi.</h2>
       </div>
 
-      <ul class="frictions reveal">
-        <li>Un billet de train.</li>
-        <li>Une facture à retrouver.</li>
-        <li>Un prestataire à relancer.</li>
-        <li>Un restaurant à réserver.</li>
-        <li>Un contrat à envoyer.</li>
-        <li>Un hôtel à comparer.</li>
-      </ul>
+      <p class="frictions__intro reveal">Ouvrez une situation pour voir comment la demande peut avancer, étape par étape.</p>
+      <div class="frictions reveal">
+        {frictions.map((friction) => (
+          <details class="friction">
+            <summary class="friction__summary">
+              <span>{friction.titre}</span>
+              <span class="friction__toggle" aria-hidden="true">+</span>
+            </summary>
+            <div class="friction__content">
+              <ol class="friction__demo" aria-label={`Démonstration : ${friction.titre}`}>
+                {friction.etapes.map((etape, i) => (
+                  <li class="friction__step">
+                    <span class="friction__number" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+                    <div>
+                      <h3>{etape.nom}</h3>
+                      <p>{etape.texte}</p>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+              <a class="friction__link" href={friction.lien}>Voir cette prestation <span aria-hidden="true">↗</span></a>
+            </div>
+          </details>
+        ))}
+      </div>
+      <p class="frictions__note reveal">Démonstrations illustratives : elles décrivent une méthode, pas des missions client.</p>
 
       <p class="lede u-mt-40 reveal">
         Individuellement, rien de compliqué. Ensemble, ces micro-décisions
@@ -274,6 +350,7 @@ const steps = [
             </p>
             <div class="offer__cta">
               <Button href="/contact" variant="ivoire">Échanger sur mon organisation</Button>
+              <p><a href="/tarifs">Comprendre le tarif et le devis</a></p>
             </div>
           </div>
           <div>
@@ -342,8 +419,9 @@ const steps = [
   <section class="band band--ivoire">
     <div class="container">
       <div class="band__head reveal">
-        <p class="eyebrow">Deux prises en charge</p>
-        <h2>Ce que « je m’en occupe » veut dire.</h2>
+        <p class="eyebrow">Situations illustratives</p>
+        <h2>Ce que « je m’en occupe » peut vouloir dire.</h2>
+        <p class="lede">Ces scénarios expliquent une méthode. Ils ne décrivent pas des missions clients vérifiées.</p>
       </div>
 
       <div class="cases">
@@ -367,8 +445,8 @@ const steps = [
           <div class="case__row">
             <span class="case__label">Résultat</span>
             <p class="case__text">
-              Un seul message envoyé. Aucun arbitrage à reprendre. Le
-              déplacement s’est déroulé sans qu’une seule question ne remonte.
+              Le dirigeant reçoit un itinéraire prêt à utiliser et toutes les
+              confirmations au même endroit.
             </p>
           </div>
         </article>
@@ -392,8 +470,8 @@ const steps = [
           <div class="case__row">
             <span class="case__label">Résultat</span>
             <p class="case__text">
-              Les échéances ont cessé d’être une source d’inquiétude. Les
-              relances partent sans qu’il faille y penser.
+              Les échéances et les relances sont visibles dans un suivi commun,
+              avec les décisions encore nécessaires clairement signalées.
             </p>
           </div>
         </article>
@@ -491,6 +569,25 @@ const steps = [
         L’hôtel, le restaurant et le voyage ne sont pas le produit. Le produit
         est la vie mieux orchestrée qu’ils représentent.
       </p>
+    </div>
+  </section>
+
+  <!-- ── CTA final ────────────────────────────────────────── -->
+  <section class="band band--rose band--tight">
+    <div class="container">
+      <div class="duo reveal">
+        <div>
+          <p class="eyebrow">Depuis la Vendée</p>
+          <h2>Basée à La Roche-sur-Yon, présente dans votre organisation.</h2>
+        </div>
+        <div>
+          <p class="lede">BrittAssist est basée à La Roche-sur-Yon. Le suivi quotidien se fait à distance, partout en France et à l’international. Un rendez-vous sur place peut être envisagé en Vendée ou à Nantes lorsque le sujet le justifie.</p>
+          <div class="btn-row u-mt-24">
+            <Button href="/assistante-independante/la-roche-sur-yon" variant="noir">À La Roche-sur-Yon</Button>
+            <Button href="/assistante-independante/a-distance" variant="lien">À distance</Button>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 

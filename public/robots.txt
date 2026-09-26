@@ -41,4 +41,4 @@ User-agent: CCBot
 Allow: /
 
 # Plan du site (sitemap XML généré automatiquement par Astro)
-Sitemap: https://brittassist.fr/sitemap-index.xml
+Sitemap: https://www.brittassist.fr/sitemap-index.xml

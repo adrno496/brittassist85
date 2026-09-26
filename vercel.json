@@ -29,9 +29,8 @@
     { "source": "/domaines-intervention", "destination": "/services", "permanent": true },
     { "source": "/methode", "destination": "/private-office", "permanent": true },
     { "source": "/ecosysteme", "destination": "/", "permanent": true },
-    { "source": "/assistante-administrative-vendee", "destination": "/services", "permanent": true },
+    { "source": "/assistante-administrative-vendee", "destination": "/assistante-independante/vendee", "permanent": true },
     { "source": "/prestations", "destination": "/services", "permanent": true },
-    { "source": "/tarifs", "destination": "/#accompagnement", "permanent": true },
     { "source": "/questionnaires", "destination": "/questionnaire", "permanent": true }
   ],
   "rewrites": [
