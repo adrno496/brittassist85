@@ -2,25 +2,20 @@
 import Monogram from './Monogram.astro';
 
 const currentPath = Astro.url.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
-
 const links = [
   { href: '/private-office', label: 'Private Office' },
   { href: '/services', label: 'Services' },
   { href: '/tarifs', label: 'Tarifs' },
   { href: '/guides', label: 'Guides' },
   { href: '/a-propos', label: 'À propos' },
-  { href: '/contact', label: 'Contact' },
 ];
-
-const isActive = (href: string) =>
-  currentPath === href || currentPath.startsWith(href + '/');
+const isActive = (href: string) => currentPath === href || currentPath.startsWith(href + '/');
 ---
 
 <a href="#main-content" class="skip-link">Aller au contenu principal</a>
-
 <nav id="navbar" aria-label="Navigation principale">
   <div class="nav-inner">
-    <a href="/" class="nav-brand">
+    <a href="/" class="nav-brand" aria-label="BrittAssist — Accueil">
       <Monogram variant="nav" />
       <span class="nav-brand__name">BrittAssist</span>
     </a>
@@ -28,68 +23,22 @@ const isActive = (href: string) =>
     <ul class="nav-links" id="nav-links">
       {links.map((link) => (
         <li>
-          <a
-            href={link.href}
-            class={isActive(link.href) ? 'active' : ''}
-            aria-current={isActive(link.href) ? 'page' : undefined}
-          >
+          <a href={link.href} class={isActive(link.href) ? 'active' : ''} aria-current={isActive(link.href) ? 'page' : undefined}>
             {link.label}
           </a>
         </li>
       ))}
-      <li class="nav-links__cta"><a href="/contact">Échanger avec Brittany</a></li>
+      <li class="nav-links__cta"><a href="/contact">Échanger avec Brittany →</a></li>
     </ul>
 
     <div class="nav-actions">
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Activer le thème clair" title="Activer le thème clair">
-        <span class="theme-toggle__icon" aria-hidden="true">☼</span>
-        <span class="theme-toggle__text">Clair</span>
-      </button>
-      <a href="/contact" class="nav-cta">Échanger avec Brittany</a>
-      <button
-        class="nav-hamburger"
-        id="nav-hamburger"
-        type="button"
-        aria-label="Ouvrir le menu"
-        aria-expanded="false"
-        aria-controls="nav-links"
-      >
-        <span></span>
-      </button>
+      <a href="/contact" class="nav-cta">Parler de mon organisation</a>
+      <button class="nav-hamburger" id="nav-hamburger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
     </div>
   </div>
 </nav>
 
 <script>
-  const themeToggle = document.getElementById('theme-toggle');
-  if (themeToggle) {
-    const updateThemeToggle = () => {
-      const light = document.documentElement.dataset.theme === 'light';
-      const label = light ? 'Activer le thème sombre' : 'Activer le thème clair';
-      themeToggle.setAttribute('aria-label', label);
-      themeToggle.setAttribute('title', label);
-      const icon = themeToggle.querySelector('.theme-toggle__icon');
-      const text = themeToggle.querySelector('.theme-toggle__text');
-      if (icon) icon.textContent = light ? '☾' : '☼';
-      if (text) text.textContent = light ? 'Sombre' : 'Clair';
-    };
-    updateThemeToggle();
-    themeToggle.addEventListener('click', () => {
-      const light = document.documentElement.dataset.theme !== 'light';
-      document.documentElement.dataset.theme = light ? 'light' : 'dark';
-      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', light ? '#F8F6F2' : '#0B0B0B');
-      try { localStorage.setItem('brittassist-theme', light ? 'light' : 'dark'); } catch (_) { /* Navigation privée. */ }
-      updateThemeToggle();
-    });
-  }
-
-  const navbar = document.getElementById('navbar');
-  if (navbar) {
-    const setScrolled = () => navbar.classList.toggle('scrolled', window.scrollY > 12);
-    setScrolled();
-    window.addEventListener('scroll', setScrolled, { passive: true });
-  }
-
   const hamburger = document.getElementById('nav-hamburger');
   const links = document.getElementById('nav-links');
   if (hamburger && links) {
@@ -101,9 +50,8 @@ const isActive = (href: string) =>
     };
     hamburger.addEventListener('click', () => {
       const open = hamburger.getAttribute('aria-expanded') === 'true';
-      if (open) {
-        close();
-      } else {
+      if (open) close();
+      else {
         hamburger.setAttribute('aria-expanded', 'true');
         hamburger.setAttribute('aria-label', 'Fermer le menu');
         links.classList.add('open');
@@ -111,8 +59,8 @@ const isActive = (href: string) =>
       }
     });
     links.querySelectorAll('a').forEach((link) => link.addEventListener('click', close));
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && hamburger.getAttribute('aria-expanded') === 'true') close();
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') close();
     });
   }
 </script>
