@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import '../styles/refonte-v5.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { lastmodPour, publicationPour } from '../data/dates.mjs';
@@ -50,16 +51,8 @@ const FONTS_CSS =
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark light" />
-    <meta name="theme-color" content="#0B0B0B" />
-    <script is:inline>
-      try {
-        if (localStorage.getItem('brittassist-theme') === 'light') {
-          document.documentElement.dataset.theme = 'light';
-          document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#F8F6F2');
-        }
-      } catch (_) { /* Le thème sombre reste le choix par défaut. */ }
-    </script>
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#FBF8F4" />
 
     <title>{title}</title>
     <meta name="description" content={description} />
