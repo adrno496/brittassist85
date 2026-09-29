@@ -1,618 +1,174 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Button from '../components/Button.astro';
-import Monogram from '../components/Monogram.astro';
 import WorkDemo from '../components/WorkDemo.astro';
 
 const title = "Assistante de direction externalisée pour dirigeants · BrittAssist";
-const description =
-  "Brittany Dreano accompagne les dirigeants depuis La Roche-sur-Yon, à distance partout en France : administratif, agenda, déplacements et coordination. Private Office dès 700 € / mois.";
+const description = "Brittany Dreano accompagne les dirigeants depuis La Roche-sur-Yon, à distance partout en France : administratif, agenda, déplacements et coordination. Private Office dès 700 € / mois.";
 
-const frictions = [
-  {
-    titre: 'Un billet de train.',
-    lien: '/services/organisation-deplacements',
-    etapes: [
-      { nom: 'Je vérifie', texte: 'L’heure du rendez-vous, les gares, votre marge de trajet et vos préférences.' },
-      { nom: 'Je compare', texte: 'Les trains compatibles, le prix total et les conditions d’échange ou d’annulation.' },
-      { nom: 'Je vous restitue', texte: 'Une option recommandée ; la réservation part après votre accord si celui-ci est requis.' },
-    ],
-  },
-  {
-    titre: 'Une facture à retrouver.',
-    lien: '/services/facturation',
-    etapes: [
-      { nom: 'Je repère', texte: 'Le fournisseur, la date, le montant et les espaces où la pièce peut se trouver.' },
-      { nom: 'Je vérifie', texte: 'La référence et la version du document avant de le transmettre ou de le classer.' },
-      { nom: 'Je vous restitue', texte: 'La facture et son emplacement ; si elle manque, la demande précise à adresser au fournisseur.' },
-    ],
-  },
-  {
-    titre: 'Un prestataire à relancer.',
-    lien: '/services/suivi-prestataires',
-    etapes: [
-      { nom: 'Je reprends', texte: 'Le devis, les échanges précédents et l’échéance convenue.' },
-      { nom: 'Je relance', texte: 'Le bon interlocuteur avec une question claire et une date de retour demandée.' },
-      { nom: 'Je vous restitue', texte: 'La réponse, la prochaine action ou un blocage qui demande votre arbitrage.' },
-    ],
-  },
-  {
-    titre: 'Un restaurant à réserver.',
-    lien: '/services/reservations',
-    etapes: [
-      { nom: 'Je cadre', texte: 'Le nombre d’invités, le lieu, l’horaire, le budget et les contraintes alimentaires.' },
-      { nom: 'Je recherche', texte: 'Des tables disponibles qui conviennent au contexte du rendez-vous.' },
-      { nom: 'Je confirme', texte: 'La réservation selon les consignes convenues, puis l’adresse et les détails utiles.' },
-    ],
-  },
-  {
-    titre: 'Un contrat à envoyer.',
-    lien: '/services/gestion-des-contrats',
-    etapes: [
-      { nom: 'Je contrôle', texte: 'La bonne version, les pièces à joindre, le destinataire et votre validation.' },
-      { nom: 'Je transmets', texte: 'Le document validé par le canal convenu, sans rédiger d’acte juridique.' },
-      { nom: 'Je suis', texte: 'La réception, la signature attendue et la prochaine échéance.' },
-    ],
-  },
-  {
-    titre: 'Un hôtel à comparer.',
-    lien: '/services/organisation-deplacements',
-    etapes: [
-      { nom: 'Je situe', texte: 'Le lieu exact du rendez-vous, l’arrivée, le départ et le temps de transfert.' },
-      { nom: 'Je compare', texte: 'Le prix total, le calme, les conditions d’annulation et les horaires utiles.' },
-      { nom: 'Je recommande', texte: 'Une sélection courte avec ses compromis, puis la réservation après validation.' },
-    ],
-  },
+const services = [
+  { num: '01', name: 'Executive Admin', desc: 'Facturation, contrats, échéances, documents et suivi administratif.', href: '/services/gestion-administrative' },
+  { num: '02', name: 'Agenda & Coordination', desc: 'Rendez-vous, arbitrages d’horaires, confirmations et coordination des interlocuteurs.', href: '/services/coordination' },
+  { num: '03', name: 'Travel', desc: 'Vols, trains, hôtels, transferts, itinéraires et modifications en cours de route.', href: '/services/organisation-deplacements' },
+  { num: '04', name: 'Lifestyle', desc: 'Restaurants, événements, cadeaux, billetterie et recherches sur mesure.', href: '/services/reservations' },
+  { num: '05', name: 'Private Coordination', desc: 'Prestataires, interventions, organisation personnelle et sujets du quotidien.', href: '/services/organisation-personnelle' },
+  { num: '06', name: 'International', desc: 'Échanges en anglais et coordination avec des interlocuteurs étrangers.', href: '/services/assistanat-anglais' },
 ];
 
-const flow = [
-  'Recherche des trains et des vols compatibles avec l’horaire',
-  'Comparaison des options : durée, correspondances, coût réel',
-  'Sélection selon vos préférences de voyage habituelles',
-  'Hôtel calme, à distance de marche du rendez-vous',
-  'Transferts aéroport et gare réservés',
-  'Table retenue pour le dîner client de mercredi',
-  'Confirmations centralisées, puis transmises',
-  'Itinéraire complet envoyé la veille',
-  'Suivi pendant le déplacement',
-  'Modification prise en charge si le programme bouge',
-];
-
-const universes = [
-  {
-    name: 'Executive Admin',
-    desc: 'Facturation, contrats, échéances et documents tenus à jour.',
-  },
-  {
-    name: 'Agenda & Coordination',
-    desc: 'Rendez-vous, confirmations, arbitrages d’horaires et coordination des interlocuteurs.',
-  },
-  {
-    name: 'Travel',
-    desc: 'Vols, trains, hôtels, transferts et itinéraires complets.',
-  },
-  {
-    name: 'Lifestyle',
-    desc: 'Restaurants, événements, cadeaux et attentions à ne pas oublier.',
-  },
-  {
-    name: 'Private Coordination',
-    desc: 'Prestataires, interventions à domicile et organisation personnelle.',
-  },
-  {
-    name: 'International',
-    desc: 'Échanges en anglais et coordination avec des interlocuteurs étrangers.',
-  },
-];
-
-const comparisons = [
-  {
-    ask: '« Réserve-moi un hôtel. »',
-    care:
-      'Avant de réserver : vérification de l’adresse exacte du rendez-vous, du temps de transfert réel, des horaires d’arrivée et de vos préférences connues.',
-  },
-  {
-    ask: '« Prends-moi cette réservation. »',
-    care:
-      'La confirmation ne reste pas au fond d’une boîte mail : elle est centralisée avec les autres, et elle vous revient au moment où elle sert.',
-  },
-  {
-    ask: '« Le prestataire ne répond pas. »',
-    care:
-      'Je reviens vers vous avec des solutions et une recommandation, pas avec un transfert de message.',
-  },
-  {
-    ask: '« Occupe-toi de ça. »',
-    care:
-      'La demande est suivie jusqu’à ce qu’elle soit terminée, bloquée, ou qu’une décision soit réellement nécessaire.',
-  },
-];
-
-const scope = [
-  'Administratif', 'Facturation', 'Contrats', 'Coordination', 'Agenda',
-  'Déplacements', 'Réservations', 'Organisation personnelle', 'Suivi prestataires',
-  'Support ponctuel aux équipes', 'Recherches', 'Échanges en anglais', 'Reporting',
-];
-
-const steps = [
-  {
-    num: '01',
-    name: 'Vous demandez',
-    desc: 'WhatsApp, e-mail ou le canal convenu. Pas de formulaire, pas de cahier des charges.',
-  },
-  {
-    num: '02',
-    name: 'Je clarifie',
-    desc: 'Uniquement les informations réellement nécessaires pour avancer.',
-  },
-  {
-    num: '03',
-    name: 'J’organise',
-    desc: 'Recherche, coordination, réservation, suivi, prestataires.',
-  },
-  {
-    num: '04',
-    name: 'Je ferme la boucle',
-    desc: 'Terminé. En cours. En attente. Ou décision nécessaire.',
-  },
+const method = [
+  { name: 'Vous envoyez la demande', desc: 'WhatsApp, e-mail ou le canal convenu. Une phrase suffit lorsque le contexte est déjà connu.' },
+  { name: 'Je clarifie le strict nécessaire', desc: 'Je ne vous renvoie pas un questionnaire : seulement les informations qui empêchent réellement d’avancer.' },
+  { name: 'Je prends en charge', desc: 'Recherche, coordination, relance, réservation, suivi : le sujet avance sans rester dans votre tête.' },
+  { name: 'Je ferme la boucle', desc: 'Vous recevez un résultat, un statut clair, ou la seule décision qui nécessite vraiment votre arbitrage.' },
 ];
 ---
 
 <BaseLayout title={title} description={description}>
-  <!-- ── Hero ─────────────────────────────────────────────── -->
-  <header class="hero">
-    <div class="container">
-      <div class="hero__grid">
-        <div>
-          <p class="eyebrow">Assistante de direction externalisée · Vendée</p>
-          <h1 class="hero__title">Votre assistante de direction externalisée. Votre Private Office.</h1>
-          <p class="hero__sub">
-            Je suis Brittany Dreano, basée à La Roche-sur-Yon. J’accompagne à
-            distance des entrepreneurs et dirigeants partout en France :
-            administratif, agenda, déplacements, réservations et coordination.
-          </p>
-          <p class="hero__punch">Vous gardez les décisions. J’absorbe le reste.</p>
-          <div class="hero__actions btn-row">
-            <Button href="/private-office" variant="ivoire">Découvrir l’accompagnement</Button>
-            <Button href="/contact" variant="lien">Échanger sur mes besoins</Button>
-          </div>
-          <p class="hero__price">À partir de 700 € / mois</p>
-          <p><a href="/tarifs">Comprendre les tarifs et le périmètre</a></p>
+  <header class="ba-home-hero">
+    <div class="container ba-home-hero__grid">
+      <div class="ba-home-hero__copy">
+        <p class="ba-home-hero__meta">Private Office externalisé · La Roche-sur-Yon</p>
+        <h1>Vous gardez les décisions. <em>J’absorbe le reste.</em></h1>
+        <p class="ba-home-hero__lead">Je suis Brittany Dreano. J’accompagne à distance les entrepreneurs et dirigeants dans ce qui leur vole du temps sans exiger leur expertise : administratif, agenda, déplacements, réservations et coordination.</p>
+        <div class="ba-home-hero__actions">
+          <Button href="/contact" variant="noir">Parler de mon organisation</Button>
+          <Button href="/private-office" variant="lien">Découvrir le Private Office</Button>
         </div>
+        <p class="ba-home-hero__price"><strong>À partir de 700 € / mois</strong><span>•</span><span>Accompagnement sur mesure</span></p>
+      </div>
 
-        <div class="hero__media hero__media--portrait media--tanymac">
-          <img
-            src="/images/tanymac.jpeg"
-            alt="Brittany Dreano à son poste de travail, carnet BrittAssist et ordinateur"
-            width="1080"
-            height="1349"
-            loading="eager"
-            fetchpriority="high"
-            decoding="async"
-          />
+      <div class="ba-home-hero__visual" aria-label="Brittany Dreano au travail">
+        <div class="ba-home-hero__photo">
+          <img src="/images/brittany-pro-1.jpg" alt="Brittany Dreano travaillant sur son ordinateur" width="1600" height="1067" loading="eager" fetchpriority="high" decoding="async" />
+        </div>
+        <div class="ba-home-hero__card">
+          <span class="ba-home-hero__card-label">Le principe</span>
+          <strong>Une demande. Une personne responsable. Une boucle fermée.</strong>
+          <p>Pas une boîte à outils de plus. Une personne qui tient les fils jusqu’au résultat.</p>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- ── Identification ───────────────────────────────────── -->
-  <section class="band band--ivoire">
-    <div class="container">
-      <div class="band__head reveal">
-        <p class="eyebrow">Le point de bascule</p>
-        <h2>Votre entreprise a grandi. Votre charge mentale aussi.</h2>
-      </div>
-
-      <p class="frictions__intro reveal">Ouvrez une situation pour voir comment la demande peut avancer, étape par étape.</p>
-      <div class="frictions reveal">
-        {frictions.map((friction) => (
-          <details class="friction">
-            <summary class="friction__summary">
-              <span>{friction.titre}</span>
-              <span class="friction__toggle" aria-hidden="true">+</span>
-            </summary>
-            <div class="friction__content">
-              <ol class="friction__demo" aria-label={`Démonstration : ${friction.titre}`}>
-                {friction.etapes.map((etape, i) => (
-                  <li class="friction__step">
-                    <span class="friction__number" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
-                    <div>
-                      <h3>{etape.nom}</h3>
-                      <p>{etape.texte}</p>
-                    </div>
-                  </li>
-                ))}
-              </ol>
-              <a class="friction__link" href={friction.lien}>Voir cette prestation <span aria-hidden="true">↗</span></a>
-            </div>
-          </details>
-        ))}
-      </div>
-      <p class="frictions__note reveal">Démonstrations illustratives : elles décrivent une méthode, pas des missions client.</p>
-
-      <p class="lede u-mt-40 reveal">
-        Individuellement, rien de compliqué. Ensemble, ces micro-décisions
-        consomment une part considérable de votre attention.
-      </p>
-
-      <hr class="rule reveal" />
-
-      <p class="closing closing--wide reveal">
-        Votre temps est devenu trop précieux pour être consommé par ce qui peut
-        être parfaitement orchestré par quelqu’un d’autre.
-      </p>
+  <div class="ba-scope-strip" aria-label="Repères BrittAssist">
+    <div class="container ba-scope-strip__inner">
+      <div class="ba-scope-strip__item">Un seul point d’entrée pour votre quotidien.</div>
+      <div class="ba-scope-strip__item"><span>Base</span>La Roche-sur-Yon · Vendée</div>
+      <div class="ba-scope-strip__item"><span>Suivi</span>À distance · France & international</div>
+      <div class="ba-scope-strip__item"><span>Langues</span>Français · Anglais</div>
+      <div class="ba-scope-strip__item"><span>Format</span>Récurrent ou ponctuel</div>
     </div>
-  </section>
+  </div>
 
-  <!-- ── Section signature ────────────────────────────────── -->
-  <section class="band band--noir">
-    <div class="container">
-      <div class="band__head reveal">
-        <p class="eyebrow">Le principe</p>
-        <h2>Une demande. Je gère le reste.</h2>
+  <section class="band ba-intro">
+    <div class="container ba-intro__grid">
+      <div class="ba-intro__sticky reveal">
+        <p class="eyebrow">Le vrai problème</p>
+        <h2>Ce n’est pas la tâche. C’est tout ce qu’elle vous oblige à garder en tête.</h2>
       </div>
-
-      <div class="request">
-        <div class="request__bubble reveal">
-          <p class="request__meta">Message reçu — lundi, 18 h 42</p>
-          <p class="request__text">
-            « Je dois être à Madrid mardi avant 14 h. Retour jeudi soir. Hôtel
-            calme près du rendez-vous. Dîner client mercredi. Budget 1 200 €. »
-          </p>
-          <p class="request__time">Temps passé par le dirigeant : 40 secondes</p>
+      <div class="ba-intro__body reveal d-1">
+        <p class="ba-intro__big">Un train à changer, une facture à retrouver, trois personnes à recaler, un prestataire à relancer. Chaque sujet est petit. Ensemble, ils découpent votre journée.</p>
+        <p>BrittAssist fonctionne comme un Private Office externalisé : vous transmettez le résultat attendu, je reprends le contexte, j’avance et je vous sollicite uniquement lorsque votre décision est indispensable.</p>
+        <div class="ba-intro__facts">
+          <div class="ba-intro__fact"><strong>7 ans</strong><span>d’assistance en entreprise avant l’indépendance</span></div>
+          <div class="ba-intro__fact"><strong>6 univers</strong><span>professionnels et personnels dans un même accompagnement</span></div>
+          <div class="ba-intro__fact"><strong>1 point d’entrée</strong><span>pour éviter de multiplier les prestataires et les outils</span></div>
         </div>
-
-        <ol class="request__steps">
-          {flow.map((étape, i) => (
-            <li>
-              <span class="idx" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
-              <span>{étape}</span>
-            </li>
-          ))}
-        </ol>
-      </div>
-
-      <div class="request__conclusion reveal">
-        <p class="closing closing--wide">
-          Vous envoyez une demande. Vous ne recevez pas une nouvelle liste de
-          problèmes à gérer.
-        </p>
       </div>
     </div>
   </section>
 
   <WorkDemo />
 
-  <!-- ── Univers de prise en charge ───────────────────────── -->
-  <section class="band band--noir-doux">
+  <section class="band ba-services">
     <div class="container">
-      <div class="band__head reveal">
-        <p class="eyebrow">Périmètre</p>
-        <h2>Six univers de prise en charge.</h2>
+      <div class="ba-services__head reveal">
+        <div><p class="eyebrow">Périmètre</p><h2>Six univers. Un même réflexe : je m’en occupe.</h2></div>
+        <p>Le quotidien d’un dirigeant ne se découpe pas proprement entre “administratif”, “voyage” et “personnel”. L’accompagnement non plus. Les univers servent à comprendre le périmètre, pas à vous enfermer dans un catalogue.</p>
       </div>
-
-      <div class="universes reveal">
-        {universes.map((u) => (
-          <div class="universe">
-            <p class="universe__name">{u.name}</p>
-            <p class="universe__desc">{u.desc}</p>
-          </div>
+      <div class="ba-services__list reveal">
+        {services.map((service) => (
+          <a href={service.href} class="ba-service-row">
+            <span class="ba-service-row__num">{service.num}</span>
+            <strong class="ba-service-row__name">{service.name}</strong>
+            <span class="ba-service-row__desc">{service.desc}</span>
+            <span class="ba-service-row__arrow" aria-hidden="true">↗</span>
+          </a>
         ))}
       </div>
+      <div class="u-mt-40 reveal"><Button href="/services" variant="ivoire">Voir tout le périmètre</Button></div>
+    </div>
+  </section>
 
-      <p class="universes__note reveal">
-        Cette liste n’est volontairement pas exhaustive. Votre quotidien ne
-        rentre pas dans des cases. Mon accompagnement non plus.
-      </p>
-
-      <div class="u-mt-40 reveal">
-        <Button href="/services" variant="lien">Voir le détail des six univers</Button>
+  <section class="band ba-method">
+    <div class="container ba-method__grid">
+      <div class="ba-method__head reveal">
+        <p class="eyebrow">La méthode</p>
+        <h2>Le minimum de friction entre votre demande et son résultat.</h2>
+        <p>Le but n’est pas de vous faire mieux déléguer. Le but est que la délégation elle-même vous prenne le moins de temps possible.</p>
+      </div>
+      <div class="ba-method__steps reveal d-1">
+        {method.map((step) => <article class="ba-method-step"><div><h3>{step.name}</h3><p>{step.desc}</p></div></article>)}
       </div>
     </div>
   </section>
 
-  <!-- ── Différenciation ──────────────────────────────────── -->
-  <section class="band band--ivoire">
+  <section class="band ba-offers" id="accompagnement">
     <div class="container">
-      <div class="band__head reveal">
-        <p class="eyebrow">La différence</p>
-        <h2>Une assistante exécute. Un Private Office anticipe.</h2>
+      <div class="ba-offers__head reveal">
+        <div><p class="eyebrow">Accompagnement</p><h2>Trois façons de travailler ensemble.</h2></div>
+        <p>Le bon format dépend du volume, de la fréquence et du niveau de continuité dont vous avez besoin. Le périmètre est défini avant de commencer.</p>
       </div>
-
-      <div class="compare reveal">
-        {comparisons.map((c) => (
-          <div class="compare__row">
-            <p class="compare__ask">{c.ask}</p>
-            <p class="compare__care">{c.care}</p>
-          </div>
-        ))}
-      </div>
-
-      <p class="compare__sign reveal">
-        Une demande. Une personne responsable. Une boucle fermée.
-      </p>
-    </div>
-  </section>
-
-  <!-- ── Offres ───────────────────────────────────────────── -->
-  <section class="band band--noir" id="accompagnement">
-    <div class="container">
-      <div class="band__head reveal">
-        <p class="eyebrow">Accompagnement</p>
-        <h2>Trois manières de travailler ensemble.</h2>
-      </div>
-
-      <div class="offers">
-        <article class="offer offer--lead reveal">
-          <div>
-            <h3 class="offer__name">Executive Private Office</h3>
-            <p class="offer__price">700 € / mois</p>
-            <p class="offer__for">
-              Pour l’entrepreneur ou le dirigeant qui veut cesser d’être le
-              point de passage de toutes les petites décisions.
-            </p>
-            <div class="offer__cta">
-              <Button href="/contact" variant="ivoire">Échanger sur mon organisation</Button>
-              <p><a href="/tarifs">Comprendre le tarif et le devis</a></p>
-            </div>
-          </div>
-          <div>
-            <p class="offer__scope-label">Peut comprendre, selon le périmètre</p>
-            <ul class="offer__scope">
-              {scope.map((s) => <li>{s}</li>)}
-            </ul>
-          </div>
+      <div class="ba-offers__grid">
+        <article class="ba-offer-card ba-offer-card--lead reveal">
+          <span class="ba-offer-card__tag">Accompagnement principal</span>
+          <h3>Executive Private Office</h3>
+          <p class="ba-offer-card__price">700 € / mois</p>
+          <p class="ba-offer-card__desc">Pour le dirigeant qui veut déléguer durablement plusieurs catégories de demandes et ne plus être le point de passage de chaque micro-sujet.</p>
+          <div class="ba-offer-card__foot"><Button href="/contact" variant="ivoire">Échanger sur mon organisation</Button></div>
         </article>
-
-        <div class="offers offers--duo">
-          <article class="offer reveal">
-            <div>
-              <h3 class="offer__name">Private Office sur mesure</h3>
-              <p class="offer__price">Sur devis</p>
-              <p class="offer__for">
-                Disponibilité plus importante, plusieurs entreprises, forte
-                volumétrie, déplacements fréquents, coordination quotidienne,
-                besoins spécifiques.
-              </p>
-              <div class="offer__cta">
-                <Button href="/contact" variant="or">Construire mon accompagnement</Button>
-              </div>
-            </div>
-          </article>
-
-          <article class="offer reveal d-1">
-            <div>
-              <h3 class="offer__name">Mission ponctuelle</h3>
-              <p class="offer__price">Sur devis</p>
-              <p class="offer__for">
-                Un voyage, un événement, une recherche ou une organisation
-                spécifique, sans récurrence.
-              </p>
-              <div class="offer__cta">
-                <Button href="/contact" variant="or">Décrire ma mission</Button>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── L’expérience ─────────────────────────────────────── -->
-  <section class="band band--rose">
-    <div class="container">
-      <div class="band__head reveal">
-        <p class="eyebrow">L’expérience</p>
-        <h2>Moins de choses dans votre tête.</h2>
-      </div>
-
-      <div class="steps">
-        {steps.map((s, i) => (
-          <div class={`step reveal d-${i}`}>
-            <span class="step__num">{s.num}</span>
-            <h3 class="step__name">{s.name}</h3>
-            <p class="step__desc">{s.desc}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Cas ──────────────────────────────────────────────── -->
-  <section class="band band--ivoire">
-    <div class="container">
-      <div class="band__head reveal">
-        <p class="eyebrow">Situations illustratives</p>
-        <h2>Ce que « je m’en occupe » peut vouloir dire.</h2>
-        <p class="lede">Ces scénarios expliquent une méthode. Ils ne décrivent pas des missions clients vérifiées.</p>
-      </div>
-
-      <div class="cases">
-        <article class="case reveal">
-          <div class="case__row case__row--demande">
-            <span class="case__label">Demande</span>
-            <p class="case__text">
-              « Madrid mardi avant 14 h, retour jeudi soir, hôtel calme près du
-              rendez-vous, dîner client mercredi, budget 1 200 €. »
-            </p>
-          </div>
-          <div class="case__row">
-            <span class="case__label">Prise en charge</span>
-            <p class="case__text">
-              Comparaison des vols et des trains, sélection d’un hôtel à sept
-              minutes à pied du rendez-vous, transferts réservés, table retenue
-              pour le dîner client, confirmations centralisées et itinéraire
-              complet envoyé la veille.
-            </p>
-          </div>
-          <div class="case__row">
-            <span class="case__label">Résultat</span>
-            <p class="case__text">
-              Le dirigeant reçoit un itinéraire prêt à utiliser et toutes les
-              confirmations au même endroit.
-            </p>
-          </div>
+        <article class="ba-offer-card reveal d-1">
+          <span class="ba-offer-card__tag">Besoins étendus</span>
+          <h3>Private Office sur mesure</h3>
+          <p class="ba-offer-card__price">Sur devis</p>
+          <p class="ba-offer-card__desc">Disponibilité renforcée, plusieurs structures, déplacements fréquents, coordination quotidienne ou besoins spécifiques.</p>
+          <div class="ba-offer-card__foot"><Button href="/contact" variant="contour">Construire le périmètre</Button></div>
         </article>
-
-        <article class="case reveal d-1">
-          <div class="case__row case__row--demande">
-            <span class="case__label">Demande</span>
-            <p class="case__text">
-              « Je ne sais plus qui m’a payé, ce que j’ai signé, ni ce que je
-              dois relancer. »
-            </p>
-          </div>
-          <div class="case__row">
-            <span class="case__label">Prise en charge</span>
-            <p class="case__text">
-              Reprise de l’ensemble des factures et des contrats, mise en place
-              d’un suivi unique des échéances, relances effectuées à date, et
-              points de blocage remontés avec une recommandation.
-            </p>
-          </div>
-          <div class="case__row">
-            <span class="case__label">Résultat</span>
-            <p class="case__text">
-              Les échéances et les relances sont visibles dans un suivi commun,
-              avec les décisions encore nécessaires clairement signalées.
-            </p>
-          </div>
+        <article class="ba-offer-card reveal d-2">
+          <span class="ba-offer-card__tag">Sans récurrence</span>
+          <h3>Mission ponctuelle</h3>
+          <p class="ba-offer-card__price">Sur devis</p>
+          <p class="ba-offer-card__desc">Voyage, événement, recherche ou organisation spécifique qui doit être prise en charge de bout en bout.</p>
+          <div class="ba-offer-card__foot"><Button href="/contact" variant="contour">Décrire ma mission</Button></div>
         </article>
       </div>
+      <div class="u-mt-40 reveal"><Button href="/tarifs" variant="lien">Comprendre les tarifs et le devis</Button></div>
     </div>
   </section>
 
-  <!-- ── La personne ──────────────────────────────────────── -->
-  <section class="band band--noir-doux">
-    <div class="container">
-      <div class="person">
-        <div class="person__media reveal">
-          <img
-            src="/images/portrait-brittany.jpg"
-            alt="Brittany Dreano, fondatrice de BrittAssist"
-            width="760"
-            height="950"
-            loading="lazy"
-            decoding="async"
-          />
-        </div>
-
-        <div class="person__text reveal d-1">
-          <p class="eyebrow">La personne</p>
-          <h2>La personne derrière votre Private Office.</h2>
-          <p class="lede u-mt-24">
-            Sept ans d’assistance en entreprise avant de devenir indépendante.
-            L’habitude de traiter des univers très différents dans une même
-            journée — un contrat, un déplacement, un prestataire, une table à
-            réserver — sans que l’un fasse tomber l’autre.
-          </p>
-          <p class="lede u-mt-24">
-            L’anglais pour les interlocuteurs étrangers. Et surtout la
-            compréhension de la façon dont un entrepreneur fonctionne : ce qui
-            l’encombre, ce qu’il ne délègue jamais, et ce qu’il n’aurait jamais
-            dû garder. Une demande envoyée un mardi ne se perd pas d’ici jeudi.
-          </p>
-
-          <blockquote class="person__quote">
-            Mon travail n’est pas de devenir une personne supplémentaire à
-            manager. Mon travail est précisément de vous enlever des sujets à
-            manager.
-          </blockquote>
-
-          <div class="u-mt-40">
-            <Button href="/a-propos" variant="lien">En savoir plus sur mon parcours</Button>
-          </div>
-        </div>
+  <section class="band ba-about">
+    <div class="container ba-about__grid">
+      <div class="ba-about__photo reveal">
+        <img src="/images/portrait-brittany-parcours.jpg" alt="Brittany Dreano, fondatrice de BrittAssist" width="900" height="1125" loading="lazy" decoding="async" />
+      </div>
+      <div class="ba-about__copy reveal d-1">
+        <p class="eyebrow">La personne derrière BrittAssist</p>
+        <h2>Un Private Office reste d’abord une relation de confiance.</h2>
+        <p>Avant BrittAssist, Brittany a travaillé sept ans dans l’assistance en entreprise. Le métier lui a appris à passer d’un contrat à un déplacement, puis à un prestataire ou un agenda sans perdre le fil — et surtout à savoir ce qui doit revenir au dirigeant et ce qui ne devrait jamais lui revenir.</p>
+        <blockquote class="ba-about__quote">« Mon travail n’est pas de devenir une personne supplémentaire à manager. Mon travail est de vous enlever des sujets à manager. »</blockquote>
+        <Button href="/a-propos" variant="lien">Découvrir le parcours de Brittany</Button>
       </div>
     </div>
   </section>
 
-  <!-- ── Lifestyle ────────────────────────────────────────── -->
-  <section class="band band--ivoire">
-    <div class="container">
-      <div class="lifestyle">
-        <figure class="plate plate--photo plate--c reveal">
-          <div class="plate__media media--tany">
-            <img
-              src="/images/tany.jpeg"
-              alt="Brittany Dreano au travail, en fin de journée"
-              width="941"
-              height="1672"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-          <div class="plate__inner">
-            <span class="plate__kicker">Tempo</span>
-            <p class="plate__line">
-              Le calme n’arrive pas par hasard. Quelqu’un l’a organisé.
-            </p>
-          </div>
-        </figure>
-
-        <div class="lifestyle__lines">
-          <figure class="lifestyle__line reveal d-1">
-            <span class="plate__kicker">Séjour</span>
-            <p>
-              Le vrai luxe n’est pas l’hôtel. C’est de ne pas avoir eu à
-              l’organiser.
-            </p>
-          </figure>
-          <figure class="lifestyle__line reveal d-2">
-            <span class="plate__kicker">Table</span>
-            <p>
-              Ce dîner peut ne vous prendre que 90 secondes : le temps de
-              m’envoyer un message.
-            </p>
-          </figure>
-        </div>
+  <section class="ba-final">
+    <div class="container ba-final__inner">
+      <div class="reveal"><p class="eyebrow">Le prochain sujet peut être le premier</p><h2>Qu’est-ce que vous ne devriez plus gérer vous-même ?</h2></div>
+      <div class="ba-final__aside reveal d-1">
+        <p>Décrivez votre organisation actuelle, vos demandes récurrentes ou simplement le sujet qui vous prend du temps aujourd’hui. L’échange sert à voir ce qui peut réellement être absorbé et sous quelles limites.</p>
+        <div class="btn-row"><Button href="/contact" variant="ivoire">Échanger avec Brittany</Button><Button href="/questionnaire" variant="lien">Préparer mon besoin</Button></div>
+        <p class="ba-final__fine">À partir de 700 € / mois · Sur mesure · Confidentiel</p>
       </div>
-
-      <p class="plates__note reveal">
-        L’hôtel, le restaurant et le voyage ne sont pas le produit. Le produit
-        est la vie mieux orchestrée qu’ils représentent.
-      </p>
-    </div>
-  </section>
-
-  <!-- ── CTA final ────────────────────────────────────────── -->
-  <section class="band band--rose band--tight">
-    <div class="container">
-      <div class="duo reveal">
-        <div>
-          <p class="eyebrow">Depuis la Vendée</p>
-          <h2>Basée à La Roche-sur-Yon, présente dans votre organisation.</h2>
-        </div>
-        <div>
-          <p class="lede">BrittAssist est basée à La Roche-sur-Yon. Le suivi quotidien se fait à distance, partout en France et à l’international. Un rendez-vous sur place peut être envisagé en Vendée ou à Nantes lorsque le sujet le justifie.</p>
-          <div class="btn-row u-mt-24">
-            <Button href="/assistante-independante/la-roche-sur-yon" variant="noir">À La Roche-sur-Yon</Button>
-            <Button href="/assistante-independante/a-distance" variant="lien">À distance</Button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── CTA final ────────────────────────────────────────── -->
-  <section class="cta-final">
-    <Monogram variant="ghost" />
-    <div class="container container--narrow reveal">
-      <h2>
-        Il y a probablement déjà quelque chose que vous ne devriez plus être en
-        train de gérer vous-même.
-      </h2>
-      <p class="lede">
-        Parlons de votre organisation actuelle et identifions ce que votre
-        Private Office pourrait absorber.
-      </p>
-      <div class="cta-final__actions">
-        <Button href="/contact" variant="ivoire">Échanger avec Brittany</Button>
-      </div>
-      <p class="cta-final__fine">
-        Accompagnement à partir de 700 € / mois &nbsp;•&nbsp; Sur mesure
-        &nbsp;•&nbsp; Confidentiel
-      </p>
     </div>
   </section>
 </BaseLayout>
