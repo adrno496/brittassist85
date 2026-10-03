@@ -8,10 +8,44 @@ Site : BrittAssist (`https://www.brittassist.fr`) · Dépôt : `/Users/dreano/Do
 
 1. **Le site audité est BrittAssist, pas AXDIA.** Le cahier des charges est intitulé « AXDIA », mais il désigne « le site du workspace courant », qui est celui de BrittAssist. Les exemples (audit, sécurité, outil) ont été transposés à son activité réelle.
 2. **Les 100 pages sont écrites et passent tous les contrôles automatiques, mais 98 ne sont pas indexables aujourd'hui.** Elles attendent une relecture humaine, que Google exige pour tout contenu préparé avec une IA. C'est un choix délibéré, expliqué plus bas, et réversible page par page.
-3. **Rien n'est déployé.** Tout a été validé en local. Le comportement chez l'hébergeur n'est pas testé.
+3. **Rien n'est déployé.** Tout a été validé en local. Le comportement chez l'hébergeur n'est pas testé. Le travail est commité et poussé sur une branche, pas sur `main` (voir la mise à jour ci-dessous).
 4. **Une vulnérabilité critique de dépendance subsiste** (Astro), dont la correction demande une montée de version majeure.
 
 Ce qui est acquis : aucune régression constatée, zéro défaut bloquant sur 151 pages, zéro violation d'accessibilité, une performance de laboratoire de 99 à 100, deux erreurs 404 corrigées.
+
+## Mise à jour du 3 octobre au soir : le dépôt distant avait avancé
+
+Constaté au moment de pousser, et non pendant l'audit. **Cela limite la portée de tout ce qui suit.**
+
+- La branche `main` du dépôt `brittassist-refonte` porte cinq commits du 29 septembre 2026 que le dépôt local n'avait pas : une refonte visuelle « V5 » (navigation, accueil reconstruit, feuille `refonte-v5.css`, thème clair unique, sélecteur de thème supprimé). Le dépôt local n'avait pas été synchronisé, et je n'ai pas interrogé le dépôt distant avant de commencer.
+- **L'audit, les corrections et toutes les validations de ce rapport portent sur le commit `df48fb4`, c'est-à-dire sur le site d'avant cette refonte.**
+- Ce travail est poussé sur la branche `seo/audit-sentinel-100-pages`. `main` n'a pas été modifié.
+- Une fusion avec la V5 est poussée à part, sur `seo/audit-sentinel-100-pages-v5`. Deux fichiers étaient en conflit, `BaseLayout.astro` et `index.astro` ; ils sont résolus en faveur de la V5. De mon travail sur l'accueil, il ne reste que la description raccourcie.
+
+Mesures sur la fusion, le 3 octobre 2026 :
+
+| Contrôle | Résultat | Statut |
+| --- | --- | --- |
+| Types (`npm run check`) | 0 erreur | PASS |
+| Tests | 16 sur 16 | PASS |
+| Contrôle éditorial | 0 blocage | PASS |
+| Build de production | 52 pages, 0 blocage, 2 avertissements attendus | PASS |
+| Build d'aperçu | 151 pages, 0 blocage | PASS |
+| Navigateur, 260 chargements : erreurs console, violations CSP | 0 | PASS |
+| Contraste (axe-core) | insuffisant sur 47 pages sur 52 | **FAIL** |
+| Débordement horizontal | `/` et `/a-propos` : 5 px à 390 px de large, 19 px à 768 px | **FAIL** |
+| Parcours « thème clair conservé » | sans objet : la V5 n'a plus de sélecteur de thème | NON APPLICABLE |
+| Navigateur sur le build d'aperçu, Lighthouse, re-audit SENTINEL | — | NON TESTÉ |
+
+Les deux échecs viennent de la V5 elle-même, pas de la fusion : la branche `main` distante, construite seule et soumise au même contrôle, présente le même défaut de contraste sur 45 de ses 49 pages et les mêmes débordements. Les éléments les plus touchés sont les chapôs (`.lede`) et les sur-titres (`.eyebrow`).
+
+Ce que la V5 rend caduc dans ce rapport :
+
+- « zéro violation d'accessibilité » et la correction de contraste sur fond rose valent pour l'ancien design seulement ;
+- les mesures Lighthouse de l'accueil : l'accueil V5 charge deux photos JPEG de 172 Ko chacune, et six des dix variantes WebP produites ne sont plus utilisées ;
+- `src/data/theme-init.mjs` et son empreinte dans `astro.config.mjs` ne servent plus à rien sous la V5 ; ils sont laissés en place tant que le choix entre les deux designs n'est pas arrêté.
+
+Décision qui reste à prendre : garder la V5, et corriger alors ses contrastes avant de fusionner dans `main`, ou revenir au design audité.
 
 ---
 
@@ -70,7 +104,7 @@ Limites de l'outil constatées : son audit SEO n'explore qu'une page et annonce 
 
 ## Réellement modifié
 
-28 fichiers modifiés, 77 fichiers nouveaux (dont 23 documents, 13 fichiers de polices et 10 images). **Non commité.** Détail et retour arrière : [03_FIXES_IMPLEMENTED.md](../site-audit/03_FIXES_IMPLEMENTED.md).
+28 fichiers modifiés, 77 fichiers nouveaux (dont 23 documents, 13 fichiers de polices et 10 images). Commité sur la branche `seo/audit-sentinel-100-pages` le 3 octobre au soir ; `main` n'est pas modifié. Détail et retour arrière : [03_FIXES_IMPLEMENTED.md](../site-audit/03_FIXES_IMPLEMENTED.md).
 
 | Domaine | Changements |
 | --- | --- |

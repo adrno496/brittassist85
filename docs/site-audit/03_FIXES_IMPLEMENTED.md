@@ -2,23 +2,22 @@
 
 Date : 3 octobre 2026. Point de départ : commit `df48fb4`, branche `main`.
 
-**Rien n'a été commité, rien n'a été poussé, rien n'a été déployé.** Toutes les modifications sont dans l'arbre de travail : 28 fichiers modifiés et 77 fichiers nouveaux sous `docs/`, `scripts/`, `src/` et `public/`.
+**Rien n'a été déployé.** Les modifications — 28 fichiers modifiés et 77 fichiers nouveaux sous `docs/`, `scripts/`, `src/` et `public/` — sont commitées sur la branche `seo/audit-sentinel-100-pages`, poussée le 3 octobre au soir sur le dépôt `brittassist-refonte`. `main` n'est pas modifié : il porte une refonte « V5 » postérieure au point de départ de ce chantier (voir le rapport final).
 
 ## Retour arrière
 
 ```bash
-# Tout annuler
-git restore .
-git clean -fd docs scripts src public/fonts public/images
-npm install                       # rétablit node_modules selon le package-lock.json restauré
+# Revenir à l'état d'avant le chantier
+git switch main                   # le main local est resté sur df48fb4
+npm install                       # rétablit node_modules selon son package-lock.json
 
-# Annuler un seul fichier
-git restore src/styles/global.css
+# Annuler un seul fichier sur la branche
+git restore --source=df48fb4 src/styles/global.css
 ```
 
-`git clean` ne touche que les dossiers nommés : `outils/` et `.plugcode/`, qui étaient déjà non suivis avant ce chantier, ne sont pas concernés.
+`outils/` et `.plugcode/`, qui étaient déjà non suivis avant ce chantier, ne sont dans aucun commit.
 
-Avant de commiter : `outils/` contient près de 200 Mo d'outils et de supports, dont des jeux d'essai de faux secrets (59 détections `gitleaks`, toutes dans ce dossier). Un `git add -A` l'embarquerait. Ajouter les fichiers par dossier, ou inscrire `outils/` dans `.gitignore`.
+Pour les prochains commits : `outils/` contient près de 200 Mo d'outils et de supports, dont des jeux d'essai de faux secrets (59 détections `gitleaks`, toutes dans ce dossier). Un `git add -A` l'embarquerait. Ajouter les fichiers par dossier, ou inscrire `outils/` dans `.gitignore`.
 
 ## 1. Corrections de défauts existants
 

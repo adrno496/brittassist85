@@ -6,8 +6,9 @@ Date : 3 octobre 2026.
 
 | Élément | État |
 | --- | --- |
-| Code | Modifié dans l'arbre de travail, **non commité, non déployé** |
+| Code | Commité sur la branche `seo/audit-sentinel-100-pages`, **non fusionné dans `main`, non déployé** |
 | Production | Inchangée ; elle sert une version antérieure au dépôt |
+| Branche `main` distante | Porte une refonte « V5 » absente du point de départ de ce chantier : à trancher avant tout déploiement (voir le rapport final) |
 | Pages indexables après déploiement, sans autre action | 50 : les 48 existantes, plus `/assistante` et `/assistante-independante` |
 | Pages prêtes, en attente de relecture | 99 : 92 guides, 6 pages métier, la page de méthode éditoriale |
 | Demande d'indexation à Google ou Bing | **Aucune.** Aucun accès à Search Console ni à Bing Webmaster Tools |
