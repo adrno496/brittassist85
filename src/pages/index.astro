@@ -39,7 +39,10 @@ const method = [
 
       <div class="ba-home-hero__visual" aria-label="Brittany Dreano au travail">
         <div class="ba-home-hero__photo">
-          <img src="/images/brittany-pro-1.jpg" alt="Brittany Dreano travaillant sur son ordinateur" width="1600" height="1067" loading="eager" fetchpriority="high" decoding="async" />
+          <picture>
+            <source type="image/webp" srcset="/images/brittany-pro-1-800.webp 800w, /images/brittany-pro-1-1400.webp 1400w" sizes="(max-width: 720px) 175vw, 800px" />
+            <img src="/images/brittany-pro-1.jpg" alt="Brittany Dreano travaillant sur son ordinateur" width="1600" height="1067" loading="eager" fetchpriority="high" decoding="async" />
+          </picture>
         </div>
         <div class="ba-home-hero__card">
           <span class="ba-home-hero__card-label">Le principe</span>
@@ -149,7 +152,10 @@ const method = [
   <section class="band ba-about">
     <div class="container ba-about__grid">
       <div class="ba-about__photo reveal">
-        <img src="/images/portrait-brittany-parcours.jpg" alt="Brittany Dreano, fondatrice de BrittAssist" width="900" height="1125" loading="lazy" decoding="async" />
+        <picture>
+          <source type="image/webp" srcset="/images/portrait-brittany-parcours-640.webp 640w, /images/portrait-brittany-parcours-1000.webp 1000w" sizes="(max-width: 980px) 92vw, 460px" />
+          <img src="/images/portrait-brittany-parcours.jpg" alt="Brittany Dreano, fondatrice de BrittAssist" width="900" height="1125" loading="lazy" decoding="async" />
+        </picture>
       </div>
       <div class="ba-about__copy reveal d-1">
         <p class="eyebrow">La personne derrière BrittAssist</p>

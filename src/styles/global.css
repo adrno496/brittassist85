@@ -126,6 +126,7 @@
   --or:          #C6A15B;
   --or-fane:     rgba(198, 161, 91, 0.32);
   --or-tres-fane:rgba(198, 161, 91, 0.14);
+  --accent-texte: var(--or);
 
   /* Encres */
   --ink-sur-noir:       #F8F6F2;
@@ -415,27 +416,9 @@ p { font-size: clamp(0.98rem, 1.15vw, 1.05rem); }
 
 .nav-actions { display: flex; align-items: center; gap: 14px; }
 
-.theme-toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  min-height: 42px;
-  padding: 7px 10px;
-  color: var(--ink-sur-noir);
-  border: 1px solid var(--filet-sombre);
-  font-size: 0.73rem;
-  letter-spacing: 0.05em;
-  white-space: nowrap;
-  transition: background var(--moyen) var(--ease), border-color var(--moyen) var(--ease);
-}
-.theme-toggle:hover { background: var(--or-tres-fane); border-color: var(--or-fane); }
-.theme-toggle__icon { font-family: Georgia, serif; font-size: 1.2rem; line-height: 1; }
 @media (max-width: 520px) {
   .nav-inner { gap: 10px; }
   .nav-actions { gap: 5px; }
-  .theme-toggle { min-width: 42px; padding: 7px; }
-  .theme-toggle__text { display: none; }
 }
 
 .nav-cta {
@@ -1699,77 +1682,13 @@ a.universe--lien:hover .universe__name { color: var(--or); }
   .work-demo__choices button { flex: 1 1 150px; }
 }
 
-/* Le thème clair garde les sections et les textes lisibles sur toutes les pages. */
-html[data-theme='light'] {
-  color-scheme: light;
-  --noir: #F8F6F2;
-  --noir-doux: #EEE9E3;
-  --ivoire: #FFFDF9;
-  --ink-sur-noir: #1A1817;
-  --ink-sur-noir-doux: #514B47;
-  --ink-sur-noir-tenu: #66605B;
-  --or: #805D23;
-  --or-fane: rgba(128, 93, 35, 0.32);
-  --or-tres-fane: rgba(128, 93, 35, 0.1);
-  --filet-sombre: 1px solid rgba(26, 24, 23, 0.15);
-}
-html[data-theme='light'] #navbar.scrolled { background: rgba(248, 246, 242, 0.95); border-bottom-color: rgba(26, 24, 23, 0.12); }
-html[data-theme='light'] .nav-cta,
-html[data-theme='light'] .btn--ivoire,
-html[data-theme='light'] .btn--noir,
-html[data-theme='light'] .cookie-banner__btn--primary {
-  background: #1A1817;
-  border-color: #1A1817;
-  color: #FFFDF9;
-}
-html[data-theme='light'] .nav-cta:hover,
-html[data-theme='light'] .btn--ivoire:hover,
-html[data-theme='light'] .btn--noir:hover,
-html[data-theme='light'] .cookie-banner__btn--primary:hover { background: transparent; color: #1A1817; }
-html[data-theme='light'] .skip-link { background: #1A1817; color: #FFFDF9; }
-html[data-theme='light'] .monogram { text-shadow: none; }
-html[data-theme='light'] .band--noir-doux .step,
-html[data-theme='light'] .band--noir .case__row,
-html[data-theme='light'] .band--noir-doux .case__row,
-html[data-theme='light'] .band--noir .faq__item,
-html[data-theme='light'] .band--noir-doux .faq__item,
-html[data-theme='light'] .site-footer,
-html[data-theme='light'] .footer__seo .index-groupe,
-html[data-theme='light'] .footer__bottom { border-color: rgba(26, 24, 23, 0.14); }
-html[data-theme='light'] .form input,
-html[data-theme='light'] .form textarea,
-html[data-theme='light'] .form select { border-bottom-color: rgba(26, 24, 23, 0.34); }
-html[data-theme='light'] .form input:hover,
-html[data-theme='light'] .form textarea:hover,
-html[data-theme='light'] .form select:hover { border-bottom-color: rgba(26, 24, 23, 0.62); }
-html[data-theme='light'] .form ::placeholder { color: #716B65; }
-html[data-theme='light'] .check-item input[type='checkbox'],
-html[data-theme='light'] .form-check input[type='checkbox'],
-html[data-theme='light'] .cookie-banner__btn--ghost,
-html[data-theme='light'] #cookie-trigger { border-color: rgba(26, 24, 23, 0.28); }
-html[data-theme='light'] .plate__line,
-html[data-theme='light'] .band--ivoire .plate__line,
-html[data-theme='light'] .band--rose .plate__line { color: #F8F6F2; }
-html[data-theme='light'] .plate .plate__kicker { color: #D7B774; }
-html[data-theme='light'] .work-demo__choices button[aria-pressed='true'] { background: #1A1817; color: #FFFDF9; }
-html[data-theme='light'] .work-demo__panel { background: #FFFDF9; }
-html[data-theme='light'] .work-demo__return { background: #F4E9E7; }
-html[data-theme='light'] a.universe--lien:hover { background: rgba(26, 24, 23, 0.04); }
-
 /* ============================================================
    27. GUIDES — fil, sommaire, étapes, tableaux, modèles, brouillons
-   Tout repose sur les tokens : le thème clair s'applique sans règle dédiée.
+   Tout repose sur les tokens : la palette est posée par refonte-v5.css.
 ============================================================ */
 
 /* Trois niveaux ne tiennent pas sur une ligne à 320 px. */
 .fil { flex-wrap: wrap; row-gap: 6px; }
-
-/* Or assombri pour le rose poudré : 5,2:1 (le #8A6A2E prévu pour l'ivoire n'y atteint que 4,2:1). */
-.band--rose .eyebrow,
-.band--rose .step__num,
-.band--rose .case__label,
-.band--rose .plate__kicker,
-.band--rose .list-plain li::before { color: #7A5C24; }
 
 .page-updated a { border-bottom: 1px solid currentColor; }
 

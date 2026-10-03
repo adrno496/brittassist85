@@ -2,7 +2,6 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { lastmodPour } from './src/data/dates.mjs';
 import { estBrouillon } from './src/data/publication.mjs';
-import { THEME_INIT_HASH } from './src/data/theme-init.mjs';
 import { qualityGate } from './scripts/quality-gate.mjs';
 
 export default defineConfig({
@@ -37,10 +36,6 @@ export default defineConfig({
           'https://www.googletagmanager.com',
           'https://www.google-analytics.com',
         ],
-        // Le script de thème est écrit tel quel dans le <head> (is:inline) : Astro
-        // ne le traite pas et ne calcule donc pas son empreinte. Elle est déclarée
-        // ici, à partir du même texte que celui écrit dans la page.
-        hashes: [THEME_INIT_HASH],
       },
     },
   },

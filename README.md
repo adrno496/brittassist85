@@ -39,7 +39,6 @@ src/
 │   ├── publication.mjs           qui est publié, qui est brouillon
 │   ├── mode.mjs                  lecture de BROUILLONS=1, et rien d’autre
 │   ├── dates.mjs                 dates de mise à jour : sitemap et JSON-LD
-│   └── theme-init.mjs            script de thème et son empreinte CSP
 ├── pages/                        pages fixes, hubs et gabarits dynamiques
 └── styles/global.css             une seule feuille
 public/                           polices, images, robots.txt, llms.txt, consent.js
@@ -77,7 +76,7 @@ Publier un pilier (`/guides/<slug-du-dossier>`) fait apparaître le dossier dans
 | `scripts/content-gate.mjs` | Les fiches, avant le build : requêtes principales distinctes, cadrage complet, liens vers des routes existantes, règle de droit sans source, promesses de résultat |
 | `scripts/seo-audit.mjs` | Le HTML construit : titres, descriptions, H1, canonical, Open Graph, JSON-LD, CSP, liens et ancres, pages orphelines, profondeur, similarité, sitemap, robots, redirections |
 | `scripts/quality-gate.mjs` | Branche l’audit sur le build : un blocage fait échouer `npm run build` |
-| `scripts/browser-check.mjs` | Navigateur réel, cinq largeurs d’écran : console, CSP, débordement, axe-core WCAG 2.2 AA, clavier, consentement, thème clair |
+| `scripts/browser-check.mjs` | Navigateur réel, cinq largeurs d’écran : console, CSP, débordement, axe-core WCAG 2.2 AA, clavier, consentement |
 | `scripts/check-sources.mjs` | Les liens externes répondent-ils encore ? |
 | `scripts/serve-dist.mjs` | Sert le build avec les règles de `vercel.json` |
 | `scripts/images.mjs` | Régénère les variantes WebP des photos |
@@ -95,7 +94,7 @@ PLAYWRIGHT_ROOT=/chemin/vers/un/dossier/avec/node_modules node scripts/browser-c
 ## Règles à respecter
 
 - **Domaine canonique : `https://www.brittassist.fr`.** Le domaine nu redirige vers `www`.
-- **Content-Security-Policy** : générée par Astro (`experimental.csp`) en balise `<meta>`, avec empreintes. Pas d’attribut `style=""`, pas de script en ligne hors de `theme-init.mjs`. L’en-tête CSP de `vercel.json` ne porte que `frame-ancestors`, `base-uri` et `object-src` : ne jamais y ajouter `script-src` ni `style-src`, les deux politiques se cumuleraient.
+- **Content-Security-Policy** : générée par Astro (`experimental.csp`) en balise `<meta>`, avec empreintes. Pas d’attribut `style=""`, pas de script en ligne. L’en-tête CSP de `vercel.json` ne porte que `frame-ancestors`, `base-uri` et `object-src` : ne jamais y ajouter `script-src` ni `style-src`, les deux politiques se cumuleraient.
 - **Aucune preuve inventée** : ni témoignage, ni chiffre, ni cas client sans accord écrit. Les exemples sont illustratifs et signalés comme tels. Voir `CAS_CLIENTS_A_DOCUMENTER.md`.
 - **Toute règle de droit citée renvoie à sa source officielle.** Le gate éditorial le vérifie.
 - **Pas de page par ville.** Une seule implantation ; cinq pages de zone, pas davantage.

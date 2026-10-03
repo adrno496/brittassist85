@@ -13,9 +13,7 @@ import sharp from 'sharp';
 
 /** [fichier source, largeurs à produire] — la plus grande est la largeur d'origine. */
 const PHOTOS = [
-  ['tanymac.jpeg', [640, 1080]],
-  ['portrait-brittany.jpg', [480, 760]],
-  ['tany.jpeg', [480, 941]],
+  ['brittany-pro-1.jpg', [800, 1400]],
   ['portrait-brittany-parcours.jpg', [640, 1000]],
   ['bureau-portable.jpg', [640, 1320]],
 ];

@@ -7,7 +7,7 @@
  *  - violations de la Content-Security-Policy (la CSP reste active : pas de contournement) ;
  *  - débordement horizontal (une page ne doit jamais défiler de côté) ;
  *  - accessibilité avec axe-core, règles WCAG 2.0, 2.1 et 2.2 niveaux A et AA ;
- *  - parcours clavier : lien d'évitement, menu mobile, persistance du thème.
+ *  - parcours clavier : lien d'évitement, menu mobile.
  *
  * Il ne fait pas partie du build : Playwright et axe-core ne sont pas des
  * dépendances du site. Le script les charge depuis une installation existante,
@@ -136,38 +136,9 @@ const parcours = [];
   const ferme = await menu.getAttribute('aria-expanded');
   parcours.push({ test: 'Menu mobile : ouverture au clic, fermeture à Échap', ok: ouvert === 'true' && ferme === 'false', detail: `aria-expanded ${ouvert} → ${ferme}` });
 
-  // Le thème choisi doit être rétabli avant le premier affichage, sur la page suivante.
-  await onglet.evaluate(() => localStorage.setItem('brittassist-theme', 'light'));
-  await onglet.goto(base + '/guides', { waitUntil: 'domcontentloaded' });
-  const theme = await onglet.evaluate(() => document.documentElement.dataset.theme ?? null);
-  parcours.push({ test: 'Thème clair rétabli au chargement d’une autre page', ok: theme === 'light', detail: `data-theme = ${theme}` });
-
   const bandeau = await onglet.locator('#cookie-banner').count();
   const cookies = (await contexte.cookies()).map((c) => c.name);
   parcours.push({ test: 'Bandeau de consentement affiché, aucun cookie de mesure avant choix', ok: bandeau === 1 && !cookies.some((n) => n.startsWith('_ga')), detail: `bandeau ${bandeau}, cookies [${cookies.join(', ')}]` });
-  await contexte.close();
-}
-
-// Thème clair : le contraste est revérifié sur un échantillon qui couvre chaque gabarit
-// (la première et la dernière page de chaque famille).
-const themeClair = [];
-{
-  const familles = [/^\/$/, /^\/guides$/, /^\/guides\/[^/]+$/, /^\/services$/, /^\/services\/[^/]+$/, /^\/assistante$/, /^\/assistante\/[^/]+$/, /^\/assistante-independante$/, /^\/assistante-independante\/[^/]+$/, /^\/(tarifs|contact|private-office|a-propos|cgv|methode-editoriale)$/];
-  const echantillon = [...new Set(familles.flatMap((re) => { const f = chemins.filter((c) => re.test(c)); return [f[0], f.at(-1)]; }).filter(Boolean))];
-  const contexte = await navigateur.newContext({ viewport: { width: 1366, height: 768 }, locale: 'fr-FR', reducedMotion: 'reduce' });
-  await contexte.addInitScript(() => localStorage.setItem('brittassist-theme', 'light'));
-  const onglet = await contexte.newPage();
-  for (const chemin of echantillon) {
-    await onglet.goto(base + chemin, { waitUntil: 'load' });
-    await onglet.waitForTimeout(100);
-    await onglet.evaluate(axeSource);
-    const violations = await onglet.evaluate(async (regles) => {
-      // eslint-disable-next-line no-undef
-      const r = await axe.run(document, { runOnly: { type: 'tag', values: regles } });
-      return r.violations.map((v) => ({ id: v.id, impact: v.impact, noeuds: v.nodes.length, exemple: v.nodes[0]?.target?.join(' ') }));
-    }, REGLES_AXE);
-    themeClair.push({ chemin, violations });
-  }
   await contexte.close();
 }
 
@@ -185,7 +156,6 @@ const rapport = {
   reglesAxe: REGLES_AXE,
   pagesEnEchec: enEchec.length,
   violationsAxe: resultats.reduce((s, p) => s + p.axe.length, 0),
-  themeClair: { pages: themeClair.length, violations: themeClair.reduce((s, p) => s + p.violations.length, 0), detail: themeClair },
   parcours,
   resultats,
 };
@@ -199,8 +169,6 @@ for (const p of resultats) for (const e of p.erreurs) {
 }
 for (const [cle, pages] of [...parType.entries()].sort((a, b) => b[1].size - a[1].size)) console.log(`  ${String(pages.size).padStart(4)} page(s) — ${cle}   ex. ${[...pages][0]}`);
 for (const p of parcours) console.log(`  ${p.ok ? 'PASS' : 'FAIL'} — ${p.test} (${p.detail})`);
-console.log(`Thème clair : ${rapport.themeClair.pages} pages testées, ${rapport.themeClair.violations} violation(s) axe-core`);
-for (const p of themeClair) for (const v of p.violations) console.log(`  ${p.chemin} — ${v.id} (${v.impact}) ×${v.noeuds} — ${v.exemple}`);
 
 if (option('--json')) writeFileSync(option('--json'), JSON.stringify(rapport, null, 2));
-process.exit(enEchec.length || rapport.themeClair.violations || parcours.some((p) => !p.ok) ? 1 : 0);
+process.exit(enEchec.length || parcours.some((p) => !p.ok) ? 1 : 0);
