@@ -7,7 +7,7 @@ Site : BrittAssist (`https://www.brittassist.fr`) · Dépôt : `/Users/dreano/Do
 ## Pourquoi PARTIAL, en quatre lignes
 
 1. **Le site audité est BrittAssist, pas AXDIA.** Le cahier des charges est intitulé « AXDIA », mais il désigne « le site du workspace courant », qui est celui de BrittAssist. Les exemples (audit, sécurité, outil) ont été transposés à son activité réelle.
-2. **Les 100 pages sont écrites et passent tous les contrôles automatiques, mais 98 ne sont pas indexables aujourd'hui.** Elles attendent une relecture humaine, que Google exige pour tout contenu préparé avec une IA. C'est un choix délibéré, expliqué plus bas, et réversible page par page.
+2. **Les 100 pages sont écrites, passent tous les contrôles automatiques et sont indexables — mais aucune n'a été relue par une personne.** Le 3 octobre au soir, le propriétaire a décidé de les publier sans attendre la relecture que Google demande pour un contenu préparé avec une IA. Aucune page ne se déclare relue (voir la mise à jour ci-dessous).
 3. **Le site en ligne n'a pas changé.** Tout a été validé en local ; le comportement chez l'hébergeur n'est pas testé. Le travail est poussé sur le dépôt `brittassist-refonte`, dans `main`, le 3 octobre au soir. Ce dépôt n'alimente pas `www.brittassist.fr` (voir la mise à jour ci-dessous).
 4. **Une vulnérabilité critique de dépendance subsiste** (Astro), dont la correction demande une montée de version majeure.
 
@@ -62,6 +62,37 @@ Ce qui n'a pas été touché : la composition de l'accueil V5, la navigation, la
 Avant correction, sur la fusion brute : contraste insuffisant sur 47 pages sur 52, débordement sur 2 pages.
 
 Les mesures Lighthouse sont faites sur le même serveur local que celles de l'ancien design (accueil : 99, 193 Kio). Ce sont des mesures de laboratoire, pas des données d'utilisateurs.
+
+### Les 149 pages rendues indexables (3 octobre, 20 h)
+
+Demande du propriétaire : que les 149 pages soient prêtes à être indexées, au sitemap, sans `noindex`. Jusque-là, 99 pages restaient des brouillons tant qu'elles n'étaient pas relues.
+
+| Changement | Détail | Fichiers |
+| --- | --- | --- |
+| Registre de publication | Les 99 pages y sont inscrites à la date du 3 octobre 2026 : elles sont générées, indexables et au sitemap | `src/data/publications.mjs` (nouveau), `publication.mjs`, `dates.mjs` |
+| Registre de relecture | Inchangé et vide. Il reste la seule source de la mention « Relu par Brittany Dreano » et de `reviewedBy` | `src/data/relectures.mjs` |
+| Page de méthode éditoriale | Elle affirmait que tout guide est relu avant sa mise en ligne. Réécrite : un guide sans la mention n'a pas encore été relu | `src/pages/[editorial].astro` |
+| Dates | Les pages nouvelles portent le 3 octobre 2026 au sitemap et dans leurs données structurées (elles héritaient du 4 septembre) | `dates.mjs`, gabarit métier |
+| Index pour les moteurs de réponse | Les huit dossiers, la page de méthode et les six pages métier nouvelles sont ajoutés | `public/llms.txt` |
+| Tests | 18 au lieu de 16 : une page publiée sans relecture ne peut pas se déclarer relue | `scripts/tests/publication.test.mjs` |
+
+Mesuré sur le build de production :
+
+| Contrôle | Résultat | Statut |
+| --- | --- | --- |
+| Pages construites | 151 | PASS |
+| Pages indexables | 149 | PASS |
+| Adresses au sitemap | 149 | PASS |
+| Pages en `noindex` | 2 : `/404`, `/questionnaire` | PASS |
+| Bandeau « brouillon » restant | 0 | PASS |
+| Mention « Relu par » ou `reviewedBy` | 0 : aucune fausse déclaration | PASS |
+| Audit SEO strict | 0 blocage, 2 avertissements attendus | PASS |
+| Types, tests, contrôle éditorial | 0 erreur ; 18 sur 18 ; 0 blocage | PASS |
+| Navigateur, 151 pages × 5 largeurs (755 chargements) | 0 erreur console, 0 violation CSP, 0 débordement, 0 violation axe-core ; parcours 3 sur 3 | PASS |
+| Liens vers les sources officielles | 37 liens : 34 répondent ; 3 non concluants (LinkedIn et Légifrance refusent les scripts ; une page Urssaf répond par intermittence) | PARTIAL |
+| Relecture humaine des 99 pages | Aucune | NON FAIT |
+
+**Ce que cette décision engage** est détaillé dans [08_INDEXATION_PLAN.md](../seo/08_INDEXATION_PLAN.md) : passage de 39 à 149 pages en un déploiement, règles de droit non vérifiées par une personne, six pages métier écrites à la première personne sans validation de Brittany Dreano. Je l'avais déconseillé ; c'est une décision du propriétaire, réversible page par page en retirant une ligne de `publications.mjs`.
 
 ### Où en est le dépôt, où en est le site en ligne
 

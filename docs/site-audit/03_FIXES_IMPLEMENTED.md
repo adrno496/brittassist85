@@ -149,3 +149,18 @@ Sur la branche `seo/audit-sentinel-100-pages-v5`. Détail et mesures : [rapport 
 La correction n° 3 (empreinte CSP du script de thème) et la correction n° 4 (or assombri sur fond rose) sont sans objet sur cette branche : le script et l'or n'existent plus.
 
 Fichiers supprimés : `src/data/theme-init.mjs` et six variantes WebP de l'ancien accueil (`tanymac-*`, `tany-*`, `portrait-brittany-480/760`), que plus aucune page n'appelait. Les JPEG d'origine sont conservés.
+
+## 10. Les 149 pages rendues indexables (3 octobre, 20 h)
+
+Décision du propriétaire. Détail, mesures et conséquences : [rapport final](../final/FINAL_REPORT.md) et [plan d'indexation](../seo/08_INDEXATION_PLAN.md).
+
+| Changement | Fichiers | Vérification |
+| --- | --- | --- |
+| Registre des publications sans relecture préalable : 99 pages | `src/data/publications.mjs` (nouveau), `src/data/publication.mjs` | Build : 151 pages, 149 indexables, 149 au sitemap |
+| La relecture reste un registre à part, vide | `src/data/relectures.mjs` | 0 mention « Relu par », 0 `reviewedBy` dans le build |
+| Page de méthode éditoriale réécrite pour ne rien affirmer de faux | `src/pages/[editorial].astro` | Lecture |
+| Dates des pages nouvelles : 3 octobre 2026 | `src/data/dates.mjs`, `src/pages/assistante/[slug].astro` | Sitemap : 102 adresses datées du 3 octobre |
+| `llms.txt` complété | `public/llms.txt` | Lecture |
+| Tests des deux registres | `scripts/tests/publication.test.mjs` | 18 sur 18 |
+
+La section 6 plus haut (« en attente de relecture ») décrit l'état d'avant cette décision.

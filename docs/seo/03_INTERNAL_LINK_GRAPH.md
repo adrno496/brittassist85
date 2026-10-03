@@ -23,13 +23,13 @@ Chaque guide porte quatre groupes de liens : le fil d’Ariane (Guides → dossi
 
 ## État mesuré
 
-Mesures prises sur le build d’aperçu (151 pages, dont 99 en attente de relecture).
+Mesures prises sur le build (151 pages, dont 0 brouillon(s)).
 
 | Indicateur | Valeur |
 | --- | --- |
 | Pages orphelines ou inatteignables | 0 |
 | Liens internes cassés | 0 |
-| Profondeur de clic depuis l’accueil | 1 pages à 0 clic(s) · 44 pages à 1 clic(s) · 104 pages à 2 clic(s) |
+| Profondeur de clic depuis l’accueil | 1 pages à 0 clic(s) · 45 pages à 1 clic(s) · 103 pages à 2 clic(s) |
 | Profondeur maximale | 2 (seuil d’alerte : 3) |
 | Liens entrants contextuels vers les 100 nouvelles pages | min 7 · médiane 9 · max 27 |
 | Liens sortants contextuels des 100 nouvelles pages | min 12 · médiane 14 · max 32 |
@@ -41,10 +41,10 @@ Liens entrants **contextuels** (pages qui citent la cible dans leur contenu). «
 
 | Famille | Avant | Après |
 | --- | --- | --- |
-| Prestations `/services/<slug>` | min 2 · médiane 6 · max 10 | min 5 · médiane 15 · max 35 |
-| Métiers `/assistante/<slug>` (existants) | min 9 · médiane 14 · max 14 | min 16 · médiane 21 · max 27 |
-| Zones `/assistante-independante/<slug>` | min 14 · médiane 14 · max 16 | min 21 · médiane 22 · max 25 |
-| Guides existants | min 2 · médiane 7 · max 26 | min 8 · médiane 12 · max 34 |
+| Prestations `/services/<slug>` | min 2 · médiane 6 · max 10 | min 5 · médiane 14 · max 36 |
+| Métiers `/assistante/<slug>` (existants) | min 9 · médiane 14 · max 14 | min 16 · médiane 16 · max 27 |
+| Zones `/assistante-independante/<slug>` | min 14 · médiane 14 · max 16 | min 21 · médiane 21 · max 24 |
+| Guides existants | min 2 · médiane 7 · max 26 | min 7 · médiane 9 · max 34 |
 
 ### Détail des 13 pages de prestation
 
@@ -52,18 +52,18 @@ C’était le point faible relevé à l’inventaire : des pages commerciales pe
 
 | Page | Entrants avant | Entrants après | Clics avant | Clics après |
 | --- | --- | --- | --- | --- |
-| /services/assistanat-anglais | 2 | 5 | 2 | 2 |
-| /services/coordination | 6 | 17 | 2 | 2 |
-| /services/facturation | 9 | 31 | 1 | 1 |
-| /services/gestion-administrative | 10 | 35 | 2 | 2 |
+| /services/assistanat-anglais | 2 | 6 | 2 | 1 |
+| /services/coordination | 6 | 18 | 2 | 1 |
+| /services/facturation | 9 | 30 | 1 | 2 |
+| /services/gestion-administrative | 10 | 36 | 2 | 1 |
 | /services/gestion-agenda | 6 | 22 | 2 | 2 |
-| /services/gestion-des-contrats | 9 | 15 | 1 | 1 |
+| /services/gestion-des-contrats | 9 | 14 | 1 | 2 |
 | /services/organisation-deplacements | 4 | 17 | 1 | 1 |
-| /services/organisation-personnelle | 3 | 6 | 2 | 2 |
+| /services/organisation-personnelle | 3 | 7 | 2 | 1 |
 | /services/recherches | 2 | 5 | 2 | 2 |
 | /services/reporting | 8 | 10 | 2 | 2 |
 | /services/reservations | 3 | 9 | 1 | 1 |
-| /services/suivi-prestataires | 7 | 15 | 1 | 1 |
+| /services/suivi-prestataires | 7 | 14 | 1 | 2 |
 | /services/support-equipes | 4 | 10 | 2 | 2 |
 
 ## Pages orphelines
