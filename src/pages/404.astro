@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+
+// Page d'erreur servie par l'hébergeur pour toute adresse inconnue.
+// Non indexable, hors sitemap. Elle doit surtout remettre le lecteur sur un chemin utile.
+const title = 'Page introuvable · BrittAssist';
+const description = "Cette adresse n’existe pas ou n’existe plus. Voici les entrées principales du site BrittAssist.";
+---
+
+<BaseLayout title={title} description={description} noindex>
+  <header class="hero hero--page">
+    <div class="container">
+      <p class="eyebrow">Erreur 404</p>
+      <h1 class="hero__title">Cette page n’existe pas, ou plus.</h1>
+      <p class="hero__sub">
+        L’adresse a peut-être changé, ou le lien que vous avez suivi est
+        incomplet. Rien n’est perdu : les entrées ci-dessous mènent à
+        l’essentiel du site.
+      </p>
+      <div class="hero__actions btn-row">
+        <Button href="/" variant="ivoire">Revenir à l’accueil</Button>
+        <Button href="/contact" variant="lien">Signaler un lien cassé</Button>
+      </div>
+    </div>
+  </header>
+
+  <section class="band band--noir band--tight">
+    <div class="container">
+      <div class="index-prestations">
+        <div class="index-groupe">
+          <h2 class="index-groupe__titre">Comprendre l’offre</h2>
+          <a href="/private-office">Le Private Office, étape par étape</a>
+          <a href="/services">Les six univers de prise en charge</a>
+          <a href="/tarifs">Les tarifs et le devis</a>
+        </div>
+        <div class="index-groupe">
+          <h2 class="index-groupe__titre">Trouver votre situation</h2>
+          <a href="/assistante">Par métier</a>
+          <a href="/assistante-independante">Par zone</a>
+          <a href="/guides">Tous les guides</a>
+        </div>
+        <div class="index-groupe">
+          <h2 class="index-groupe__titre">Entrer en relation</h2>
+          <a href="/a-propos">Qui est Brittany Dreano</a>
+          <a href="/contact">Prendre contact</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

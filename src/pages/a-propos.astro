@@ -5,7 +5,7 @@ import Monogram from '../components/Monogram.astro';
 
 const title = "Brittany Dreano, executive & lifestyle assistant · BrittAssist";
 const description =
-  "Brittany Dreano, fondatrice de BrittAssist. Sept ans d’assistance en entreprise, puis un Private Office externalisé pour entrepreneurs et dirigeants. Parcours et standards de service.";
+  "Brittany Dreano, fondatrice de BrittAssist : sept ans d’assistance en entreprise, puis un Private Office externalisé pour dirigeants. Parcours et standards.";
 
 const standards = [
   {
@@ -45,15 +45,22 @@ const standards = [
     <div class="container">
       <div class="person">
         <div class="person__media media--parcours reveal">
-          <img
-            src="/images/portrait-brittany-parcours.jpg"
-            alt="Brittany Dreano, fondatrice de BrittAssist"
-            width="1000"
-            height="1250"
-            loading="eager"
-            fetchpriority="high"
-            decoding="async"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="/images/portrait-brittany-parcours-640.webp 640w, /images/portrait-brittany-parcours-1000.webp 1000w"
+              sizes="(max-width: 900px) 92vw, 480px"
+            />
+            <img
+              src="/images/portrait-brittany-parcours.jpg"
+              alt="Brittany Dreano, fondatrice de BrittAssist"
+              width="1000"
+              height="1250"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </picture>
         </div>
 
         <div class="person__text reveal d-1">

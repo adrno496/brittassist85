@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Button from '../components/Button.astro';
 import Monogram from '../components/Monogram.astro';
 import { prestations } from '../data/prestations';
-import { metiers } from '../data/metiers';
+import { metiersGeneres } from '../data/metiers-publies';
 
 // Index des pages de prestation, regroupées par univers : maillage interne
 // et point d'entrée pour les recherches longue traîne.
@@ -16,7 +16,7 @@ function universesOrder() {
 
 const title = "Six univers de prise en charge · BrittAssist";
 const description =
-  "Executive admin, agenda et coordination, travel, lifestyle, private coordination, international : les six univers d’un Private Office externalisé pour entrepreneurs et dirigeants.";
+  "Executive admin, agenda et coordination, travel, lifestyle, private coordination, international : les six univers d’un Private Office externalisé.";
 
 const universes = [
   {
@@ -189,7 +189,7 @@ const universes = [
       </div>
 
       <div class="universes reveal">
-        {metiers.map((m) => (
+        {metiersGeneres().map((m) => (
           <a class="universe universe--lien" href={`/assistante/${m.slug}`}>
             <p class="universe__name">{m.nom}</p>
             <p class="universe__desc">{m.lede}</p>

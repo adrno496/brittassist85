@@ -1,6 +1,9 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { lastmodPour } from './src/data/dates.mjs';
+import { estBrouillon } from './src/data/publication.mjs';
+import { THEME_INIT_HASH } from './src/data/theme-init.mjs';
+import { qualityGate } from './scripts/quality-gate.mjs';
 
 export default defineConfig({
   site: 'https://www.brittassist.fr',
@@ -18,7 +21,7 @@ export default defineConfig({
       directives: [
         "default-src 'self'",
         "img-src 'self' data: https:",
-        "font-src 'self' https://fonts.bunny.net data:",
+        "font-src 'self' data:",
         "connect-src 'self' https://axdiaos.vercel.app https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://formsubmit.co https://*.formsubmit.co",
         "form-action 'self' https://www.brittassist.fr https://formsubmit.co https://*.formsubmit.co",
         "base-uri 'self'",
@@ -26,7 +29,7 @@ export default defineConfig({
         "upgrade-insecure-requests",
       ],
       styleDirective: {
-        resources: ["'self'", 'https://fonts.bunny.net'],
+        resources: ["'self'"],
       },
       scriptDirective: {
         resources: [
@@ -34,15 +37,25 @@ export default defineConfig({
           'https://www.googletagmanager.com',
           'https://www.google-analytics.com',
         ],
+        // Le script de thème est écrit tel quel dans le <head> (is:inline) : Astro
+        // ne le traite pas et ne calcule donc pas son empreinte. Elle est déclarée
+        // ici, à partir du même texte que celui écrit dans la page.
+        hashes: [THEME_INIT_HASH],
       },
     },
   },
   integrations: [
     sitemap({
-      filter: (page) =>
+      filter: (page) => {
+        const chemin = new URL(page).pathname;
         // Page de préparation transmise après un premier échange : noindex,
         // hors navigation, donc hors sitemap.
-        !page.includes('/questionnaire'),
+        if (chemin.includes('/questionnaire')) return false;
+        // La page d'erreur n'est pas une destination.
+        if (chemin === '/404') return false;
+        // Les brouillons n'existent qu'en aperçu et ne sont jamais proposés à l'indexation.
+        return !estBrouillon(chemin);
+      },
       // <lastmod> sur chaque URL : c'est le signal que Google utilise pour
       // décider s'il re-télécharge le sitemap. Sans lui, une publication met
       // beaucoup plus longtemps à être découverte.
@@ -52,5 +65,7 @@ export default defineConfig({
         return item;
       },
     }),
+    // Après le sitemap : le contrôle lit le build complet, sitemap compris.
+    qualityGate(),
   ],
 });

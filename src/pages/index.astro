@@ -6,7 +6,7 @@ import WorkDemo from '../components/WorkDemo.astro';
 
 const title = "Assistante de direction externalisée pour dirigeants · BrittAssist";
 const description =
-  "Brittany Dreano accompagne les dirigeants depuis La Roche-sur-Yon, à distance partout en France : administratif, agenda, déplacements et coordination. Private Office dès 700 € / mois.";
+  "Brittany Dreano accompagne les dirigeants à distance, depuis La Roche-sur-Yon : administratif, agenda, déplacements, coordination. Private Office dès 700 € / mois.";
 
 const frictions = [
   {
@@ -181,15 +181,22 @@ const steps = [
         </div>
 
         <div class="hero__media hero__media--portrait media--tanymac">
-          <img
-            src="/images/tanymac.jpeg"
-            alt="Brittany Dreano à son poste de travail, carnet BrittAssist et ordinateur"
-            width="1080"
-            height="1349"
-            loading="eager"
-            fetchpriority="high"
-            decoding="async"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="/images/tanymac-640.webp 640w, /images/tanymac-1080.webp 1080w"
+              sizes="(max-width: 900px) 92vw, 520px"
+            />
+            <img
+              src="/images/tanymac.jpeg"
+              alt="Brittany Dreano à son poste de travail, carnet BrittAssist et ordinateur"
+              width="1080"
+              height="1349"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </picture>
         </div>
       </div>
     </div>
@@ -487,14 +494,21 @@ const steps = [
     <div class="container">
       <div class="person">
         <div class="person__media reveal">
-          <img
-            src="/images/portrait-brittany.jpg"
-            alt="Brittany Dreano, fondatrice de BrittAssist"
-            width="760"
-            height="950"
-            loading="lazy"
-            decoding="async"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="/images/portrait-brittany-480.webp 480w, /images/portrait-brittany-760.webp 760w"
+              sizes="(max-width: 900px) 92vw, 460px"
+            />
+            <img
+              src="/images/portrait-brittany.jpg"
+              alt="Brittany Dreano, fondatrice de BrittAssist"
+              width="760"
+              height="950"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </div>
 
         <div class="person__text reveal d-1">
@@ -533,14 +547,21 @@ const steps = [
       <div class="lifestyle">
         <figure class="plate plate--photo plate--c reveal">
           <div class="plate__media media--tany">
-            <img
-              src="/images/tany.jpeg"
-              alt="Brittany Dreano au travail, en fin de journée"
-              width="941"
-              height="1672"
-              loading="lazy"
-              decoding="async"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="/images/tany-480.webp 480w, /images/tany-941.webp 941w"
+                sizes="(max-width: 900px) 92vw, 420px"
+              />
+              <img
+                src="/images/tany.jpeg"
+                alt="Brittany Dreano au travail, en fin de journée"
+                width="941"
+                height="1672"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
           </div>
           <div class="plate__inner">
             <span class="plate__kicker">Tempo</span>

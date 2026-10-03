@@ -15,6 +15,8 @@
 
   function sendToAxdia(form) {
     var fd = new FormData(form);
+    // Champ piège rempli : c'est un robot. On n'encombre pas le back-office.
+    if (val(fd, "_honey")) return;
     var name = (val(fd, "prenom") + " " + val(fd, "nom")).trim() || val(fd, "name") || "Contact";
 
     var msgParts = [];

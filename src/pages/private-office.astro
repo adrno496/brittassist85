@@ -5,7 +5,7 @@ import Monogram from '../components/Monogram.astro';
 
 const title = "Le Private Office : comment ça fonctionne · BrittAssist";
 const description =
-  "Un Private Office externalisé : un canal unique, une personne responsable, une boucle fermée. Comment une demande de dirigeant est prise en charge de bout en bout, du message reçu au sujet clos.";
+  "Un canal unique, une personne responsable, une boucle fermée : comment un Private Office externalisé prend en charge une demande, du message reçu au sujet clos.";
 
 const steps = [
   {
@@ -53,15 +53,22 @@ const statuses = [
           </p>
         </div>
         <div class="hero__media media--bureau">
-          <img
-            src="/images/bureau-portable.jpg"
-            alt="Plan de travail : ordinateur portable ouvert, en cours de traitement d’une demande"
-            width="1320"
-            height="700"
-            loading="eager"
-            fetchpriority="high"
-            decoding="async"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="/images/bureau-portable-640.webp 640w, /images/bureau-portable-1320.webp 1320w"
+              sizes="(max-width: 900px) 92vw, 560px"
+            />
+            <img
+              src="/images/bureau-portable.jpg"
+              alt="Plan de travail : ordinateur portable ouvert, en cours de traitement d’une demande"
+              width="1320"
+              height="700"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </picture>
         </div>
       </div>
     </div>

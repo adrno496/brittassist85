@@ -1,26 +1,56 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Blocs from '../../components/Blocs.astro';
 import Button from '../../components/Button.astro';
+import Fil from '../../components/Fil.astro';
 import Monogram from '../../components/Monogram.astro';
-import { guides } from '../../data/guides';
+import {
+  cheminDuGuide,
+  dossierDe,
+  guideEstBrouillon,
+  guidesGeneres,
+  pagesDuDossier,
+  pilierDuDossier,
+  voisins,
+} from '../../data/bibliotheque';
+import { dateDeRelecture, estGeneree, liensVisibles } from '../../data/publication.mjs';
+import { SITE_URL, ancre, dateLisible, filDAriane, jsonLd } from '../../lib/seo';
 
 export function getStaticPaths() {
-  return guides.map((g) => ({ params: { slug: g.slug }, props: { g } }));
+  return guidesGeneres().map((g) => ({ params: { slug: g.slug }, props: { g } }));
 }
 
 const { g } = Astro.props;
-const siteUrl = 'https://www.brittassist.fr';
-const url = `${siteUrl}/guides/${g.slug}`;
+const chemin = cheminDuGuide(g);
+const url = `${SITE_URL}${chemin}`;
 
-const autres = guides.filter((x) => x.slug !== g.slug);
+const dossier = dossierDe(g);
+const estPilier = g.type === 'pilier';
+const pilier = estPilier ? undefined : pilierDuDossier(dossier.slug);
+const brouillon = guideEstBrouillon(g);
+const relecture = dateDeRelecture(chemin) ?? undefined;
+// Les douze premiers guides n'ont pas de type : ils gardent leur présentation d'origine.
+const nouvelleGeneration = Boolean(g.type);
 
-// Mot-clé de fraîcheur : ces pages sont mises à jour, pas publiées une fois.
-const dateLisible = new Date(g.dateModified).toLocaleDateString('fr-FR', {
-  year: 'numeric',
-  month: 'long',
-});
+// Fil d'Ariane : la même liste sert au fil visible et aux données structurées.
+const etapes = [
+  { nom: 'Guides', href: '/guides' },
+  ...(pilier ? [{ nom: dossier.nom, href: cheminDuGuide(pilier) }] : []),
+  { nom: g.nom, href: chemin },
+];
 
-const jsonLd = {
+const enfants = estPilier ? pagesDuDossier(dossier.slug) : [];
+// Un dossier dont les autres pages ne sont pas encore publiées laisserait la colonne vide :
+// on propose alors les premiers guides de la bibliothèque.
+const fratrie = voisins(g, 5);
+const suite = fratrie.length ? fratrie : guidesGeneres().filter((x) => x.slug !== g.slug).slice(0, 5);
+const suiteDuDossier = fratrie.length > 0;
+const liens = liensVisibles(g.liens);
+const sommaire = g.sections.length >= 3 ? g.sections.map((s) => ({ texte: s.h2, id: ancre(s.h2) })) : [];
+
+const datePublication = g.datePublished ?? '2026-09-04';
+
+const donnees = {
   '@context': 'https://schema.org',
   '@graph': [
     {
@@ -31,18 +61,34 @@ const jsonLd = {
       url,
       mainEntityOfPage: { '@id': `${url}#webpage` },
       inLanguage: 'fr-FR',
-      datePublished: g.datePublished ?? '2026-09-04',
+      datePublished: datePublication,
       dateModified: g.dateModified,
-      author: {
-        '@id': `${siteUrl}/a-propos#brittany-dreano`,
-      },
-      publisher: { '@id': `${siteUrl}/#business` },
-      about: { '@id': `${siteUrl}/#business` },
-      articleSection: g.categorie,
+      // Les guides d'octobre 2026 sont préparés par BrittAssist puis relus par
+      // Brittany Dreano : l'auteur déclaré est l'entreprise, la relectrice est
+      // portée par reviewedBy sur la page (BaseLayout).
+      author: { '@id': nouvelleGeneration ? `${SITE_URL}/#business` : `${SITE_URL}/a-propos#brittany-dreano` },
+      publisher: { '@id': `${SITE_URL}/#business` },
+      about: { '@id': `${SITE_URL}/#business` },
+      articleSection: nouvelleGeneration ? dossier.nom : g.categorie,
       // Reprend la réponse courte : c'est elle que les moteurs de réponse citent.
       abstract: g.reponseCourte.join(' '),
       ...(g.sources ? { citation: g.sources.map((s) => s.href) } : {}),
     },
+    ...(enfants.length
+      ? [
+          {
+            '@type': 'ItemList',
+            '@id': `${url}#dossier`,
+            name: `Dossier « ${dossier.nom} »`,
+            itemListElement: enfants.map((e, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              name: e.nom,
+              url: `${SITE_URL}${cheminDuGuide(e)}`,
+            })),
+          },
+        ]
+      : []),
     {
       '@type': 'FAQPage',
       '@id': `${url}#faq`,
@@ -52,29 +98,31 @@ const jsonLd = {
         acceptedAnswer: { '@type': 'Answer', text: f.a },
       })),
     },
-    {
-      '@type': 'BreadcrumbList',
-      '@id': `${url}#fil`,
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Accueil', item: `${siteUrl}/` },
-        { '@type': 'ListItem', position: 2, name: 'Guides', item: `${siteUrl}/guides` },
-        { '@type': 'ListItem', position: 3, name: g.nom, item: url },
-      ],
-    },
+    filDAriane(url, etapes),
   ],
 };
 ---
 
-<BaseLayout title={g.title} description={g.description} ogType="article" datePublished={g.datePublished ?? '2026-09-04'} dateModified={g.dateModified}>
-  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+<BaseLayout
+  title={g.title}
+  description={g.description}
+  ogType="article"
+  datePublished={datePublication}
+  dateModified={g.dateModified}
+  brouillon={brouillon}
+  dateRelecture={relecture}
+>
+  <script type="application/ld+json" slot="head" set:html={jsonLd(donnees)} />
 
   <header class="hero hero--page">
     <div class="container">
-      <nav class="fil" aria-label="Fil d’Ariane">
-        <a href="/guides">Guides</a>
-        <span aria-hidden="true">·</span>
-        <span>{g.nom}</span>
-      </nav>
+      <Fil etapes={etapes} />
+      {brouillon && (
+        <p class="brouillon" role="note">
+          Brouillon en attente de relecture. Cette page n’est pas publiée : elle n’apparaît ni dans les
+          moteurs de recherche ni dans le plan du site.
+        </p>
+      )}
       <p class="eyebrow">{g.categorie}</p>
       <h1 class="hero__title">{g.h1}</h1>
       <p class="hero__sub">{g.lede}</p>
@@ -91,33 +139,75 @@ const jsonLd = {
       <ul class="list-plain reveal">
         {g.reponseCourte.map((r) => <li>{r}</li>)}
       </ul>
-      <p class="page-updated reveal">Mis à jour en {dateLisible}.</p>
+      <p class="page-updated reveal">
+        Mis à jour en {dateLisible(g.dateModified, 'mois')}.
+        {relecture && <> Relu par Brittany Dreano le {dateLisible(relecture)}.</>}
+        {nouvelleGeneration && estGeneree('/methode-editoriale') && <> <a href="/methode-editoriale">Comment ces guides sont écrits</a>.</>}
+      </p>
     </div>
   </section>
 
   <!-- ── Corps du guide ───────────────────────────────────── -->
   <section class="band band--noir">
     <div class="container">
+      {sommaire.length > 0 && nouvelleGeneration && (
+        <nav class="sommaire reveal" aria-labelledby="sommaire-titre">
+          <p class="sommaire__titre" id="sommaire-titre">Sur cette page</p>
+          <ol>
+            {sommaire.map((s) => (
+              <li><a href={`#${s.id}`}>{s.texte}</a></li>
+            ))}
+          </ol>
+        </nav>
+      )}
       <article class="prose reveal">
         {g.sections.map((s) => (
           <>
-            <h2>{s.h2}</h2>
-            {s.blocs.map((b) => (
-              <>
-                {b.h3 && <h3>{b.h3}</h3>}
-                {b.paragraphes?.map((p) => <p>{p}</p>)}
-                {b.liste && (
-                  <ul>
-                    {b.liste.map((li) => <li>{li}</li>)}
-                  </ul>
-                )}
-              </>
-            ))}
+            <h2 id={nouvelleGeneration ? ancre(s.h2) : undefined}>{s.h2}</h2>
+            <Blocs blocs={s.blocs} />
           </>
         ))}
+
+        {g.erreurs && (
+          <>
+            <h2 id="erreurs-frequentes">Les erreurs les plus fréquentes</h2>
+            <ul>
+              {g.erreurs.map((e) => <li>{e}</li>)}
+            </ul>
+          </>
+        )}
+
+        {g.limites && (
+          <>
+            <h2 id="limites">Ce que cette page ne remplace pas</h2>
+            <ul>
+              {g.limites.map((l) => <li>{l}</li>)}
+            </ul>
+          </>
+        )}
       </article>
     </div>
   </section>
+
+  <!-- ── Pages du dossier (piliers uniquement) ─────────────── -->
+  {enfants.length > 0 && (
+    <section class="band band--noir-doux" id="dans-ce-dossier">
+      <div class="container">
+        <div class="band__head band__head--wide reveal">
+          <p class="eyebrow">Dans ce dossier</p>
+          <h2>Chaque point, traité à part.</h2>
+        </div>
+        <div class="universes reveal">
+          {enfants.map((e) => (
+            <a class="universe universe--lien" href={cheminDuGuide(e)}>
+              <p class="universe__name">{e.nom}</p>
+              <p class="universe__desc">{e.description}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 
   {g.sources && (
     <section class="band band--ivoire band--tight">
@@ -183,16 +273,17 @@ const jsonLd = {
       <div class="index-prestations reveal">
         <div class="index-groupe">
           <h3>Pour aller plus loin</h3>
-          {g.liens.map((l) => <a href={l.href}>{l.label}</a>)}
+          {liens.map((l) => <a href={l.href}>{l.label}</a>)}
         </div>
         <div class="index-groupe">
-          <h3>Les autres guides</h3>
-          {autres.slice(0, 4).map((a) => (
-            <a href={`/guides/${a.slug}`}>{a.nom}</a>
+          <h3>{nouvelleGeneration && suiteDuDossier ? 'Dans le même dossier' : 'Les autres guides'}</h3>
+          {suite.map((a) => (
+            <a href={cheminDuGuide(a)}>{a.nom}</a>
           ))}
         </div>
         <div class="index-groupe">
           <h3>Tous les guides</h3>
+          {pilier && <a href={cheminDuGuide(pilier)}>Le dossier « {dossier.nom} »</a>}
           <a href="/guides">Voir l’ensemble des guides</a>
           <a href="/services">Le périmètre couvert</a>
           <a href="/private-office">Le fonctionnement</a>
@@ -204,13 +295,10 @@ const jsonLd = {
   <section class="cta-final">
     <Monogram variant="ghost" />
     <div class="container container--narrow reveal">
-      <h2>Une réponse générale ne remplace pas un avis sur votre situation.</h2>
-      <p class="lede">
-        Trente minutes suffisent à savoir si un Private Office est la bonne
-        réponse pour vous — et à le dire franchement si ce n’est pas le cas.
-      </p>
+      <h2>{dossier.action.titre}</h2>
+      <p class="lede">{dossier.action.texte}</p>
       <div class="cta-final__actions">
-        <Button href="/contact" variant="ivoire">Échanger avec Brittany</Button>
+        <Button href={dossier.action.href} variant="ivoire">{dossier.action.label}</Button>
       </div>
       <p class="cta-final__fine">
         Accompagnement à partir de 700 € / mois &nbsp;•&nbsp; Sur mesure

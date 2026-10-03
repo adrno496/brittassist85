@@ -1,0 +1,10 @@
+Polices auto-hébergées — licences
+
+Instrument Serif — © The Instrument Serif Project Authors
+Manrope          — © The Manrope Project Authors
+
+Les deux familles sont distribuées sous SIL Open Font License, version 1.1.
+Texte de la licence : https://openfontlicense.org/open-font-license-official-text/
+
+Fichiers : sous-ensembles « latin » et « latin-ext » au format WOFF2, identiques
+à ceux servis auparavant par fonts.bunny.net (téléchargés le 3 octobre 2026).
