@@ -1,0 +1,1039 @@
+{
+ "genere": "2026-10-03T16:01:00.825Z",
+ "note": "Audit du build de production après modifications.",
+ "totaux": {
+  "pages": 52,
+  "indexables": 50,
+  "brouillons": 0,
+  "nonIndexables": 2,
+  "urlsSitemap": 50,
+  "blocages": 0,
+  "avertissements": 2,
+  "motsMoyens": 770,
+  "profondeurMax": 2
+ },
+ "blocages": [],
+ "avertissements": [
+  {
+   "regle": "contenu-mince",
+   "chemin": "/contact",
+   "detail": "150 mots"
+  },
+  {
+   "regle": "sans-lien-contextuel",
+   "chemin": "/mentions-legales",
+   "detail": "liée seulement depuis la navigation ou le pied de page"
+  }
+ ],
+ "pages": [
+  {
+   "chemin": "/404",
+   "indexable": false,
+   "longueurTitre": 30,
+   "longueurDescription": 95,
+   "mots": 80,
+   "entrants": 0,
+   "entrantsContextuels": 0,
+   "profondeur": null,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage"
+   ]
+  },
+  {
+   "chemin": "/a-propos",
+   "indexable": true,
+   "longueurTitre": 62,
+   "longueurDescription": 156,
+   "mots": 418,
+   "entrants": 51,
+   "entrantsContextuels": 6,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage"
+   ]
+  },
+  {
+   "chemin": "/assistante/agents-immobiliers",
+   "indexable": true,
+   "longueurTitre": 60,
+   "longueurDescription": 139,
+   "mots": 928,
+   "entrants": 51,
+   "entrantsContextuels": 10,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/assistante/artisans-btp",
+   "indexable": true,
+   "longueurTitre": 64,
+   "longueurDescription": 146,
+   "mots": 990,
+   "entrants": 51,
+   "entrantsContextuels": 16,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/assistante/consultants-independants",
+   "indexable": true,
+   "longueurTitre": 65,
+   "longueurDescription": 151,
+   "mots": 1023,
+   "entrants": 51,
+   "entrantsContextuels": 15,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/assistante/dirigeants-multi-societes",
+   "indexable": true,
+   "longueurTitre": 61,
+   "longueurDescription": 144,
+   "mots": 927,
+   "entrants": 51,
+   "entrantsContextuels": 10,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/assistante/dirigeants-pme",
+   "indexable": true,
+   "longueurTitre": 59,
+   "longueurDescription": 149,
+   "mots": 957,
+   "entrants": 51,
+   "entrantsContextuels": 16,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/assistante/e-commerce",
+   "indexable": true,
+   "longueurTitre": 61,
+   "longueurDescription": 147,
+   "mots": 903,
+   "entrants": 51,
+   "entrantsContextuels": 10,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/assistante/professionnels-sante",
+   "indexable": true,
+   "longueurTitre": 60,
+   "longueurDescription": 147,
+   "mots": 886,
+   "entrants": 51,
+   "entrantsContextuels": 10,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/assistante/professions-liberales",
+   "indexable": true,
+   "longueurTitre": 60,
+   "longueurDescription": 144,
+   "mots": 932,
+   "entrants": 51,
+   "entrantsContextuels": 15,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/assistante-independante/a-distance",
+   "indexable": true,
+   "longueurTitre": 67,
+   "longueurDescription": 143,
+   "mots": 878,
+   "entrants": 51,
+   "entrantsContextuels": 17,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/assistante-independante/la-roche-sur-yon",
+   "indexable": true,
+   "longueurTitre": 61,
+   "longueurDescription": 138,
+   "mots": 750,
+   "entrants": 51,
+   "entrantsContextuels": 16,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/assistante-independante/les-sables-d-olonne",
+   "indexable": true,
+   "longueurTitre": 57,
+   "longueurDescription": 138,
+   "mots": 763,
+   "entrants": 51,
+   "entrantsContextuels": 15,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/assistante-independante/nantes",
+   "indexable": true,
+   "longueurTitre": 51,
+   "longueurDescription": 146,
+   "mots": 778,
+   "entrants": 51,
+   "entrantsContextuels": 15,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/assistante-independante/vendee",
+   "indexable": true,
+   "longueurTitre": 67,
+   "longueurDescription": 134,
+   "mots": 818,
+   "entrants": 51,
+   "entrantsContextuels": 15,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/assistante-independante",
+   "indexable": true,
+   "longueurTitre": 68,
+   "longueurDescription": 151,
+   "mots": 591,
+   "entrants": 51,
+   "entrantsContextuels": 8,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "CollectionPage",
+    "ItemList",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/assistante",
+   "indexable": true,
+   "longueurTitre": 69,
+   "longueurDescription": 148,
+   "mots": 584,
+   "entrants": 51,
+   "entrantsContextuels": 11,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "CollectionPage",
+    "ItemList",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/cgv",
+   "indexable": true,
+   "longueurTitre": 43,
+   "longueurDescription": 156,
+   "mots": 1036,
+   "entrants": 51,
+   "entrantsContextuels": 3,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage"
+   ]
+  },
+  {
+   "chemin": "/contact",
+   "indexable": true,
+   "longueurTitre": 36,
+   "longueurDescription": 152,
+   "mots": 150,
+   "entrants": 51,
+   "entrantsContextuels": 47,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage"
+   ]
+  },
+  {
+   "chemin": "/guides/assistante-independante-ou-salariee",
+   "indexable": true,
+   "longueurTitre": 66,
+   "longueurDescription": 140,
+   "mots": 1267,
+   "entrants": 51,
+   "entrantsContextuels": 23,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Article",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/guides/assistante-virtuelle-ou-private-office",
+   "indexable": true,
+   "longueurTitre": 54,
+   "longueurDescription": 129,
+   "mots": 1001,
+   "entrants": 51,
+   "entrantsContextuels": 8,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Article",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/guides/choisir-assistante-externalisee",
+   "indexable": true,
+   "longueurTitre": 59,
+   "longueurDescription": 136,
+   "mots": 755,
+   "entrants": 51,
+   "entrantsContextuels": 7,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Article",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/guides/comment-deleguer",
+   "indexable": true,
+   "longueurTitre": 58,
+   "longueurDescription": 146,
+   "mots": 1167,
+   "entrants": 51,
+   "entrantsContextuels": 18,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Article",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/guides/confidentialite-assistante-externalisee",
+   "indexable": true,
+   "longueurTitre": 68,
+   "longueurDescription": 160,
+   "mots": 989,
+   "entrants": 51,
+   "entrantsContextuels": 9,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Article",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/guides/executive-assistant-role",
+   "indexable": true,
+   "longueurTitre": 67,
+   "longueurDescription": 147,
+   "mots": 1163,
+   "entrants": 51,
+   "entrantsContextuels": 7,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Article",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/guides/modele-brief-assistante-externalisee",
+   "indexable": true,
+   "longueurTitre": 62,
+   "longueurDescription": 150,
+   "mots": 745,
+   "entrants": 51,
+   "entrantsContextuels": 7,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Article",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/guides/premier-mois-assistante-externalisee",
+   "indexable": true,
+   "longueurTitre": 69,
+   "longueurDescription": 140,
+   "mots": 885,
+   "entrants": 51,
+   "entrantsContextuels": 9,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Article",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/guides/prix-assistante-de-direction-externalisee",
+   "indexable": true,
+   "longueurTitre": 70,
+   "longueurDescription": 158,
+   "mots": 1066,
+   "entrants": 51,
+   "entrantsContextuels": 21,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Article",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/guides/qu-est-ce-qu-un-private-office",
+   "indexable": true,
+   "longueurTitre": 58,
+   "longueurDescription": 140,
+   "mots": 1032,
+   "entrants": 51,
+   "entrantsContextuels": 15,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Article",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/guides/secretariat-externalise",
+   "indexable": true,
+   "longueurTitre": 61,
+   "longueurDescription": 147,
+   "mots": 890,
+   "entrants": 51,
+   "entrantsContextuels": 8,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Article",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/guides/suivi-demandes-assistante-externalisee",
+   "indexable": true,
+   "longueurTitre": 63,
+   "longueurDescription": 141,
+   "mots": 710,
+   "entrants": 51,
+   "entrantsContextuels": 6,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Article",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/guides",
+   "indexable": true,
+   "longueurTitre": 52,
+   "longueurDescription": 148,
+   "mots": 656,
+   "entrants": 51,
+   "entrantsContextuels": 23,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "CollectionPage",
+    "ItemList",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/",
+   "indexable": true,
+   "longueurTitre": 66,
+   "longueurDescription": 163,
+   "mots": 1728,
+   "entrants": 51,
+   "entrantsContextuels": 1,
+   "profondeur": 0,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage"
+   ]
+  },
+  {
+   "chemin": "/mentions-legales",
+   "indexable": true,
+   "longueurTitre": 30,
+   "longueurDescription": 103,
+   "mots": 302,
+   "entrants": 51,
+   "entrantsContextuels": 0,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage"
+   ]
+  },
+  {
+   "chemin": "/politique-confidentialite",
+   "indexable": true,
+   "longueurTitre": 42,
+   "longueurDescription": 140,
+   "mots": 715,
+   "entrants": 51,
+   "entrantsContextuels": 3,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage"
+   ]
+  },
+  {
+   "chemin": "/private-office",
+   "indexable": true,
+   "longueurTitre": 55,
+   "longueurDescription": 160,
+   "mots": 793,
+   "entrants": 51,
+   "entrantsContextuels": 44,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage"
+   ]
+  },
+  {
+   "chemin": "/questionnaire",
+   "indexable": false,
+   "longueurTitre": 43,
+   "longueurDescription": 111,
+   "mots": 228,
+   "entrants": 0,
+   "entrantsContextuels": 0,
+   "profondeur": null,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage"
+   ]
+  },
+  {
+   "chemin": "/services/assistanat-anglais",
+   "indexable": true,
+   "longueurTitre": 56,
+   "longueurDescription": 145,
+   "mots": 488,
+   "entrants": 2,
+   "entrantsContextuels": 2,
+   "profondeur": 2,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/services/coordination",
+   "indexable": true,
+   "longueurTitre": 60,
+   "longueurDescription": 142,
+   "mots": 553,
+   "entrants": 6,
+   "entrantsContextuels": 6,
+   "profondeur": 2,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/services/facturation",
+   "indexable": true,
+   "longueurTitre": 53,
+   "longueurDescription": 153,
+   "mots": 530,
+   "entrants": 10,
+   "entrantsContextuels": 10,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/services/gestion-administrative",
+   "indexable": true,
+   "longueurTitre": 66,
+   "longueurDescription": 150,
+   "mots": 543,
+   "entrants": 11,
+   "entrantsContextuels": 11,
+   "profondeur": 2,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/services/gestion-agenda",
+   "indexable": true,
+   "longueurTitre": 47,
+   "longueurDescription": 161,
+   "mots": 486,
+   "entrants": 7,
+   "entrantsContextuels": 7,
+   "profondeur": 2,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/services/gestion-des-contrats",
+   "indexable": true,
+   "longueurTitre": 65,
+   "longueurDescription": 142,
+   "mots": 524,
+   "entrants": 9,
+   "entrantsContextuels": 9,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/services/organisation-deplacements",
+   "indexable": true,
+   "longueurTitre": 61,
+   "longueurDescription": 165,
+   "mots": 562,
+   "entrants": 4,
+   "entrantsContextuels": 4,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/services/organisation-personnelle",
+   "indexable": true,
+   "longueurTitre": 51,
+   "longueurDescription": 159,
+   "mots": 485,
+   "entrants": 3,
+   "entrantsContextuels": 3,
+   "profondeur": 2,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/services/recherches",
+   "indexable": true,
+   "longueurTitre": 56,
+   "longueurDescription": 157,
+   "mots": 491,
+   "entrants": 2,
+   "entrantsContextuels": 2,
+   "profondeur": 2,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/services/reporting",
+   "indexable": true,
+   "longueurTitre": 53,
+   "longueurDescription": 153,
+   "mots": 550,
+   "entrants": 8,
+   "entrantsContextuels": 8,
+   "profondeur": 2,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/services/reservations",
+   "indexable": true,
+   "longueurTitre": 59,
+   "longueurDescription": 164,
+   "mots": 501,
+   "entrants": 3,
+   "entrantsContextuels": 3,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/services/suivi-prestataires",
+   "indexable": true,
+   "longueurTitre": 51,
+   "longueurDescription": 151,
+   "mots": 477,
+   "entrants": 7,
+   "entrantsContextuels": 7,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/services/support-equipes",
+   "indexable": true,
+   "longueurTitre": 64,
+   "longueurDescription": 157,
+   "mots": 530,
+   "entrants": 4,
+   "entrantsContextuels": 4,
+   "profondeur": 2,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage",
+    "Service",
+    "FAQPage",
+    "BreadcrumbList"
+   ]
+  },
+  {
+   "chemin": "/services",
+   "indexable": true,
+   "longueurTitre": 44,
+   "longueurDescription": 146,
+   "mots": 1036,
+   "entrants": 51,
+   "entrantsContextuels": 40,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage"
+   ]
+  },
+  {
+   "chemin": "/tarifs",
+   "indexable": true,
+   "longueurTitre": 62,
+   "longueurDescription": 149,
+   "mots": 587,
+   "entrants": 51,
+   "entrantsContextuels": 7,
+   "profondeur": 1,
+   "schemas": [
+    "WebSite",
+    "ProfessionalService",
+    "LocalBusiness",
+    "Person",
+    "WebPage"
+   ]
+  }
+ ]
+}

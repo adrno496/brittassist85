@@ -1,0 +1,659 @@
+{
+ "genere": "2026-10-03T14:04:00.286Z",
+ "note": "Audit du build de référence (commit df48fb4), avant toute modification.",
+ "totaux": {
+  "pages": 49,
+  "indexables": 48,
+  "nonIndexables": 1,
+  "urlsSitemap": 48,
+  "blocages": 50,
+  "avertissements": 30,
+  "motsMoyens": 776,
+  "profondeurMax": 2
+ },
+ "blocages": 50,
+ "avertissements": [
+  {
+   "regle": "description-longue",
+   "chemin": "/a-propos",
+   "detail": "183 caractères"
+  },
+  {
+   "regle": "fil-ariane-ancre",
+   "chemin": "/assistante/agents-immobiliers",
+   "detail": "https://www.brittassist.fr/services#pour-qui désigne une ancre, pas une page"
+  },
+  {
+   "regle": "fil-ariane-ancre",
+   "chemin": "/assistante/artisans-btp",
+   "detail": "https://www.brittassist.fr/services#pour-qui désigne une ancre, pas une page"
+  },
+  {
+   "regle": "fil-ariane-ancre",
+   "chemin": "/assistante/consultants-independants",
+   "detail": "https://www.brittassist.fr/services#pour-qui désigne une ancre, pas une page"
+  },
+  {
+   "regle": "fil-ariane-ancre",
+   "chemin": "/assistante/dirigeants-multi-societes",
+   "detail": "https://www.brittassist.fr/services#pour-qui désigne une ancre, pas une page"
+  },
+  {
+   "regle": "fil-ariane-ancre",
+   "chemin": "/assistante/dirigeants-pme",
+   "detail": "https://www.brittassist.fr/services#pour-qui désigne une ancre, pas une page"
+  },
+  {
+   "regle": "fil-ariane-ancre",
+   "chemin": "/assistante/e-commerce",
+   "detail": "https://www.brittassist.fr/services#pour-qui désigne une ancre, pas une page"
+  },
+  {
+   "regle": "fil-ariane-ancre",
+   "chemin": "/assistante/professionnels-sante",
+   "detail": "https://www.brittassist.fr/services#pour-qui désigne une ancre, pas une page"
+  },
+  {
+   "regle": "fil-ariane-ancre",
+   "chemin": "/assistante/professions-liberales",
+   "detail": "https://www.brittassist.fr/services#pour-qui désigne une ancre, pas une page"
+  },
+  {
+   "regle": "fil-ariane-ancre",
+   "chemin": "/assistante-independante/a-distance",
+   "detail": "https://www.brittassist.fr/services#zones désigne une ancre, pas une page"
+  },
+  {
+   "regle": "fil-ariane-ancre",
+   "chemin": "/assistante-independante/la-roche-sur-yon",
+   "detail": "https://www.brittassist.fr/services#zones désigne une ancre, pas une page"
+  },
+  {
+   "regle": "fil-ariane-ancre",
+   "chemin": "/assistante-independante/les-sables-d-olonne",
+   "detail": "https://www.brittassist.fr/services#zones désigne une ancre, pas une page"
+  },
+  {
+   "regle": "fil-ariane-ancre",
+   "chemin": "/assistante-independante/nantes",
+   "detail": "https://www.brittassist.fr/services#zones désigne une ancre, pas une page"
+  },
+  {
+   "regle": "fil-ariane-ancre",
+   "chemin": "/assistante-independante/vendee",
+   "detail": "https://www.brittassist.fr/services#zones désigne une ancre, pas une page"
+  },
+  {
+   "regle": "contenu-mince",
+   "chemin": "/contact",
+   "detail": "150 mots"
+  },
+  {
+   "regle": "title-long",
+   "chemin": "/guides/choisir-assistante-externalisee",
+   "detail": "81 caractères"
+  },
+  {
+   "regle": "title-long",
+   "chemin": "/guides/confidentialite-assistante-externalisee",
+   "detail": "78 caractères"
+  },
+  {
+   "regle": "title-long",
+   "chemin": "/guides/premier-mois-assistante-externalisee",
+   "detail": "79 caractères"
+  },
+  {
+   "regle": "description-longue",
+   "chemin": "/",
+   "detail": "183 caractères"
+  },
+  {
+   "regle": "description-longue",
+   "chemin": "/private-office",
+   "detail": "194 caractères"
+  },
+  {
+   "regle": "description-longue",
+   "chemin": "/services/assistanat-anglais",
+   "detail": "169 caractères"
+  },
+  {
+   "regle": "description-longue",
+   "chemin": "/services/coordination",
+   "detail": "167 caractères"
+  },
+  {
+   "regle": "description-longue",
+   "chemin": "/services/facturation",
+   "detail": "178 caractères"
+  },
+  {
+   "regle": "description-longue",
+   "chemin": "/services/gestion-administrative",
+   "detail": "191 caractères"
+  },
+  {
+   "regle": "description-longue",
+   "chemin": "/services/gestion-des-contrats",
+   "detail": "167 caractères"
+  },
+  {
+   "regle": "description-longue",
+   "chemin": "/services/reporting",
+   "detail": "169 caractères"
+  },
+  {
+   "regle": "title-long",
+   "chemin": "/services/reservations",
+   "detail": "72 caractères"
+  },
+  {
+   "regle": "description-longue",
+   "chemin": "/services/suivi-prestataires",
+   "detail": "171 caractères"
+  },
+  {
+   "regle": "description-longue",
+   "chemin": "/services",
+   "detail": "179 caractères"
+  },
+  {
+   "regle": "sans-lien-contextuel",
+   "chemin": "/mentions-legales",
+   "detail": "liée seulement depuis la navigation ou le pied de page"
+  }
+ ],
+ "pages": [
+  {
+   "chemin": "/a-propos",
+   "indexable": true,
+   "longueurTitre": 62,
+   "longueurDescription": 183,
+   "mots": 418,
+   "entrants": 48,
+   "entrantsContextuels": 3,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/assistante/agents-immobiliers",
+   "indexable": true,
+   "longueurTitre": 60,
+   "longueurDescription": 139,
+   "mots": 927,
+   "entrants": 48,
+   "entrantsContextuels": 9,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/assistante/artisans-btp",
+   "indexable": true,
+   "longueurTitre": 64,
+   "longueurDescription": 146,
+   "mots": 989,
+   "entrants": 48,
+   "entrantsContextuels": 14,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/assistante/consultants-independants",
+   "indexable": true,
+   "longueurTitre": 65,
+   "longueurDescription": 151,
+   "mots": 1022,
+   "entrants": 48,
+   "entrantsContextuels": 14,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/assistante/dirigeants-multi-societes",
+   "indexable": true,
+   "longueurTitre": 61,
+   "longueurDescription": 144,
+   "mots": 926,
+   "entrants": 48,
+   "entrantsContextuels": 9,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/assistante/dirigeants-pme",
+   "indexable": true,
+   "longueurTitre": 59,
+   "longueurDescription": 149,
+   "mots": 956,
+   "entrants": 48,
+   "entrantsContextuels": 14,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/assistante/e-commerce",
+   "indexable": true,
+   "longueurTitre": 61,
+   "longueurDescription": 147,
+   "mots": 902,
+   "entrants": 48,
+   "entrantsContextuels": 9,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/assistante/professionnels-sante",
+   "indexable": true,
+   "longueurTitre": 60,
+   "longueurDescription": 147,
+   "mots": 885,
+   "entrants": 48,
+   "entrantsContextuels": 9,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/assistante/professions-liberales",
+   "indexable": true,
+   "longueurTitre": 60,
+   "longueurDescription": 144,
+   "mots": 931,
+   "entrants": 48,
+   "entrantsContextuels": 14,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/assistante-independante/a-distance",
+   "indexable": true,
+   "longueurTitre": 67,
+   "longueurDescription": 143,
+   "mots": 877,
+   "entrants": 48,
+   "entrantsContextuels": 16,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/assistante-independante/la-roche-sur-yon",
+   "indexable": true,
+   "longueurTitre": 61,
+   "longueurDescription": 138,
+   "mots": 749,
+   "entrants": 48,
+   "entrantsContextuels": 15,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/assistante-independante/les-sables-d-olonne",
+   "indexable": true,
+   "longueurTitre": 57,
+   "longueurDescription": 138,
+   "mots": 762,
+   "entrants": 48,
+   "entrantsContextuels": 14,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/assistante-independante/nantes",
+   "indexable": true,
+   "longueurTitre": 51,
+   "longueurDescription": 146,
+   "mots": 777,
+   "entrants": 48,
+   "entrantsContextuels": 14,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/assistante-independante/vendee",
+   "indexable": true,
+   "longueurTitre": 67,
+   "longueurDescription": 134,
+   "mots": 817,
+   "entrants": 48,
+   "entrantsContextuels": 14,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/cgv",
+   "indexable": true,
+   "longueurTitre": 43,
+   "longueurDescription": 156,
+   "mots": 1036,
+   "entrants": 48,
+   "entrantsContextuels": 3,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/contact",
+   "indexable": true,
+   "longueurTitre": 36,
+   "longueurDescription": 152,
+   "mots": 150,
+   "entrants": 48,
+   "entrantsContextuels": 44,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/guides/assistante-independante-ou-salariee",
+   "indexable": true,
+   "longueurTitre": 66,
+   "longueurDescription": 140,
+   "mots": 1264,
+   "entrants": 48,
+   "entrantsContextuels": 26,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/guides/assistante-virtuelle-ou-private-office",
+   "indexable": true,
+   "longueurTitre": 54,
+   "longueurDescription": 129,
+   "mots": 994,
+   "entrants": 48,
+   "entrantsContextuels": 13,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/guides/choisir-assistante-externalisee",
+   "indexable": true,
+   "longueurTitre": 81,
+   "longueurDescription": 136,
+   "mots": 751,
+   "entrants": 48,
+   "entrantsContextuels": 2,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/guides/comment-deleguer",
+   "indexable": true,
+   "longueurTitre": 58,
+   "longueurDescription": 146,
+   "mots": 1159,
+   "entrants": 48,
+   "entrantsContextuels": 14,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/guides/confidentialite-assistante-externalisee",
+   "indexable": true,
+   "longueurTitre": 78,
+   "longueurDescription": 160,
+   "mots": 982,
+   "entrants": 48,
+   "entrantsContextuels": 4,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/guides/executive-assistant-role",
+   "indexable": true,
+   "longueurTitre": 67,
+   "longueurDescription": 147,
+   "mots": 1155,
+   "entrants": 48,
+   "entrantsContextuels": 3,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/guides/modele-brief-assistante-externalisee",
+   "indexable": true,
+   "longueurTitre": 62,
+   "longueurDescription": 150,
+   "mots": 741,
+   "entrants": 48,
+   "entrantsContextuels": 4,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/guides/premier-mois-assistante-externalisee",
+   "indexable": true,
+   "longueurTitre": 79,
+   "longueurDescription": 140,
+   "mots": 881,
+   "entrants": 48,
+   "entrantsContextuels": 5,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/guides/prix-assistante-de-direction-externalisee",
+   "indexable": true,
+   "longueurTitre": 70,
+   "longueurDescription": 158,
+   "mots": 1063,
+   "entrants": 48,
+   "entrantsContextuels": 26,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/guides/qu-est-ce-qu-un-private-office",
+   "indexable": true,
+   "longueurTitre": 58,
+   "longueurDescription": 140,
+   "mots": 1028,
+   "entrants": 48,
+   "entrantsContextuels": 18,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/guides/secretariat-externalise",
+   "indexable": true,
+   "longueurTitre": 61,
+   "longueurDescription": 147,
+   "mots": 884,
+   "entrants": 48,
+   "entrantsContextuels": 7,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/guides/suivi-demandes-assistante-externalisee",
+   "indexable": true,
+   "longueurTitre": 63,
+   "longueurDescription": 141,
+   "mots": 707,
+   "entrants": 48,
+   "entrantsContextuels": 3,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/guides",
+   "indexable": true,
+   "longueurTitre": 52,
+   "longueurDescription": 148,
+   "mots": 649,
+   "entrants": 48,
+   "entrantsContextuels": 20,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/",
+   "indexable": true,
+   "longueurTitre": 66,
+   "longueurDescription": 183,
+   "mots": 1728,
+   "entrants": 48,
+   "entrantsContextuels": 0,
+   "profondeur": 0
+  },
+  {
+   "chemin": "/mentions-legales",
+   "indexable": true,
+   "longueurTitre": 30,
+   "longueurDescription": 103,
+   "mots": 302,
+   "entrants": 48,
+   "entrantsContextuels": 0,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/politique-confidentialite",
+   "indexable": true,
+   "longueurTitre": 42,
+   "longueurDescription": 140,
+   "mots": 713,
+   "entrants": 48,
+   "entrantsContextuels": 3,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/private-office",
+   "indexable": true,
+   "longueurTitre": 55,
+   "longueurDescription": 194,
+   "mots": 793,
+   "entrants": 48,
+   "entrantsContextuels": 41,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/questionnaire",
+   "indexable": false,
+   "longueurTitre": 43,
+   "longueurDescription": 111,
+   "mots": 228,
+   "entrants": 0,
+   "entrantsContextuels": 0,
+   "profondeur": null
+  },
+  {
+   "chemin": "/services/assistanat-anglais",
+   "indexable": true,
+   "longueurTitre": 56,
+   "longueurDescription": 169,
+   "mots": 488,
+   "entrants": 2,
+   "entrantsContextuels": 2,
+   "profondeur": 2
+  },
+  {
+   "chemin": "/services/coordination",
+   "indexable": true,
+   "longueurTitre": 60,
+   "longueurDescription": 167,
+   "mots": 553,
+   "entrants": 6,
+   "entrantsContextuels": 6,
+   "profondeur": 2
+  },
+  {
+   "chemin": "/services/facturation",
+   "indexable": true,
+   "longueurTitre": 53,
+   "longueurDescription": 178,
+   "mots": 530,
+   "entrants": 9,
+   "entrantsContextuels": 9,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/services/gestion-administrative",
+   "indexable": true,
+   "longueurTitre": 66,
+   "longueurDescription": 191,
+   "mots": 543,
+   "entrants": 10,
+   "entrantsContextuels": 10,
+   "profondeur": 2
+  },
+  {
+   "chemin": "/services/gestion-agenda",
+   "indexable": true,
+   "longueurTitre": 47,
+   "longueurDescription": 161,
+   "mots": 486,
+   "entrants": 6,
+   "entrantsContextuels": 6,
+   "profondeur": 2
+  },
+  {
+   "chemin": "/services/gestion-des-contrats",
+   "indexable": true,
+   "longueurTitre": 65,
+   "longueurDescription": 167,
+   "mots": 524,
+   "entrants": 9,
+   "entrantsContextuels": 9,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/services/organisation-deplacements",
+   "indexable": true,
+   "longueurTitre": 61,
+   "longueurDescription": 165,
+   "mots": 562,
+   "entrants": 4,
+   "entrantsContextuels": 4,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/services/organisation-personnelle",
+   "indexable": true,
+   "longueurTitre": 51,
+   "longueurDescription": 159,
+   "mots": 485,
+   "entrants": 3,
+   "entrantsContextuels": 3,
+   "profondeur": 2
+  },
+  {
+   "chemin": "/services/recherches",
+   "indexable": true,
+   "longueurTitre": 56,
+   "longueurDescription": 157,
+   "mots": 491,
+   "entrants": 2,
+   "entrantsContextuels": 2,
+   "profondeur": 2
+  },
+  {
+   "chemin": "/services/reporting",
+   "indexable": true,
+   "longueurTitre": 53,
+   "longueurDescription": 169,
+   "mots": 550,
+   "entrants": 8,
+   "entrantsContextuels": 8,
+   "profondeur": 2
+  },
+  {
+   "chemin": "/services/reservations",
+   "indexable": true,
+   "longueurTitre": 72,
+   "longueurDescription": 164,
+   "mots": 501,
+   "entrants": 3,
+   "entrantsContextuels": 3,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/services/suivi-prestataires",
+   "indexable": true,
+   "longueurTitre": 51,
+   "longueurDescription": 171,
+   "mots": 477,
+   "entrants": 7,
+   "entrantsContextuels": 7,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/services/support-equipes",
+   "indexable": true,
+   "longueurTitre": 64,
+   "longueurDescription": 157,
+   "mots": 530,
+   "entrants": 4,
+   "entrantsContextuels": 4,
+   "profondeur": 2
+  },
+  {
+   "chemin": "/services",
+   "indexable": true,
+   "longueurTitre": 44,
+   "longueurDescription": 179,
+   "mots": 1036,
+   "entrants": 48,
+   "entrantsContextuels": 42,
+   "profondeur": 1
+  },
+  {
+   "chemin": "/tarifs",
+   "indexable": true,
+   "longueurTitre": 62,
+   "longueurDescription": 149,
+   "mots": 587,
+   "entrants": 48,
+   "entrantsContextuels": 4,
+   "profondeur": 1
+  }
+ ]
+}

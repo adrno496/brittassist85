@@ -1,0 +1,70 @@
+{
+ "genere": "2026-10-03T16:01:00.103Z",
+ "base": "http://127.0.0.1:4322",
+ "pages": 52,
+ "chargements": 260,
+ "dureeSecondes": 150,
+ "ecrans": [
+  {
+   "nom": "mobile étroit",
+   "width": 320,
+   "height": 640
+  },
+  {
+   "nom": "mobile",
+   "width": 390,
+   "height": 844
+  },
+  {
+   "nom": "tablette",
+   "width": 768,
+   "height": 1024
+  },
+  {
+   "nom": "bureau",
+   "width": 1366,
+   "height": 768
+  },
+  {
+   "nom": "grand écran",
+   "width": 1920,
+   "height": 1080
+  }
+ ],
+ "reglesAxe": [
+  "wcag2a",
+  "wcag2aa",
+  "wcag21a",
+  "wcag21aa",
+  "wcag22aa"
+ ],
+ "pagesEnEchec": 0,
+ "violationsAxe": 0,
+ "themeClair": {
+  "pages": 15,
+  "violations": 0
+ },
+ "parcours": [
+  {
+   "test": "Tab atteint d’abord le lien d’évitement",
+   "ok": true,
+   "detail": "{\"classe\":\"skip-link\",\"href\":\"#main-content\"}"
+  },
+  {
+   "test": "Menu mobile : ouverture au clic, fermeture à Échap",
+   "ok": true,
+   "detail": "aria-expanded true → false"
+  },
+  {
+   "test": "Thème clair rétabli au chargement d’une autre page",
+   "ok": true,
+   "detail": "data-theme = light"
+  },
+  {
+   "test": "Bandeau de consentement affiché, aucun cookie de mesure avant choix",
+   "ok": true,
+   "detail": "bandeau 1, cookies []"
+  }
+ ],
+ "pagesAvecProbleme": []
+}
