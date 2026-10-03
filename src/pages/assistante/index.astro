@@ -1,0 +1,202 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Button from '../../components/Button.astro';
+import Fil from '../../components/Fil.astro';
+import Monogram from '../../components/Monogram.astro';
+import { cheminDuMetier, metiersGeneres } from '../../data/metiers-publies';
+import { SITE_URL, filDAriane, jsonLd } from '../../lib/seo';
+
+// Hub « par métier » : la page qui manquait au-dessus des pages /assistante/<métier>.
+// Elle ne décrit pas un métier de plus ; elle dit ce qui varie d'un métier à
+// l'autre, ce qui ne varie pas, et oriente vers la page la plus proche.
+const title = 'Assistante externalisée par métier : BTP, PME, libéraux · BrittAssist';
+const description =
+  "Bâtiment, PME, conseil, professions libérales, immobilier, e-commerce, santé : ce qu’une assistance externalisée prend en charge, métier par métier.";
+
+const metiers = metiersGeneres();
+const url = `${SITE_URL}/assistante`;
+const etapes = [{ nom: 'Par métier', href: '/assistante' }];
+
+const faq = [
+  {
+    q: 'Faut-il une assistante spécialisée dans mon secteur ?',
+    a: "Ce qui compte, c’est qu’elle connaisse le vocabulaire, les pièces et les échéances de votre métier — pas qu’elle l’exerce. Les tâches qui exigent une qualification propre restent chez le professionnel concerné : la tenue comptable chez l’expert-comptable, le conseil juridique chez l’avocat, le secrétariat médical chez un télésecrétariat médical. Le Private Office coordonne ces interlocuteurs, il ne les remplace pas.",
+  },
+  {
+    q: 'Mon métier n’apparaît pas dans la liste. Est-ce un problème ?',
+    a: "Non. Ces pages décrivent des situations types ; la liste n’est pas une condition d’accès. Le périmètre se définit au devis, à partir de votre semaine réelle : ce qui revient, ce qui attend, ce qui finit toujours par vous retomber dessus.",
+  },
+  {
+    q: 'Le tarif dépend-il du métier ?',
+    a: "Non. L’Executive Private Office démarre à 700 € par mois, quel que soit le secteur. Le montant dépend du périmètre convenu au devis : types de demandes, volume attendu, outils et modalités de suivi.",
+  },
+];
+
+const donnees = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      '@id': `${url}#page`,
+      url,
+      name: title,
+      description,
+      inLanguage: 'fr-FR',
+      isPartOf: { '@id': `${SITE_URL}/#website` },
+    },
+    {
+      '@type': 'ItemList',
+      '@id': `${url}#liste`,
+      name: 'Pages par métier',
+      itemListElement: metiers.map((m, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: m.nom,
+        url: `${SITE_URL}${cheminDuMetier(m)}`,
+      })),
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${url}#faq`,
+      mainEntity: faq.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    },
+    filDAriane(url, etapes),
+  ],
+};
+---
+
+<BaseLayout title={title} description={description}>
+  <script type="application/ld+json" slot="head" set:html={jsonLd(donnees)} />
+
+  <header class="hero hero--page">
+    <div class="container">
+      <Fil etapes={etapes} />
+      <p class="eyebrow">Par métier</p>
+      <h1 class="hero__title">Une assistance externalisée, métier par métier.</h1>
+      <p class="hero__sub">
+        Le périmètre d’un Private Office est le même pour tous : administratif,
+        agenda, déplacements, coordination. Ce qui change d’un métier à l’autre,
+        ce sont les mots, les pièces et les échéances. Chaque page ci-dessous
+        décrit la prise en charge dans les termes d’un métier précis — et dit
+        aussi ce qui reste chez vous.
+      </p>
+    </div>
+  </header>
+
+  <section class="band band--noir">
+    <div class="container">
+      <div class="universes reveal">
+        {metiers.map((m) => (
+          <a class="universe universe--lien" href={cheminDuMetier(m)}>
+            <p class="universe__name">{m.nom}</p>
+            <p class="universe__desc">{m.constat.titre}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--ivoire">
+    <div class="container">
+      <div class="band__head band__head--wide reveal">
+        <p class="eyebrow">Repères</p>
+        <h2>Ce qui change d’un métier à l’autre, et ce qui ne change pas.</h2>
+      </div>
+      <div class="compare reveal">
+        <div class="compare__row">
+          <p class="compare__ask">Ce qui change</p>
+          <p class="compare__care">
+            Le vocabulaire et les pièces : une attestation de vigilance dans le
+            bâtiment, un compte rendu d’activité chez un consultant, un mandat
+            dans l’immobilier. Les échéances propres au secteur. Les
+            interlocuteurs à relancer, et le ton à employer avec eux.
+          </p>
+        </div>
+        <div class="compare__row">
+          <p class="compare__ask">Ce qui ne change pas</p>
+          <p class="compare__care">
+            Un interlocuteur unique. Un périmètre écrit au devis. Des demandes
+            suivies jusqu’à ce qu’elles soient terminées, bloquées, ou qu’une
+            décision vous revienne. Et des décisions qui restent les vôtres.
+          </p>
+        </div>
+        <div class="compare__row">
+          <p class="compare__ask">Ce qui reste hors périmètre, partout</p>
+          <p class="compare__care">
+            La tenue comptable et les déclarations fiscales, le conseil
+            juridique et la rédaction d’actes, le développement technique. Sur
+            ces sujets, le Private Office identifie le bon interlocuteur et en
+            assure la coordination.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--noir-doux">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Questions fréquentes</p>
+        <h2>Avant de chercher votre métier dans la liste.</h2>
+      </div>
+      <div class="faq reveal">
+        {faq.map((f) => (
+          <div class="faq__item">
+            <h3 class="faq__q">{f.q}</h3>
+            <p class="faq__a">{f.a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--noir band--tight">
+    <div class="container">
+      <div class="index-prestations reveal">
+        <div class="index-groupe">
+          <h3>Par besoin</h3>
+          <a href="/services">Les six univers de prise en charge</a>
+          <a href="/services/gestion-administrative">La gestion administrative</a>
+          <a href="/services/facturation">La facturation et les relances</a>
+          <a href="/services/gestion-agenda">La gestion d’agenda</a>
+        </div>
+        <div class="index-groupe">
+          <h3>Pour décider</h3>
+          <a href="/tarifs">Les tarifs et le devis</a>
+          <a href="/guides/choisir-assistante-externalisee">Choisir une assistante externalisée</a>
+          <a href="/guides/assistante-independante-ou-salariee">Indépendante ou salariée</a>
+          <a href="/guides">Tous les guides</a>
+        </div>
+        <div class="index-groupe">
+          <h3>Pour situer</h3>
+          <a href="/assistante-independante">Où intervient BrittAssist</a>
+          <a href="/private-office">Le fonctionnement, étape par étape</a>
+          <a href="/a-propos">Qui est Brittany Dreano</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <Monogram variant="ghost" />
+    <div class="container container--narrow reveal">
+      <h2>Votre semaine dit mieux que votre métier ce qu’il faut déléguer.</h2>
+      <p class="lede">
+        Trente minutes suffisent à repérer ce qui peut sortir de vos journées —
+        et à vous dire franchement si un Private Office n’est pas la bonne
+        réponse.
+      </p>
+      <div class="cta-final__actions">
+        <Button href="/contact" variant="ivoire">Échanger avec Brittany</Button>
+      </div>
+      <p class="cta-final__fine">
+        Accompagnement à partir de 700 € / mois &nbsp;•&nbsp; Sur mesure
+        &nbsp;•&nbsp; Confidentiel
+      </p>
+    </div>
+  </section>
+</BaseLayout>

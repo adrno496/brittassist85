@@ -1,0 +1,189 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Button from '../../components/Button.astro';
+import Fil from '../../components/Fil.astro';
+import Monogram from '../../components/Monogram.astro';
+import { zones } from '../../data/zones';
+import { SITE_URL, filDAriane, jsonLd } from '../../lib/seo';
+
+// Hub « par zone ». BrittAssist n'a qu'une implantation : cette page le dit
+// d'emblée, et explique ce que la géographie change réellement. Elle n'ouvre
+// la porte à aucune série de pages par ville.
+const title = 'Où intervient BrittAssist : Vendée, Nantes, à distance · BrittAssist';
+const description =
+  "Une seule implantation, à La Roche-sur-Yon, et un travail à distance partout en France. Ce que la proximité change vraiment, territoire par territoire.";
+
+const url = `${SITE_URL}/assistante-independante`;
+const etapes = [{ nom: 'Zones d’intervention', href: '/assistante-independante' }];
+
+const faq = [
+  {
+    q: 'BrittAssist a-t-elle plusieurs bureaux ?',
+    a: "Non. Le bureau est à La Roche-sur-Yon, en Vendée, et c’est le seul. Nantes est à environ une heure de route, le littoral vendéen est proche : ce sont les territoires où se rencontrer est simple, pas des implantations.",
+  },
+  {
+    q: 'Faut-il être en Vendée pour travailler avec BrittAssist ?',
+    a: "Non. Le Private Office fonctionne à distance, partout en France et à l’international, en français et en anglais. La Vendée est simplement le territoire où le lien de proximité est le plus naturel.",
+  },
+  {
+    q: 'Peut-on se rencontrer avant de commencer ?',
+    a: "Oui. Le premier échange se fait volontiers en face à face quand la distance le permet, sans engagement. Ensuite, le fonctionnement est à distance ; un déplacement ponctuel reste possible pour un démarrage, une reprise de dossiers ou un point important.",
+  },
+];
+
+const donnees = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      '@id': `${url}#page`,
+      url,
+      name: title,
+      description,
+      inLanguage: 'fr-FR',
+      isPartOf: { '@id': `${SITE_URL}/#website` },
+    },
+    {
+      '@type': 'ItemList',
+      '@id': `${url}#liste`,
+      name: 'Zones d’intervention',
+      itemListElement: zones.map((z, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: z.nom,
+        url: `${SITE_URL}/assistante-independante/${z.slug}`,
+      })),
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${url}#faq`,
+      mainEntity: faq.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    },
+    filDAriane(url, etapes),
+  ],
+};
+---
+
+<BaseLayout title={title} description={description}>
+  <script type="application/ld+json" slot="head" set:html={jsonLd(donnees)} />
+
+  <header class="hero hero--page">
+    <div class="container">
+      <Fil etapes={etapes} />
+      <p class="eyebrow">Zones d’intervention</p>
+      <h1 class="hero__title">Basée à La Roche-sur-Yon, au travail partout en France.</h1>
+      <p class="hero__sub">
+        BrittAssist a une seule adresse : La Roche-sur-Yon, en Vendée. Le
+        travail se fait à distance, pour des dirigeants installés partout en
+        France et à l’étranger. Les pages ci-dessous disent ce que la
+        géographie change réellement — et, le plus souvent, ce qu’elle ne
+        change pas.
+      </p>
+    </div>
+  </header>
+
+  <section class="band band--noir">
+    <div class="container">
+      <div class="universes reveal">
+        {zones.map((z) => (
+          <a class="universe universe--lien" href={`/assistante-independante/${z.slug}`}>
+            <p class="universe__name">{z.nom}</p>
+            <p class="universe__desc">{z.lede}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--ivoire">
+    <div class="container">
+      <div class="band__head band__head--wide reveal">
+        <p class="eyebrow">Proximité</p>
+        <h2>Se voir sert trois fois. Le reste du temps, la distance travaille mieux.</h2>
+        <p class="lede">
+          Une présence physique est utile au démarrage, pour reprendre une
+          organisation existante ; sur du papier, quand des années d’archives
+          n’ont jamais été numérisées ; et sur des points de fond, une ou deux
+          fois par an. Le reste du temps, une demi-journée de présence
+          hebdomadaire signifierait que vos sujets attendent le jour de la
+          visite.
+        </p>
+      </div>
+      <div class="btn-row reveal">
+        <Button href="/assistante-independante/a-distance" variant="lien">Comment fonctionne le travail à distance</Button>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--noir-doux">
+    <div class="container">
+      <div class="band__head band__head--wide reveal">
+        <p class="eyebrow">Parti pris</p>
+        <h2>Cinq pages, pas une par commune.</h2>
+        <p class="lede">
+          Il n’existe pas de page pour chaque ville de l’Ouest, et il n’y en
+          aura pas. Une page par commune, identique aux autres au nom près, ne
+          vous apprendrait rien. Les cinq pages de cette rubrique existent
+          parce que chacune a quelque chose de vrai à dire : une implantation
+          réelle, une distance, un rythme de saison, un mode de travail.
+        </p>
+      </div>
+
+      <div class="faq reveal">
+        {faq.map((f) => (
+          <div class="faq__item">
+            <h3 class="faq__q">{f.q}</h3>
+            <p class="faq__a">{f.a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--noir band--tight">
+    <div class="container">
+      <div class="index-prestations reveal">
+        <div class="index-groupe">
+          <h3>Par métier</h3>
+          <a href="/assistante">Tous les métiers accompagnés</a>
+          <a href="/assistante/artisans-btp">Artisans et entreprises du bâtiment</a>
+          <a href="/assistante/dirigeants-pme">Dirigeants de PME</a>
+        </div>
+        <div class="index-groupe">
+          <h3>Par besoin</h3>
+          <a href="/services">Les six univers de prise en charge</a>
+          <a href="/private-office">Le fonctionnement, étape par étape</a>
+          <a href="/tarifs">Les tarifs et le devis</a>
+        </div>
+        <div class="index-groupe">
+          <h3>Pour décider</h3>
+          <a href="/guides">Tous les guides</a>
+          <a href="/a-propos">Qui est Brittany Dreano</a>
+          <a href="/contact">Prendre contact</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <Monogram variant="ghost" />
+    <div class="container container--narrow reveal">
+      <h2>La distance n’est presque jamais le sujet. Votre organisation, si.</h2>
+      <p class="lede">
+        Trente minutes, à distance ou autour d’une table quand c’est possible,
+        suffisent à savoir ce qui peut être pris en charge.
+      </p>
+      <div class="cta-final__actions">
+        <Button href="/contact" variant="ivoire">Échanger avec Brittany</Button>
+      </div>
+      <p class="cta-final__fine">
+        Accompagnement à partir de 700 € / mois &nbsp;•&nbsp; Sur mesure
+        &nbsp;•&nbsp; Confidentiel
+      </p>
+    </div>
+  </section>
+</BaseLayout>

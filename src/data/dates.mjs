@@ -14,6 +14,7 @@
  * Fichier volontairement en .mjs : il est importé à la fois par la config Astro
  * et par un composant .astro.
  */
+import { dateDeRelecture } from './publication.mjs';
 
 /** Pages historiques : accueil, private-office, services, à propos, contact, prestations. */
 export const DATE_SOCLE = '2026-08-20';
@@ -21,6 +22,9 @@ export const DATE_SOCLE = '2026-08-20';
 /** Pages métier, zone et guide publiées le 4 septembre 2026. */
 export const DATE_SEO_METIERS_ZONES_GUIDES = '2026-09-04';
 export const DATE_NOUVEAUX_GUIDES = '2026-09-27';
+
+/** Hubs « par métier » et « par zone », index des guides réorganisé, méthode éditoriale. */
+export const DATE_HUBS = '2026-10-03';
 
 const NOUVEAUX_GUIDES = new Set([
   '/guides/confidentialite-assistante-externalisee',
@@ -34,9 +38,14 @@ const GUIDES_REVISES = new Set([
   '/guides/prix-assistante-de-direction-externalisee',
 ]);
 const PAGES_REVISEES = new Set(['/', '/private-office', '/services', '/contact', '/tarifs']);
+const PAGES_OCTOBRE = new Set(['/guides', '/assistante', '/assistante-independante', '/methode-editoriale']);
 
 /** Préfixes d'URL de la vague de publication de septembre 2026. */
 const CHEMINS_SEPTEMBRE = /^\/(guides|assistante|assistante-independante)(\/|$)/;
+
+function nettoyer(pathname) {
+  return pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
+}
 
 /**
  * Date de dernière modification d'une page, à partir de son chemin.
@@ -44,13 +53,20 @@ const CHEMINS_SEPTEMBRE = /^\/(guides|assistante|assistante-independante)(\/|$)/
  * @returns {string} date au format AAAA-MM-JJ
  */
 export function lastmodPour(pathname) {
-  const chemin = pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
-  if (chemin === '/guides' || NOUVEAUX_GUIDES.has(chemin) || GUIDES_REVISES.has(chemin) || PAGES_REVISEES.has(chemin)) return DATE_NOUVEAUX_GUIDES;
+  const chemin = nettoyer(pathname);
+  // Une page passée par le registre de relecture porte la date de sa relecture.
+  const relecture = dateDeRelecture(chemin);
+  if (relecture) return relecture;
+  if (PAGES_OCTOBRE.has(chemin)) return DATE_HUBS;
+  if (NOUVEAUX_GUIDES.has(chemin) || GUIDES_REVISES.has(chemin) || PAGES_REVISEES.has(chemin)) return DATE_NOUVEAUX_GUIDES;
   return CHEMINS_SEPTEMBRE.test(chemin) ? DATE_SEO_METIERS_ZONES_GUIDES : DATE_SOCLE;
 }
 
 export function publicationPour(pathname) {
-  const chemin = pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
+  const chemin = nettoyer(pathname);
+  const relecture = dateDeRelecture(chemin);
+  if (relecture) return relecture;
+  if (chemin === '/assistante' || chemin === '/assistante-independante' || chemin === '/methode-editoriale') return DATE_HUBS;
   if (NOUVEAUX_GUIDES.has(chemin) || chemin === '/tarifs') return DATE_NOUVEAUX_GUIDES;
   return CHEMINS_SEPTEMBRE.test(chemin) ? DATE_SEO_METIERS_ZONES_GUIDES : DATE_SOCLE;
 }

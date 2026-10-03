@@ -1,0 +1,23 @@
+---
+import type { Etape } from '../lib/seo';
+
+interface Props {
+  /** Du niveau le plus haut à la page courante. La dernière étape n'est pas un lien. */
+  etapes: Etape[];
+}
+
+const { etapes } = Astro.props;
+---
+
+<nav class="fil" aria-label="Fil d’Ariane">
+  {etapes.map((e, i) =>
+    i < etapes.length - 1 ? (
+      <>
+        <a href={e.href}>{e.nom}</a>
+        <span aria-hidden="true">·</span>
+      </>
+    ) : (
+      <span aria-current="page">{e.nom}</span>
+    ),
+  )}
+</nav>

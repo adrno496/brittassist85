@@ -17,6 +17,29 @@ export interface Bloc {
   h3?: string;
   paragraphes?: string[];
   liste?: string[];
+  /** Étapes à suivre dans l'ordre : rendues en liste numérotée */
+  etapes?: string[];
+  /** Tableau de référence. Chaque ligne a autant de cellules qu'il y a de colonnes. */
+  tableau?: { legende: string; colonnes: string[]; lignes: string[][] };
+  /** Texte à reprendre tel quel : message type, grille, clause. Une entrée par ligne. */
+  modele?: { titre: string; lignes: string[] };
+}
+
+/** Nature de la page : elle détermine le sur-titre et quelques blocs du gabarit. */
+export type TypeDeGuide = 'pilier' | 'guide' | 'methode' | 'comparatif' | 'reference' | 'situation' | 'modele';
+
+/**
+ * Fiche de cadrage d'une page : ce qu'elle vise et ce qui la distingue.
+ * Elle sert au tableau de bord éditorial (docs/seo) et au contrôle d'unicité :
+ * deux pages ne peuvent pas viser la même requête principale.
+ */
+export interface Cadrage {
+  intention: 'informationnelle' | 'commerciale' | 'comparaison' | 'problème-solution' | 'méthode' | 'modèle' | 'référence' | 'navigation';
+  motCle: string;
+  variantes: string[];
+  persona: string;
+  objectif: string;
+  difference: string;
 }
 
 export interface Section {
@@ -46,6 +69,15 @@ export interface Guide {
   cloture: string;
   datePublished?: string;
   dateModified: string;
+  /** Guides d'octobre 2026 et suivants. Absent sur les douze premiers guides. */
+  type?: TypeDeGuide;
+  /** Slug du pilier auquel la page est rattachée (un pilier se rattache à lui-même) */
+  dossier?: string;
+  /** Erreurs fréquentes : ce qui fait échouer la méthode décrite */
+  erreurs?: string[];
+  /** Ce que la page ne couvre pas, et vers qui se tourner */
+  limites?: string[];
+  cadrage?: Cadrage;
 }
 
 export const guides: Guide[] = [
@@ -184,7 +216,7 @@ export const guides: Guide[] = [
     ],
     sources: [
       { href: 'https://mon-entreprise.urssaf.fr/assistants', label: 'Urssaf — simulateur du coût total d’une embauche' },
-      { href: 'https://www.service-public.fr/particuliers/vosdroits/F2258', label: 'Service-Public — congés payés du salarié' },
+      { href: 'https://www.service-public.gouv.fr/particuliers/vosdroits/F2258', label: 'Service-Public — congés payés du salarié' },
       { href: 'https://www.urssaf.fr/accueil/employeur/embaucher-gerer-salaries/embaucher/declaration-prealable-embauche.html', label: 'Urssaf — lien de subordination et obligations d’embauche' },
     ],
     cloture: 'La bonne question n’est pas le prix. C’est la régularité du besoin.',
@@ -888,7 +920,7 @@ export const guides: Guide[] = [
     slug: 'confidentialite-assistante-externalisee',
     categorie: 'Organiser',
     nom: 'Confidentialité et accès à distance',
-    title: 'Assistante externalisée et confidentialité : les accès à prévoir · BrittAssist',
+    title: 'Assistante externalisée et confidentialité : les accès · BrittAssist',
     description: "Documents, messagerie, agenda et données clients : comment cadrer les accès et la confidentialité d’une assistante externalisée, sans partager tous vos comptes.",
     h1: 'Comment travailler avec une assistante externalisée sans perdre le contrôle de vos données ?',
     lede: "Déléguer suppose de transmettre des informations. Cela ne suppose pas d’ouvrir toute votre messagerie, de partager votre mot de passe principal ou de laisser des accès actifs après la mission.",
@@ -960,7 +992,7 @@ export const guides: Guide[] = [
     slug: 'premier-mois-assistante-externalisee',
     categorie: 'Organiser',
     nom: 'Le premier mois avec une assistante externalisée',
-    title: 'Premier mois avec une assistante externalisée : plan de démarrage · BrittAssist',
+    title: 'Premier mois avec une assistante externalisée : le plan · BrittAssist',
     description: "Un plan concret sur quatre semaines pour déléguer à une assistante externalisée : périmètre, accès, premières demandes, suivi et ajustement.",
     h1: 'Le premier mois avec une assistante externalisée : que préparer ?',
     lede: "Le démarrage n’exige pas un manuel de procédures. Il exige de savoir ce qui vous prend du temps, qui décide, où se trouvent les informations et à quoi ressemble une demande terminée.",
@@ -1027,7 +1059,7 @@ export const guides: Guide[] = [
     slug: 'choisir-assistante-externalisee',
     categorie: 'Décider',
     nom: 'Choisir une assistante externalisée',
-    title: 'Comment choisir une assistante externalisée ? Critères et questions · BrittAssist',
+    title: 'Comment choisir une assistante externalisée ? · BrittAssist',
     description: "Périmètre, autonomie, confidentialité, suivi et devis : les questions à poser avant de choisir une assistante de direction externalisée.",
     h1: 'Comment choisir une assistante de direction externalisée ?',
     lede: "Un bon échange commercial ne suffit pas à prévoir la collaboration. Demandez plutôt comment les demandes entrent, qui décide, ce qui est suivi et ce qui se passe si le périmètre change.",

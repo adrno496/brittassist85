@@ -4,6 +4,7 @@ import '../styles/refonte-v5.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { lastmodPour, publicationPour } from '../data/dates.mjs';
+import { jsonLd } from '../lib/seo';
 
 interface Props {
   title: string;
@@ -15,6 +16,10 @@ interface Props {
   bodyClass?: string;
   datePublished?: string;
   dateModified?: string;
+  /** Page en attente de relecture : visible en aperçu seulement, jamais indexable */
+  brouillon?: boolean;
+  /** Date de relecture humaine (AAAA-MM-JJ), reprise dans les données structurées */
+  dateRelecture?: string;
 }
 
 const {
@@ -27,6 +32,8 @@ const {
   bodyClass = '',
   datePublished,
   dateModified,
+  brouillon = false,
+  dateRelecture,
 } = Astro.props;
 
 const siteUrl = 'https://www.brittassist.fr';
@@ -42,8 +49,6 @@ const ogImageAbs = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`
 const lastModified = dateModified ?? lastmodPour(cleanPath);
 const published = datePublished ?? publicationPour(cleanPath);
 
-const FONTS_CSS =
-  'https://fonts.bunny.net/css?family=instrument-serif:400,400i|manrope:300,400,500,600&display=swap';
 ---
 
 <!doctype html>
@@ -57,6 +62,8 @@ const FONTS_CSS =
     <title>{title}</title>
     <meta name="description" content={description} />
     {noindex && <meta name="robots" content="noindex,nofollow" />}
+    {brouillon && !noindex && <meta name="robots" content="noindex,follow" />}
+    {brouillon && <meta name="statut-editorial" content="brouillon" />}
     <link rel="canonical" href={canonicalUrl} />
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -79,25 +86,24 @@ const FONTS_CSS =
 
     <meta name="author" content="Brittany Dreano" />
 
-    {/* Le LCP est du texte : les deux fichiers latins sont préchargés. */}
-    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
+    {/* Le LCP est du texte : les deux fichiers latins sont préchargés.
+        L'attribut crossorigin est requis pour une police, même servie par le site. */}
     <link
       rel="preload"
       as="font"
       type="font/woff2"
-      href="https://fonts.bunny.net/instrument-serif/files/instrument-serif-latin-400-normal.woff2"
+      href="/fonts/instrument-serif-latin-400-normal.woff2"
       crossorigin
     />
     <link
       rel="preload"
       as="font"
       type="font/woff2"
-      href="https://fonts.bunny.net/manrope/files/manrope-latin-400-normal.woff2"
+      href="/fonts/manrope-latin-400-normal.woff2"
       crossorigin
     />
-    <link rel="stylesheet" href={FONTS_CSS} />
 
-    <script type="application/ld+json" set:html={JSON.stringify({
+    <script type="application/ld+json" set:html={jsonLd({
       '@context': 'https://schema.org',
       '@graph': [
         {
@@ -190,6 +196,9 @@ const FONTS_CSS =
           datePublished: published,
           dateModified: lastModified,
           primaryImageOfPage: ogImageAbs,
+          ...(dateRelecture
+            ? { lastReviewed: dateRelecture, reviewedBy: { '@id': `${siteUrl}/a-propos#brittany-dreano` } }
+            : {}),
         },
       ],
     })} />

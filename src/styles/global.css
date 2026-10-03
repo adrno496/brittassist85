@@ -4,10 +4,113 @@
    Le premium vient de l'espace, de la typographie et de la sobriété,
    pas de la quantité d'or. Aucun aplat doré, aucun effet brillant.
 
-   Les polices sont chargées par <link> dans BaseLayout (pas d'@import :
-   un import CSS sérialise le téléchargement et retarde le LCP, qui est
-   ici du texte).
+   Les polices sont servies par le site lui-même (public/fonts) : aucune
+   feuille de style tierce ne bloque le premier affichage, et aucune requête
+   ne part vers un autre domaine. Les deux fichiers latins utilisés au-dessus
+   de la ligne de flottaison sont préchargés dans BaseLayout.
 ============================================================ */
+
+/* ============================================================
+   0. POLICES
+   Sous-ensembles latin et latin étendu ; le navigateur ne télécharge
+   le second que si la page contient un caractère qui en relève.
+============================================================ */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/instrument-serif-latin-400-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/instrument-serif-latin-ext-400-normal.woff2') format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/instrument-serif-latin-400-italic.woff2') format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/instrument-serif-latin-ext-400-italic.woff2') format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/manrope-latin-300-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/manrope-latin-ext-300-normal.woff2') format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/manrope-latin-400-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/manrope-latin-ext-400-normal.woff2') format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/manrope-latin-500-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/manrope-latin-ext-500-normal.woff2') format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/manrope-latin-600-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/manrope-latin-ext-600-normal.woff2') format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
 
 /* ============================================================
    1. TOKENS
@@ -83,6 +186,8 @@ body {
 }
 
 img { max-width: 100%; height: auto; display: block; }
+/* <picture> ne crée pas de boîte : l'image se comporte comme un enfant direct de son conteneur. */
+picture { display: contents; }
 a { color: inherit; text-decoration: none; }
 button { font-family: inherit; font-size: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
 ul, ol { list-style: none; }
@@ -1650,3 +1755,138 @@ html[data-theme='light'] .work-demo__choices button[aria-pressed='true'] { backg
 html[data-theme='light'] .work-demo__panel { background: #FFFDF9; }
 html[data-theme='light'] .work-demo__return { background: #F4E9E7; }
 html[data-theme='light'] a.universe--lien:hover { background: rgba(26, 24, 23, 0.04); }
+
+/* ============================================================
+   27. GUIDES — fil, sommaire, étapes, tableaux, modèles, brouillons
+   Tout repose sur les tokens : le thème clair s'applique sans règle dédiée.
+============================================================ */
+
+/* Trois niveaux ne tiennent pas sur une ligne à 320 px. */
+.fil { flex-wrap: wrap; row-gap: 6px; }
+
+/* Or assombri pour le rose poudré : 5,2:1 (le #8A6A2E prévu pour l'ivoire n'y atteint que 4,2:1). */
+.band--rose .eyebrow,
+.band--rose .step__num,
+.band--rose .case__label,
+.band--rose .plate__kicker,
+.band--rose .list-plain li::before { color: #7A5C24; }
+
+.page-updated a { border-bottom: 1px solid currentColor; }
+
+.brouillon {
+  display: inline-block;
+  max-width: 62ch;
+  margin-bottom: clamp(18px, 2.6vw, 26px);
+  padding: 12px 16px;
+  border: var(--filet-or);
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--ink-sur-noir);
+}
+
+.suite__resume {
+  font-size: 0.95rem;
+  color: var(--ink-sur-noir-doux);
+  margin: 14px 0 18px;
+  max-width: 34ch;
+}
+
+/* Titre de colonne quand le niveau logique est un h2 (page 404). */
+.index-groupe__titre {
+  font-family: var(--texte);
+  font-size: 0.74rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase;
+  line-height: 1.5;
+  color: var(--ink-sur-noir);
+  margin-bottom: 16px;
+}
+
+.sommaire {
+  max-width: 74ch;
+  margin-bottom: clamp(40px, 5vw, 64px);
+  padding: 22px 0;
+  border-top: var(--filet-or);
+  border-bottom: var(--filet-sombre);
+}
+.sommaire__titre {
+  font-size: 0.74rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--ink-sur-noir);
+  margin-bottom: 12px;
+}
+.sommaire ol { list-style: decimal; padding-left: 1.4em; columns: 2; column-gap: 40px; }
+@media (max-width: 720px) { .sommaire ol { columns: 1; } }
+.sommaire li {
+  font-size: 0.92rem;
+  color: var(--ink-sur-noir-doux);
+  margin-bottom: 8px;
+  break-inside: avoid;
+}
+.sommaire a {
+  border-bottom: 1px solid transparent;
+  transition: color var(--moyen) var(--ease), border-color var(--moyen) var(--ease);
+}
+.sommaire a:hover { color: var(--ink-sur-noir); border-bottom-color: var(--or-fane); }
+
+/* Les ancres du sommaire ne doivent pas glisser sous la barre de navigation fixe. */
+.prose h2[id] { scroll-margin-top: 96px; }
+
+/* Étapes numérotées */
+.prose ol.etapes { counter-reset: etape; margin: 0 0 22px; }
+.prose ol.etapes li { counter-increment: etape; padding-left: 40px; margin-bottom: 14px; }
+.prose ol.etapes li::before {
+  content: counter(etape, decimal-leading-zero);
+  top: 0.22em;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  color: var(--or);
+}
+
+/* Tableau : défile dans son propre cadre, jamais avec la page. */
+.tableau {
+  overflow-x: auto;
+  margin: 8px 0 26px;
+  border-top: var(--filet-or);
+  -webkit-overflow-scrolling: touch;
+}
+.tableau table { width: 100%; min-width: 520px; border-collapse: collapse; }
+.tableau caption {
+  caption-side: top;
+  text-align: left;
+  padding: 12px 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  color: var(--ink-sur-noir-tenu);
+}
+.tableau th, .tableau td {
+  text-align: left;
+  vertical-align: top;
+  padding: 12px 18px 12px 0;
+  border-bottom: var(--filet-sombre);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+.tableau thead th {
+  font-size: 0.72rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--ink-sur-noir);
+}
+.tableau tbody th { font-weight: 500; color: var(--ink-sur-noir); }
+.tableau td { color: var(--ink-sur-noir-doux); }
+
+/* Modèle à reprendre : message type, grille, trame */
+.modele {
+  margin: 10px 0 28px;
+  padding: 6px 0 6px 22px;
+  border-left: 2px solid var(--or);
+}
+.modele figcaption {
+  font-size: 0.74rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--ink-sur-noir);
+  margin-bottom: 12px;
+}
+.prose .modele__texte p { font-size: 0.93rem; line-height: 1.65; margin-bottom: 8px; }
+
+/* Champ piège des formulaires : jamais affiché, jamais atteint au clavier. */
+.piege { display: none; }
+
+/* Liens d'une liste de références : soulignés, pour être reconnus sans dépendre de la seule couleur. */
+.list-plain a { border-bottom: 1px solid var(--or-fane); transition: border-color var(--moyen) var(--ease); }
+.list-plain a:hover { border-bottom-color: var(--or); }

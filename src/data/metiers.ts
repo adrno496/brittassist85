@@ -620,6 +620,442 @@ export const metiers: Metier[] = [
     liens: ['gestion-administrative', 'gestion-des-contrats', 'organisation-personnelle', 'suivi-prestataires'],
     cloture: 'Le dimanche soir n’est pas un créneau administratif.',
   },
+  // ── Pages ajoutées en octobre 2026 ────────────────────────────────────────
+  // Elles passent par le registre de relecture (relectures.mjs) : tant qu'elles
+  // n'y figurent pas, elles ne sont générées qu'en aperçu. Les réponses à la
+  // première personne engagent Brittany Dreano ; elles doivent être relues par elle.
+  {
+    slug: 'organismes-de-formation',
+    secteur: 'Formation professionnelle',
+    nom: 'Organismes de formation et formateurs',
+    title: 'Assistante pour organisme de formation et formateur · BrittAssist',
+    description:
+      "Conventions, convocations, émargements, attestations, dossiers de financement : déléguer l’administratif d’un organisme de formation. Dès 700 € / mois.",
+    h1: 'L’administratif d’une formation, de la convention à l’attestation.',
+    lede:
+      "Vous vendez une journée de formation. Vous en livrez une, plus trois heures de papier : la convention avant, les émargements pendant, les attestations après. Multiplié par chaque session, c’est une part de votre semaine que personne ne vous paie.",
+    constat: {
+      titre: 'Chaque session traîne son dossier.',
+      paragraphes: [
+        "Une action de formation n’existe, aux yeux d’un financeur, que si son dossier est complet : convention ou contrat signé, programme, convocations, feuilles d’émargement, évaluations, certificat de réalisation. Chaque pièce est simple. C’est leur nombre, et le fait qu’elles reviennent à chaque session, qui pèse.",
+        "La certification Qualiopi a rendu ces pièces incontournables. Depuis le 1er janvier 2022, elle est obligatoire pour les prestataires qui veulent accéder aux fonds publics et mutualisés. Elle repose sur des preuves : ce qui a été fait doit pouvoir être montré, dossier par dossier, le jour de l’audit.",
+        "S’y ajoutent les demandes de prise en charge auprès des financeurs, leurs pièces et leurs relances, le bilan pédagogique et financier à établir chaque année, et la logistique : salles, déplacements, supports. Le formateur indépendant fait tout cela le soir ; le petit organisme le répartit entre des personnes dont ce n’est pas le métier.",
+      ],
+    },
+    frictions: [
+      'Une convention signée la veille de la session.',
+      'Une feuille d’émargement restée dans une sacoche.',
+      'Un dossier de financement relancé trois fois pour une pièce.',
+      'Des attestations envoyées trois semaines après.',
+      'Un audit qui approche, et des preuves à reconstituer.',
+    ],
+    absorbe: [
+      'Préparation et envoi des conventions et contrats de formation, suivi des signatures',
+      'Convocations, programmes et informations pratiques adressés aux participants',
+      'Feuilles d’émargement préparées, puis collectées et classées par session',
+      'Envoi et collecte des questionnaires d’évaluation et de satisfaction',
+      'Certificats de réalisation et attestations, émis dès la fin de la session',
+      'Constitution et suivi des dossiers de prise en charge auprès des financeurs',
+      'Facturation des sessions et relance des règlements',
+      'Classement des preuves, session par session, dans l’ordre attendu pour un audit',
+      'Réservation des salles, organisation des déplacements du formateur',
+      'Rassemblement des éléments nécessaires au bilan pédagogique et financier',
+    ],
+    reste: [
+      'Le contenu pédagogique, les programmes et l’animation',
+      'La démarche qualité elle-même et les choix qu’elle suppose',
+      'La relation commerciale et la fixation des prix',
+      'La tenue comptable et la déclaration du bilan pédagogique et financier, qui engagent l’organisme',
+    ],
+    exemple: {
+      demande:
+        '« J’ai six sessions le mois prochain et aucune convention n’est partie. »',
+      prise:
+        "Conventions préparées à partir de vos modèles et envoyées en signature, convocations adressées aux participants avec le programme et les informations pratiques, feuilles d’émargement prêtes pour chaque journée, dossier créé pour chaque session avec la liste des pièces attendues.",
+      resultat:
+        "Chaque session s’ouvre avec un dossier complet, et se referme avec ses attestations envoyées dans la semaine.",
+    },
+    faq: [
+      {
+        q: 'Connaissez-vous les exigences de Qualiopi ?',
+        a: "Je connais les pièces qu’un dossier de session doit contenir et la logique de preuve du référentiel. La démarche qualité, ses indicateurs et les réponses à l’auditeur restent de votre responsabilité : mon rôle est que chaque preuve existe et se retrouve.",
+      },
+      {
+        q: 'Travaillez-vous dans notre outil de gestion de la formation ?',
+        a: "Oui. Le travail se fait dans vos outils, avec un accès à mon nom. Si vous n’en avez pas, un classement rigoureux et des modèles suffisent pour un volume modeste.",
+      },
+      {
+        q: 'Pouvez-vous déposer les dossiers de financement ?',
+        a: "Je les prépare, je réunis les pièces et je suis les demandes auprès des financeurs. Les engagements pris au nom de l’organisme et les signatures restent les vôtres.",
+      },
+      {
+        q: 'Je suis formateur indépendant, seul. Est-ce adapté ?',
+        a: "Cela dépend de votre volume de sessions. Le périmètre se définit au devis ; pour quelques sessions par an, une mission ponctuelle de mise en ordre des modèles et du classement peut suffire.",
+      },
+    ],
+    liens: ['gestion-administrative', 'facturation', 'gestion-des-contrats', 'organisation-deplacements'],
+    cloture: 'Une formation est terminée quand son dossier l’est aussi.',
+  },
+  {
+    slug: 'architectes-maitres-d-oeuvre',
+    secteur: 'Architecture & maîtrise d’œuvre',
+    nom: 'Architectes et maîtres d’œuvre',
+    title: 'Assistante pour architecte et maître d’œuvre · BrittAssist',
+    description:
+      "Comptes rendus de chantier, dossiers de consultation, situations, attestations des entreprises : déléguer l’administratif d’une agence. Dès 700 € / mois.",
+    h1: 'Le suivi administratif d’une agence, entre deux réunions de chantier.',
+    lede:
+      "Le compte rendu de la réunion de mardi doit partir avant celle de la semaine suivante. Il part souvent la veille, écrit tard, parce que la journée a été prise par trois autres chantiers.",
+    constat: {
+      titre: 'Un projet se dessine une fois, et s’administre pendant deux ans.',
+      paragraphes: [
+        "La conception occupe une part du temps d’une agence. Le reste, c’est du suivi : diffuser les comptes rendus, tenir la liste des entreprises et de leurs attestations, assembler un dossier de consultation, vérifier que les situations de travaux arrivent avec leurs pièces, relancer celui qui n’a pas répondu.",
+        "Ce suivi a une particularité : il engage. Un compte rendu qui tarde, c’est une décision de chantier qui n’est pas tracée. Une attestation d’assurance périmée dans le dossier d’une entreprise, c’est un risque que personne n’a vu. La tâche est administrative ; sa conséquence ne l’est pas.",
+        "Dans une petite agence, ce travail retombe sur l’architecte lui-même, ou sur un collaborateur qui devrait dessiner. Il se fait le soir, par à-coups, et prend du retard précisément quand les chantiers s’accumulent.",
+      ],
+    },
+    frictions: [
+      'Un compte rendu de chantier diffusé avec une semaine de retard.',
+      'Un dossier de consultation assemblé dans l’urgence.',
+      'Une entreprise dont l’attestation décennale a expiré.',
+      'Des notes d’honoraires qui ne partent pas à l’avancement.',
+      'Un dossier des ouvrages exécutés réclamé pièce par pièce.',
+    ],
+    absorbe: [
+      'Mise en forme et diffusion des comptes rendus de chantier à partir de vos notes',
+      'Convocations aux réunions de chantier, tenue de la liste des intervenants',
+      'Assemblage des dossiers de consultation à partir des pièces que vous produisez',
+      'Collecte et suivi des attestations d’assurance et de vigilance des entreprises',
+      'Suivi de l’arrivée des situations de travaux et de leurs pièces, avant votre visa',
+      'Collecte des documents des entreprises en fin de chantier, relances',
+      'Émission des notes d’honoraires selon l’avancement que vous validez, relances',
+      'Dossier administratif des candidatures aux consultations et concours',
+      'Tenue de l’agenda, des déplacements et des rendez-vous de chantier',
+      'Préparation des pièces pour l’expert-comptable',
+    ],
+    reste: [
+      'La conception, les plans, les pièces écrites techniques',
+      'Le contenu des comptes rendus et les décisions de chantier',
+      'Le visa des situations et tout ce qui engage votre responsabilité professionnelle',
+      'Les relations avec le maître d’ouvrage sur le fond du projet',
+    ],
+    exemple: {
+      demande:
+        '« La réunion de chantier est demain et le compte rendu de la précédente n’est pas parti. »',
+      prise:
+        "Vos notes dictées sont mises en forme dans le modèle de l’agence, avec la liste des présents, les décisions et les actions par entreprise. Le compte rendu vous est soumis, puis diffusé à tous les intervenants ; les points restés ouverts sont repris en tête de l’ordre du jour suivant.",
+      resultat:
+        "Le compte rendu part dans les quarante-huit heures qui suivent chaque réunion, et les entreprises arrivent à la suivante en sachant ce qui est attendu d’elles.",
+    },
+    faq: [
+      {
+        q: 'Rédigez-vous les comptes rendus de chantier ?',
+        a: "Je les mets en forme et je les diffuse à partir de vos notes, écrites ou dictées. Leur contenu — constats, décisions, réserves — est le vôtre : il engage votre responsabilité, et il vous est soumis avant tout envoi.",
+      },
+      {
+        q: 'Pouvez-vous vérifier les situations de travaux ?',
+        a: "Je vérifie qu’elles arrivent, complètes, avec les pièces attendues, et je vous les présente dans l’ordre. La vérification de l’avancement et le visa relèvent de votre métier.",
+      },
+      {
+        q: 'Assistez-vous aux réunions de chantier ?',
+        a: "Non. Le fonctionnement est à distance : le suivi se fait à partir de ce que vous transmettez après la réunion. Une prise de notes à distance, en visioconférence, peut s’envisager pour des réunions qui s’y prêtent.",
+      },
+      {
+        q: 'Travaillez-vous avec les marchés publics ?',
+        a: "Sur le volet administratif : pièces de candidature, attestations, dépôt sur les plateformes. Le mémoire technique et l’offre restent les vôtres.",
+      },
+    ],
+    liens: ['coordination', 'gestion-administrative', 'facturation', 'suivi-prestataires'],
+    cloture: 'Un chantier bien suivi est d’abord un chantier bien écrit.',
+  },
+  {
+    slug: 'hotellerie-restauration',
+    secteur: 'Hôtellerie & restauration',
+    nom: 'Hôteliers et restaurateurs',
+    title: 'Assistante administrative pour hôtel et restaurant · BrittAssist',
+    description:
+      "Fournisseurs, dossiers du personnel, devis de groupes, échéances et contrôles : déléguer l’administratif d’un hôtel ou d’un restaurant. Dès 700 € / mois.",
+    h1: 'L’administratif d’un établissement, traité pendant que vous êtes en salle.',
+    lede:
+      "Entre deux services, il reste une heure. Elle sert à commander, à recevoir un fournisseur, à souffler. Elle ne sert jamais aux papiers : ceux-là attendent le jour de fermeture, quand il y en a un.",
+    constat: {
+      titre: 'Le métier se fait debout. Les papiers attendent qu’on s’assoie.',
+      paragraphes: [
+        "Un établissement produit une quantité étonnante de documents : factures de fournisseurs par dizaines, bons de livraison, contrats de maintenance, dossiers des salariés et des saisonniers, devis pour les groupes et les événements, déclarations, contrôles périodiques des installations.",
+        "Aucun n’est difficile. Mais l’exploitation ne laisse aucune plage calme pour les traiter : le service commande l’emploi du temps. L’administratif se fait donc en retard, par blocs, et les erreurs qui en découlent sont concrètes — une facture payée deux fois, un devis de groupe envoyé trop tard pour être retenu, un contrôle dépassé.",
+        "En saison, le phénomène s’aggrave : c’est au moment où le volume de papier est le plus élevé qu’il y a le moins de temps pour s’en occuper.",
+      ],
+    },
+    frictions: [
+      'Un devis de groupe envoyé quatre jours après la demande.',
+      'Une pile de factures fournisseurs non rapprochées.',
+      'Des dossiers de saisonniers incomplets à leur arrivée.',
+      'Un contrôle périodique dont la date est passée.',
+      'Un expert-comptable qui relance pour les pièces du mois.',
+    ],
+    absorbe: [
+      'Réception, vérification et classement des factures fournisseurs, préparation des paiements',
+      'Préparation et envoi des devis pour groupes, séminaires et événements, puis relances',
+      'Suivi des acomptes et des soldes des réservations de groupes',
+      'Constitution des dossiers administratifs du personnel et des saisonniers, pièces à réunir',
+      'Échéancier des contrats, assurances, contrôles et vérifications périodiques',
+      'Suivi des prestataires : maintenance, blanchisserie, entretien, interventions',
+      'Préparation des pièces pour l’expert-comptable et le cabinet de paie',
+      'Recherche et comparaison de fournisseurs et de devis',
+      'Organisation personnelle et démarches du dirigeant',
+    ],
+    reste: [
+      'L’exploitation : service, cuisine, accueil, réservations au quotidien',
+      'L’hygiène et la sécurité alimentaire, et les documents qui s’y rapportent',
+      'Les plannings et le management des équipes',
+      'Les contrats de travail, la paie et les déclarations sociales, qui relèvent de votre cabinet',
+      'Les réponses publiques aux avis et la communication de l’établissement',
+    ],
+    exemple: {
+      demande:
+        '« On m’a demandé un devis pour un repas de quarante personnes, et je n’ai pas eu une minute. »',
+      prise:
+        "Le devis est établi à partir de vos menus et de vos tarifs de groupe, envoyé le jour même avec les conditions d’acompte, puis relancé. À l’accord, la facture d’acompte est émise, la réservation inscrite, et les informations utiles — effectif, régimes, horaires — vous sont transmises une semaine avant.",
+      resultat:
+        "La demande reçoit une réponse dans la journée, et vous ne vous en occupez qu’au moment de dresser les tables.",
+    },
+    faq: [
+      {
+        q: 'Prenez-vous les réservations de la clientèle ?',
+        a: "Non. La réservation au quotidien fait partie de l’exploitation et demande une présence continue. Je traite les demandes de groupes et d’événements, qui se gèrent par écrit et sur plusieurs jours.",
+      },
+      {
+        q: 'Peut-on travailler ensemble uniquement en saison ?',
+        a: "Oui. Le plus efficace est de commencer un peu avant l’ouverture : dossiers du personnel, fournisseurs et échéancier se préparent mieux quand vous avez encore le temps de répondre à mes questions.",
+      },
+      {
+        q: 'Vous occupez-vous des documents d’hygiène et de sécurité ?',
+        a: "Non. Ces documents relèvent de votre responsabilité d’exploitant et de vos formations. Je peux tenir l’échéancier des contrôles périodiques et des contrats de maintenance, pas leur contenu.",
+      },
+      {
+        q: 'Travaillez-vous avec notre logiciel de caisse ou de réservation ?',
+        a: "Je travaille dans vos outils dès lors qu’ils permettent un accès distinct et limité. Je n’ai pas besoin d’accéder à la caisse pour traiter les factures fournisseurs et les devis.",
+      },
+    ],
+    liens: ['gestion-administrative', 'facturation', 'suivi-prestataires', 'recherches'],
+    cloture: 'Un établissement se tient en salle. Ses papiers peuvent se tenir ailleurs.',
+  },
+  {
+    slug: 'fondateurs-de-startup',
+    secteur: 'Start-up & jeunes entreprises',
+    nom: 'Fondateurs de start-up',
+    title: 'Assistante pour fondateur de start-up · BrittAssist',
+    description:
+      "Agenda investisseurs, comités, recrutements, déplacements, outils : une executive assistant externalisée pour fondateur, sans créer le poste. Dès 700 € / mois.",
+    h1: 'Une executive assistant pour fondateur, avant d’avoir de quoi recruter.',
+    lede:
+      "Votre agenda est rempli par des investisseurs, des candidats et des clients qui ont tous besoin de vous cette semaine. Vous êtes aussi celui qui réserve les trains, relance les signatures et cherche pourquoi la facture du logiciel a doublé.",
+    constat: {
+      titre: 'Le fondateur est le poste le plus cher, et celui qui fait le plus de logistique.',
+      paragraphes: [
+        "Dans une jeune entreprise, tout ce qui n’a pas de propriétaire revient au fondateur. Coordonner dix entretiens de recrutement, préparer la logistique d’un comité, tenir l’agenda d’une levée de fonds, répondre aux demandes de pièces d’un investisseur, gérer vingt abonnements à des outils : rien de cela n’est son métier, et tout passe par lui.",
+        "Le coût n’est pas seulement le temps. C’est le rythme : une levée de fonds se joue sur des semaines où chaque rendez-vous déplacé ou chaque document envoyé en retard se voit. Et c’est la dispersion : dix sujets d’organisation ouverts en permanence, au moment où il faudrait penser au produit.",
+        "Recruter une assistante de direction est rarement la première embauche d’une start-up, et c’est compréhensible. Le besoin, lui, existe bien avant que le poste se justifie.",
+      ],
+    },
+    frictions: [
+      'Trois rendez-vous d’investisseurs à replacer en une matinée.',
+      'Un comité dont les documents partent la veille au soir.',
+      'Dix candidats à coordonner avec quatre interviewers.',
+      'Des abonnements à des outils que plus personne n’utilise.',
+      'Une demande de pièces restée sans réponse pendant une semaine.',
+    ],
+    absorbe: [
+      'Tenue de l’agenda : investisseurs, clients, candidats, équipe, avec vos règles de priorité',
+      'Logistique des comités et réunions d’associés : convocations, ordre du jour, envoi des documents',
+      'Coordination des entretiens de recrutement entre candidats et interviewers',
+      'Collecte et classement des pièces demandées par un investisseur ou un conseil',
+      'Organisation des déplacements, salons et rendez-vous à l’étranger',
+      'Suivi des signatures et des documents en circulation',
+      'Inventaire et suivi des abonnements et des outils',
+      'Notes de frais et pièces pour le cabinet comptable',
+      'Échanges en anglais avec des interlocuteurs étrangers',
+      'Organisation personnelle du fondateur',
+    ],
+    reste: [
+      'La négociation avec les investisseurs et le contenu des documents présentés',
+      'Les actes juridiques, qui relèvent de vos avocats',
+      'La comptabilité, la paie et le pilotage financier',
+      'Les décisions de recrutement',
+      'Le produit, la technique et l’intégration des outils',
+    ],
+    exemple: {
+      demande:
+        '« J’ai douze rendez-vous d’investisseurs à caser sur deux semaines, et un comité au milieu. »',
+      prise:
+        "Les créneaux sont proposés selon vos règles — pas plus de trois par jour, jamais deux d’affilée —, les confirmations envoyées avec le lien ou l’adresse, les déplacements organisés autour. Pour le comité, les convocations partent, les documents que vous fournissez sont assemblés et adressés à l’avance, et le relevé de décisions est mis en forme après.",
+      resultat:
+        "Vous arrivez à chaque rendez-vous en sachant qui vous voyez et pourquoi, et aucun n’a été déplacé deux fois.",
+    },
+    faq: [
+      {
+        q: 'Pouvez-vous gérer la data room d’une levée de fonds ?',
+        a: "Je peux collecter les documents, les classer dans la structure fixée par vos conseils, suivre ce qui manque et relancer. Le contenu, sa validation et les questions juridiques restent chez vous et vos avocats.",
+      },
+      {
+        q: 'Travaillez-vous en anglais ?',
+        a: "Oui. Les échanges écrits et téléphoniques en anglais, et la coordination avec des interlocuteurs étrangers, font partie du périmètre.",
+      },
+      {
+        q: 'Notre équipe peut-elle vous solliciter aussi ?',
+        a: "Le périmètre de base est celui du fondateur. Un renfort pour l’équipe — organisation d’un séminaire, coordination d’un recrutement — se prévoit au devis.",
+      },
+      {
+        q: 'Le forfait est-il adapté à une entreprise qui change tous les trois mois ?',
+        a: "Le périmètre se révise. L’accompagnement mensuel est résiliable avec un préavis d’un mois, et son contenu s’ajuste quand vos priorités bougent.",
+      },
+    ],
+    liens: ['gestion-agenda', 'coordination', 'organisation-deplacements', 'assistanat-anglais'],
+    cloture: 'Votre temps est la ressource la plus rare de l’entreprise. Il ne devrait pas servir à réserver des trains.',
+  },
+  {
+    slug: 'agences-et-studios',
+    secteur: 'Agences & studios',
+    nom: 'Agences et studios créatifs',
+    title: 'Assistante administrative pour agence et studio créatif · BrittAssist',
+    description:
+      "Devis, bons de commande, facturation à l’avancement, indépendants, relances : déléguer l’administratif d’une agence ou d’un studio. Dès 700 € / mois.",
+    h1: 'L’administratif d’une agence, pendant que l’équipe produit.',
+    lede:
+      "Le projet est livré, le client est content, et la facture n’est pas partie. Elle partira à la fin du mois, avec celles des trois autres projets, quand quelqu’un aura retrouvé les bons de commande.",
+    constat: {
+      titre: 'Dans une agence, personne n’a été recruté pour facturer.',
+      paragraphes: [
+        "Une agence ou un studio est composé de gens qui conçoivent, produisent et gèrent des projets. L’administratif — devis, bons de commande, facturation, relances, contrats des indépendants — n’appartient à personne. Il échoit au dirigeant, ou au chef de projet le plus consciencieux.",
+        "La facturation y est plus délicate qu’ailleurs : acomptes à la commande, jalons, dépassements à faire valider, frais techniques à refacturer. Chaque projet a ses règles. Sans suivi, des jalons ne sont pas facturés, des dépassements sont offerts faute d’avoir été chiffrés à temps, et les indépendants sont payés avant que le client n’ait réglé.",
+        "S’y ajoute le suivi des prestataires extérieurs : contrats, factures, et, pour les collaborations importantes, les attestations que tout donneur d’ordre doit demander.",
+      ],
+    },
+    frictions: [
+      'Un jalon atteint depuis trois semaines, pas encore facturé.',
+      'Un bon de commande client introuvable au moment de facturer.',
+      'Des heures supplémentaires jamais chiffrées.',
+      'Un indépendant qui relance pour sa facture.',
+      'Un dirigeant qui fait les relances le dimanche.',
+    ],
+    absorbe: [
+      'Mise en forme et envoi des devis à partir du chiffrage des chefs de projet, suivi des accords',
+      'Collecte des bons de commande et des informations de facturation des clients',
+      'Facturation des acomptes, des jalons et des soldes, selon l’avancement validé',
+      'Relance des factures échues, tenue du tableau des encaissements',
+      'Contrats et bons de commande des indépendants, suivi de leurs factures',
+      'Collecte des attestations des sous-traitants pour les contrats qui l’exigent',
+      'Suivi des abonnements, licences et outils',
+      'Organisation des déplacements, tournages, réunions clients',
+      'Préparation des pièces pour l’expert-comptable',
+    ],
+    reste: [
+      'Le chiffrage des projets et la négociation commerciale',
+      'La création, la production et la direction de projet',
+      'Les clauses de cession de droits et les contrats sur mesure, qui relèvent d’un conseil juridique',
+      'La communication et la production éditoriale de l’agence',
+    ],
+    exemple: {
+      demande:
+        '« Nous avons quatre projets en cours et je ne sais plus ce qui a été facturé. »',
+      prise:
+        "Un tableau est établi par projet : montant du devis, acompte, jalons, ce qui est facturé, ce qui est encaissé. Les jalons atteints et non facturés sont émis après votre validation, les factures échues relancées, et un point hebdomadaire vous indique ce qui est à facturer la semaine suivante.",
+      resultat:
+        "Chaque lundi, vous savez ce qui a été facturé, ce qui est dû, et ce qui reste à émettre, sans ouvrir un seul dossier.",
+    },
+    faq: [
+      {
+        q: 'Travaillez-vous dans notre outil de gestion de projet ?',
+        a: "Oui, avec un accès à mon nom. J’ai besoin d’y voir l’avancement et les jalons, pas d’intervenir sur la production.",
+      },
+      {
+        q: 'Pouvez-vous chiffrer les devis ?',
+        a: "Non : le chiffrage est votre métier. Je mets le devis en forme à partir de vos éléments, je l’envoie, je le suis et je le relance.",
+      },
+      {
+        q: 'Gérez-vous les contrats de cession de droits ?',
+        a: "Je prépare les documents à partir des modèles établis par votre conseil, je suis les signatures et je les classe. La rédaction des clauses relève d’un avocat.",
+      },
+      {
+        q: 'Rédigez-vous nos contenus ou gérez-vous nos réseaux sociaux ?',
+        a: "Non. La production éditoriale et la présence en ligne ne font pas partie de mon périmètre.",
+      },
+    ],
+    liens: ['facturation', 'gestion-des-contrats', 'suivi-prestataires', 'reporting'],
+    cloture: 'Un projet n’est pas terminé à la livraison. Il l’est à l’encaissement.',
+  },
+  {
+    slug: 'organisateurs-d-evenements',
+    secteur: 'Événementiel & réception',
+    nom: 'Organisateurs d’événements et traiteurs',
+    title: 'Assistante pour organisateur d’événements et traiteur · BrittAssist',
+    description:
+      "Devis, acomptes, rétroplannings, prestataires, feuilles de route : déléguer l’administratif d’une activité événementielle. Dès 700 € / mois.",
+    h1: 'L’administratif d’un événement, tenu pendant que vous êtes sur le terrain.',
+    lede:
+      "Le samedi, vous êtes sur un mariage. Pendant ce temps, trois demandes de devis sont arrivées, un prestataire attend sa confirmation, et l’acompte de l’événement du mois prochain n’a pas été réclamé.",
+    constat: {
+      titre: 'Chaque événement se prépare pendant qu’un autre se déroule.',
+      paragraphes: [
+        "L’événementiel a un rythme impitoyable : les demandes arrivent en semaine, les événements ont lieu le week-end, et la préparation de l’un chevauche l’exécution de l’autre. Le temps de bureau, celui où l’on répond, chiffre et confirme, est précisément celui qui disparaît en haute saison.",
+        "Or le délai de réponse fait une grande part de la décision. Un client qui organise un mariage ou un séminaire consulte plusieurs prestataires ; celui qui répond le premier, avec un devis clair, prend une longueur d’avance. Celui qui répond la semaine suivante arrive après la décision.",
+        "Chaque événement traîne ensuite sa chaîne administrative : acompte à réclamer, prestataires à confirmer, rétroplanning à tenir, feuille de route à envoyer, solde à facturer, parfois des déclarations ou des autorisations à obtenir. Un oubli, et c’est le jour J qui le révèle.",
+      ],
+    },
+    frictions: [
+      'Une demande de devis restée cinq jours sans réponse.',
+      'Un acompte jamais réclamé, découvert à la veille de l’événement.',
+      'Un prestataire qui n’avait pas reçu l’heure d’installation.',
+      'Un solde facturé un mois après la date.',
+      'Des demandes d’information qui s’accumulent le lundi.',
+    ],
+    absorbe: [
+      'Réponse aux demandes entrantes, qualification, envoi des devis à partir de vos tarifs',
+      'Relance des devis et suivi des accords',
+      'Factures d’acompte, suivi des échéances, facturation des soldes et relances',
+      'Tenue du rétroplanning de chaque événement et rappel des échéances',
+      'Confirmation des prestataires : lieux, technique, location, transport',
+      'Feuilles de route envoyées aux équipes et aux prestataires',
+      'Collecte des informations auprès du client : effectif, régimes, horaires, plan',
+      'Suivi des contrats, assurances et documents demandés par les lieux',
+      'Préparation des pièces pour l’expert-comptable',
+    ],
+    reste: [
+      'La conception de l’événement, la cuisine, la production et la présence sur place',
+      'Le chiffrage et la négociation',
+      'Le recrutement et les contrats du personnel en extra, qui relèvent de votre cabinet',
+      'Les règles d’hygiène et de sécurité propres à votre activité',
+      'Les déclarations et autorisations qui engagent l’organisateur : je les prépare, vous les signez',
+    ],
+    exemple: {
+      demande:
+        '« J’ai trois événements dans le mois et je ne sais plus qui a été confirmé. »',
+      prise:
+        "Un tableau est établi par événement : prestataires, statut de chaque confirmation, acompte reçu ou non, informations client manquantes. Les confirmations en attente sont obtenues, les acomptes réclamés, et une feuille de route est envoyée à chaque intervenant une semaine avant, avec les horaires d’installation et le contact sur place.",
+      resultat:
+        "La semaine de l’événement, chaque intervenant a reçu ses horaires et vous n’avez plus à vous demander ce qui a été confirmé.",
+    },
+    faq: [
+      {
+        q: 'Répondez-vous aux demandes le week-end ?',
+        a: "Les demandes sont traitées dans la journée ouvrée. Une disponibilité étendue, par exemple en haute saison, se prévoit au devis dans une formule sur mesure.",
+      },
+      {
+        q: 'Êtes-vous présente sur les événements ?',
+        a: "Non. Le travail se fait à distance, en amont et en aval. Le jour de l’événement, votre équipe est sur place avec une feuille de route complète.",
+      },
+      {
+        q: 'Pouvez-vous établir les devis ?',
+        a: "À partir de vos tarifs et de vos formules, oui. Dès qu’une demande sort de la grille, elle vous est soumise : le prix reste votre décision.",
+      },
+      {
+        q: 'Mon activité s’arrête l’hiver. Puis-je suspendre ?',
+        a: "L’accompagnement mensuel est résiliable avec un préavis d’un mois. Une activité saisonnière peut aussi se traiter par un accompagnement limité à la saison, à définir au devis.",
+      },
+    ],
+    liens: ['facturation', 'coordination', 'suivi-prestataires', 'reservations'],
+    cloture: 'Un événement réussi se joue le jour J. Il se perd dans les trois semaines qui précèdent.',
+  },
 ];
 
 export const metierParSlug = (slug: string) => metiers.find((m) => m.slug === slug);

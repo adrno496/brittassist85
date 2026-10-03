@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Button from '../../components/Button.astro';
 import Monogram from '../../components/Monogram.astro';
 import { prestations } from '../../data/prestations';
+import { jsonLd as serialiser } from '../../lib/seo';
 
 export function getStaticPaths() {
   return prestations.map((p) => ({ params: { slug: p.slug }, props: { p } }));
@@ -65,7 +66,7 @@ const jsonLd = {
 ---
 
 <BaseLayout title={p.title} description={p.description}>
-  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <script type="application/ld+json" slot="head" set:html={serialiser(jsonLd)} />
 
   <header class="hero hero--page">
     <div class="container">

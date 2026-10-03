@@ -1,9 +1,18 @@
 ---
 import Monogram from './Monogram.astro';
-import { metiers } from '../data/metiers';
+import { metiersGeneres } from '../data/metiers-publies';
 import { zones } from '../data/zones';
-import { guides } from '../data/guides';
+import { cheminDuGuide, dossiers, guidesGeneres, pilierDuDossier } from '../data/bibliotheque';
+import { estGeneree } from '../data/publication.mjs';
 const year = new Date().getFullYear();
+
+// Colonne « Guides » : les dossiers dès qu'un pilier est publié, car une liste
+// de cent liens répétée sur chaque page ne sert plus personne. Sinon, la liste
+// d'origine des guides.
+const piliers = dossiers
+  .map((d) => ({ dossier: d, pilier: pilierDuDossier(d.slug) }))
+  .filter((x) => x.pilier);
+const guides = guidesGeneres();
 ---
 
 <footer class="site-footer" role="contentinfo">
@@ -34,6 +43,7 @@ const year = new Date().getFullYear();
               Instagram
             </a>
           </li>
+          {estGeneree('/methode-editoriale') && <li><a href="/methode-editoriale">Méthode éditoriale</a></li>}
           <li><a href="/mentions-legales">Mentions légales</a></li>
           <li><a href="/cgv">CGV</a></li>
           <li><a href="/politique-confidentialite">Politique de confidentialité</a></li>
@@ -47,21 +57,24 @@ const year = new Date().getFullYear();
       <div class="index-prestations">
         <div class="index-groupe">
           <h3>Par métier</h3>
-          {metiers.map((m) => (
+          {metiersGeneres().map((m) => (
             <a href={`/assistante/${m.slug}`}>{m.nom}</a>
           ))}
+          <a href="/assistante">Tous les métiers accompagnés</a>
         </div>
         <div class="index-groupe">
           <h3>Zones d’intervention</h3>
           {zones.map((z) => (
             <a href={`/assistante-independante/${z.slug}`}>{z.nom}</a>
           ))}
+          <a href="/assistante-independante">Où intervient BrittAssist</a>
         </div>
         <div class="index-groupe">
           <h3>Guides</h3>
-          {guides.map((g) => (
-            <a href={`/guides/${g.slug}`}>{g.nom}</a>
-          ))}
+          {piliers.length > 0
+            ? piliers.map(({ dossier, pilier }) => pilier && <a href={cheminDuGuide(pilier)}>{dossier.nom}</a>)
+            : guides.map((g) => <a href={cheminDuGuide(g)}>{g.nom}</a>)}
+          <a href="/guides">Tous les guides</a>
         </div>
       </div>
     </nav>

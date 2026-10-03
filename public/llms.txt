@@ -57,6 +57,7 @@ Pages de fond, sans argumentaire commercial. La réponse directe figure en tête
 
 ## Pages par métier (pour qui)
 La même prise en charge, décrite avec le vocabulaire, les échéances et les frictions de chaque métier.
+- [Toutes les pages par métier](https://www.brittassist.fr/assistante) : ce qui change d’un métier à l’autre, ce qui ne change pas, et ce qui reste hors périmètre partout.
 - [Artisans et entreprises du bâtiment](https://www.brittassist.fr/assistante/artisans-btp) : Devis, factures de situation, attestations, appels d’offres et relances : déléguer l’administratif d’une entreprise du bâtiment. Dès 700 € / mois.
 - [Dirigeants de PME](https://www.brittassist.fr/assistante/dirigeants-pme) : Agenda, comité de direction, reporting, déplacements, coordination : une assistante de direction externalisée, sans créer le poste. Dès 700 € / mois.
 - [Consultants indépendants](https://www.brittassist.fr/assistante/consultants-independants) : Facturation, CRA, notes de frais, déplacements et propales : déléguer son administratif quand chaque heure non facturable coûte une journée de mission.
@@ -68,6 +69,7 @@ La même prise en charge, décrite avec le vocabulaire, les échéances et les f
 
 ## Zones d’intervention
 BrittAssist est basée à La Roche-sur-Yon (Vendée) et travaille à distance partout en France et à l’international. Il n’existe aucune autre implantation physique.
+- [Où intervient BrittAssist](https://www.brittassist.fr/assistante-independante) : une seule implantation, un travail à distance ; ce que la proximité change réellement.
 - [La Roche-sur-Yon](https://www.brittassist.fr/assistante-independante/la-roche-sur-yon) : Private Office externalisé basé à La Roche-sur-Yon : administratif, agenda, facturation et coordination pour dirigeants et TPE vendéennes.
 - [Nantes](https://www.brittassist.fr/assistante-independante/nantes) : Assistance de direction externalisée pour dirigeants nantais : agenda, déplacements, facturation, coordination. À distance, rendez-vous possibles.
 - [Les Sables-d’Olonne](https://www.brittassist.fr/assistante-independante/les-sables-d-olonne) : Assistance administrative pour dirigeants du littoral vendéen : saison courte, hôtellerie-restauration, nautisme, immobilier et locations.

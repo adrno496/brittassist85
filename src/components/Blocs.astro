@@ -1,0 +1,54 @@
+---
+import type { Bloc } from '../data/guides';
+
+interface Props {
+  blocs: Bloc[];
+}
+
+const { blocs } = Astro.props;
+---
+
+{blocs.map((b) => (
+  <>
+    {b.h3 && <h3>{b.h3}</h3>}
+    {b.paragraphes?.map((p) => <p>{p}</p>)}
+    {b.liste && (
+      <ul>
+        {b.liste.map((li) => <li>{li}</li>)}
+      </ul>
+    )}
+    {b.etapes && (
+      <ol class="etapes">
+        {b.etapes.map((e) => <li>{e}</li>)}
+      </ol>
+    )}
+    {b.tableau && (
+      /* Conteneur défilable au clavier : un tableau large ne doit jamais élargir la page. */
+      <div class="tableau" role="region" aria-label={b.tableau.legende} tabindex="0">
+        <table>
+          <caption>{b.tableau.legende}</caption>
+          <thead>
+            <tr>
+              {b.tableau.colonnes.map((c) => <th scope="col">{c}</th>)}
+            </tr>
+          </thead>
+          <tbody>
+            {b.tableau.lignes.map((ligne) => (
+              <tr>
+                {ligne.map((cellule, i) => (i === 0 ? <th scope="row">{cellule}</th> : <td>{cellule}</td>))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    )}
+    {b.modele && (
+      <figure class="modele">
+        <figcaption>{b.modele.titre}</figcaption>
+        <div class="modele__texte">
+          {b.modele.lignes.map((l) => <p>{l}</p>)}
+        </div>
+      </figure>
+    )}
+  </>
+))}

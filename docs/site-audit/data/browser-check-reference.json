@@ -1,0 +1,96 @@
+{
+ "genere": "2026-10-03T14:10:59.459Z",
+ "base": "http://127.0.0.1:4321",
+ "pages": 49,
+ "chargements": 245,
+ "dureeSecondes": 135,
+ "ecrans": [
+  {
+   "nom": "mobile étroit",
+   "width": 320,
+   "height": 640
+  },
+  {
+   "nom": "mobile",
+   "width": 390,
+   "height": 844
+  },
+  {
+   "nom": "tablette",
+   "width": 768,
+   "height": 1024
+  },
+  {
+   "nom": "bureau",
+   "width": 1366,
+   "height": 768
+  },
+  {
+   "nom": "grand écran",
+   "width": 1920,
+   "height": 1080
+  }
+ ],
+ "reglesAxe": [
+  "wcag2a",
+  "wcag2aa",
+  "wcag21a",
+  "wcag21aa",
+  "wcag22aa"
+ ],
+ "pagesEnEchec": 4,
+ "violationsAxe": 8,
+ "themeClair": null,
+ "parcours": [
+  {
+   "test": "Tab atteint d’abord le lien d’évitement",
+   "ok": true,
+   "detail": "{\"classe\":\"skip-link\",\"href\":\"#main-content\"}"
+  },
+  {
+   "test": "Menu mobile : ouverture au clic, fermeture à Échap",
+   "ok": true,
+   "detail": "aria-expanded true → false"
+  },
+  {
+   "test": "Thème clair rétabli au chargement d’une autre page",
+   "ok": true,
+   "detail": "data-theme = light"
+  },
+  {
+   "test": "Bandeau de consentement affiché, aucun cookie de mesure avant choix",
+   "ok": true,
+   "detail": "bandeau 1, cookies []"
+  }
+ ],
+ "pagesAvecProbleme": [
+  {
+   "chemin": "/a-propos",
+   "erreurs": [
+    "[mobile] axe color-contrast (serious) ×1 — .band--rose > .container > .duo.reveal.is-visible > div:nth-child(1) > .eyebrow",
+    "[bureau] axe color-contrast (serious) ×1 — .band--rose > .container > .duo.reveal.is-visible > div:nth-child(1) > .eyebrow"
+   ]
+  },
+  {
+   "chemin": "/",
+   "erreurs": [
+    "[mobile] axe color-contrast (serious) ×7 — .band__head--wide > .eyebrow",
+    "[bureau] axe color-contrast (serious) ×7 — .band__head--wide > .eyebrow"
+   ]
+  },
+  {
+   "chemin": "/private-office",
+   "erreurs": [
+    "[mobile] axe color-contrast (serious) ×5 — .band--rose > .container > .band__head.reveal.is-visible > .eyebrow",
+    "[bureau] axe color-contrast (serious) ×5 — .band--rose > .container > .band__head.reveal.is-visible > .eyebrow"
+   ]
+  },
+  {
+   "chemin": "/tarifs",
+   "erreurs": [
+    "[mobile] axe color-contrast (serious) ×4 — .band--rose > .container > .band__head.reveal.is-visible > .eyebrow",
+    "[bureau] axe color-contrast (serious) ×4 — .band--rose > .container > .band__head.reveal.is-visible > .eyebrow"
+   ]
+  }
+ ]
+}

@@ -48,6 +48,8 @@ const domaines = [
       >
         <input type="hidden" name="_subject" value="Préparation Private Office — BrittAssist" />
         <input type="hidden" name="_captcha" value="false" />
+        {/* Champ piège : invisible pour un humain, rempli par les robots. FormSubmit écarte alors l'envoi. */}
+        <input type="text" name="_honey" class="piege" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <input type="hidden" name="_template" value="table" />
         <input type="hidden" name="_next" value="https://www.brittassist.fr/questionnaire?sent=true" />
 

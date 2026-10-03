@@ -1,0 +1,335 @@
+[
+  {
+    "url": "https://calendly.com/brittassist85/rendez-vous-decouverte",
+    "statut": 0,
+    "final": "Command failed: curl -s -o /dev/null -L -m 30 -A Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36 -H Accept-Language: fr-FR,fr -w %{http_code} %{url_effective} https://calendly.com/brittassist85/rendez-vous-decouverte",
+    "verdict": "À VÉRIFIER",
+    "redirige": "Command failed: curl -s -o /dev/null -L -m 30 -A Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36 -H Accept-Language: fr-FR,fr -w %{http_code} %{url_effective} https://calendly.com/brittassist85/rendez-vous-decouverte",
+    "pages": 1,
+    "exemple": "/contact"
+  },
+  {
+    "url": "https://www.linkedin.com/in/brittassit85/",
+    "statut": 999,
+    "final": "https://www.linkedin.com/in/brittassit85/",
+    "verdict": "NON CONCLUANT",
+    "redirige": null,
+    "pages": 151,
+    "exemple": "/404"
+  },
+  {
+    "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000687670",
+    "statut": 403,
+    "final": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000687670",
+    "verdict": "NON CONCLUANT",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/guides/facture-de-situation-et-retenue-de-garantie"
+  },
+  {
+    "url": "https://www.instagram.com/brittassist85",
+    "statut": 200,
+    "final": "https://www.instagram.com/brittassist85",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 151,
+    "exemple": "/404"
+  },
+  {
+    "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F31144",
+    "statut": 200,
+    "final": "https://entreprendre.service-public.gouv.fr/vosdroits/F31144",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 2,
+    "exemple": "/guides/acompte-ou-arrhes"
+  },
+  {
+    "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F32144",
+    "statut": 200,
+    "final": "https://entreprendre.service-public.gouv.fr/vosdroits/F32144",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/guides/appel-d-offres-dossier-de-candidature"
+  },
+  {
+    "url": "https://www.cnil.fr/fr/les-questions-reponses-de-la-cnil-sur-lutilisation-dun-systeme-dia-generative",
+    "statut": 200,
+    "final": "https://www.cnil.fr/fr/les-questions-reponses-de-la-cnil-sur-lutilisation-dun-systeme-dia-generative",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 2,
+    "exemple": "/guides/assistante-externalisee-et-ia"
+  },
+  {
+    "url": "https://mon-entreprise.urssaf.fr/assistants",
+    "statut": 200,
+    "final": "https://mon-entreprise.urssaf.fr/assistants",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/guides/assistante-independante-ou-salariee"
+  },
+  {
+    "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2258",
+    "statut": 200,
+    "final": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2258",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/guides/assistante-independante-ou-salariee"
+  },
+  {
+    "url": "https://www.urssaf.fr/accueil/employeur/embaucher-gerer-salaries/embaucher/declaration-prealable-embauche.html",
+    "statut": 200,
+    "final": "https://www.urssaf.fr/accueil/employeur/embaucher-gerer-salaries/embaucher/declaration-prealable-embauche.html",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 2,
+    "exemple": "/guides/assistante-independante-ou-salariee"
+  },
+  {
+    "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F31808",
+    "statut": 200,
+    "final": "https://entreprendre.service-public.gouv.fr/vosdroits/F31808",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 7,
+    "exemple": "/guides/checklist-ouverture-dossier-client"
+  },
+  {
+    "url": "https://www.cnil.fr/fr/securite-gerer-la-sous-traitance",
+    "statut": 200,
+    "final": "https://www.cnil.fr/fr/securite-gerer-la-sous-traitance",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 5,
+    "exemple": "/guides/choisir-assistante-externalisee"
+  },
+  {
+    "url": "https://www.impots.gouv.fr/professionnel/je-decouvre-la-facturation-electronique",
+    "statut": 200,
+    "final": "https://www.impots.gouv.fr/professionnel/je-decouvre-la-facturation-electronique",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 5,
+    "exemple": "/guides/choisir-un-logiciel-de-facturation"
+  },
+  {
+    "url": "https://www.cnil.fr/fr/securite-authentifier-les-utilisateurs",
+    "statut": 200,
+    "final": "https://www.cnil.fr/fr/securite-authentifier-les-utilisateurs",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 4,
+    "exemple": "/guides/confidentialite-acces-et-outils"
+  },
+  {
+    "url": "https://www.cnil.fr/fr/qualification-juridique-sous-traitance",
+    "statut": 200,
+    "final": "https://www.cnil.fr/fr/qualification-juridique-sous-traitance",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/guides/confidentialite-assistante-externalisee"
+  },
+  {
+    "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F1691",
+    "statut": 200,
+    "final": "https://entreprendre.service-public.gouv.fr/vosdroits/F1691",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 2,
+    "exemple": "/guides/contrat-de-prestation-assistante-independante"
+  },
+  {
+    "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F23211",
+    "statut": 200,
+    "final": "https://entreprendre.service-public.gouv.fr/vosdroits/F23211",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 3,
+    "exemple": "/guides/delais-de-paiement-et-penalites-de-retard"
+  },
+  {
+    "url": "https://support.google.com/mail/answer/138350?hl=fr",
+    "statut": 200,
+    "final": "https://support.google.com/mail/answer/138350?hl=fr",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/guides/delegation-d-acces-messagerie-et-agenda"
+  },
+  {
+    "url": "https://support.microsoft.com/fr-fr/outlook/sharing/about-delegates-allow-someone-to-manage-your-mail-and-calendar-in-outlook",
+    "statut": 200,
+    "final": "https://support.microsoft.com/fr-fr/outlook/sharing/about-delegates-allow-someone-to-manage-your-mail-and-calendar-in-outlook",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/guides/delegation-d-acces-messagerie-et-agenda"
+  },
+  {
+    "url": "https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/",
+    "statut": 200,
+    "final": "https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs",
+    "verdict": "OK",
+    "redirige": "https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs",
+    "pages": 1,
+    "exemple": "/guides/deplacement-a-l-etranger-formalites"
+  },
+  {
+    "url": "https://www.urssaf.fr/accueil/attestation-vigilance.html",
+    "statut": 200,
+    "final": "https://www.urssaf.fr/accueil/attestation-vigilance.html",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/guides/dossier-permanent-entreprise"
+  },
+  {
+    "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F31422",
+    "statut": 200,
+    "final": "https://entreprendre.service-public.gouv.fr/vosdroits/F31422",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/guides/dossier-permanent-entreprise"
+  },
+  {
+    "url": "https://www.cnil.fr/fr/mots-de-passe-recommandations-pour-maitriser-sa-securite",
+    "statut": 200,
+    "final": "https://www.cnil.fr/fr/mots-de-passe-recommandations-pour-maitriser-sa-securite",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 2,
+    "exemple": "/guides/double-authentification-et-delegation"
+  },
+  {
+    "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F10029",
+    "statut": 200,
+    "final": "https://entreprendre.service-public.gouv.fr/vosdroits/F10029",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/guides/duree-de-conservation-documents-entreprise"
+  },
+  {
+    "url": "https://entreprendre.service-public.gouv.fr/actualites/A18906",
+    "statut": 200,
+    "final": "https://entreprendre.service-public.gouv.fr/actualites/A18906",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/guides/duree-de-conservation-documents-entreprise"
+  },
+  {
+    "url": "https://www.cybermalveillance.gouv.fr/medias/2023/05/240208_FicheReflexe_FraudeVirement.pdf",
+    "statut": 200,
+    "final": "https://www.cybermalveillance.gouv.fr/medias/2023/05/240208_FicheReflexe_FraudeVirement.pdf",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/guides/fraude-au-faux-rib-et-au-president"
+  },
+  {
+    "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F38586",
+    "statut": 200,
+    "final": "https://entreprendre.service-public.gouv.fr/vosdroits/F38586",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 2,
+    "exemple": "/guides/mise-en-demeure-et-injonction-de-payer"
+  },
+  {
+    "url": "https://www.justice.fr/fiche/recouvrement-judiciaire-injonction-payer-france-europe",
+    "statut": 200,
+    "final": "https://www.justice.fr/fiche/recouvrement-judiciaire-injonction-payer-france-europe",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/guides/mise-en-demeure-et-injonction-de-payer"
+  },
+  {
+    "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/mots-de-passe",
+    "statut": 200,
+    "final": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/mots-de-passe",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/guides/partager-un-mot-de-passe-en-securite"
+  },
+  {
+    "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F23107",
+    "statut": 200,
+    "final": "https://entreprendre.service-public.gouv.fr/vosdroits/F23107",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/guides/premiere-embauche-formalites-administratives"
+  },
+  {
+    "url": "https://travail-emploi.gouv.fr/le-recours-abusif-aux-travailleurs-independants",
+    "statut": 200,
+    "final": "https://travail-emploi.gouv.fr/le-recours-abusif-aux-travailleurs-independants",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/guides/requalification-assistante-independante-salariat"
+  },
+  {
+    "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/sauvegardes",
+    "statut": 200,
+    "final": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/sauvegardes",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/guides/sauvegarde-des-documents-entreprise"
+  },
+  {
+    "url": "https://www.francenum.gouv.fr/guides-et-conseils/pilotage-de-lentreprise/dematerialisation-des-documents/la-signature",
+    "statut": 200,
+    "final": "https://www.francenum.gouv.fr/guides-et-conseils/pilotage-de-lentreprise/dematerialisation-des-documents/la-signature",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/guides/signature-electronique-niveaux-et-usages"
+  },
+  {
+    "url": "https://cyber.gouv.fr/reglementation/reglementation-identite-confiance-numerique/securite-echanges-voie-electronique/reglement-eidas/selection-niveau-signatures-cachets-%C3%A9lectroniques/",
+    "statut": 200,
+    "final": "https://cyber.gouv.fr/reglementation/reglementation-identite-confiance-numerique/securite-echanges-voie-electronique/reglement-eidas/selection-niveau-signatures-cachets-%C3%A9lectroniques/",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/guides/signature-electronique-niveaux-et-usages"
+  },
+  {
+    "url": "https://vercel.com",
+    "statut": 200,
+    "final": "https://vercel.com/",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/mentions-legales"
+  },
+  {
+    "url": "https://www.axdia.fr",
+    "statut": 200,
+    "final": "https://www.axdia.fr/",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/mentions-legales"
+  },
+  {
+    "url": "https://www.cnil.fr",
+    "statut": 200,
+    "final": "https://www.cnil.fr/fr",
+    "verdict": "OK",
+    "redirige": null,
+    "pages": 1,
+    "exemple": "/politique-confidentialite"
+  }
+]

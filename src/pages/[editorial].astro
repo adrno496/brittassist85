@@ -1,0 +1,149 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+import Fil from '../components/Fil.astro';
+import { dateDeRelecture, estBrouillon, estGeneree } from '../data/publication.mjs';
+import { SITE_URL, filDAriane, jsonLd } from '../lib/seo';
+
+// Page de transparence : comment les guides sont préparés, relus et corrigés.
+// Elle engage le site. Ne rien y écrire qui ne soit pas réellement pratiqué.
+//
+// Le fichier est une route dynamique à une seule entrée : c'est le moyen, en
+// Astro, de ne pas générer la page tant qu'elle n'est pas inscrite au registre
+// de relecture (src/data/relectures.mjs). Elle prend des engagements au nom de
+// Brittany Dreano : elle doit être relue comme les guides qu'elle décrit.
+const CHEMIN = '/methode-editoriale';
+export function getStaticPaths() {
+  return estGeneree('/methode-editoriale') ? [{ params: { editorial: 'methode-editoriale' } }] : [];
+}
+const brouillon = estBrouillon(CHEMIN);
+const relecture = dateDeRelecture(CHEMIN) ?? undefined;
+const title = 'Méthode éditoriale : comment les guides sont écrits · BrittAssist';
+const description =
+  "Qui écrit les guides BrittAssist, avec quels outils, à partir de quelles sources, et comment une erreur est corrigée. Sans promesse de résultat.";
+
+const url = `${SITE_URL}/methode-editoriale`;
+const etapes = [
+  { nom: 'Guides', href: '/guides' },
+  { nom: 'Méthode éditoriale', href: '/methode-editoriale' },
+];
+
+const donnees = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'AboutPage',
+      '@id': `${url}#page`,
+      url,
+      name: title,
+      description,
+      inLanguage: 'fr-FR',
+      isPartOf: { '@id': `${SITE_URL}/#website` },
+      about: { '@id': `${SITE_URL}/#business` },
+    },
+    filDAriane(url, etapes),
+  ],
+};
+---
+
+<BaseLayout title={title} description={description} brouillon={brouillon} dateRelecture={relecture}>
+  <script type="application/ld+json" slot="head" set:html={jsonLd(donnees)} />
+
+  <header class="hero hero--page">
+    <div class="container">
+      <Fil etapes={etapes} />
+      {brouillon && (
+        <p class="brouillon" role="note">
+          Brouillon en attente de relecture. Cette page n’est pas publiée : elle n’apparaît ni dans les
+          moteurs de recherche ni dans le plan du site.
+        </p>
+      )}
+      <p class="eyebrow">Transparence</p>
+      <h1 class="hero__title">Comment ces guides sont écrits, relus et corrigés.</h1>
+      <p class="hero__sub">
+        Les guides de ce site donnent des repères pratiques à des dirigeants.
+        Vous avez le droit de savoir d’où ils viennent : qui les prépare, avec
+        quels outils, ce qui est vérifié, et ce qu’ils ne remplacent pas.
+      </p>
+    </div>
+  </header>
+
+  <section class="band band--noir">
+    <div class="container">
+      <article class="prose">
+        <h2>Qui écrit</h2>
+        <p>
+          Les guides sont publiés par BrittAssist, l’entreprise de Brittany
+          Dreano, assistante de direction indépendante installée à La
+          Roche-sur-Yon. Ceux publiés à partir d’octobre 2026 sont préparés
+          avec l’aide d’un outil d’intelligence artificielle, à partir de
+          sources officielles et du périmètre de service décrit sur ce site,
+          puis relus par Brittany Dreano avant leur mise en ligne.
+        </p>
+        <p>
+          Chaque guide relu porte, sous sa réponse courte, la mention
+          « Relu par Brittany Dreano » suivie de la date. Un guide qui n’a pas
+          été relu n’est pas publié.
+        </p>
+
+        <h2>Ce que fait l’outil, et ce qu’il ne fait pas</h2>
+        <ul>
+          <li>Il aide à structurer un sujet, à rédiger un premier jet et à repérer les redites entre deux pages.</li>
+          <li>Il ne décide pas de ce qui est vrai : chaque règle citée est rapprochée de sa source officielle avant publication.</li>
+          <li>Il ne parle pas à la place de Brittany Dreano : ce qui décrit le fonctionnement de BrittAssist reprend le périmètre, les limites et les tarifs publiés sur ce site.</li>
+        </ul>
+
+        <h2>D’où viennent les faits</h2>
+        <p>
+          Quand un guide cite une règle — une mention obligatoire sur une
+          facture, un délai de paiement, une durée de conservation — il renvoie
+          à la source officielle : Service-Public, impots.gouv.fr, l’Urssaf, la
+          CNIL, le ministère chargé de l’économie ou du travail. Les liens
+          figurent en fin de page, dans la rubrique « Références ».
+        </p>
+        <p>
+          Les montants et les taux qui changent chaque année ne sont pas
+          recopiés : le guide donne la règle et renvoie à la page officielle
+          qui tient le chiffre à jour.
+        </p>
+
+        <h2>Ce que vous ne trouverez pas ici</h2>
+        <ul>
+          <li>Des témoignages, des notes ou des résultats de clients : aucun n’est publié sans accord écrit et faits vérifiés.</li>
+          <li>Des statistiques sans source.</li>
+          <li>Des exemples présentés comme des missions réelles : les exemples sont illustratifs, et signalés comme tels.</li>
+          <li>Une promesse de résultat.</li>
+        </ul>
+
+        <h2>Ce que ces guides ne remplacent pas</h2>
+        <p>
+          Un guide donne un repère général. Il ne remplace ni votre
+          expert-comptable, ni votre avocat, ni un texte officiel. BrittAssist
+          ne réalise ni tenue comptable, ni déclaration fiscale, ni conseil
+          juridique : sur ces sujets, les guides indiquent à quel professionnel
+          s’adresser.
+        </p>
+
+        <h2>Mises à jour et corrections</h2>
+        <p>
+          La date de mise à jour affichée sur une page correspond à une
+          modification réelle de son contenu, jamais à un simple
+          rafraîchissement. Si vous repérez une erreur ou une règle qui a
+          changé, écrivez : la page sera vérifiée et corrigée.
+        </p>
+        <p>
+          <a href="/contact">Signaler une erreur ou poser une question</a>
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="band band--ivoire band--tight">
+    <div class="container">
+      <div class="btn-row">
+        <Button href="/guides" variant="noir">Voir les guides</Button>
+        <Button href="/a-propos" variant="lien">Qui est Brittany Dreano</Button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

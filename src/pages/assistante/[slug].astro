@@ -1,18 +1,30 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Button from '../../components/Button.astro';
+import Fil from '../../components/Fil.astro';
 import Monogram from '../../components/Monogram.astro';
-import { metiers } from '../../data/metiers';
+import { cheminDuMetier, metierEstBrouillon, metiersGeneres } from '../../data/metiers-publies';
 import { zones } from '../../data/zones';
 import { prestations } from '../../data/prestations';
+import { dateDeRelecture } from '../../data/publication.mjs';
+import { filDAriane, jsonLd as serialiser } from '../../lib/seo';
 
 export function getStaticPaths() {
-  return metiers.map((m) => ({ params: { slug: m.slug }, props: { m } }));
+  return metiersGeneres().map((m) => ({ params: { slug: m.slug }, props: { m } }));
 }
 
 const { m } = Astro.props;
 const siteUrl = 'https://www.brittassist.fr';
-const url = `${siteUrl}/assistante/${m.slug}`;
+const chemin = cheminDuMetier(m);
+const url = `${siteUrl}${chemin}`;
+const brouillon = metierEstBrouillon(m);
+const relecture = dateDeRelecture(chemin) ?? undefined;
+
+// Le fil visible et le fil structuré partent de la même liste.
+const etapes = [
+  { nom: 'Par métier', href: '/assistante' },
+  { nom: m.nom, href: chemin },
+];
 
 // Maillage descendant : les prestations les plus utilisées par ce métier.
 const liees = m.liens
@@ -20,7 +32,7 @@ const liees = m.liens
   .filter((p): p is (typeof prestations)[number] => Boolean(p));
 
 // Maillage latéral : les autres pages « pour qui ».
-const autres = metiers.filter((x) => x.slug !== m.slug);
+const autres = metiersGeneres().filter((x) => x.slug !== m.slug);
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -70,29 +82,23 @@ const jsonLd = {
         acceptedAnswer: { '@type': 'Answer', text: f.a },
       })),
     },
-    {
-      '@type': 'BreadcrumbList',
-      '@id': `${url}#fil`,
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Accueil', item: `${siteUrl}/` },
-        { '@type': 'ListItem', position: 2, name: 'Pour qui', item: `${siteUrl}/services#pour-qui` },
-        { '@type': 'ListItem', position: 3, name: m.nom, item: url },
-      ],
-    },
+    filDAriane(url, etapes),
   ],
 };
 ---
 
-<BaseLayout title={m.title} description={m.description} dateModified="2026-09-04">
-  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+<BaseLayout title={m.title} description={m.description} dateModified={relecture ?? '2026-09-04'} brouillon={brouillon} dateRelecture={relecture}>
+  <script type="application/ld+json" slot="head" set:html={serialiser(jsonLd)} />
 
   <header class="hero hero--page">
     <div class="container">
-      <nav class="fil" aria-label="Fil d’Ariane">
-        <a href="/services">Services</a>
-        <span aria-hidden="true">·</span>
-        <span>{m.nom}</span>
-      </nav>
+      <Fil etapes={etapes} />
+      {brouillon && (
+        <p class="brouillon" role="note">
+          Brouillon en attente de relecture. Cette page n’est pas publiée : elle n’apparaît ni dans les
+          moteurs de recherche ni dans le plan du site.
+        </p>
+      )}
       <p class="eyebrow">{m.secteur}</p>
       <h1 class="hero__title">{m.h1}</h1>
       <p class="hero__sub">{m.lede}</p>
