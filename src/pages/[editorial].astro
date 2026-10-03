@@ -9,9 +9,13 @@ import { SITE_URL, filDAriane, jsonLd } from '../lib/seo';
 // Elle engage le site. Ne rien y écrire qui ne soit pas réellement pratiqué.
 //
 // Le fichier est une route dynamique à une seule entrée : c'est le moyen, en
-// Astro, de ne pas générer la page tant qu'elle n'est pas inscrite au registre
-// de relecture (src/data/relectures.mjs). Elle prend des engagements au nom de
-// Brittany Dreano : elle doit être relue comme les guides qu'elle décrit.
+// Astro, de ne pas générer la page tant qu'elle ne figure dans aucun registre
+// (src/data/publications.mjs, src/data/relectures.mjs).
+//
+// Elle est en ligne depuis le 3 octobre 2026 sans avoir été relue par Brittany
+// Dreano. Le texte dit donc ce qui est : les guides sont préparés avec un outil
+// d'IA, et seuls ceux qui portent la mention ont été relus. Ne pas y écrire que
+// tout est relu avant publication tant que ce n'est pas le cas.
 const CHEMIN = '/methode-editoriale';
 export function getStaticPaths() {
   return estGeneree('/methode-editoriale') ? [{ params: { editorial: 'methode-editoriale' } }] : [];
@@ -77,20 +81,21 @@ const donnees = {
           Dreano, assistante de direction indépendante installée à La
           Roche-sur-Yon. Ceux publiés à partir d’octobre 2026 sont préparés
           avec l’aide d’un outil d’intelligence artificielle, à partir de
-          sources officielles et du périmètre de service décrit sur ce site,
-          puis relus par Brittany Dreano avant leur mise en ligne.
+          sources officielles et du périmètre de service décrit sur ce site.
         </p>
         <p>
-          Chaque guide relu porte, sous sa réponse courte, la mention
-          « Relu par Brittany Dreano » suivie de la date. Un guide qui n’a pas
-          été relu n’est pas publié.
+          Un guide relu par Brittany Dreano porte, sous sa réponse courte, la
+          mention « Relu par Brittany Dreano » suivie de la date. Un guide qui
+          ne porte pas cette mention n’a pas encore été relu par elle :
+          prenez-le comme un premier repère, et vérifiez la règle qui vous
+          concerne à la source officielle citée en fin de page.
         </p>
 
         <h2>Ce que fait l’outil, et ce qu’il ne fait pas</h2>
         <ul>
           <li>Il aide à structurer un sujet, à rédiger un premier jet et à repérer les redites entre deux pages.</li>
-          <li>Il ne décide pas de ce qui est vrai : chaque règle citée est rapprochée de sa source officielle avant publication.</li>
-          <li>Il ne parle pas à la place de Brittany Dreano : ce qui décrit le fonctionnement de BrittAssist reprend le périmètre, les limites et les tarifs publiés sur ce site.</li>
+          <li>Il ne fait pas autorité : chaque règle citée renvoie à sa source officielle. En cas d’écart entre un guide et cette source, c’est la source qui fait foi.</li>
+          <li>Il n’invente pas l’offre : ce qui décrit le fonctionnement de BrittAssist reprend le périmètre, les limites et les tarifs déjà publiés sur ce site.</li>
         </ul>
 
         <h2>D’où viennent les faits</h2>

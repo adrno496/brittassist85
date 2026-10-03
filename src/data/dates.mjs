@@ -14,7 +14,7 @@
  * Fichier volontairement en .mjs : il est importé à la fois par la config Astro
  * et par un composant .astro.
  */
-import { dateDeRelecture } from './publication.mjs';
+import { dateDeRelecture, datePublicationSansRelecture } from './publication.mjs';
 
 /** Pages historiques : accueil, private-office, services, à propos, contact, prestations. */
 export const DATE_SOCLE = '2026-08-20';
@@ -54,9 +54,10 @@ function nettoyer(pathname) {
  */
 export function lastmodPour(pathname) {
   const chemin = nettoyer(pathname);
-  // Une page passée par le registre de relecture porte la date de sa relecture.
-  const relecture = dateDeRelecture(chemin);
-  if (relecture) return relecture;
+  // Une page relue porte la date de sa relecture ; une page publiée sans relecture
+  // préalable porte la date de sa mise en ligne.
+  const inscrite = dateDeRelecture(chemin) ?? datePublicationSansRelecture(chemin);
+  if (inscrite) return inscrite;
   if (PAGES_OCTOBRE.has(chemin)) return DATE_HUBS;
   if (NOUVEAUX_GUIDES.has(chemin) || GUIDES_REVISES.has(chemin) || PAGES_REVISEES.has(chemin)) return DATE_NOUVEAUX_GUIDES;
   return CHEMINS_SEPTEMBRE.test(chemin) ? DATE_SEO_METIERS_ZONES_GUIDES : DATE_SOCLE;
@@ -64,8 +65,9 @@ export function lastmodPour(pathname) {
 
 export function publicationPour(pathname) {
   const chemin = nettoyer(pathname);
-  const relecture = dateDeRelecture(chemin);
-  if (relecture) return relecture;
+  // La date de publication ne recule pas quand la page est relue ensuite.
+  const inscrite = datePublicationSansRelecture(chemin) ?? dateDeRelecture(chemin);
+  if (inscrite) return inscrite;
   if (chemin === '/assistante' || chemin === '/assistante-independante' || chemin === '/methode-editoriale') return DATE_HUBS;
   if (NOUVEAUX_GUIDES.has(chemin) || chemin === '/tarifs') return DATE_NOUVEAUX_GUIDES;
   return CHEMINS_SEPTEMBRE.test(chemin) ? DATE_SEO_METIERS_ZONES_GUIDES : DATE_SOCLE;

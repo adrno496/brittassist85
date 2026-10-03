@@ -19,7 +19,7 @@ import { bibliotheque, dossiers } from '../src/data/bibliotheque.ts';
 import { metiers } from '../src/data/metiers.ts';
 import { prestations } from '../src/data/prestations.ts';
 import { zones } from '../src/data/zones.ts';
-import { estPubliee } from '../src/data/publication.mjs';
+import { dateDeRelecture, estPubliee } from '../src/data/publication.mjs';
 
 const SEUILS = { titleMax: 70, descriptionMin: 70, descriptionMax: 165, similarite: 0.55 };
 
@@ -193,7 +193,8 @@ const brouillons = bibliotheque.filter((g) => !estPubliee(`/guides/${g.slug}`)).
 
 console.log(`Fiches : ${bibliotheque.length} guides (${nouveaux.length} nouveaux) · ${metiers.length} métiers · ${dossiers.length} dossiers`);
 console.log(`Nouveaux guides par nature : ${Object.entries(parType).map(([k, v]) => `${k} ${v}`).join(' · ')}`);
-console.log(`En attente de relecture : ${brouillons} · requêtes principales distinctes : ${requetes.size}`);
+const nonRelues = nouveaux.filter((g) => !dateDeRelecture(`/guides/${g.slug}`)).length;
+console.log(`Brouillons non publiés : ${brouillons} · nouveaux guides non relus : ${nonRelues} · requêtes principales distinctes : ${requetes.size}`);
 console.log(`Blocages : ${blocages.length} · avertissements : ${avertissements.length}`);
 for (const [titre, liste] of [['BLOCAGES', blocages], ['AVERTISSEMENTS', avertissements]]) {
   if (!liste.length) continue;

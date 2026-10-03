@@ -1,11 +1,13 @@
 /**
- * Registre de relecture : une page non relue ne doit jamais être publiée,
- * et une page publiée avant le registre ne doit jamais disparaître.
+ * Registres de publication et de relecture : une page absente des deux ne doit
+ * jamais être publiée, une page publiée avant les registres ne doit jamais
+ * disparaître, et une page publiée sans relecture ne doit jamais se dire relue.
  */
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import { estBrouillon, estPubliee, liensVisibles, APERCU } from '../../src/data/publication.mjs';
+import { dateDeRelecture, datePublicationSansRelecture, estBrouillon, estPubliee, liensVisibles, APERCU } from '../../src/data/publication.mjs';
 import { lastmodPour, publicationPour } from '../../src/data/dates.mjs';
+import { publications } from '../../src/data/publications.mjs';
 import { relectures } from '../../src/data/relectures.mjs';
 
 test('les pages hors registre sont toujours publiées', () => {
@@ -20,16 +22,36 @@ test('les guides et métiers antérieurs au registre restent publiés', () => {
   }
 });
 
-test('un nouveau guide n’est publié que s’il figure au registre', () => {
+test('un nouveau guide n’est publié que s’il figure dans un registre', () => {
   const chemin = '/guides/mentions-obligatoires-facture';
-  assert.equal(estPubliee(chemin), Boolean(relectures[chemin]));
-  assert.equal(estBrouillon(chemin), !relectures[chemin]);
+  const inscrit = Boolean(relectures[chemin]) || Boolean(publications[chemin]);
+  assert.equal(estPubliee(chemin), inscrit);
+  assert.equal(estBrouillon(chemin), !inscrit);
   assert.equal(estPubliee('/guides/une-page-qui-n-existe-pas'), false);
   assert.equal(estPubliee('/assistante/un-metier-inconnu'), false);
 });
 
-test('la page de méthode éditoriale passe elle aussi par le registre', () => {
-  assert.equal(estPubliee('/methode-editoriale'), Boolean(relectures['/methode-editoriale']));
+test('la page de méthode éditoriale passe elle aussi par un registre', () => {
+  const chemin = '/methode-editoriale';
+  assert.equal(estPubliee(chemin), Boolean(relectures[chemin]) || Boolean(publications[chemin]));
+});
+
+test('publier sans relecture ne déclare jamais une relecture', () => {
+  for (const [chemin, date] of Object.entries(publications)) {
+    assert.match(date, /^\d{4}-\d{2}-\d{2}$/, chemin);
+    assert.ok(Date.parse(date) <= Date.now(), `${chemin} : date dans le futur`);
+    assert.equal(datePublicationSansRelecture(chemin), date);
+    // La mention « Relu par » et reviewedBy ne dépendent que de relectures.mjs.
+    assert.equal(dateDeRelecture(chemin), relectures[chemin] ?? null, chemin);
+    assert.equal(lastmodPour(chemin), relectures[chemin] ?? date, chemin);
+    assert.equal(publicationPour(chemin), date, chemin);
+  }
+});
+
+test('les registres ne contiennent que des chemins des familles prévues', () => {
+  for (const chemin of [...Object.keys(publications), ...Object.keys(relectures)]) {
+    assert.match(chemin, /^\/(guides|assistante)\/[a-z0-9-]+$|^\/methode-editoriale$/, chemin);
+  }
 });
 
 test('le chemin est normalisé : extension, barre finale, ancre', () => {

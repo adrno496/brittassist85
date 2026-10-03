@@ -6,6 +6,7 @@ import Monogram from '../../components/Monogram.astro';
 import { cheminDuMetier, metierEstBrouillon, metiersGeneres } from '../../data/metiers-publies';
 import { zones } from '../../data/zones';
 import { prestations } from '../../data/prestations';
+import { lastmodPour } from '../../data/dates.mjs';
 import { dateDeRelecture } from '../../data/publication.mjs';
 import { filDAriane, jsonLd as serialiser } from '../../lib/seo';
 
@@ -87,7 +88,7 @@ const jsonLd = {
 };
 ---
 
-<BaseLayout title={m.title} description={m.description} dateModified={relecture ?? '2026-09-04'} brouillon={brouillon} dateRelecture={relecture}>
+<BaseLayout title={m.title} description={m.description} dateModified={lastmodPour(chemin)} brouillon={brouillon} dateRelecture={relecture}>
   <script type="application/ld+json" slot="head" set:html={serialiser(jsonLd)} />
 
   <header class="hero hero--page">

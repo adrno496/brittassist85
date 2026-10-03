@@ -5,16 +5,17 @@
  * gabarits et par les scripts de contrôle.
  */
 import { APERCU } from './mode.mjs';
+import { publications } from './publications.mjs';
 import { relectures } from './relectures.mjs';
 
-// `npm run build:apercu` : génère aussi les pages non relues, en noindex. Voir mode.mjs.
+// `npm run build:apercu` : génère aussi les pages absentes des deux registres, en noindex. Voir mode.mjs.
 export { APERCU };
 
-/** Deux familles passent par le registre de relecture, plus la page qui décrit la méthode. */
+/** Deux familles passent par les registres (relectures.mjs, publications.mjs), plus la page qui décrit la méthode. */
 const FAMILLES_RELUES = /^\/(guides|assistante)\/[^/]+$/;
 const PAGES_RELUES = new Set(['/methode-editoriale']);
 
-/** Pages en ligne avant la création du registre : leur statut ne change pas. */
+/** Pages en ligne avant la création des registres : leur statut ne change pas. */
 const HERITAGE = new Set([
   '/guides/assistante-independante-ou-salariee',
   '/guides/prix-assistante-de-direction-externalisee',
@@ -47,11 +48,22 @@ export function dateDeRelecture(chemin) {
   return relectures[normaliser(chemin)] ?? null;
 }
 
-/** Une page est publiée si elle est hors registre, antérieure au registre, ou relue. */
+/**
+ * Date de mise en ligne d'une page publiée sans relecture préalable (AAAA-MM-JJ), ou null.
+ * Ne dit rien d'une relecture : seul relectures.mjs en fait foi.
+ */
+export function datePublicationSansRelecture(chemin) {
+  return publications[normaliser(chemin)] ?? null;
+}
+
+/**
+ * Une page est publiée si elle est hors registre, antérieure aux registres, relue,
+ * ou inscrite au registre des publications sans relecture préalable.
+ */
 export function estPubliee(chemin) {
   const c = normaliser(chemin);
   if (!FAMILLES_RELUES.test(c) && !PAGES_RELUES.has(c)) return true;
-  return HERITAGE.has(c) || Boolean(relectures[c]);
+  return HERITAGE.has(c) || Boolean(relectures[c]) || Boolean(publications[c]);
 }
 
 /** Une page est générée si elle est publiée, ou si l'aperçu des brouillons est demandé. */
@@ -59,14 +71,14 @@ export function estGeneree(chemin) {
   return estPubliee(chemin) || APERCU;
 }
 
-/** Vrai pour une page générée seulement parce que l'aperçu est actif. */
+/** Vrai pour une page générée seulement parce que l'aperçu est actif : jamais indexable. */
 export function estBrouillon(chemin) {
   return !estPubliee(chemin);
 }
 
 /**
  * Ne garde que les liens internes dont la cible existe dans le build en cours.
- * Sans cela, une page relue qui cite une page encore en brouillon produirait un lien cassé.
+ * Sans cela, une page publiée qui cite une page encore en brouillon produirait un lien cassé.
  * @template {{ href: string }} T
  * @param {T[]} liens
  * @returns {T[]}

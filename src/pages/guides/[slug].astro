@@ -63,9 +63,9 @@ const donnees = {
       inLanguage: 'fr-FR',
       datePublished: datePublication,
       dateModified: g.dateModified,
-      // Les guides d'octobre 2026 sont préparés par BrittAssist puis relus par
-      // Brittany Dreano : l'auteur déclaré est l'entreprise, la relectrice est
-      // portée par reviewedBy sur la page (BaseLayout).
+      // Les guides d'octobre 2026 sont préparés par BrittAssist avec un outil d'IA :
+      // l'auteur déclaré est l'entreprise. reviewedBy n'apparaît sur la page
+      // (BaseLayout) que si elle figure au registre de relecture.
       author: { '@id': nouvelleGeneration ? `${SITE_URL}/#business` : `${SITE_URL}/a-propos#brittany-dreano` },
       publisher: { '@id': `${SITE_URL}/#business` },
       about: { '@id': `${SITE_URL}/#business` },

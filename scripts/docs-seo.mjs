@@ -15,7 +15,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { bibliotheque, dossiers } from '../src/data/bibliotheque.ts';
 import { metiers } from '../src/data/metiers.ts';
-import { estPubliee } from '../src/data/publication.mjs';
+import { dateDeRelecture, datePublicationSansRelecture, estPubliee } from '../src/data/publication.mjs';
 import { auditer, SEUILS } from './seo-audit.mjs';
 
 const rapport = auditer('dist');
@@ -66,7 +66,7 @@ if (pages.length !== 100) console.warn(`Attention : ${pages.length} pages recens
 
 const GLOBAUX = new Set(['WebSite', 'ProfessionalService', 'LocalBusiness', 'Person', 'WebPage']);
 const schemas = (p) => p.schemas.filter((s) => !GLOBAUX.has(s)).join(', ') || '—';
-const statut = (chemin) => (estPubliee(chemin) ? 'oui' : 'après relecture');
+const statut = (chemin) => (!estPubliee(chemin) ? 'non : brouillon' : dateDeRelecture(chemin) ? 'oui, relue' : datePublicationSansRelecture(chemin) ? 'oui, non relue' : 'oui');
 const cellule = (t) => String(t).replace(/\|/g, '/').replace(/\n/g, ' ');
 const liste = (l, n) => (l.length <= n ? l.join(', ') : `${l.slice(0, n).join(', ')} … (+${l.length - n})`);
 const NATURES = { pilier: 'Pilier', hub: 'Hub', guide: 'Guide', methode: 'Méthode', comparatif: 'Comparatif', reference: 'Repère sourcé', situation: 'Situation', modele: 'Modèle', metier: 'Page métier' };
@@ -96,7 +96,7 @@ mkdirSync('docs/seo', { recursive: true });
       return Array.from({ length: Math.max(a.length, b.length) }, (_, i) => `| ${a[i]?.[0] ?? ''} | ${a[i]?.[1] ?? ''} | | ${b[i]?.[0] ?? ''} | ${b[i]?.[1] ?? ''} |`);
     })(),
     '',
-    'Colonne **Indexable** : « oui » = la page est publiée ; « après relecture » = la page est construite et contrôlée, mais ne sera générée en production et proposée à l’indexation qu’une fois inscrite au registre `src/data/relectures.mjs`.',
+    'Colonne **Indexable** : « oui » = la page est publiée ; « oui, non relue » = publiée sans relecture humaine préalable, sur décision du propriétaire (`src/data/publications.mjs`) ; « oui, relue » = inscrite au registre `src/data/relectures.mjs` ; « non : brouillon » = absente des deux registres, générée seulement en aperçu.',
     '',
     'Colonne **Liens entrants** : nombre de pages qui citent la page dans leur contenu (hors navigation et pied de page), et les premières d’entre elles.',
     '',
@@ -158,7 +158,7 @@ mkdirSync('docs/seo', { recursive: true });
     '',
     '## État mesuré',
     '',
-    `Mesures prises sur le build d’aperçu (${rapport.totaux.pages} pages, dont ${rapport.totaux.brouillons} en attente de relecture).`,
+    `Mesures prises sur le build (${rapport.totaux.pages} pages, dont ${rapport.totaux.brouillons} brouillon(s)).`,
     '',
     '| Indicateur | Valeur |',
     '| --- | --- |',
@@ -229,11 +229,13 @@ mkdirSync('docs/seo', { recursive: true });
     '| Contrôle | Résultat |',
     '| --- | --- |',
     `| Pages prévues | ${pages.length} |`,
-    `| Pages construites dans le build d’aperçu | ${construites.length} |`,
+    `| Pages construites | ${construites.length} |`,
     `| Pages sans aucun blocage | ${conformes.length} |`,
     `| Pages rejetées par le quality gate | ${construites.length - conformes.length} |`,
     `| Pages publiées et indexables aujourd’hui | ${pages.filter((p) => estPubliee(p.chemin)).length} |`,
-    `| Pages en attente de relecture humaine | ${pages.filter((p) => !estPubliee(p.chemin)).length} |`,
+    `| Dont publiées sans relecture humaine préalable | ${pages.filter((p) => estPubliee(p.chemin) && datePublicationSansRelecture(p.chemin) && !dateDeRelecture(p.chemin)).length} |`,
+    `| Dont relues par une personne | ${pages.filter((p) => dateDeRelecture(p.chemin)).length} |`,
+    `| Brouillons, non publiés | ${pages.filter((p) => !estPubliee(p.chemin)).length} |`,
     `| Longueur du contenu principal | min ${mots[0]} · médiane ${mots[Math.floor(mots.length / 2)]} · max ${mots.at(-1)} mots |`,
     `| Paires de pages à plus de ${Math.round(SEUILS.similariteAvertissement * 100)} % de contenu commun | ${rapport.similarites.length} |`,
     '',

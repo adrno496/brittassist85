@@ -10,12 +10,12 @@ Site statique Astro 5, déployé sur Vercel. Aucun backend, aucune base de donn�
 npm install
 npm run dev            # développement, http://localhost:4321
 npm run build          # build de production : seules les pages relues sont générées
-npm run build:apercu   # build d’aperçu : toutes les pages, brouillons en noindex
+npm run build:apercu   # build d’aperçu : y compris les brouillons (aucun à ce jour), en noindex
 npm run preview        # sert le dernier build
 npm run servir         # sert dist/ en appliquant vercel.json (en-têtes, redirections, 404)
 
 npm run check          # contrôle de types (astro check)
-npm test               # tests du registre de relecture et de l’audit
+npm test               # tests des registres de publication et de relecture, et de l’audit
 npm run qa             # gate éditorial + build + audit SEO strict
 npm run qa:apercu      # la même chose sur le build d’aperçu
 npm run qa:navigateur  # contrôles en navigateur réel (voir plus bas)
@@ -35,6 +35,7 @@ src/
 │   ├── bibliotheque.ts           réunit tous les guides ; dossiers, piliers, pages voisines
 │   ├── metiers.ts                pages métier — metiers-publies.ts filtre celles du build
 │   ├── prestations.ts, zones.ts  pages de prestation et de zone
+│   ├── publications.mjs          registre des pages mises en ligne sans relecture préalable
 │   ├── relectures.mjs            registre des pages relues (voir ci-dessous)
 │   ├── publication.mjs           qui est publié, qui est brouillon
 │   ├── mode.mjs                  lecture de BROUILLONS=1, et rien d’autre
@@ -46,28 +47,37 @@ scripts/                          contrôles de qualité (voir ci-dessous)
 docs/                             audits, stratégie SEO, rapports
 ```
 
-## Publier une page : le registre de relecture
+## Publier une page : deux registres
 
-Les guides et pages métier ajoutés en octobre 2026 ont été préparés avec l’aide d’un outil d’IA. Ils ne sont **pas publiés** tant qu’une personne ne les a pas relus : Google le demande, et ces pages parlent au nom de Brittany Dreano.
+Les guides et pages métier ajoutés en octobre 2026 ont été préparés avec l’aide d’un outil d’IA. Deux fichiers décident de leur sort, et ils ne disent pas la même chose.
 
-Tant qu’une page n’est pas inscrite dans `src/data/relectures.mjs` :
+| Registre | Ce qu’il affirme | Effet |
+| --- | --- | --- |
+| `src/data/publications.mjs` | « Cette page est en ligne » | La page est générée, indexable et au sitemap. Aucune mention de relecture |
+| `src/data/relectures.mjs` | « Cette page a été relue par une personne, à cette date » | Affiche « Relu par Brittany Dreano le … », ajoute `reviewedBy` aux données structurées, met le `<lastmod>` à cette date |
 
-- `npm run build` ne la génère pas — elle n’existe pas en ligne ;
+**État au 3 octobre 2026 :** les 99 pages nouvelles sont inscrites dans `publications.mjs`, sur décision du propriétaire, sans relecture préalable. `relectures.mjs` est vide : aucune page ne se déclare relue.
+
+Une page absente des deux registres reste un brouillon :
+
+- `npm run build` ne la génère pas ;
 - `npm run build:apercu` la génère en `noindex`, avec un bandeau « brouillon », hors sitemap.
 
-Pour publier une page :
+C’est le sort de toute page ajoutée par la suite, tant qu’elle n’est inscrite nulle part.
 
-1. `npm run build:apercu && npm run preview`, puis lire la page en entier.
+Relire une page :
+
+1. La lire en entier, ouvrir chaque lien de sa rubrique « Références ».
 2. Corriger ce qui doit l’être dans son fichier de `src/data/dossiers/` (ou `metiers.ts`).
 3. Ajouter une ligne dans `src/data/relectures.mjs` :
    ```js
    '/guides/mentions-obligatoires-facture': '2026-10-06',
    ```
-4. `npm run qa` : si le contrôle passe, la page est prête à être déployée.
+4. `npm run qa`.
 
-La date inscrite devient la date de publication, le `<lastmod>` du sitemap, et s’affiche sur la page (« Relu par Brittany Dreano le … »). N’y inscrire qu’une page réellement relue.
+N’inscrire dans `relectures.mjs` qu’une page réellement relue : c’est une déclaration publique faite au nom de Brittany Dreano. Pour retirer une page de l’index, supprimer sa ligne de `publications.mjs`.
 
-Publier un pilier (`/guides/<slug-du-dossier>`) fait apparaître le dossier dans l’index des guides et dans le pied de page. La page `/methode-editoriale` passe elle aussi par le registre.
+Publier un pilier (`/guides/<slug-du-dossier>`) fait apparaître le dossier dans l’index des guides et dans le pied de page. La page `/methode-editoriale` passe elle aussi par les registres.
 
 ## Contrôles de qualité
 

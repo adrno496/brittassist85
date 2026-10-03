@@ -621,9 +621,9 @@ export const metiers: Metier[] = [
     cloture: 'Le dimanche soir n’est pas un créneau administratif.',
   },
   // ── Pages ajoutées en octobre 2026 ────────────────────────────────────────
-  // Elles passent par le registre de relecture (relectures.mjs) : tant qu'elles
-  // n'y figurent pas, elles ne sont générées qu'en aperçu. Les réponses à la
-  // première personne engagent Brittany Dreano ; elles doivent être relues par elle.
+  // Publiées le 3 octobre 2026 sans relecture préalable, sur décision du
+  // propriétaire (publications.mjs). Les réponses à la première personne engagent
+  // Brittany Dreano : elles restent à relire par elle (relectures.mjs).
   {
     slug: 'organismes-de-formation',
     secteur: 'Formation professionnelle',

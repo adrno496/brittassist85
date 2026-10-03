@@ -55,6 +55,20 @@ Pages de fond, sans argumentaire commercial. La réponse directe figure en tête
 - [Modèle de brief pour déléguer](https://www.brittassist.fr/guides/modele-brief-assistante-externalisee) : Canevas réutilisable pour préciser résultat, échéance, contexte, autonomie et retour attendu.
 - [Suivre les demandes déléguées](https://www.brittassist.fr/guides/suivi-demandes-assistante-externalisee) : Tableau minimal, statuts et prochaines actions pour piloter sans vérifier chaque geste.
 
+### Guides par dossier
+
+Chaque dossier réunit un guide d’ensemble et des pages pratiques : méthodes, comparatifs, repères sourcés, modèles.
+
+- [Dossier « Externaliser et déléguer »](https://www.brittassist.fr/guides/externaliser-son-assistanat) : Décider, choisir, contractualiser et faire fonctionner une assistance externalisée.
+- [Dossier « Administratif d’entreprise »](https://www.brittassist.fr/guides/organiser-l-administratif-de-son-entreprise) : Classer, nommer, conserver, suivre les échéances et préparer les pièces.
+- [Dossier « Devis, factures et relances »](https://www.brittassist.fr/guides/devis-factures-relances) : Du devis envoyé à la facture encaissée : règles, circuit et relances.
+- [Dossier « Agenda, e-mails et réunions »](https://www.brittassist.fr/guides/agenda-emails-reunions) : Tenir son temps : messagerie, rendez-vous, réunions et absences.
+- [Dossier « Déplacements et événements »](https://www.brittassist.fr/guides/deplacements-et-evenements-professionnels) : Préparer un déplacement, un séminaire ou une réception sans rien oublier.
+- [Dossier « Confidentialité, accès et outils »](https://www.brittassist.fr/guides/confidentialite-acces-et-outils) : Partager des accès, protéger des données et choisir ses outils de travail.
+- [Dossier « Situations de dirigeant »](https://www.brittassist.fr/guides/situations-de-dirigeant) : Retard accumulé, absence, reprise, saison : par où commencer selon votre cas.
+- [Dossier « Modèles et checklists »](https://www.brittassist.fr/guides/modeles-et-checklists) : Des trames à reprendre : tableaux de suivi, fiches, listes de contrôle.
+- [Méthode éditoriale](https://www.brittassist.fr/methode-editoriale) : qui prépare les guides, avec quels outils et quelles sources, et ce que signifie la mention « Relu par Brittany Dreano ».
+
 ## Pages par métier (pour qui)
 La même prise en charge, décrite avec le vocabulaire, les échéances et les frictions de chaque métier.
 - [Toutes les pages par métier](https://www.brittassist.fr/assistante) : ce qui change d’un métier à l’autre, ce qui ne change pas, et ce qui reste hors périmètre partout.
@@ -66,6 +80,12 @@ La même prise en charge, décrite avec le vocabulaire, les échéances et les f
 - [E-commerçants et marques](https://www.brittassist.fr/assistante/e-commerce) : Service client, litiges transporteurs, fournisseurs, retours et pics saisonniers : déléguer l’exploitation d’une boutique en ligne. Anglais inclus.
 - [Dirigeants de plusieurs sociétés](https://www.brittassist.fr/assistante/dirigeants-multi-societes) : Plusieurs structures, plusieurs échéances, plusieurs cabinets : centraliser le suivi administratif et juridique courant d’un groupe de sociétés.
 - [Professionnels de santé libéraux](https://www.brittassist.fr/assistante/professionnels-sante) : Cotisations, contrats de remplacement, fournisseurs, DPC, SCM et SELARL : la gestion administrative d’un cabinet libéral. Hors secrétariat médical.
+- [Organismes de formation et formateurs](https://www.brittassist.fr/assistante/organismes-de-formation) : Conventions, convocations, émargements, attestations, dossiers de financement : déléguer l’administratif d’un organisme de formation. Dès 700 € / mois.
+- [Architectes et maîtres d’œuvre](https://www.brittassist.fr/assistante/architectes-maitres-d-oeuvre) : Comptes rendus de chantier, dossiers de consultation, situations, attestations des entreprises : déléguer l’administratif d’une agence. Dès 700 € / mois.
+- [Hôteliers et restaurateurs](https://www.brittassist.fr/assistante/hotellerie-restauration) : Fournisseurs, dossiers du personnel, devis de groupes, échéances et contrôles : déléguer l’administratif d’un hôtel ou d’un restaurant. Dès 700 € / mois.
+- [Fondateurs de start-up](https://www.brittassist.fr/assistante/fondateurs-de-startup) : Agenda investisseurs, comités, recrutements, déplacements, outils : une executive assistant externalisée pour fondateur, sans créer le poste. Dès 700 € / mois.
+- [Agences et studios créatifs](https://www.brittassist.fr/assistante/agences-et-studios) : Devis, bons de commande, facturation à l’avancement, indépendants, relances : déléguer l’administratif d’une agence ou d’un studio. Dès 700 € / mois.
+- [Organisateurs d’événements et traiteurs](https://www.brittassist.fr/assistante/organisateurs-d-evenements) : Devis, acomptes, rétroplannings, prestataires, feuilles de route : déléguer l’administratif d’une activité événementielle. Dès 700 € / mois.
 
 ## Zones d’intervention
 BrittAssist est basée à La Roche-sur-Yon (Vendée) et travaille à distance partout en France et à l’international. Il n’existe aucune autre implantation physique.
