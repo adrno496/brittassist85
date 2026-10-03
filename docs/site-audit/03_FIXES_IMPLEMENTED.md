@@ -2,13 +2,14 @@
 
 Date : 3 octobre 2026. Point de départ : commit `df48fb4`, branche `main`.
 
-**Rien n'a été déployé.** Les modifications — 28 fichiers modifiés et 77 fichiers nouveaux sous `docs/`, `scripts/`, `src/` et `public/` — sont commitées sur la branche `seo/audit-sentinel-100-pages`, poussée le 3 octobre au soir sur le dépôt `brittassist-refonte`. `main` n'est pas modifié : il porte une refonte « V5 » postérieure au point de départ de ce chantier (voir le rapport final).
+**Rien n'a été déployé.** Les modifications — 28 fichiers modifiés et 77 fichiers nouveaux sous `docs/`, `scripts/`, `src/` et `public/` — sont commitées et poussées le 3 octobre au soir sur le dépôt `brittassist-refonte`. Deux branches : `seo/audit-sentinel-100-pages`, sur la base d'avant la refonte « V5 », et `seo/audit-sentinel-100-pages-v5`, qui réunit la V5 et ce chantier et qui est fusionnée dans `main` (voir le rapport final et la section 9). Le site en ligne n'est pas alimenté par ce dépôt.
 
 ## Retour arrière
 
 ```bash
-# Revenir à l'état d'avant le chantier
+# Revenir à l'état d'avant le chantier, en local
 git switch main                   # le main local est resté sur df48fb4
+# Sur le dépôt distant, la V5 seule est le commit 708a2e4 ; l'état d'avant V5 est la branche backup-pre-v5-20260929
 npm install                       # rétablit node_modules selon son package-lock.json
 
 # Annuler un seul fichier sur la branche
@@ -62,7 +63,7 @@ Pour les prochains commits : `outils/` contient près de 200 Mo d'outils et de s
 | `scripts/seo-audit.mjs` | Audit du HTML construit : 40 règles environ, bloquantes ou d'avertissement |
 | `scripts/quality-gate.mjs` | Branche l'audit sur le build : un blocage l'interrompt |
 | `scripts/content-gate.mjs` | Contrôle des fiches avant le build |
-| `scripts/browser-check.mjs` | Navigateur réel, cinq écrans, axe-core, parcours clavier, thème clair |
+| `scripts/browser-check.mjs` | Navigateur réel, cinq écrans, axe-core, parcours clavier |
 | `scripts/check-sources.mjs` | Liens externes |
 | `scripts/serve-dist.mjs` | Sert `dist/` avec les règles de `vercel.json` |
 | `scripts/images.mjs` | Variantes WebP |
@@ -131,3 +132,20 @@ Dans les descriptions de prestation, « Pour dirigeants et entrepreneurs, à par
 | Images non utilisées dans `public/images/` | Non supprimées : la décision appartient au propriétaire |
 | `.gitignore` | `outils/` et `.plugcode/` laissés tels quels |
 | Enregistrements DNS (DMARC, CAA) | Hors du dépôt |
+
+## 9. Refonte V5 : thème clair unique (3 octobre au soir)
+
+Sur la branche `seo/audit-sentinel-100-pages-v5`. Détail et mesures : [rapport final](../final/FINAL_REPORT.md).
+
+| Changement | Fichiers | Vérification |
+| --- | --- | --- |
+| Bandes sombres des pages intérieures passées au clair, par les tokens | `src/styles/refonte-v5.css` | axe-core : 0 violation sur 151 pages (47 pages en échec avant) |
+| Accent adapté au fond : plus foncé sur rose, plus clair sur sombre | `src/styles/refonte-v5.css` | idem |
+| Boutons et lien illisibles sur les fonds sombres de l'accueil | `src/styles/refonte-v5.css` | Captures |
+| Débordement horizontal de `/` et `/a-propos` | `src/styles/refonte-v5.css` | 0 débordement sur 755 chargements |
+| Ancien sélecteur de thème retiré | `src/styles/global.css`, `astro.config.mjs`, `scripts/browser-check.mjs` ; `src/data/theme-init.mjs` supprimé | Build et audit : 0 blocage |
+| Photos de l'accueil en WebP | `src/pages/index.astro`, `scripts/images.mjs` | Photo principale : 168 Ko → 17 à 36 Ko |
+
+La correction n° 3 (empreinte CSP du script de thème) et la correction n° 4 (or assombri sur fond rose) sont sans objet sur cette branche : le script et l'or n'existent plus.
+
+Fichiers supprimés : `src/data/theme-init.mjs` et six variantes WebP de l'ancien accueil (`tanymac-*`, `tany-*`, `portrait-brittany-480/760`), que plus aucune page n'appelait. Les JPEG d'origine sont conservés.

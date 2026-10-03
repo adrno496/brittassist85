@@ -8,21 +8,40 @@ Site : BrittAssist (`https://www.brittassist.fr`) · Dépôt : `/Users/dreano/Do
 
 1. **Le site audité est BrittAssist, pas AXDIA.** Le cahier des charges est intitulé « AXDIA », mais il désigne « le site du workspace courant », qui est celui de BrittAssist. Les exemples (audit, sécurité, outil) ont été transposés à son activité réelle.
 2. **Les 100 pages sont écrites et passent tous les contrôles automatiques, mais 98 ne sont pas indexables aujourd'hui.** Elles attendent une relecture humaine, que Google exige pour tout contenu préparé avec une IA. C'est un choix délibéré, expliqué plus bas, et réversible page par page.
-3. **Rien n'est déployé.** Tout a été validé en local. Le comportement chez l'hébergeur n'est pas testé. Le travail est commité et poussé sur une branche, pas sur `main` (voir la mise à jour ci-dessous).
+3. **Le site en ligne n'a pas changé.** Tout a été validé en local ; le comportement chez l'hébergeur n'est pas testé. Le travail est poussé sur le dépôt `brittassist-refonte`, dans `main`, le 3 octobre au soir. Ce dépôt n'alimente pas `www.brittassist.fr` (voir la mise à jour ci-dessous).
 4. **Une vulnérabilité critique de dépendance subsiste** (Astro), dont la correction demande une montée de version majeure.
 
 Ce qui est acquis : aucune régression constatée, zéro défaut bloquant sur 151 pages, zéro violation d'accessibilité, une performance de laboratoire de 99 à 100, deux erreurs 404 corrigées.
 
-## Mise à jour du 3 octobre au soir : le dépôt distant avait avancé
+## Mise à jour du 3 octobre au soir : refonte V5, thème clair unique
 
-Constaté au moment de pousser, et non pendant l'audit. **Cela limite la portée de tout ce qui suit.**
+**Les sections plus bas décrivent l'audit mené sur l'ancien design. Pour le site tel qu'il est sur la branche `seo/audit-sentinel-100-pages-v5`, ce sont les mesures de cette mise à jour qui font foi.**
 
-- La branche `main` du dépôt `brittassist-refonte` porte cinq commits du 29 septembre 2026 que le dépôt local n'avait pas : une refonte visuelle « V5 » (navigation, accueil reconstruit, feuille `refonte-v5.css`, thème clair unique, sélecteur de thème supprimé). Le dépôt local n'avait pas été synchronisé, et je n'ai pas interrogé le dépôt distant avant de commencer.
-- **L'audit, les corrections et toutes les validations de ce rapport portent sur le commit `df48fb4`, c'est-à-dire sur le site d'avant cette refonte.**
-- Ce travail est poussé sur la branche `seo/audit-sentinel-100-pages`. `main` n'a pas été modifié.
-- Une fusion avec la V5 est poussée à part, sur `seo/audit-sentinel-100-pages-v5`. Deux fichiers étaient en conflit, `BaseLayout.astro` et `index.astro` ; ils sont résolus en faveur de la V5. De mon travail sur l'accueil, il ne reste que la description raccourcie.
+### Ce qui s'est passé
 
-Mesures sur la fusion, le 3 octobre 2026 :
+- Au moment de pousser, la branche `main` du dépôt `brittassist-refonte` portait cinq commits du 29 septembre 2026 absents du dépôt local : une refonte visuelle « V5 » (navigation, accueil reconstruit, feuille `refonte-v5.css`, thème clair, sélecteur de thème supprimé). Je n'avais pas interrogé le dépôt distant avant de commencer : l'audit et les validations du reste de ce rapport portent sur le commit `df48fb4`, antérieur à cette refonte.
+- La V5 seule, soumise au contrôle en navigateur, présentait un contraste insuffisant sur 45 de ses 49 pages et un débordement horizontal sur `/` et `/a-propos`. Cause : l'accueil avait été redessiné en clair, mais les pages intérieures gardaient leurs bandes sombres, avec un accent et des chapôs prévus pour le clair.
+- Décision du propriétaire, le 3 octobre : **garder le visuel de la V5, en clair, sur toutes les pages.**
+
+### Ce qui a été fait
+
+Sur la branche `seo/audit-sentinel-100-pages-v5`, qui réunit la V5 et le travail d'audit :
+
+| Changement | Détail | Fichiers |
+| --- | --- | --- |
+| Toutes les pages en clair | Les bandes sombres des pages intérieures deviennent blanc chaud et rose pâle. Le changement passe par les tokens de couleur, pas par les gabarits : aucune page n'a été réécrite | `refonte-v5.css` |
+| Le sombre, réservé | Appel final, pied de page, bandeau de cookies, offre principale, bulle de message de `/private-office`, et les deux sections sombres de l'accueil (périmètre, appel final) | `refonte-v5.css` |
+| Contrastes | L'accent fonce d'un ton sur les fonds rosés et s'éclaircit sur les fonds sombres ; les chapôs ne sont plus semi-transparents | `refonte-v5.css` |
+| Trois défauts de la V5 | Sur l'accueil, trois boutons sombres sur fond sombre (offre principale, périmètre, appel final) et le lien « Préparer mon besoin », illisibles ; débordement horizontal du cadre des portraits | `refonte-v5.css` |
+| Offres | Même parti que sur l'accueil : cartes claires, offre principale en aubergine | `refonte-v5.css` |
+| Formulaires | Champs clairs, bordures et cases à cocher lisibles sur fond rosé | `refonte-v5.css` |
+| Restes de l'ancien or | Remplacés par l'accent de la V5 | `refonte-v5.css`, `global.css` |
+| Ancien sélecteur de thème | Retiré : règles CSS mortes (environ 75 lignes), script et son empreinte CSP, parcours de test correspondant | `global.css`, `astro.config.mjs`, `theme-init.mjs` (supprimé), `browser-check.mjs` |
+| Photos de l'accueil | Servies en WebP, JPEG en repli : 168 Ko → 17 à 36 Ko pour la photo principale. Six variantes produites pour l'ancien accueil, plus utilisées, sont supprimées | `index.astro`, `images.mjs`, `public/images/` |
+
+Ce qui n'a pas été touché : la composition de l'accueil V5, la navigation, la palette, les textes.
+
+### Mesures, le 3 octobre 2026
 
 | Contrôle | Résultat | Statut |
 | --- | --- | --- |
@@ -31,21 +50,29 @@ Mesures sur la fusion, le 3 octobre 2026 :
 | Contrôle éditorial | 0 blocage | PASS |
 | Build de production | 52 pages, 0 blocage, 2 avertissements attendus | PASS |
 | Build d'aperçu | 151 pages, 0 blocage | PASS |
-| Navigateur, 260 chargements : erreurs console, violations CSP | 0 | PASS |
-| Contraste (axe-core) | insuffisant sur 47 pages sur 52 | **FAIL** |
-| Débordement horizontal | `/` et `/a-propos` : 5 px à 390 px de large, 19 px à 768 px | **FAIL** |
-| Parcours « thème clair conservé » | sans objet : la V5 n'a plus de sélecteur de thème | NON APPLICABLE |
-| Navigateur sur le build d'aperçu, Lighthouse, re-audit SENTINEL | — | NON TESTÉ |
+| Navigateur, 151 pages × 5 largeurs (755 chargements) | 0 erreur console, 0 violation CSP, 0 débordement, 0 violation axe-core | PASS |
+| Parcours : lien d'évitement, menu mobile, bandeau de consentement | 3 sur 3 | PASS |
+| Lighthouse en local, accueil | 100 ; premier affichage 1,0 s ; plus grand élément 1,6 s ; 177 Kio | PASS (laboratoire) |
+| Lighthouse en local, guide et prestation | 100 et 100 ; 127 et 117 Kio | PASS (laboratoire) |
+| Relecture visuelle | Par captures : 15 pages à 1 366 px de large, 2 à 390 px ; les 136 autres pages partagent les mêmes gabarits mais n'ont pas été regardées une à une | PARTIAL |
+| États de survol et de focus | Non contrôlés par axe-core ; non relus un par un | NON TESTÉ |
+| Re-audit SENTINEL sur cette branche | — | NON TESTÉ |
+| Rendu chez l'hébergeur | — | NON TESTÉ |
 
-Les deux échecs viennent de la V5 elle-même, pas de la fusion : la branche `main` distante, construite seule et soumise au même contrôle, présente le même défaut de contraste sur 45 de ses 49 pages et les mêmes débordements. Les éléments les plus touchés sont les chapôs (`.lede`) et les sur-titres (`.eyebrow`).
+Avant correction, sur la fusion brute : contraste insuffisant sur 47 pages sur 52, débordement sur 2 pages.
 
-Ce que la V5 rend caduc dans ce rapport :
+Les mesures Lighthouse sont faites sur le même serveur local que celles de l'ancien design (accueil : 99, 193 Kio). Ce sont des mesures de laboratoire, pas des données d'utilisateurs.
 
-- « zéro violation d'accessibilité » et la correction de contraste sur fond rose valent pour l'ancien design seulement ;
-- les mesures Lighthouse de l'accueil : l'accueil V5 charge deux photos JPEG de 172 Ko chacune, et six des dix variantes WebP produites ne sont plus utilisées ;
-- `src/data/theme-init.mjs` et son empreinte dans `astro.config.mjs` ne servent plus à rien sous la V5 ; ils sont laissés en place tant que le choix entre les deux designs n'est pas arrêté.
+### Où en est le dépôt, où en est le site en ligne
 
-Décision qui reste à prendre : garder la V5, et corriger alors ses contrastes avant de fusionner dans `main`, ou revenir au design audité.
+- La branche de travail `seo/audit-sentinel-100-pages-v5` est poussée et fusionnée en avance rapide dans `main` du dépôt `brittassist-refonte`, à la demande du propriétaire, le 3 octobre 2026.
+- **Le site en ligne n'en est pas modifié.** Vérifié le même soir : `www.brittassist.fr` sert encore l'ancien accueil, redirige `/tarifs` vers l'accueil et répond 404 sur `/assistante`. Ce contenu correspond au commit `3912e0e`, celui de la branche `main` du dépôt `bdassisttest`. Le `main` de `brittassist-refonte` portait la V5 depuis le 29 septembre sans qu'elle soit en ligne : j'en déduis que ce dépôt n'alimente pas la production. C'est une déduction, pas une vérification du réglage chez l'hébergeur.
+- Mettre ce travail en ligne reste donc une action à part, non faite.
+
+### Ce qui reste à décider
+
+- **Relire le rendu à l'œil** avant de fusionner dans `main` : un contrôle automatique vérifie le contraste, pas le goût.
+- Les titres de liste en capitales espacées (`.universe__name`), hérités de la V5, tiennent mal sur l'index des guides, où les titres sont longs. Laissé tel quel : c'est un choix de la V5.
 
 ---
 
@@ -104,7 +131,7 @@ Limites de l'outil constatées : son audit SEO n'explore qu'une page et annonce 
 
 ## Réellement modifié
 
-28 fichiers modifiés, 77 fichiers nouveaux (dont 23 documents, 13 fichiers de polices et 10 images). Commité sur la branche `seo/audit-sentinel-100-pages` le 3 octobre au soir ; `main` n'est pas modifié. Détail et retour arrière : [03_FIXES_IMPLEMENTED.md](../site-audit/03_FIXES_IMPLEMENTED.md).
+28 fichiers modifiés, 77 fichiers nouveaux (dont 23 documents, 13 fichiers de polices et 10 images). Commité le 3 octobre au soir ; la version fusionnée avec la V5 est dans `main` du dépôt `brittassist-refonte`. Détail et retour arrière : [03_FIXES_IMPLEMENTED.md](../site-audit/03_FIXES_IMPLEMENTED.md).
 
 | Domaine | Changements |
 | --- | --- |
