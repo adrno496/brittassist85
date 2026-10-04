@@ -134,6 +134,23 @@ test('sans JavaScript : confirmation HTML et destination interne fixe', async (t
   assert.doesNotMatch(res.body, /untrusted/);
 });
 
+for (const [message, cause] of [
+  ['Key not found', 'cle_api_refusee'],
+  ['We have detected you are using an unrecognised IP address.', 'adresse_ip_non_autorisee'],
+]) {
+  test(`diagnostic serveur : ${cause} sans exposer la réponse brute`, async (t) => {
+    const logs = [];
+    t.mock.method(console, 'error', (...args) => logs.push(args.join(' ')));
+    const { res } = await invoke(t, {
+      fetcher: () => ({ ok: false, status: 401, json: async () => ({ code: 'unauthorized', message }) }),
+    });
+    assert.equal(res.code, 502);
+    assert.match(logs[0], new RegExp(cause));
+    assert.ok(!logs[0].includes(message));
+    assert.ok(!JSON.stringify(res.body).includes(cause));
+  });
+}
+
 test('sans JavaScript : l’échec est affiché', async (t) => {
   const { res } = await invoke(t, { headers: { accept: 'text/html' }, configured: false });
   assert.equal(res.code, 503);

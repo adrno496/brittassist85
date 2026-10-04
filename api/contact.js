@@ -114,8 +114,18 @@ export default async function handler(req, res) {
       }),
     });
     if (!response.ok) {
-      // Ne journaliser ni les données du visiteur ni la clé API.
-      console.error('Brevo : envoi refusé, statut', response.status);
+      // Classifier le refus sans journaliser la réponse brute, la clé ni les données.
+      let cause = 'refus_du_service';
+      try {
+        const details = await response.json();
+        const message = String(details.message || '').toLowerCase();
+        if (response.status === 401) {
+          cause = /ip address|ip whitelist|unauthori[sz]ed ip/.test(message)
+            ? 'adresse_ip_non_autorisee'
+            : /key|api-key/.test(message) ? 'cle_api_refusee' : 'authentification_refusee';
+        }
+      } catch { /* le statut reste disponible si le corps n’est pas JSON */ }
+      console.error('Brevo : envoi refusé, statut', response.status, 'cause', cause);
       return reply(req, res, 502, page, false);
     }
     return reply(req, res, 200, page, true, 'Message envoyé.');
