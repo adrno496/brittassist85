@@ -1,4 +1,5 @@
 ---
+import { offres, offreStructuree } from '../../data/offres';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Button from '../../components/Button.astro';
 import Fil from '../../components/Fil.astro';
@@ -59,12 +60,7 @@ const jsonLd = {
         '@type': 'ServiceChannel',
         serviceUrl: `${siteUrl}/contact`,
       },
-      offers: {
-        '@type': 'Offer',
-        price: '700',
-        priceCurrency: 'EUR',
-        description: "Executive Private Office, à partir de 700 € par mois.",
-      },
+      offers: offres.map(offreStructuree),
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: `Ce qui est pris en charge pour : ${m.nom}`,
@@ -273,7 +269,7 @@ const jsonLd = {
         <Button href="/contact" variant="ivoire">Échanger avec Brittany</Button>
       </div>
       <p class="cta-final__fine">
-        Accompagnement à partir de 700 € / mois &nbsp;•&nbsp; Sur mesure
+        Accompagnement à partir de 590 € / mois &nbsp;•&nbsp; Sur mesure
         &nbsp;•&nbsp; Confidentiel
       </p>
     </div>

@@ -5,6 +5,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { lastmodPour, publicationPour } from '../data/dates.mjs';
 import { jsonLd } from '../lib/seo';
+import { offres, offreStructuree } from '../data/offres';
 
 interface Props {
   title: string;
@@ -146,33 +147,7 @@ const published = datePublished ?? publicationPour(cleanPath);
           hasOfferCatalog: {
             '@type': 'OfferCatalog',
             name: 'Accompagnements BrittAssist',
-            itemListElement: [
-              {
-                '@type': 'Offer',
-                name: 'Executive Private Office',
-                description:
-                  "Prise en charge continue du quotidien professionnel et personnel d’un dirigeant : administratif, agenda, déplacements, réservations, coordination, suivi prestataires.",
-                price: '700',
-                priceCurrency: 'EUR',
-                eligibleDuration: {
-                  '@type': 'QuantitativeValue',
-                  value: 1,
-                  unitCode: 'MON',
-                },
-              },
-              {
-                '@type': 'Offer',
-                name: 'Private Office sur mesure',
-                description:
-                  "Disponibilité renforcée, plusieurs entreprises, forte volumétrie, déplacements fréquents, coordination quotidienne.",
-              },
-              {
-                '@type': 'Offer',
-                name: 'Mission ponctuelle',
-                description:
-                  "Voyage, événement, recherche ou organisation spécifique, sans récurrence.",
-              },
-            ],
+            itemListElement: offres.map(offreStructuree),
           },
         },
         {

@@ -1,4 +1,5 @@
 ---
+import { offres } from '../data/offres';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const title = "Conditions Générales de Vente · BrittAssist";
@@ -70,15 +71,9 @@ const description =
         micro-entreprise).
       </p>
       <ul>
-        <li>
-          <strong>Executive Private Office</strong> : forfait mensuel à partir
-          de <strong>700 €</strong>, correspondant à un périmètre de prise en
-          charge défini dans la proposition personnalisée.
-        </li>
-        <li>
-          <strong>Private Office sur mesure</strong> : forfait mensuel établi
-          sur devis, en fonction du périmètre retenu.
-        </li>
+        {offres.map((offre) => (
+          <li><strong>{offre.nom}</strong> : {offre.prix}, pour un périmètre de prise en charge défini dans la proposition personnalisée.</li>
+        ))}
         <li>
           <strong>Mission ponctuelle</strong> : montant forfaitaire établi sur
           devis.
@@ -137,7 +132,7 @@ const description =
         journée. Les demandes reçues en dehors de ces plages sont prises en
         charge le jour ouvré suivant. Les modalités particulières
         (disponibilité renforcée, prise en charge en soirée ou le week-end,
-        déplacements fréquents) relèvent du Private Office sur mesure et sont
+        déplacements fréquents) relèvent du Private Office et sont
         définies dans la proposition.
       </p>
       <p>

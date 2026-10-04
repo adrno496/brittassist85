@@ -1,5 +1,5 @@
 /**
- * Pages de prestation — une par ligne du périmètre de l'Executive Private Office.
+ * Pages de prestation — une par domaine des accompagnements BrittAssist.
  *
  * Ces pages visent des recherches longue traîne (« déléguer la facturation »,
  * « faire organiser mes déplacements professionnels »…). Chacune doit apporter
@@ -37,7 +37,7 @@ export const prestations: Prestation[] = [
     perimetre: 'Administratif',
     title: 'Déléguer la gestion administrative de son entreprise · BrittAssist',
     description:
-      "Confier l’administratif de son entreprise à un Private Office externalisé : documents, échéances, classement, préparation comptable. Dès 700 € / mois.",
+      "Confier l’administratif de son entreprise à un Private Office externalisé : documents, échéances, classement, préparation comptable. Dès 590 € / mois.",
     h1: 'Déléguer la gestion administrative de votre entreprise.',
     lede:
       "L'administratif ne fait jamais tomber une entreprise d'un coup. Il l'érode : une pièce introuvable un mardi, une échéance ratée un mois plus tard, une heure perdue chaque semaine à chercher ce qui aurait dû être classé.",
@@ -89,7 +89,7 @@ export const prestations: Prestation[] = [
     perimetre: 'Facturation',
     title: 'Déléguer sa facturation et ses relances · BrittAssist',
     description:
-      "Confier l’émission des factures, le suivi des encaissements et les relances d’impayés à un Private Office externalisé. Pour dirigeants, dès 700 € / mois.",
+      "Confier l’émission des factures, le suivi des encaissements et les relances d’impayés à un Private Office externalisé. Pour dirigeants, dès 590 € / mois.",
     h1: 'Confier votre facturation et vos relances.',
     lede:
       "Facturer est le geste le plus rentable de votre semaine, et c'est presque toujours celui qu'on repousse. Relancer un client en retard l'est encore plus, et c'est celui qu'on repousse le plus longtemps.",
@@ -141,7 +141,7 @@ export const prestations: Prestation[] = [
     perimetre: 'Contrats',
     title: 'Déléguer la préparation et le suivi de ses contrats · BrittAssist',
     description:
-      "Préparation, envoi, suivi des signatures et des échéances contractuelles par un Private Office externalisé. Pour dirigeants, dès 700 € / mois.",
+      "Préparation, envoi, suivi des signatures et des échéances contractuelles par un Private Office externalisé. Pour dirigeants, dès 590 € / mois.",
     h1: 'Préparer, envoyer et suivre vos contrats.',
     lede:
       "Un contrat non signé est un accord qui n'existe pas. Un contrat signé mais jamais relu est un engagement qu'on découvre au mauvais moment.",
@@ -193,7 +193,7 @@ export const prestations: Prestation[] = [
     perimetre: 'Coordination',
     title: 'Déléguer la coordination de ses interlocuteurs · BrittAssist',
     description:
-      "Faire coordonner ses interlocuteurs, ses réunions et ses suites à donner par un Private Office externalisé. Pour dirigeants, dès 700 € / mois.",
+      "Faire coordonner ses interlocuteurs, ses réunions et ses suites à donner par un Private Office externalisé. Pour dirigeants, dès 590 € / mois.",
     h1: 'Coordonner vos interlocuteurs sans y passer vos journées.',
     lede:
       "Réunir quatre personnes autour d'une décision demande souvent plus de temps que la décision elle-même. C'est l'un des coûts les plus invisibles du métier de dirigeant.",
@@ -245,7 +245,7 @@ export const prestations: Prestation[] = [
     perimetre: 'Agenda',
     title: 'Déléguer la gestion de son agenda · BrittAssist',
     description:
-      "Confier la tenue de son agenda, ses rendez-vous et ses confirmations à un Private Office externalisé. Pour dirigeants et entrepreneurs, à partir de 700 € / mois.",
+      "Confier la tenue de son agenda, ses rendez-vous et ses confirmations à un Private Office externalisé. Pour dirigeants et entrepreneurs, à partir de 590 € / mois.",
     h1: 'Confier la tenue de votre agenda.',
     lede:
       "Un agenda mal tenu ne se voit pas dans les cases. Il se voit dans les trajets impossibles, les journées sans respiration et les rendez-vous qu'on décale trois fois.",
@@ -296,7 +296,7 @@ export const prestations: Prestation[] = [
     perimetre: 'Déplacements',
     title: 'Faire organiser ses déplacements professionnels · BrittAssist',
     description:
-      "Organisation complète des déplacements professionnels : vols, trains, hôtels, transferts et itinéraires, par un Private Office externalisé. À partir de 700 € / mois.",
+      "Organisation complète des déplacements professionnels : vols, trains, hôtels, transferts et itinéraires, par un Private Office externalisé. À partir de 990 € / mois.",
     h1: 'Faire organiser vos déplacements professionnels.',
     lede:
       "Un déplacement de deux jours, c'est une quinzaine de micro-décisions : l'horaire, la correspondance, l'hôtel, le transfert, la table du soir, et tout ce qu'il faut refaire quand un train est supprimé.",
@@ -348,7 +348,7 @@ export const prestations: Prestation[] = [
     perimetre: 'Réservations',
     title: 'Déléguer ses réservations pro et personnelles · BrittAssist',
     description:
-      "Restaurants, hôtels, billetterie, activités : déléguer ses réservations à un Private Office externalisé. Pour dirigeants et entrepreneurs, à partir de 700 € / mois.",
+      "Restaurants, hôtels, billetterie, activités : déléguer ses réservations à un Private Office externalisé. Pour dirigeants et entrepreneurs, à partir de 990 € / mois.",
     h1: 'Déléguer vos réservations, professionnelles et personnelles.',
     lede:
       "Une table pour un dîner client, une salle pour un séminaire, deux places pour un spectacle : ce sont des demandes de quelques minutes, qui n'arrivent jamais au moment où vous avez ces quelques minutes.",
@@ -399,7 +399,7 @@ export const prestations: Prestation[] = [
     perimetre: 'Organisation personnelle',
     title: 'Déléguer son organisation personnelle · BrittAssist',
     description:
-      "Démarches, rendez-vous, abonnements, organisation familiale : déléguer sa vie logistique personnelle à un Private Office externalisé. À partir de 700 € / mois.",
+      "Démarches, rendez-vous, abonnements, organisation familiale : déléguer sa vie logistique personnelle à un Private Office externalisé. À partir de 990 € / mois.",
     h1: 'Faire prendre en charge votre organisation personnelle.',
     lede:
       "La charge mentale d'un dirigeant ne s'arrête pas à la porte de l'entreprise. Elle continue avec le contrôle technique, le rendez-vous médical à décaler et l'abonnement qu'on paie depuis deux ans sans l'utiliser.",
@@ -450,7 +450,7 @@ export const prestations: Prestation[] = [
     perimetre: 'Suivi prestataires',
     title: 'Déléguer le suivi de ses prestataires · BrittAssist',
     description:
-      "Recherche, devis, coordination des interventions et relances : faire suivre ses prestataires jusqu’au résultat par un Private Office. Dès 700 € / mois.",
+      "Recherche, devis, coordination des interventions et relances : faire suivre ses prestataires jusqu’au résultat par un Private Office. Dès 990 € / mois.",
     h1: 'Faire suivre vos prestataires jusqu’au résultat.',
     lede:
       "Un prestataire qui ne répond pas n'est pas un problème technique. C'est un sujet ouvert qui reste dans votre tête jusqu'à ce que quelqu'un le referme.",
@@ -502,7 +502,7 @@ export const prestations: Prestation[] = [
     perimetre: 'Support ponctuel aux équipes',
     title: 'Un renfort administratif ponctuel pour ses équipes · BrittAssist',
     description:
-      "Renfort ponctuel pour une équipe sans assistante : coordination, préparation de dossiers, suivi. Par un Private Office externalisé, à partir de 700 € / mois.",
+      "Renfort ponctuel pour une équipe sans assistante : coordination, préparation de dossiers, suivi. Par un Private Office externalisé, à partir de 590 € / mois.",
     h1: 'Un renfort ponctuel pour vos équipes.',
     lede:
       "Beaucoup de structures sont trop petites pour un poste d'assistante et trop chargées pour s'en passer. Le travail retombe alors sur ceux dont ce n'est pas le métier — ou sur vous.",
@@ -542,7 +542,7 @@ export const prestations: Prestation[] = [
       },
       {
         q: 'Est-ce que cela remplace un recrutement ?',
-        a: "Pour une structure dont le besoin n'est pas constant, souvent oui. Si le volume devient régulier et important, un Private Office sur mesure prend le relais, ou un recrutement devient pertinent — et je le dis quand c'est le cas.",
+        a: "Pour une structure dont le besoin n'est pas constant, souvent oui. Si le volume devient régulier et important, un Private Office prend le relais, ou un recrutement devient pertinent — et je le dis quand c'est le cas.",
       },
     ],
     cloture: 'La compétence est là quand elle sert. Pas un poste de plus à occuper.',
@@ -554,7 +554,7 @@ export const prestations: Prestation[] = [
     perimetre: 'Recherches',
     title: 'Déléguer ses recherches et ses comparatifs · BrittAssist',
     description:
-      "Faire réaliser ses recherches, comparatifs et repérages par un Private Office externalisé, avec une synthèse et une recommandation. À partir de 700 € / mois.",
+      "Faire réaliser ses recherches, comparatifs et repérages par un Private Office externalisé, avec une synthèse et une recommandation. À partir de 590 € / mois.",
     h1: 'Déléguer vos recherches et vos comparatifs.',
     lede:
       "Comparer trois offres demande vingt minutes. Comparer trois offres correctement, en lisant ce qui est réellement inclus, en demande deux heures. C'est pour ça que la décision attend.",
@@ -606,7 +606,7 @@ export const prestations: Prestation[] = [
     perimetre: 'Échanges en anglais',
     title: 'Assistante bilingue anglais pour dirigeant · BrittAssist',
     description:
-      "Échanges écrits et téléphoniques en anglais, coordination avec vos interlocuteurs étrangers, par un Private Office externalisé. Dès 700 € / mois.",
+      "Échanges écrits et téléphoniques en anglais, coordination avec vos interlocuteurs étrangers, par un Private Office externalisé. Dès 590 € / mois.",
     h1: 'Faire gérer vos échanges en anglais.',
     lede:
       "Un e-mail en anglais qu'on repousse à demain devient un client étranger qui attend trois jours. La barrière n'est pas toujours le niveau : c'est le temps que ça prend d'écrire correctement.",
@@ -658,7 +658,7 @@ export const prestations: Prestation[] = [
     perimetre: 'Reporting',
     title: 'Faire produire son reporting d’activité · BrittAssist',
     description:
-      "Recevoir un reporting clair et régulier sur son activité, ses encours et ses échéances, sans le construire. Private Office externalisé, dès 700 € / mois.",
+      "Recevoir un reporting clair et régulier sur son activité, ses encours et ses échéances, sans le construire. Private Office externalisé, dès 590 € / mois.",
     h1: 'Recevoir un reporting clair, sans le construire.',
     lede:
       "La plupart des dirigeants savent où en est leur activité. Peu ont sous les yeux, au même moment, ce qui est encaissé, ce qui est en attente et ce qui arrive à échéance.",

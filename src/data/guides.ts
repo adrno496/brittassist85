@@ -229,12 +229,12 @@ export const guides: Guide[] = [
     nom: 'Prix d’une assistante externalisée',
     title: 'Combien coûte une assistante de direction externalisée ? · BrittAssist',
     description:
-      "Tarif horaire, forfait mensuel ou mission : comment comparer les devis d’assistance externalisée et comprendre le prix BrittAssist à partir de 700 € par mois.",
+      "Tarif horaire, forfait mensuel ou mission : comment comparer les devis d’assistance externalisée et comprendre le prix BrittAssist à partir de 590 € par mois.",
     h1: 'Combien coûte une assistante de direction externalisée ?',
     lede:
       "Un tarif horaire, un forfait d’heures et un accompagnement au périmètre ne couvrent pas le même service. Avant de comparer des montants, il faut comparer les demandes prises en charge, l’autonomie et la continuité attendues.",
     reponseCourte: [
-      "Chez BrittAssist, l’Executive Private Office démarre à 700 € par mois, nets de TVA selon les CGV actuelles ; le périmètre exact figure dans une proposition personnalisée.",
+      "Chez BrittAssist, Executive Essentials va de 590 à 790 € par mois, nets de TVA selon les CGV actuelles ; le périmètre exact figure dans une proposition personnalisée.",
       "Une mission ponctuelle et un accompagnement plus large sont chiffrés sur devis, avant le démarrage.",
       "Pour comparer d’autres offres, demandez ce qui est inclus, le niveau d’autonomie attendu, les frais éventuels et la façon dont les sujets sont suivis jusqu’au résultat.",
       "Il n’existe pas de prix de marché unique : le montant dépend de la durée, du périmètre, de l’expérience et du modèle de facturation.",
@@ -302,7 +302,7 @@ export const guides: Guide[] = [
           },
           {
             paragraphes: [
-              "Chez BrittAssist, l’Executive Private Office démarre à 700 € par mois, nets de TVA selon les CGV actuelles. Ce n’est ni un volume d’heures ni un catalogue : c’est un périmètre défini au premier échange, puis précisé dans la proposition personnalisée.",
+              "Chez BrittAssist, Executive Essentials va de 590 à 790 € par mois, nets de TVA selon les CGV actuelles. Ce n’est ni un volume d’heures ni un catalogue : c’est un périmètre défini au premier échange, puis précisé dans la proposition personnalisée.",
             ],
           },
         ],

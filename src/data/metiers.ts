@@ -44,7 +44,7 @@ export const metiers: Metier[] = [
     nom: 'Artisans et entreprises du bâtiment',
     title: 'Assistante administrative pour artisan du bâtiment · BrittAssist',
     description:
-      "Devis, factures de situation, attestations, appels d’offres et relances : déléguer l’administratif d’une entreprise du bâtiment. Dès 700 € / mois.",
+      "Devis, factures de situation, attestations, appels d’offres et relances : déléguer l’administratif d’une entreprise du bâtiment. Dès 590 € / mois.",
     h1: 'L’administratif d’une entreprise du bâtiment, pris en charge.',
     lede:
       "Vous êtes sur chantier de sept heures à dix-huit heures. L’administratif attend le soir, et le devis promis lundi part le vendredi suivant — quand il part.",
@@ -117,7 +117,7 @@ export const metiers: Metier[] = [
     nom: 'Dirigeants de PME',
     title: 'Assistante de direction externalisée pour PME · BrittAssist',
     description:
-      "Agenda, comité de direction, reporting, déplacements, coordination : une assistante de direction externalisée, sans créer le poste. Dès 700 € / mois.",
+      "Agenda, comité de direction, reporting, déplacements, coordination : une assistante de direction externalisée, sans créer le poste. Dès 590 € / mois.",
     h1: 'Une assistante de direction, sans créer le poste.',
     lede:
       "Entre dix et cinquante salariés, il existe une zone inconfortable : le dirigeant a clairement besoin d’une assistante de direction, et n’a clairement pas de quoi en occuper une à plein temps.",
@@ -391,7 +391,7 @@ export const metiers: Metier[] = [
       },
       {
         q: 'Travaillez-vous le samedi ?',
-        a: "Le rythme habituel est du lundi au vendredi. Les demandes reçues le week-end sont traitées à la reprise, et un besoin ponctuel sur une période tendue — une signature, un dossier à boucler — s’organise à l’avance. Une disponibilité élargie de façon régulière relève d’un Private Office sur mesure.",
+        a: "Le rythme habituel est du lundi au vendredi. Les demandes reçues le week-end sont traitées à la reprise, et un besoin ponctuel sur une période tendue — une signature, un dossier à boucler — s’organise à l’avance. Une disponibilité élargie de façon régulière relève d’un Private Office.",
       },
       {
         q: 'Comment suivez-vous mes dossiers sans accès à mon logiciel ?',
@@ -529,7 +529,7 @@ export const metiers: Metier[] = [
     faq: [
       {
         q: 'Le forfait couvre-t-il toutes mes sociétés ?',
-        a: "Le périmètre se définit au devis, en fonction du nombre de structures et de leur volumétrie réelle. Deux sociétés dont l’une est une holding patrimoniale peu active n’ont rien à voir avec trois sociétés d’exploitation. Au-delà d’un certain volume, c’est un Private Office sur mesure qui prend le relais.",
+        a: "Le périmètre se définit au devis, en fonction du nombre de structures et de leur volumétrie réelle. Deux sociétés dont l’une est une holding patrimoniale peu active n’ont rien à voir avec trois sociétés d’exploitation. Au-delà d’un certain volume, c’est un Private Office qui prend le relais.",
       },
       {
         q: 'Réalisez-vous les formalités juridiques ?',
@@ -630,7 +630,7 @@ export const metiers: Metier[] = [
     nom: 'Organismes de formation et formateurs',
     title: 'Assistante pour organisme de formation et formateur · BrittAssist',
     description:
-      "Conventions, convocations, émargements, attestations, dossiers de financement : déléguer l’administratif d’un organisme de formation. Dès 700 € / mois.",
+      "Conventions, convocations, émargements, attestations, dossiers de financement : déléguer l’administratif d’un organisme de formation. Dès 590 € / mois.",
     h1: 'L’administratif d’une formation, de la convention à l’attestation.',
     lede:
       "Vous vendez une journée de formation. Vous en livrez une, plus trois heures de papier : la convention avant, les émargements pendant, les attestations après. Multiplié par chaque session, c’est une part de votre semaine que personne ne vous paie.",
@@ -702,7 +702,7 @@ export const metiers: Metier[] = [
     nom: 'Architectes et maîtres d’œuvre',
     title: 'Assistante pour architecte et maître d’œuvre · BrittAssist',
     description:
-      "Comptes rendus de chantier, dossiers de consultation, situations, attestations des entreprises : déléguer l’administratif d’une agence. Dès 700 € / mois.",
+      "Comptes rendus de chantier, dossiers de consultation, situations, attestations des entreprises : déléguer l’administratif d’une agence. Dès 590 € / mois.",
     h1: 'Le suivi administratif d’une agence, entre deux réunions de chantier.',
     lede:
       "Le compte rendu de la réunion de mardi doit partir avant celle de la semaine suivante. Il part souvent la veille, écrit tard, parce que la journée a été prise par trois autres chantiers.",
@@ -774,7 +774,7 @@ export const metiers: Metier[] = [
     nom: 'Hôteliers et restaurateurs',
     title: 'Assistante administrative pour hôtel et restaurant · BrittAssist',
     description:
-      "Fournisseurs, dossiers du personnel, devis de groupes, échéances et contrôles : déléguer l’administratif d’un hôtel ou d’un restaurant. Dès 700 € / mois.",
+      "Fournisseurs, dossiers du personnel, devis de groupes, échéances et contrôles : déléguer l’administratif d’un hôtel ou d’un restaurant. Dès 590 € / mois.",
     h1: 'L’administratif d’un établissement, traité pendant que vous êtes en salle.',
     lede:
       "Entre deux services, il reste une heure. Elle sert à commander, à recevoir un fournisseur, à souffler. Elle ne sert jamais aux papiers : ceux-là attendent le jour de fermeture, quand il y en a un.",
@@ -846,7 +846,7 @@ export const metiers: Metier[] = [
     nom: 'Fondateurs de start-up',
     title: 'Assistante pour fondateur de start-up · BrittAssist',
     description:
-      "Agenda investisseurs, comités, recrutements, déplacements, outils : une executive assistant externalisée pour fondateur, sans créer le poste. Dès 700 € / mois.",
+      "Agenda investisseurs, comités, recrutements, déplacements, outils : une executive assistant externalisée pour fondateur, sans créer le poste. Dès 590 € / mois.",
     h1: 'Une executive assistant pour fondateur, avant d’avoir de quoi recruter.',
     lede:
       "Votre agenda est rempli par des investisseurs, des candidats et des clients qui ont tous besoin de vous cette semaine. Vous êtes aussi celui qui réserve les trains, relance les signatures et cherche pourquoi la facture du logiciel a doublé.",
@@ -919,7 +919,7 @@ export const metiers: Metier[] = [
     nom: 'Agences et studios créatifs',
     title: 'Assistante administrative pour agence et studio créatif · BrittAssist',
     description:
-      "Devis, bons de commande, facturation à l’avancement, indépendants, relances : déléguer l’administratif d’une agence ou d’un studio. Dès 700 € / mois.",
+      "Devis, bons de commande, facturation à l’avancement, indépendants, relances : déléguer l’administratif d’une agence ou d’un studio. Dès 590 € / mois.",
     h1: 'L’administratif d’une agence, pendant que l’équipe produit.',
     lede:
       "Le projet est livré, le client est content, et la facture n’est pas partie. Elle partira à la fin du mois, avec celles des trois autres projets, quand quelqu’un aura retrouvé les bons de commande.",
@@ -990,7 +990,7 @@ export const metiers: Metier[] = [
     nom: 'Organisateurs d’événements et traiteurs',
     title: 'Assistante pour organisateur d’événements et traiteur · BrittAssist',
     description:
-      "Devis, acomptes, rétroplannings, prestataires, feuilles de route : déléguer l’administratif d’une activité événementielle. Dès 700 € / mois.",
+      "Devis, acomptes, rétroplannings, prestataires, feuilles de route : déléguer l’administratif d’une activité événementielle. Dès 590 € / mois.",
     h1: 'L’administratif d’un événement, tenu pendant que vous êtes sur le terrain.',
     lede:
       "Le samedi, vous êtes sur un mariage. Pendant ce temps, trois demandes de devis sont arrivées, un prestataire attend sa confirmation, et l’acompte de l’événement du mois prochain n’a pas été réclamé.",

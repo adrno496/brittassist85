@@ -1,4 +1,5 @@
 ---
+import { offres } from '../data/offres';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Button from '../components/Button.astro';
 
@@ -156,8 +157,7 @@ const domaines = [
               <label for="budget">Format envisagé</label>
               <select id="budget" name="budget">
                 <option value="">Sélectionnez…</option>
-                <option>Executive Private Office</option>
-                <option>Private Office sur mesure</option>
+                {offres.map((offre) => <option>{offre.nom}</option>)}
                 <option>Mission ponctuelle</option>
                 <option>À définir ensemble</option>
               </select>

@@ -1,0 +1,19 @@
+---
+import { approche } from '../data/offres';
+---
+
+<section class="band band--ivoire band--tight">
+  <div class="container">
+    <div class="duo reveal">
+      <div>
+        <p class="eyebrow">Mon approche</p>
+        <h2>Libérer du temps, de l’attention et de la charge mentale.</h2>
+      </div>
+      <div>
+        {approche.map((paragraphe, i) => (
+          <p class:list={['lede', { 'u-mt-24': i > 0 }]}>{paragraphe}</p>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

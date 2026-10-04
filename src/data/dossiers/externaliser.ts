@@ -119,7 +119,7 @@ export const externaliser: Guide[] = [
       },
       {
         q: 'À partir de quel budget cela a-t-il un sens ?',
-        a: "Cela dépend de la forme choisie. Un Private Office BrittAssist démarre à 700 € par mois, sur un périmètre défini au devis. D’autres formes — tarif horaire, forfait d’heures, mission ponctuelle — existent ; le guide sur les prix les compare.",
+        a: "Cela dépend de la forme choisie. L’accompagnement BrittAssist démarre à 590 € par mois avec Executive Essentials, sur un périmètre défini au devis. D’autres formes — tarif horaire, forfait d’heures, mission ponctuelle — existent ; le guide sur les prix les compare.",
       },
     ],
     liens: [

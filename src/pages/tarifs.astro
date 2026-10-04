@@ -2,30 +2,11 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Button from '../components/Button.astro';
 import Monogram from '../components/Monogram.astro';
+import Approche from '../components/Approche.astro';
+import { offres } from '../data/offres';
 
 const title = 'Tarifs de l’assistance de direction externalisée · BrittAssist';
-const description = 'Private Office BrittAssist dès 700 € par mois : ce que couvre le forfait, les missions sur devis, les frais, la TVA et les étapes avant de commencer.';
-
-const formules = [
-  {
-    nom: 'Executive Private Office',
-    prix: 'À partir de 700 € / mois',
-    description: 'Un accompagnement récurrent pour déléguer une partie du quotidien professionnel et personnel du dirigeant.',
-    detail: 'Le devis précise les types de demandes, les outils, le volume attendu, les limites et les modalités de suivi. Le montant dépend du périmètre convenu.',
-  },
-  {
-    nom: 'Private Office sur mesure',
-    prix: 'Sur devis',
-    description: 'Pour plusieurs sociétés, une disponibilité renforcée ou une coordination quotidienne plus large.',
-    detail: 'La proposition est construite à partir des interlocuteurs, de la fréquence des demandes, des déplacements et du niveau de coordination nécessaire.',
-  },
-  {
-    nom: 'Mission ponctuelle',
-    prix: 'Sur devis',
-    description: 'Pour un déplacement, un événement, une recherche ou un dossier délimité, sans accompagnement mensuel.',
-    detail: 'Le résultat attendu, les étapes et le prix sont fixés avant le début de la mission.',
-  },
-];
+const description = 'Executive Essentials : 590 à 790 €/mois. Executive & Lifestyle Premium : 990 à 1 490 €/mois. Private Office dès 1 800 €/mois. Prestations et périmètre.';
 
 const etapes = [
   { num: '01', name: 'Premier échange', desc: 'Vous décrivez les demandes qui reviennent, vos outils et ce que vous voulez garder à votre main.' },
@@ -38,18 +19,20 @@ const etapes = [
   <header class="hero hero--page">
     <div class="container">
       <p class="eyebrow">Tarifs &amp; devis</p>
-      <h1 class="hero__title">Combien coûte un Private Office externalisé ?</h1>
+      <h1 class="hero__title">Trois accompagnements pour libérer votre quotidien.</h1>
       <p class="hero__sub">
-        L’Executive Private Office démarre à 700 € par mois. Le prix final dépend
-        des demandes à prendre en charge : un périmètre clair est défini avec
-        vous avant toute prestation.
+        Executive Essentials, Executive &amp; Lifestyle Premium ou Private Office :
+        chaque accompagnement s’adapte à votre organisation, au volume de vos
+        besoins et au niveau de délégation souhaité.
       </p>
       <div class="hero__actions btn-row">
         <Button href="/contact" variant="ivoire">Parler de mon besoin</Button>
-        <Button href="#formules" variant="lien">Voir les trois formats</Button>
+        <Button href="#formules" variant="lien">Voir les trois accompagnements</Button>
       </div>
     </div>
   </header>
+
+  <Approche />
 
   <section class="band band--ivoire band--tight">
     <div class="container">
@@ -70,19 +53,25 @@ const etapes = [
     <div class="container">
       <div class="band__head reveal">
         <p class="eyebrow">Accompagnements</p>
-        <h2>Trois formats selon votre besoin.</h2>
+        <h2>Trois niveaux d’accompagnement.</h2>
       </div>
       <div class="suite">
-        {formules.map((formule, i) => (
-          <article class="suite__item reveal">
+        {offres.map((offre, i) => (
+          <article class:list={['suite__item', 'reveal', { 'suite__item--premium': offre.principale }]} id={offre.id}>
             <div>
               <span class="suite__num">{String(i + 1).padStart(2, '0')}</span>
-              <h3 class="suite__name">{formule.nom}</h3>
-              <p class="offer__price">{formule.prix}</p>
+              <h3 class="suite__name">{offre.nom}</h3>
+              <p class="offer__price">{offre.prix}</p>
             </div>
             <div>
-              <p class="suite__intro">{formule.description}</p>
-              <p class="lede u-mt-24">{formule.detail}</p>
+              <p class="suite__intro">{offre.description}</p>
+              <p class="eyebrow u-mt-24">Prestations incluses</p>
+              <ul class="list-plain">
+                {offre.prestations.map((prestation) => <li>{prestation}</li>)}
+              </ul>
+              <div class="btn-row u-mt-24">
+                <Button href="/contact" variant="contour">Parler de cet accompagnement</Button>
+              </div>
             </div>
           </article>
         ))}
@@ -146,8 +135,8 @@ const etapes = [
       </div>
       <div class="faq reveal">
         <div class="faq__item">
-          <h3 class="faq__q">Le prix de 700 € couvre-t-il tous les services ?</h3>
-          <p class="faq__a">C’est le point de départ de l’accompagnement mensuel, pas un forfait illimité. La proposition précise les demandes couvertes et le volume attendu.</p>
+          <h3 class="faq__q">Que comprend Executive Essentials ?</h3>
+          <p class="faq__a">Executive Essentials, de 590 à 790 € par mois, couvre l’administratif récurrent, l’agenda, la coordination, le suivi des échéances et documents, les demandes ponctuelles et un reporting hebdomadaire. Les déplacements et l’organisation personnelle font partie d’Executive & Lifestyle Premium, de 990 à 1 490 € par mois. Le périmètre et le volume attendu sont précisés dans la proposition.</p>
         </div>
         <div class="faq__item">
           <h3 class="faq__q">Y a-t-il des frais supplémentaires ?</h3>
@@ -170,7 +159,7 @@ const etapes = [
     <Monogram variant="ghost" />
     <div class="container container--narrow reveal">
       <h2>Le bon tarif part de votre organisation réelle.</h2>
-      <p class="lede">Décrivez les sujets que vous souhaitez confier. Brittany vous dira quel format est adapté et préparera une proposition claire.</p>
+      <p class="lede">Décrivez les sujets que vous souhaitez confier. Brittany vous dira quel accompagnement est adapté et préparera une proposition claire.</p>
       <div class="cta-final__actions">
         <Button href="/contact" variant="ivoire">Échanger avec Brittany</Button>
       </div>

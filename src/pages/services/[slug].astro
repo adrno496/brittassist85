@@ -1,4 +1,5 @@
 ---
+import { offres, offreStructuree } from '../../data/offres';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Button from '../../components/Button.astro';
 import Monogram from '../../components/Monogram.astro';
@@ -10,6 +11,7 @@ export function getStaticPaths() {
 }
 
 const { p } = Astro.props;
+const offre = offres[['organisation-deplacements', 'reservations', 'organisation-personnelle', 'suivi-prestataires'].includes(p.slug) ? 1 : 0];
 const siteUrl = 'https://www.brittassist.fr';
 const url = `${siteUrl}/services/${p.slug}`;
 
@@ -36,12 +38,7 @@ const jsonLd = {
         '@type': 'ServiceChannel',
         serviceUrl: `${siteUrl}/contact`,
       },
-      offers: {
-        '@type': 'Offer',
-        price: '700',
-        priceCurrency: 'EUR',
-        description: "Inclus dans l'Executive Private Office, à partir de 700 € par mois.",
-      },
+      offers: offreStructuree(offre),
     },
     {
       '@type': 'FAQPage',
@@ -199,14 +196,14 @@ const jsonLd = {
     <div class="container container--narrow reveal">
       <h2>{p.perimetre} n’est qu’une ligne de votre quotidien.</h2>
       <p class="lede">
-        L’Executive Private Office les prend toutes. Parlons de votre
+        L’accompagnement est adapté aux demandes que vous souhaitez déléguer. Parlons de votre
         organisation actuelle et identifions ce qu’il pourrait absorber.
       </p>
       <div class="cta-final__actions">
         <Button href="/contact" variant="ivoire">Échanger avec Brittany</Button>
       </div>
       <p class="cta-final__fine">
-        Accompagnement à partir de 700 € / mois &nbsp;•&nbsp; Sur mesure
+        {offre.nom} · {offre.prix} &nbsp;•&nbsp; Sur mesure
         &nbsp;•&nbsp; Confidentiel
       </p>
     </div>

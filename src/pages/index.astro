@@ -2,9 +2,11 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Button from '../components/Button.astro';
 import WorkDemo from '../components/WorkDemo.astro';
+import Approche from '../components/Approche.astro';
+import { offres } from '../data/offres';
 
 const title = "Assistante de direction externalisée pour dirigeants · BrittAssist";
-const description = "Brittany Dreano accompagne les dirigeants à distance, depuis La Roche-sur-Yon : administratif, agenda, déplacements, coordination. Private Office dès 700 € / mois.";
+const description = "Brittany Dreano accompagne les dirigeants à distance, depuis La Roche-sur-Yon : administratif, agenda, déplacements, coordination. Accompagnements dès 590 € / mois.";
 
 const services = [
   { num: '01', name: 'Executive Admin', desc: 'Facturation, contrats, échéances, documents et suivi administratif.', href: '/services/gestion-administrative' },
@@ -34,7 +36,7 @@ const method = [
           <Button href="/contact" variant="noir">Parler de mon organisation</Button>
           <Button href="/private-office" variant="lien">Découvrir le Private Office</Button>
         </div>
-        <p class="ba-home-hero__price"><strong>À partir de 700 € / mois</strong><span>•</span><span>Accompagnement sur mesure</span></p>
+        <p class="ba-home-hero__price"><strong>À partir de 590 € / mois</strong><span>•</span><span>Accompagnement sur mesure</span></p>
       </div>
 
       <div class="ba-home-hero__visual" aria-label="Brittany Dreano au travail">
@@ -81,6 +83,8 @@ const method = [
     </div>
   </section>
 
+  <Approche />
+
   <WorkDemo />
 
   <section class="band ba-services">
@@ -119,31 +123,24 @@ const method = [
   <section class="band ba-offers" id="accompagnement">
     <div class="container">
       <div class="ba-offers__head reveal">
-        <div><p class="eyebrow">Accompagnement</p><h2>Trois façons de travailler ensemble.</h2></div>
+        <div><p class="eyebrow">Accompagnement</p><h2>Trois accompagnements selon vos besoins.</h2></div>
         <p>Le bon format dépend du volume, de la fréquence et du niveau de continuité dont vous avez besoin. Le périmètre est défini avant de commencer.</p>
       </div>
       <div class="ba-offers__grid">
-        <article class="ba-offer-card ba-offer-card--lead reveal">
-          <span class="ba-offer-card__tag">Accompagnement principal</span>
-          <h3>Executive Private Office</h3>
-          <p class="ba-offer-card__price">700 € / mois</p>
-          <p class="ba-offer-card__desc">Pour le dirigeant qui veut déléguer durablement plusieurs catégories de demandes et ne plus être le point de passage de chaque micro-sujet.</p>
-          <div class="ba-offer-card__foot"><Button href="/contact" variant="ivoire">Échanger sur mon organisation</Button></div>
-        </article>
-        <article class="ba-offer-card reveal d-1">
-          <span class="ba-offer-card__tag">Besoins étendus</span>
-          <h3>Private Office sur mesure</h3>
-          <p class="ba-offer-card__price">Sur devis</p>
-          <p class="ba-offer-card__desc">Disponibilité renforcée, plusieurs structures, déplacements fréquents, coordination quotidienne ou besoins spécifiques.</p>
-          <div class="ba-offer-card__foot"><Button href="/contact" variant="contour">Construire le périmètre</Button></div>
-        </article>
-        <article class="ba-offer-card reveal d-2">
-          <span class="ba-offer-card__tag">Sans récurrence</span>
-          <h3>Mission ponctuelle</h3>
-          <p class="ba-offer-card__price">Sur devis</p>
-          <p class="ba-offer-card__desc">Voyage, événement, recherche ou organisation spécifique qui doit être prise en charge de bout en bout.</p>
-          <div class="ba-offer-card__foot"><Button href="/contact" variant="contour">Décrire ma mission</Button></div>
-        </article>
+        {offres.map((offre, i) => (
+          <article class:list={['ba-offer-card', 'reveal', `d-${i}`, { 'ba-offer-card--lead': offre.principale }]}>
+            <span class="ba-offer-card__tag">{offre.tag}</span>
+            <h3>{offre.nom}</h3>
+            <p class="ba-offer-card__price">{offre.prix}</p>
+            <p class="ba-offer-card__desc">{offre.description}</p>
+            <ul class="ba-offer-card__scope">
+              {offre.prestations.map((prestation) => <li>{prestation}</li>)}
+            </ul>
+            <div class="ba-offer-card__foot">
+              <Button href={`/tarifs#${offre.id}`} variant={offre.principale ? 'ivoire' : 'contour'}>Découvrir l’accompagnement</Button>
+            </div>
+          </article>
+        ))}
       </div>
       <div class="u-mt-40 reveal"><Button href="/tarifs" variant="lien">Comprendre les tarifs et le devis</Button></div>
     </div>
@@ -173,7 +170,7 @@ const method = [
       <div class="ba-final__aside reveal d-1">
         <p>Décrivez votre organisation actuelle, vos demandes récurrentes ou simplement le sujet qui vous prend du temps aujourd’hui. L’échange sert à voir ce qui peut réellement être absorbé et sous quelles limites.</p>
         <div class="btn-row"><Button href="/contact" variant="ivoire">Échanger avec Brittany</Button><Button href="/questionnaire" variant="lien">Préparer mon besoin</Button></div>
-        <p class="ba-final__fine">À partir de 700 € / mois · Sur mesure · Confidentiel</p>
+        <p class="ba-final__fine">À partir de 590 € / mois · Sur mesure · Confidentiel</p>
       </div>
     </div>
   </section>

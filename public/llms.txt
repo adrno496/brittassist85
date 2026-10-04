@@ -25,9 +25,11 @@ Six univers de prise en charge :
 Hors périmètre, explicitement : tenue comptable et déclarations fiscales, conseil juridique et rédaction d'actes, développement technique et intégration de logiciels, production éditoriale et présence en ligne de la marque. Sur ces sujets, BrittAssist identifie le bon interlocuteur et en assure la coordination.
 
 Accompagnements :
-- Executive Private Office — à partir de 700 € / mois. Pour l'entrepreneur ou le dirigeant qui veut cesser d'être le point de passage de toutes les petites décisions. Périmètre défini dans une proposition personnalisée.
-- Private Office sur mesure — sur devis. Disponibilité renforcée, plusieurs entreprises, forte volumétrie, déplacements fréquents, coordination quotidienne.
-- Mission ponctuelle — sur devis. Un voyage, un événement, une recherche ou une organisation spécifique, sans récurrence.
+- Executive Essentials — 590 à 790 € / mois. Gestion administrative récurrente, agenda et coordination, échéances et documents, demandes ponctuelles, reporting hebdomadaire.
+- Executive & Lifestyle Premium — 990 à 1 490 € / mois. Offre cœur de gamme : toutes les prestations Essentials, déplacements, réservations de restaurants, événements et activités, coordination professionnelle et personnelle, préférences et habitudes, priorité supérieure, suivi renforcé des prestataires et demandes.
+- Private Office — à partir de 1 800 € / mois. Coordination quotidienne professionnelle et personnelle, plusieurs sociétés ou projets, déplacements fréquents, nombreux prestataires, reporting personnalisé. Disponibilité et personnalisation définies contractuellement.
+
+L’objectif est de libérer du temps, de l’attention et de la charge mentale. Chaque accompagnement est adapté à l’organisation, au volume des besoins et au niveau de délégation souhaité. Les tarifs reflètent le périmètre et le niveau d’accompagnement plutôt qu’un nombre d’heures de secrétariat.
 
 Aucun tarif horaire, aucun forfait en heures : le périmètre et ses limites sont définis contractuellement, pas vendus au volume.
 
@@ -35,7 +37,7 @@ Aucun tarif horaire, aucun forfait en heures : le périmètre et ses limites son
 - [Accueil](https://www.brittassist.fr/) : positionnement, principe de la boucle fermée, six univers, offres, exemples de prise en charge.
 - [Le Private Office](https://www.brittassist.fr/private-office) : ce que c'est et ce que ce n'est pas, le canal de demande, les quatre temps, les quatre statuts, le partage entre ce qui est absorbé et ce qui reste au dirigeant.
 - [Services](https://www.brittassist.fr/services) : le détail des six univers, exemples concrets, limites du périmètre.
-- [Tarifs](https://www.brittassist.fr/tarifs) : Executive Private Office à partir de 700 € par mois, accompagnement sur mesure et mission ponctuelle sur devis ; périmètre, frais et modalités.
+- [Tarifs](https://www.brittassist.fr/tarifs) : Executive Essentials de 590 à 790 €, Executive & Lifestyle Premium de 990 à 1 490 €, Private Office dès 1 800 € par mois ; périmètre, frais et modalités.
 - [À propos](https://www.brittassist.fr/a-propos) : Brittany Dreano, parcours et standards de service.
 - [Contact](https://www.brittassist.fr/contact) : rendez-vous en ligne et message direct.
 
@@ -72,20 +74,20 @@ Chaque dossier réunit un guide d’ensemble et des pages pratiques : méthodes,
 ## Pages par métier (pour qui)
 La même prise en charge, décrite avec le vocabulaire, les échéances et les frictions de chaque métier.
 - [Toutes les pages par métier](https://www.brittassist.fr/assistante) : ce qui change d’un métier à l’autre, ce qui ne change pas, et ce qui reste hors périmètre partout.
-- [Artisans et entreprises du bâtiment](https://www.brittassist.fr/assistante/artisans-btp) : Devis, factures de situation, attestations, appels d’offres et relances : déléguer l’administratif d’une entreprise du bâtiment. Dès 700 € / mois.
-- [Dirigeants de PME](https://www.brittassist.fr/assistante/dirigeants-pme) : Agenda, comité de direction, reporting, déplacements, coordination : une assistante de direction externalisée, sans créer le poste. Dès 700 € / mois.
+- [Artisans et entreprises du bâtiment](https://www.brittassist.fr/assistante/artisans-btp) : Devis, factures de situation, attestations, appels d’offres et relances : déléguer l’administratif d’une entreprise du bâtiment. Dès 590 € / mois.
+- [Dirigeants de PME](https://www.brittassist.fr/assistante/dirigeants-pme) : Agenda, comité de direction, reporting, déplacements, coordination : une assistante de direction externalisée, sans créer le poste. Dès 590 € / mois.
 - [Consultants indépendants](https://www.brittassist.fr/assistante/consultants-independants) : Facturation, CRA, notes de frais, déplacements et propales : déléguer son administratif quand chaque heure non facturable coûte une journée de mission.
 - [Professions libérales](https://www.brittassist.fr/assistante/professions-liberales) : Agenda contraint, conventions, honoraires à relancer, échéances ordinales : une assistance administrative confidentielle pour cabinets libéraux.
 - [Agents immobiliers et mandataires](https://www.brittassist.fr/assistante/agents-immobiliers) : Dossiers de vente, relance des notaires et des courtiers, diagnostics, annonces : le suivi de vos dossiers pendant que vous êtes en visite.
 - [E-commerçants et marques](https://www.brittassist.fr/assistante/e-commerce) : Service client, litiges transporteurs, fournisseurs, retours et pics saisonniers : déléguer l’exploitation d’une boutique en ligne. Anglais inclus.
 - [Dirigeants de plusieurs sociétés](https://www.brittassist.fr/assistante/dirigeants-multi-societes) : Plusieurs structures, plusieurs échéances, plusieurs cabinets : centraliser le suivi administratif et juridique courant d’un groupe de sociétés.
 - [Professionnels de santé libéraux](https://www.brittassist.fr/assistante/professionnels-sante) : Cotisations, contrats de remplacement, fournisseurs, DPC, SCM et SELARL : la gestion administrative d’un cabinet libéral. Hors secrétariat médical.
-- [Organismes de formation et formateurs](https://www.brittassist.fr/assistante/organismes-de-formation) : Conventions, convocations, émargements, attestations, dossiers de financement : déléguer l’administratif d’un organisme de formation. Dès 700 € / mois.
-- [Architectes et maîtres d’œuvre](https://www.brittassist.fr/assistante/architectes-maitres-d-oeuvre) : Comptes rendus de chantier, dossiers de consultation, situations, attestations des entreprises : déléguer l’administratif d’une agence. Dès 700 € / mois.
-- [Hôteliers et restaurateurs](https://www.brittassist.fr/assistante/hotellerie-restauration) : Fournisseurs, dossiers du personnel, devis de groupes, échéances et contrôles : déléguer l’administratif d’un hôtel ou d’un restaurant. Dès 700 € / mois.
-- [Fondateurs de start-up](https://www.brittassist.fr/assistante/fondateurs-de-startup) : Agenda investisseurs, comités, recrutements, déplacements, outils : une executive assistant externalisée pour fondateur, sans créer le poste. Dès 700 € / mois.
-- [Agences et studios créatifs](https://www.brittassist.fr/assistante/agences-et-studios) : Devis, bons de commande, facturation à l’avancement, indépendants, relances : déléguer l’administratif d’une agence ou d’un studio. Dès 700 € / mois.
-- [Organisateurs d’événements et traiteurs](https://www.brittassist.fr/assistante/organisateurs-d-evenements) : Devis, acomptes, rétroplannings, prestataires, feuilles de route : déléguer l’administratif d’une activité événementielle. Dès 700 € / mois.
+- [Organismes de formation et formateurs](https://www.brittassist.fr/assistante/organismes-de-formation) : Conventions, convocations, émargements, attestations, dossiers de financement : déléguer l’administratif d’un organisme de formation. Dès 590 € / mois.
+- [Architectes et maîtres d’œuvre](https://www.brittassist.fr/assistante/architectes-maitres-d-oeuvre) : Comptes rendus de chantier, dossiers de consultation, situations, attestations des entreprises : déléguer l’administratif d’une agence. Dès 590 € / mois.
+- [Hôteliers et restaurateurs](https://www.brittassist.fr/assistante/hotellerie-restauration) : Fournisseurs, dossiers du personnel, devis de groupes, échéances et contrôles : déléguer l’administratif d’un hôtel ou d’un restaurant. Dès 590 € / mois.
+- [Fondateurs de start-up](https://www.brittassist.fr/assistante/fondateurs-de-startup) : Agenda investisseurs, comités, recrutements, déplacements, outils : une executive assistant externalisée pour fondateur, sans créer le poste. Dès 590 € / mois.
+- [Agences et studios créatifs](https://www.brittassist.fr/assistante/agences-et-studios) : Devis, bons de commande, facturation à l’avancement, indépendants, relances : déléguer l’administratif d’une agence ou d’un studio. Dès 590 € / mois.
+- [Organisateurs d’événements et traiteurs](https://www.brittassist.fr/assistante/organisateurs-d-evenements) : Devis, acomptes, rétroplannings, prestataires, feuilles de route : déléguer l’administratif d’une activité événementielle. Dès 590 € / mois.
 
 ## Zones d’intervention
 BrittAssist est basée à La Roche-sur-Yon (Vendée) et travaille à distance partout en France et à l’international. Il n’existe aucune autre implantation physique.
@@ -98,19 +100,19 @@ BrittAssist est basée à La Roche-sur-Yon (Vendée) et travaille à distance pa
 
 ## Pages de prestation (le détail du périmètre)
 Une page par ligne du périmètre. Ces prestations ne se commandent pas à l’unité : elles font partie du même accompagnement.
-- [Administratif](https://www.brittassist.fr/services/gestion-administrative) : Confier l'administratif d'une entreprise à un Private Office externalisé : documents, échéances, classement, préparation comptable. Pour dirigeants et entrepreneurs, à partir de 700 € / mois.
-- [Facturation](https://www.brittassist.fr/services/facturation) : Confier l'émission des factures, le suivi des encaissements et les relances d'impayés à un Private Office externalisé. Pour dirigeants et entrepreneurs, à partir de 700 € / mois.
-- [Contrats](https://www.brittassist.fr/services/gestion-des-contrats) : Préparation, envoi, suivi des signatures et des échéances contractuelles par un Private Office externalisé. Pour dirigeants et entrepreneurs, à partir de 700 € / mois.
-- [Coordination](https://www.brittassist.fr/services/coordination) : Faire coordonner ses interlocuteurs, ses réunions et ses suites à donner par un Private Office externalisé. Pour dirigeants et entrepreneurs, à partir de 700 € / mois.
-- [Agenda](https://www.brittassist.fr/services/gestion-agenda) : Confier la tenue de son agenda, ses rendez-vous et ses confirmations à un Private Office externalisé. Pour dirigeants et entrepreneurs, à partir de 700 € / mois.
-- [Déplacements](https://www.brittassist.fr/services/organisation-deplacements) : Organisation complète des déplacements professionnels : vols, trains, hôtels, transferts et itinéraires, par un Private Office externalisé. À partir de 700 € / mois.
-- [Réservations](https://www.brittassist.fr/services/reservations) : Restaurants, hôtels, billetterie, activités : déléguer ses réservations à un Private Office externalisé. Pour dirigeants et entrepreneurs, à partir de 700 € / mois.
-- [Organisation personnelle](https://www.brittassist.fr/services/organisation-personnelle) : Démarches, rendez-vous, abonnements, organisation familiale : déléguer sa vie logistique personnelle à un Private Office externalisé. À partir de 700 € / mois.
-- [Suivi prestataires](https://www.brittassist.fr/services/suivi-prestataires) : Recherche, devis, coordination des interventions et relances : faire suivre ses prestataires jusqu'au résultat par un Private Office externalisé. À partir de 700 € / mois.
-- [Support ponctuel aux équipes](https://www.brittassist.fr/services/support-equipes) : Renfort ponctuel pour une équipe sans assistante : coordination, préparation de dossiers, suivi. Par un Private Office externalisé, à partir de 700 € / mois.
-- [Recherches](https://www.brittassist.fr/services/recherches) : Faire réaliser ses recherches, comparatifs et repérages par un Private Office externalisé, avec une synthèse et une recommandation. À partir de 700 € / mois.
-- [Échanges en anglais](https://www.brittassist.fr/services/assistanat-anglais) : Échanges écrits et téléphoniques en anglais, coordination avec des interlocuteurs et prestataires étrangers, par un Private Office externalisé. À partir de 700 € / mois.
-- [Reporting](https://www.brittassist.fr/services/reporting) : Recevoir un reporting clair et régulier sur son activité, ses encours et ses échéances, sans avoir à le construire. Private Office externalisé, à partir de 700 € / mois.
+- [Administratif](https://www.brittassist.fr/services/gestion-administrative) : Confier l'administratif d'une entreprise à un Private Office externalisé : documents, échéances, classement, préparation comptable. Pour dirigeants et entrepreneurs, à partir de 590 € / mois.
+- [Facturation](https://www.brittassist.fr/services/facturation) : Confier l'émission des factures, le suivi des encaissements et les relances d'impayés à un Private Office externalisé. Pour dirigeants et entrepreneurs, à partir de 590 € / mois.
+- [Contrats](https://www.brittassist.fr/services/gestion-des-contrats) : Préparation, envoi, suivi des signatures et des échéances contractuelles par un Private Office externalisé. Pour dirigeants et entrepreneurs, à partir de 590 € / mois.
+- [Coordination](https://www.brittassist.fr/services/coordination) : Faire coordonner ses interlocuteurs, ses réunions et ses suites à donner par un Private Office externalisé. Pour dirigeants et entrepreneurs, à partir de 590 € / mois.
+- [Agenda](https://www.brittassist.fr/services/gestion-agenda) : Confier la tenue de son agenda, ses rendez-vous et ses confirmations à un Private Office externalisé. Pour dirigeants et entrepreneurs, à partir de 590 € / mois.
+- [Déplacements](https://www.brittassist.fr/services/organisation-deplacements) : Organisation complète des déplacements professionnels : vols, trains, hôtels, transferts et itinéraires, par un Private Office externalisé. À partir de 990 € / mois.
+- [Réservations](https://www.brittassist.fr/services/reservations) : Restaurants, hôtels, billetterie, activités : déléguer ses réservations à un Private Office externalisé. Pour dirigeants et entrepreneurs, à partir de 990 € / mois.
+- [Organisation personnelle](https://www.brittassist.fr/services/organisation-personnelle) : Démarches, rendez-vous, abonnements, organisation familiale : déléguer sa vie logistique personnelle à un Private Office externalisé. À partir de 990 € / mois.
+- [Suivi prestataires](https://www.brittassist.fr/services/suivi-prestataires) : Recherche, devis, coordination des interventions et relances : faire suivre ses prestataires jusqu'au résultat par un Private Office externalisé. À partir de 990 € / mois.
+- [Support ponctuel aux équipes](https://www.brittassist.fr/services/support-equipes) : Renfort ponctuel pour une équipe sans assistante : coordination, préparation de dossiers, suivi. Par un Private Office externalisé, à partir de 590 € / mois.
+- [Recherches](https://www.brittassist.fr/services/recherches) : Faire réaliser ses recherches, comparatifs et repérages par un Private Office externalisé, avec une synthèse et une recommandation. À partir de 590 € / mois.
+- [Échanges en anglais](https://www.brittassist.fr/services/assistanat-anglais) : Échanges écrits et téléphoniques en anglais, coordination avec des interlocuteurs et prestataires étrangers, par un Private Office externalisé. À partir de 590 € / mois.
+- [Reporting](https://www.brittassist.fr/services/reporting) : Recevoir un reporting clair et régulier sur son activité, ses encours et ses échéances, sans avoir à le construire. Private Office externalisé, à partir de 590 € / mois.
 
 ## Contact
 - E-mail : brittanydreano.cm@gmail.com
