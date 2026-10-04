@@ -1,9 +1,5 @@
-/* BrittAssist : chaque formulaire (contact + questionnaire) part EN PARALLÈLE
-   vers deux destinations :
-   - AxdiaOS (back-office) via sendBeacon/fetch keepalive — survit à la navigation ;
-   - formsubmit (e-mail) via la soumission native d'origine (action + _next).
-   On ne fait donc PAS de preventDefault : l'e-mail et sa redirection restent
-   intacts, et AxdiaOS reçoit la demande en plus. */
+/* BrittAssist : envoi e-mail via la fonction serveur Brevo, puis copie
+   AxdiaOS. Sans JavaScript, la soumission native utilise la même fonction. */
 (function () {
   "use strict";
   var API = "https://axdiaos.vercel.app/os/api/v1/le-brittassist/contacts";
@@ -44,7 +40,7 @@
     var json = JSON.stringify(payload);
 
     // text/plain => requête CORS "simple" (pas de préflight). keepalive/sendBeacon
-    // => la requête part même si la page navigue (soumission formsubmit en cours).
+    // => la requête part même si la page navigue après confirmation de Brevo.
     var sent = false;
     try {
       if (navigator.sendBeacon) {
@@ -64,19 +60,64 @@
   }
 
   function handle(form) {
-    form.addEventListener("submit", function () {
-      // Envoi vers AxdiaOS, puis on laisse la soumission native (formsubmit) suivre.
-      try {
-        sendToAxdia(form);
-      } catch (e) {
-        /* ne jamais bloquer l'e-mail */
+    var busy = false;
+    var status = form.querySelector("#form-status");
+    var button = form.querySelector('[type="submit"]');
+    form.addEventListener("submit", async function (event) {
+      event.preventDefault();
+      if (busy) return;
+      busy = true;
+      var sent = document.getElementById("form-sent");
+      if (sent) sent.hidden = true;
+      if (button) button.disabled = true;
+      if (status) {
+        status.hidden = false;
+        status.textContent = "Envoi en cours…";
       }
-      // Pas de preventDefault : formsubmit envoie l'e-mail et redirige via _next.
+      var failure = "L’envoi n’a pas abouti. Réessayez ou écrivez à brittanydreanocm@gmail.com.";
+      try {
+        var fd = new FormData(form);
+        var response = await fetch(form.action, {
+          method: "POST",
+          headers: { Accept: "application/json" },
+          body: new URLSearchParams(fd),
+        });
+        var result = await response.json();
+        if (!response.ok || !result.ok) {
+          failure = result.message || failure;
+          throw new Error(failure);
+        }
+        try { sendToAxdia(form); } catch (e) { /* la copie ne bloque pas la confirmation */ }
+        if (sent) {
+          sent.hidden = false;
+          sent.scrollIntoView({ block: "center" });
+        }
+        if (status) status.hidden = true;
+        form.reset();
+      } catch (e) {
+        if (status) {
+          status.textContent = failure;
+        }
+      } finally {
+        busy = false;
+        if (button) button.disabled = false;
+      }
     });
   }
 
   function init() {
     document.querySelectorAll("form[data-axdia-form]").forEach(handle);
+    var params = new URLSearchParams(window.location.search);
+    var sent = document.getElementById("form-sent");
+    var status = document.getElementById("form-status");
+    if (params.get("sent") === "true" && sent) {
+      sent.hidden = false;
+      sent.scrollIntoView({ block: "center" });
+    } else if (params.get("error") === "true" && status) {
+      status.hidden = false;
+      status.textContent = "L’envoi n’a pas abouti. Réessayez ou écrivez à brittanydreanocm@gmail.com.";
+      status.scrollIntoView({ block: "center" });
+    }
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();

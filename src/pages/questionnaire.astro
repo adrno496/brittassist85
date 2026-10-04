@@ -44,36 +44,34 @@ const domaines = [
         class="form reveal"
         data-axdia-form
         data-subject="Préparation du périmètre (questionnaire)"
-        action="https://formsubmit.co/brittanydreano.cm%40gmail.com"
+        action="/api/contact"
         method="POST"
       >
-        <input type="hidden" name="_subject" value="Préparation Private Office — BrittAssist" />
-        <input type="hidden" name="_captcha" value="false" />
-        {/* Champ piège : invisible pour un humain, rempli par les robots. FormSubmit écarte alors l'envoi. */}
+        <input type="hidden" name="_form" value="questionnaire" />
+        {/* Champ piège anti-spam vérifié par le serveur. */}
         <input type="text" name="_honey" class="piege" tabindex="-1" autocomplete="off" aria-hidden="true" />
-        <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_next" value="https://www.brittassist.fr/questionnaire?sent=true" />
+        <p id="form-status" class="form-note" role="status" aria-live="polite" hidden></p>
 
         <fieldset>
           <legend>Vous</legend>
           <div class="form-row">
             <div class="form-group">
               <label for="firstname">Prénom <span class="required">*</span></label>
-              <input type="text" id="firstname" name="prenom" required autocomplete="given-name" />
+              <input type="text" id="firstname" name="prenom" required maxlength="300" autocomplete="given-name" />
             </div>
             <div class="form-group">
               <label for="lastname">Nom <span class="required">*</span></label>
-              <input type="text" id="lastname" name="nom" required autocomplete="family-name" />
+              <input type="text" id="lastname" name="nom" required maxlength="300" autocomplete="family-name" />
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label for="email">E-mail <span class="required">*</span></label>
-              <input type="email" id="email" name="email" required autocomplete="email" />
+              <input type="email" id="email" name="email" required maxlength="254" autocomplete="email" />
             </div>
             <div class="form-group">
               <label for="phone">Téléphone <span class="optional">(facultatif)</span></label>
-              <input type="tel" id="phone" name="telephone" autocomplete="tel" />
+              <input type="tel" id="phone" name="telephone" maxlength="300" autocomplete="tel" />
             </div>
           </div>
         </fieldset>
@@ -94,7 +92,7 @@ const domaines = [
           <div class="form-row">
             <div class="form-group">
               <label for="metier">Secteur d’activité</label>
-              <input type="text" id="metier" name="metier" autocomplete="organization" />
+              <input type="text" id="metier" name="metier" maxlength="300" autocomplete="organization" />
             </div>
             <div class="form-group">
               <label for="taille">Taille de la structure</label>
@@ -132,11 +130,11 @@ const domaines = [
           <legend>Le contexte</legend>
           <div class="form-group">
             <label for="contexte">Comment se passe une semaine, en ce moment ?</label>
-            <textarea id="contexte" name="contexte" rows="5"></textarea>
+            <textarea id="contexte" name="contexte" rows="5" maxlength="8000"></textarea>
           </div>
           <div class="form-group">
             <label for="objectif">Qu’aimeriez-vous ne plus avoir à faire dans trois mois ?</label>
-            <textarea id="objectif" name="objectif" rows="5"></textarea>
+            <textarea id="objectif" name="objectif" rows="5" maxlength="8000"></textarea>
           </div>
         </fieldset>
 
@@ -185,13 +183,3 @@ const domaines = [
     </div>
   </section>
 </BaseLayout>
-
-<script>
-  if (new URLSearchParams(window.location.search).get('sent') === 'true') {
-    const el = document.getElementById('form-sent');
-    if (el) {
-      el.hidden = false;
-      el.scrollIntoView({ block: 'center' });
-    }
-  }
-</script>

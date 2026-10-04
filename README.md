@@ -2,7 +2,7 @@
 
 Site de [brittassist.fr](https://www.brittassist.fr) : assistance de direction externalisée (« Private Office ») par Brittany Dreano, à La Roche-sur-Yon.
 
-Site statique Astro 5, déployé sur Vercel. Aucun backend, aucune base de données, aucune variable d’environnement.
+Site statique Astro 5, déployé sur Vercel. Une fonction serveur `/api/contact` achemine les formulaires via Brevo. Aucune base de données. Configuration : [docs/BREVO.md](docs/BREVO.md).
 
 ## Commandes
 
@@ -42,6 +42,7 @@ src/
 │   ├── dates.mjs                 dates de mise à jour : sitemap et JSON-LD
 ├── pages/                        pages fixes, hubs et gabarits dynamiques
 └── styles/global.css             une seule feuille
+api/contact.js                    fonction Vercel : validation et envoi Brevo
 public/                           polices, images, robots.txt, llms.txt, consent.js
 scripts/                          contrôles de qualité (voir ci-dessous)
 docs/                             audits, stratégie SEO, rapports

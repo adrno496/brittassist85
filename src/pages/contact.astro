@@ -44,42 +44,40 @@ const description =
 
       <div id="form-sent" class="form-sent" hidden>
         <strong>Message bien reçu.</strong> Je reviens vers vous personnellement,
-        depuis&nbsp;<a href="mailto:brittanydreano.cm@gmail.com">brittanydreano.cm@gmail.com</a>.
+        depuis&nbsp;<a href="mailto:brittanydreanocm@gmail.com">brittanydreanocm@gmail.com</a>.
       </div>
 
       <form
         class="form reveal"
         data-axdia-form
         data-subject="Demande Private Office (site)"
-        action="https://formsubmit.co/brittanydreano.cm%40gmail.com"
+        action="/api/contact"
         method="POST"
       >
-        <input type="hidden" name="_subject" value="Nouvelle demande BrittAssist" />
-        <input type="hidden" name="_captcha" value="false" />
-        {/* Champ piège : invisible pour un humain, rempli par les robots. FormSubmit écarte alors l'envoi. */}
+        <input type="hidden" name="_form" value="contact" />
+        {/* Champ piège anti-spam vérifié par le serveur. */}
         <input type="text" name="_honey" class="piege" tabindex="-1" autocomplete="off" aria-hidden="true" />
-        <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_next" value="https://www.brittassist.fr/contact?sent=true" />
+        <p id="form-status" class="form-note" role="status" aria-live="polite" hidden></p>
 
         <div class="form-row">
           <div class="form-group">
             <label for="firstname">Prénom <span class="required">*</span></label>
-            <input type="text" id="firstname" name="prenom" required autocomplete="given-name" />
+            <input type="text" id="firstname" name="prenom" required maxlength="300" autocomplete="given-name" />
           </div>
           <div class="form-group">
             <label for="lastname">Nom <span class="required">*</span></label>
-            <input type="text" id="lastname" name="nom" required autocomplete="family-name" />
+            <input type="text" id="lastname" name="nom" required maxlength="300" autocomplete="family-name" />
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group">
             <label for="email">E-mail <span class="required">*</span></label>
-            <input type="email" id="email" name="email" required autocomplete="email" />
+            <input type="email" id="email" name="email" required maxlength="254" autocomplete="email" />
           </div>
           <div class="form-group">
             <label for="phone">Téléphone <span class="optional">(facultatif)</span></label>
-            <input type="tel" id="phone" name="telephone" autocomplete="tel" />
+            <input type="tel" id="phone" name="telephone" maxlength="300" autocomplete="tel" />
           </div>
         </div>
 
@@ -89,6 +87,7 @@ const description =
             id="message"
             name="message"
             rows="6"
+            maxlength="8000"
             required
             placeholder="Ce qui vous prend du temps en ce moment, en quelques lignes."
           ></textarea>
@@ -121,8 +120,8 @@ const description =
       <div class="direct reveal">
         <div>
           <span class="direct__label">E-mail</span>
-          <a class="direct__value" href="mailto:brittanydreano.cm@gmail.com">
-            brittanydreano.cm@gmail.com
+          <a class="direct__value" href="mailto:brittanydreanocm@gmail.com">
+            brittanydreanocm@gmail.com
           </a>
         </div>
         <div>
@@ -148,14 +147,3 @@ const description =
     </div>
   </section>
 </BaseLayout>
-
-<script>
-  // formsubmit renvoie sur /contact?sent=true après l'envoi de l'e-mail.
-  if (new URLSearchParams(window.location.search).get('sent') === 'true') {
-    const el = document.getElementById('form-sent');
-    if (el) {
-      el.hidden = false;
-      el.scrollIntoView({ block: 'center' });
-    }
-  }
-</script>
