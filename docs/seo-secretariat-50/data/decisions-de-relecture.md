@@ -52,3 +52,20 @@ La mise en ligne du lot A a été répétée sur une copie du dépôt, sans touc
 **La page de référence.** Elle gagne sa rubrique « Pour approfondir », quatorze liens, et sa date de mise à jour passe au 6 octobre 2026. Title, H1, slug et texte ne changent pas. La phrase « une obligation de résultat sur chaque sujet », qui contredit l’article 6 des conditions générales, n’a pas été touchée.
 
 **À surveiller.** Clics, impressions et position de `/guides/secretariat-externalise` dans la Search Console, sur une période identique avant et après le 6 octobre 2026. Si une page de la série apparaît à sa place sur une requête qu’elle tenait : renforcer le lien de cette page vers la page de référence, resserrer son title, et en dernier recours retirer sa ligne de `publications.mjs`.
+
+### 6 octobre 2026, après la mise en ligne — source du ministère de l’Économie : ouverte par le propriétaire
+
+Les outils n’avaient pu ouvrir cette page ni à l’ancienne adresse ni à la nouvelle. Le propriétaire l’a ouverte et en a transmis le texte : « Entreprises : pouvez-vous bénéficier de la franchise de TVA ? », page datée du 4 novembre 2025. Ce que le guide `tva-prestataire-en-franchise-en-base` affirme en s’appuyant sur elle a été confronté à ce texte, phrase par phrase.
+
+| Ce que dit le guide | Ce que dit la page du ministère | Verdict |
+| --- | --- | --- |
+| Une entreprise en franchise ne facture pas la TVA | Elle est exonérée du paiement de la TVA, n’en est pas redevable et n’a pas de déclaration de TVA à faire | Conforme |
+| Elle ne déduit pas la TVA de ses achats | Elle ne peut pas déduire la TVA payée sur ses achats, ni la récupérer sur ses investissements | Conforme |
+| Ses factures portent la mention « TVA non applicable, article 293 B du CGI » | Mention à faire figurer : « TVA non applicable - article 293 B du CGI » | Conforme ; la page écrit la mention avec un tiret, le guide avec une virgule |
+| Le régime est ouvert sous des seuils de chiffre d’affaires, qui évoluent | Seuils par nature d’opération ; une réforme prévue pour 2025 a été supprimée par une loi du 3 novembre 2025, qui maintient les seuils | Conforme. Le guide ne cite aucun chiffre |
+| Au-delà des seuils, l’entreprise devient redevable de la TVA, selon des règles de date | Passé le plafond de l’année en cours, la franchise cesse pour les opérations faites à compter de la date de dépassement | Conforme |
+
+Aucune correction n’en découle. Le guide ne reprend pas l’option pour la TVA que la page décrit : c’est un choix de périmètre, non une erreur. Aucune autre page du site ne cite de seuil chiffré.
+
+L’outil ne sait pas par quelle adresse le propriétaire a ouvert la page : si c’est par le lien du guide, la nouvelle adresse est confirmée du même coup. L’outil, lui, reçoit toujours une réponse 403.
+

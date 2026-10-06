@@ -1,6 +1,6 @@
 # 08 — Rapport d’implémentation
 
-Ce qui a été créé et modifié dans le dépôt le 6 octobre 2026, à partir du commit `429c7ad`. Le travail tient en deux commits, faits à la demande du propriétaire : la série en brouillon avec sa validation, puis sa mise en ligne.
+Ce qui a été créé et modifié dans le dépôt le 6 octobre 2026, à partir du commit `429c7ad`. Le travail tient en trois commits, faits à la demande du propriétaire : la série en brouillon avec sa validation ; sa mise en ligne ; puis une mise à jour de ces rapports, qui ne touche aucun fichier du site.
 
 Complété deux fois le même jour : après la validation donnée par le propriétaire du site, puis après sa décision de mettre les cinquante pages en ligne. Voir « Validation du propriétaire » et « Mise en ligne des 50 pages », plus bas.
 
@@ -80,7 +80,7 @@ Les documents `00`, `08`, `09` et `10` sont écrits à la main. Les huit autres 
 
 ## Fichiers modifiés
 
-19 fichiers déjà suivis, 460 lignes ajoutées, 20 retirées, sur les deux commits. Quatorze fichiers pendant la mission ; trois de plus après la validation du propriétaire (`relectures.mjs`, `publication.mjs`, `publication.test.mjs`) ; deux de plus à la mise en ligne (`publications.mjs`, `dates.mjs`).
+19 fichiers déjà suivis, 460 lignes ajoutées, 20 retirées, sur les deux premiers commits ; le troisième ne modifie que des documents de ce dossier. Quatorze fichiers pendant la mission ; trois de plus après la validation du propriétaire (`relectures.mjs`, `publication.mjs`, `publication.test.mjs`) ; deux de plus à la mise en ligne (`publications.mjs`, `dates.mjs`).
 
 | Fichier | Modification | Raison |
 | --- | --- | --- |
@@ -236,7 +236,7 @@ Ce qui n’a pas été fait, et pourquoi : l’objet `relectures` reste vide, pa
 
 ## Retour arrière
 
-Le travail tient en deux commits : la série en brouillon, puis sa mise en ligne. Chacun se défait d’un geste, sans réécrire l’historique.
+Le travail tient en trois commits : la série en brouillon, sa mise en ligne, puis une mise à jour de ces rapports, sans effet sur le site. Les deux premiers se défont chacun d’un geste, sans réécrire l’historique.
 
 **Retirer les 50 pages du site sans rien supprimer** — annuler le commit de mise en ligne :
 
@@ -251,7 +251,7 @@ Les 50 pages redeviennent des brouillons, les liens qui les citent cessent de s�
 
 **Tout annuler** — annuler ensuite le commit de la série, que désigne `git log --oneline --diff-filter=A -1 -- src/data/dossiers/secretariat-lots.ts`. Le site revient à l’état du commit `429c7ad`.
 
-Les trois éléments non suivis qui existaient avant la mission — `.plugcode/`, `outils/`, `docs/seo/11_SITEMAP_VERIFICATION_2026-10-04.md` — ne font partie d’aucun des deux commits et ne sont pas concernés.
+Les trois éléments non suivis qui existaient avant la mission — `.plugcode/`, `outils/`, `docs/seo/11_SITEMAP_VERIFICATION_2026-10-04.md` — ne font partie d’aucun de ces commits et ne sont pas concernés.
 
 **Retirer la validation du propriétaire, ou la restreindre** : supprimer son entrée dans la liste `validations` de `src/data/relectures.mjs`, ou les lignes des pages qu’elle ne visait pas. Rien d’autre ne change : le site ne lit pas cette liste.
 

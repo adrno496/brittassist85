@@ -4,7 +4,7 @@ Résultats de la passe finale du 6 octobre 2026, lancée après la dernière mod
 
 Une seconde passe a eu lieu le même jour, après l’enregistrement de la validation du propriétaire : `npm run check`, `npm test`, `npm run qa:apercu`, `npm run build:apercu`, `npm run qa`, `npm run qa:similarite` et la comparaison à l’octet près ont été relancés. Le tableau « Les commandes demandées » donne les chiffres de cette seconde passe. Les autres contrôles datent de la première ; les builds qu’ils ont examinés n’ont pas changé depuis (0 différence). Deux sections s’ajoutent : « Validation du propriétaire » et « Répétition de la mise en ligne du lot A ».
 
-Une troisième passe a suivi la décision du propriétaire, à 20 h 07, de mettre les cinquante pages en ligne : c’est la section « Mise en ligne des 50 pages », placée en tête. **Toutes les autres sections décrivent l’état d’avant** : cinquante brouillons, et un build de production identique à l’état initial.
+Une troisième passe a suivi la décision du propriétaire, à 20 h 07, de mettre les cinquante pages en ligne : ce sont les sections « Mise en ligne des 50 pages » et « Après le déploiement », placées en tête. **Toutes les autres sections décrivent l’état d’avant** : cinquante brouillons, et un build de production identique à l’état initial.
 
 Statuts utilisés : PASS · PARTIAL · FAIL · NON TESTÉ · NON APPLICABLE.
 
@@ -12,7 +12,7 @@ Statuts utilisés : PASS · PARTIAL · FAIL · NON TESTÉ · NON APPLICABLE.
 
 | Statut | Contrôles |
 | --- | --- |
-| PASS | 75, dont 14 après la mise en ligne et 8 obtenus sur une copie du dépôt (répétition du lot A) |
+| PASS | 80, dont 14 après la mise en ligne, 5 sur le site réel après le déploiement, et 8 obtenus sur une copie du dépôt (répétition du lot A) |
 | PARTIAL | 2, tous deux sur les sources externes : avant et après la mise en ligne |
 | FAIL | 0 |
 | NON TESTÉ | 5 (dont les Core Web Vitals, cités aussi dans le tableau « Performance ») |
@@ -40,7 +40,21 @@ Contrôles faits sur le dépôt après l’inscription des 50 pages dans `public
 | Sources externes | PARTIAL | `node scripts/check-sources.mjs` | 77 liens distincts : 71 répondent, 6 « non concluants » | Les mêmes six qu’avant, dont la source du ministère de l’Économie, à sa nouvelle adresse : voir « Sources externes » |
 | Build à partir du commit seul | PASS | `git archive` du commit dans un dossier vide, `npm run build`, comparaison à `dist/` | 241 fichiers, tous identiques à ceux du build local ; seul le `.DS_Store` de macOS manque | C’est ce que l’hébergeur construit |
 
-Ce que cette passe ne couvre pas : le comportement chez l’hébergeur et l’indexation, qui ne se constatent qu’après le déploiement.
+Ce que cette passe ne couvre pas : l’indexation, qui ne se constate qu’une fois les pages explorées par les moteurs.
+
+## Après le déploiement
+
+Le commit de mise en ligne, `fa14903`, a été poussé sur la branche de production le 6 octobre 2026 à 20 h 24. Les contrôles ci-dessous portent sur le site réel, `https://www.brittassist.fr`.
+
+| Contrôle | Statut | Commande | Résultat réel | Preuve / remarque |
+| --- | --- | --- | --- | --- |
+| Déploiement | PASS | `vercel ls brittassist85 -m githubCommitSha=…`, `vercel inspect www.brittassist.fr` | Déploiement de production créé à 20 h 24 min 44 s, prêt en 20 s ; le domaine le sert | — |
+| Sitemap en ligne | PASS | Téléchargement de `/sitemap-0.xml` | 199 URL ; fichier identique à l’octet près à celui du build contrôlé | Constaté à 20 h 25 min 12 s |
+| Statut des adresses | PASS | Une requête par adresse du sitemap | 199 réponses HTTP 200, aucune autre | — |
+| Pages servies | PASS | Téléchargement et empreinte SHA-256 de 58 pages : les 50 de la série, la page de référence, l’index des guides, un pilier et cinq pages hors `/guides` | 58 sur 58 identiques à l’octet près au build contrôlé. Aucune en `noindex`, aucune mention « Relu par » | La page de référence sert sa rubrique « Pour approfondir » et ses 14 liens ; son title est inchangé |
+| En-têtes d’une page de la série | PASS | Lecture des en-têtes de réponse | HTTP/2 200, en-tête `content-security-policy` présent, pas d’en-tête `x-robots-tag` | Une seule page lue |
+
+Ce que ces contrôles ne couvrent pas : les redirections, non rejouées en ligne, et l’indexation.
 
 ## Les commandes demandées
 
@@ -179,7 +193,7 @@ Sur les 47 sources citées par la série, 43 répondent en HTTP 200. Les 4 autre
 | Légifrance — code des assurances, art. L113-2 | `declarer-un-sinistre-professionnel` | Relue par un autre outil de lecture : l’article existe et dit ce que la page rapporte |
 | Légifrance — code des postes et des communications électroniques, art. L100 | `lettre-recommandee-electronique` | idem |
 | Légifrance — code de commerce, art. R123-237 et R123-238 | `mentions-obligatoires-courriers-et-emails` | idem |
-| Ministère de l’Économie — franchise de TVA | `tva-prestataire-en-franchise-en-base` | **Non rouverte** : à ouvrir à la main. Un second essai, avec un navigateur automatisé, a reçu la même réponse (HTTP 403, page de vérification). Les règles citées ont été vérifiées sur impots.gouv.fr et le BOFiP. Avant la mise en ligne, l’adresse a été remplacée par celle que les résultats de recherche donnent pour la page de même titre ; elle n’a pas pu être ouverte non plus |
+| Ministère de l’Économie — franchise de TVA | `tva-prestataire-en-franchise-en-base` | **Non rouverte** : à ouvrir à la main. Un second essai, avec un navigateur automatisé, a reçu la même réponse (HTTP 403, page de vérification). Les règles citées ont été vérifiées sur impots.gouv.fr et le BOFiP. Avant la mise en ligne, l’adresse a été remplacée par celle que les résultats de recherche donnent pour la page de même titre ; elle n’a pas pu être ouverte non plus. **Après la mise en ligne, le propriétaire a ouvert la page et en a transmis le texte : les cinq affirmations du guide qui s’y appuient lui sont conformes** (détail à la fin de `11_HUMAN_REVIEW_CHECKLIST.md`) |
 
 Les deux autres liens non concluants, le profil LinkedIn et un texte Légifrance cité par un guide existant, étaient déjà dans ce cas avant la mission.
 
@@ -189,7 +203,7 @@ Les deux autres liens non concluants, le profil LinkedIn et un texte Légifrance
 | --- | --- | --- |
 | Search Console | NON TESTÉ | Aucune donnée accessible : ni export, ni variable d’environnement, ni connecteur. Voir `00_BASELINE.md` |
 | Core Web Vitals | NON TESTÉ | Pas d’outil de mesure disponible |
-| En-têtes et redirections chez l’hébergeur | NON TESTÉ | Rien n’était déployé quand ces contrôles ont été faits. Testés seulement avec le serveur local qui reproduit `vercel.json` |
+| Redirections chez l’hébergeur | NON TESTÉ | Non rejouées en ligne : testées seulement avec le serveur local qui reproduit `vercel.json`. Les en-têtes, eux, ont été lus sur une page du site réel (voir « Après le déploiement ») |
 | Indexation et affichage dans les résultats | NON TESTÉ | Rien à observer avant que les moteurs explorent les pages |
 | Relecture par une personne | NON TESTÉ | Le propriétaire a déclaré avoir tout vérifié, et sa validation est enregistrée pour les 50 pages. L’outil ne peut ni mesurer ni confirmer ce que cette vérification a couvert : ce n’est pas un contrôle qu’il a exécuté. Aucune relecture par Brittany Dreano |
 | Formulaire de contact | NON APPLICABLE | Ni `api/contact.js` ni les formulaires n’ont été modifiés ; leurs tests passent avec `npm test` |

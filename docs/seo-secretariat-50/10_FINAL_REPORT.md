@@ -16,7 +16,8 @@ Mis à jour deux fois le même jour : après la validation donnée par le propri
 | Pages existantes | Les 46 pages hors `/guides` sont identiques à l’octet près à l’état initial. 73 guides et l’index `/guides` gagnent des liens ; aucun ne change de title, de H1, de description ni de canonical, aucun ne perd de lien entrant |
 | Contrôles automatiques | Tous réussis ; détail et réserves dans `09_TEST_REPORT.md` |
 | Search Console | **NON TESTÉ** : aucune donnée accessible |
-| Commits | Deux, faits à la demande du propriétaire : la série en brouillon avec sa validation, puis la mise en ligne, dans le commit qui contient ce rapport |
+| Commits | Trois, faits à la demande du propriétaire : la série en brouillon avec sa validation (`32491bf`) ; la mise en ligne (`fa14903`) ; puis la mise à jour de ces rapports, qui ne touche aucun fichier du site |
+| Déploiement | `fa14903` poussé sur la branche de production le 6 octobre 2026 à 20 h 24, déployé vingt secondes plus tard. Vérifié en ligne : 199 adresses au sitemap, toutes en HTTP 200 ; 58 pages comparées, dont les 50 nouvelles, identiques à l’octet près au build contrôlé |
 
 **Ce qui reste à la main du propriétaire** : soumettre le sitemap dans la Search Console et y suivre la page de référence ; dire si Brittany Dreano a relu ces pages, pour que le site l’affiche ; trancher la contradiction relevée sur la page de référence.
 
@@ -77,7 +78,7 @@ Liste complète, slug par slug : `08_IMPLEMENTATION_REPORT.md`.
 
 ## MODIFIÉ
 
-19 fichiers déjà suivis, 460 lignes ajoutées, 20 retirées, sur les deux commits :
+19 fichiers déjà suivis, 460 lignes ajoutées, 20 retirées, sur les deux premiers commits :
 
 - le modèle `Guide` : deux champs facultatifs, `lot` et `approfondir` ;
 - la fiche de la page de référence : une rubrique « Pour approfondir » de 14 liens, invisible tant qu’aucune page de la série n’était en ligne, **affichée depuis la mise en ligne** ;
@@ -112,7 +113,10 @@ Commandes réellement lancées, dans cet ordre.
 | Commit | `git fetch --all --prune`, `git add` sur les fichiers de la mission, puis `git commit` à la demande du propriétaire |
 | Mise en ligne | Inscription des 50 pages dans `publications.mjs`, date de la page de référence ; puis `npm run check`, `npm test`, `npm run qa`, `npm run qa:similarite`, `node scripts/check-sources.mjs`, comparaison au build initial et au build d’aperçu, contrôle en navigateur réel, second `git commit` |
 
-Ce rapport fait partie du commit : il ne peut pas attester ce qui le suit. Le push et le déploiement demandés avec lui ne sont donc pas décrits ici.
+| Déploiement | `git push` de `fa14903` sur la branche de production, à la demande du propriétaire ; puis `vercel ls` et `vercel inspect`, lecture du sitemap en ligne, statut HTTP de ses 199 adresses, comparaison de 58 pages servies au build contrôlé |
+| Après le déploiement | Confrontation du guide sur la TVA au texte de la source transmis par le propriétaire ; mise à jour des rapports ; troisième `git commit` |
+
+Ce rapport fait partie du troisième commit : il ne peut pas attester ce qui le suit, c’est-à-dire son propre push.
 
 ## TESTÉ
 
@@ -142,10 +146,10 @@ Résultats de la passe finale. Tableau complet, avec preuves : `09_TEST_REPORT.m
 | **Search Console** | Aucun export dans le dépôt, aucune variable d’environnement, aucun connecteur relié à une propriété. Aucun chiffre de clics, d’impressions ou de position n’a été lu ni cité |
 | **Volumes de recherche** | Aucun outil n’en fournissait. Aucun n’a été estimé ni inventé |
 | **Core Web Vitals** | Lighthouse n’est installé ni dans le dépôt ni dans la boîte à outils. Seuls des indicateurs statiques ont été mesurés : poids du HTML, nombre de liens, scripts |
-| **Comportement sur Vercel** | Rien n’était déployé quand ce rapport a été écrit. Les en-têtes ont été testés avec le serveur local qui reproduit `vercel.json`, non chez l’hébergeur |
+| **Redirections chez l’hébergeur** | Non rejouées en ligne. Après le déploiement, seuls le sitemap, le statut des 199 adresses, le contenu de 58 pages et les en-têtes d’une page ont été vérifiés sur le site réel ; les redirections ne l’ont été qu’avec le serveur local qui reproduit `vercel.json` |
 | **Indexation** | Les pages viennent d’être rendues indexables : rien à observer avant que les moteurs les explorent |
 | **Ce que la vérification du propriétaire a couvert** | L’outil a enregistré sa déclaration ; il ne peut ni la mesurer ni la confirmer. Aucune relecture par Brittany Dreano |
-| **Une source** | `economie.gouv.fr` refuse les requêtes des outils, navigateur automatisé compris (HTTP 403) : la page sur la franchise de TVA n’a pas pu être rouverte. Le lien est à ouvrir à la main. Les règles qu’elle appuie ont été vérifiées par ailleurs, sur impots.gouv.fr et le BOFiP |
+| **Une source** | `economie.gouv.fr` refuse les requêtes des outils, navigateur automatisé compris (HTTP 403) : la page sur la franchise de TVA n’a pas pu être rouverte par l’outil. Le propriétaire l’a ouverte après la mise en ligne et en a transmis le texte : le guide lui est conforme. Les règles qu’elle appuie ont été vérifiées par ailleurs, sur impots.gouv.fr et le BOFiP |
 
 ## ÉCHECS
 
@@ -163,7 +167,7 @@ Une limite de méthode doit être dite : la comparaison lexicale des *idées* (d
 
 1. **Soumettre le sitemap** dans la Search Console, propriété `https://www.brittassist.fr/`, pour que les 50 adresses nouvelles soient vues.
 2. **Suivre la page de référence** : clics, impressions et position de `/guides/secretariat-externalise`, sur une période identique avant et après le 6 octobre 2026. C’est le contrôle que le plan par lots faisait entre deux étapes ; il se fait désormais après coup. Si une page de la série prend sa place sur une requête, la retirer de `publications.mjs` la remet en brouillon.
-3. **Ouvrir à la main la source `economie.gouv.fr`** du guide sur la TVA : son adresse a été corrigée, mais les outils n’ont pu ouvrir ni l’ancienne ni la nouvelle.
+3. ~~Ouvrir à la main la source `economie.gouv.fr` du guide sur la TVA.~~ Fait le 6 octobre 2026 : le propriétaire a ouvert la page et en a transmis le texte ; les cinq affirmations du guide qui s’y appuient lui sont conformes, aucune correction n’en découle.
 4. **Si le site doit afficher une relecture**, dire que Brittany Dreano a relu les pages : elles seront alors inscrites dans l’objet `relectures`, qui affiche son nom.
 5. **Exporter les requêtes Search Console** de la page de référence, dans l’ancienne propriété (sans `www`), qui détient l’historique.
 
