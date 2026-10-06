@@ -6,7 +6,7 @@
  */
 import { APERCU } from './mode.mjs';
 import { publications } from './publications.mjs';
-import { relectures } from './relectures.mjs';
+import { relectures, validations } from './relectures.mjs';
 
 // `npm run build:apercu` : génère aussi les pages absentes des deux registres, en noindex. Voir mode.mjs.
 export { APERCU };
@@ -46,6 +46,15 @@ function normaliser(chemin) {
 /** Date de relecture d'une page (AAAA-MM-JJ), ou null. */
 export function dateDeRelecture(chemin) {
   return relectures[normaliser(chemin)] ?? null;
+}
+
+/**
+ * Dernière validation donnée par le propriétaire du site pour une page ({ date, par, declaration, pages }), ou null.
+ * Trace interne : elle ne met pas la page en ligne et n'en fait pas une page relue.
+ */
+export function validationDuProprietaire(chemin) {
+  const c = normaliser(chemin);
+  return validations.findLast((v) => v.pages.includes(c)) ?? null;
 }
 
 /**

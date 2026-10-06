@@ -1,0 +1,1906 @@
+[
+  {
+    "id": "C001",
+    "requete": "inconvénients secrétariat externalisé",
+    "motsCles": {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "score": 0.25
+    },
+    "sujet": {
+      "slug": "externaliser-son-assistanat",
+      "score": 0.106
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C002",
+    "requete": "mission ponctuelle de secrétariat",
+    "motsCles": {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "score": 0.25
+    },
+    "sujet": {
+      "slug": "situations-de-dirigeant",
+      "score": 0.162
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C003",
+    "requete": "période d’essai assistante indépendante",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.3
+    },
+    "sujet": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.134
+    },
+    "couverture": {
+      "slug": "assistante-independante-ou-salariee",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C004",
+    "requete": "secrétaire à temps partagé ou prestataire",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.25
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.2
+    },
+    "couverture": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C005",
+    "requete": "secrétariat offshore",
+    "motsCles": {
+      "slug": "confidentialite-assistante-externalisee",
+      "score": 0.176
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.154
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C006",
+    "requete": "secrétariat externalisé charge déductible",
+    "motsCles": {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "score": 0.267
+    },
+    "sujet": {
+      "slug": "notes-de-frais-justificatifs",
+      "score": 0.165
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C007",
+    "requete": "domiciliation ou secrétariat externalisé",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.158
+    },
+    "sujet": {
+      "slug": "quelles-taches-deleguer-a-une-assistante",
+      "score": 0.121
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C008",
+    "requete": "cahier des charges secrétariat externalisé",
+    "motsCles": {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "score": 0.25
+    },
+    "sujet": {
+      "slug": "choisir-un-lieu-de-seminaire",
+      "score": 0.171
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C009",
+    "requete": "comparer devis secrétariat externalisé",
+    "motsCles": {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "score": 0.267
+    },
+    "sujet": {
+      "slug": "externaliser-son-assistanat",
+      "score": 0.185
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C010",
+    "requete": "prestataire sans TVA facture",
+    "motsCles": {
+      "slug": "choisir-un-lieu-de-seminaire",
+      "score": 0.143
+    },
+    "sujet": {
+      "slug": "mentions-obligatoires-facture",
+      "score": 0.202
+    },
+    "couverture": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C011",
+    "requete": "délai de réponse assistante externalisée",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.25
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.161
+    },
+    "couverture": {
+      "slug": "prix-assistante-de-direction-externalisee",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C012",
+    "requete": "forfait secrétariat externalisé dépassement",
+    "motsCles": {
+      "slug": "choisir-assistante-externalisee",
+      "score": 0.167
+    },
+    "sujet": {
+      "slug": "prix-assistante-de-direction-externalisee",
+      "score": 0.176
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C013",
+    "requete": "évaluer un secrétariat externalisé",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.263
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.131
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C014",
+    "requete": "revue trimestrielle prestataire",
+    "motsCles": {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "score": 0.25
+    },
+    "sujet": {
+      "slug": "externaliser-son-assistanat",
+      "score": 0.129
+    },
+    "couverture": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C015",
+    "requete": "changer de prestataire de secrétariat",
+    "motsCles": {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "score": 0.286
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.15
+    },
+    "couverture": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C016",
+    "requete": "recruter après avoir externalisé",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.227
+    },
+    "sujet": {
+      "slug": "assistante-independante-ou-salariee",
+      "score": 0.168
+    },
+    "couverture": {
+      "slug": "prix-assistante-de-direction-externalisee",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C017",
+    "requete": "assistante partagée entre associés",
+    "motsCles": {
+      "slug": "conciergerie-privee-ou-lifestyle-assistant",
+      "score": 0.118
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.135
+    },
+    "couverture": {
+      "slug": "confidentialite-acces-et-outils",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C018",
+    "requete": "présenter son assistante à ses clients",
+    "motsCles": {
+      "slug": "choisir-assistante-externalisee",
+      "score": 0.167
+    },
+    "sujet": {
+      "slug": "fraude-au-faux-rib-et-au-president",
+      "score": 0.122
+    },
+    "couverture": {
+      "slug": "assistante-independante-ou-salariee",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C019",
+    "requete": "assistante indépendante absente",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.333
+    },
+    "sujet": {
+      "slug": "assistante-independante-ou-salariee",
+      "score": 0.137
+    },
+    "couverture": {
+      "slug": "assistante-independante-ou-salariee",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C020",
+    "requete": "erreur de son assistante externalisée",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.333
+    },
+    "sujet": {
+      "slug": "externaliser-son-assistanat",
+      "score": 0.157
+    },
+    "couverture": {
+      "slug": "prix-assistante-de-direction-externalisee",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C021",
+    "requete": "obligation de vigilance prestataire indépendant",
+    "motsCles": {
+      "slug": "dossier-permanent-entreprise",
+      "score": 0.217
+    },
+    "sujet": {
+      "slug": "dossier-permanent-entreprise",
+      "score": 0.313
+    },
+    "couverture": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C022",
+    "requete": "RGPD assistante externalisée sous-traitant",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.35
+    },
+    "sujet": {
+      "slug": "confidentialite-assistante-externalisee",
+      "score": 0.2
+    },
+    "couverture": {
+      "slug": "prix-assistante-de-direction-externalisee",
+      "score": 0.4
+    }
+  },
+  {
+    "id": "C023",
+    "requete": "incident de sécurité prestataire que faire",
+    "motsCles": {
+      "slug": "confidentialite-assistante-externalisee",
+      "score": 0.136
+    },
+    "sujet": {
+      "slug": "confidentialite-acces-et-outils",
+      "score": 0.145
+    },
+    "couverture": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C024",
+    "requete": "accès bancaire assistante",
+    "motsCles": {
+      "slug": "confidentialite-acces-et-outils",
+      "score": 0.174
+    },
+    "sujet": {
+      "slug": "fraude-au-faux-rib-et-au-president",
+      "score": 0.18
+    },
+    "couverture": {
+      "slug": "confidentialite-assistante-externalisee",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C025",
+    "requete": "carte bancaire pour son assistante",
+    "motsCles": {
+      "slug": "confidentialite-acces-et-outils",
+      "score": 0.125
+    },
+    "sujet": {
+      "slug": "deplacement-a-l-etranger-formalites",
+      "score": 0.136
+    },
+    "couverture": {
+      "slug": "assistante-independante-ou-salariee",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C026",
+    "requete": "délégation espace professionnel impots.gouv",
+    "motsCles": {
+      "slug": "confidentialite-acces-et-outils",
+      "score": 0.24
+    },
+    "sujet": {
+      "slug": "dossier-permanent-entreprise",
+      "score": 0.134
+    },
+    "couverture": {
+      "slug": "preparer-son-absence",
+      "score": 0.4
+    }
+  },
+  {
+    "id": "C027",
+    "requete": "assistante indépendante sous-traitance",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.316
+    },
+    "sujet": {
+      "slug": "externaliser-son-assistanat",
+      "score": 0.177
+    },
+    "couverture": {
+      "slug": "assistante-independante-ou-salariee",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C028",
+    "requete": "dirigeant indisponible continuité de l’entreprise",
+    "motsCles": {
+      "slug": "preparer-son-absence",
+      "score": 0.174
+    },
+    "sujet": {
+      "slug": "preparer-son-absence",
+      "score": 0.094
+    },
+    "couverture": {
+      "slug": "dirigeant-goulot-d-etranglement",
+      "score": 0.75
+    }
+  },
+  {
+    "id": "C029",
+    "requete": "conjoint qui fait l’administratif de l’entreprise",
+    "motsCles": {
+      "slug": "organiser-l-administratif-de-son-entreprise",
+      "score": 0.211
+    },
+    "sujet": {
+      "slug": "duree-de-conservation-documents-entreprise",
+      "score": 0.091
+    },
+    "couverture": {
+      "slug": "organiser-l-administratif-de-son-entreprise",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C030",
+    "requete": "contrôle Urssaf documents à préparer",
+    "motsCles": {
+      "slug": "dossier-permanent-entreprise",
+      "score": 0.2
+    },
+    "sujet": {
+      "slug": "dossier-permanent-entreprise",
+      "score": 0.145
+    },
+    "couverture": {
+      "slug": "pieces-pour-l-expert-comptable",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C031",
+    "requete": "départ d’un salarié checklist administrative",
+    "motsCles": {
+      "slug": "reprise-d-entreprise-administratif",
+      "score": 0.138
+    },
+    "sujet": {
+      "slug": "fin-de-collaboration-assistante-externalisee",
+      "score": 0.156
+    },
+    "couverture": {
+      "slug": "premiere-embauche-formalites-administratives",
+      "score": 0.75
+    }
+  },
+  {
+    "id": "C032",
+    "requete": "lettre recommandée électronique valeur juridique",
+    "motsCles": {
+      "slug": "signature-electronique-niveaux-et-usages",
+      "score": 0.136
+    },
+    "sujet": {
+      "slug": "traitement-du-courrier-entrant",
+      "score": 0.121
+    },
+    "couverture": {
+      "slug": "signature-electronique-niveaux-et-usages",
+      "score": 0.6
+    }
+  },
+  {
+    "id": "C033",
+    "requete": "mentions obligatoires e-mail professionnel",
+    "motsCles": {
+      "slug": "mentions-obligatoires-facture",
+      "score": 0.19
+    },
+    "sujet": {
+      "slug": "mentions-obligatoires-facture",
+      "score": 0.162
+    },
+    "couverture": {
+      "slug": "mentions-obligatoires-facture",
+      "score": 0.75
+    }
+  },
+  {
+    "id": "C034",
+    "requete": "relancer un client pour des pièces manquantes",
+    "motsCles": {
+      "slug": "dossier-permanent-entreprise",
+      "score": 0.227
+    },
+    "sujet": {
+      "slug": "pieces-pour-l-expert-comptable",
+      "score": 0.206
+    },
+    "couverture": {
+      "slug": "pieces-pour-l-expert-comptable",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C035",
+    "requete": "tenir son fichier clients à jour",
+    "motsCles": {
+      "slug": "duree-de-conservation-documents-entreprise",
+      "score": 0.091
+    },
+    "sujet": {
+      "slug": "changer-d-outil-de-gestion",
+      "score": 0.208
+    },
+    "couverture": {
+      "slug": "point-hebdomadaire-avec-son-assistante",
+      "score": 0.25
+    }
+  },
+  {
+    "id": "C036",
+    "requete": "assemblée générale annuelle approbation des comptes délai",
+    "motsCles": {
+      "slug": "organiser-un-seminaire-d-equipe",
+      "score": 0.105
+    },
+    "sujet": {
+      "slug": "echeancier-administratif-entreprise",
+      "score": 0.137
+    },
+    "couverture": {
+      "slug": "quand-prendre-une-assistante",
+      "score": 0.167
+    }
+  },
+  {
+    "id": "C037",
+    "requete": "numériser ses documents d’entreprise",
+    "motsCles": {
+      "slug": "duree-de-conservation-documents-entreprise",
+      "score": 0.211
+    },
+    "sujet": {
+      "slug": "duree-de-conservation-documents-entreprise",
+      "score": 0.156
+    },
+    "couverture": {
+      "slug": "arborescence-dossiers-entreprise",
+      "score": 1
+    }
+  },
+  {
+    "id": "C038",
+    "requete": "déclarer un sinistre professionnel",
+    "motsCles": {
+      "slug": "demenagement-de-bureaux",
+      "score": 0.1
+    },
+    "sujet": {
+      "slug": "preparer-son-absence",
+      "score": 0.108
+    },
+    "couverture": {
+      "slug": "mentions-obligatoires-facture",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C039",
+    "requete": "désignation du conducteur véhicule de société",
+    "motsCles": {
+      "slug": "traitement-du-courrier-entrant",
+      "score": 0.217
+    },
+    "sujet": {
+      "slug": "echeancier-administratif-entreprise",
+      "score": 0.139
+    },
+    "couverture": {
+      "slug": null,
+      "score": 0
+    }
+  },
+  {
+    "id": "C040",
+    "requete": "dicter ses courriers à une assistante",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.174
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.1
+    },
+    "couverture": {
+      "slug": "assistante-independante-ou-salariee",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C041",
+    "requete": "checklist administrative mensuelle",
+    "motsCles": {
+      "slug": "demenagement-de-bureaux",
+      "score": 0.167
+    },
+    "sujet": {
+      "slug": "modele-releve-du-temps-administratif",
+      "score": 0.133
+    },
+    "couverture": {
+      "slug": "administratif-a-la-creation-d-entreprise",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C042",
+    "requete": "appels manqués entreprise que faire",
+    "motsCles": {
+      "slug": "organiser-l-administratif-de-son-entreprise",
+      "score": 0.158
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.17
+    },
+    "couverture": {
+      "slug": "organiser-l-administratif-de-son-entreprise",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C043",
+    "requete": "annonce répondeur professionnel",
+    "motsCles": {
+      "slug": "preparer-son-absence",
+      "score": 0.174
+    },
+    "sujet": {
+      "slug": "filtrer-les-appels-et-messages",
+      "score": 0.123
+    },
+    "couverture": {
+      "slug": "mentions-obligatoires-facture",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C044",
+    "requete": "boîte mail partagée entreprise",
+    "motsCles": {
+      "slug": "demenagement-de-bureaux",
+      "score": 0.158
+    },
+    "sujet": {
+      "slug": "traitement-du-courrier-entrant",
+      "score": 0.247
+    },
+    "couverture": {
+      "slug": "organiser-sa-boite-mail-de-dirigeant",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C045",
+    "requete": "télésecrétariat et assistante externalisée",
+    "motsCles": {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "score": 0.188
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.215
+    },
+    "couverture": {
+      "slug": "prix-assistante-de-direction-externalisee",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C046",
+    "requete": "organiser des entretiens de recrutement",
+    "motsCles": {
+      "slug": "organiser-l-administratif-de-son-entreprise",
+      "score": 0.143
+    },
+    "sujet": {
+      "slug": "premiere-embauche-formalites-administratives",
+      "score": 0.124
+    },
+    "couverture": {
+      "slug": "organiser-l-administratif-de-son-entreprise",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C047",
+    "requete": "préparer un salon professionnel exposant",
+    "motsCles": {
+      "slug": "organiser-un-deplacement-professionnel",
+      "score": 0.25
+    },
+    "sujet": {
+      "slug": "organiser-un-diner-client",
+      "score": 0.107
+    },
+    "couverture": {
+      "slug": "preparer-son-absence",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C048",
+    "requete": "note d’aide à la décision modèle",
+    "motsCles": {
+      "slug": "modele-fiche-de-preferences-dirigeant",
+      "score": 0.143
+    },
+    "sujet": {
+      "slug": "modeles-et-checklists",
+      "score": 0.139
+    },
+    "couverture": {
+      "slug": "compte-rendu-de-reunion",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C049",
+    "requete": "assistante commerciale externalisée",
+    "motsCles": {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "score": 0.267
+    },
+    "sujet": {
+      "slug": "externaliser-son-assistanat",
+      "score": 0.124
+    },
+    "couverture": {
+      "slug": "prix-assistante-de-direction-externalisee",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C050",
+    "requete": "traiter les demandes de devis entrantes",
+    "motsCles": {
+      "slug": "relancer-un-devis-sans-reponse",
+      "score": 0.176
+    },
+    "sujet": {
+      "slug": "reponses-types-emails",
+      "score": 0.24
+    },
+    "couverture": {
+      "slug": "traitement-du-courrier-entrant",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C051",
+    "requete": "tarif secrétariat externalisé",
+    "motsCles": {
+      "slug": "prix-assistante-de-direction-externalisee",
+      "score": 0.364
+    },
+    "sujet": {
+      "slug": "externaliser-son-assistanat",
+      "score": 0.195
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C052",
+    "requete": "secrétariat externalisé définition",
+    "motsCles": {
+      "slug": "secretariat-externalise",
+      "score": 0.167
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.139
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C053",
+    "requete": "avantages du secrétariat externalisé",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.176
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.135
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C054",
+    "requete": "secrétariat à l’heure, au forfait ou à l’acte",
+    "motsCles": {
+      "slug": "secretariat-externalise",
+      "score": 0.133
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.185
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.25
+    }
+  },
+  {
+    "id": "C055",
+    "requete": "secrétaire à temps partiel ou secrétariat externalisé",
+    "motsCles": {
+      "slug": "secretariat-externalise",
+      "score": 0.118
+    },
+    "sujet": {
+      "slug": "assistante-independante-ou-salariee",
+      "score": 0.181
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C056",
+    "requete": "agence de secrétariat ou secrétaire indépendante",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.25
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.148
+    },
+    "couverture": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C057",
+    "requete": "suis-je prêt à externaliser mon secrétariat",
+    "motsCles": {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "score": 0.143
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.133
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C058",
+    "requete": "définir le périmètre d’un secrétariat externalisé",
+    "motsCles": {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "score": 0.214
+    },
+    "sujet": {
+      "slug": "externaliser-son-assistanat",
+      "score": 0.174
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C059",
+    "requete": "combien d’heures de secrétariat par mois",
+    "motsCles": {
+      "slug": "prix-assistante-de-direction-externalisee",
+      "score": 0.125
+    },
+    "sujet": {
+      "slug": "prix-assistante-de-direction-externalisee",
+      "score": 0.141
+    },
+    "couverture": {
+      "slug": "prix-assistante-de-direction-externalisee",
+      "score": 0.25
+    }
+  },
+  {
+    "id": "C060",
+    "requete": "secrétariat externalisé pour micro-entrepreneur",
+    "motsCles": {
+      "slug": "modele-brief-assistante-externalisee",
+      "score": 0.214
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.113
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C061",
+    "requete": "secrétariat sur site ou à distance",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.158
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.135
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C062",
+    "requete": "horaires d’une assistante externalisée",
+    "motsCles": {
+      "slug": "choisir-assistante-externalisee",
+      "score": 0.167
+    },
+    "sujet": {
+      "slug": "externaliser-son-assistanat",
+      "score": 0.159
+    },
+    "couverture": {
+      "slug": "prix-assistante-de-direction-externalisee",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C063",
+    "requete": "priorités des demandes à son assistante",
+    "motsCles": {
+      "slug": "suivi-demandes-assistante-externalisee",
+      "score": 0.118
+    },
+    "sujet": {
+      "slug": "agenda-emails-reunions",
+      "score": 0.153
+    },
+    "couverture": {
+      "slug": "suivi-demandes-assistante-externalisee",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C064",
+    "requete": "règles de validation avec son assistante",
+    "motsCles": {
+      "slug": "choisir-assistante-externalisee",
+      "score": 0.083
+    },
+    "sujet": {
+      "slug": "politique-voyage-petite-entreprise",
+      "score": 0.139
+    },
+    "couverture": {
+      "slug": "assistante-independante-ou-salariee",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C065",
+    "requete": "audit administratif avant de déléguer",
+    "motsCles": {
+      "slug": "quand-prendre-une-assistante",
+      "score": 0.176
+    },
+    "sujet": {
+      "slug": "reprise-d-entreprise-administratif",
+      "score": 0.157
+    },
+    "couverture": {
+      "slug": "quand-prendre-une-assistante",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C066",
+    "requete": "liste des interlocuteurs à transmettre à son assistante",
+    "motsCles": {
+      "slug": "modele-fiche-de-preferences-dirigeant",
+      "score": 0.15
+    },
+    "sujet": {
+      "slug": "modele-fiche-prestataire",
+      "score": 0.225
+    },
+    "couverture": {
+      "slug": "quelles-taches-deleguer-a-une-assistante",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C067",
+    "requete": "délai de mise en place d’un secrétariat externalisé",
+    "motsCles": {
+      "slug": "duree-de-conservation-documents-entreprise",
+      "score": 0.2
+    },
+    "sujet": {
+      "slug": "externaliser-son-assistanat",
+      "score": 0.186
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.4
+    }
+  },
+  {
+    "id": "C068",
+    "requete": "consignes permanentes pour son assistante",
+    "motsCles": {
+      "slug": "modele-fiche-de-preferences-dirigeant",
+      "score": 0.15
+    },
+    "sujet": {
+      "slug": "dossier-permanent-entreprise",
+      "score": 0.111
+    },
+    "couverture": {
+      "slug": "assistante-independante-ou-salariee",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C069",
+    "requete": "licences et matériel à fournir à une assistante indépendante",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.143
+    },
+    "sujet": {
+      "slug": "assistante-independante-ou-salariee",
+      "score": 0.138
+    },
+    "couverture": {
+      "slug": "assistante-independante-ou-salariee",
+      "score": 0.4
+    }
+  },
+  {
+    "id": "C070",
+    "requete": "contrôler le travail de son assistante sans tout revérifier",
+    "motsCles": {
+      "slug": "confidentialite-assistante-externalisee",
+      "score": 0.25
+    },
+    "sujet": {
+      "slug": "erreurs-de-delegation",
+      "score": 0.125
+    },
+    "couverture": {
+      "slug": "confidentialite-assistante-externalisee",
+      "score": 0.75
+    }
+  },
+  {
+    "id": "C071",
+    "requete": "compte rendu d’activité de son assistante",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.2
+    },
+    "sujet": {
+      "slug": "choisir-assistante-externalisee",
+      "score": 0.154
+    },
+    "couverture": {
+      "slug": "quand-prendre-une-assistante",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C072",
+    "requete": "faire un retour à son assistante",
+    "motsCles": {
+      "slug": "rentabilite-assistante-externalisee",
+      "score": 0.143
+    },
+    "sujet": {
+      "slug": "modele-tableau-de-bord-hebdomadaire",
+      "score": 0.088
+    },
+    "couverture": {
+      "slug": "rentabilite-assistante-externalisee",
+      "score": 1
+    }
+  },
+  {
+    "id": "C073",
+    "requete": "manuel de fonctionnement tenu par l’assistante",
+    "motsCles": {
+      "slug": "externaliser-son-assistanat",
+      "score": 0.111
+    },
+    "sujet": {
+      "slug": "choisir-un-lieu-de-seminaire",
+      "score": 0.101
+    },
+    "couverture": {
+      "slug": "assistante-independante-ou-salariee",
+      "score": 0.25
+    }
+  },
+  {
+    "id": "C074",
+    "requete": "demande urgente hors horaires à son assistante",
+    "motsCles": {
+      "slug": "suivi-demandes-assistante-externalisee",
+      "score": 0.1
+    },
+    "sujet": {
+      "slug": "tenir-un-agenda-de-dirigeant",
+      "score": 0.147
+    },
+    "couverture": {
+      "slug": "suivi-demandes-assistante-externalisee",
+      "score": 0.4
+    }
+  },
+  {
+    "id": "C075",
+    "requete": "collaboration qui se dégrade avec son assistante",
+    "motsCles": {
+      "slug": "fin-de-collaboration-assistante-externalisee",
+      "score": 0.136
+    },
+    "sujet": {
+      "slug": "erreurs-de-delegation",
+      "score": 0.073
+    },
+    "couverture": {
+      "slug": "fin-de-collaboration-assistante-externalisee",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C076",
+    "requete": "assistante externalisée en renfort d’une assistante interne",
+    "motsCles": {
+      "slug": "choisir-assistante-externalisee",
+      "score": 0.3
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.117
+    },
+    "couverture": {
+      "slug": "prix-assistante-de-direction-externalisee",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C077",
+    "requete": "secrétariat externalisé pendant la fermeture annuelle",
+    "motsCles": {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "score": 0.188
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.069
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.4
+    }
+  },
+  {
+    "id": "C078",
+    "requete": "suspendre son secrétariat externalisé",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.211
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.098
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C079",
+    "requete": "élargir le périmètre de son assistante",
+    "motsCles": {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "score": 0.118
+    },
+    "sujet": {
+      "slug": "externaliser-son-assistanat",
+      "score": 0.172
+    },
+    "couverture": {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C080",
+    "requete": "coût d’un retard administratif",
+    "motsCles": {
+      "slug": "situations-de-dirigeant",
+      "score": 0.118
+    },
+    "sujet": {
+      "slug": "rentabilite-assistante-externalisee",
+      "score": 0.132
+    },
+    "couverture": {
+      "slug": "situations-de-dirigeant",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C081",
+    "requete": "coût complet d’une secrétaire à mi-temps",
+    "motsCles": {
+      "slug": "prix-assistante-de-direction-externalisee",
+      "score": 0.2
+    },
+    "sujet": {
+      "slug": "assistante-independante-ou-salariee",
+      "score": 0.287
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.25
+    }
+  },
+  {
+    "id": "C082",
+    "requete": "seuil de rentabilité d’une assistante",
+    "motsCles": {
+      "slug": "rentabilite-assistante-externalisee",
+      "score": 0.308
+    },
+    "sujet": {
+      "slug": "comment-deleguer",
+      "score": 0.111
+    },
+    "couverture": {
+      "slug": "rentabilite-assistante-externalisee",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C083",
+    "requete": "aide pour externaliser son secrétariat",
+    "motsCles": {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "score": 0.214
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.075
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C084",
+    "requete": "accord de confidentialité avec une assistante : modèle",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.235
+    },
+    "sujet": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.181
+    },
+    "couverture": {
+      "slug": "confidentialite-assistante-externalisee",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C085",
+    "requete": "garder la trace de ce que l’assistante fait en mon nom",
+    "motsCles": {
+      "slug": "quelles-taches-deleguer-a-une-assistante",
+      "score": 0.176
+    },
+    "sujet": {
+      "slug": "delegation-d-acces-messagerie-et-agenda",
+      "score": 0.106
+    },
+    "couverture": {
+      "slug": "quelles-taches-deleguer-a-une-assistante",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C086",
+    "requete": "couper les accès d’un prestataire en urgence",
+    "motsCles": {
+      "slug": "modele-fiche-prestataire",
+      "score": 0.056
+    },
+    "sujet": {
+      "slug": "fin-de-collaboration-assistante-externalisee",
+      "score": 0.181
+    },
+    "couverture": {
+      "slug": "confidentialite-assistante-externalisee",
+      "score": 0.25
+    }
+  },
+  {
+    "id": "C087",
+    "requete": "assurance responsabilité civile professionnelle d’une assistante",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.263
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.15
+    },
+    "couverture": {
+      "slug": "assistante-independante-ou-salariee",
+      "score": 0.2
+    }
+  },
+  {
+    "id": "C088",
+    "requete": "vérifier l’existence d’un prestataire indépendant",
+    "motsCles": {
+      "slug": "modele-fiche-prestataire",
+      "score": 0.125
+    },
+    "sujet": {
+      "slug": "dossier-permanent-entreprise",
+      "score": 0.102
+    },
+    "couverture": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C089",
+    "requete": "usurpation d’identité visant son assistante",
+    "motsCles": {
+      "slug": "fraude-au-faux-rib-et-au-president",
+      "score": 0.15
+    },
+    "sujet": {
+      "slug": "fraude-au-faux-rib-et-au-president",
+      "score": 0.201
+    },
+    "couverture": {
+      "slug": "assistante-independante-ou-salariee",
+      "score": 0.25
+    }
+  },
+  {
+    "id": "C090",
+    "requete": "clause d’exclusivité avec une assistante indépendante",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.313
+    },
+    "sujet": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.179
+    },
+    "couverture": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.75
+    }
+  },
+  {
+    "id": "C091",
+    "requete": "propriété des documents créés par un prestataire",
+    "motsCles": {
+      "slug": "modele-note-de-passation",
+      "score": 0.15
+    },
+    "sujet": {
+      "slug": "confidentialite-assistante-externalisee",
+      "score": 0.107
+    },
+    "couverture": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.25
+    }
+  },
+  {
+    "id": "C092",
+    "requete": "secret professionnel et secrétariat externalisé",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.158
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.187
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C093",
+    "requete": "questions de sécurité à poser à un prestataire à distance",
+    "motsCles": {
+      "slug": "confidentialite-assistante-externalisee",
+      "score": 0.167
+    },
+    "sujet": {
+      "slug": "confidentialite-acces-et-outils",
+      "score": 0.135
+    },
+    "couverture": {
+      "slug": "sauvegarde-des-documents-entreprise",
+      "score": 0.4
+    }
+  },
+  {
+    "id": "C094",
+    "requete": "registre des traitements et prestataire",
+    "motsCles": {
+      "slug": "ia-generative-et-donnees-confidentielles",
+      "score": 0.19
+    },
+    "sujet": {
+      "slug": "registre-des-acces-entreprise",
+      "score": 0.206
+    },
+    "couverture": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C095",
+    "requete": "dossiers sensibles à cloisonner",
+    "motsCles": {
+      "slug": "confidentialite-acces-et-outils",
+      "score": 0.167
+    },
+    "sujet": {
+      "slug": "confidentialite-assistante-externalisee",
+      "score": 0.095
+    },
+    "couverture": {
+      "slug": "arborescence-dossiers-entreprise",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C096",
+    "requete": "boîte mail d’un salarié parti",
+    "motsCles": {
+      "slug": "deleguer-sa-boite-mail",
+      "score": 0.227
+    },
+    "sujet": {
+      "slug": "reprise-d-entreprise-administratif",
+      "score": 0.143
+    },
+    "couverture": {
+      "slug": "organiser-sa-boite-mail-de-dirigeant",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C097",
+    "requete": "secrétariat médical externalisé",
+    "motsCles": {
+      "slug": "secretariat-externalise",
+      "score": 0.125
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.187
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C098",
+    "requete": "secrétariat juridique externalisé",
+    "motsCles": {
+      "slug": "secretariat-externalise",
+      "score": 0.125
+    },
+    "sujet": {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "score": 0.135
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C099",
+    "requete": "assistante RH externalisée",
+    "motsCles": {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "score": 0.231
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.174
+    },
+    "couverture": {
+      "slug": "prix-assistante-de-direction-externalisee",
+      "score": 1
+    }
+  },
+  {
+    "id": "C100",
+    "requete": "expert-comptable ou secrétariat externalisé : qui fait quoi",
+    "motsCles": {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "score": 0.5
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.173
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C101",
+    "requete": "publipostage et envoi de courriers en nombre",
+    "motsCles": {
+      "slug": "organiser-un-diner-client",
+      "score": 0.143
+    },
+    "sujet": {
+      "slug": "traitement-du-courrier-entrant",
+      "score": 0.086
+    },
+    "couverture": {
+      "slug": "traitement-du-courrier-entrant",
+      "score": 0.25
+    }
+  },
+  {
+    "id": "C102",
+    "requete": "résilier un contrat professionnel : la lettre",
+    "motsCles": {
+      "slug": "suivi-des-contrats-et-abonnements",
+      "score": 0.111
+    },
+    "sujet": {
+      "slug": "suivi-des-contrats-et-abonnements",
+      "score": 0.294
+    },
+    "couverture": {
+      "slug": "fin-de-collaboration-assistante-externalisee",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C103",
+    "requete": "commandes de fournitures et petits achats",
+    "motsCles": {
+      "slug": "suivi-des-contrats-et-abonnements",
+      "score": 0.176
+    },
+    "sujet": {
+      "slug": "prix-assistante-de-direction-externalisee",
+      "score": 0.103
+    },
+    "couverture": {
+      "slug": "pieces-pour-l-expert-comptable",
+      "score": 0.25
+    }
+  },
+  {
+    "id": "C104",
+    "requete": "arrivée d’un collaborateur : la checklist",
+    "motsCles": {
+      "slug": "organiser-un-deplacement-professionnel",
+      "score": 0.125
+    },
+    "sujet": {
+      "slug": "premiere-embauche-formalites-administratives",
+      "score": 0.141
+    },
+    "couverture": {
+      "slug": "fin-de-collaboration-assistante-externalisee",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C105",
+    "requete": "registres obligatoires de l’entreprise",
+    "motsCles": {
+      "slug": "organiser-l-administratif-de-son-entreprise",
+      "score": 0.111
+    },
+    "sujet": {
+      "slug": "registre-des-acces-entreprise",
+      "score": 0.2
+    },
+    "couverture": {
+      "slug": "suivi-des-contrats-et-abonnements",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C106",
+    "requete": "indemnités kilométriques : le suivi",
+    "motsCles": {
+      "slug": "politique-voyage-petite-entreprise",
+      "score": 0.1
+    },
+    "sujet": {
+      "slug": "politique-voyage-petite-entreprise",
+      "score": 0.134
+    },
+    "couverture": {
+      "slug": "suivi-demandes-assistante-externalisee",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C107",
+    "requete": "planning des congés d’une petite équipe",
+    "motsCles": {
+      "slug": "organiser-l-administratif-de-son-entreprise",
+      "score": 0.158
+    },
+    "sujet": {
+      "slug": "assistante-independante-ou-salariee",
+      "score": 0.136
+    },
+    "couverture": {
+      "slug": "politique-voyage-petite-entreprise",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C108",
+    "requete": "veille des appels d’offres",
+    "motsCles": {
+      "slug": "appel-d-offres-dossier-de-candidature",
+      "score": 0.136
+    },
+    "sujet": {
+      "slug": "echeancier-administratif-entreprise",
+      "score": 0.148
+    },
+    "couverture": {
+      "slug": "echeancier-administratif-entreprise",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C109",
+    "requete": "dossier de subvention : les pièces",
+    "motsCles": {
+      "slug": "dossier-permanent-entreprise",
+      "score": 0.211
+    },
+    "sujet": {
+      "slug": "checklist-cloture-annuelle-administrative",
+      "score": 0.108
+    },
+    "couverture": {
+      "slug": "dossier-permanent-entreprise",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C110",
+    "requete": "secrétariat externalisé pour association",
+    "motsCles": {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "score": 0.3
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.121
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C111",
+    "requete": "une semaine type avec un secrétariat externalisé",
+    "motsCles": {
+      "slug": "choisir-assistante-externalisee",
+      "score": 0.154
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.164
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C112",
+    "requete": "questions à poser à un prestataire de secrétariat",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.19
+    },
+    "sujet": {
+      "slug": "choisir-un-logiciel-de-facturation",
+      "score": 0.125
+    },
+    "couverture": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C113",
+    "requete": "lexique du secrétariat externalisé",
+    "motsCles": {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "score": 0.278
+    },
+    "sujet": {
+      "slug": "secretariat-externalise",
+      "score": 0.196
+    },
+    "couverture": {
+      "slug": "secretariat-externalise",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C114",
+    "requete": "assistance personnelle payée par l’entreprise",
+    "motsCles": {
+      "slug": "conciergerie-privee-ou-lifestyle-assistant",
+      "score": 0.2
+    },
+    "sujet": {
+      "slug": "conciergerie-privee-ou-lifestyle-assistant",
+      "score": 0.117
+    },
+    "couverture": {
+      "slug": "assistante-independante-ou-salariee",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C115",
+    "requete": "demander un délai de paiement à l’Urssaf",
+    "motsCles": {
+      "slug": "delais-de-paiement-et-penalites-de-retard",
+      "score": 0.105
+    },
+    "sujet": {
+      "slug": "delais-de-paiement-et-penalites-de-retard",
+      "score": 0.113
+    },
+    "couverture": {
+      "slug": "delais-de-paiement-et-penalites-de-retard",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C116",
+    "requete": "préparer un audit de certification",
+    "motsCles": {
+      "slug": "dossier-de-rendez-vous",
+      "score": 0.095
+    },
+    "sujet": {
+      "slug": "reprise-d-entreprise-administratif",
+      "score": 0.122
+    },
+    "couverture": {
+      "slug": "premier-mois-assistante-externalisee",
+      "score": 0.333
+    }
+  },
+  {
+    "id": "C117",
+    "requete": "organiser une inauguration",
+    "motsCles": {
+      "slug": "organiser-un-diner-client",
+      "score": 0.188
+    },
+    "sujet": {
+      "slug": "tenir-un-agenda-de-dirigeant",
+      "score": 0.108
+    },
+    "couverture": {
+      "slug": "organiser-l-administratif-de-son-entreprise",
+      "score": 0.5
+    }
+  },
+  {
+    "id": "C118",
+    "requete": "cadeaux d’affaires : organisation",
+    "motsCles": {
+      "slug": "organiser-un-diner-client",
+      "score": 0.214
+    },
+    "sujet": {
+      "slug": "checklist-cloture-annuelle-administrative",
+      "score": 0.081
+    },
+    "couverture": {
+      "slug": "deplacements-et-evenements-professionnels",
+      "score": 0.667
+    }
+  },
+  {
+    "id": "C119",
+    "requete": "reprendre après une mauvaise expérience d’externalisation",
+    "motsCles": {
+      "slug": "reprise-d-entreprise-administratif",
+      "score": 0.13
+    },
+    "sujet": {
+      "slug": "erreurs-de-delegation",
+      "score": 0.152
+    },
+    "couverture": {
+      "slug": "reprise-d-entreprise-administratif",
+      "score": 0.4
+    }
+  }
+]

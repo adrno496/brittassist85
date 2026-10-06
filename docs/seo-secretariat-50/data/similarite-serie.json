@@ -1,0 +1,1275 @@
+{
+  "genere": "2026-10-06T17:54:31.556Z",
+  "seuils": {
+    "titre": {
+      "alerte": 0.5,
+      "blocage": 0.8
+    },
+    "lede": {
+      "alerte": 0.12,
+      "blocage": 0.4
+    },
+    "reponseCourte": {
+      "alerte": 0.12,
+      "blocage": 0.4
+    },
+    "cloture": {
+      "alerte": 0.3,
+      "blocage": 0.7
+    },
+    "corps": {
+      "alerte": 0.08,
+      "blocage": 0.3
+    },
+    "faq": {
+      "alerte": 0.08,
+      "blocage": 0.3
+    },
+    "sujet": {
+      "alerte": 0.45,
+      "blocage": 0.7
+    },
+    "requete": {
+      "alerte": 0.6,
+      "blocage": 0.85
+    },
+    "phraseMots": 9,
+    "question": 0.8
+  },
+  "perimetre": "paires où figure un guide de la série",
+  "fiches": 154,
+  "serie": 50,
+  "paires": 6425,
+  "maxima": {
+    "titre": 0.375,
+    "lede": 0.044,
+    "reponseCourte": 0.076,
+    "cloture": 0.118,
+    "corps": 0.029,
+    "faq": 0.019,
+    "sujet": 0.495,
+    "requete": 0.667
+  },
+  "blocages": [],
+  "alertes": [
+    {
+      "gravite": "alerte",
+      "regle": "requete-proche",
+      "a": "externaliser-son-assistanat",
+      "b": "erreur-de-son-assistante-externalisee",
+      "score": 0.667,
+      "detail": ""
+    },
+    {
+      "gravite": "alerte",
+      "regle": "requete-proche",
+      "a": "externaliser-son-assistanat",
+      "b": "telesecretariat-et-assistante-externalisee",
+      "score": 0.667,
+      "detail": ""
+    },
+    {
+      "gravite": "alerte",
+      "regle": "requete-proche",
+      "a": "externaliser-son-assistanat",
+      "b": "assistante-commerciale-externalisee",
+      "score": 0.667,
+      "detail": ""
+    },
+    {
+      "gravite": "alerte",
+      "regle": "requete-proche",
+      "a": "secretariat-externalise-charge-deductible",
+      "b": "cahier-des-charges-secretariat-externalise",
+      "score": 0.6,
+      "detail": ""
+    },
+    {
+      "gravite": "alerte",
+      "regle": "sujet-proche",
+      "a": "dossier-permanent-entreprise",
+      "b": "obligation-de-vigilance-prestataire-independant",
+      "score": 0.495,
+      "detail": ""
+    }
+  ],
+  "reprises": [],
+  "voisins": [
+    {
+      "slug": "assistante-independante-ou-salariee",
+      "serie": false,
+      "voisin": "externaliser-son-assistanat",
+      "score": 0.328
+    },
+    {
+      "slug": "prix-assistante-de-direction-externalisee",
+      "serie": false,
+      "voisin": "choisir-assistante-externalisee",
+      "score": 0.323
+    },
+    {
+      "slug": "qu-est-ce-qu-un-private-office",
+      "serie": false,
+      "voisin": "secretariat-externalise",
+      "score": 0.341
+    },
+    {
+      "slug": "assistante-virtuelle-ou-private-office",
+      "serie": false,
+      "voisin": "secretariat-externalise",
+      "score": 0.301
+    },
+    {
+      "slug": "secretariat-externalise",
+      "serie": false,
+      "voisin": "qu-est-ce-qu-un-private-office",
+      "score": 0.341
+    },
+    {
+      "slug": "comment-deleguer",
+      "serie": false,
+      "voisin": "premier-mois-assistante-externalisee",
+      "score": 0.279
+    },
+    {
+      "slug": "executive-assistant-role",
+      "serie": false,
+      "voisin": "secretariat-externalise",
+      "score": 0.34
+    },
+    {
+      "slug": "confidentialite-assistante-externalisee",
+      "serie": false,
+      "voisin": "confidentialite-acces-et-outils",
+      "score": 0.392
+    },
+    {
+      "slug": "premier-mois-assistante-externalisee",
+      "serie": false,
+      "voisin": "suivi-demandes-assistante-externalisee",
+      "score": 0.397
+    },
+    {
+      "slug": "choisir-assistante-externalisee",
+      "serie": false,
+      "voisin": "premier-mois-assistante-externalisee",
+      "score": 0.367
+    },
+    {
+      "slug": "modele-brief-assistante-externalisee",
+      "serie": false,
+      "voisin": "premier-mois-assistante-externalisee",
+      "score": 0.368
+    },
+    {
+      "slug": "suivi-demandes-assistante-externalisee",
+      "serie": false,
+      "voisin": "premier-mois-assistante-externalisee",
+      "score": 0.397
+    },
+    {
+      "slug": "externaliser-son-assistanat",
+      "serie": false,
+      "voisin": "assistante-independante-ou-salariee",
+      "score": 0.328
+    },
+    {
+      "slug": "quelles-taches-deleguer-a-une-assistante",
+      "serie": false,
+      "voisin": "comment-deleguer",
+      "score": 0.263
+    },
+    {
+      "slug": "quand-prendre-une-assistante",
+      "serie": false,
+      "voisin": "rentabilite-assistante-externalisee",
+      "score": 0.309
+    },
+    {
+      "slug": "contrat-de-prestation-assistante-independante",
+      "serie": false,
+      "voisin": "rgpd-sous-traitance-assistante-externalisee",
+      "score": 0.364
+    },
+    {
+      "slug": "requalification-assistante-independante-salariat",
+      "serie": false,
+      "voisin": "assistante-independante-ou-salariee",
+      "score": 0.327
+    },
+    {
+      "slug": "niveaux-d-autonomie-delegation",
+      "serie": false,
+      "voisin": "modele-brief-assistante-externalisee",
+      "score": 0.257
+    },
+    {
+      "slug": "erreurs-de-delegation",
+      "serie": false,
+      "voisin": "modele-brief-assistante-externalisee",
+      "score": 0.242
+    },
+    {
+      "slug": "fin-de-collaboration-assistante-externalisee",
+      "serie": false,
+      "voisin": "confidentialite-assistante-externalisee",
+      "score": 0.347
+    },
+    {
+      "slug": "ce-qu-une-assistante-externalisee-ne-fait-pas",
+      "serie": false,
+      "voisin": "contrat-de-prestation-assistante-independante",
+      "score": 0.244
+    },
+    {
+      "slug": "rentabilite-assistante-externalisee",
+      "serie": false,
+      "voisin": "quand-prendre-une-assistante",
+      "score": 0.309
+    },
+    {
+      "slug": "point-hebdomadaire-avec-son-assistante",
+      "serie": false,
+      "voisin": "preparer-une-reunion",
+      "score": 0.231
+    },
+    {
+      "slug": "assistante-externalisee-et-ia",
+      "serie": false,
+      "voisin": "ia-generative-et-donnees-confidentielles",
+      "score": 0.365
+    },
+    {
+      "slug": "conciergerie-privee-ou-lifestyle-assistant",
+      "serie": false,
+      "voisin": "qu-est-ce-qu-un-private-office",
+      "score": 0.232
+    },
+    {
+      "slug": "chief-of-staff-ou-executive-assistant",
+      "serie": false,
+      "voisin": "executive-assistant-role",
+      "score": 0.216
+    },
+    {
+      "slug": "canal-pour-transmettre-ses-demandes",
+      "serie": false,
+      "voisin": "choisir-un-outil-de-suivi-des-taches",
+      "score": 0.223
+    },
+    {
+      "slug": "organiser-l-administratif-de-son-entreprise",
+      "serie": false,
+      "voisin": "rattraper-un-retard-administratif",
+      "score": 0.293
+    },
+    {
+      "slug": "arborescence-dossiers-entreprise",
+      "serie": false,
+      "voisin": "organiser-l-administratif-de-son-entreprise",
+      "score": 0.227
+    },
+    {
+      "slug": "regles-de-nommage-des-fichiers",
+      "serie": false,
+      "voisin": "organiser-l-administratif-de-son-entreprise",
+      "score": 0.188
+    },
+    {
+      "slug": "duree-de-conservation-documents-entreprise",
+      "serie": false,
+      "voisin": "numeriser-ses-archives-papier",
+      "score": 0.254
+    },
+    {
+      "slug": "echeancier-administratif-entreprise",
+      "serie": false,
+      "voisin": "suivi-des-contrats-et-abonnements",
+      "score": 0.369
+    },
+    {
+      "slug": "pieces-pour-l-expert-comptable",
+      "serie": false,
+      "voisin": "checklist-cloture-annuelle-administrative",
+      "score": 0.39
+    },
+    {
+      "slug": "notes-de-frais-justificatifs",
+      "serie": false,
+      "voisin": "pieces-pour-l-expert-comptable",
+      "score": 0.281
+    },
+    {
+      "slug": "suivi-des-contrats-et-abonnements",
+      "serie": false,
+      "voisin": "echeancier-administratif-entreprise",
+      "score": 0.369
+    },
+    {
+      "slug": "traitement-du-courrier-entrant",
+      "serie": false,
+      "voisin": "boite-mail-partagee-entreprise",
+      "score": 0.263
+    },
+    {
+      "slug": "dossier-permanent-entreprise",
+      "serie": false,
+      "voisin": "obligation-de-vigilance-prestataire-independant",
+      "score": 0.495
+    },
+    {
+      "slug": "rediger-une-procedure-interne",
+      "serie": false,
+      "voisin": "erreurs-de-delegation",
+      "score": 0.193
+    },
+    {
+      "slug": "administratif-a-la-creation-d-entreprise",
+      "serie": false,
+      "voisin": "organiser-l-administratif-de-son-entreprise",
+      "score": 0.245
+    },
+    {
+      "slug": "devis-factures-relances",
+      "serie": false,
+      "voisin": "facturation-electronique-tpe",
+      "score": 0.416
+    },
+    {
+      "slug": "mentions-obligatoires-facture",
+      "serie": false,
+      "voisin": "devis-factures-relances",
+      "score": 0.39
+    },
+    {
+      "slug": "facturation-electronique-tpe",
+      "serie": false,
+      "voisin": "devis-factures-relances",
+      "score": 0.416
+    },
+    {
+      "slug": "relancer-une-facture-impayee",
+      "serie": false,
+      "voisin": "mise-en-demeure-et-injonction-de-payer",
+      "score": 0.41
+    },
+    {
+      "slug": "delais-de-paiement-et-penalites-de-retard",
+      "serie": false,
+      "voisin": "devis-factures-relances",
+      "score": 0.367
+    },
+    {
+      "slug": "mise-en-demeure-et-injonction-de-payer",
+      "serie": false,
+      "voisin": "relancer-une-facture-impayee",
+      "score": 0.41
+    },
+    {
+      "slug": "relancer-un-devis-sans-reponse",
+      "serie": false,
+      "voisin": "traiter-les-demandes-de-devis-entrantes",
+      "score": 0.318
+    },
+    {
+      "slug": "devis-contenu-et-validite",
+      "serie": false,
+      "voisin": "mentions-obligatoires-facture",
+      "score": 0.273
+    },
+    {
+      "slug": "acompte-ou-arrhes",
+      "serie": false,
+      "voisin": "tva-prestataire-en-franchise-en-base",
+      "score": 0.17
+    },
+    {
+      "slug": "numerotation-des-factures-et-avoirs",
+      "serie": false,
+      "voisin": "changer-d-outil-de-gestion",
+      "score": 0.217
+    },
+    {
+      "slug": "facture-de-situation-et-retenue-de-garantie",
+      "serie": false,
+      "voisin": "devis-contenu-et-validite",
+      "score": 0.161
+    },
+    {
+      "slug": "choisir-un-logiciel-de-facturation",
+      "serie": false,
+      "voisin": "facturation-electronique-tpe",
+      "score": 0.303
+    },
+    {
+      "slug": "circuit-des-factures-fournisseurs",
+      "serie": false,
+      "voisin": "devis-factures-relances",
+      "score": 0.279
+    },
+    {
+      "slug": "agenda-emails-reunions",
+      "serie": false,
+      "voisin": "tenir-un-agenda-de-dirigeant",
+      "score": 0.271
+    },
+    {
+      "slug": "organiser-sa-boite-mail-de-dirigeant",
+      "serie": false,
+      "voisin": "agenda-emails-reunions",
+      "score": 0.238
+    },
+    {
+      "slug": "deleguer-sa-boite-mail",
+      "serie": false,
+      "voisin": "delegation-d-acces-messagerie-et-agenda",
+      "score": 0.259
+    },
+    {
+      "slug": "tenir-un-agenda-de-dirigeant",
+      "serie": false,
+      "voisin": "gerer-les-demandes-de-rendez-vous",
+      "score": 0.283
+    },
+    {
+      "slug": "preparer-une-reunion",
+      "serie": false,
+      "voisin": "dossier-de-rendez-vous",
+      "score": 0.237
+    },
+    {
+      "slug": "compte-rendu-de-reunion",
+      "serie": false,
+      "voisin": "dicter-ses-courriers",
+      "score": 0.262
+    },
+    {
+      "slug": "reponses-types-emails",
+      "serie": false,
+      "voisin": "relancer-un-devis-sans-reponse",
+      "score": 0.297
+    },
+    {
+      "slug": "gerer-les-demandes-de-rendez-vous",
+      "serie": false,
+      "voisin": "coordonner-des-entretiens-de-recrutement",
+      "score": 0.284
+    },
+    {
+      "slug": "preparer-son-absence",
+      "serie": false,
+      "voisin": "absence-de-son-assistante-independante",
+      "score": 0.266
+    },
+    {
+      "slug": "filtrer-les-appels-et-messages",
+      "serie": false,
+      "voisin": "appels-manques-entreprise",
+      "score": 0.353
+    },
+    {
+      "slug": "dossier-de-rendez-vous",
+      "serie": false,
+      "voisin": "compte-rendu-de-reunion",
+      "score": 0.24
+    },
+    {
+      "slug": "reunions-et-fuseaux-horaires",
+      "serie": false,
+      "voisin": "secretariat-externalise-france-ou-offshore",
+      "score": 0.195
+    },
+    {
+      "slug": "deplacements-et-evenements-professionnels",
+      "serie": false,
+      "voisin": "organiser-un-deplacement-professionnel",
+      "score": 0.349
+    },
+    {
+      "slug": "organiser-un-deplacement-professionnel",
+      "serie": false,
+      "voisin": "deplacements-et-evenements-professionnels",
+      "score": 0.349
+    },
+    {
+      "slug": "feuille-de-route-de-deplacement",
+      "serie": false,
+      "voisin": "organiser-un-deplacement-professionnel",
+      "score": 0.336
+    },
+    {
+      "slug": "organiser-un-seminaire-d-equipe",
+      "serie": false,
+      "voisin": "choisir-un-lieu-de-seminaire",
+      "score": 0.328
+    },
+    {
+      "slug": "organiser-un-diner-client",
+      "serie": false,
+      "voisin": "organiser-un-seminaire-d-equipe",
+      "score": 0.231
+    },
+    {
+      "slug": "politique-voyage-petite-entreprise",
+      "serie": false,
+      "voisin": "notes-de-frais-justificatifs",
+      "score": 0.241
+    },
+    {
+      "slug": "deplacement-a-l-etranger-formalites",
+      "serie": false,
+      "voisin": "secretariat-externalise-france-ou-offshore",
+      "score": 0.171
+    },
+    {
+      "slug": "gerer-un-imprevu-en-deplacement",
+      "serie": false,
+      "voisin": "feuille-de-route-de-deplacement",
+      "score": 0.287
+    },
+    {
+      "slug": "choisir-un-lieu-de-seminaire",
+      "serie": false,
+      "voisin": "organiser-un-seminaire-d-equipe",
+      "score": 0.328
+    },
+    {
+      "slug": "confidentialite-acces-et-outils",
+      "serie": false,
+      "voisin": "partager-un-mot-de-passe-en-securite",
+      "score": 0.422
+    },
+    {
+      "slug": "partager-un-mot-de-passe-en-securite",
+      "serie": false,
+      "voisin": "confidentialite-acces-et-outils",
+      "score": 0.422
+    },
+    {
+      "slug": "delegation-d-acces-messagerie-et-agenda",
+      "serie": false,
+      "voisin": "confidentialite-acces-et-outils",
+      "score": 0.302
+    },
+    {
+      "slug": "double-authentification-et-delegation",
+      "serie": false,
+      "voisin": "partager-un-mot-de-passe-en-securite",
+      "score": 0.376
+    },
+    {
+      "slug": "signature-electronique-niveaux-et-usages",
+      "serie": false,
+      "voisin": "lettre-recommandee-electronique",
+      "score": 0.248
+    },
+    {
+      "slug": "ia-generative-et-donnees-confidentielles",
+      "serie": false,
+      "voisin": "assistante-externalisee-et-ia",
+      "score": 0.365
+    },
+    {
+      "slug": "choisir-un-outil-de-suivi-des-taches",
+      "serie": false,
+      "voisin": "suivi-demandes-assistante-externalisee",
+      "score": 0.248
+    },
+    {
+      "slug": "choisir-un-espace-de-stockage-partage",
+      "serie": false,
+      "voisin": "sauvegarde-des-documents-entreprise",
+      "score": 0.295
+    },
+    {
+      "slug": "registre-des-acces-entreprise",
+      "serie": false,
+      "voisin": "confidentialite-acces-et-outils",
+      "score": 0.319
+    },
+    {
+      "slug": "fraude-au-faux-rib-et-au-president",
+      "serie": false,
+      "voisin": "circuit-des-factures-fournisseurs",
+      "score": 0.278
+    },
+    {
+      "slug": "sauvegarde-des-documents-entreprise",
+      "serie": false,
+      "voisin": "choisir-un-espace-de-stockage-partage",
+      "score": 0.295
+    },
+    {
+      "slug": "situations-de-dirigeant",
+      "serie": false,
+      "voisin": "rattraper-un-retard-administratif",
+      "score": 0.271
+    },
+    {
+      "slug": "rattraper-un-retard-administratif",
+      "serie": false,
+      "voisin": "organiser-l-administratif-de-son-entreprise",
+      "score": 0.293
+    },
+    {
+      "slug": "dirigeant-goulot-d-etranglement",
+      "serie": false,
+      "voisin": "niveaux-d-autonomie-delegation",
+      "score": 0.213
+    },
+    {
+      "slug": "remplacer-une-assistante-absente",
+      "serie": false,
+      "voisin": "modele-note-de-passation",
+      "score": 0.294
+    },
+    {
+      "slug": "reprise-d-entreprise-administratif",
+      "serie": false,
+      "voisin": "registre-des-acces-entreprise",
+      "score": 0.243
+    },
+    {
+      "slug": "pic-d-activite-saisonnier",
+      "serie": false,
+      "voisin": "situations-de-dirigeant",
+      "score": 0.247
+    },
+    {
+      "slug": "premiere-embauche-formalites-administratives",
+      "serie": false,
+      "voisin": "depart-d-un-salarie-checklist-administrative",
+      "score": 0.243
+    },
+    {
+      "slug": "demenagement-de-bureaux",
+      "serie": false,
+      "voisin": "reprise-d-entreprise-administratif",
+      "score": 0.234
+    },
+    {
+      "slug": "appel-d-offres-dossier-de-candidature",
+      "serie": false,
+      "voisin": "dossier-permanent-entreprise",
+      "score": 0.242
+    },
+    {
+      "slug": "dirigeant-souvent-en-deplacement",
+      "serie": false,
+      "voisin": "traitement-du-courrier-entrant",
+      "score": 0.244
+    },
+    {
+      "slug": "changer-d-outil-de-gestion",
+      "serie": false,
+      "voisin": "tenir-son-fichier-clients-a-jour",
+      "score": 0.251
+    },
+    {
+      "slug": "modeles-et-checklists",
+      "serie": false,
+      "voisin": "choisir-un-outil-de-suivi-des-taches",
+      "score": 0.22
+    },
+    {
+      "slug": "modele-tableau-de-suivi-des-factures",
+      "serie": false,
+      "voisin": "modele-tableau-de-bord-hebdomadaire",
+      "score": 0.294
+    },
+    {
+      "slug": "modele-releve-du-temps-administratif",
+      "serie": false,
+      "voisin": "quand-prendre-une-assistante",
+      "score": 0.228
+    },
+    {
+      "slug": "modele-fiche-de-preferences-dirigeant",
+      "serie": false,
+      "voisin": "organiser-un-deplacement-professionnel",
+      "score": 0.224
+    },
+    {
+      "slug": "checklist-cloture-annuelle-administrative",
+      "serie": false,
+      "voisin": "pieces-pour-l-expert-comptable",
+      "score": 0.39
+    },
+    {
+      "slug": "modele-fiche-prestataire",
+      "serie": false,
+      "voisin": "suivi-des-contrats-et-abonnements",
+      "score": 0.264
+    },
+    {
+      "slug": "modele-note-de-passation",
+      "serie": false,
+      "voisin": "remplacer-une-assistante-absente",
+      "score": 0.294
+    },
+    {
+      "slug": "modele-tableau-de-bord-hebdomadaire",
+      "serie": false,
+      "voisin": "modele-tableau-de-suivi-des-factures",
+      "score": 0.294
+    },
+    {
+      "slug": "checklist-ouverture-dossier-client",
+      "serie": false,
+      "voisin": "mentions-obligatoires-facture",
+      "score": 0.298
+    },
+    {
+      "slug": "inconvenients-secretariat-externalise",
+      "serie": true,
+      "voisin": "assistante-independante-ou-salariee",
+      "score": 0.266
+    },
+    {
+      "slug": "mission-ponctuelle-de-secretariat",
+      "serie": true,
+      "voisin": "externaliser-son-assistanat",
+      "score": 0.229
+    },
+    {
+      "slug": "periode-d-essai-assistante-independante",
+      "serie": true,
+      "voisin": "contrat-de-prestation-assistante-independante",
+      "score": 0.308
+    },
+    {
+      "slug": "temps-partage-interim-alternance-ou-prestataire",
+      "serie": true,
+      "voisin": "assistante-independante-ou-salariee",
+      "score": 0.305
+    },
+    {
+      "slug": "secretariat-externalise-france-ou-offshore",
+      "serie": true,
+      "voisin": "assistante-virtuelle-ou-private-office",
+      "score": 0.261
+    },
+    {
+      "slug": "secretariat-externalise-charge-deductible",
+      "serie": true,
+      "voisin": "tva-prestataire-en-franchise-en-base",
+      "score": 0.274
+    },
+    {
+      "slug": "domiciliation-ou-secretariat-externalise",
+      "serie": true,
+      "voisin": "traitement-du-courrier-entrant",
+      "score": 0.243
+    },
+    {
+      "slug": "cahier-des-charges-secretariat-externalise",
+      "serie": true,
+      "voisin": "externaliser-son-assistanat",
+      "score": 0.257
+    },
+    {
+      "slug": "comparer-devis-secretariat-externalise",
+      "serie": true,
+      "voisin": "prix-assistante-de-direction-externalisee",
+      "score": 0.29
+    },
+    {
+      "slug": "tva-prestataire-en-franchise-en-base",
+      "serie": true,
+      "voisin": "secretariat-externalise-charge-deductible",
+      "score": 0.274
+    },
+    {
+      "slug": "delais-de-reponse-assistante-externalisee",
+      "serie": true,
+      "voisin": "absence-de-son-assistante-independante",
+      "score": 0.244
+    },
+    {
+      "slug": "forfait-secretariat-externalise-depassement",
+      "serie": true,
+      "voisin": "revue-trimestrielle-assistance-externalisee",
+      "score": 0.311
+    },
+    {
+      "slug": "evaluer-un-secretariat-externalise",
+      "serie": true,
+      "voisin": "premier-mois-assistante-externalisee",
+      "score": 0.208
+    },
+    {
+      "slug": "revue-trimestrielle-assistance-externalisee",
+      "serie": true,
+      "voisin": "forfait-secretariat-externalise-depassement",
+      "score": 0.311
+    },
+    {
+      "slug": "changer-d-assistante-externalisee",
+      "serie": true,
+      "voisin": "fin-de-collaboration-assistante-externalisee",
+      "score": 0.298
+    },
+    {
+      "slug": "recruter-apres-avoir-externalise",
+      "serie": true,
+      "voisin": "assistante-independante-ou-salariee",
+      "score": 0.313
+    },
+    {
+      "slug": "assistante-partagee-entre-associes",
+      "serie": true,
+      "voisin": "executive-assistant-role",
+      "score": 0.192
+    },
+    {
+      "slug": "presenter-son-assistante-a-ses-clients",
+      "serie": true,
+      "voisin": "deleguer-sa-boite-mail",
+      "score": 0.209
+    },
+    {
+      "slug": "absence-de-son-assistante-independante",
+      "serie": true,
+      "voisin": "remplacer-une-assistante-absente",
+      "score": 0.291
+    },
+    {
+      "slug": "erreur-de-son-assistante-externalisee",
+      "serie": true,
+      "voisin": "erreurs-de-delegation",
+      "score": 0.196
+    },
+    {
+      "slug": "obligation-de-vigilance-prestataire-independant",
+      "serie": true,
+      "voisin": "dossier-permanent-entreprise",
+      "score": 0.495
+    },
+    {
+      "slug": "rgpd-sous-traitance-assistante-externalisee",
+      "serie": true,
+      "voisin": "contrat-de-prestation-assistante-independante",
+      "score": 0.364
+    },
+    {
+      "slug": "incident-de-securite-chez-un-prestataire",
+      "serie": true,
+      "voisin": "confidentialite-acces-et-outils",
+      "score": 0.255
+    },
+    {
+      "slug": "acces-bancaire-pour-son-assistante",
+      "serie": true,
+      "voisin": "pieces-pour-l-expert-comptable",
+      "score": 0.244
+    },
+    {
+      "slug": "moyens-de-paiement-delegues",
+      "serie": true,
+      "voisin": "notes-de-frais-justificatifs",
+      "score": 0.231
+    },
+    {
+      "slug": "delegations-aupres-des-organismes",
+      "serie": true,
+      "voisin": "delegation-d-acces-messagerie-et-agenda",
+      "score": 0.275
+    },
+    {
+      "slug": "sous-traitance-par-son-assistante",
+      "serie": true,
+      "voisin": "rgpd-sous-traitance-assistante-externalisee",
+      "score": 0.325
+    },
+    {
+      "slug": "dirigeant-indisponible-du-jour-au-lendemain",
+      "serie": true,
+      "voisin": "delegations-aupres-des-organismes",
+      "score": 0.237
+    },
+    {
+      "slug": "conjoint-qui-fait-l-administratif",
+      "serie": true,
+      "voisin": "dirigeant-indisponible-du-jour-au-lendemain",
+      "score": 0.212
+    },
+    {
+      "slug": "controle-urssaf-preparer-les-pieces",
+      "serie": true,
+      "voisin": "dirigeant-indisponible-du-jour-au-lendemain",
+      "score": 0.214
+    },
+    {
+      "slug": "depart-d-un-salarie-checklist-administrative",
+      "serie": true,
+      "voisin": "fin-de-collaboration-assistante-externalisee",
+      "score": 0.273
+    },
+    {
+      "slug": "lettre-recommandee-electronique",
+      "serie": true,
+      "voisin": "signature-electronique-niveaux-et-usages",
+      "score": 0.248
+    },
+    {
+      "slug": "mentions-obligatoires-courriers-et-emails",
+      "serie": true,
+      "voisin": "checklist-ouverture-dossier-client",
+      "score": 0.235
+    },
+    {
+      "slug": "collecter-des-pieces-aupres-de-ses-clients",
+      "serie": true,
+      "voisin": "traiter-les-demandes-de-devis-entrantes",
+      "score": 0.226
+    },
+    {
+      "slug": "tenir-son-fichier-clients-a-jour",
+      "serie": true,
+      "voisin": "changer-d-outil-de-gestion",
+      "score": 0.251
+    },
+    {
+      "slug": "assemblee-generale-annuelle-retroplanning",
+      "serie": true,
+      "voisin": "echeancier-administratif-entreprise",
+      "score": 0.211
+    },
+    {
+      "slug": "numeriser-ses-archives-papier",
+      "serie": true,
+      "voisin": "organiser-l-administratif-de-son-entreprise",
+      "score": 0.264
+    },
+    {
+      "slug": "declarer-un-sinistre-professionnel",
+      "serie": true,
+      "voisin": "erreur-de-son-assistante-externalisee",
+      "score": 0.172
+    },
+    {
+      "slug": "vehicules-de-societe-suivi-administratif",
+      "serie": true,
+      "voisin": "echeancier-administratif-entreprise",
+      "score": 0.185
+    },
+    {
+      "slug": "dicter-ses-courriers",
+      "serie": true,
+      "voisin": "compte-rendu-de-reunion",
+      "score": 0.262
+    },
+    {
+      "slug": "checklist-administrative-mensuelle",
+      "serie": true,
+      "voisin": "checklist-cloture-annuelle-administrative",
+      "score": 0.235
+    },
+    {
+      "slug": "appels-manques-entreprise",
+      "serie": true,
+      "voisin": "telesecretariat-et-assistante-externalisee",
+      "score": 0.358
+    },
+    {
+      "slug": "annonce-de-repondeur-professionnel",
+      "serie": true,
+      "voisin": "telesecretariat-et-assistante-externalisee",
+      "score": 0.339
+    },
+    {
+      "slug": "boite-mail-partagee-entreprise",
+      "serie": true,
+      "voisin": "traitement-du-courrier-entrant",
+      "score": 0.263
+    },
+    {
+      "slug": "telesecretariat-et-assistante-externalisee",
+      "serie": true,
+      "voisin": "appels-manques-entreprise",
+      "score": 0.358
+    },
+    {
+      "slug": "coordonner-des-entretiens-de-recrutement",
+      "serie": true,
+      "voisin": "gerer-les-demandes-de-rendez-vous",
+      "score": 0.284
+    },
+    {
+      "slug": "participer-a-un-salon-professionnel",
+      "serie": true,
+      "voisin": "organiser-un-seminaire-d-equipe",
+      "score": 0.189
+    },
+    {
+      "slug": "modele-note-d-aide-a-la-decision",
+      "serie": true,
+      "voisin": "niveaux-d-autonomie-delegation",
+      "score": 0.192
+    },
+    {
+      "slug": "assistante-commerciale-externalisee",
+      "serie": true,
+      "voisin": "devis-factures-relances",
+      "score": 0.278
+    },
+    {
+      "slug": "traiter-les-demandes-de-devis-entrantes",
+      "serie": true,
+      "voisin": "relancer-un-devis-sans-reponse",
+      "score": 0.318
+    }
+  ],
+  "pairesHtml": [
+    {
+      "a": "/guides/forfait-secretariat-externalise-depassement",
+      "b": "/guides/revue-trimestrielle-assistance-externalisee",
+      "score": 0.08639705882352941
+    },
+    {
+      "a": "/guides/assistante-partagee-entre-associes",
+      "b": "/guides/recruter-apres-avoir-externalise",
+      "score": 0.08281444582814446
+    },
+    {
+      "a": "/guides/acces-bancaire-pour-son-assistante",
+      "b": "/guides/moyens-de-paiement-delegues",
+      "score": 0.08145065398335315
+    },
+    {
+      "a": "/guides/evaluer-un-secretariat-externalise",
+      "b": "/guides/revue-trimestrielle-assistance-externalisee",
+      "score": 0.08005164622336991
+    },
+    {
+      "a": "/guides/changer-d-assistante-externalisee",
+      "b": "/guides/revue-trimestrielle-assistance-externalisee",
+      "score": 0.07965152457996266
+    },
+    {
+      "a": "/guides/annonce-de-repondeur-professionnel",
+      "b": "/guides/appels-manques-entreprise",
+      "score": 0.07954545454545454
+    },
+    {
+      "a": "/guides/coordonner-des-entretiens-de-recrutement",
+      "b": "/guides/telesecretariat-et-assistante-externalisee",
+      "score": 0.07855361596009976
+    },
+    {
+      "a": "/guides/boite-mail-partagee-entreprise",
+      "b": "/guides/telesecretariat-et-assistante-externalisee",
+      "score": 0.07833228048010107
+    },
+    {
+      "a": "/guides/conjoint-qui-fait-l-administratif",
+      "b": "/guides/dirigeant-indisponible-du-jour-au-lendemain",
+      "score": 0.07758159443552702
+    },
+    {
+      "a": "/guides/checklist-administrative-mensuelle",
+      "b": "/guides/modele-note-d-aide-a-la-decision",
+      "score": 0.07734470158343483
+    },
+    {
+      "a": "/guides/annonce-de-repondeur-professionnel",
+      "b": "/guides/boite-mail-partagee-entreprise",
+      "score": 0.07692307692307693
+    },
+    {
+      "a": "/guides/incident-de-securite-chez-un-prestataire",
+      "b": "/guides/rgpd-sous-traitance-assistante-externalisee",
+      "score": 0.0766839378238342
+    },
+    {
+      "a": "/guides/assistante-commerciale-externalisee",
+      "b": "/guides/traiter-les-demandes-de-devis-entrantes",
+      "score": 0.07665505226480836
+    },
+    {
+      "a": "/guides/declarer-un-sinistre-professionnel",
+      "b": "/guides/vehicules-de-societe-suivi-administratif",
+      "score": 0.07650602409638554
+    },
+    {
+      "a": "/guides/dirigeant-indisponible-du-jour-au-lendemain",
+      "b": "/guides/erreur-de-son-assistante-externalisee",
+      "score": 0.07636566332218506
+    },
+    {
+      "a": "/guides/acces-bancaire-pour-son-assistante",
+      "b": "/guides/incident-de-securite-chez-un-prestataire",
+      "score": 0.07623318385650224
+    },
+    {
+      "a": "/guides/cahier-des-charges-secretariat-externalise",
+      "b": "/guides/modele-note-d-aide-a-la-decision",
+      "score": 0.07592592592592592
+    },
+    {
+      "a": "/guides/annonce-de-repondeur-professionnel",
+      "b": "/guides/presenter-son-assistante-a-ses-clients",
+      "score": 0.07580543272267846
+    },
+    {
+      "a": "/guides/controle-urssaf-preparer-les-pieces",
+      "b": "/guides/dirigeant-indisponible-du-jour-au-lendemain",
+      "score": 0.07562076749435666
+    },
+    {
+      "a": "/guides/assistante-partagee-entre-associes",
+      "b": "/guides/changer-d-assistante-externalisee",
+      "score": 0.07559926244622003
+    },
+    {
+      "a": "/guides/assistante-partagee-entre-associes",
+      "b": "/guides/revue-trimestrielle-assistance-externalisee",
+      "score": 0.07504937458854509
+    },
+    {
+      "a": "/guides/annonce-de-repondeur-professionnel",
+      "b": "/guides/telesecretariat-et-assistante-externalisee",
+      "score": 0.07484276729559748
+    },
+    {
+      "a": "/guides/changer-d-assistante-externalisee",
+      "b": "/guides/recruter-apres-avoir-externalise",
+      "score": 0.07472270869819031
+    },
+    {
+      "a": "/guides/evaluer-un-secretariat-externalise",
+      "b": "/guides/forfait-secretariat-externalise-depassement",
+      "score": 0.07466196355085244
+    },
+    {
+      "a": "/guides/delegations-aupres-des-organismes",
+      "b": "/guides/sous-traitance-par-son-assistante",
+      "score": 0.0746184284906727
+    },
+    {
+      "a": "/guides/appels-manques-entreprise",
+      "b": "/guides/telesecretariat-et-assistante-externalisee",
+      "score": 0.07446808510638298
+    },
+    {
+      "a": "/guides/modele-note-d-aide-a-la-decision",
+      "b": "/guides/modele-tableau-de-suivi-des-factures",
+      "score": 0.07436260623229461
+    },
+    {
+      "a": "/guides/absence-de-son-assistante-independante",
+      "b": "/guides/erreur-de-son-assistante-externalisee",
+      "score": 0.07419712070874862
+    },
+    {
+      "a": "/guides/rgpd-sous-traitance-assistante-externalisee",
+      "b": "/guides/sous-traitance-par-son-assistante",
+      "score": 0.07407407407407407
+    },
+    {
+      "a": "/guides/acces-bancaire-pour-son-assistante",
+      "b": "/guides/delegations-aupres-des-organismes",
+      "score": 0.07401129943502825
+    },
+    {
+      "a": "/guides/conjoint-qui-fait-l-administratif",
+      "b": "/guides/controle-urssaf-preparer-les-pieces",
+      "score": 0.07397260273972603
+    },
+    {
+      "a": "/guides/cahier-des-charges-secretariat-externalise",
+      "b": "/guides/comparer-devis-secretariat-externalise",
+      "score": 0.07374301675977654
+    },
+    {
+      "a": "/guides/controle-urssaf-preparer-les-pieces",
+      "b": "/guides/depart-d-un-salarie-checklist-administrative",
+      "score": 0.07352941176470588
+    },
+    {
+      "a": "/guides/recruter-apres-avoir-externalise",
+      "b": "/guides/revue-trimestrielle-assistance-externalisee",
+      "score": 0.07347447073474471
+    },
+    {
+      "a": "/guides/boite-mail-partagee-entreprise",
+      "b": "/guides/coordonner-des-entretiens-de-recrutement",
+      "score": 0.07321652065081352
+    },
+    {
+      "a": "/guides/delegations-aupres-des-organismes",
+      "b": "/guides/moyens-de-paiement-delegues",
+      "score": 0.0731981981981982
+    },
+    {
+      "a": "/guides/changer-d-assistante-externalisee",
+      "b": "/guides/evaluer-un-secretariat-externalise",
+      "score": 0.07314148681055156
+    },
+    {
+      "a": "/guides/assistante-commerciale-externalisee",
+      "b": "/guides/tva-prestataire-en-franchise-en-base",
+      "score": 0.0728587319243604
+    },
+    {
+      "a": "/guides/boite-mail-partagee-entreprise",
+      "b": "/guides/presenter-son-assistante-a-ses-clients",
+      "score": 0.0725094577553594
+    },
+    {
+      "a": "/guides/delais-de-reponse-assistante-externalisee",
+      "b": "/guides/secretariat-externalise-charge-deductible",
+      "score": 0.07248764415156507
+    },
+    {
+      "a": "/guides/domiciliation-ou-secretariat-externalise",
+      "b": "/guides/lettre-recommandee-electronique",
+      "score": 0.0723905723905724
+    },
+    {
+      "a": "/guides/collecter-des-pieces-aupres-de-ses-clients",
+      "b": "/guides/tenir-son-fichier-clients-a-jour",
+      "score": 0.07205113306217316
+    },
+    {
+      "a": "/guides/moyens-de-paiement-delegues",
+      "b": "/guides/sous-traitance-par-son-assistante",
+      "score": 0.07189157336476135
+    },
+    {
+      "a": "/guides/sous-traitance-par-son-assistante",
+      "b": "/guides/partager-un-mot-de-passe-en-securite",
+      "score": 0.07173513182096873
+    },
+    {
+      "a": "/guides/incident-de-securite-chez-un-prestataire",
+      "b": "/guides/moyens-de-paiement-delegues",
+      "score": 0.07122982749026155
+    },
+    {
+      "a": "/guides/lettre-recommandee-electronique",
+      "b": "/guides/mentions-obligatoires-courriers-et-emails",
+      "score": 0.07119741100323625
+    },
+    {
+      "a": "/guides/delais-de-reponse-assistante-externalisee",
+      "b": "/guides/periode-d-essai-assistante-independante",
+      "score": 0.07112970711297072
+    },
+    {
+      "a": "/guides/annonce-de-repondeur-professionnel",
+      "b": "/guides/coordonner-des-entretiens-de-recrutement",
+      "score": 0.07111665626949469
+    },
+    {
+      "a": "/guides/appels-manques-entreprise",
+      "b": "/guides/presenter-son-assistante-a-ses-clients",
+      "score": 0.07092198581560284
+    },
+    {
+      "a": "/guides/acces-bancaire-pour-son-assistante",
+      "b": "/guides/sous-traitance-par-son-assistante",
+      "score": 0.07083825265643448
+    }
+  ]
+}

@@ -15,8 +15,10 @@
     "qa": "node scripts/content-gate.mjs && npm run build && node scripts/seo-audit.mjs --strict",
     "qa:apercu": "node scripts/content-gate.mjs && npm run build:apercu && node scripts/seo-audit.mjs --strict",
     "qa:navigateur": "node scripts/browser-check.mjs",
+    "qa:similarite": "node scripts/similarity-check.mjs --serie --strict",
     "servir": "node scripts/serve-dist.mjs",
-    "docs:seo": "npm run build:apercu && node scripts/docs-seo.mjs && npm run build"
+    "docs:seo": "npm run build:apercu && node scripts/docs-seo.mjs && npm run build",
+    "docs:secretariat": "npm run build:apercu && node scripts/docs-secretariat.mjs && npm run build"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.2.1",

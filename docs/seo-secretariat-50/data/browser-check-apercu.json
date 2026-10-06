@@ -1,0 +1,64 @@
+{
+  "genere": "2026-10-06T17:06:41.886Z",
+  "build": "aperçu (BROUILLONS=1), servi par scripts/serve-dist.mjs",
+  "dureeSecondes": 467,
+  "pages": 201,
+  "chargements": 1005,
+  "ecrans": [
+    {
+      "nom": "mobile étroit",
+      "width": 320,
+      "height": 640
+    },
+    {
+      "nom": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "nom": "tablette",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "nom": "bureau",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "nom": "grand écran",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "reglesAxe": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21a",
+    "wcag21aa",
+    "wcag22aa"
+  ],
+  "pagesEnEchec": 0,
+  "violationsAxe": 0,
+  "parcours": [
+    {
+      "test": "Tab atteint d’abord le lien d’évitement",
+      "ok": true,
+      "detail": "{\"classe\":\"skip-link\",\"href\":\"#main-content\"}"
+    },
+    {
+      "test": "Menu mobile : ouverture au clic, fermeture à Échap",
+      "ok": true,
+      "detail": "aria-expanded true → false"
+    },
+    {
+      "test": "Bandeau de consentement affiché, aucun cookie de mesure avant choix",
+      "ok": true,
+      "detail": "bandeau 1, cookies []"
+    }
+  ],
+  "pagesAvecProbleme": [],
+  "statuts": {
+    "200": 201
+  }
+}

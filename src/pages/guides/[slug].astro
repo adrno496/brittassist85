@@ -40,12 +40,28 @@ const etapes = [
 ];
 
 const enfants = estPilier ? pagesDuDossier(dossier.slug) : [];
+// Au-delà de trente pages, la grille d'un dossier ne se parcourt plus d'un seul tenant :
+// elle est découpée par rubrique, avec un sommaire. En dessous, rien ne change.
+const SEUIL_RUBRIQUES = 30;
+const rubriques =
+  enfants.length > SEUIL_RUBRIQUES
+    ? [...new Set(enfants.map((e) => e.categorie))].map((nom) => ({
+        nom,
+        id: `rubrique-${ancre(nom)}`,
+        pages: enfants.filter((e) => e.categorie === nom),
+      }))
+    : [];
 // Un dossier dont les autres pages ne sont pas encore publiées laisserait la colonne vide :
 // on propose alors les premiers guides de la bibliothèque.
 const fratrie = voisins(g, 5);
 const suite = fratrie.length ? fratrie : guidesGeneres().filter((x) => x.slug !== g.slug).slice(0, 5);
 const suiteDuDossier = fratrie.length > 0;
 const liens = liensVisibles(g.liens);
+// « Pour approfondir » : comme pour le maillage, une cible encore en brouillon n'est pas affichée.
+// Un groupe vide disparaît ; sans aucun groupe, la rubrique n'est pas rendue.
+const approfondir = (g.approfondir?.groupes ?? [])
+  .map((groupe) => ({ nom: groupe.nom, liens: liensVisibles(groupe.liens) }))
+  .filter((groupe) => groupe.liens.length > 0);
 const sommaire = g.sections.length >= 3 ? g.sections.map((s) => ({ texte: s.h2, id: ancre(s.h2) })) : [];
 
 const datePublication = g.datePublished ?? '2026-09-04';
@@ -184,6 +200,22 @@ const donnees = {
               {g.limites.map((l) => <li>{l}</li>)}
             </ul>
           </>
+        )}{/* Accolé à l'expression précédente : un saut de ligne ici ajouterait une espace au HTML de chaque guide. */
+        g.approfondir && approfondir.length > 0 && (
+          <>
+            <h2 id="approfondir">{g.approfondir.titre}</h2>
+            {g.approfondir.intro && <p>{g.approfondir.intro}</p>}
+            {approfondir.map((groupe) => (
+              <>
+                <h3>{groupe.nom}</h3>
+                <ul>
+                  {groupe.liens.map((l) => (
+                    <li><a href={l.href}>{l.label}</a> — {l.note}</li>
+                  ))}
+                </ul>
+              </>
+            ))}
+          </>
         )}
       </article>
     </div>
@@ -197,14 +229,46 @@ const donnees = {
           <p class="eyebrow">Dans ce dossier</p>
           <h2>Chaque point, traité à part.</h2>
         </div>
-        <div class="universes reveal">
-          {enfants.map((e) => (
-            <a class="universe universe--lien" href={cheminDuGuide(e)}>
-              <p class="universe__name">{e.nom}</p>
-              <p class="universe__desc">{e.description}</p>
-            </a>
-          ))}
-        </div>
+        {rubriques.length > 0 ? (
+          <>
+            <nav class="sommaire reveal" aria-labelledby="rubriques-titre">
+              <p class="sommaire__titre" id="rubriques-titre">Les rubriques du dossier</p>
+              <ol>
+                {rubriques.map((r) => (
+                  <li><a href={`#${r.id}`}>{r.nom}</a></li>
+                ))}
+              </ol>
+            </nav>
+            <div class="suite">
+              {rubriques.map((r) => (
+                <article class="suite__item reveal" id={r.id}>
+                  <div>
+                    <h3 class="suite__name">{r.nom}</h3>
+                  </div>
+                  <div>
+                    <div class="universes">
+                      {r.pages.map((e) => (
+                        <a class="universe universe--lien" href={cheminDuGuide(e)}>
+                          <p class="universe__name">{e.nom}</p>
+                          <p class="universe__desc">{e.description}</p>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </>
+        ) : (
+          <div class="universes reveal">
+            {enfants.map((e) => (
+              <a class="universe universe--lien" href={cheminDuGuide(e)}>
+                <p class="universe__name">{e.nom}</p>
+                <p class="universe__desc">{e.description}</p>
+              </a>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   )}

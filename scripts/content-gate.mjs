@@ -19,7 +19,8 @@ import { bibliotheque, dossiers } from '../src/data/bibliotheque.ts';
 import { metiers } from '../src/data/metiers.ts';
 import { prestations } from '../src/data/prestations.ts';
 import { zones } from '../src/data/zones.ts';
-import { dateDeRelecture, estPubliee } from '../src/data/publication.mjs';
+import { dateDeRelecture, estPubliee, validationDuProprietaire } from '../src/data/publication.mjs';
+import { validations } from '../src/data/relectures.mjs';
 
 const SEUILS = { titleMax: 70, descriptionMin: 70, descriptionMax: 165, similarite: 0.55 };
 
@@ -124,6 +125,17 @@ for (const g of bibliotheque) {
     if (!/^https:\/\//.test(s.href)) bloquer(page, 'source-non-https', s.href);
   }
 
+  // Rubrique « Pour approfondir » : mêmes exigences que le maillage, une phrase de contexte par lien,
+  // et une limite de taille — une page qui cite tout ne recommande plus rien.
+  const approfondis = (g.approfondir?.groupes ?? []).flatMap((groupe) => groupe.liens);
+  for (const l of approfondis) {
+    if (!routes.has(l.href)) bloquer(page, 'approfondir-route-inconnue', l.href);
+    if (l.href === `/guides/${g.slug}`) bloquer(page, 'lien-vers-soi-meme');
+    if (!l.note?.trim()) bloquer(page, 'approfondir-sans-contexte', l.href);
+  }
+  if (new Set(approfondis.map((l) => l.href)).size !== approfondis.length) bloquer(page, 'approfondir-doublon');
+  if (approfondis.length > 15) bloquer(page, 'approfondir-trop-long', `${approfondis.length} liens : quinze au plus`);
+
   const texte = texteDe(g);
   for (const [motif, raison] of INTERDITS) {
     const trouve = texte.match(motif);
@@ -152,6 +164,22 @@ for (const g of bibliotheque) {
       if (ligne.length !== b.tableau.colonnes.length) bloquer(page, 'tableau-irregulier', `« ${b.tableau.legende} » : ${ligne.length} cellules pour ${b.tableau.colonnes.length} colonnes`);
     }
   }
+}
+
+// ── 2 bis. Série « secrétariat externalisé » : lot connu, et au moins un lien éditorial entrant ──
+const serie = bibliotheque.filter((g) => g.lot);
+const citees = new Set(
+  bibliotheque.flatMap((g) => [...g.liens, ...(g.approfondir?.groupes ?? []).flatMap((groupe) => groupe.liens)].map((l) => l.href)),
+);
+for (const g of serie) {
+  if (!['A', 'B', 'C', 'D'].includes(g.lot)) bloquer(g.slug, 'lot-inconnu', String(g.lot));
+  // Le pilier et l'index citent toutes les pages ; ce contrôle exige en plus un lien choisi par une autre fiche.
+  if (!citees.has(`/guides/${g.slug}`)) avertir(g.slug, 'aucun-lien-editorial-entrant', 'citée par aucune autre fiche');
+}
+
+// ── 2 ter. Validations du propriétaire : une page validée existe, sinon la trace ne désigne plus rien ──
+for (const v of validations) {
+  for (const chemin of v.pages) if (!routes.has(chemin)) bloquer(chemin, 'validation-page-inconnue', `validation du ${v.date}`);
 }
 
 // ── 3. Chaque dossier a son pilier et assez de pages pour en être un ──────
@@ -195,6 +223,14 @@ console.log(`Fiches : ${bibliotheque.length} guides (${nouveaux.length} nouveaux
 console.log(`Nouveaux guides par nature : ${Object.entries(parType).map(([k, v]) => `${k} ${v}`).join(' · ')}`);
 const nonRelues = nouveaux.filter((g) => !dateDeRelecture(`/guides/${g.slug}`)).length;
 console.log(`Brouillons non publiés : ${brouillons} · nouveaux guides non relus : ${nonRelues} · requêtes principales distinctes : ${requetes.size}`);
+if (serie.length) {
+  const parLot = {};
+  for (const g of serie) parLot[g.lot] = (parLot[g.lot] ?? 0) + 1;
+  const enLigne = serie.filter((g) => estPubliee(`/guides/${g.slug}`)).length;
+  const validees = serie.filter((g) => validationDuProprietaire(`/guides/${g.slug}`)).length;
+  const relues = serie.filter((g) => dateDeRelecture(`/guides/${g.slug}`)).length;
+  console.log(`Série secrétariat : ${serie.length} guides · ${Object.keys(parLot).sort().map((l) => `lot ${l} ${parLot[l]}`).join(' · ')} · en ligne : ${enLigne} · validées par le propriétaire : ${validees} · relues par Brittany Dreano : ${relues}`);
+}
 console.log(`Blocages : ${blocages.length} · avertissements : ${avertissements.length}`);
 for (const [titre, liste] of [['BLOCAGES', blocages], ['AVERTISSEMENTS', avertissements]]) {
   if (!liste.length) continue;

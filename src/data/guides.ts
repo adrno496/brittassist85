@@ -78,6 +78,13 @@ export interface Guide {
   /** Ce que la page ne couvre pas, et vers qui se tourner */
   limites?: string[];
   cadrage?: Cadrage;
+  /** Série « secrétariat externalisé » : lot de publication prévu (dossiers/secretariat-lots.ts) */
+  lot?: 'A' | 'B' | 'C' | 'D';
+  /**
+   * Rubrique « Pour approfondir » : des liens regroupés par thème, chacun avec sa phrase de contexte.
+   * Comme pour `liens`, une cible encore en brouillon n'est pas affichée ; sans cible visible, la rubrique disparaît.
+   */
+  approfondir?: { titre: string; intro?: string; groupes: { nom: string; liens: { href: string; label: string; note: string }[] }[] };
 }
 
 export const guides: Guide[] = [
@@ -663,6 +670,44 @@ export const guides: Guide[] = [
       { href: '/guides/assistante-virtuelle-ou-private-office', label: 'Assistante virtuelle ou Private Office' },
       { href: '/services', label: 'Le périmètre couvert par BrittAssist' },
     ],
+    // Liens vers la série « secrétariat externalisé » (octobre 2026). Ils n'apparaissent
+    // qu'à mesure que ces pages sont publiées : tant qu'aucune ne l'est, la page ne change pas.
+    approfondir: {
+      titre: 'Pour approfondir, question par question',
+      intro:
+        "Cette page distingue les cinq formes du secrétariat externalisé. Les questions qui viennent ensuite — comparer, s’engager, faire fonctionner — ont chacune leur page.",
+      groupes: [
+        {
+          nom: 'Avant de choisir',
+          liens: [
+            { href: '/guides/inconvenients-secretariat-externalise', label: 'Les inconvénients du secrétariat externalisé', note: 'ce que le modèle coûte vraiment, et les deux défauts qui doivent parfois faire renoncer.' },
+            { href: '/guides/cahier-des-charges-secretariat-externalise', label: 'Le cahier des charges, en une page', note: 'pour que deux prestataires répondent à la même question.' },
+            { href: '/guides/comparer-devis-secretariat-externalise', label: 'La grille pour comparer des devis', note: 'douze lignes, quand les prix n’ont pas la même unité.' },
+            { href: '/guides/domiciliation-ou-secretariat-externalise', label: 'Domiciliation ou secrétariat externalisé', note: 'deux services souvent vendus ensemble, qui ne font pas le même travail.' },
+            { href: '/guides/secretariat-externalise-france-ou-offshore', label: 'Secrétariat en France ou offshore', note: 'ce que le prix horaire ne dit pas : données, droit applicable, usages.' },
+          ],
+        },
+        {
+          nom: 'Au moment de s’engager',
+          liens: [
+            { href: '/guides/mission-ponctuelle-de-secretariat', label: 'Cadrer une mission ponctuelle', note: 'quand le besoin a un début et une fin.' },
+            { href: '/guides/periode-d-essai-assistante-independante', label: 'Ce qui remplace une période d’essai', note: 'trois mécanismes pour vérifier avant de s’installer.' },
+            { href: '/guides/obligation-de-vigilance-prestataire-independant', label: 'Les pièces à demander à une prestataire', note: 'l’obligation de vigilance, vue du côté du client.' },
+            { href: '/guides/tva-prestataire-en-franchise-en-base', label: 'Un prestataire qui ne facture pas la TVA', note: 'comment lire son devis, selon que vous récupérez ou non la taxe.' },
+            { href: '/guides/delais-de-reponse-assistante-externalisee', label: 'Disponibilité et délais de réponse', note: 'ce qui se convient par écrit, sans imposer d’horaires.' },
+          ],
+        },
+        {
+          nom: 'Une fois la collaboration lancée',
+          liens: [
+            { href: '/guides/forfait-secretariat-externalise-depassement', label: 'Ajuster un forfait trop juste ou trop large', note: 'quand le volume ne correspond plus à ce qui était prévu.' },
+            { href: '/guides/absence-de-son-assistante-independante', label: 'Quand votre assistante s’absente', note: 'congés, maladie : ce qui doit tenir sans elle.' },
+            { href: '/guides/evaluer-un-secretariat-externalise', label: 'Évaluer un secrétariat externalisé', note: 'cinq indicateurs, dont deux parlent de vous.' },
+            { href: '/guides/appels-manques-entreprise', label: 'Vous ratez des appels', note: 'mesurer avant de choisir entre répondeur, rappel organisé et télésecrétariat.' },
+          ],
+        },
+      ],
+    },
     cloture: 'Le bon prestataire commence par vous dire ce qu’il ne fait pas.',
     dateModified: '2026-09-04',
   },

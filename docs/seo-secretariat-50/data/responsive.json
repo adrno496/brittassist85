@@ -1,0 +1,108 @@
+{
+  "genere": "2026-10-06T16:58:38.088Z",
+  "build": "aperçu",
+  "largeurs": [
+    360,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "pages": [
+    "/guides/secretariat-externalise",
+    "/guides/externaliser-son-assistanat",
+    "/guides/confidentialite-acces-et-outils",
+    "/guides",
+    "/guides/inconvenients-secretariat-externalise",
+    "/guides/comparer-devis-secretariat-externalise",
+    "/guides/cahier-des-charges-secretariat-externalise",
+    "/guides/obligation-de-vigilance-prestataire-independant",
+    "/guides/acces-bancaire-pour-son-assistante",
+    "/guides/absence-de-son-assistante-independante",
+    "/guides/temps-partage-interim-alternance-ou-prestataire",
+    "/guides/depart-d-un-salarie-checklist-administrative",
+    "/guides/checklist-administrative-mensuelle",
+    "/guides/annonce-de-repondeur-professionnel",
+    "/guides/telesecretariat-et-assistante-externalisee",
+    "/guides/tva-prestataire-en-franchise-en-base"
+  ],
+  "chargements": 80,
+  "echecs": [],
+  "controles": [
+    "débordement horizontal",
+    "éléments hors cadre",
+    "menu (bouton ou liens)",
+    "fil d’Ariane",
+    "h1",
+    "réponse courte",
+    "tableaux dans leur cadre et atteignables au clavier",
+    "listes",
+    "modèles",
+    "sommaire et cibles de ses ancres",
+    "FAQ",
+    "cartes de dossier",
+    "appel à l’action",
+    "pied de page",
+    "CSP",
+    "erreurs console"
+  ],
+  "pilier": [
+    {
+      "largeur": 360,
+      "rubriques": 8,
+      "cartes": 39,
+      "menu": "bouton : ouvre et ferme",
+      "hautDuTitreApresAncre": 155
+    },
+    {
+      "largeur": 390,
+      "rubriques": 8,
+      "cartes": 39,
+      "menu": "bouton : ouvre et ferme",
+      "hautDuTitreApresAncre": 155
+    },
+    {
+      "largeur": 768,
+      "rubriques": 8,
+      "cartes": 39,
+      "menu": "bouton : ouvre et ferme",
+      "hautDuTitreApresAncre": 159
+    },
+    {
+      "largeur": 1024,
+      "rubriques": 8,
+      "cartes": 39,
+      "menu": "liens visibles",
+      "hautDuTitreApresAncre": 172
+    },
+    {
+      "largeur": 1440,
+      "rubriques": 8,
+      "cartes": 39,
+      "menu": "liens visibles",
+      "hautDuTitreApresAncre": 183
+    }
+  ],
+  "pageDeReference": [
+    {
+      "largeur": 360,
+      "liensApprofondir": 14
+    },
+    {
+      "largeur": 390,
+      "liensApprofondir": 14
+    },
+    {
+      "largeur": 768,
+      "liensApprofondir": 14
+    },
+    {
+      "largeur": 1024,
+      "liensApprofondir": 14
+    },
+    {
+      "largeur": 1440,
+      "liensApprofondir": 14
+    }
+  ]
+}

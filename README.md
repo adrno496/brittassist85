@@ -10,7 +10,7 @@ Site statique Astro 5, déployé sur Vercel. Une fonction serveur `/api/contact`
 npm install
 npm run dev            # développement, http://localhost:4321
 npm run build          # build de production : seules les pages relues sont générées
-npm run build:apercu   # build d’aperçu : y compris les brouillons (aucun à ce jour), en noindex
+npm run build:apercu   # build d’aperçu : y compris les brouillons, en noindex (50 à ce jour : la série « secrétariat externalisé »)
 npm run preview        # sert le dernier build
 npm run servir         # sert dist/ en appliquant vercel.json (en-têtes, redirections, 404)
 
@@ -19,7 +19,9 @@ npm test               # tests des registres de publication et de relecture, et 
 npm run qa             # gate éditorial + build + audit SEO strict
 npm run qa:apercu      # la même chose sur le build d’aperçu
 npm run qa:navigateur  # contrôles en navigateur réel (voir plus bas)
+npm run qa:similarite  # similarité champ par champ sur la série « secrétariat externalisé »
 npm run docs:seo       # régénère docs/seo/02, 03 et 09
+npm run docs:secretariat  # régénère les tableaux de docs/seo-secretariat-50/
 ```
 
 ## Structure
@@ -32,11 +34,13 @@ src/
 ├── data/
 │   ├── guides.ts                 les 12 premiers guides + le modèle de contenu
 │   ├── dossiers/*.ts             les guides d’octobre 2026, un fichier par dossier
+│   ├── dossiers/secretariat-*.ts la série « secrétariat externalisé » : 50 guides, rangés dans les dossiers existants
+│   ├── dossiers/secretariat-lots.ts  les quatre lots de publication de la série, et leur date
 │   ├── bibliotheque.ts           réunit tous les guides ; dossiers, piliers, pages voisines
 │   ├── metiers.ts                pages métier — metiers-publies.ts filtre celles du build
 │   ├── prestations.ts, zones.ts  pages de prestation et de zone
 │   ├── publications.mjs          registre des pages mises en ligne sans relecture préalable
-│   ├── relectures.mjs            registre des pages relues (voir ci-dessous)
+│   ├── relectures.mjs            registre des pages relues, et liste des validations du propriétaire (voir ci-dessous)
 │   ├── publication.mjs           qui est publié, qui est brouillon
 │   ├── mode.mjs                  lecture de BROUILLONS=1, et rien d’autre
 │   ├── dates.mjs                 dates de mise à jour : sitemap et JSON-LD
@@ -57,7 +61,9 @@ Les guides et pages métier ajoutés en octobre 2026 ont été préparés avec l
 | `src/data/publications.mjs` | « Cette page est en ligne » | La page est générée, indexable et au sitemap. Aucune mention de relecture |
 | `src/data/relectures.mjs` | « Cette page a été relue par une personne, à cette date » | Affiche « Relu par Brittany Dreano le … », ajoute `reviewedBy` aux données structurées, met le `<lastmod>` à cette date |
 
-**État au 3 octobre 2026 :** les 99 pages nouvelles sont inscrites dans `publications.mjs`, sur décision du propriétaire, sans relecture préalable. `relectures.mjs` est vide : aucune page ne se déclare relue.
+**État au 3 octobre 2026 :** les 99 pages nouvelles sont inscrites dans `publications.mjs`, sur décision du propriétaire, sans relecture préalable. Le registre des relectures est vide : aucune page ne se déclare relue.
+
+`relectures.mjs` porte aussi une liste `validations` : la trace d’une validation donnée par le propriétaire du site — son nom, la date, ses mots, les pages visées. Elle n’a aucun effet sur le site : une page validée n’est ni mise en ligne, ni présentée comme relue. Aucun gabarit ne lit cette liste.
 
 Une page absente des deux registres reste un brouillon :
 
@@ -66,17 +72,26 @@ Une page absente des deux registres reste un brouillon :
 
 C’est le sort de toute page ajoutée par la suite, tant qu’elle n’est inscrite nulle part.
 
+### La série « secrétariat externalisé »
+
+Cinquante guides ajoutés le 6 octobre 2026 autour de `/guides/secretariat-externalise`. Ils sont tous en brouillon. Le propriétaire les a validés le même jour : la validation est enregistrée, elle ne les publie pas. Ils ne créent aucun dossier : chacun rejoint l’un des huit dossiers existants. Ils se publient par lots — A, B, C, D — et non d’un coup : la marche à suivre, lot par lot, est dans [docs/seo-secretariat-50/05_PUBLICATION_PLAN.md](docs/seo-secretariat-50/05_PUBLICATION_PLAN.md), et la liste des pages à relire dans [11_HUMAN_REVIEW_CHECKLIST.md](docs/seo-secretariat-50/11_HUMAN_REVIEW_CHECKLIST.md).
+
+Deux effets à connaître :
+
+- les liens ajoutés vers ces pages — sur la page de référence, rubrique « Pour approfondir », et dans une quarantaine de guides — ne s’affichent qu’une fois leur cible publiée. Tant qu’aucun lot n’est en ligne, le build de production est identique à ce qu’il était ;
+- au-delà de trente pages, la grille d’un pilier est découpée par rubrique, avec un sommaire. Seul le dossier « Externaliser et déléguer » franchira ce seuil.
+
 Relire une page :
 
 1. La lire en entier, ouvrir chaque lien de sa rubrique « Références ».
 2. Corriger ce qui doit l’être dans son fichier de `src/data/dossiers/` (ou `metiers.ts`).
-3. Ajouter une ligne dans `src/data/relectures.mjs` :
+3. Ajouter une ligne dans l’objet `relectures` de `src/data/relectures.mjs` :
    ```js
    '/guides/mentions-obligatoires-facture': '2026-10-06',
    ```
 4. `npm run qa`.
 
-N’inscrire dans `relectures.mjs` qu’une page réellement relue : c’est une déclaration publique faite au nom de Brittany Dreano. Pour retirer une page de l’index, supprimer sa ligne de `publications.mjs`.
+N’inscrire dans l’objet `relectures` qu’une page relue par Brittany Dreano : c’est une déclaration publique faite en son nom. Une validation donnée par une autre personne s’ajoute à la liste `validations`, qui ne s’affiche nulle part. Pour retirer une page de l’index, supprimer sa ligne de `publications.mjs`.
 
 Publier un pilier (`/guides/<slug-du-dossier>`) fait apparaître le dossier dans l’index des guides et dans le pied de page. La page `/methode-editoriale` passe elle aussi par les registres.
 
@@ -89,9 +104,11 @@ Publier un pilier (`/guides/<slug-du-dossier>`) fait apparaître le dossier dans
 | `scripts/quality-gate.mjs` | Branche l’audit sur le build : un blocage fait échouer `npm run build` |
 | `scripts/browser-check.mjs` | Navigateur réel, cinq largeurs d’écran : console, CSP, débordement, axe-core WCAG 2.2 AA, clavier, consentement |
 | `scripts/check-sources.mjs` | Les liens externes répondent-ils encore ? |
+| `scripts/similarity-check.mjs` | Les fiches, champ par champ : titres, chapôs, corps, FAQ, clôtures trop proches, phrases reprises, questions répétées, pages au même sujet. Sert aussi à rapprocher une liste d’idées de pages de l’existant (`--candidats`) |
 | `scripts/serve-dist.mjs` | Sert le build avec les règles de `vercel.json` |
 | `scripts/images.mjs` | Régénère les variantes WebP des photos |
 | `scripts/docs-seo.mjs` | Régénère les tableaux de `docs/seo/` |
+| `scripts/docs-secretariat.mjs` | Régénère les tableaux de `docs/seo-secretariat-50/` |
 
 Le quality gate tourne aussi sur Vercel, puisqu’il fait partie du build. Contournement d’urgence, à ne pas laisser en place : `SEO_GATE=off npm run build`.
 
@@ -115,6 +132,7 @@ PLAYWRIGHT_ROOT=/chemin/vers/un/dossier/avec/node_modules node scripts/browser-c
 - `docs/final/FINAL_REPORT.md` — rapport d’ensemble du chantier d’octobre 2026
 - `docs/site-audit/` — inventaire, état de référence, corrections, validation finale
 - `docs/seo/` — intentions, matrice des 100 pages, maillage, audit technique, indexation
+- `docs/seo-secretariat-50/` — la série « secrétariat externalisé » : état initial, inventaire, vivier d’idées, cannibalisation, plan des 50 pages, publication par lots, maillage, similarité, rapports
 - `docs/sentinel/` — audits réalisés avec la boîte à outils SENTINEL
 
 — Site conçu et développé par Axel Dreano · [axdia.fr](https://www.axdia.fr)

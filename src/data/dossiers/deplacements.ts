@@ -458,6 +458,7 @@ export const deplacements: Guide[] = [
       { href: '/guides/preparer-une-reunion', label: 'Préparer une réunion' },
       { href: '/services/support-equipes', label: 'Un renfort ponctuel pour vos équipes' },
       { href: '/tarifs', label: 'Les missions ponctuelles et le devis' },
+      { href: '/guides/participer-a-un-salon-professionnel', label: 'Préparer une participation à un salon' },
     ],
     cloture: 'Un séminaire se juge un mois après, à ce qui a changé.',
     datePublished: DATE,

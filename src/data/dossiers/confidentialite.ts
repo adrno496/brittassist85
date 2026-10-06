@@ -386,6 +386,7 @@ export const confidentialite: Guide[] = [
       { href: '/guides/partager-un-mot-de-passe-en-securite', label: 'Partager un accès sans partager son mot de passe' },
       { href: '/guides/tenir-un-agenda-de-dirigeant', label: 'Tenir un agenda de dirigeant' },
       { href: '/services/gestion-agenda', label: 'Confier la tenue de son agenda' },
+      { href: '/guides/delegations-aupres-des-organismes', label: 'Les délégations prévues par les impôts, l’Urssaf et La Poste' },
     ],
     sources: [
       { href: 'https://support.google.com/mail/answer/138350?hl=fr', label: 'Aide Gmail — Déléguer l’accès à sa messagerie et collaborer' },
@@ -623,6 +624,7 @@ export const confidentialite: Guide[] = [
       { href: '/guides/devis-contenu-et-validite', label: 'Ce que doit contenir un devis' },
       { href: '/guides/suivi-des-contrats-et-abonnements', label: 'Suivre ses contrats et abonnements' },
       { href: '/guides/duree-de-conservation-documents-entreprise', label: 'Combien de temps conserver les documents' },
+      { href: '/guides/lettre-recommandee-electronique', label: 'La lettre recommandée électronique' },
     ],
     sources: [
       { href: 'https://www.francenum.gouv.fr/guides-et-conseils/pilotage-de-lentreprise/dematerialisation-des-documents/la-signature', label: 'France Num — La signature électronique : un outil devenu incontournable' },
@@ -753,6 +755,7 @@ export const confidentialite: Guide[] = [
       { href: '/guides/contrat-de-prestation-assistante-independante', label: 'Le contrat de prestation avec une assistante' },
       { href: '/guides/confidentialite-acces-et-outils', label: 'Déléguer en sécurité : les principes' },
       { href: '/private-office', label: 'Le fonctionnement d’un Private Office' },
+      { href: '/guides/secretariat-externalise-france-ou-offshore', label: 'Un prestataire hors d’Europe : la question des données' },
     ],
     sources: [SOURCE_CNIL_IA],
     cloture: 'Ce que vous saisissez dans un outil, vous le confiez à quelqu’un. Sachez à qui.',
@@ -1118,6 +1121,8 @@ export const confidentialite: Guide[] = [
       { href: '/guides/confidentialite-acces-et-outils', label: 'Déléguer en sécurité : les principes' },
       { href: '/guides/suivi-des-contrats-et-abonnements', label: 'Suivre ses contrats et abonnements' },
       { href: '/services/gestion-administrative', label: 'Confier sa gestion administrative' },
+      { href: '/guides/incident-de-securite-chez-un-prestataire', label: 'Couper les accès après un incident' },
+      { href: '/guides/depart-d-un-salarie-checklist-administrative', label: 'La checklist de départ d’un salarié' },
     ],
     sources: [SOURCE_CNIL_AUTH],
     cloture: 'Un accès qu’on ne peut pas nommer est un accès qu’on ne pourra pas fermer.',

@@ -5,6 +5,11 @@
  * dossier dans ./dossiers/, un fichier par thème : chaque dossier s'ouvre sur un
  * pilier (une page de synthèse) et réunit les pages qui en détaillent un point.
  *
+ * La série « secrétariat externalisé » (fichiers secretariat-*.ts) ne crée aucun
+ * dossier : ses pages rejoignent les huit dossiers existants, selon leur sujet.
+ * Elles sont ajoutées en fin de liste, donc après les pages déjà en place dans
+ * chaque dossier.
+ *
  * Les imports portent l'extension .ts pour que les scripts de contrôle puissent
  * charger ce module directement avec Node, sans passer par le build.
  */
@@ -18,6 +23,11 @@ import { deplacements } from './dossiers/deplacements.ts';
 import { confidentialite } from './dossiers/confidentialite.ts';
 import { situations } from './dossiers/situations.ts';
 import { modeles } from './dossiers/modeles.ts';
+import { secretariatDecision } from './dossiers/secretariat-decision.ts';
+import { secretariatPilotage } from './dossiers/secretariat-pilotage.ts';
+import { secretariatRisques } from './dossiers/secretariat-risques.ts';
+import { secretariatProcessus } from './dossiers/secretariat-processus.ts';
+import { secretariatRelation } from './dossiers/secretariat-relation.ts';
 import { estBrouillon, estGeneree, estPubliee } from './publication.mjs';
 
 export interface Dossier {
@@ -133,6 +143,11 @@ export const bibliotheque: Guide[] = [
   ...confidentialite,
   ...situations,
   ...modeles,
+  ...secretariatDecision,
+  ...secretariatPilotage,
+  ...secretariatRisques,
+  ...secretariatProcessus,
+  ...secretariatRelation,
 ];
 
 export const cheminDuGuide = (g: Guide) => `/guides/${g.slug}`;

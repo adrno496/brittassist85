@@ -1,0 +1,73 @@
+{
+  "objet": "Répétition de la mise en ligne du lot A sur une copie du dépôt. Rien n'a été publié : le dépôt réel est resté inchangé.",
+  "date": "2026-10-06",
+  "methode": [
+    "Copie du dépôt dans un dossier temporaire, hors node_modules, dist et .git.",
+    "Étapes 2, 3 et 5 de 05_PUBLICATION_PLAN.md appliquées à la copie : dix lignes dans publications.mjs, date de la page de référence dans guides.ts et dates.mjs.",
+    "npm run qa dans la copie, comparaison du build à la copie de référence de l'état initial, puis contrôle en navigateur réel."
+  ],
+  "gateEditorial": {
+    "blocages": 0,
+    "avertissements": 0,
+    "serieEnLigne": 10
+  },
+  "build": {
+    "pages": 161,
+    "indexables": 159,
+    "brouillons": 0,
+    "nonIndexables": 2,
+    "urlDansLeSitemap": 159
+  },
+  "auditStrict": {
+    "blocages": 0,
+    "avertissements": 2,
+    "avertissementsDejaPresents": [
+      "contenu-mince /contact",
+      "sans-lien-contextuel /mentions-legales"
+    ]
+  },
+  "comparaisonAvecLEtatInitial": {
+    "fichiersAvant": 192,
+    "fichiersApres": 202,
+    "nouveaux": 10,
+    "supprimes": 0,
+    "modifies": 43,
+    "detailDesModifies": {
+      "guidesExistants": 40,
+      "indexDesGuides": 1,
+      "sitemap": 2
+    },
+    "identiques": 149,
+    "pagesHorsGuidesModifiees": 0,
+    "pagesExistantesDontTitleH1CanonicalOuRobotsChangent": 0,
+    "pagesExistantesQuiPerdentDesPagesCitantes": 0,
+    "note": "Les décomptes de fichiers incluent un .DS_Store de macOS, présent dans public/ en local et absent du dépôt : 191 fichiers du site avant, 201 après."
+  },
+  "pageDeReference": {
+    "chemin": "/guides/secretariat-externalise",
+    "title": "inchangé",
+    "h1": "inchangé",
+    "rubriquePourApprofondir": "10 liens visibles sur 14 ; les 4 autres visent des pages des lots B et C",
+    "mentionDeDate": "« Mis à jour en septembre 2026 » devient « Mis à jour en octobre 2026 »",
+    "lastmodDuSitemap": "2026-09-04 → 2026-10-06",
+    "pagesQuiLaCitent": "10 → 11 : elle perd un lien de la colonne « Dans le même dossier », en gagne deux depuis le lot"
+  },
+  "pagesDuLot": {
+    "nombre": 10,
+    "indexables": 10,
+    "canonicalPropre": 10,
+    "cspStricte": 10,
+    "mentionRelu": 0,
+    "reviewedBy": 0
+  },
+  "navigateur": {
+    "perimetre": "/guides et tous les guides du build répété",
+    "pages": 115,
+    "ecrans": 5,
+    "chargements": 575,
+    "dureeSecondes": 328,
+    "pagesEnDefaut": 0,
+    "violationsAxe": 0,
+    "parcoursReussis": 3
+  }
+}
