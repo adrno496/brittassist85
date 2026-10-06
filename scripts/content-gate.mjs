@@ -19,7 +19,8 @@ import { bibliotheque, dossiers } from '../src/data/bibliotheque.ts';
 import { metiers } from '../src/data/metiers.ts';
 import { prestations } from '../src/data/prestations.ts';
 import { zones } from '../src/data/zones.ts';
-import { dateDeRelecture, estPubliee, validationDuProprietaire } from '../src/data/publication.mjs';
+import { dateDeRelecture, datePublicationSansRelecture, estPubliee, validationDuProprietaire } from '../src/data/publication.mjs';
+import { lastmodPour } from '../src/data/dates.mjs';
 import { validations } from '../src/data/relectures.mjs';
 
 const SEUILS = { titleMax: 70, descriptionMin: 70, descriptionMax: 165, similarite: 0.55 };
@@ -135,6 +136,13 @@ for (const g of bibliotheque) {
   }
   if (new Set(approfondis.map((l) => l.href)).size !== approfondis.length) bloquer(page, 'approfondir-doublon');
   if (approfondis.length > 15) bloquer(page, 'approfondir-trop-long', `${approfondis.length} liens : quinze au plus`);
+  // La rubrique apparaît avec sa première cible en ligne : ce jour-là la page a changé, sa date et celle du sitemap doivent le dire.
+  const ciblesEnLigne = approfondis.map((l) => dateDeRelecture(l.href) ?? datePublicationSansRelecture(l.href)).filter(Boolean).sort();
+  if (ciblesEnLigne.length) {
+    const sitemap = lastmodPour(`/guides/${g.slug}`);
+    if (g.dateModified < ciblesEnLigne[0]) bloquer(page, 'approfondir-date', `rubrique visible depuis le ${ciblesEnLigne[0]}, fiche datée du ${g.dateModified}`);
+    if (sitemap !== g.dateModified) bloquer(page, 'approfondir-date', `sitemap ${sitemap}, fiche ${g.dateModified}`);
+  }
 
   const texte = texteDe(g);
   for (const [motif, raison] of INTERDITS) {
@@ -175,6 +183,9 @@ for (const g of serie) {
   if (!['A', 'B', 'C', 'D'].includes(g.lot)) bloquer(g.slug, 'lot-inconnu', String(g.lot));
   // Le pilier et l'index citent toutes les pages ; ce contrôle exige en plus un lien choisi par une autre fiche.
   if (!citees.has(`/guides/${g.slug}`)) avertir(g.slug, 'aucun-lien-editorial-entrant', 'citée par aucune autre fiche');
+  // Une page en ligne porte la date de son lot : le registre et la fiche doivent dire le même jour.
+  const enLigneLe = datePublicationSansRelecture(`/guides/${g.slug}`);
+  if (enLigneLe && enLigneLe !== g.datePublished) bloquer(g.slug, 'date-de-lot-incoherente', `registre ${enLigneLe}, fiche ${g.datePublished}`);
 }
 
 // ── 2 ter. Validations du propriétaire : une page validée existe, sinon la trace ne désigne plus rien ──

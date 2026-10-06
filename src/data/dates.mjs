@@ -40,6 +40,10 @@ const GUIDES_REVISES = new Set([
 const PAGES_REVISEES = new Set(['/', '/private-office', '/services', '/contact', '/tarifs']);
 const PAGES_OCTOBRE = new Set(['/guides', '/assistante', '/assistante-independante', '/methode-editoriale']);
 
+/** Page de référence de la série « secrétariat externalisé » : sa rubrique « Pour approfondir » est apparue à la mise en ligne de la série. */
+export const DATE_SERIE_SECRETARIAT = '2026-10-06';
+const PAGE_DE_REFERENCE = '/guides/secretariat-externalise';
+
 /** Préfixes d'URL de la vague de publication de septembre 2026. */
 const CHEMINS_SEPTEMBRE = /^\/(guides|assistante|assistante-independante)(\/|$)/;
 
@@ -58,6 +62,7 @@ export function lastmodPour(pathname) {
   // préalable porte la date de sa mise en ligne.
   const inscrite = dateDeRelecture(chemin) ?? datePublicationSansRelecture(chemin);
   if (inscrite) return inscrite;
+  if (chemin === PAGE_DE_REFERENCE) return DATE_SERIE_SECRETARIAT;
   if (PAGES_OCTOBRE.has(chemin)) return DATE_HUBS;
   if (NOUVEAUX_GUIDES.has(chemin) || GUIDES_REVISES.has(chemin) || PAGES_REVISEES.has(chemin)) return DATE_NOUVEAUX_GUIDES;
   return CHEMINS_SEPTEMBRE.test(chemin) ? DATE_SEO_METIERS_ZONES_GUIDES : DATE_SOCLE;

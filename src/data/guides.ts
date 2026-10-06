@@ -709,7 +709,7 @@ export const guides: Guide[] = [
       ],
     },
     cloture: 'Le bon prestataire commence par vous dire ce qu’il ne fait pas.',
-    dateModified: '2026-09-04',
+    dateModified: '2026-10-06',
   },
 
   {

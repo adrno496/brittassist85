@@ -29,7 +29,7 @@ const SOURCE_CNIL_SOUS_TRAITANCE = { href: 'https://www.cnil.fr/fr/securite-gere
 const SOURCE_CHARGES = { href: 'https://entreprendre.service-public.gouv.fr/vosdroits/F31973', label: 'Service-Public Entreprendre — Charges déductibles du résultat fiscal d’une entreprise' };
 const SOURCE_MICRO_FISCAL = { href: 'https://entreprendre.service-public.gouv.fr/vosdroits/F23267', label: 'Service-Public Entreprendre — Régime fiscal de la micro-entreprise' };
 const SOURCE_DOMICILIATION = { href: 'https://entreprendre.service-public.gouv.fr/vosdroits/F37412', label: 'Service-Public Entreprendre — Domicilier une société et son activité' };
-const SOURCE_FRANCHISE_TVA = { href: 'https://www.economie.gouv.fr/entreprises/franchise-tva-entreprises', label: 'Ministère de l’Économie — Entreprises : pouvez-vous bénéficier de la franchise de TVA ?' };
+const SOURCE_FRANCHISE_TVA = { href: 'https://www.economie.gouv.fr/entreprises/gerer-sa-fiscalite-et-ses-impots/autres-impots-et-taxes/entreprises-pouvez-vous-beneficier-de-la-franchise-de-tva', label: 'Ministère de l’Économie — Entreprises : pouvez-vous bénéficier de la franchise de TVA ?' };
 const SOURCE_REGIMES_TVA = { href: 'https://www.impots.gouv.fr/professionnel/les-regimes-dimposition-la-tva', label: 'impots.gouv.fr — Les régimes d’imposition à la TVA' };
 
 export const secretariatDecision: Guide[] = [

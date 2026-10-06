@@ -398,11 +398,19 @@ const LOTS = {
 const enLigne = serie.filter((g) => estPubliee(`/guides/${g.slug}`));
 const validees = serie.filter((g) => validationDuProprietaire(`/guides/${g.slug}`));
 const relues = serie.filter((g) => dateDeRelecture(`/guides/${g.slug}`));
+const datesDeMiseEnLigne = [...new Set(enLigne.map((g) => datePublicationSansRelecture(`/guides/${g.slug}`) ?? dateDeRelecture(`/guides/${g.slug}`)))];
+/** Vrai quand toute la série a été inscrite le même jour : le découpage en lots n'a alors pas servi d'étapes. */
+const toutEnLigneLeMemeJour = enLigne.length === serie.length && datesDeMiseEnLigne.length === 1;
 
 const doc05 = [
   enTete('05 — Plan de publication', `Les ${serie.length} pages existent. **En ligne : ${enLigne.length}. En brouillon : ${serie.length - enLigne.length}.** Un brouillon est généré par \`npm run build:apercu\`, en \`noindex\`, hors sitemap ; \`npm run build\` ne le génère pas du tout. Validées par le propriétaire du site : ${validees.length} — une validation garde une trace, elle ne met rien en ligne. Ce document donne l’ordre dans lequel publier les pages.`),
+  toutEnLigneLeMemeJour
+    ? `## Ce plan n’a pas été suivi\n\nLes ${serie.length} pages ont été mises en ligne le même jour, le ${datesDeMiseEnLigne[0]}, sur décision du propriétaire du site : voir « Décisions de relecture » à la fin de \`11_HUMAN_REVIEW_CHECKLIST.md\`. Les quatre lots ci-dessous n’ont donc pas servi d’étapes, et les critères de passage de l’un à l’autre n’ont pas été appliqués. Ils gardent une utilité : ils disent dans quel ordre regarder les pages, et lesquelles retirer en premier si la page de référence perd des clics.\n`
+    : '',
   '## Principe\n',
-  'Les pages ne sont pas publiées d’un coup. Quatre lots, du plus proche de la page de référence au plus éloigné. Entre deux lots, on regarde ce que le précédent a produit avant de continuer.\n',
+  toutEnLigneLeMemeJour
+    ? 'Le plan prévoyait de ne pas publier les pages d’un coup : quatre lots, du plus proche de la page de référence au plus éloigné, et un regard sur ce que chacun produit avant de passer au suivant.\n'
+    : 'Les pages ne sont pas publiées d’un coup. Quatre lots, du plus proche de la page de référence au plus éloigné. Entre deux lots, on regarde ce que le précédent a produit avant de continuer.\n',
   '**Aucun calendrier n’est fixé ici.** Aucune donnée de recherche n’était disponible pour en justifier un (voir `00_BASELINE.md`). Le passage d’un lot au suivant dépend d’un constat, non d’une date. Un repère de bon sens seulement : attendre que les pages d’un lot aient été explorées et, pour la plupart, indexées — ce qui se lit dans la Search Console, propriété `https://www.brittassist.fr/`.\n',
   '## État des lots\n',
   '| Lot | Pages | En ligne | Validées par le propriétaire | Relues par Brittany Dreano | Date portée par le lot |',

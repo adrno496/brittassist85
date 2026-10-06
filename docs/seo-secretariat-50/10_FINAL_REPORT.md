@@ -2,23 +2,53 @@
 
 Mission : créer cinquante pages réellement nouvelles autour de `/guides/secretariat-externalise`, sur le dépôt existant, sans régression ni cannibalisation, et sans les publier d’un coup. Réalisée le 6 octobre 2026.
 
-Mis à jour le même jour, après la validation donnée par le propriétaire du site à 19 h 19 et sa demande de préparer le commit final.
+Mis à jour deux fois le même jour : après la validation donnée par le propriétaire du site à 19 h 19, puis après sa décision, à 20 h 07, de mettre les cinquante pages en ligne.
 
 ## En bref
 
 | | |
 | --- | --- |
-| Pages créées | **50**, toutes en brouillon (`noindex`, hors sitemap) |
-| Pages publiées | **0** |
-| Validation du propriétaire | **50 pages**, le 6 octobre 2026 : « c'est bon j'ai tout checker ». Enregistrée dans `relectures.mjs`, liste `validations`, sans effet sur le site |
+| Pages créées | **50** |
+| Pages publiées | **50**, inscrites dans `publications.mjs` le 6 octobre 2026, d’un seul coup, sur décision du propriétaire. Le site compte 199 pages indexables et 199 adresses au sitemap |
+| Validation du propriétaire | **50 pages**, le 6 octobre 2026, en deux déclarations : « c'est bon j'ai tout checker », puis « toute les pages on ete relu ». Enregistrées dans `relectures.mjs`, liste `validations` |
 | Pages relues par Brittany Dreano | **0** — aucune mention « Relu par », aucun `reviewedBy` |
 | `RELECTURE_IA` | FAITE pour les 50, au sens précis donné dans `11_HUMAN_REVIEW_CHECKLIST.md` |
-| Build de production | Identique à l’octet près à l’état initial : 192 fichiers en local, 0 différence. Construit à partir du commit seul : 191 fichiers, tous identiques — le 192ᵉ était un `.DS_Store` de macOS, absent du dépôt |
+| Pages existantes | Les 46 pages hors `/guides` sont identiques à l’octet près à l’état initial. 73 guides et l’index `/guides` gagnent des liens ; aucun ne change de title, de H1, de description ni de canonical, aucun ne perd de lien entrant |
 | Contrôles automatiques | Tous réussis ; détail et réserves dans `09_TEST_REPORT.md` |
 | Search Console | **NON TESTÉ** : aucune donnée accessible |
-| Commit | Un seul, celui qui contient ce rapport, fait à la demande du propriétaire le 6 octobre 2026. Déployé, il sert un site identique à l’octet près : aucune page de la série n’est en ligne |
+| Commits | Deux, faits à la demande du propriétaire : la série en brouillon avec sa validation, puis la mise en ligne, dans le commit qui contient ce rapport |
 
-**Ce qui attend une décision du propriétaire** : la mise en ligne du lot A (dix pages). Elle a été répétée sur une copie du dépôt ; elle n’a pas été faite, parce que ni la validation ni la demande de préparer le commit ne la demandent, et que l’outil n’est pas autorisé à préparer une mise en production de sa propre initiative.
+**Ce qui reste à la main du propriétaire** : soumettre le sitemap dans la Search Console et y suivre la page de référence ; dire si Brittany Dreano a relu ces pages, pour que le site l’affiche ; trancher la contradiction relevée sur la page de référence.
+
+## Mise en ligne des 50 pages — 6 octobre 2026, 20 h 07
+
+Le propriétaire a écrit : « fait pour qu'il y est les 199page indexable au sitemap, toute les pages on ete relu, corrige les brouille, puis commit push sur le main ».
+
+| Ce qui a été fait | Détail |
+| --- | --- |
+| Mise en ligne | Les 50 pages inscrites dans `src/data/publications.mjs`, datées du 6 octobre 2026 |
+| Page de référence | Sa rubrique « Pour approfondir » s’affiche, avec ses 14 liens. Sa date de mise à jour passe au 6 octobre 2026, dans la fiche et au sitemap. Title, H1, slug et texte inchangés |
+| Déclaration de relecture | « toute les pages on ete relu », enregistrée telle quelle dans la liste `validations`, à la suite de la première |
+| Une source corrigée | L’adresse de la page du ministère de l’Économie citée par le guide sur la TVA, remplacée par celle que les résultats de recherche donnent aujourd’hui pour cette page |
+| Deux garde-fous de date | Ajoutés au gate éditorial : la date de la page de référence et celle du sitemap doivent se suivre ; une page de la série en ligne doit porter la date de son lot |
+
+| Mesuré sur le build | Résultat |
+| --- | --- |
+| Pages | 201 : 199 indexables, 2 en `noindex` voulu (`/404`, `/questionnaire`), 0 brouillon |
+| Sitemap | 199 adresses : les 149 d’avant, les 50 de la série |
+| Gate éditorial et audit strict | 0 blocage ; les 2 avertissements de l’état initial |
+| Les 50 pages | 50 sur 50 indexables, canonical propre, CSP stricte, sans mention « Relu par », sans `reviewedBy` |
+| Pages existantes | 46 identiques à l’octet près ; 73 guides et l’index modifiés, par 176 liens ajoutés |
+| Page de référence | Citée par 15 pages au lieu de 10 ; 74 liens internes au lieu de 60 |
+| Navigateur réel | Voir `09_TEST_REPORT.md` |
+
+| Ce qui n’a pas été fait | Pourquoi |
+| --- | --- |
+| Inscrire les pages dans l’objet `relectures` | La déclaration ne dit pas qui a relu. Y inscrire les pages afficherait « Relu par Brittany Dreano » : cela demande qu’elle les ait relues, et qu’on le dise |
+| Suivre le plan par lots | Décision du propriétaire : tout mettre en ligne le même jour. Le plan de `05_PUBLICATION_PLAN.md` prévoyait quatre lots, avec un regard sur la page de référence entre chacun ; ce regard n’aura lieu qu’après coup |
+| Réécrire un texte | « Corriger les brouillons » a été compris comme lever leur statut de brouillon. Aucun texte n’a été modifié, hors l’adresse de la source citée plus haut |
+
+**Les sections qui suivent, d’INSPECTÉ à RISQUE DE CANNIBALISATION, ont été écrites avant cette mise en ligne.** Elles décrivent la mission telle qu’elle a été livrée : quand elles parlent de brouillons, de `noindex` ou d’un build identique à l’état initial, elles parlent de cet état-là. Les critères d’acceptation et l’état des relectures, en fin de document, sont à jour.
 
 ---
 
@@ -47,14 +77,15 @@ Liste complète, slug par slug : `08_IMPLEMENTATION_REPORT.md`.
 
 ## MODIFIÉ
 
-17 fichiers suivis, 374 lignes ajoutées, 19 retirées :
+19 fichiers déjà suivis, 460 lignes ajoutées, 20 retirées, sur les deux commits :
 
 - le modèle `Guide` : deux champs facultatifs, `lot` et `approfondir` ;
-- la fiche de la page de référence : une rubrique « Pour approfondir » de 14 liens, **invisible tant qu’aucune page de la série n’est en ligne** ;
+- la fiche de la page de référence : une rubrique « Pour approfondir » de 14 liens, invisible tant qu’aucune page de la série n’était en ligne, **affichée depuis la mise en ligne** ;
 - le gabarit des guides : rendu de cette rubrique, et découpage par rubrique d’un pilier de plus de trente pages ;
-- le gate éditorial : quatre contrôles ajoutés ;
+- le gate éditorial : six contrôles ajoutés ;
 - le registre `relectures.mjs` : une liste `validations`, à côté de l’objet `relectures` resté vide ; `publication.mjs` : la fonction qui la lit ; deux tests ;
-- 44 guides d’octobre : 54 liens vers la série, eux aussi invisibles tant que leur cible est un brouillon ;
+- 44 guides d’octobre : 54 liens vers la série, invisibles tant que leur cible était un brouillon, affichés depuis ;
+- à la mise en ligne : `publications.mjs` (50 lignes), `dates.mjs` et la date de mise à jour de la page de référence ;
 - `bibliotheque.ts`, `package.json` (deux scripts, aucune dépendance), `README.md`.
 
 Sur la page de référence, **rien d’autre n’a changé** : ni le slug, ni le title, ni le H1, ni le texte, ni la FAQ, ni la date.
@@ -79,6 +110,7 @@ Commandes réellement lancées, dans cet ordre.
 | Après la validation du propriétaire | Enregistrement de la validation ; puis les mêmes commandes, `npm run docs:secretariat` et la comparaison des empreintes |
 | Répétition du lot A | Sur une copie du dépôt dans un dossier temporaire : étapes 2, 3 et 5 du plan de publication, `npm run qa`, comparaison au build initial, `scripts/browser-check.mjs --only /guides` |
 | Commit | `git fetch --all --prune`, `git add` sur les fichiers de la mission, puis `git commit` à la demande du propriétaire |
+| Mise en ligne | Inscription des 50 pages dans `publications.mjs`, date de la page de référence ; puis `npm run check`, `npm test`, `npm run qa`, `npm run qa:similarite`, `node scripts/check-sources.mjs`, comparaison au build initial et au build d’aperçu, contrôle en navigateur réel, second `git commit` |
 
 Ce rapport fait partie du commit : il ne peut pas attester ce qui le suit. Le push et le déploiement demandés avec lui ne sont donc pas décrits ici.
 
@@ -99,6 +131,7 @@ Résultats de la passe finale. Tableau complet, avec preuves : `09_TEST_REPORT.m
 | Responsive à 360, 390, 768, 1024 et 1440 px | PASS — 80 chargements, 0 échec |
 | Sources externes | PARTIAL — 43 des 47 sources de la série répondent ; 4 refusent les scripts |
 | Sécurité : CSP, secrets, dépendances | PASS |
+| **Après la mise en ligne** : types, tests, gate, build et audit strict | PASS — 0 erreur, 52 tests sur 52, 201 pages, 199 indexables, sitemap 199 URL, 0 blocage |
 | Validation du propriétaire : enregistrée, sans effet sur le site | PASS — 7 contrôles ; production et aperçu identiques à l’octet près à ce qu’ils étaient |
 | Répétition de la mise en ligne du lot A, **sur une copie** | PASS — 161 pages, 159 URL au sitemap, 0 blocage ; 575 chargements en navigateur, 0 défaut |
 
@@ -110,9 +143,8 @@ Résultats de la passe finale. Tableau complet, avec preuves : `09_TEST_REPORT.m
 | **Volumes de recherche** | Aucun outil n’en fournissait. Aucun n’a été estimé ni inventé |
 | **Core Web Vitals** | Lighthouse n’est installé ni dans le dépôt ni dans la boîte à outils. Seuls des indicateurs statiques ont été mesurés : poids du HTML, nombre de liens, scripts |
 | **Comportement sur Vercel** | Rien n’était déployé quand ce rapport a été écrit. Les en-têtes ont été testés avec le serveur local qui reproduit `vercel.json`, non chez l’hébergeur |
-| **Indexation** | Les pages sont en `noindex` : il n’y a rien à observer avant publication |
+| **Indexation** | Les pages viennent d’être rendues indexables : rien à observer avant que les moteurs les explorent |
 | **Ce que la vérification du propriétaire a couvert** | L’outil a enregistré sa déclaration ; il ne peut ni la mesurer ni la confirmer. Aucune relecture par Brittany Dreano |
-| **Mise en ligne réelle du lot A** | Non faite. Seule sa répétition sur une copie a été contrôlée |
 | **Une source** | `economie.gouv.fr` refuse les requêtes des outils, navigateur automatisé compris (HTTP 403) : la page sur la franchise de TVA n’a pas pu être rouverte. Le lien est à ouvrir à la main. Les règles qu’elle appuie ont été vérifiées par ailleurs, sur impots.gouv.fr et le BOFiP |
 
 ## ÉCHECS
@@ -127,12 +159,13 @@ Une limite de méthode doit être dite : la comparaison lexicale des *idées* (d
 
 ## RECOMMANDÉ
 
-### Avant de publier quoi que ce soit
+### Après la mise en ligne
 
-1. **Décider de la mise en ligne du lot A.** Le propriétaire a validé les cinquante pages ; il n’a pas demandé qu’un lot soit mis en ligne. La marche à suivre est dans `05_PUBLICATION_PLAN.md`, et ce qu’elle produit est mesuré dans `09_TEST_REPORT.md` : dix pages nouvelles, quarante guides et l’index modifiés, aucune page hors `/guides` touchée.
-2. **Ouvrir à la main la source `economie.gouv.fr`** de la page sur la TVA, la seule que les outils n’ont pas pu rouvrir, avant que cette page soit en ligne.
-3. **Si le site doit afficher une relecture**, la faire faire par Brittany Dreano : l’objet `relectures` affiche son nom, et seule une relecture faite par elle peut y être inscrite. La validation du propriétaire, elle, ne s’affiche nulle part.
-4. **Exporter les requêtes Search Console** de `/guides/secretariat-externalise`, dans l’ancienne propriété (sans `www`), qui détient l’historique. Elles permettraient de vérifier l’ordre des lots, et peut-être de faire remonter une page P1.
+1. **Soumettre le sitemap** dans la Search Console, propriété `https://www.brittassist.fr/`, pour que les 50 adresses nouvelles soient vues.
+2. **Suivre la page de référence** : clics, impressions et position de `/guides/secretariat-externalise`, sur une période identique avant et après le 6 octobre 2026. C’est le contrôle que le plan par lots faisait entre deux étapes ; il se fait désormais après coup. Si une page de la série prend sa place sur une requête, la retirer de `publications.mjs` la remet en brouillon.
+3. **Ouvrir à la main la source `economie.gouv.fr`** du guide sur la TVA : son adresse a été corrigée, mais les outils n’ont pu ouvrir ni l’ancienne ni la nouvelle.
+4. **Si le site doit afficher une relecture**, dire que Brittany Dreano a relu les pages : elles seront alors inscrites dans l’objet `relectures`, qui affiche son nom.
+5. **Exporter les requêtes Search Console** de la page de référence, dans l’ancienne propriété (sans `www`), qui détient l’historique.
 
 ### Constats sur l’existant, non corrigés
 
@@ -149,14 +182,15 @@ Relevés pendant l’inventaire. Aucun n’a été corrigé : ces pages sont pub
 | L’index `/guides` atteindra 226 liens et 96 Ko | `src/pages/guides.astro` | Replier les dossiers, ou ne montrer que les premières pages de chacun |
 | Cinq alertes de sécurité sur les dépendances, dont une critique sur Astro | `npm audit` | Chantier distinct : passage d’Astro 5 à Astro 7 |
 
-### Après le lot A
+### Avant toute nouvelle série
 
-5. Suivre la page de référence avant tout le reste : c’est elle que la série doit servir, pas concurrencer (`05`, dernière section).
-6. Relancer `node scripts/check-sources.mjs` avant chaque lot : les pages officielles changent.
+6. Relancer `node scripts/check-sources.mjs` : les pages officielles changent.
 
 ## RISQUE DE RÉGRESSION
 
-**Faible aujourd’hui, mesuré.** Le build de production est identique, fichier par fichier, à ce qu’il était. Le sitemap, la CSP, les données structurées, les canonicals, les formulaires, les scripts et les styles n’ont pas bougé : aucun de ces fichiers n’a été modifié.
+**Mesuré à la mise en ligne.** Les 46 pages hors `/guides` sont identiques à l’octet près à l’état initial. 73 guides et l’index changent, par 176 liens ajoutés ; aucun ne change de title, de H1, de description ni de canonical, et aucune page existante ne perd de page qui la cite. Le build mis en ligne ne diffère du build d’aperçu déjà chargé en navigateur que par le statut des 50 pages, la date de la page de référence et le sitemap.
+
+**Avant la mise en ligne : faible, mesuré.** Le build de production est identique, fichier par fichier, à ce qu’il était. Le sitemap, la CSP, les données structurées, les canonicals, les formulaires, les scripts et les styles n’ont pas bougé : aucun de ces fichiers n’a été modifié.
 
 **Mesuré pour le lot A, sur une copie.** Sa mise en ligne ajoute dix pages et en modifie quarante et une : quarante guides et l’index. Aucune ne change de title, de H1, de canonical ni de directive robots ; aucune ne perd de page qui la cite ; aucune page hors `/guides` ne change. La page de référence gagne sa rubrique « Pour approfondir », dix liens, et sa date de mise à jour.
 
@@ -174,24 +208,9 @@ Deux endroits demandent un regard humain le jour venu : le pilier « Externalise
 2. **La paire `obligation-de-vigilance-prestataire-independant` / `dossier-permanent-entreprise`**, la plus proche de toute la bibliothèque par le vocabulaire (0,50). Les lecteurs sont opposés — celui qui demande la pièce, celui qui la fournit — et les deux pages se citent. Si l’une prenait la place de l’autre dans les résultats, la réponse serait de resserrer les titles.
 3. **Les 31 pages retenues en risque moyen.** Chacune porte sa démonstration écrite (`03`). Une démonstration n’est pas une mesure : c’est la Search Console qui dira si elle tenait.
 
-## PROCHAINES PAGES À PUBLIER
+## PAGES PUBLIÉES
 
-Le lot A : les dix pages P0. Le propriétaire les a validées le 6 octobre 2026 ; leur mise en ligne, répétée sur une copie, attend sa demande.
-
-| # | Page | Dossier | Source officielle à ouvrir |
-| --- | --- | --- | --- |
-| 1 | `inconvenients-secretariat-externalise` | Externaliser et déléguer | — |
-| 2 | `mission-ponctuelle-de-secretariat` | Externaliser et déléguer | — |
-| 3 | `periode-d-essai-assistante-independante` | Externaliser et déléguer | Service-Public (2) |
-| 4 | `cahier-des-charges-secretariat-externalise` | Modèles et checklists | — |
-| 5 | `comparer-devis-secretariat-externalise` | Modèles et checklists | — |
-| 6 | `tva-prestataire-en-franchise-en-base` | Devis, factures et relances | Ministère de l’Économie, impots.gouv.fr |
-| 7 | `delais-de-reponse-assistante-externalisee` | Externaliser et déléguer | Service-Public (1) |
-| 8 | `forfait-secretariat-externalise-depassement` | Externaliser et déléguer | — |
-| 9 | `absence-de-son-assistante-independante` | Situations de dirigeant | — |
-| 10 | `obligation-de-vigilance-prestataire-independant` | Confidentialité, accès et outils | Urssaf, Service-Public (2) |
-
-Pour les voir avant publication : `npm run build:apercu`, puis `npm run servir`, et ouvrir `http://127.0.0.1:4322/guides/<slug>`.
+Les cinquante, le 6 octobre 2026. Aucune page de la série ne reste à publier. Leur liste, avec leur requête, leur dossier et leur lot d’origine, est dans `04_FINAL_50_PAGE_PLAN.md` ; les sources officielles à ouvrir, page par page, dans `11_HUMAN_REVIEW_CHECKLIST.md`.
 
 ---
 
@@ -206,30 +225,30 @@ Pour les voir avant publication : `npm run build:apercu`, puis `npm run servir`,
 | Pas de slug, de title, de H1, de description en double | Oui — contrôles bloquants du gate éditorial et de l’audit |
 | Pas de lien interne cassé | Oui — 0 dans les deux builds |
 | Build d’aperçu et QA d’aperçu réussis | Oui |
-| Aucune régression des pages existantes | Oui — production identique à l’octet près |
+| Aucune régression des pages existantes | Oui — avant la mise en ligne, production identique à l’octet près ; après, 46 pages identiques, 73 guides et l’index enrichis de liens, sans changement de title, de H1 ni de canonical |
 | CSP stricte | Oui — présente sur les 201 pages, sans `unsafe-inline` ni `unsafe-eval` |
-| Sitemap publié cohérent | Oui — 149 URL, inchangé |
-| Brouillons en `noindex` | Oui — `noindex,follow`, bandeau « brouillon », hors sitemap |
+| Sitemap publié cohérent | Oui — 199 URL : les 149 d’avant et les 50 de la série. Une date change, celle de la page de référence |
+| Brouillons en `noindex` | Oui tant qu’il y en avait : `noindex,follow`, bandeau « brouillon », hors sitemap. Il n’y en a plus : les 50 pages sont publiées |
 | Toute page marquée « relue » a une validation humaine traçable | Oui — aucune page n’est marquée relue sur le site ; les 50 pages validées portent la validation du propriétaire, datée et nommée |
 | Aucune donnée inventée | Oui — ni chiffre, ni témoignage, ni cas client ; les exemples sont signalés comme illustratifs |
 | Aucune source réglementaire non vérifiée | Oui pour le contenu : chaque règle a été lue à sa source. Une URL sur 47 n’a pas pu être rouverte par programme (voir NON TESTÉ) |
-| La page de référence est préservée | Oui — seule une rubrique de liens, invisible pour l’instant, lui a été ajoutée |
-| Les 50 pages ne sont pas publiées d’un coup | Oui — aucune n’est publiée ; quatre lots proposés |
+| La page de référence est préservée | Oui — slug, title, H1 et texte inchangés. Une rubrique de 14 liens s’ajoute en fin de page, et sa date de mise à jour suit |
+| Les 50 pages ne sont pas publiées d’un coup | **Non.** Quatre lots étaient proposés ; le propriétaire a décidé le 6 octobre 2026 de mettre les 50 pages en ligne le même jour |
 | Les pages validées par une personne sont enregistrées dans `relectures.mjs` | Oui — 50 pages, dans la liste `validations`, au nom du propriétaire. Pas dans l’objet `relectures` : il afficherait « Relu par Brittany Dreano » |
 
-## Relecture : état au 6 octobre 2026
+## Relecture et publication : état au 6 octobre 2026
 
 ```
-RELECTURE_IA                  = FAITE       (50 pages)
-QA_AUTOMATIQUE                = PASS        (50 pages)
-RELECTURE_HUMAINE             = FAITE       (50 pages)  par le propriétaire, selon sa déclaration
-VALIDATION_HUMAINE            = DONNÉE      (50 pages)  Axel Dreano, 6 octobre 2026, 19 h 19
-RELECTURE PAR BRITTANY DREANO = EN_ATTENTE  (50 pages)  aucune mention « Relu par » sur le site
-PUBLICATION                   = AUCUNE      (50 brouillons)
+RELECTURE_IA                  = FAITE         (50 pages)
+QA_AUTOMATIQUE                = PASS          (50 pages)
+RELECTURE_HUMAINE             = FAITE         (50 pages)  selon deux déclarations du propriétaire
+VALIDATION_HUMAINE            = DONNÉE        (50 pages)  Axel Dreano, 6 octobre 2026, 19 h 19 et 20 h 07
+RELECTURE PAR BRITTANY DREANO = NON DÉCLARÉE  (50 pages)  aucune mention « Relu par » sur le site
+PUBLICATION                   = FAITE         (50 pages)  6 octobre 2026, d’un seul coup, sur décision du propriétaire
 ```
 
-Ce que `RELECTURE_HUMAINE = FAITE` veut dire ici, et rien de plus : le propriétaire du site a écrit « c'est bon j'ai tout checker », et cette phrase est enregistrée telle quelle, avec son nom et la date. L’outil ne peut pas dire ce que la vérification a couvert. « Tout » a été lu comme les cinquante pages ; si la validation ne visait que le lot A, la ligne devient FAITE pour 10 pages et EN_ATTENTE pour 40.
+Ce que `RELECTURE_HUMAINE = FAITE` veut dire ici, et rien de plus : le propriétaire du site a écrit « c'est bon j'ai tout checker », puis « toute les pages on ete relu », et ces phrases sont enregistrées telles quelles, avec son nom et la date. L’outil ne peut pas dire ce que la vérification a couvert, ni qui a relu.
 
 Elle ne veut pas dire que Brittany Dreano a relu ces pages. Le site n’affiche aucune mention de relecture, et n’en affichera une que pour une page qu’elle aura relue elle-même.
 
-Le détail est dans `11_HUMAN_REVIEW_CHECKLIST.md`, section « Décisions de relecture » ; la marche à suivre pour publier, dans `05_PUBLICATION_PLAN.md`.
+Le détail est dans `11_HUMAN_REVIEW_CHECKLIST.md`, section « Décisions de relecture ».

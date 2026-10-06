@@ -1,5 +1,5 @@
 {
-  "genere": "2026-10-06T17:54:31.556Z",
+  "genere": "2026-10-06T18:22:06.682Z",
   "seuils": {
     "titre": {
       "alerte": 0.5,
@@ -1022,254 +1022,254 @@
   ],
   "pairesHtml": [
     {
-      "a": "/guides/forfait-secretariat-externalise-depassement",
-      "b": "/guides/revue-trimestrielle-assistance-externalisee",
-      "score": 0.08639705882352941
-    },
-    {
-      "a": "/guides/assistante-partagee-entre-associes",
-      "b": "/guides/recruter-apres-avoir-externalise",
-      "score": 0.08281444582814446
-    },
-    {
-      "a": "/guides/acces-bancaire-pour-son-assistante",
-      "b": "/guides/moyens-de-paiement-delegues",
-      "score": 0.08145065398335315
-    },
-    {
-      "a": "/guides/evaluer-un-secretariat-externalise",
-      "b": "/guides/revue-trimestrielle-assistance-externalisee",
-      "score": 0.08005164622336991
-    },
-    {
-      "a": "/guides/changer-d-assistante-externalisee",
-      "b": "/guides/revue-trimestrielle-assistance-externalisee",
-      "score": 0.07965152457996266
-    },
-    {
-      "a": "/guides/annonce-de-repondeur-professionnel",
-      "b": "/guides/appels-manques-entreprise",
-      "score": 0.07954545454545454
-    },
-    {
-      "a": "/guides/coordonner-des-entretiens-de-recrutement",
-      "b": "/guides/telesecretariat-et-assistante-externalisee",
-      "score": 0.07855361596009976
-    },
-    {
-      "a": "/guides/boite-mail-partagee-entreprise",
-      "b": "/guides/telesecretariat-et-assistante-externalisee",
-      "score": 0.07833228048010107
-    },
-    {
-      "a": "/guides/conjoint-qui-fait-l-administratif",
-      "b": "/guides/dirigeant-indisponible-du-jour-au-lendemain",
-      "score": 0.07758159443552702
-    },
-    {
-      "a": "/guides/checklist-administrative-mensuelle",
-      "b": "/guides/modele-note-d-aide-a-la-decision",
-      "score": 0.07734470158343483
-    },
-    {
-      "a": "/guides/annonce-de-repondeur-professionnel",
-      "b": "/guides/boite-mail-partagee-entreprise",
-      "score": 0.07692307692307693
-    },
-    {
-      "a": "/guides/incident-de-securite-chez-un-prestataire",
-      "b": "/guides/rgpd-sous-traitance-assistante-externalisee",
-      "score": 0.0766839378238342
-    },
-    {
-      "a": "/guides/assistante-commerciale-externalisee",
-      "b": "/guides/traiter-les-demandes-de-devis-entrantes",
-      "score": 0.07665505226480836
-    },
-    {
-      "a": "/guides/declarer-un-sinistre-professionnel",
-      "b": "/guides/vehicules-de-societe-suivi-administratif",
-      "score": 0.07650602409638554
-    },
-    {
-      "a": "/guides/dirigeant-indisponible-du-jour-au-lendemain",
-      "b": "/guides/erreur-de-son-assistante-externalisee",
-      "score": 0.07636566332218506
-    },
-    {
-      "a": "/guides/acces-bancaire-pour-son-assistante",
-      "b": "/guides/incident-de-securite-chez-un-prestataire",
-      "score": 0.07623318385650224
-    },
-    {
-      "a": "/guides/cahier-des-charges-secretariat-externalise",
-      "b": "/guides/modele-note-d-aide-a-la-decision",
-      "score": 0.07592592592592592
-    },
-    {
-      "a": "/guides/annonce-de-repondeur-professionnel",
-      "b": "/guides/presenter-son-assistante-a-ses-clients",
-      "score": 0.07580543272267846
-    },
-    {
-      "a": "/guides/controle-urssaf-preparer-les-pieces",
-      "b": "/guides/dirigeant-indisponible-du-jour-au-lendemain",
-      "score": 0.07562076749435666
-    },
-    {
-      "a": "/guides/assistante-partagee-entre-associes",
-      "b": "/guides/changer-d-assistante-externalisee",
-      "score": 0.07559926244622003
-    },
-    {
-      "a": "/guides/assistante-partagee-entre-associes",
-      "b": "/guides/revue-trimestrielle-assistance-externalisee",
-      "score": 0.07504937458854509
-    },
-    {
-      "a": "/guides/annonce-de-repondeur-professionnel",
-      "b": "/guides/telesecretariat-et-assistante-externalisee",
-      "score": 0.07484276729559748
-    },
-    {
-      "a": "/guides/changer-d-assistante-externalisee",
-      "b": "/guides/recruter-apres-avoir-externalise",
-      "score": 0.07472270869819031
-    },
-    {
-      "a": "/guides/evaluer-un-secretariat-externalise",
-      "b": "/guides/forfait-secretariat-externalise-depassement",
-      "score": 0.07466196355085244
-    },
-    {
-      "a": "/guides/delegations-aupres-des-organismes",
-      "b": "/guides/sous-traitance-par-son-assistante",
-      "score": 0.0746184284906727
-    },
-    {
-      "a": "/guides/appels-manques-entreprise",
-      "b": "/guides/telesecretariat-et-assistante-externalisee",
-      "score": 0.07446808510638298
-    },
-    {
       "a": "/guides/modele-note-d-aide-a-la-decision",
       "b": "/guides/modele-tableau-de-suivi-des-factures",
-      "score": 0.07436260623229461
+      "score": 0.07575757575757576
     },
     {
-      "a": "/guides/absence-de-son-assistante-independante",
-      "b": "/guides/erreur-de-son-assistante-externalisee",
-      "score": 0.07419712070874862
-    },
-    {
-      "a": "/guides/rgpd-sous-traitance-assistante-externalisee",
-      "b": "/guides/sous-traitance-par-son-assistante",
-      "score": 0.07407407407407407
-    },
-    {
-      "a": "/guides/acces-bancaire-pour-son-assistante",
-      "b": "/guides/delegations-aupres-des-organismes",
-      "score": 0.07401129943502825
-    },
-    {
-      "a": "/guides/conjoint-qui-fait-l-administratif",
-      "b": "/guides/controle-urssaf-preparer-les-pieces",
-      "score": 0.07397260273972603
-    },
-    {
-      "a": "/guides/cahier-des-charges-secretariat-externalise",
-      "b": "/guides/comparer-devis-secretariat-externalise",
-      "score": 0.07374301675977654
-    },
-    {
-      "a": "/guides/controle-urssaf-preparer-les-pieces",
-      "b": "/guides/depart-d-un-salarie-checklist-administrative",
-      "score": 0.07352941176470588
-    },
-    {
-      "a": "/guides/recruter-apres-avoir-externalise",
+      "a": "/guides/forfait-secretariat-externalise-depassement",
       "b": "/guides/revue-trimestrielle-assistance-externalisee",
-      "score": 0.07347447073474471
-    },
-    {
-      "a": "/guides/boite-mail-partagee-entreprise",
-      "b": "/guides/coordonner-des-entretiens-de-recrutement",
-      "score": 0.07321652065081352
-    },
-    {
-      "a": "/guides/delegations-aupres-des-organismes",
-      "b": "/guides/moyens-de-paiement-delegues",
-      "score": 0.0731981981981982
-    },
-    {
-      "a": "/guides/changer-d-assistante-externalisee",
-      "b": "/guides/evaluer-un-secretariat-externalise",
-      "score": 0.07314148681055156
-    },
-    {
-      "a": "/guides/assistante-commerciale-externalisee",
-      "b": "/guides/tva-prestataire-en-franchise-en-base",
-      "score": 0.0728587319243604
-    },
-    {
-      "a": "/guides/boite-mail-partagee-entreprise",
-      "b": "/guides/presenter-son-assistante-a-ses-clients",
-      "score": 0.0725094577553594
-    },
-    {
-      "a": "/guides/delais-de-reponse-assistante-externalisee",
-      "b": "/guides/secretariat-externalise-charge-deductible",
-      "score": 0.07248764415156507
-    },
-    {
-      "a": "/guides/domiciliation-ou-secretariat-externalise",
-      "b": "/guides/lettre-recommandee-electronique",
-      "score": 0.0723905723905724
-    },
-    {
-      "a": "/guides/collecter-des-pieces-aupres-de-ses-clients",
-      "b": "/guides/tenir-son-fichier-clients-a-jour",
-      "score": 0.07205113306217316
-    },
-    {
-      "a": "/guides/moyens-de-paiement-delegues",
-      "b": "/guides/sous-traitance-par-son-assistante",
-      "score": 0.07189157336476135
+      "score": 0.07361197754210855
     },
     {
       "a": "/guides/sous-traitance-par-son-assistante",
       "b": "/guides/partager-un-mot-de-passe-en-securite",
-      "score": 0.07173513182096873
+      "score": 0.07289719626168224
     },
     {
-      "a": "/guides/incident-de-securite-chez-un-prestataire",
-      "b": "/guides/moyens-de-paiement-delegues",
-      "score": 0.07122982749026155
+      "a": "/guides/cahier-des-charges-secretariat-externalise",
+      "b": "/guides/modele-tableau-de-bord-hebdomadaire",
+      "score": 0.07048748353096179
     },
     {
-      "a": "/guides/lettre-recommandee-electronique",
-      "b": "/guides/mentions-obligatoires-courriers-et-emails",
-      "score": 0.07119741100323625
+      "a": "/guides/assistante-partagee-entre-associes",
+      "b": "/guides/recruter-apres-avoir-externalise",
+      "score": 0.07043147208121828
     },
     {
-      "a": "/guides/delais-de-reponse-assistante-externalisee",
-      "b": "/guides/periode-d-essai-assistante-independante",
-      "score": 0.07112970711297072
+      "a": "/guides/tva-prestataire-en-franchise-en-base",
+      "b": "/guides/choisir-un-logiciel-de-facturation",
+      "score": 0.07018633540372671
     },
     {
-      "a": "/guides/annonce-de-repondeur-professionnel",
-      "b": "/guides/coordonner-des-entretiens-de-recrutement",
-      "score": 0.07111665626949469
+      "a": "/guides/participer-a-un-salon-professionnel",
+      "b": "/guides/feuille-de-route-de-deplacement",
+      "score": 0.07015032211882606
     },
     {
-      "a": "/guides/appels-manques-entreprise",
-      "b": "/guides/presenter-son-assistante-a-ses-clients",
-      "score": 0.07092198581560284
+      "a": "/guides/presenter-son-assistante-a-ses-clients",
+      "b": "/guides/reunions-et-fuseaux-horaires",
+      "score": 0.07006802721088436
     },
     {
       "a": "/guides/acces-bancaire-pour-son-assistante",
-      "b": "/guides/sous-traitance-par-son-assistante",
-      "score": 0.07083825265643448
+      "b": "/guides/moyens-de-paiement-delegues",
+      "score": 0.06961259079903148
+    },
+    {
+      "a": "/guides/participer-a-un-salon-professionnel",
+      "b": "/guides/organiser-un-deplacement-professionnel",
+      "score": 0.06948228882833787
+    },
+    {
+      "a": "/guides/tva-prestataire-en-franchise-en-base",
+      "b": "/guides/circuit-des-factures-fournisseurs",
+      "score": 0.06856796116504854
+    },
+    {
+      "a": "/guides/cahier-des-charges-secretariat-externalise",
+      "b": "/guides/checklist-ouverture-dossier-client",
+      "score": 0.06851971557853911
+    },
+    {
+      "a": "/guides/annonce-de-repondeur-professionnel",
+      "b": "/guides/appels-manques-entreprise",
+      "score": 0.06760048721071864
+    },
+    {
+      "a": "/guides/modele-note-d-aide-a-la-decision",
+      "b": "/guides/modele-releve-du-temps-administratif",
+      "score": 0.06736842105263158
+    },
+    {
+      "a": "/guides/changer-d-assistante-externalisee",
+      "b": "/guides/revue-trimestrielle-assistance-externalisee",
+      "score": 0.06725888324873096
+    },
+    {
+      "a": "/guides/telesecretariat-et-assistante-externalisee",
+      "b": "/guides/filtrer-les-appels-et-messages",
+      "score": 0.06707734428473648
+    },
+    {
+      "a": "/guides/conjoint-qui-fait-l-administratif",
+      "b": "/guides/dirigeant-indisponible-du-jour-au-lendemain",
+      "score": 0.06688417618270799
+    },
+    {
+      "a": "/guides/participer-a-un-salon-professionnel",
+      "b": "/guides/choisir-un-lieu-de-seminaire",
+      "score": 0.06684856753069578
+    },
+    {
+      "a": "/guides/evaluer-un-secretariat-externalise",
+      "b": "/guides/revue-trimestrielle-assistance-externalisee",
+      "score": 0.06644736842105263
+    },
+    {
+      "a": "/guides/incident-de-securite-chez-un-prestataire",
+      "b": "/guides/rgpd-sous-traitance-assistante-externalisee",
+      "score": 0.06631578947368422
+    },
+    {
+      "a": "/guides/sous-traitance-par-son-assistante",
+      "b": "/guides/double-authentification-et-delegation",
+      "score": 0.06620428751576292
+    },
+    {
+      "a": "/guides/revue-trimestrielle-assistance-externalisee",
+      "b": "/guides/point-hebdomadaire-avec-son-assistante",
+      "score": 0.06591865357643759
+    },
+    {
+      "a": "/guides/checklist-administrative-mensuelle",
+      "b": "/guides/modele-note-d-aide-a-la-decision",
+      "score": 0.06579764121663563
+    },
+    {
+      "a": "/guides/assistante-partagee-entre-associes",
+      "b": "/guides/conciergerie-privee-ou-lifestyle-assistant",
+      "score": 0.06565656565656566
+    },
+    {
+      "a": "/guides/coordonner-des-entretiens-de-recrutement",
+      "b": "/guides/telesecretariat-et-assistante-externalisee",
+      "score": 0.0653968253968254
+    },
+    {
+      "a": "/guides/absence-de-son-assistante-independante",
+      "b": "/guides/changer-d-outil-de-gestion",
+      "score": 0.06536346976175932
+    },
+    {
+      "a": "/guides/assistante-commerciale-externalisee",
+      "b": "/guides/traiter-les-demandes-de-devis-entrantes",
+      "score": 0.06501182033096926
+    },
+    {
+      "a": "/guides/acces-bancaire-pour-son-assistante",
+      "b": "/guides/incident-de-securite-chez-un-prestataire",
+      "score": 0.06499429874572406
+    },
+    {
+      "a": "/guides/appels-manques-entreprise",
+      "b": "/guides/filtrer-les-appels-et-messages",
+      "score": 0.064993564993565
+    },
+    {
+      "a": "/guides/boite-mail-partagee-entreprise",
+      "b": "/guides/telesecretariat-et-assistante-externalisee",
+      "score": 0.064993564993565
+    },
+    {
+      "a": "/guides/checklist-administrative-mensuelle",
+      "b": "/guides/modele-tableau-de-suivi-des-factures",
+      "score": 0.06496985934360348
+    },
+    {
+      "a": "/guides/participer-a-un-salon-professionnel",
+      "b": "/guides/organiser-un-seminaire-d-equipe",
+      "score": 0.06462358427714857
+    },
+    {
+      "a": "/guides/dirigeant-indisponible-du-jour-au-lendemain",
+      "b": "/guides/erreur-de-son-assistante-externalisee",
+      "score": 0.06458923512747876
+    },
+    {
+      "a": "/guides/presenter-son-assistante-a-ses-clients",
+      "b": "/guides/dossier-de-rendez-vous",
+      "score": 0.06453851492019431
+    },
+    {
+      "a": "/guides/declarer-un-sinistre-professionnel",
+      "b": "/guides/vehicules-de-societe-suivi-administratif",
+      "score": 0.06441717791411043
+    },
+    {
+      "a": "/guides/tva-prestataire-en-franchise-en-base",
+      "b": "/guides/acompte-ou-arrhes",
+      "score": 0.06420851875397329
+    },
+    {
+      "a": "/guides/evaluer-un-secretariat-externalise",
+      "b": "/guides/point-hebdomadaire-avec-son-assistante",
+      "score": 0.06418918918918919
+    },
+    {
+      "a": "/guides/annonce-de-repondeur-professionnel",
+      "b": "/guides/boite-mail-partagee-entreprise",
+      "score": 0.06416072585871678
+    },
+    {
+      "a": "/guides/modele-note-d-aide-a-la-decision",
+      "b": "/guides/modele-fiche-de-preferences-dirigeant",
+      "score": 0.06405693950177936
+    },
+    {
+      "a": "/guides/controle-urssaf-preparer-les-pieces",
+      "b": "/guides/rattraper-un-retard-administratif",
+      "score": 0.0640547263681592
+    },
+    {
+      "a": "/guides/absence-de-son-assistante-independante",
+      "b": "/guides/dirigeant-souvent-en-deplacement",
+      "score": 0.06392405063291139
+    },
+    {
+      "a": "/guides/sous-traitance-par-son-assistante",
+      "b": "/guides/delegation-d-acces-messagerie-et-agenda",
+      "score": 0.06392132759680394
+    },
+    {
+      "a": "/guides/annonce-de-repondeur-professionnel",
+      "b": "/guides/reponses-types-emails",
+      "score": 0.06385964912280702
+    },
+    {
+      "a": "/guides/tva-prestataire-en-franchise-en-base",
+      "b": "/guides/numerotation-des-factures-et-avoirs",
+      "score": 0.06375227686703097
+    },
+    {
+      "a": "/guides/coordonner-des-entretiens-de-recrutement",
+      "b": "/guides/organiser-sa-boite-mail-de-dirigeant",
+      "score": 0.06374228923920494
+    },
+    {
+      "a": "/guides/modele-note-d-aide-a-la-decision",
+      "b": "/guides/modele-tableau-de-bord-hebdomadaire",
+      "score": 0.06374228923920494
+    },
+    {
+      "a": "/guides/controle-urssaf-preparer-les-pieces",
+      "b": "/guides/dirigeant-indisponible-du-jour-au-lendemain",
+      "score": 0.06368330464716007
+    },
+    {
+      "a": "/guides/assistante-partagee-entre-associes",
+      "b": "/guides/chief-of-staff-ou-executive-assistant",
+      "score": 0.06368089573128062
+    },
+    {
+      "a": "/guides/mission-ponctuelle-de-secretariat",
+      "b": "/guides/canal-pour-transmettre-ses-demandes",
+      "score": 0.06365883807169345
+    },
+    {
+      "a": "/guides/coordonner-des-entretiens-de-recrutement",
+      "b": "/guides/compte-rendu-de-reunion",
+      "score": 0.06363636363636363
     }
   ]
 }

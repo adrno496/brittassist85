@@ -10,7 +10,7 @@ Site statique Astro 5, déployé sur Vercel. Une fonction serveur `/api/contact`
 npm install
 npm run dev            # développement, http://localhost:4321
 npm run build          # build de production : seules les pages relues sont générées
-npm run build:apercu   # build d’aperçu : y compris les brouillons, en noindex (50 à ce jour : la série « secrétariat externalisé »)
+npm run build:apercu   # build d’aperçu : y compris les brouillons, en noindex (aucun à ce jour)
 npm run preview        # sert le dernier build
 npm run servir         # sert dist/ en appliquant vercel.json (en-têtes, redirections, 404)
 
@@ -63,6 +63,8 @@ Les guides et pages métier ajoutés en octobre 2026 ont été préparés avec l
 
 **État au 3 octobre 2026 :** les 99 pages nouvelles sont inscrites dans `publications.mjs`, sur décision du propriétaire, sans relecture préalable. Le registre des relectures est vide : aucune page ne se déclare relue.
 
+**État au 6 octobre 2026 :** les 50 pages de la série « secrétariat externalisé » y sont inscrites à leur tour, sur décision du propriétaire. Le site compte 199 pages indexables.
+
 `relectures.mjs` porte aussi une liste `validations` : la trace d’une validation donnée par le propriétaire du site — son nom, la date, ses mots, les pages visées. Elle n’a aucun effet sur le site : une page validée n’est ni mise en ligne, ni présentée comme relue. Aucun gabarit ne lit cette liste.
 
 Une page absente des deux registres reste un brouillon :
@@ -74,12 +76,12 @@ C’est le sort de toute page ajoutée par la suite, tant qu’elle n’est insc
 
 ### La série « secrétariat externalisé »
 
-Cinquante guides ajoutés le 6 octobre 2026 autour de `/guides/secretariat-externalise`. Ils sont tous en brouillon. Le propriétaire les a validés le même jour : la validation est enregistrée, elle ne les publie pas. Ils ne créent aucun dossier : chacun rejoint l’un des huit dossiers existants. Ils se publient par lots — A, B, C, D — et non d’un coup : la marche à suivre, lot par lot, est dans [docs/seo-secretariat-50/05_PUBLICATION_PLAN.md](docs/seo-secretariat-50/05_PUBLICATION_PLAN.md), et la liste des pages à relire dans [11_HUMAN_REVIEW_CHECKLIST.md](docs/seo-secretariat-50/11_HUMAN_REVIEW_CHECKLIST.md).
+Cinquante guides ajoutés le 6 octobre 2026 autour de `/guides/secretariat-externalise`. Le propriétaire les a validés, puis a décidé de les mettre en ligne le même jour, d’un seul coup. Ils ne créent aucun dossier : chacun rejoint l’un des huit dossiers existants. Un plan de publication par lots — A, B, C, D — était prévu ; il n’a pas été suivi : [docs/seo-secretariat-50/05_PUBLICATION_PLAN.md](docs/seo-secretariat-50/05_PUBLICATION_PLAN.md) le dit et garde les lots comme repère. La liste des pages, avec leurs sources à ouvrir et la trace des décisions, est dans [11_HUMAN_REVIEW_CHECKLIST.md](docs/seo-secretariat-50/11_HUMAN_REVIEW_CHECKLIST.md).
 
 Deux effets à connaître :
 
-- les liens ajoutés vers ces pages — sur la page de référence, rubrique « Pour approfondir », et dans une quarantaine de guides — ne s’affichent qu’une fois leur cible publiée. Tant qu’aucun lot n’est en ligne, le build de production est identique à ce qu’il était ;
-- au-delà de trente pages, la grille d’un pilier est découpée par rubrique, avec un sommaire. Seul le dossier « Externaliser et déléguer » franchira ce seuil.
+- les liens ajoutés vers ces pages — sur la page de référence, rubrique « Pour approfondir », et dans une quarantaine de guides — ne s’affichent que si leur cible est publiée. Retirer une page de `publications.mjs` fait disparaître les liens qui la citent ;
+- au-delà de trente pages, la grille d’un pilier est découpée par rubrique, avec un sommaire. Seul le dossier « Externaliser et déléguer » franchit ce seuil.
 
 Relire une page :
 

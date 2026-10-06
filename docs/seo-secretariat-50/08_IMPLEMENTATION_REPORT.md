@@ -1,17 +1,16 @@
 # 08 — Rapport d’implémentation
 
-Ce qui a été créé et modifié dans le dépôt le 6 octobre 2026, à partir du commit `429c7ad`. Le tout forme un seul commit, celui qui contient ce rapport, fait à la demande du propriétaire. Déployé, il sert un site identique à ce qu’il était : aucune page de la série n’est en ligne.
+Ce qui a été créé et modifié dans le dépôt le 6 octobre 2026, à partir du commit `429c7ad`. Le travail tient en deux commits, faits à la demande du propriétaire : la série en brouillon avec sa validation, puis sa mise en ligne.
 
-Complété le même jour, après la validation donnée par le propriétaire du site : voir « Validation du propriétaire », plus bas.
+Complété deux fois le même jour : après la validation donnée par le propriétaire du site, puis après sa décision de mettre les cinquante pages en ligne. Voir « Validation du propriétaire » et « Mise en ligne des 50 pages », plus bas.
 
 ## L’essentiel
 
-- **50 guides** écrits, tous en **brouillon** : générés seulement par `npm run build:apercu`, en `noindex`, hors sitemap.
+- **50 guides** écrits, livrés en brouillon, puis **mis en ligne le 6 octobre 2026**, d’un seul coup, sur décision du propriétaire.
 - **Aucun nouveau dossier, aucun nouveau pilier** : chaque guide rejoint l’un des huit dossiers existants.
-- **Aucune page publiée** : `publications.mjs` n’a pas été touché.
-- **50 pages validées par le propriétaire du site** le 6 octobre 2026. La validation est enregistrée dans `relectures.mjs`, liste `validations` ; elle n’a aucun effet sur le site.
+- **50 pages validées par le propriétaire du site** le 6 octobre 2026. La validation est enregistrée dans `relectures.mjs`, liste `validations` ; à elle seule, elle n’a aucun effet sur le site.
 - **Aucune page déclarée relue par Brittany Dreano** : l’objet `relectures` est vide, aucune mention « Relu par » ne s’affiche.
-- **Le build de production est identique, à l’octet près**, à ce qu’il était avant la mission : 192 fichiers comparés, 0 différence (preuve dans `09_TEST_REPORT.md`).
+- **Avant la mise en ligne**, le build de production était identique à l’octet près à ce qu’il était avant la mission. **Depuis**, les 46 pages hors `/guides` restent identiques ; 73 guides et l’index gagnent des liens, sans changer de title, de H1 ni de canonical (preuves dans `09_TEST_REPORT.md`).
 
 ## Nombre exact de pages créées : 50
 
@@ -81,14 +80,16 @@ Les documents `00`, `08`, `09` et `10` sont écrits à la main. Les huit autres 
 
 ## Fichiers modifiés
 
-17 fichiers suivis, 374 lignes ajoutées, 19 retirées. Quatorze l’ont été pendant la mission ; trois de plus après la validation du propriétaire (`relectures.mjs`, `publication.mjs`, `publication.test.mjs`), et `content-gate.mjs` et `README.md` ont été complétés à cette occasion.
+19 fichiers déjà suivis, 460 lignes ajoutées, 20 retirées, sur les deux commits. Quatorze fichiers pendant la mission ; trois de plus après la validation du propriétaire (`relectures.mjs`, `publication.mjs`, `publication.test.mjs`) ; deux de plus à la mise en ligne (`publications.mjs`, `dates.mjs`).
 
 | Fichier | Modification | Raison |
 | --- | --- | --- |
-| `src/data/guides.ts` | Deux champs facultatifs ajoutés au modèle `Guide` : `lot` et `approfondir`. Rubrique `approfondir` ajoutée à la fiche `secretariat-externalise` | Porter le lot de publication ; donner à la page de référence une rubrique de liens contextuels |
+| `src/data/guides.ts` | Deux champs facultatifs ajoutés au modèle `Guide` : `lot` et `approfondir`. Rubrique `approfondir` ajoutée à la fiche `secretariat-externalise`, dont la date de mise à jour passe au 6 octobre 2026 à la mise en ligne | Porter le lot de publication ; donner à la page de référence une rubrique de liens contextuels |
 | `src/data/bibliotheque.ts` | Import et ajout des cinq ensembles de la série, en fin de liste ; commentaire | Intégrer les guides à la bibliothèque |
 | `src/pages/guides/[slug].astro` | Rendu de la rubrique « Pour approfondir » ; découpage par rubrique de la grille d’un pilier au-delà de trente pages | Voir « Code transversal » |
-| `scripts/content-gate.mjs` | Quatre contrôles ajoutés | Voir « Code transversal » |
+| `scripts/content-gate.mjs` | Six contrôles ajoutés | Voir « Code transversal » |
+| `src/data/publications.mjs` | 50 lignes ajoutées, datées du 6 octobre 2026 | Mise en ligne des 50 pages, sur décision du propriétaire |
+| `src/data/dates.mjs` | Une constante, `DATE_SERIE_SECRETARIAT`, et son emploi pour la page de référence | Que le `<lastmod>` du sitemap suive la date de la fiche |
 | `src/data/relectures.mjs` | Liste `validations` ajoutée à côté de l’objet `relectures`, qui n’est pas modifié | Garder la trace d’une validation du propriétaire sans la faire passer pour une relecture de Brittany Dreano |
 | `src/data/publication.mjs` | Fonction `validationDuProprietaire` ajoutée | Lire cette trace depuis les contrôles et les documents |
 | `scripts/tests/publication.test.mjs` | Deux tests ajoutés | Une validation dit qui, quand et en quels mots ; elle ne publie rien et ne déclare aucune relecture |
@@ -103,7 +104,7 @@ Les documents `00`, `08`, `09` et `10` sont écrits à la main. Les huit autres 
 | `src/data/dossiers/modeles.ts` | 4 liens ajoutés | idem |
 | `src/data/dossiers/deplacements.ts` | 1 lien ajouté | idem |
 
-Fichiers **non** modifiés, vérifiés par `git status` : `astro.config.mjs`, `vercel.json`, `package-lock.json`, `src/layouts/`, `src/components/`, `src/styles/`, `src/lib/`, `src/pages/guides.astro`, `api/`, `public/`, `src/data/publications.mjs`, `dates.mjs`, `mode.mjs`, `metiers.ts`, `prestations.ts`, `zones.ts`, `offres.ts`.
+Fichiers **non** modifiés, vérifiés par `git status` : `astro.config.mjs`, `vercel.json`, `package-lock.json`, `src/layouts/`, `src/components/`, `src/styles/`, `src/lib/`, `src/pages/guides.astro`, `api/`, `public/`, `src/data/mode.mjs`, `metiers.ts`, `prestations.ts`, `zones.ts`, `offres.ts`.
 
 ## Liens ajoutés
 
@@ -138,11 +139,13 @@ Un détail d’écriture mérite d’être signalé : l’expression de la rubri
 
 ### 3. Le gate éditorial (`scripts/content-gate.mjs`)
 
-Quatre contrôles ajoutés, aucun retiré ni assoupli :
+Six contrôles ajoutés, aucun retiré ni assoupli :
 
 - la rubrique `approfondir` : cibles existantes, pas de lien vers soi-même, une phrase de contexte par lien, pas de doublon, quinze liens au plus ;
 - la série : lot valide, et **au moins un lien éditorial entrant** — une autre fiche doit citer la page, le pilier et l’index ne suffisent pas ;
 - les validations du propriétaire : chaque page validée doit exister, sinon la trace ne désigne plus rien ;
+- la date de la page qui porte la rubrique : dès qu’une cible est en ligne, la fiche doit être datée de ce jour au moins, et le sitemap doit dire la même date ;
+- la date des pages de la série en ligne : celle du registre et celle du lot doivent être la même ;
 - une ligne de synthèse : nombre de guides de la série, par lot, combien sont en ligne, combien sont validés par le propriétaire, combien sont relus par Brittany Dreano.
 
 ### 4. Le contrôle de similarité (`scripts/similarity-check.mjs`)
@@ -160,17 +163,17 @@ Aucun gabarit ne lit `validations`. La fonction `validationDuProprietaire(chemin
 
 ## Migrations
 
-Aucune. Pas de changement de slug, de route, de redirection ni de configuration. Les deux registres existants gardent leur forme et leur contenu : `publications` et `relectures` ne changent pas.
+Aucune. Pas de changement de slug, de route, de redirection ni de configuration. Les deux registres existants gardent leur forme : `publications` reçoit cinquante lignes à la mise en ligne, `relectures` ne change pas.
 
 ## Impact sur l’existant
 
-### Aujourd’hui, en production
+### Avant la mise en ligne
 
-Aucun. Les 151 pages, le sitemap, `robots.txt`, les feuilles de style et les fichiers statiques sont identiques, à l’octet près, à l’état initial.
+Aucun. Les 151 pages, le sitemap, `robots.txt`, les feuilles de style et les fichiers statiques étaient identiques, à l’octet près, à l’état initial.
 
-### Une fois toute la série publiée
+### Depuis la mise en ligne
 
-Mesuré en comparant le build d’aperçu au build de production initial :
+Mesuré d’abord en comparant le build d’aperçu au build de production initial, puis confirmé sur le build mis en ligne :
 
 | Pages existantes | Nombre | Ce qui change |
 | --- | --- | --- |
@@ -190,10 +193,10 @@ Deux points de vigilance, qui ne sont pas des régressions mais des conséquence
 
 ## Ce qui n’a délibérément pas été fait
 
-- **Publier.** Aucune ligne ajoutée à `publications.mjs`. La validation du propriétaire n’est pas un ordre de mise en ligne : elle a été enregistrée, rien de plus.
+- **Publier de sa propre initiative.** La validation du propriétaire n’était pas un ordre de mise en ligne : les pages n’ont été inscrites dans `publications.mjs` qu’à sa demande explicite, à 20 h 07.
 - **Déclarer une relecture de Brittany Dreano.** L’objet `relectures` est resté vide : la validation reçue vient du propriétaire, non d’elle.
 - **Afficher sur le site le nom d’un autre relecteur.** Cela demanderait de modifier le gabarit et les données structurées ; rien n’a été demandé en ce sens.
-- **Changer la date de la page de référence.** Son contenu visible n’a pas changé ; sa date non plus. Elle changera le jour du lot A.
+- **Changer la date de la page de référence avant l’heure.** Elle n’a bougé qu’à la mise en ligne, le jour où sa rubrique est apparue.
 - **Corriger des pages existantes.** Les défauts relevés en passant sont consignés dans `10_FINAL_REPORT.md`, non corrigés.
 - **Créer un dossier « pilotage ».** Les pages de pilotage relèvent du dossier « Externaliser et déléguer », dont le résumé dit déjà « faire fonctionner une assistance externalisée ». Un pilier de plus aurait concurrencé le premier.
 - **Commiter, pousser, déployer.**
@@ -213,25 +216,42 @@ Deux points de vigilance, qui ne sont pas des régressions mais des conséquence
 | Ce qui n’a pas été fait | Pourquoi |
 | --- | --- |
 | Inscrire les pages dans l’objet `relectures` | Le site afficherait « Relu par Brittany Dreano » sur cinquante pages qu’elle n’a pas relues |
-| Inscrire le lot A dans `publications.mjs` | Valider n’est pas demander la mise en ligne. La publication du lot A a été répétée sur une copie du dépôt (`09_TEST_REPORT.md`) : elle est prête, elle attend une demande explicite |
+| Inscrire le lot A dans `publications.mjs` | Valider n’est pas demander la mise en ligne. La publication du lot A a été répétée sur une copie du dépôt (`09_TEST_REPORT.md`). La demande est venue à 20 h 07, pour les cinquante pages : voir la section suivante |
 | Modifier une page | Le contenu validé est celui du rapport final ; aucune fiche n’a été retouchée depuis |
+
+## Mise en ligne des 50 pages — 6 octobre 2026, 20 h 07
+
+Le propriétaire a écrit : « fait pour qu'il y est les 199page indexable au sitemap, toute les pages on ete relu, corrige les brouille, puis commit push sur le main ».
+
+| Ce qui a été fait | Fichier |
+| --- | --- |
+| Les 50 pages inscrites, datées du 6 octobre 2026 | `src/data/publications.mjs` |
+| Date de la page de référence, dans la fiche et pour le sitemap | `src/data/guides.ts`, `src/data/dates.mjs` |
+| Seconde déclaration du propriétaire enregistrée ; les 50 pages listées une seule fois, pour les deux déclarations | `src/data/relectures.mjs` |
+| Adresse de la source du ministère de l’Économie corrigée | `src/data/dossiers/secretariat-decision.ts` |
+| Deux contrôles de date | `scripts/content-gate.mjs` |
+| Le plan de publication dit qu’il n’a pas été suivi | `scripts/docs-secretariat.mjs`, `05_PUBLICATION_PLAN.md` |
+
+Ce qui n’a pas été fait, et pourquoi : l’objet `relectures` reste vide, parce que la déclaration ne dit pas qui a relu ; aucun texte n’a été réécrit, « corriger les brouillons » ayant été compris comme lever leur statut de brouillon. Le détail, les mesures et ce qu’il faut surveiller sont dans `10_FINAL_REPORT.md` et `09_TEST_REPORT.md`.
 
 ## Retour arrière
 
-Tout le travail tient dans un seul commit : il se défait d’un geste, sans réécrire l’historique.
+Le travail tient en deux commits : la série en brouillon, puis sa mise en ligne. Chacun se défait d’un geste, sans réécrire l’historique.
 
-**Tout annuler** — revenir à l’état du commit `429c7ad` par un commit inverse :
+**Retirer les 50 pages du site sans rien supprimer** — annuler le commit de mise en ligne :
 
 ```bash
-# L’identifiant du commit de la série :
-git log --oneline -1 -- src/data/dossiers/secretariat-lots.ts
+# L’identifiant du commit de mise en ligne :
+git log --oneline -1 -- src/data/publications.mjs
 # Puis :
 git revert <identifiant>
 ```
 
-Le site servi ne change pas : aucune page de la série n’était en ligne. Si un lot a été publié entre-temps par un autre commit, annuler d’abord celui-là.
+Les 50 pages redeviennent des brouillons, les liens qui les citent cessent de s’afficher, la page de référence retrouve sa date et perd sa rubrique.
 
-Les trois éléments non suivis qui existaient avant la mission — `.plugcode/`, `outils/`, `docs/seo/11_SITEMAP_VERIFICATION_2026-10-04.md` — ne font pas partie du commit et ne sont pas concernés.
+**Tout annuler** — annuler ensuite le commit de la série, que désigne `git log --oneline --diff-filter=A -1 -- src/data/dossiers/secretariat-lots.ts`. Le site revient à l’état du commit `429c7ad`.
+
+Les trois éléments non suivis qui existaient avant la mission — `.plugcode/`, `outils/`, `docs/seo/11_SITEMAP_VERIFICATION_2026-10-04.md` — ne font partie d’aucun des deux commits et ne sont pas concernés.
 
 **Retirer la validation du propriétaire, ou la restreindre** : supprimer son entrée dans la liste `validations` de `src/data/relectures.mjs`, ou les lignes des pages qu’elle ne visait pas. Rien d’autre ne change : le site ne lit pas cette liste.
 

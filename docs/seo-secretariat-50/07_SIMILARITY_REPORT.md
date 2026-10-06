@@ -20,7 +20,7 @@ Le troisième est nouveau. Il se lance par `npm run qa:similarite`, qui échoue 
 | --- | --- |
 | Gate éditorial — paires au-dessus de 20 % | 0 (voir `09_TEST_REPORT.md`) |
 | Audit du build — paires au-dessus de 30 % | 0 |
-| Audit du build — paire la plus proche où figure une page de la série | 9 % : `/guides/forfait-secretariat-externalise-depassement` ↔ `/guides/revue-trimestrielle-assistance-externalisee` |
+| Audit du build — paire la plus proche où figure une page de la série | 8 % : `/guides/modele-note-d-aide-a-la-decision` ↔ `/guides/modele-tableau-de-suivi-des-factures` |
 | Contrôle champ par champ — paires comparées | 6425 |
 | Contrôle champ par champ — blocages | **0** |
 | Contrôle champ par champ — alertes | 5 |
@@ -148,13 +148,13 @@ Contenu principal du HTML servi, 5-grammes, paires où figure au moins une page 
 
 | Page | Page | Part commune |
 | --- | --- | --- |
-| `/guides/forfait-secretariat-externalise-depassement` | `/guides/revue-trimestrielle-assistance-externalisee` | 9 % |
-| `/guides/assistante-partagee-entre-associes` | `/guides/recruter-apres-avoir-externalise` | 8 % |
-| `/guides/acces-bancaire-pour-son-assistante` | `/guides/moyens-de-paiement-delegues` | 8 % |
-| `/guides/evaluer-un-secretariat-externalise` | `/guides/revue-trimestrielle-assistance-externalisee` | 8 % |
-| `/guides/changer-d-assistante-externalisee` | `/guides/revue-trimestrielle-assistance-externalisee` | 8 % |
-| `/guides/annonce-de-repondeur-professionnel` | `/guides/appels-manques-entreprise` | 8 % |
-| `/guides/coordonner-des-entretiens-de-recrutement` | `/guides/telesecretariat-et-assistante-externalisee` | 8 % |
-| `/guides/boite-mail-partagee-entreprise` | `/guides/telesecretariat-et-assistante-externalisee` | 8 % |
-| `/guides/conjoint-qui-fait-l-administratif` | `/guides/dirigeant-indisponible-du-jour-au-lendemain` | 8 % |
-| `/guides/checklist-administrative-mensuelle` | `/guides/modele-note-d-aide-a-la-decision` | 8 % |
+| `/guides/modele-note-d-aide-a-la-decision` | `/guides/modele-tableau-de-suivi-des-factures` | 8 % |
+| `/guides/forfait-secretariat-externalise-depassement` | `/guides/revue-trimestrielle-assistance-externalisee` | 7 % |
+| `/guides/sous-traitance-par-son-assistante` | `/guides/partager-un-mot-de-passe-en-securite` | 7 % |
+| `/guides/cahier-des-charges-secretariat-externalise` | `/guides/modele-tableau-de-bord-hebdomadaire` | 7 % |
+| `/guides/assistante-partagee-entre-associes` | `/guides/recruter-apres-avoir-externalise` | 7 % |
+| `/guides/tva-prestataire-en-franchise-en-base` | `/guides/choisir-un-logiciel-de-facturation` | 7 % |
+| `/guides/participer-a-un-salon-professionnel` | `/guides/feuille-de-route-de-deplacement` | 7 % |
+| `/guides/presenter-son-assistante-a-ses-clients` | `/guides/reunions-et-fuseaux-horaires` | 7 % |
+| `/guides/acces-bancaire-pour-son-assistante` | `/guides/moyens-de-paiement-delegues` | 7 % |
+| `/guides/participer-a-un-salon-professionnel` | `/guides/organiser-un-deplacement-professionnel` | 7 % |

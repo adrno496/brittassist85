@@ -2,11 +2,15 @@
 
 > Document généré par `scripts/docs-secretariat.mjs` le 2026-10-06, à partir des fiches, des registres et du build d’aperçu. Ne pas le modifier à la main : relancer `npm run docs:secretariat`.
 
-Les 50 pages existent. **En ligne : 0. En brouillon : 50.** Un brouillon est généré par `npm run build:apercu`, en `noindex`, hors sitemap ; `npm run build` ne le génère pas du tout. Validées par le propriétaire du site : 50 — une validation garde une trace, elle ne met rien en ligne. Ce document donne l’ordre dans lequel publier les pages.
+Les 50 pages existent. **En ligne : 50. En brouillon : 0.** Un brouillon est généré par `npm run build:apercu`, en `noindex`, hors sitemap ; `npm run build` ne le génère pas du tout. Validées par le propriétaire du site : 50 — une validation garde une trace, elle ne met rien en ligne. Ce document donne l’ordre dans lequel publier les pages.
+
+## Ce plan n’a pas été suivi
+
+Les 50 pages ont été mises en ligne le même jour, le 2026-10-06, sur décision du propriétaire du site : voir « Décisions de relecture » à la fin de `11_HUMAN_REVIEW_CHECKLIST.md`. Les quatre lots ci-dessous n’ont donc pas servi d’étapes, et les critères de passage de l’un à l’autre n’ont pas été appliqués. Ils gardent une utilité : ils disent dans quel ordre regarder les pages, et lesquelles retirer en premier si la page de référence perd des clics.
 
 ## Principe
 
-Les pages ne sont pas publiées d’un coup. Quatre lots, du plus proche de la page de référence au plus éloigné. Entre deux lots, on regarde ce que le précédent a produit avant de continuer.
+Le plan prévoyait de ne pas publier les pages d’un coup : quatre lots, du plus proche de la page de référence au plus éloigné, et un regard sur ce que chacun produit avant de passer au suivant.
 
 **Aucun calendrier n’est fixé ici.** Aucune donnée de recherche n’était disponible pour en justifier un (voir `00_BASELINE.md`). Le passage d’un lot au suivant dépend d’un constat, non d’une date. Un repère de bon sens seulement : attendre que les pages d’un lot aient été explorées et, pour la plupart, indexées — ce qui se lit dans la Search Console, propriété `https://www.brittassist.fr/`.
 
@@ -14,10 +18,10 @@ Les pages ne sont pas publiées d’un coup. Quatre lots, du plus proche de la p
 
 | Lot | Pages | En ligne | Validées par le propriétaire | Relues par Brittany Dreano | Date portée par le lot |
 | --- | --- | --- | --- | --- | --- |
-| A | 10 | 0 | 10 | 0 | 2026-10-06 |
-| B | 10 | 0 | 10 | 0 | 2026-10-06 |
-| C | 15 | 0 | 15 | 0 | 2026-10-06 |
-| D | 15 | 0 | 15 | 0 | 2026-10-06 |
+| A | 10 | 10 | 10 | 0 | 2026-10-06 |
+| B | 10 | 10 | 10 | 0 | 2026-10-06 |
+| C | 15 | 15 | 15 | 0 | 2026-10-06 |
+| D | 15 | 15 | 15 | 0 | 2026-10-06 |
 
 Les trois colonnes ne disent pas la même chose : une page validée reste un brouillon tant qu’elle n’est pas inscrite dans `publications.mjs`, et seule une page relue par Brittany Dreano affiche une mention de relecture. Détail dans `11_HUMAN_REVIEW_CHECKLIST.md`.
 

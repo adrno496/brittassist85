@@ -4,17 +4,43 @@ Résultats de la passe finale du 6 octobre 2026, lancée après la dernière mod
 
 Une seconde passe a eu lieu le même jour, après l’enregistrement de la validation du propriétaire : `npm run check`, `npm test`, `npm run qa:apercu`, `npm run build:apercu`, `npm run qa`, `npm run qa:similarite` et la comparaison à l’octet près ont été relancés. Le tableau « Les commandes demandées » donne les chiffres de cette seconde passe. Les autres contrôles datent de la première ; les builds qu’ils ont examinés n’ont pas changé depuis (0 différence). Deux sections s’ajoutent : « Validation du propriétaire » et « Répétition de la mise en ligne du lot A ».
 
+Une troisième passe a suivi la décision du propriétaire, à 20 h 07, de mettre les cinquante pages en ligne : c’est la section « Mise en ligne des 50 pages », placée en tête. **Toutes les autres sections décrivent l’état d’avant** : cinquante brouillons, et un build de production identique à l’état initial.
+
 Statuts utilisés : PASS · PARTIAL · FAIL · NON TESTÉ · NON APPLICABLE.
 
 ## Synthèse
 
 | Statut | Contrôles |
 | --- | --- |
-| PASS | 61, dont 8 obtenus sur une copie du dépôt (répétition du lot A) |
-| PARTIAL | 1 |
+| PASS | 75, dont 14 après la mise en ligne et 8 obtenus sur une copie du dépôt (répétition du lot A) |
+| PARTIAL | 2, tous deux sur les sources externes : avant et après la mise en ligne |
 | FAIL | 0 |
-| NON TESTÉ | 6 (dont les Core Web Vitals, cités aussi dans le tableau « Performance ») |
+| NON TESTÉ | 5 (dont les Core Web Vitals, cités aussi dans le tableau « Performance ») |
 | NON APPLICABLE | 1 |
+
+## Mise en ligne des 50 pages
+
+Contrôles faits sur le dépôt après l’inscription des 50 pages dans `publications.mjs`. Le build examiné ici est celui qui est mis en ligne.
+
+| Contrôle | Statut | Commande | Résultat réel | Preuve / remarque |
+| --- | --- | --- | --- | --- |
+| Types | PASS | `npm run check` | 75 fichiers, 0 erreur, 0 avertissement, 0 indication | — |
+| Tests unitaires | PASS | `npm test` | 52 tests, 52 réussis | Dont « publier sans relecture ne déclare jamais une relecture », qui parcourt les 149 lignes du registre |
+| Gate éditorial | PASS | `node scripts/content-gate.mjs` (dans `npm run qa`) | 0 blocage, 0 avertissement. « en ligne : 50 · validées par le propriétaire : 50 · relues par Brittany Dreano : 0 » | — |
+| Build et audit strict | PASS | `npm run qa` | 201 pages : 199 indexables, 0 brouillon, 2 non indexables (`/404`, `/questionnaire`). 0 blocage, 2 avertissements | Les 2 avertissements sont ceux de l’état initial |
+| Sitemap | PASS | Lecture de `dist/sitemap-0.xml` | 199 URL : les 149 d’avant, les 50 de la série. 51 portent la date du 6 octobre 2026 : les 50 pages et la page de référence | — |
+| Les 50 pages | PASS | Lecture du HTML produit | 50 sur 50 indexables, canonical propre, CSP stricte, `datePublished` au 6 octobre 2026, sans bandeau « brouillon », sans mention « Relu par », sans `reviewedBy` | De 780 à 1 129 mots de contenu principal ; de 7 à 12 liens entrants |
+| Pages existantes | PASS | Comparaison de `dist/` à la copie de l’état initial | 50 fichiers nouveaux, 0 supprimé, 76 modifiés : 73 guides, l’index `/guides`, les 2 fichiers du sitemap. Aucune page hors `/guides` ne change | Sur les 74 pages modifiées, aucune ne change de title, de H1, de description, de canonical ni de directive robots ; 176 liens ajoutés au total |
+| Liens entrants | PASS | `scripts/seo-audit.mjs` sur les deux builds | Aucune page existante ne perd de page qui la cite ; 98 en gagnent | Profondeur maximale : 2 clics |
+| Page de référence | PASS | idem, et lecture du HTML | Title et H1 inchangés. Rubrique « Pour approfondir » affichée, 14 liens. Citée par 15 pages au lieu de 10 ; 74 liens internes au lieu de 60 ; 1 174 mots au lieu de 901 | Mention « Mis à jour en octobre 2026 » |
+| Cohérence avec le build déjà chargé en navigateur | PASS | Comparaison de `dist/` au build d’aperçu de la passe précédente | 53 fichiers diffèrent : les 50 pages, qui perdent leur statut de brouillon, la page de référence, pour sa date, et les 2 fichiers du sitemap. Tous les autres sont identiques à l’octet près | — |
+| Similarité | PASS | `npm run qa:similarite` | 6 425 paires comparées, 0 blocage, 5 alertes, 0 phrase reprise | Inchangé |
+| Règles de date du gate | PASS | Deux essais négatifs, sur une copie : date du sitemap décalée d’un jour, puis date de registre décalée d’un jour | Le gate bloque dans les deux cas (`approfondir-date`, `date-de-lot-incoherente`) | Règles ajoutées avec la mise en ligne |
+| Navigateur | PASS | `scripts/browser-check.mjs` sur une copie figée de ce build, servie par `scripts/serve-dist.mjs` | 201 pages × 5 écrans = 1 005 chargements en 510 s. 0 page en défaut, 0 violation axe-core, 0 violation de CSP, 3 parcours réussis | Synthèse : `data/browser-check-publication.json` |
+| Sources externes | PARTIAL | `node scripts/check-sources.mjs` | 77 liens distincts : 71 répondent, 6 « non concluants » | Les mêmes six qu’avant, dont la source du ministère de l’Économie, à sa nouvelle adresse : voir « Sources externes » |
+| Build à partir du commit seul | PASS | `git archive` du commit dans un dossier vide, `npm run build`, comparaison à `dist/` | 241 fichiers, tous identiques à ceux du build local ; seul le `.DS_Store` de macOS manque | C’est ce que l’hébergeur construit |
+
+Ce que cette passe ne couvre pas : le comportement chez l’hébergeur et l’indexation, qui ne se constatent qu’après le déploiement.
 
 ## Les commandes demandées
 
@@ -153,7 +179,7 @@ Sur les 47 sources citées par la série, 43 répondent en HTTP 200. Les 4 autre
 | Légifrance — code des assurances, art. L113-2 | `declarer-un-sinistre-professionnel` | Relue par un autre outil de lecture : l’article existe et dit ce que la page rapporte |
 | Légifrance — code des postes et des communications électroniques, art. L100 | `lettre-recommandee-electronique` | idem |
 | Légifrance — code de commerce, art. R123-237 et R123-238 | `mentions-obligatoires-courriers-et-emails` | idem |
-| Ministère de l’Économie — franchise de TVA | `tva-prestataire-en-franchise-en-base` | **Non rouverte** : à ouvrir à la main. Un second essai, avec un navigateur automatisé, a reçu la même réponse (HTTP 403, page de vérification). Les règles citées ont été vérifiées sur impots.gouv.fr et le BOFiP |
+| Ministère de l’Économie — franchise de TVA | `tva-prestataire-en-franchise-en-base` | **Non rouverte** : à ouvrir à la main. Un second essai, avec un navigateur automatisé, a reçu la même réponse (HTTP 403, page de vérification). Les règles citées ont été vérifiées sur impots.gouv.fr et le BOFiP. Avant la mise en ligne, l’adresse a été remplacée par celle que les résultats de recherche donnent pour la page de même titre ; elle n’a pas pu être ouverte non plus |
 
 Les deux autres liens non concluants, le profil LinkedIn et un texte Légifrance cité par un guide existant, étaient déjà dans ce cas avant la mission.
 
@@ -164,10 +190,9 @@ Les deux autres liens non concluants, le profil LinkedIn et un texte Légifrance
 | Search Console | NON TESTÉ | Aucune donnée accessible : ni export, ni variable d’environnement, ni connecteur. Voir `00_BASELINE.md` |
 | Core Web Vitals | NON TESTÉ | Pas d’outil de mesure disponible |
 | En-têtes et redirections chez l’hébergeur | NON TESTÉ | Rien n’était déployé quand ces contrôles ont été faits. Testés seulement avec le serveur local qui reproduit `vercel.json` |
-| Indexation et affichage dans les résultats | NON TESTÉ | Les pages sont en `noindex` |
+| Indexation et affichage dans les résultats | NON TESTÉ | Rien à observer avant que les moteurs explorent les pages |
 | Relecture par une personne | NON TESTÉ | Le propriétaire a déclaré avoir tout vérifié, et sa validation est enregistrée pour les 50 pages. L’outil ne peut ni mesurer ni confirmer ce que cette vérification a couvert : ce n’est pas un contrôle qu’il a exécuté. Aucune relecture par Brittany Dreano |
 | Formulaire de contact | NON APPLICABLE | Ni `api/contact.js` ni les formulaires n’ont été modifiés ; leurs tests passent avec `npm test` |
-| Mise en ligne réelle du lot A | NON TESTÉ | Non faite : elle attend une demande explicite du propriétaire. Seule sa répétition sur une copie a été contrôlée (voir plus haut) |
 
 ## Reproduire
 
