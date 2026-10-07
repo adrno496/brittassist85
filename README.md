@@ -133,7 +133,7 @@ PLAYWRIGHT_ROOT=/chemin/vers/un/dossier/avec/node_modules node scripts/browser-c
 
 - `docs/final/FINAL_REPORT.md` — rapport d’ensemble du chantier d’octobre 2026
 - `docs/site-audit/` — inventaire, état de référence, corrections, validation finale
-- `docs/seo/` — intentions, matrice des 100 pages, maillage, audit technique, indexation
+- `docs/seo/` — intentions, matrice des 100 pages, maillage, audit technique, indexation, rapport Search Console du 7 octobre 2026
 - `docs/seo-secretariat-50/` — la série « secrétariat externalisé » : état initial, inventaire, vivier d’idées, cannibalisation, plan des 50 pages, publication par lots, maillage, similarité, rapports
 - `docs/sentinel/` — audits réalisés avec la boîte à outils SENTINEL
 

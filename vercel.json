@@ -33,6 +33,12 @@
     }
   ],
   "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "brittassist.fr" }],
+      "destination": "https://www.brittassist.fr/$1",
+      "permanent": true
+    },
     { "source": "/domaines-intervention", "destination": "/services", "permanent": true },
     { "source": "/methode", "destination": "/private-office", "permanent": true },
     { "source": "/ecosysteme", "destination": "/", "permanent": true },

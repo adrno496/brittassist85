@@ -42,7 +42,7 @@ Les deux avertissements restants sont attendus : `/contact` compte 150 mots (c'e
 | Pagination | Sans objet : aucune liste paginée | INSPECTÉ |
 | Paramètres d'URL | Un seul : `?sent=true` après l'envoi d'un formulaire. Le canonical de `/contact` l'ignore | INSPECTÉ |
 | `http` → `https` | 308 | VÉRIFIÉ EN DIRECT |
-| Domaine nu → `www` | 308 | VÉRIFIÉ EN DIRECT |
+| Domaine nu → `www` | 308. Depuis le 7 octobre, `vercel.json` porte aussi la règle (condition `has` sur l’hôte) : voir `10_SEARCH_CONSOLE_2026-10-07.md` | VÉRIFIÉ EN DIRECT · TESTÉ en local |
 | Redirections en chaîne | **Une** : `http://brittassist.fr` → `https://brittassist.fr` → `https://www.brittassist.fr`. Deux sauts au lieu d'un. Réglage du domaine chez l'hébergeur | VÉRIFIÉ EN DIRECT |
 | Boucles de redirection | Aucune ; le quality gate bloque toute chaîne ou cible morte dans `vercel.json` | TESTÉ |
 | Barre finale | `/guides/` → 308 → `/guides` | VÉRIFIÉ EN DIRECT |

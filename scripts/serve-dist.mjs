@@ -48,7 +48,11 @@ createServer((req, res) => {
   let chemin = decodeURIComponent(url.pathname);
 
   for (const r of config.redirects ?? []) {
-    if (motif(r.source).test(chemin)) return rediriger(res, r.destination, r.permanent ? 308 : 307);
+    // Condition « has » sur l'hôte : la règle ne vaut que pour ce domaine (apex → www).
+    const hote = (r.has ?? []).find((c) => c.type === 'host');
+    if (hote && hote.value !== url.hostname) continue;
+    const trouve = chemin.match(motif(r.source));
+    if (trouve) return rediriger(res, r.destination.replace(/\$(\d)/g, (_, i) => trouve[i] ?? '') + url.search, r.permanent ? 308 : 307);
   }
   // URL propres : ni extension .html, ni barre finale.
   if (chemin === '/index.html') return rediriger(res, '/');
