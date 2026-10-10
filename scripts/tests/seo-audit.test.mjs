@@ -105,3 +105,49 @@ test('contenu quasi identique entre deux pages', () => {
   ]));
   assert.ok(regles(r).has('contenu-similaire'));
 });
+
+// ── Articles (BlogPosting) ────────────────────────────────────────────────
+
+function article({ publie = '2026-10-10', modifie = publie, pageModifiee = modifie, visible = publie } = {}) {
+  const ld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { '@type': 'WebPage', '@id': `${SITE}/articles/a#webpage`, datePublished: publie, dateModified: pageModifiee },
+      { '@type': 'BlogPosting', headline: 'Article', datePublished: publie, dateModified: modifie, author: { '@id': `${SITE}/#business` } },
+    ],
+  };
+  return {
+    chemin: '/articles/a',
+    titre: 'Un article du site de test',
+    h1: 'Article',
+    description: 'Une description d’article différente des autres, et assez longue pour le seuil minimal.',
+    corps: `<p>Publié le <time datetime="${visible}">ce jour</time></p>${lien('/')}`,
+    extra: `<script type="application/ld+json">${JSON.stringify(ld)}</script>`,
+  };
+}
+
+test('un article cohérent ne produit aucun blocage', () => {
+  // Même date partout : publication, modification, <time> visible et <lastmod> du mini-site (2026-10-03).
+  const r = auditer(site([{ chemin: '/', titre: 'Accueil du site de test', h1: 'Accueil', corps: lien('/articles/a') }, article({ publie: '2026-10-03' })]));
+  assert.deepEqual([...regles(r)].filter((x) => x.startsWith('article') || x.startsWith('dates') || x.startsWith('sitemap-lastmod-article')), []);
+});
+
+test('article : dates contradictoires entre la page et le BlogPosting', () => {
+  const r = auditer(site([{ chemin: '/', titre: 'Accueil du site de test', h1: 'Accueil', corps: lien('/articles/a') }, article({ pageModifiee: '2026-10-09' })]));
+  assert.ok(regles(r).has('dates-contradictoires'));
+});
+
+test('article : date de publication invisible, future ou postérieure à la modification', () => {
+  const invisible = auditer(site([{ chemin: '/', titre: 'Accueil du site de test', h1: 'Accueil', corps: lien('/articles/a') }, article({ visible: '2026-01-01' })]));
+  assert.ok(regles(invisible).has('article-date-invisible'));
+  const future = auditer(site([{ chemin: '/', titre: 'Accueil du site de test', h1: 'Accueil', corps: lien('/articles/a') }, article({ publie: '2099-01-01' })]));
+  assert.ok(regles(future).has('article-date-future'));
+  const inversee = auditer(site([{ chemin: '/', titre: 'Accueil du site de test', h1: 'Accueil', corps: lien('/articles/a') }, article({ modifie: '2026-10-01', pageModifiee: '2026-10-01' })]));
+  assert.ok(regles(inversee).has('article-dates-inversees'));
+});
+
+test('article : le <lastmod> du sitemap est sa date de modification déclarée', () => {
+  // Le mini-site déclare un lastmod au 2026-10-03 : un article modifié le 2026-10-10 doit être signalé.
+  const r = auditer(site([{ chemin: '/', titre: 'Accueil du site de test', h1: 'Accueil', corps: lien('/articles/a') }, article()]));
+  assert.ok(regles(r).has('sitemap-lastmod-article'));
+});

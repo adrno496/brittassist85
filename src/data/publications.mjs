@@ -178,4 +178,7 @@ export const publications = {
   '/guides/modele-note-d-aide-a-la-decision': '2026-10-06',
   '/guides/assistante-commerciale-externalisee': '2026-10-06',
   '/guides/traiter-les-demandes-de-devis-entrantes': '2026-10-06',
+
+  // Articles (/articles/<slug>) — une ligne par article mis en ligne, à la date réelle de sa mise en ligne.
+  // scripts/articles-publier.mjs ajoute la ligne après contrôle ; ne pas l'écrire à la main sans ce contrôle.
 };

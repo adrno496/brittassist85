@@ -1,0 +1,90 @@
+/* Rubrique « Articles » — liste et pages d'article.
+   S'appuie sur les tokens de global.css et refonte-v5.css : aucune couleur nouvelle,
+   aucune ressource externe. Chargée par les seules pages de la rubrique. */
+
+/* Ligne de dates sous le chapô */
+.article-meta {
+  display: flex; flex-wrap: wrap; gap: 6px 22px;
+  margin-top: 26px;
+  font-size: 0.86rem; line-height: 1.5;
+  color: var(--ink-sur-clair-doux);
+}
+.article-meta strong { color: var(--ink-sur-clair); font-weight: 600; }
+
+/* Encadré « rétrospective » et note de méthode */
+.note-article {
+  max-width: 74ch;
+  margin: 0 0 clamp(32px, 4vw, 44px);
+  padding: 18px 22px;
+  border-left: 3px solid var(--or);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 0 12px 12px 0;
+  font-size: 0.93rem; line-height: 1.65;
+  color: var(--ink-sur-clair-doux);
+}
+.note-article strong { color: var(--ink-sur-clair); font-weight: 600; }
+
+/* Corps Markdown : listes numérotées et intertitres de niveau 3 */
+.prose--article ol { margin: 0 0 20px; padding-left: 0; counter-reset: point; }
+.prose--article ol li { counter-increment: point; padding-left: 32px; }
+.prose--article ol li::before { content: counter(point) '.'; font-weight: 600; }
+.prose--article h2 { scroll-margin-top: 96px; }
+.prose--article h3 { color: var(--ink-sur-clair); }
+
+/* Sources */
+.sources-article { display: grid; gap: 18px; max-width: 78ch; }
+.sources-article li { padding-bottom: 16px; border-bottom: 1px solid rgba(33, 25, 31, 0.12); }
+.sources-article a { font-weight: 600; color: var(--ink-sur-clair); border-bottom: 1px solid var(--or-fane); }
+.sources-article a:hover { border-bottom-color: var(--or); }
+.sources-article p { margin-top: 6px; font-size: 0.9rem; line-height: 1.6; color: var(--ink-sur-clair-doux); }
+.source-etat { display: inline-block; margin-top: 6px; font-size: 0.8rem; color: var(--ink-sur-clair-tenu); }
+
+/* Liste des articles */
+.article-une {
+  display: grid; gap: 14px;
+  padding: clamp(26px, 4vw, 44px);
+  border: 1px solid rgba(33, 25, 31, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  transition: border-color var(--moyen) var(--ease), transform var(--moyen) var(--ease);
+}
+.article-une:hover { border-color: var(--or); transform: translateY(-2px); }
+.article-une__titre { font-family: var(--display); font-size: clamp(1.6rem, 3vw, 2.4rem); line-height: 1.12; color: var(--ink-sur-clair); }
+.article-une__chapo { max-width: 68ch; color: var(--ink-sur-clair-doux); line-height: 1.7; }
+
+.cartes-articles { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 18px; }
+.carte-article {
+  display: flex; flex-direction: column; gap: 10px;
+  padding: 24px;
+  border: 1px solid rgba(33, 25, 31, 0.13);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.6);
+  transition: border-color var(--moyen) var(--ease), transform var(--moyen) var(--ease);
+}
+.carte-article:hover { border-color: var(--or); transform: translateY(-2px); }
+.carte-article__titre { font-family: var(--display); font-size: 1.3rem; line-height: 1.2; color: var(--ink-sur-clair); }
+.carte-article__chapo { font-size: 0.92rem; line-height: 1.6; color: var(--ink-sur-clair-doux); }
+.carte-article__meta, .article-une__meta { font-size: 0.8rem; letter-spacing: 0.02em; color: var(--ink-sur-clair-tenu); margin-top: auto; }
+.etiquette {
+  align-self: flex-start;
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--accent-texte);
+}
+.etiquette--brouillon { color: #8a2f1d; }
+
+.liste-vide { max-width: 64ch; }
+.liste-vide p { color: var(--ink-sur-clair-doux); line-height: 1.7; margin-bottom: 14px; }
+
+.pagination { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: 36px; font-size: 0.92rem; }
+.pagination a, .pagination span { padding: 8px 4px; }
+.pagination a { border-bottom: 1px solid var(--or-fane); color: var(--ink-sur-clair); }
+.pagination [aria-current='page'] { font-weight: 600; color: var(--ink-sur-clair); }
+
+@media (prefers-reduced-motion: reduce) {
+  .article-une:hover, .carte-article:hover { transform: none; }
+}
+
+/* Tableaux du corps Markdown : défilement horizontal plutôt que débordement de la page */
+.prose--article table { display: block; overflow-x: auto; width: 100%; border-collapse: collapse; margin: 0 0 22px; font-size: 0.92rem; }
+.prose--article th, .prose--article td { padding: 10px 14px; border-bottom: 1px solid rgba(33, 25, 31, 0.13); text-align: left; vertical-align: top; color: var(--ink-sur-clair-doux); line-height: 1.55; }
+.prose--article th { color: var(--ink-sur-clair); font-weight: 600; border-bottom-color: var(--or-fane); }

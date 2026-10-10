@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { lastmodPour } from './src/data/dates.mjs';
-import { estBrouillon } from './src/data/publication.mjs';
+import { articlesInscrits, estBrouillon } from './src/data/publication.mjs';
 import { qualityGate } from './scripts/quality-gate.mjs';
 
 export default defineConfig({
@@ -48,6 +48,10 @@ export default defineConfig({
         if (chemin.includes('/questionnaire')) return false;
         // La page d'erreur n'est pas une destination.
         if (chemin === '/404') return false;
+        // Une page de la liste des articles n'est indexable que si elle montre un article publié
+        // (24 par page, publiés d'abord : src/lib/articles.ts).
+        const liste = chemin.match(/^\/articles(?:\/page\/(\d+))?$/);
+        if (liste) return (Number(liste[1] ?? 1) - 1) * 24 < articlesInscrits().length;
         // Les brouillons n'existent qu'en aperçu et ne sont jamais proposés à l'indexation.
         return !estBrouillon(chemin);
       },

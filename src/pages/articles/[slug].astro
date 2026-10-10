@@ -1,0 +1,208 @@
+---
+import '../../styles/articles.css';
+import { render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Button from '../../components/Button.astro';
+import Fil from '../../components/Fil.astro';
+import Monogram from '../../components/Monogram.astro';
+import { articlesGeneres, type Article } from '../../lib/articles';
+import { bibliotheque, cheminDuGuide } from '../../data/bibliotheque';
+import { estGeneree, liensVisibles } from '../../data/publication.mjs';
+import { SITE_URL, dateLisible, filDAriane, jsonLd } from '../../lib/seo';
+
+export async function getStaticPaths() {
+  const articles = await articlesGeneres();
+  return articles.map((a) => ({ params: { slug: a.slug }, props: { a } }));
+}
+
+const { a } = Astro.props as { a: Article };
+const d = a.data;
+const url = `${SITE_URL}${a.chemin}`;
+const { Content, headings } = await render(a.entree);
+
+const sommaire = headings.filter((h) => h.depth === 2);
+const etapes = [
+  { nom: 'Articles', href: '/articles' },
+  { nom: d.h1, href: a.chemin },
+];
+
+// Maillage : seules les cibles générées dans ce build sont affichées.
+const guides = liensVisibles(
+  d.relatedGuides
+    .map((slug) => bibliotheque.find((g) => g.slug === slug))
+    .filter((g) => g !== undefined)
+    .map((g) => ({ href: cheminDuGuide(g), label: g.nom })),
+);
+const tous = await articlesGeneres();
+const lies = d.relatedArticles
+  .map((slug) => tous.find((x) => x.slug === slug))
+  .filter((x): x is Article => x !== undefined && (a.brouillon || !x.brouillon));
+const recents = tous.filter((x) => x.slug !== a.slug && !lies.includes(x) && (a.brouillon || !x.brouillon)).slice(0, 3);
+
+const semaine = `du ${dateLisible(d.periodeDebut)} au ${dateLisible(d.periodeFin)}`;
+const dateModifiee = d.dateModified && d.dateModified !== d.datePublished ? d.dateModified : undefined;
+
+// BlogPosting n'est déclaré que pour un article publié : un brouillon n'a pas de date de publication.
+const donnees = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    ...(d.datePublished
+      ? [{
+          '@type': 'BlogPosting',
+          '@id': `${url}#article`,
+          headline: d.h1,
+          description: d.description,
+          url,
+          mainEntityOfPage: { '@id': `${url}#webpage` },
+          inLanguage: 'fr-FR',
+          datePublished: d.datePublished,
+          dateModified: d.dateModified ?? d.datePublished,
+          // Article préparé par BrittAssist avec l'aide d'un outil d'IA : l'auteur déclaré est l'entreprise.
+          author: { '@id': `${SITE_URL}/#business` },
+          publisher: { '@id': `${SITE_URL}/#business` },
+          articleSection: a.categorie,
+          ...(d.keywords.length ? { keywords: d.keywords.join(', ') } : {}),
+          ...(d.image ? { image: `${SITE_URL}${d.image}` } : {}),
+          citation: d.sources.map((s) => s.url),
+        }]
+      : []),
+    filDAriane(url, etapes),
+  ],
+};
+---
+
+<BaseLayout
+  title={d.title}
+  description={d.description}
+  ogType="article"
+  ogImage={d.image}
+  ogImageAlt={d.image ? d.imageAlt : undefined}
+  datePublished={d.datePublished}
+  dateModified={d.dateModified ?? d.datePublished ?? d.createdAt}
+  brouillon={a.brouillon}
+  dateRelecture={d.reviewedAt}
+>
+  <script type="application/ld+json" slot="head" set:html={jsonLd(donnees)} />
+
+  <header class="hero hero--page">
+    <div class="container">
+      <Fil etapes={etapes} />
+      {a.brouillon && (
+        <p class="brouillon" role="note">
+          Brouillon ({d.editorialStatus}). Cet article n’est pas publié : il n’apparaît ni dans les moteurs
+          de recherche ni dans le plan du site, et ses informations ne sont pas encore vérifiées.
+        </p>
+      )}
+      <p class="eyebrow">{a.categorie}</p>
+      <h1 class="hero__title">{d.h1}</h1>
+      <p class="hero__sub">{d.summary}</p>
+      <p class="article-meta">
+        <span>
+          {d.datePublished ? (
+            <>Publié le <strong><time datetime={d.datePublished}>{dateLisible(d.datePublished)}</time></strong></>
+          ) : (
+            <>Non publié</>
+          )}
+        </span>
+        {dateModifiee && <span>Mis à jour le <time datetime={dateModifiee}>{dateLisible(dateModifiee)}</time></span>}
+        <span>Actualité du <time datetime={d.dateEvenement}>{dateLisible(d.dateEvenement)}</time></span>
+        <span>{a.lecture} min de lecture</span>
+        <span>Par BrittAssist</span>
+      </p>
+    </div>
+  </header>
+
+  <section class="band band--noir">
+    <div class="container">
+      {a.retrospectif && (
+        <p class="note-article reveal">
+          <strong>Rétrospective de la semaine {semaine}.</strong>{' '}
+          {d.datePublished ? <>Cet article a été rédigé et publié le {dateLisible(d.datePublished)}</> : <>Cet article est rédigé après coup</>},
+          après la semaine qu’il couvre. Les faits y sont présentés tels qu’ils étaient connus cette semaine-là ;
+          ce qui a pu changer depuis est signalé à part. Vérifiez la règle en vigueur aujourd’hui avant d’agir.
+        </p>
+      )}
+      {sommaire.length >= 3 && (
+        <nav class="sommaire reveal" aria-labelledby="sommaire-titre">
+          <p class="sommaire__titre" id="sommaire-titre">Sur cette page</p>
+          <ol>
+            {sommaire.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}
+          </ol>
+        </nav>
+      )}
+      <article class="prose prose--article reveal">
+        <Content />
+      </article>
+    </div>
+  </section>
+
+  <section class="band band--ivoire band--tight" id="sources">
+    <div class="container">
+      <div class="band__head reveal">
+        <p class="eyebrow">Sources</p>
+        <h2>Les textes sur lesquels repose cet article.</h2>
+      </div>
+      <ul class="sources-article reveal">
+        {d.sources.map((s) => (
+          <li>
+            <a href={s.url} target="_blank" rel="noopener noreferrer">{s.titre}</a>
+            <p>
+              {s.organisme}
+              {s.datePublication && <> · publié le <time datetime={s.datePublication}>{dateLisible(s.datePublication)}</time></>}
+              {s.dateMiseAJour && <> · mis à jour le <time datetime={s.dateMiseAJour}>{dateLisible(s.dateMiseAJour)}</time></>}
+            </p>
+            <p>{s.extrait}</p>
+            <span class="source-etat">
+              {s.ouverte && s.consulteeLe ? <>Consultée le {dateLisible(s.consulteeLe)}</> : <>Source à ouvrir et à vérifier</>}
+            </span>
+          </li>
+        ))}
+      </ul>
+      <p class="page-updated reveal">
+        Article préparé par BrittAssist avec l’aide d’un outil d’IA, à partir des sources ci-dessus.
+        {d.reviewedAt && <> Relu par Brittany Dreano le {dateLisible(d.reviewedAt)}.</>}
+        {estGeneree('/methode-editoriale') && <> <a href="/methode-editoriale">Comment ces contenus sont écrits</a>.</>}
+        {' '}Il informe ; il ne remplace pas l’avis d’un expert-comptable, d’un avocat ou de l’organisme concerné.
+      </p>
+    </div>
+  </section>
+
+  <section class="band band--noir band--tight">
+    <div class="container">
+      <div class="index-prestations reveal">
+        {guides.length > 0 && (
+          <div class="index-groupe">
+            <h2 class="index-groupe__titre">Les guides pour aller plus loin</h2>
+            {guides.map((g) => <a href={g.href}>{g.label}</a>)}
+          </div>
+        )}
+        {(lies.length > 0 || recents.length > 0) && (
+          <div class="index-groupe">
+            <h2 class="index-groupe__titre">{lies.length ? 'Articles liés' : 'Articles récents'}</h2>
+            {(lies.length ? lies : recents).map((x) => <a href={x.chemin}>{x.data.h1}</a>)}
+          </div>
+        )}
+        <div class="index-groupe">
+          <h2 class="index-groupe__titre">La rubrique</h2>
+          <a href="/articles">Tous les articles</a>
+          <a href="/guides">Tous les guides</a>
+          <a href="/services">Le périmètre couvert par BrittAssist</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <Monogram variant="ghost" />
+    <div class="container container--narrow reveal">
+      <h2>Ce genre d’échéance, vous préférez qu’on la suive pour vous ?</h2>
+      <p class="lede">
+        Repérer ce qui vous concerne, préparer les pièces, relancer au bon moment :
+        c’est le quotidien d’une assistante de direction externalisée.
+      </p>
+      <div class="cta-final__actions">
+        <Button href="/contact" variant="ivoire">Échanger avec Brittany</Button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

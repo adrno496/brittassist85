@@ -217,6 +217,7 @@ function analyserPage(dist, fichier) {
     verifier(/<style\b([^>]*)>([\s\S]*?)<\/style>/gi, 'style');
   }
 
+  const datesVisibles = new Set([...principal.matchAll(/<time\b[^>]*\sdatetime\s*=\s*["']([^"']+)["']/gi)].map((m) => m[1]));
   const identifiants = new Set([...html.matchAll(/\sid\s*=\s*["']([^"']+)["']/gi)].map((m) => m[1]));
   const texte = texteBrut(principal);
 
@@ -251,6 +252,7 @@ function analyserPage(dist, fichier) {
     stylesInline: (html.match(/<[a-z][^>]*\sstyle\s*=\s*["']/gi) ?? []).length,
     csp: { presente: Boolean(csp), empreintesManquantes },
     identifiants,
+    datesVisibles,
     texte,
     mots: texte ? texte.split(/\s+/).length : 0,
   };
@@ -325,6 +327,16 @@ export function auditer(dist) {
       if (variante.startsWith('/') && !statiques.has(variante)) bloquer('image-introuvable', p.chemin, variante);
     }
 
+    // Un seul article par page, et les mêmes dates que la page qui le porte.
+    const articles = p.jsonLd.noeuds.filter((n) => [].concat(n['@type'] ?? []).some((t) => t === 'Article' || t === 'BlogPosting'));
+    if (articles.length > 1) bloquer('article-multiple', p.chemin, `${articles.length} nœuds Article/BlogPosting`);
+    const webpage = p.jsonLd.noeuds.find((n) => [].concat(n['@type'] ?? []).includes('WebPage'));
+    for (const a of articles) {
+      for (const champ of ['datePublished', 'dateModified']) {
+        if (webpage?.[champ] && a[champ] && webpage[champ] !== a[champ]) bloquer('dates-contradictoires', p.chemin, `${champ} : WebPage ${webpage[champ]}, article ${a[champ]}`);
+      }
+    }
+
     // Les données structurées doivent décrire la page, pas une page voisine.
     for (const n of p.jsonLd.noeuds) {
       const type = [].concat(n['@type'] ?? []);
@@ -336,11 +348,16 @@ export function auditer(dist) {
           else if (cible.ancre) avertir('fil-ariane-ancre', p.chemin, `${item.item} désigne une ancre, pas une page`);
         }
       }
-      if (type.includes('Article')) {
+      if (type.includes('Article') || type.includes('BlogPosting')) {
         for (const champ of ['headline', 'datePublished', 'dateModified', 'author']) {
           if (!n[champ]) bloquer('article-incomplet', p.chemin, `${champ} absent`);
         }
         if (n.headline && p.h1[0] && n.headline !== p.h1[0]) avertir('article-headline', p.chemin, 'headline ≠ h1');
+        // Une date de publication ne peut pas être dans le futur, ni précéder la mise à jour déclarée.
+        if (n.datePublished && Date.parse(n.datePublished) > Date.now() + 86_400_000) bloquer('article-date-future', p.chemin, n.datePublished);
+        if (n.datePublished && n.dateModified && n.dateModified < n.datePublished) bloquer('article-dates-inversees', p.chemin, `${n.dateModified} < ${n.datePublished}`);
+        // Les données structurées et la page disent la même date : celle-ci doit être visible.
+        if (type.includes('BlogPosting') && n.datePublished && !p.datesVisibles.has(n.datePublished)) bloquer('article-date-invisible', p.chemin, `${n.datePublished} absente des <time> de la page`);
       }
       if (type.includes('FAQPage')) {
         const visible = normaliser(p.texte);
@@ -455,6 +472,12 @@ export function auditer(dist) {
       // Comparaison après normalisation : « https://hôte » et « https://hôte/ » sont la même URL.
       else if (new URL(page.canonical).href !== url.href) bloquer('sitemap-canonical', u.loc, `canonical de la page : ${page.canonical}`);
       if (u.lastmod && Number.isNaN(Date.parse(u.lastmod))) bloquer('sitemap-lastmod', u.loc, u.lastmod);
+      // Article : le <lastmod> est la date de sa dernière modification réelle, celle que la page déclare.
+      if (page && u.lastmod && /^\/articles\/[^/]+$/.test(chemin)) {
+        const declaree = page.jsonLd.noeuds.find((n) => [].concat(n['@type'] ?? []).includes('BlogPosting'))?.dateModified;
+        if (!declaree) bloquer('sitemap-article-sans-date', u.loc, 'aucun BlogPosting daté');
+        else if (u.lastmod.slice(0, 10) !== declaree) bloquer('sitemap-lastmod-article', u.loc, `lastmod ${u.lastmod.slice(0, 10)}, dateModified ${declaree}`);
+      }
       if (u.lastmod && Date.parse(u.lastmod) > Date.now() + 86_400_000) bloquer('sitemap-lastmod-futur', u.loc, u.lastmod);
     }
     for (const p of indexables) {

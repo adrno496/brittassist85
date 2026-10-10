@@ -1,0 +1,589 @@
+[
+  {
+    "semaine": "S01",
+    "debut": "2026-01-01",
+    "fin": "2026-01-07",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Entrée en vigueur de la règle Arcep : les opérateurs doivent afficher « numéro masqué » pour les appels émis depuis l'étranger avec un numéro mobile français non authentifié (lutte contre l'usurpation de numéros).",
+        "dateEvenement": "2026-01-01",
+        "natureDate": "entree-en-vigueur",
+        "organisme": "Arcep",
+        "url": "https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/plan-de-numerotation-021225.html",
+        "titreResultat": "plan de numerotation 021225 (page Arcep)",
+        "datePageSelonMoteur": "L'URL Arcep contient 021225, ce qui laisse penser à une décision ou un communiqué du 2 décembre 2025. La date du 1er janvier 2026 vient de la presse (Sud Radio, mac4ever, siecledigital).",
+        "resumeMoteur": "Selon les résultats, les opérateurs français doivent depuis le 1er janvier 2026 afficher automatiquement « numéro masqué » quand un appel venant de l'étranger porte un numéro mobile français non authentifié. Le moteur précise que les fraudeurs contournaient le mécanisme d'authentification (MAN) en passant par l'étranger. L'Arcep aurait reçu près de 18 000 signalements d'usurpation via « J'alerte l'Arcep » depuis janvier 2025. Next.ink (article payant) affirme que la mesure n'est pas encore appliquée partout.",
+        "publicConcerne": "Tous les dirigeants et indépendants qui reçoivent des appels de clients ou de fournisseurs, en particulier ceux qui voyagent et appellent leurs clients depuis l'étranger avec leur mobile français.",
+        "angle": "Depuis le 1er janvier, un appel « numéro masqué » peut venir d'un vrai client en déplacement à l'étranger, ou de vous-même quand vous appelez un client depuis l'étranger. Actions : prévenir ses clients avant un déplacement, prévoir un SMS ou un mail de confirmation, et ne jamais confier de données sensibles à un appelant masqué ou non vérifié (rappeler au numéro connu). Fiche réflexe pour l'accueil téléphonique ou l'assistante.",
+        "sensibilite": "standard",
+        "confiance": "moyenne",
+        "raisonConfiance": "La source institutionnelle (Arcep) apparaît, mais je n'ai vu que son URL, pas sa date exacte ni son contenu. La date du 1er janvier 2026 est donnée par plusieurs médias concordants. Next.ink signale un défaut d'application.",
+        "sourcesConcordantes": [
+          "https://www.sudradio.fr/societe/arnaques-au-telephone-ce-qui-va-changer-a-partir-de-janvier-2026",
+          "https://www.mac4ever.com/iphone/193431-usurpation-de-numeros-ce-qui-va-changer-au-1er-janvier-2026",
+          "https://siecledigital.fr/2025/12/04/arnaques-telephoniques-pourquoi-vous-verrez-beaucoup-plus-dappels-masques-des-2026/",
+          "https://www.blogdumoderateur.com/arcep-renforce-lutte-arnaques-telephoniques/",
+          "https://next.ink/222060/usurpation-de-numero-spam-larcep-ouvre-une-enquete-contre-lensemble-des-operateurs/"
+        ]
+      },
+      {
+        "actualite": "Revalorisation du Smic de 1,18 % au 1er janvier 2026 : 12,02 € brut de l'heure, soit 1 823,03 € brut par mois (décret n° 2025-1228 du 17 décembre 2025).",
+        "dateEvenement": "2026-01-01",
+        "natureDate": "entree-en-vigueur",
+        "organisme": "Gouvernement (décret) ; relayé par la Cnav et la presse",
+        "url": "https://www.lafinancepourtous.com/2025/12/17/revalorisation-du-smic-au-1er-janvier-2026-118/",
+        "titreResultat": "Revalorisation du Smic au 1er janvier 2026 : + 1,18 %",
+        "datePageSelonMoteur": "Article du 17/12/2025 (selon l'URL). Le décret est daté du 17 décembre 2025 et la hausse s'applique au 1er janvier 2026.",
+        "resumeMoteur": "Le moteur indique un Smic horaire brut de 12,02 € au 1er janvier 2026, soit 1 823,03 € brut par mois, avec une hausse de 1,18 % fixée par le décret n° 2025-1228 du 17 décembre 2025. Mayotte a un montant distinct (9,33 € de l'heure). Une seule source (aide-sociale.fr) évoque une seconde hausse automatique au 1er juin 2026 : ce point n'est pas vérifié et sort de la semaine.",
+        "publicConcerne": "Employeurs de salariés payés au Smic ou proche du Smic, particuliers employeurs, artisans avec apprentis ou salariés.",
+        "angle": "Check-list paie de janvier : vérifier les bulletins de janvier (taux horaire, minima conventionnels qui seraient passés sous le Smic), mettre à jour les simulations de coût d'embauche et les devis qui intègrent de la main-d'œuvre. Le sujet est à croiser avec la nouvelle réduction générale dégressive unique (RGDU) entrée en vigueur à la même date.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Les montants et le numéro de décret concordent entre plusieurs sources, dont les circulaires de la Cnav. La page officielle Entreprendre n'est pas apparue directement.",
+        "sourcesConcordantes": [
+          "https://legislation.lassuranceretraite.fr/Pdf/circulaire_cnav_2025_33_23122025.pdf",
+          "https://www.lemondedudroit.fr/social/306-relations-individuelles-de-travail/102208-le-smic-revalorise-au-1er-janvier-2026.html",
+          "https://www.economie.gouv.fr/entreprises/entreprises-ce-qui-change-au-1er-janvier-2026-0"
+        ]
+      },
+      {
+        "actualite": "Fiche Entreprendre « Ce qui change au 1er janvier 2026 » (refonte de la réduction générale des cotisations patronales en RGDU, Smic, seuils des marchés publics, taux du versement mobilité).",
+        "dateEvenement": "2026-01-07",
+        "natureDate": "mise-a-jour (publication initiale le 22/12/2025)",
+        "organisme": "DILA – Entreprendre.service-public.gouv.fr",
+        "url": "https://entreprendre.service-public.gouv.fr/actualites/A18714?lang=en",
+        "titreResultat": "entreprendre.service-public.gouv.fr (A18714)",
+        "datePageSelonMoteur": "Publié le 22 décembre 2025, mis à jour le 7 janvier 2026 (selon le moteur). La publication initiale tombe donc hors semaine.",
+        "resumeMoteur": "Le moteur présente un récapitulatif des changements au 1er janvier 2026 pour les entreprises : réduction générale des cotisations patronales transformée en réduction dégressive unique, revalorisation du Smic, nouveaux seuils des marchés publics et nouveaux taux du versement mobilité. Le résumé ne donne aucun détail chiffré.",
+        "publicConcerne": "Employeurs (TPE/PME), entreprises qui répondent à des marchés publics.",
+        "angle": "Article « paie de janvier » centré sur la RGDU : ce qui change pour une TPE qui paie entre 1 et 3 Smic, et les vérifications à demander au cabinet de paie. La date de l'actualité reste le 1er janvier ; la page n'a été que mise à jour dans la semaine.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "La source est officielle, mais sa publication initiale est hors semaine (22/12/2025). Seule la mise à jour du 07/01 tombe dans la semaine, et le contenu n'est connu que par l'extrait du moteur.",
+        "sourcesConcordantes": [
+          "https://www.economie.gouv.fr/entreprises/entreprises-ce-qui-change-au-1er-janvier-2026-0",
+          "https://www.capeb.fr/actualites/ce-qui-change-pour-les-entreprises-au-1er-janvier-2026-acre-exonerations-sociales-et-aides-a-l-apprentissage"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Les trois faits prennent effet le 1er janvier 2026, mais leurs textes ou communiqués sont antérieurs (décembre 2025). Contradiction relevée dans un résultat de synthèse : une source parle d'une obligation de réception des factures électroniques au 1er janvier 2026, alors que les sources officielles et concordantes donnent le 1er septembre 2026. Il ne faut pas reprendre la date du 1er janvier."
+  },
+  {
+    "semaine": "S02",
+    "debut": "2026-01-08",
+    "fin": "2026-01-14",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Communiqué Insee : les entreprises peuvent consulter dès maintenant sur sirene.gouv.fr leur futur code APE (nomenclature NAF 2025), qui sera attribué à toutes les unités du répertoire Sirene au 1er janvier 2027.",
+        "dateEvenement": "2026-01-14",
+        "natureDate": "publication (communiqué)",
+        "organisme": "Insee",
+        "url": "https://www.insee.fr/fr/information/8727948",
+        "titreResultat": "Nouveau code APE : les entreprises peuvent le consulter dès aujourd'hui sur sirene.gouv.fr",
+        "datePageSelonMoteur": "Communiqué du 14 janvier 2026 selon le moteur. Les pages info.gouv.fr et economie.gouv.fr qui le relaient sont datées par le moteur du 21 ou du 26 janvier, de façon contradictoire.",
+        "resumeMoteur": "Selon le moteur, le code APE actuel reste le seul officiel en 2026, et le futur code se consulte avec le numéro SIREN sur sirene.gouv.fr. Le changement découle de la NAF 2025, approuvée par le décret n° 2025-736 du 31 juillet 2025 et applicable au 1er janvier 2027 (747 codes au lieu de 732). Les relais institutionnels précisent que le changement ne crée ni droit ni obligation nouvelle. Un formulaire simplifié de demande d'expertise est annoncé pour le 1er trimestre 2026.",
+        "publicConcerne": "Toutes les entreprises inscrites au répertoire Sirene, micro-entrepreneurs compris.",
+        "angle": "Action concrète en 10 minutes : consulter son futur code APE sur sirene.gouv.fr, vérifier qu'il correspond bien à l'activité réelle, repérer les documents et contrats qui citent le code (convention collective, OPCO, assurances, aides, Kbis, mentions sur le site), et demander une expertise si le code paraît erroné. Calendrier : consultation en 2026, bascule au 1er janvier 2027.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "La source primaire (Insee) est identifiée, et plusieurs relais institutionnels concordent (info.gouv.fr, economie.gouv.fr, CCI). Seule la date exacte des relais diverge.",
+        "sourcesConcordantes": [
+          "https://www.info.gouv.fr/actualite/entreprises-un-nouveau-code-ape",
+          "https://www.economie.gouv.fr/node/3238995",
+          "https://www.lyon-metropole.cci.fr/actualite/nouveau-code-ape-evolution-majeure-classification-des-activites",
+          "https://www.capeb.fr/actualites/nouveau-code-ape-en-2027"
+        ]
+      },
+      {
+        "actualite": "La CNIL sanctionne FREE MOBILE (27 M€) et FREE (15 M€), soit 42 M€ au total, après la violation de données d'octobre 2024 (24 millions de contrats, dont des IBAN).",
+        "dateEvenement": "2026-01-14",
+        "natureDate": "publication (délibérations SAN-2026-001 et SAN-2026-002 du 8 janvier 2026, rendues publiques le 14 janvier 2026)",
+        "organisme": "CNIL",
+        "url": "https://www.cnil.fr/sanction-free-2026",
+        "titreResultat": "Violation de données : sanction de 42 millions d'euros à l'encontre des sociétés FREE MOBILE et FREE",
+        "datePageSelonMoteur": "Le moteur indique des délibérations du 8 janvier 2026 rendues publiques le 14 janvier 2026. Une autre synthèse cite le 13 janvier : il y a contradiction (voir note).",
+        "resumeMoteur": "La CNIL retient un manquement à la sécurité des données (article 32 du RGPD), notamment une authentification au VPN, utilisé par les télétravailleurs, jugée insuffisamment robuste. Elle relève aussi un défaut d'information des personnes concernées, et pour Free Mobile une conservation excessive des données. Selon la presse, les sociétés ont annoncé un recours devant le Conseil d'État.",
+        "publicConcerne": "Clients professionnels concernés par la fuite (risque d'hameçonnage ciblé avec IBAN), et toute TPE qui donne un accès à distance (VPN, bureau à distance) à ses salariés ou prestataires.",
+        "angle": "Partir de la décision pour deux actions datées : 1) si vous étiez client Free ou Free Mobile, surveiller les prélèvements et les tentatives de fraude utilisant votre IBAN ; 2) auditer en une heure vos accès distants (VPN, bureau à distance, comptes prestataires) et vos durées de conservation des données clients. Le site a déjà un guide sur la double authentification : il faut éviter de le redire et se concentrer sur l'accès distant et la durée de conservation.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Page officielle CNIL identifiée, avec plusieurs relais de presse concordants. Les détails techniques viennent de la presse et non de la décision elle-même.",
+        "sourcesConcordantes": [
+          "https://www.cnil.fr/fr/node/168010",
+          "https://www.lemondedudroit.fr/pi-tic/300-protection-de-la-vie-privee/102523-vol-de-donnees-free-sanctionne-a-hauteur-de-42-millions-d-euros.html",
+          "https://www.solutions-numeriques.com/free-sanctionne-a-hauteur-de-42-millions-deuros-la-cnil-pointe-des-failles-de-securite-structurelles/",
+          "https://www.generation-nt.com/actualites/free-fuite-donnees-cyberattaque-sanction-cnil-2069015"
+        ]
+      },
+      {
+        "actualite": "Délibération CRE n° 2026-06 du 14 janvier 2026 proposant l'évolution des tarifs réglementés de vente d'électricité au 1er février 2026 (tarif Bleu non résidentiel ≤ 36 kVA : −1,29 % HT, soit −1,58 % TTC en moyenne).",
+        "dateEvenement": "2026-01-14",
+        "natureDate": "publication (proposition ; application au 1er février 2026)",
+        "organisme": "Commission de régulation de l'énergie (CRE)",
+        "url": "https://www.cre.fr/fileadmin/Documents/Deliberations/2026/260114_2026-06_TRVE_2026.pdf",
+        "titreResultat": "260114 2026 06 TRVE 2026",
+        "datePageSelonMoteur": "Délibération du 14 janvier 2026 (date dans le nom du fichier et dans les résumés).",
+        "resumeMoteur": "La CRE propose une quasi-stabilité des tarifs réglementés au 1er février 2026. Le tarif Bleu non résidentiel baisserait en moyenne de 1,29 % HT, soit 1,58 % TTC. La baisse du coût d'approvisionnement est en partie compensée par la composante de rattrapage et par le coût des CEE. Aucune évolution moyenne n'est communiquée pour les tarifs Jaune et Vert.",
+        "publicConcerne": "TPE et professionnels au tarif Bleu (≤ 36 kVA) : commerçants, artisans, professions libérales.",
+        "angle": "Voir la semaine S05 (date d'application). Ici, il s'agit seulement de l'annonce : la CRE propose, l'application se fait au 1er février.",
+        "sensibilite": "standard",
+        "confiance": "moyenne",
+        "raisonConfiance": "La source primaire (CRE) est identifiée, mais c'est une proposition. Je n'ai pas vérifié que l'application au 1er février a bien été confirmée par les pouvoirs publics. Les chiffres viennent d'EDF Entreprises, qui cite la délibération.",
+        "sourcesConcordantes": [
+          "https://www.edf.fr/entreprises/decryptages/normes-et-reglementations/trv-fevrier-2026",
+          "https://www.hellowatt.fr/blog/trv-stable-fevrier-2026/"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Contradiction sur la sanction Free : une synthèse du moteur cite une décision du 13 janvier, Leto une décision du 8 janvier, et les relais presse des délibérations du 8 janvier publiées le 14 janvier. Les deux dates restent dans la semaine. La date des relais institutionnels du code APE diverge aussi : economie.gouv.fr est daté du 21/01 ou du 26/01 selon les résultats, alors que le communiqué Insee du 14/01 tombe dans la semaine."
+  },
+  {
+    "semaine": "S03",
+    "debut": "2026-01-15",
+    "fin": "2026-01-21",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Facturation électronique : la DGFiP publie la première liste de 101 plateformes agréées (PA). La liste a vocation à s'enrichir au fil de l'instruction des demandes.",
+        "dateEvenement": "2026-01-16",
+        "natureDate": "publication",
+        "organisme": "DGFiP / ministère de l'Économie",
+        "url": "https://www.economie.gouv.fr/actualites/facturation-electronique-la-liste-des-101-premieres-plateformes-agreees",
+        "titreResultat": "Facturation électronique : la liste des 101 premières plateformes agréées est disponible",
+        "datePageSelonMoteur": "Publication du 16 janvier 2026 selon le moteur. impots.gouv.fr liste une actualité « publication de la liste des plateformes agréées » au 16/01/2026. Relais CAPEB du 26/01/2026 et TPE Actu du 17/01/2026.",
+        "resumeMoteur": "Le moteur rapporte que la DGFiP a publié le 16 janvier 2026 une première liste de 101 plateformes agréées, appelée à s'enrichir. Calendrier rappelé : obligation de réception pour toutes les entreprises au 1er septembre 2026, obligation d'émission pour les PME et micro-entreprises au 1er septembre 2027. Chaque entité choisit une PA unique pour la réception, mais peut en utiliser plusieurs pour l'émission. Le chiffre de plus de 115 plateformes vient d'un site commercial et n'a pas été confirmé.",
+        "publicConcerne": "Toutes les entreprises assujetties à la TVA, TPE, artisans et micro-entrepreneurs compris (réception au 1er septembre 2026).",
+        "angle": "Ce n'est pas un guide de plus sur la réforme : il s'agit de choisir sa plateforme maintenant que la liste officielle existe. Méthode en 4 étapes : vérifier que l'outil actuel (logiciel de facturation, cabinet comptable, banque) est relié à une PA de la liste ; choisir sa PA de réception unique ; vérifier son inscription à l'annuaire ; poser 5 questions au prestataire (coût, reprise des données, archivage, interopérabilité, support). Échéance de réception : 1er septembre 2026.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Source officielle (economie.gouv.fr et impots.gouv.fr) et plusieurs relais concordants sur la date et le nombre de plateformes.",
+        "sourcesConcordantes": [
+          "https://www.economie.gouv.fr/node/3238965",
+          "https://www.ffbatiment.fr/actualites-batiment/actualite-ba/facturation-electronique-liste-101-plateformes-agreee-publiee",
+          "https://www.capeb.fr/actualites/facturation-electronique-la-liste-des-101-premieres-plateformes-agreees-est-disponible",
+          "https://tpeactu.fr/2026/01/17/facturation-electronique-liste-101-plateformes-agreees/"
+        ]
+      },
+      {
+        "actualite": "La CNIL publie ses recommandations finales sur le consentement « multi-terminaux », à l'issue d'une consultation publique.",
+        "dateEvenement": "2026-01-21",
+        "natureDate": "publication",
+        "organisme": "CNIL",
+        "url": "https://cnil.fr/fr/tag/Consultation",
+        "titreResultat": "cnil.fr (page de tag « consultation »)",
+        "datePageSelonMoteur": "Date du 21 janvier 2026 relevée par le moteur sur une page de liste du site cnil.fr. Je n'ai pas vu la page de la recommandation elle-même.",
+        "resumeMoteur": "Le moteur mentionne seulement que des recommandations finales sur le consentement multi-terminaux ont été publiées le 21 janvier 2026, après une consultation publique. Aucun autre détail n'apparaît.",
+        "publicConcerne": "Entreprises qui ont un site web ou une application avec bandeau cookies et des comptes clients connectés sur plusieurs appareils.",
+        "angle": "À n'utiliser que si la page CNIL est vérifiée : ce que la recommandation change pour le bandeau cookies d'un site vitrine ou d'une boutique avec compte client, avec les vérifications à demander au prestataire web.",
+        "sensibilite": "reglementaire",
+        "confiance": "faible",
+        "raisonConfiance": "Une seule mention, sur une page de liste. Ni le titre exact ni l'URL de la recommandation ne sont connus. La pertinence pour les TPE reste à confirmer.",
+        "sourcesConcordantes": []
+      },
+      {
+        "actualite": "Urssaf : depuis le 16 janvier 2026, les mails d'accusé de réception des déclarations et paiements ne sont plus envoyés (service présenté comme temporairement indisponible).",
+        "dateEvenement": "2026-01-16",
+        "natureDate": "mise-en-oeuvre (selon une source secondaire)",
+        "organisme": "Urssaf (selon TPE Actu)",
+        "url": "https://tpeactu.fr/2026/04/03/arnaque-mail-urssaf-controle/",
+        "titreResultat": "Faux contrôle Urssaf, messagerie supprimée : ce qui change (et ce qui doit vous alerter)",
+        "datePageSelonMoteur": "Article du 3 avril 2026, donc publié hors semaine. Il rapporte un changement daté du 16 janvier 2026.",
+        "resumeMoteur": "Selon TPE Actu, depuis le 16 janvier 2026, l'Urssaf n'envoie plus d'accusé de réception par mail pour les déclarations et paiements. Le même article annonce la suppression automatique, à partir du 1er mai 2026, des messages de plus de trois ans dans la messagerie en ligne. Aucune source officielle Urssaf n'est apparue.",
+        "publicConcerne": "Employeurs et indépendants qui déclarent et paient sur urssaf.fr.",
+        "angle": "Si la source officielle est confirmée : conserver soi-même les preuves de déclaration et de paiement (captures, téléchargements), puisque le mail de confirmation n'arrive plus. Un mail « Urssaf » qui prétend confirmer un paiement devient alors suspect.",
+        "sensibilite": "reglementaire",
+        "confiance": "faible",
+        "raisonConfiance": "Une seule source secondaire, publiée trois mois après les faits. Pas de confirmation officielle Urssaf dans les résultats. Il ne faut pas publier sans vérification.",
+        "sourcesConcordantes": []
+      }
+    ],
+    "recommande": 0,
+    "note": "La page economie.gouv.fr sur le nouveau code APE est datée du 21/01/2026 par un résultat et du 26/01/2026 par un autre. Le fait d'origine (communiqué Insee) est rattaché à S02."
+  },
+  {
+    "semaine": "S04",
+    "debut": "2026-01-22",
+    "fin": "2026-01-28",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "La CNIL sanctionne de 3,5 M€ une entreprise (non nommée) qui transmettait les emails et téléphones des membres de son programme de fidélité à un réseau social pour du ciblage publicitaire, sans consentement valable.",
+        "dateEvenement": "2026-01-22",
+        "natureDate": "publication (décision du 30 décembre 2025)",
+        "organisme": "CNIL",
+        "url": "https://cnil.fr/fr/transmission-de-donnees-un-reseau-social-des-fins-publicitaires-sanction",
+        "titreResultat": "Transmission de données à un réseau social à des fins publicitaires : sanction",
+        "datePageSelonMoteur": "Annonce du 22 janvier 2026 ; décision du 30 décembre 2025 (selon le moteur).",
+        "resumeMoteur": "Selon le moteur, l'entreprise transmettait depuis février 2018 les adresses mail et/ou les numéros de téléphone des membres de son programme de fidélité à un réseau social, qui les utilisait pour afficher des publicités ciblées. Les contrôles datent de janvier 2023. Plus de 10,5 millions de personnes sont concernées, et la décision a été prise avec 16 autorités européennes. La CNIL n'a pas nommé l'entreprise, car ce type de pratique est répandu.",
+        "publicConcerne": "Commerçants, artisans, professions libérales et TPE qui importent leur fichier clients dans Facebook, Instagram ou LinkedIn (audiences personnalisées) ou qui animent un programme de fidélité.",
+        "angle": "Vous téléversez votre fichier clients dans un réseau social pour cibler vos publicités ? La CNIL vient de sanctionner exactement cette pratique. Ce qui est reproché, ce qu'il faut vérifier (base légale, consentement recueilli à l'inscription au programme de fidélité, information des clients), et les options pour continuer à faire de la publicité sans fichier clients. Ne pas nommer l'entreprise.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "La page officielle CNIL est identifiée et la date est claire. Le nom de l'entreprise n'est qu'une hypothèse de presse et ne doit pas être repris. (Une attribution de presse non confirmée a été retirée de ce dossier.)",
+        "sourcesConcordantes": [
+          "https://www.cnil.fr/fr/node/168058"
+        ]
+      },
+      {
+        "actualite": "La formation restreinte de la CNIL sanctionne FRANCE TRAVAIL de 5 M€ pour défaut de sécurité, après une attaque par ingénierie sociale qui a usurpé des comptes de conseillers Cap emploi via les procédures de réinitialisation de mots de passe.",
+        "dateEvenement": "2026-01-22",
+        "natureDate": "decision (publication le 29 janvier 2026, en S05)",
+        "organisme": "CNIL",
+        "url": "https://cnil.fr/fr/violation-de-donnees-sanction-5millions-france-travail",
+        "titreResultat": "Violation de données : sanction de 5 millions d'euros à l'encontre de FRANCE TRAVAIL",
+        "datePageSelonMoteur": "Décision du 22 janvier 2026, publication du 29 janvier 2026 selon le moteur.",
+        "resumeMoteur": "Voir S05 (date de publication).",
+        "publicConcerne": "Voir S05.",
+        "angle": "Voir S05 : la décision date de cette semaine, mais elle n'a été rendue publique que le 29 janvier.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Source officielle CNIL. Il ne faut pas en parler en S04 comme d'un fait connu à cette date, puisque la publication date du 29/01.",
+        "sourcesConcordantes": [
+          "https://www.cnil.fr/fr/node/168109"
+        ]
+      },
+      {
+        "actualite": "L'ANSSI publie, dans sa collection « Back to Basics », un document sur la sécurisation d'une migration de système d'information.",
+        "dateEvenement": "2026-01-23",
+        "natureDate": "publication",
+        "organisme": "ANSSI (MesServicesCyber)",
+        "url": "https://messervices.cyber.gouv.fr/guides/en-migration",
+        "titreResultat": "1. Accueil (MesServicesCyber – guide « en migration »)",
+        "datePageSelonMoteur": "Publication du 23 janvier 2026 selon le moteur.",
+        "resumeMoteur": "Le moteur indique un document de l'ANSSI sur la sécurisation des migrations de SI, publié le 23 janvier 2026 dans la collection « Back to Basics ». L'ANSSI y présenterait son point de vue au moment de la publication, sans recommandations détaillées comme dans ses guides.",
+        "publicConcerne": "TPE et PME qui changent de logiciel (facturation, messagerie, cloud), notamment dans le cadre de la facturation électronique.",
+        "angle": "Changer d'outil en 2026, par exemple de logiciel de facturation pour la réforme : les précautions de sécurité à prendre avant, pendant et après la migration (sauvegarde, comptes à supprimer, accès des prestataires).",
+        "sensibilite": "standard",
+        "confiance": "faible",
+        "raisonConfiance": "Une seule mention dans les résultats. Je n'ai pas vu le titre exact du document, et sa pertinence pour les TPE n'est pas démontrée.",
+        "sourcesConcordantes": []
+      }
+    ],
+    "recommande": 0,
+    "note": "Le baromètre Fiducial des TPE (n° 82, 22/01/2026) est aussi daté de la semaine, mais c'est une source privée de sondage ; il n'a pas été retenu. La CCI Vendée a mené une enquête de conjoncture du 20 janvier au 5 février 2026 (801 répondants) : sa date de publication est inconnue, donc elle n'est pas rattachée à une semaine."
+  },
+  {
+    "semaine": "S05",
+    "debut": "2026-01-29",
+    "fin": "2026-02-04",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Application au 1er février 2026 des nouveaux tarifs réglementés de vente d'électricité (TRVE). Le tarif Bleu non résidentiel (≤ 36 kVA) baisse en moyenne de 1,29 % HT (−1,58 % TTC), selon la proposition de la CRE.",
+        "dateEvenement": "2026-02-01",
+        "natureDate": "entree-en-vigueur",
+        "organisme": "CRE / EDF (fournisseur historique)",
+        "url": "https://www.edf.fr/entreprises/decryptages/normes-et-reglementations/trv-fevrier-2026",
+        "titreResultat": "trv fevrier 2026 (EDF Entreprises)",
+        "datePageSelonMoteur": "Le moteur n'a pas donné de date de page. La délibération CRE source est du 14 janvier 2026.",
+        "resumeMoteur": "Selon EDF Entreprises, qui cite la délibération CRE n° 2026-06, le tarif Bleu non résidentiel baisse en moyenne de 1,29 % HT au 1er février 2026, et la part acheminement (TURPE) n'évolue pas à cette date. Hello Watt parle d'une stabilité de l'ensemble des TRVE à −0,83 % TTC (périmètre différent). La contribution tarifaire d'acheminement passe à 15 %. Une hausse de 2,5 % TTC au 1er août 2026 est mentionnée : elle est postérieure et ne doit pas être projetée sur cette semaine.",
+        "publicConcerne": "Professionnels et TPE au tarif Bleu ≤ 36 kVA : commerces, cabinets, ateliers.",
+        "angle": "Facture d'électricité pro au 1er février : qui est concerné (tarif Bleu non résidentiel), ce qui baisse et de combien en moyenne, comment le vérifier sur la prochaine facture. C'est aussi l'occasion de contrôler son éligibilité au tarif réglementé et la puissance souscrite.",
+        "sensibilite": "standard",
+        "confiance": "moyenne",
+        "raisonConfiance": "Les chiffres viennent d'un fournisseur qui cite la délibération CRE, et deux sources concordent sur une légère baisse. Je n'ai pas vu de texte officiel confirmant l'application, et les pourcentages diffèrent selon le périmètre.",
+        "sourcesConcordantes": [
+          "https://www.cre.fr/fileadmin/Documents/Deliberations/2026/260114_2026-06_TRVE_2026.pdf",
+          "https://www.hellowatt.fr/blog/trv-stable-fevrier-2026/",
+          "https://www.moneyvox.fr/energie/actualites/106192/tarif-reglemente-edf-ce-qui-va-changer-en-fevrier-2026"
+        ]
+      },
+      {
+        "actualite": "Période de reconversion (qui remplace Pro-A et Transitions collectives) : deux décrets du 28 janvier 2026, dont le décret n° 2026-39, publiés au JO du 31 janvier 2026, avec entrée en vigueur au 1er février 2026.",
+        "dateEvenement": "2026-01-31",
+        "natureDate": "publication JO (entrée en vigueur le 1er février 2026)",
+        "organisme": "Ministère du Travail (décrets) ; Centre Inffo",
+        "url": "https://www.centre-inffo.fr/site-droit-formation/actualites-droit/periode-de-reconversion-des-precisions-pour-sa-mise-en-oeuvre",
+        "titreResultat": "Période de reconversion : des précisions pour sa mise en oeuvre",
+        "datePageSelonMoteur": "Le moteur n'a pas donné de date de page. Les décrets sont du 28/01/2026 et parus au JORF du 31/01/2026.",
+        "resumeMoteur": "Le moteur indique que les décrets fixent les modalités de la période de reconversion, entrée en vigueur au 1er février 2026. Le dispositif est ouvert à tous les salariés, sans condition d'âge ni de qualification. L'employeur doit signaler à l'OPCO, sous 30 jours et par voie dématérialisée, toute interruption anticipée. Les règles de la Pro-A restent applicables aux avenants conclus avant le 1er janvier 2026. Le salarié peut mobiliser son CPF, avec son accord (50 % en reconversion interne, 100 % en externe, selon AKTO).",
+        "publicConcerne": "Employeurs de TPE/PME qui veulent faire évoluer un salarié vers un autre poste, et salariés en mobilité.",
+        "angle": "Pro-A, c'est fini : ce que l'employeur d'une TPE doit savoir depuis le 1er février pour accompagner un salarié vers un nouveau métier (interne ou externe), avec les démarches auprès de l'OPCO et le signalement en cas d'arrêt anticipé.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Numéro et dates des décrets concordants entre Centre Inffo, ADP, AKTO et Le Monde du droit. Je n'ai pas consulté le texte sur Légifrance.",
+        "sourcesConcordantes": [
+          "https://www.lemondedudroit.fr/social/306-relations-individuelles-de-travail/102820-periode-de-reconversion-modalites-et-financement.html",
+          "https://www.fr.adp.com/ressources/documentations/articles/e/loi-3-ani-la-periode-de-reconversion-entre-en-vigueur.aspx",
+          "https://www.akto.fr/quest-ce-que-la-periode-de-reconversion/"
+        ]
+      },
+      {
+        "actualite": "Publication de la sanction CNIL de 5 M€ contre FRANCE TRAVAIL (décision du 22 janvier 2026) : attaque par ingénierie sociale, usurpation de comptes de conseillers Cap emploi via les procédures de réinitialisation de mots de passe.",
+        "dateEvenement": "2026-01-29",
+        "natureDate": "publication",
+        "organisme": "CNIL",
+        "url": "https://cnil.fr/fr/violation-de-donnees-sanction-5millions-france-travail",
+        "titreResultat": "Violation de données : sanction de 5 millions d'euros à l'encontre de FRANCE TRAVAIL",
+        "datePageSelonMoteur": "Publication du 29 janvier 2026 ; décision du 22 janvier 2026 (selon le moteur).",
+        "resumeMoteur": "Selon le moteur, les attaquants ont accédé au premier trimestre 2024 aux données des personnes inscrites ces 20 dernières années : numéros de sécurité sociale, adresses, téléphones. La CNIL juge insuffisantes les modalités d'authentification des conseillers Cap emploi. Elle enjoint France Travail de justifier ses mesures correctrices, sous astreinte de 5 000 € par jour. Le nombre de personnes concernées diverge selon les sources (36,8 millions selon Cybernews) ; le communiqué CNIL n'en donne pas.",
+        "publicConcerne": "TPE qui gèrent des comptes partenaires ou prestataires (accès à un extranet, un logiciel métier), et tous les dirigeants exposés à des tentatives d'arnaque utilisant les données volées.",
+        "angle": "La faille ne venait pas d'un piratage technique : l'attaquant s'est fait passer pour quelqu'un afin d'obtenir une réinitialisation de mot de passe. Vérifier qui, dans l'entreprise ou chez vos prestataires, peut réinitialiser un accès et sur quelle preuve d'identité. Point distinct du guide déjà publié sur la double authentification.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Source officielle CNIL. Les dates de décision et de publication sont clairement distinguées par le moteur.",
+        "sourcesConcordantes": [
+          "https://www.cnil.fr/fr/node/168109",
+          "https://siecledigital.fr/2026/01/29/france-travail-sanctionne-apres-une-fuite-massive-de-donnees/",
+          "https://www.solutions-numeriques.com/france-travail-sanctionne-par-la-cnil-une-amende-de-5-millions-deuros/"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "AI Act : le règlement fixait au 2 février 2026 la publication par la Commission des lignes directrices sur la classification des systèmes à haut risque (article 6). Selon les résultats, cette échéance a été manquée : le projet n'a été publié que le 19 mai 2026. Ce fait n'est connu que plus tard et ne doit pas être projeté dans S05 ; il n'a pas été retenu comme candidat. Alternative possible si l'on préfère un sujet social : la période de reconversion (confiance élevée)."
+  },
+  {
+    "semaine": "S06",
+    "debut": "2026-02-05",
+    "fin": "2026-02-11",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "ACRE : le décret n° 2026-69 du 6 février 2026 (JO du 8 février) fixe l'exonération à 25 % des cotisations pour les créations et reprises à partir du 1er janvier 2026. Pour les micro-entrepreneurs, la baisse s'applique au 1er juillet 2026 (taux minoré porté de 50 % à 75 % des taux normaux).",
+        "dateEvenement": "2026-02-08",
+        "natureDate": "publication JO (décret du 6 février 2026) ; actualité Entreprendre du 11 février 2026",
+        "organisme": "Gouvernement (décret) / DILA – Entreprendre.service-public.gouv.fr",
+        "url": "https://legifrance.gouv.fr/eli/decret/2026/2/6/CPPS2535327D/jo/texte",
+        "titreResultat": "Décret n° 2026-69 du 6 février 2026 fixant le taux d'exonération prévu à l'article 23 de la loi n° 2025-1403 du 30 décembre 2025 de financement de la sécurité sociale pour 2026 et adaptant le taux de cotisations sociales des micro-entrepreneurs…",
+        "datePageSelonMoteur": "Le décret est du 6 février 2026 et paru au JO du 8 février 2026 selon une source secondaire. L'actualité Entreprendre A18795 est « Publié le 11 février 2026 » selon le moteur.",
+        "resumeMoteur": "Le moteur indique une exonération ACRE limitée à 25 % pour les créations et reprises à partir du 1er janvier 2026. Pour les micro-entrepreneurs, la réduction est décalée au 1er juillet 2026. Depuis le 1er janvier 2026, l'ACRE n'est plus automatique : il faut la demander à l'Urssaf dans les 60 jours suivant l'immatriculation, et elle est réservée à certains publics (demandeurs d'emploi indemnisés, allocataires RSA ou ASS, 18-25 ans, etc.).",
+        "publicConcerne": "Créateurs et repreneurs d'entreprise, futurs micro-entrepreneurs, et accompagnants (experts-comptables, assistantes).",
+        "angle": "Vous créez ou reprenez une activité en 2026 : l'ACRE n'est plus automatique et ne couvre plus que 25 %. Calendrier (création depuis le 1er janvier ; micro-entreprise à partir du 1er juillet), délai de 60 jours pour la demande, et intérêt éventuel à anticiper une date d'immatriculation de micro-entreprise avant le 1er juillet. À vérifier avec l'Urssaf.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Le texte apparaît sur Légifrance (titre exact), Entreprendre en publie un relais daté, et plusieurs sources concordent sur 25 % et sur le 1er juillet 2026. La date du JO (8 février) ne vient que d'une source secondaire.",
+        "sourcesConcordantes": [
+          "https://entreprendre.service-public.gouv.fr/actualites/A18795?lang=fr",
+          "https://www.legifiscal.fr/actualites-fiscales/4422-publication-decret-reduisant-exoneration-acre-createurs-repreneurs-entreprise.html",
+          "https://www.centre-inffo.fr/site-droit-formation/actualites-droit/fixation-du-taux-dexoneration-acre",
+          "https://www.portail-autoentrepreneur.fr/actualites/acre-2026"
+        ]
+      },
+      {
+        "actualite": "La CNIL publie son bilan 2025 des sanctions et mesures correctrices : 259 décisions, dont 83 sanctions (67 en procédure simplifiée), et 486,8 M€ d'amendes, dont 475 M€ pour Google et Shein.",
+        "dateEvenement": "2026-02-09",
+        "natureDate": "publication",
+        "organisme": "CNIL",
+        "url": "https://cnil.fr/fr/bilan-sanctions-2025",
+        "titreResultat": "Sanctions et mesures correctrices : la CNIL présente le bilan 2025",
+        "datePageSelonMoteur": "Publication du 9 février 2026 selon le moteur (relais Siècle Digital du 09/02/2026).",
+        "resumeMoteur": "Le bilan compte 259 décisions : 83 sanctions, 143 mises en demeure, 31 rappels aux obligations et 2 avertissements. Sur les 83 sanctions, 16 ont été prononcées par la formation restreinte et 67 en procédure simplifiée. Les amendes cumulent 486 839 500 €, dont 325 M€ pour Google et 150 M€ pour Shein ; hors ces deux décisions, il reste environ 11,8 M€ pour 81 sanctions. Une source juridique écrit « 87 sanctions », probablement une coquille.",
+        "publicConcerne": "TPE/PME, commerçants, professions libérales.",
+        "angle": "Retenir la procédure simplifiée plutôt que les amendes record : 67 sanctions en 2025 visent surtout des structures modestes (vidéosurveillance, cookies, selon d'autres sources). Les thèmes les plus sanctionnés et les 5 points à vérifier dans une TPE.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Page officielle CNIL et chiffres concordants dans plusieurs relais.",
+        "sourcesConcordantes": [
+          "https://cnil.fr/fr/node/168163",
+          "https://siecledigital.fr/2026/02/09/la-cnil-frappe-fort-en-2025-avec-des-amendes-record/",
+          "https://next.ink/223399/en-2025-487-millions-deuros-damende-de-la-cnil-dont-475-millions-pour-google-et-shein/"
+        ]
+      },
+      {
+        "actualite": "Entreprendre : le prélèvement forfaitaire unique (PFU) passe de 30 % à 31,4 % sur les revenus du capital.",
+        "dateEvenement": "2026-02-10",
+        "natureDate": "publication",
+        "organisme": "DILA – Entreprendre.service-public.gouv.fr",
+        "url": "https://entreprendre.service-public.gouv.fr/actualites/A18796?lang=en",
+        "titreResultat": "Taxation - Evolution of the Single Flat-Rate Levy (SSL)",
+        "datePageSelonMoteur": "« Publié le 10 février 2026 » selon le moteur (version anglaise traduite automatiquement).",
+        "resumeMoteur": "Le moteur indique une hausse du PFU de 30 % à 31,4 % sur les revenus du capital. L'extrait contient une formulation confuse sur les micro-entrepreneurs, probablement une erreur de traduction, à vérifier sur la version française.",
+        "publicConcerne": "Dirigeants de SAS/SASU et SARL qui se versent des dividendes.",
+        "angle": "Rémunération ou dividendes en 2026 : la hausse du PFU change l'arbitrage. Ce qu'il faut demander à son expert-comptable avant l'assemblée d'approbation des comptes.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "La source est officielle, mais je n'ai vu que la version anglaise traduite automatiquement, avec une formulation confuse. Le champ d'application et la date d'effet restent à vérifier.",
+        "sourcesConcordantes": []
+      }
+    ],
+    "recommande": 0,
+    "note": "Le décret ACRE est daté du 6 février et paru au JO du 8 février (source secondaire) ; l'actualité Entreprendre date du 11 février. Les trois dates sont dans la semaine."
+  },
+  {
+    "semaine": "S07",
+    "debut": "2026-02-12",
+    "fin": "2026-02-18",
+    "statut": "SOURCES_INSUFFISANTES",
+    "candidats": [
+      {
+        "actualite": "Décret n° 2026-94 du 13 février 2026 relatif à la modernisation des modalités de communication avec leurs actionnaires de certaines sociétés commerciales (JO du 15 février 2026).",
+        "dateEvenement": "2026-02-15",
+        "natureDate": "publication JO",
+        "organisme": "Gouvernement (Légifrance)",
+        "url": "https://www.legifrance.gouv.fr/jorf/jo/2026/02/15/0039",
+        "titreResultat": "JORF n° 0039 du 15 février 2026 - Légifrance",
+        "datePageSelonMoteur": "JO du 15 février 2026 ; décret du 13 février 2026.",
+        "resumeMoteur": "Le moteur liste au sommaire du JO du 15 février 2026 le décret n° 2026-94 relatif à la modernisation des modalités de communication avec leurs actionnaires de certaines sociétés commerciales. On ignore quelles sociétés sont visées : la synthèse estime qu'il ne vise pas directement les TPE. Le même JO contient le décret n° 2026-93 sur le système de normalisation, sans intérêt pour la cible.",
+        "publicConcerne": "À déterminer : possiblement les sociétés par actions. La pertinence pour les SAS/SASU de TPE n'est pas établie.",
+        "angle": "Seulement si la vérification montre qu'il concerne les SAS ou les petites sociétés : ce qui change pour convoquer et informer ses associés par voie électronique.",
+        "sensibilite": "reglementaire",
+        "confiance": "faible",
+        "raisonConfiance": "Je ne connais que l'intitulé du décret, vu dans un sommaire de JO. Son champ d'application est inconnu et sa pertinence pour la clientèle n'est pas démontrée. Le quota de recherches était épuisé avant toute vérification.",
+        "sourcesConcordantes": []
+      }
+    ],
+    "recommande": null,
+    "note": "Aucune actualité datée de la semaine et clairement utile à la clientèle n'a été trouvée. Ont été cherchés : Entreprendre (aucun article daté du 12 au 18 février n'est remonté), CNIL (rien à la mi-février), Cybermalveillance et ANSSI, Urssaf, impots.gouv.fr, Vendée/CCI, Légifrance (seuls les JO des 13 et 15 février sont remontés ; ceux des 12, 14, 16, 17 et 18 février n'ont pas été examinés). Le quota de recherches web de la session a été atteint pendant la vérification du seul candidat. Pistes à vérifier lors d'une prochaine session : liste des actualités Entreprendre (page 1/5) et impots.gouv.fr « toutes les actualités » filtrées sur la semaine. Ne pas utiliser la loi de finances 2026, promulguée le 19 février (S08)."
+  },
+  {
+    "semaine": "S08",
+    "debut": "2026-02-19",
+    "fin": "2026-02-25",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Promulgation de la loi n° 2026-103 du 19 février 2026 de finances pour 2026, après la décision n° 2026-901 DC du Conseil constitutionnel du même jour. Entreprendre publie le 20 février une actualité sur les sanctions de la facturation électronique.",
+        "dateEvenement": "2026-02-19",
+        "natureDate": "promulgation (publication au JO le 20 février 2026 selon la majorité des sources)",
+        "organisme": "Parlement / Conseil constitutionnel / DILA – Entreprendre",
+        "url": "https://www.legifiscal.fr/actualites-fiscales/4433-publication-loi-finances-2026.html",
+        "titreResultat": "Actualité – publication de la loi de finances 2026 (Legifiscal)",
+        "datePageSelonMoteur": "Le moteur n'a pas donné de date de page. Loi du 19/02/2026 ; JO du 20/02/2026 selon Legifiscal, Goodwin et la presse, mais une source dit 19/02. Selon le moteur, la liste Entreprendre montre une actualité sur les sanctions de la facturation électronique « Published on February 20, 2026 », dont l'URL exacte n'a pas été trouvée.",
+        "resumeMoteur": "Le Conseil constitutionnel a validé l'essentiel du texte. Il a censuré quelques cavaliers : 7 selon Landot Avocats, 8 articles selon LCP. Pour les TPE, les résultats retiennent surtout la facturation électronique : réception obligatoire pour toutes les entreprises au 1er septembre 2026, émission pour les PME et micro-entreprises au 1er septembre 2027, avec des modalités de contrôle et de sanction précisées. Une source secondaire avance 50 € par facture, montant non vérifié. Prolongations sociales citées par Tissot : exonération des pourboires, prise en charge patronale des frais de transport, droit de timbre de 50 € pour saisir les prud'hommes.",
+        "publicConcerne": "Toutes les entreprises, en particulier les TPE et indépendants assujettis à la TVA.",
+        "angle": "Ce n'est pas un énième guide sur la facture électronique : la loi de finances 2026 fixe les amendes en cas de non-respect. Montants, à partir de quand, pour quel manquement (non-réception, non-émission, défaut de transmission des données), et liste des preuves de préparation à garder dès maintenant. Les montants doivent être vérifiés dans le texte publié au JO avant publication.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "La date de promulgation et le numéro de loi concordent dans de nombreuses sources, dont le Conseil constitutionnel via la presse et Banque des Territoires. Le contenu précis des sanctions n'est pas vérifié (montant de 50 € par facture issu d'une seule source secondaire), et l'URL Entreprendre du 20/02 n'a pas été retrouvée.",
+        "sourcesConcordantes": [
+          "https://www.banquedesterritoires.fr/apres-sa-validation-quasi-integrale-par-le-conseil-constitutionnel-le-budget-2026-est-publie",
+          "https://www.goodwinlaw.com/en/insights/publications/2026/02/alerts-practices-tax-loi-de-finances-pour-2026",
+          "https://lcp.fr/actualites/budget-2026-le-conseil-constitutionnel-valide-l-essentiel-de-la-loi-de-finances-431533",
+          "https://blog.landot-avocats.net/2026/02/19/le-conseil-constitutionnel-havre-de-paix-pour-la-loi-de-finances-pour-2026-apres-la-tempete-parlementaire/",
+          "https://www.cegid.com/fr/blog/nouveautes-fiscales-loi-de-finances-2026/",
+          "https://entreprendre.service-public.gouv.fr/actualites?lang=en"
+        ]
+      },
+      {
+        "actualite": "La CNIL soumet à consultation publique un projet de recommandation sur les outils de « rejeu de session » (session replay), qui enregistrent et analysent le comportement des visiteurs d'un site.",
+        "dateEvenement": "2026-02-25",
+        "natureDate": "publication (ouverture de consultation)",
+        "organisme": "CNIL",
+        "url": "https://cnil.fr/fr/tag/Consultation",
+        "titreResultat": "cnil.fr (page de tag « consultation »)",
+        "datePageSelonMoteur": "Date du 25 février 2026 relevée par le moteur sur une page de liste. La consultation est aujourd'hui close.",
+        "resumeMoteur": "Le moteur indique que la CNIL a soumis à consultation, le 25 février 2026, un projet de recommandation sur les outils de rejeu de session, qui permettent de suivre et d'analyser le comportement en ligne des utilisateurs. La date de clôture n'est pas indiquée.",
+        "publicConcerne": "TPE qui ont un site web ou une boutique en ligne avec des outils d'analyse comportementale (cartes de chaleur, enregistrement de sessions).",
+        "angle": "Votre outil d'analyse d'audience enregistre-t-il les sessions de vos visiteurs ? Ce que la CNIL envisage d'encadrer, et les vérifications à faire avec le prestataire web : consentement, masquage des champs de saisie.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Source CNIL, mais vue seulement à travers une page de liste. Ni le titre ni l'URL exacts de la consultation ne sont connus. À l'époque, il s'agit d'un projet, pas d'une règle en vigueur.",
+        "sourcesConcordantes": []
+      }
+    ],
+    "recommande": 0,
+    "note": "Contradiction sur la date de publication au JO de la loi de finances : 20 février pour la majorité des sources (Legifiscal, Goodwin, presse), 19 février pour une source. Les deux dates sont dans la semaine. Le nombre d'articles censurés diverge aussi (7 cavaliers selon Landot, 8 articles selon LCP). L'actualité Entreprendre sur le transport et les pourboires (A18726) a été publiée le 31/12/2025 et mise à jour le 20/02/2026 : c'est une mise à jour, pas une publication."
+  },
+  {
+    "semaine": "S09",
+    "debut": "2026-02-26",
+    "fin": "2026-03-04",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Entreprendre publie le récapitulatif « Loi de finances 2026 : ce qui change pour les entreprises » : fiscalité (seuils micro, zones de revitalisation rurale, fin des ZFU-TE), facturation électronique (amendes modifiées) et transport.",
+        "dateEvenement": "2026-02-27",
+        "natureDate": "publication",
+        "organisme": "DILA – Entreprendre.service-public.gouv.fr",
+        "url": "https://entreprendre.service-public.gouv.fr/actualites/A18821?lang=en",
+        "titreResultat": "Recap - 2026 Finance Law: What's Changing for companies",
+        "datePageSelonMoteur": "« Publié le 27 février 2026 » selon le moteur (version anglaise traduite automatiquement).",
+        "resumeMoteur": "Selon l'extrait, les seuils de la micro-entreprise et un seuil de revenus viennent d'être modifiés. La loi prolonge le classement de communes en zone de revitalisation rurale et met fin aux ZFU-TE. La réforme de la facturation électronique s'applique à partir du 1er septembre 2026, et les amendes en cas de non-conformité changent.",
+        "publicConcerne": "TPE, micro-entrepreneurs, entreprises situées en ZRR ou en ZFU-TE.",
+        "angle": "Les 5 mesures de la loi de finances 2026 qui touchent une TPE vendéenne, avec pour chacune qui est concerné, à partir de quand, quoi faire. À articuler avec S08 pour ne pas faire doublon : S08 traite les amendes de la facture électronique, S09 le panorama.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Source officielle avec date de publication explicite. Je n'ai vu que la version anglaise traduite automatiquement : les termes (seuils micro, etc.) sont à vérifier sur la version française avant rédaction.",
+        "sourcesConcordantes": [
+          "https://www.legifiscal.fr/actualites-fiscales/4433-publication-loi-finances-2026.html",
+          "https://www.banquedesterritoires.fr/apres-sa-validation-quasi-integrale-par-le-conseil-constitutionnel-le-budget-2026-est-publie"
+        ]
+      },
+      {
+        "actualite": "La CNIL, l'ANSSI, le PEReN et Inria lancent l'appel à manifestation d'intérêt PANAME pour tester un outil d'audit de la confidentialité des modèles d'IA.",
+        "dateEvenement": "2026-02-26",
+        "natureDate": "annonce (appel à manifestation d'intérêt)",
+        "organisme": "CNIL / ANSSI / PEReN / Inria",
+        "url": "https://www.cnil.fr/fr/actualites?page=3",
+        "titreResultat": "Actualités et communiqués (cnil.fr, page de liste)",
+        "datePageSelonMoteur": "Date du 26 février 2026 relevée par le moteur sur une page de liste.",
+        "resumeMoteur": "Le moteur indique que la CNIL, l'ANSSI, le PEReN et Inria lancent un appel à manifestation d'intérêt pour tester un outil d'audit qui évalue la confidentialité des modèles d'IA. Aucun autre détail n'est disponible.",
+        "publicConcerne": "Surtout les éditeurs et développeurs d'IA. Concerne peu la clientèle cible.",
+        "angle": "Peu adapté à la clientèle. À n'utiliser qu'en brève dans un article plus large sur l'usage de l'IA, ce que le guide existant couvre déjà.",
+        "sensibilite": "standard",
+        "confiance": "faible",
+        "raisonConfiance": "Une seule mention sur une page de liste, et pertinence faible pour la cible.",
+        "sourcesConcordantes": []
+      },
+      {
+        "actualite": "Entreprendre : quels nouveaux avantages pour les CSE en 2026 ?",
+        "dateEvenement": "2026-02-26",
+        "natureDate": "publication",
+        "organisme": "DILA – Entreprendre.service-public.gouv.fr",
+        "url": "https://entreprendre.service-public.gouv.fr/actualites/A18812?lang=en",
+        "titreResultat": "Taxation - What are the new benefits for ESCs in 2026?",
+        "datePageSelonMoteur": "26 février 2026 selon la synthèse du moteur (« later pieces cover the CSE benefits »), sans mention « Publié le » visible.",
+        "resumeMoteur": "Le moteur ne donne que le titre : les nouveaux avantages ou exonérations liés aux CSE en 2026. Le contenu n'apparaît pas.",
+        "publicConcerne": "Entreprises d'au moins 11 salariés dotées d'un CSE. Concerne peu les très petites structures.",
+        "angle": "Faible pour la cible : à garder en réserve.",
+        "sensibilite": "reglementaire",
+        "confiance": "faible",
+        "raisonConfiance": "La date est incertaine (synthèse du moteur), le contenu inconnu, et la pertinence limitée pour les TPE.",
+        "sourcesConcordantes": []
+      }
+    ],
+    "recommande": 0,
+    "note": "Une actualité de presse spécialisée datée du 26/02/2026 indique que l'Urssaf transmettra au plus tard le 15 mars 2026 les effectifs moyens 2025 utiles à la DOETH. Elle n'a pas été retenue : la source est secondaire, sans URL précise, et le sujet concerne les entreprises de 20 salariés et plus."
+  },
+  {
+    "semaine": "S10",
+    "debut": "2026-03-05",
+    "fin": "2026-03-11",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Consultation sur le projet de guide HAS-CNIL « Accompagner le bon usage des systèmes d'intelligence artificielle en contexte de soins » (version provisoire datée de février 2026), destiné aux établissements et aux professionnels libéraux de santé.",
+        "dateEvenement": "2026-03-05",
+        "natureDate": "publication (ouverture de consultation)",
+        "organisme": "HAS / CNIL",
+        "url": "https://affairesjuridiques.aphp.fr/textes/guide-has-cnil-accompagner-le-bon-usage-des-systemes-dintelligence-artificielle-en-contexte-de-soins-fevrier-2026/?pdf=636636",
+        "titreResultat": "guide has cnil accompagner le bon usage des systemes dintelligence artificielle en contexte de soins fevrier 2026",
+        "datePageSelonMoteur": "Le document porte la mention « février 2026 » (version provisoire). La consultation est datée du 5 mars 2026 selon une page de liste CNIL relevée par le moteur. Il y a donc deux dates à distinguer.",
+        "resumeMoteur": "Le guide comprend dix fiches couvrant les étapes de déploiement d'un système d'IA, ainsi que deux fiches sur la gouvernance et l'IA générative. Les recommandations sont classées en quatre niveaux selon leur impact sur la qualité et la sécurité des soins. C'est une version provisoire, sans caractère définitif.",
+        "publicConcerne": "Professions libérales de santé (médecins, kinés, infirmiers, dentistes) et leurs secrétariats, qui utilisent ou envisagent un outil d'IA (transcription de consultation, aide à la rédaction).",
+        "angle": "Cabinet de santé et outils d'IA : ce que la HAS et la CNIL proposent avant d'adopter un assistant de transcription ou de rédaction, notamment les questions à poser au fournisseur et l'information des patients. Il faut préciser que le texte est en consultation et non définitif. L'angle est distinct du guide existant sur l'IA générative, car il est sectoriel et fondé sur un document officiel.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Le document est identifié via un relais (AP-HP, affaires juridiques), pas sur has-sante.fr ni cnil.fr. La date du 5 mars vient d'une page de liste CNIL vue à travers le moteur.",
+        "sourcesConcordantes": [
+          "https://www.cnil.fr/fr/actualite?page=10"
+        ]
+      },
+      {
+        "actualite": "La Banque de France publie les statistiques de défaillances d'entreprises à fin janvier 2026 : 68 961 défaillances en cumul sur 12 mois (+4,1 %), une hausse qui concerne très majoritairement les microentreprises.",
+        "dateEvenement": "2026-03-05",
+        "natureDate": "publication",
+        "organisme": "Banque de France",
+        "url": "https://www.banque-france.fr/fr/statistiques/entreprises/defaillances-dentreprises-2026-01",
+        "titreResultat": "Défaillances d'entreprises - 2026-01",
+        "datePageSelonMoteur": "Le chemin du PDF contient « 20260305 » (5 mars 2026), mais la synthèse du moteur indique une mise en ligne le 6 mars 2026. Les deux dates sont dans la semaine.",
+        "resumeMoteur": "À fin janvier 2026, on compte 68 961 défaillances sur douze mois glissants, contre 68 602 à fin décembre 2025 (données révisées), soit +4,1 % sur un an. La hausse concerne très majoritairement les microentreprises. L'hébergement-restauration et l'immobilier reculent sur douze mois.",
+        "publicConcerne": "Dirigeants de TPE exposés au risque d'impayés clients ou de défaillance de fournisseurs.",
+        "angle": "Les défaillances de microentreprises continuent de monter : comment surveiller la santé de ses clients et fournisseurs (signaux faibles, BODACC, retards de paiement) et protéger sa trésorerie. Angle distinct des guides existants sur les délais de paiement et la relance, centré sur la prévention à partir du chiffre publié.",
+        "sensibilite": "standard",
+        "confiance": "elevee",
+        "raisonConfiance": "Source primaire officielle (Banque de France) et chiffres concordants avec Option Finance. Seul le jour de publication diverge (5 ou 6 mars).",
+        "sourcesConcordantes": [
+          "https://www.banque-france.fr/system/files/webstats/Defaillances_dentreprises_en_France_202601_20260305/FR_Stat_Info_Defaillances_d%27Entreprises_202601.pdf",
+          "https://www.optionfinance.fr/actualites/le-nombre-de-defaillances-de-pme-continue-daugmenter.html"
+        ]
+      }
+    ],
+    "recommande": 1,
+    "note": "Recommandation : le candidat Banque de France (confiance élevée, sujet transversal pour toute la clientèle). Le guide HAS-CNIL est une bonne alternative pour les professions libérales de santé, mais il reste provisoire. Exclus parce qu'ils tombent hors semaine : le rapport d'activité 2025 de Cybermalveillance.gouv.fr (26 mars 2026) et les statistiques Banque de France de février (avril 2026)."
+  }
+]

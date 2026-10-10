@@ -11,9 +11,13 @@ interface Props {
   title: string;
   description: string;
   ogImage?: string;
+  /** Texte alternatif de l'image de partage, quand la page fournit la sienne */
+  ogImageAlt?: string;
   ogType?: 'website' | 'article';
   canonical?: string;
   noindex?: boolean;
+  /** Avec noindex : laisser les robots suivre les liens de la page (liste encore vide, par exemple) */
+  suivreLiens?: boolean;
   bodyClass?: string;
   datePublished?: string;
   dateModified?: string;
@@ -27,9 +31,11 @@ const {
   title,
   description,
   ogImage = '/images/og-brittassist.jpg',
+  ogImageAlt = 'BrittAssist, assistance de direction externalisée par Brittany Dreano',
   ogType = 'website',
   canonical,
   noindex = false,
+  suivreLiens = false,
   bodyClass = '',
   datePublished,
   dateModified,
@@ -62,7 +68,7 @@ const published = datePublished ?? publicationPour(cleanPath);
 
     <title>{title}</title>
     <meta name="description" content={description} />
-    {noindex && <meta name="robots" content="noindex,nofollow" />}
+    {noindex && <meta name="robots" content={suivreLiens ? 'noindex,follow' : 'noindex,nofollow'} />}
     {brouillon && !noindex && <meta name="robots" content="noindex,follow" />}
     {brouillon && <meta name="statut-editorial" content="brouillon" />}
     <link rel="canonical" href={canonicalUrl} />
@@ -76,14 +82,14 @@ const published = datePublished ?? publicationPour(cleanPath);
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={ogImageAbs} />
-    <meta property="og:image:alt" content="BrittAssist, assistance de direction externalisée par Brittany Dreano" />
+    <meta property="og:image:alt" content={ogImageAlt} />
     <meta property="og:locale" content="fr_FR" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageAbs} />
-    <meta name="twitter:image:alt" content="BrittAssist, assistance de direction externalisée par Brittany Dreano" />
+    <meta name="twitter:image:alt" content={ogImageAlt} />
 
     <meta name="author" content="Brittany Dreano" />
 
@@ -168,7 +174,8 @@ const published = datePublished ?? publicationPour(cleanPath);
           isPartOf: { '@id': `${siteUrl}/#website` },
           about: { '@id': `${siteUrl}/#business` },
           inLanguage: 'fr-FR',
-          datePublished: published,
+          // Une page sans date de publication (article encore en brouillon) n'en déclare aucune.
+          ...(published ? { datePublished: published } : {}),
           dateModified: lastModified,
           primaryImageOfPage: ogImageAbs,
           ...(dateRelecture

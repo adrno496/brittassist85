@@ -22,6 +22,12 @@ npm run qa:navigateur  # contrôles en navigateur réel (voir plus bas)
 npm run qa:similarite  # similarité champ par champ sur la série « secrétariat externalisé »
 npm run docs:seo       # régénère docs/seo/02, 03 et 09
 npm run docs:secretariat  # régénère les tableaux de docs/seo-secretariat-50/
+
+npm run articles:check    # rubrique Articles : fiches, registre, plan des 41 semaines
+npm run article:nouveau   # « Fais un nouvel article » : état, --verifier, --creer (voir AGENTS.md)
+npm run article:publier   # simulation de publication ; --confirmer pour inscrire au registre
+npm run docs:articles     # régénère docs/articles/PLAN_EDITORIAL_2026.md et SOURCES_VERIFIEES.md
+npm run qa:menu           # menu et lien « Articles » en navigateur réel (Playwright)
 ```
 
 ## Structure
@@ -29,7 +35,10 @@ npm run docs:secretariat  # régénère les tableaux de docs/seo-secretariat-50/
 ```
 src/
 ├── layouts/BaseLayout.astro      head, SEO, JSON-LD global, en-tête, pied de page
-├── components/                   Header, Footer, Fil (fil d’Ariane), Blocs, Button, Monogram, WorkDemo
+├── components/                   Header, Footer, Fil (fil d’Ariane), Blocs, Button, Monogram, WorkDemo, ListeArticles, CarteArticle
+├── content.config.ts             collection Astro « articles » : schéma des fiches
+├── content/articles/*.md         les articles, un fichier par article (le nom du fichier est le slug)
+├── lib/articles.ts               chargement des articles pour les gabarits, garde-fou de build
 ├── lib/seo.ts                    sérialisation JSON-LD, ancres, fil d’Ariane, dates
 ├── data/
 │   ├── guides.ts                 les 12 premiers guides + le modèle de contenu
@@ -44,8 +53,10 @@ src/
 │   ├── publication.mjs           qui est publié, qui est brouillon
 │   ├── mode.mjs                  lecture de BROUILLONS=1, et rien d’autre
 │   ├── dates.mjs                 dates de mise à jour : sitemap et JSON-LD
+│   ├── articles.mjs              calendrier des créneaux et règles de publication des articles
+│   ├── regles-editoriales.mjs    formulations interdites, communes aux guides et aux articles
 ├── pages/                        pages fixes, hubs et gabarits dynamiques
-└── styles/global.css             une seule feuille
+└── styles/                       global.css, refonte-v5.css ; articles.css pour la seule rubrique Articles
 api/contact.js                    fonction Vercel : validation et envoi Brevo
 public/                           polices, images, robots.txt, llms.txt, consent.js
 scripts/                          contrôles de qualité (voir ci-dessous)
@@ -97,12 +108,25 @@ N’inscrire dans l’objet `relectures` qu’une page relue par Brittany Dreano
 
 Publier un pilier (`/guides/<slug-du-dossier>`) fait apparaître le dossier dans l’index des guides et dans le pied de page. La page `/methode-editoriale` passe elle aussi par les registres.
 
+## La rubrique « Articles »
+
+Une actualité datée par semaine, utile aux dirigeants, indépendants et TPE : `/articles` (liste) et `/articles/<slug>` (article). Lien « Articles » dans le menu, après « Guides ».
+
+- Chaque article est une fiche Markdown de `src/content/articles/`, validée par le schéma de `src/content.config.ts`.
+- **Même règle de publication que les guides** : un article n'est généré par `npm run build` que s'il est inscrit dans `publications.mjs` (ou `relectures.mjs`). Sinon, c'est un brouillon : `npm run build:apercu` seulement, en `noindex`, hors sitemap.
+- Les dates ne se confondent pas : semaine couverte (`periodeDebut`, `periodeFin`), jour de l'actualité (`dateEvenement`), rédaction (`createdAt`), mise en ligne (`datePublished`, égale à la date du registre). Un article écrit après sa semaine s'affiche comme une rétrospective.
+- Un article inscrit au registre qui enfreint une règle (source primaire non ouverte, sujet réglementaire sans validation, date incohérente) **fait échouer le build**.
+- Sans article publié, `/articles` est en `noindex,follow` et hors sitemap.
+- Plan des 41 semaines (1er janvier – 8 octobre 2026) : [docs/articles/PLAN_EDITORIAL_2026.md](docs/articles/PLAN_EDITORIAL_2026.md). Procédure « Fais un nouvel article » : [AGENTS.md](AGENTS.md) et [docs/articles/PROCEDURE_NOUVEL_ARTICLE.md](docs/articles/PROCEDURE_NOUVEL_ARTICLE.md).
+
+**État au 10 octobre 2026 :** huit articles rédigés en brouillon (`SOURCES_A_VERIFIER`), aucun publié. Leurs sources ont été repérées par moteur de recherche mais n'ont pas pu être ouvertes ; voir [docs/articles/RAPPORT_IMPLEMENTATION.md](docs/articles/RAPPORT_IMPLEMENTATION.md).
+
 ## Contrôles de qualité
 
 | Script | Ce qu’il vérifie |
 | --- | --- |
 | `scripts/content-gate.mjs` | Les fiches, avant le build : requêtes principales distinctes, cadrage complet, liens vers des routes existantes, règle de droit sans source, promesses de résultat |
-| `scripts/seo-audit.mjs` | Le HTML construit : titres, descriptions, H1, canonical, Open Graph, JSON-LD, CSP, liens et ancres, pages orphelines, profondeur, similarité, sitemap, robots, redirections |
+| `scripts/seo-audit.mjs` | Le HTML construit : titres, descriptions, H1, canonical, Open Graph, JSON-LD (dont `BlogPosting` : dates cohérentes, visibles, non futures), CSP, liens et ancres, pages orphelines, profondeur, similarité, sitemap (dont `<lastmod>` des articles), robots, redirections |
 | `scripts/quality-gate.mjs` | Branche l’audit sur le build : un blocage fait échouer `npm run build` |
 | `scripts/browser-check.mjs` | Navigateur réel, cinq largeurs d’écran : console, CSP, débordement, axe-core WCAG 2.2 AA, clavier, consentement |
 | `scripts/check-sources.mjs` | Les liens externes répondent-ils encore ? |
@@ -111,6 +135,11 @@ Publier un pilier (`/guides/<slug-du-dossier>`) fait apparaître le dossier dans
 | `scripts/images.mjs` | Régénère les variantes WebP des photos |
 | `scripts/docs-seo.mjs` | Régénère les tableaux de `docs/seo/` |
 | `scripts/docs-secretariat.mjs` | Régénère les tableaux de `docs/seo-secretariat-50/` |
+| `scripts/articles-check.mjs` | Les articles avant le build : dates, semaine, sources ouvertes, statut et registre, relecture et approbation attestées, unicité avec les guides, plan des 41 semaines |
+| `scripts/articles-new.mjs` | État de la rubrique, proximité d'une intention avec l'existant, création idempotente d'une fiche squelette |
+| `scripts/articles-publier.mjs` | Inscription contrôlée d'un article au registre, à la date du jour ; rien sans `--confirmer` |
+| `scripts/docs-articles.mjs` | Régénère le plan éditorial et le tableau des sources |
+| `scripts/menu-check.mjs` | Menu et lien « Articles » : largeurs 320 à 1920 px, zoom 200 %, clavier |
 
 Le quality gate tourne aussi sur Vercel, puisqu’il fait partie du build. Contournement d’urgence, à ne pas laisser en place : `SEO_GATE=off npm run build`.
 
@@ -136,5 +165,6 @@ PLAYWRIGHT_ROOT=/chemin/vers/un/dossier/avec/node_modules node scripts/browser-c
 - `docs/seo/` — intentions, matrice des 100 pages, maillage, audit technique, indexation
 - `docs/seo-secretariat-50/` — la série « secrétariat externalisé » : état initial, inventaire, vivier d’idées, cannibalisation, plan des 50 pages, publication par lots, maillage, similarité, rapports
 - `docs/sentinel/` — audits réalisés avec la boîte à outils SENTINEL
+- `docs/articles/` — rubrique Articles : plan des 41 semaines, procédure, sources, dossiers de recherche, rapport de mise en place
 
 — Site conçu et développé par Axel Dreano · [axdia.fr](https://www.axdia.fr)

@@ -1,0 +1,469 @@
+[
+  {
+    "semaine": "S11",
+    "debut": "2026-03-12",
+    "fin": "2026-03-18",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "La CNIL publie sa recommandation finale sur les serveurs mandataires (proxys) web filtrants, après une consultation publique tenue du 28 juillet au 30 septembre 2025",
+        "dateEvenement": "2026-03-13",
+        "natureDate": "publication",
+        "organisme": "CNIL",
+        "url": "https://www.cnil.fr/fr/recommandation-serveur-mandataire-web-filtrant",
+        "titreResultat": "Serveur mandataire web filtrant : les recommandations de la CNIL",
+        "datePageSelonMoteur": "13 mars 2026 selon la synthèse du moteur. Une page de liste des actualités de la CNIL affiche aussi le 19 mars 2026 pour ce même titre (date contradictoire, peut-être un artefact de la liste)",
+        "resumeMoteur": "La recommandation vise à la fois les utilisateurs et les fournisseurs de proxys web filtrants. L'objectif est de promouvoir des outils de cybersécurité conformes au RGPD, dès leur conception et dans leur usage. Ces outils aident à respecter l'obligation de sécurité de l'article 32 du RGPD, mais ils traitent eux-mêmes des données personnelles. Selon un résumé secondaire (Mondaq), les journaux seraient conservés de 6 mois à 1 an, et une offre SaaS exigerait un contrat de sous-traitance (art. 28) ainsi qu'un contrôle des transferts hors UE.",
+        "publicConcerne": "TPE/PME et cabinets libéraux qui filtrent la navigation web de leurs postes, directement ou par un prestataire informatique ou une solution SaaS ; infogéreurs",
+        "angle": "« Votre prestataire filtre la navigation de vos postes ? Ce que la CNIL demande depuis le 13 mars 2026 » : vérifier si un proxy ou un filtrage DNS/web est actif, combien de temps les journaux de connexion sont gardés, si le contrat avec le prestataire couvre ce traitement, et où les données sont hébergées. Il faut partir de cette recommandation datée, pas reprendre le guide général sur la sous-traitance RGPD.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Page officielle de la CNIL et PDF de synthèse de la consultation (cnil.fr/sites/default/files/2026-03/) concordants pour mars 2026. Le moteur indique le 13 mars, mais une liste montre le 19 mars. Le détail chiffré (durées de conservation) vient seulement d'un résumé Mondaq que je n'ai pas lu.",
+        "sourcesConcordantes": [
+          "https://cnil.fr/fr/node/168310",
+          "https://www.cnil.fr/sites/default/files/2026-03/synthese_consult-web-filtrant.pdf",
+          "https://cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-29-janvier-2026",
+          "https://webiis10.mondaq.com/france/data-protection/1763362/the-cnil-publishes-its-recommendation-on-web-filtering-proxies"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Un seul candidat solide. Panorama de la cybermenace 2025 de l'ANSSI publié le 11 mars 2026 (https://cyber.gouv.fr/actualites/panorama-de-la-cybermenace-2025/) : c'est la veille de la semaine (S10), donc écarté, même si la presse l'a repris le 16 mars (siecledigital.fr). Aucune actualité datée de la semaine n'a été trouvée sur entreprendre.service-public.gouv.fr, ni pour l'URSSAF ou la CCI Vendée. Je n'ai pas pu ouvrir les pages (WebFetch indisponible) : toutes les informations viennent des titres et résumés du moteur."
+  },
+  {
+    "semaine": "S12",
+    "debut": "2026-03-19",
+    "fin": "2026-03-25",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "La CNIL publie une note sur les dispositifs de captation sonore couplés à la vidéoprotection : enregistrer le son avec une caméra reste interdit, mais il existe des exceptions encadrées",
+        "dateEvenement": "2026-03-20",
+        "natureDate": "publication",
+        "organisme": "CNIL",
+        "url": "https://www.cnil.fr/fr/videoprotection",
+        "titreResultat": "Vidéoprotection (rubrique CNIL) ; repris par Clubic : « Vos conversations peuvent-elles être enregistrées par une caméra de surveillance ? La CNIL répond »",
+        "datePageSelonMoteur": "Contradiction : une recherche donne le 20 mars 2026, une autre le 25 mars 2026 (liste d'actualités de la CNIL). Les deux dates tombent dans la semaine. Je n'ai pas vu l'URL exacte de la note.",
+        "resumeMoteur": "La CNIL rappelle que la loi interdit d'enregistrer le son avec une caméra de vidéoprotection. Selon Kurrant, un micro intégré ou relié automatiquement à la vidéosurveillance ne peut pas capter le son dans un lieu ouvert au public. Des dispositifs audio autonomes et strictement encadrés resteraient possibles dans certains lieux intérieurs. Toute captation sur la voie publique est exclue.",
+        "publicConcerne": "Commerçants, artisans avec boutique ou atelier recevant du public, cabinets libéraux et TPE équipés de caméras (notamment de caméras grand public avec micro)",
+        "angle": "« Votre caméra enregistre-t-elle aussi le son ? » : la note de la CNIL de mars 2026 sert de point de départ pour vérifier les réglages du micro sur les caméras, l'affichage et l'information des clients et salariés, et le cas des dispositifs sonores autonomes. Il faut s'en tenir à ce que dit la note et la lire avant de rédiger, car les exceptions n'apparaissent pas dans les extraits.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Le sujet et la règle de principe concordent (CNIL, Clubic, Kurrant). La date exacte varie entre le 20 et le 25 mars, et l'URL précise de la note n'est pas apparue. Les exceptions ne sont décrites que par des sources secondaires.",
+        "sourcesConcordantes": [
+          "https://cnil.fr/fr/actualites?page=2",
+          "https://www.clubic.com/actualite-605614-vos-conversations-peuvent-elles-etre-enregistrees-par-une-camera-de-surveillance-la-cnil-repond.html",
+          "https://kurrant.com/kurrantly-news/france-draws-a-hard-line-on-audio-capture-in-video-monitored-public-spaces/",
+          "https://blog.landot-avocats.net/2026/03/30/videoprotection-intelligente-algorithmique-et-autres-dispositifs-analogues-y-compris-les-captations-de-vibrations-un-etat-du-droit-au-30-mars-2026-videos-et-article/"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Semaine pauvre en sources officielles indexées : un seul candidat, de confiance moyenne. Écartés : 1) un guide « contrôle URSSAF 2026 » daté du 25 mars sur un blog (finalib.fr), qui n'est pas une source officielle et que le site couvre déjà ; 2) la nomination d'un directeur à la CNIL (25 mars), sans intérêt pour la clientèle ; 3) l'actualité CVAE de Soprec (25 mars), qui vient d'un cabinet et non d'une annonce officielle. Je n'ai trouvé aucun décret visant les TPE dans le JO de la semaine. Avant publication, il faut vérifier la date exacte et l'URL de la note de la CNIL."
+  },
+  {
+    "semaine": "S13",
+    "debut": "2026-03-26",
+    "fin": "2026-04-01",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Cybermalveillance.gouv.fr publie son rapport d'activité 2025 et les tendances de la menace : plus de 500 000 victimes assistées, soit +20 % par rapport à 2024",
+        "dateEvenement": "2026-03-26",
+        "natureDate": "publication",
+        "organisme": "Cybermalveillance.gouv.fr (GIP ACYMA)",
+        "url": "https://www.cybermalveillance.gouv.fr/medias/2026/03/CP-RA2026.pdf",
+        "titreResultat": "CP RA2026 (communiqué de presse, rapport d'activité)",
+        "datePageSelonMoteur": "Communiqué daté du 26 mars 2026 (fichier rangé dans /medias/2026/03/)",
+        "resumeMoteur": "À l'occasion de son rapport d'activité, le dispositif présente les tendances de la menace observées en 2025. Plus de 500 000 victimes ont été assistées (environ 504 000 parcours d'assistance selon le communiqué), soit +20 % sur un an, et le site a reçu 5,1 millions de visiteurs uniques. Selon une source secondaire, l'hameçonnage serait devenu la première menace et les violations de données auraient environ doublé. Ces chiffres ne sont pas vérifiés dans le rapport.",
+        "publicConcerne": "Tous les dirigeants de TPE/PME, indépendants et professions libérales",
+        "angle": "« Ce que révèle le bilan 2025 de Cybermalveillance.gouv.fr pour une petite structure » : partir des tendances publiées le 26 mars 2026 pour en tirer 3 ou 4 priorités concrètes de la saison, et renvoyer vers les guides existants (faux RIB, double authentification) au lieu de les redire. Il ne faut citer que les chiffres présents dans le communiqué officiel.",
+        "sensibilite": "standard",
+        "confiance": "elevee",
+        "raisonConfiance": "Le communiqué officiel est daté et repris par Maire-info, avec le rapport complet sur vie-publique.fr. Les écarts sont mineurs (« plus de 500 000 » contre « environ 504 000 »). Les statistiques de menace par type ne viennent que du Journal de l'économie.",
+        "sourcesConcordantes": [
+          "https://www.maire-info.com/cybermalveillance/fraude-au-virement-cyberharcelement-piratage-face-%C3%A0-une-menace-cyber-qui-se-diversifie-les-collectivites-ont-besoin-d'assistance-article-30628",
+          "https://www.vie-publique.fr/files/rapport/pdf/302708.pdf",
+          "https://www.journaldeleconomie.fr/cyberattaques-en-france-en-2025-explosion-des-demandes-daide-que-faire-pour-se-proteger/"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Deux autres pistes ont été rattachées à S14 parce que leur date de publication ou d'effet tombe dans S14 : l'arrêté du 1er avril 2026 sur le régime invalidité-décès des indépendants (signé dans S13 mais publié au JO du 4 avril) et la hausse du prix de l'ETA britannique (selon le moteur, annoncée sur service-public.gouv.fr le 27 mars 2026, sans URL visible, et effective le 8 avril). La CCI Vendée et la Région n'ont rien publié de daté dans la semaine selon le moteur. Pages non ouvertes : informations issues du moteur uniquement."
+  },
+  {
+    "semaine": "S14",
+    "debut": "2026-04-02",
+    "fin": "2026-04-08",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "La CNIL annonce ses thèmes de contrôle prioritaires pour 2026 : recrutement, répertoire électoral unique et fédérations sportives",
+        "dateEvenement": "2026-04-03",
+        "natureDate": "annonce",
+        "organisme": "CNIL",
+        "url": "https://cnil.fr/fr/controles-prioritaires-2026",
+        "titreResultat": "Les contrôles en 2026 : recrutement, répertoire électoral unique et fédérations sportives",
+        "datePageSelonMoteur": "3 avril 2026 (également cité comme « communiqué CNIL du 3 avril 2026 » par legisocial.fr)",
+        "resumeMoteur": "Les thèmes prioritaires représentent environ 20 % des contrôles de la CNIL. Pour le recrutement, trois ans après le guide de janvier 2023, la CNIL vérifiera les décisions automatisées, l'information des candidats et les durées de conservation. Les contrôles visent en priorité les grandes entreprises et les cabinets de recrutement. La CNIL a aussi annoncé de nouvelles communications sur la cybersécurité avec son rapport annuel de mai.",
+        "publicConcerne": "Employeurs qui recrutent, en particulier ceux qui passent par un cabinet ou un logiciel de tri de candidatures. Les TPE sont concernées indirectement, la cible prioritaire étant les grandes entreprises et les cabinets.",
+        "angle": "« Recrutement : la CNIL annonce ses contrôles 2026, ce que doit vérifier une TPE qui recrute » : que dit l'annonce du 3 avril, qui est visé en priorité (ne pas exagérer le risque pour une TPE), et 3 vérifications pratiques (information des candidats, durée de conservation des CV, outils de présélection automatique). C'est différent du guide « première embauche ».",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Page officielle de la CNIL datée, reprise par legisocial.fr et dpo-consulting.com, avec un contenu cohérent.",
+        "sourcesConcordantes": [
+          "https://cnil.fr/fr/node/168316",
+          "https://www.legisocial.fr/actualites-sociales/7873-controles-2026-cnil-recrutement-ligne-mire.html",
+          "https://www.dpo-consulting.com/fr-fr/blog/priorites-cnil-2026-les-nouveaux-axes-de-controle-a-anticiper-pour-votre-conformite-rgpd"
+        ]
+      },
+      {
+        "actualite": "Royaume-Uni : le prix de l'autorisation de voyage électronique (ETA) passe de 16 £ à 20 £",
+        "dateEvenement": "2026-04-08",
+        "natureDate": "entree-en-vigueur",
+        "organisme": "Home Office (Royaume-Uni), relayé par la presse voyage ; selon le moteur, une page de l'agenda de service-public.gouv.fr publiée le 27 mars 2026 le mentionne aussi",
+        "url": "https://visasnews.com/royaume-uni-le-prix-de-leta-passe-a-20-le-8-avril-2026/",
+        "titreResultat": "Royaume-Uni : le prix de l'ETA passe à 20 £ le 8 avril 2026",
+        "datePageSelonMoteur": "Date de l'article non affichée ; la date d'effet du 8 avril 2026 figure dans le titre",
+        "resumeMoteur": "Le tarif de l'ETA passe de 16 £ à 20 £ (environ 23 €) le 8 avril 2026, dans le cadre d'une révision générale des frais d'immigration britanniques. Une demande déposée avant cette date permettait d'économiser 4 £. Selon Ulysse, l'obligation est strictement appliquée depuis le 25 février 2026, y compris pour les enfants. Un article Ulysse plus ancien annonçait une hausse dès fin février, ce que contredisent les articles plus récents.",
+        "publicConcerne": "Dirigeants, commerciaux et indépendants qui se déplacent au Royaume-Uni (salons, clients, Eurostar, ferries depuis l'Ouest)",
+        "angle": "« Déplacement à Londres : l'ETA coûte 20 £ depuis le 8 avril 2026 » : ce qui change (tarif, date), qui doit en avoir une, quand la demander avant un déplacement, et comment l'intégrer à la checklist de préparation et aux notes de frais. C'est une actualité précise, différente du guide général sur les déplacements à l'étranger.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Plusieurs médias spécialisés concordent (VisasNews, Ulysse, Le Petit Journal, TourMaG), mais aucune page GOV.UK ni service-public n'apparaît avec une URL. Une source ancienne donnait une autre date, sans doute dépassée.",
+        "sourcesConcordantes": [
+          "https://lepetitjournal.com/lisbonne/actualites/prix-eta-royaume-uni-double-avec-nouvelle-hausse-avril-438610",
+          "https://www.tourmag.com/Royaume-Uni-encore-une-nouvelle-hausse-du-prix-de-l-ETA_a130208.html",
+          "https://ulysse.com/news/?p=49199"
+        ]
+      },
+      {
+        "actualite": "Publication au JO de l'arrêté du 1er avril 2026 approuvant le règlement du régime d'assurance invalidité-décès des travailleurs indépendants",
+        "dateEvenement": "2026-04-04",
+        "natureDate": "publication",
+        "organisme": "Gouvernement (Journal officiel) ; régime des travailleurs indépendants",
+        "url": "https://www.lemondedudroit.fr/avocat/103877-travailleurs-independants-approbation-du-reglement-du-regime-invalidite-deces-2.html",
+        "titreResultat": "Travailleurs indépendants : approbation du règlement du régime invalidité-décès",
+        "datePageSelonMoteur": "Le moteur indique une publication de l'arrêté au JO du 4 avril 2026 ; la date de l'article n'est pas affichée",
+        "resumeMoteur": "Un arrêté du 1er avril 2026 approuve le règlement du régime d'assurance invalidité-décès des travailleurs indépendants. Il a été publié au Journal officiel du 4 avril 2026. Le moteur ne donne pas le contenu des modifications.",
+        "publicConcerne": "Travailleurs indépendants (artisans, commerçants, professions libérales relevant du régime concerné)",
+        "angle": "À n'utiliser que si le contenu de l'arrêté est vérifié sur Légifrance : « Prévoyance des indépendants : ce que change le règlement invalidité-décès approuvé en avril 2026 ». Sinon, le contenu est trop incertain pour un article.",
+        "sensibilite": "reglementaire",
+        "confiance": "faible",
+        "raisonConfiance": "Une seule source secondaire. Le contenu des changements est inconnu et le texte n'a pas été vu sur Légifrance.",
+        "sourcesConcordantes": []
+      }
+    ],
+    "recommande": 0,
+    "note": "Le candidat CNIL est le plus solide. L'ETA est une bonne alternative de type « déplacements », à recouper sur GOV.UK. EES (système d'entrée/sortie Schengen) : pleine opération annoncée pour le 9 ou le 10 avril 2026 selon les sources (Commission ou ministère de l'Intérieur), ce qui la place en S15. Cette mesure concerne seulement les ressortissants de pays tiers, donc elle intéresse peu la clientèle, sauf pour accueillir des visiteurs étrangers. Pages non ouvertes."
+  },
+  {
+    "semaine": "S15",
+    "debut": "2026-04-09",
+    "fin": "2026-04-15",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Ouverture du service de déclaration en ligne des revenus 2025, utilisé aussi par les indépendants au régime réel pour leurs cotisations",
+        "dateEvenement": "2026-04-09",
+        "natureDate": "ouverture-dispositif",
+        "organisme": "DGFiP (impots.gouv.fr)",
+        "url": "https://www.toutsurmesfinances.com/actualites/a/impots-2026-la-declaration-en-ligne-ouverte-le-9-avril",
+        "titreResultat": "Impôts 2026 : la déclaration en ligne ouverte le 9 avril",
+        "datePageSelonMoteur": "Date de l'article non affichée. Une page economie.gouv.fr (date-reception-avis-impot) porte la mention « Écrit le 09/04/2026 ».",
+        "resumeMoteur": "La plupart des sources situent l'ouverture au jeudi 9 avril 2026, date que la DGFiP aurait confirmée à ToutSurMesFinances. Les dates limites en ligne seraient le 21 mai (départements 01 à 19), le 28 mai (20 à 54) et le 4 juin (55 à 976, donc la Vendée), et le 19 mai pour le papier. Les indépendants au réel font une déclaration unique, fiscale et sociale (2042-C-PRO). Les micro-entrepreneurs gardent leurs déclarations URSSAF.",
+        "publicConcerne": "Indépendants, professions libérales, artisans et dirigeants assimilés ; en Vendée (85), échéance en ligne annoncée au 4 juin",
+        "angle": "« Déclaration 2026 des revenus 2025 : ce que l'indépendant doit faire et avant quelle date en Vendée » : déclaration unique fiscale et sociale pour les non-micro, cas des micro-entrepreneurs, effet sur les acomptes de prélèvement à la source de septembre 2026 et sur la régularisation des cotisations, et pièces à réunir. Les dates doivent être vérifiées sur impots.gouv.fr avant publication.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Le 9 avril est majoritaire, mais quelles-aides.fr et yourincomecalculator.com donnent le 10 avril. Les dates limites sont décalées d'un jour selon certaines sources (22 et 29 mai, 5 juin ; papier le 20 mai). Aucune page impots.gouv.fr n'est apparue avec ces dates.",
+        "sourcesConcordantes": [
+          "https://www.economie.gouv.fr/particuliers/date-reception-avis-impot",
+          "https://www.actu-juridique.fr/fiscalite/fiscal-finances/ouverture-de-la-campagne-de-limpot-sur-le-revenu-2026/",
+          "https://www.comparateurbanque.com/?p=168234",
+          "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/11-bis_decla_fusion_fisc_183a196.pdf"
+        ]
+      },
+      {
+        "actualite": "La CNIL publie sa recommandation finale sur les pixels de suivi dans les courriels (examinée en séance plénière le 12 mars 2026), applicable dès sa publication",
+        "dateEvenement": "2026-04-14",
+        "natureDate": "publication",
+        "organisme": "CNIL",
+        "url": "https://cnil.fr/fr/tag/Recommandations",
+        "titreResultat": "Recommandations (liste de la CNIL) ; Baker McKenzie Connect On Tech (étiquette CNIL)",
+        "datePageSelonMoteur": "La liste de la CNIL affiche une publication au 14 avril 2026. Baker McKenzie cite une « recommandation du 12 mars 2026, publiée le 14 avril 2026 et applicable à compter de cette date ». Le 12 mars correspond à l'examen en séance plénière.",
+        "resumeMoteur": "La recommandation porte sur les pixels de suivi intégrés aux courriers électroniques. C'est une version finale issue d'une consultation publique, qui précise le cadre applicable aux acteurs concernés. Le moteur ne détaille pas son contenu.",
+        "publicConcerne": "TPE, indépendants et commerçants qui envoient des newsletters ou des campagnes d'e-mailing avec un outil de routage (Mailchimp, Brevo, etc.) et mesurent les taux d'ouverture",
+        "angle": "« Newsletters : la CNIL encadre les pixels de suivi depuis le 14 avril 2026 » : qui est concerné, ce qu'il faut vérifier dans son outil d'e-mailing et dans la politique de confidentialité. Le texte doit être lu avant de rédiger, car le contenu n'est pas visible dans les extraits.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "La date de publication concorde entre la liste de la CNIL et le cabinet d'avocats. L'URL exacte de la recommandation n'est pas apparue et le contenu n'a pas été vu.",
+        "sourcesConcordantes": [
+          "https://connectontech.bakermckenzie.com/tag/cnil/",
+          "https://www.cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-12-mars-2026"
+        ]
+      },
+      {
+        "actualite": "Adoption définitive de la loi de simplification de la vie économique (Assemblée nationale le 14 avril, Sénat le 15 avril 2026). Elle n'est pas encore en vigueur.",
+        "dateEvenement": "2026-04-15",
+        "natureDate": "adoption-parlementaire",
+        "organisme": "Parlement",
+        "url": "https://www.actu-juridique.fr/affaires/loi-de-simplification-de-la-vie-economique-promesse-tenue-ou-catalogue-de-bonnes-intentions/",
+        "titreResultat": "Loi de simplification de la vie économique : promesse tenue ou catalogue de bonnes intentions ?",
+        "datePageSelonMoteur": "Date de l'article non affichée. Les dates d'adoption (14 et 15 avril) viennent de la synthèse du moteur.",
+        "resumeMoteur": "Après une commission mixte paritaire, le texte a été adopté définitivement le 14 avril par l'Assemblée et le 15 avril 2026 par le Sénat. Mesures citées pour les TPE : gratuité de la clôture du compte bancaire professionnel, simplification de la commande publique, baux commerciaux, assurance et cession. Le Conseil constitutionnel a été saisi le 21 avril. Les étapes suivantes (décision du 21 mai, publication au JO le 27 mai) sont postérieures à la semaine.",
+        "publicConcerne": "TPE/PME, commerçants (baux commerciaux), entreprises répondant aux marchés publics",
+        "angle": "Possible seulement comme « loi votée, pas encore en vigueur, ce qu'il faut surveiller ». Il ne faut présenter aucune mesure comme applicable : à cette date, le texte devait encore passer devant le Conseil constitutionnel, qui en a ensuite censuré une partie. Il vaut mieux traiter ce sujet plus tard.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Les dates d'adoption concordent (Légifrance, DAJ de Bercy, presse juridique), mais l'intérêt d'un article daté de S15 est faible : des mesures ont été censurées ensuite et certaines attendent des décrets.",
+        "sourcesConcordantes": [
+          "https://www.economie.gouv.fr/daj/loi-de-simplification-de-la-vie-economique-une-censure-limitee-qui-preserve-leconomie-generale-de-la-loi",
+          "https://www.legifrance.gouv.fr/cons/id/CONSTEXT000054148613",
+          "https://lexisveille.fr/simplification-de-la-vie-economique-la-loi-est-publiee"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Le candidat 0 est le plus utile pour la clientèle, à condition de recouper les dates sur impots.gouv.fr (contradictions du 9 ou 10 avril et des échéances décalées d'un jour). Le candidat 1 (pixels de suivi) est une bonne alternative, plus originale. EES : pleine opération au 9 ou 10 avril 2026 selon les sources (interieur.gouv.fr), mais l'intérêt est faible pour la clientèle (ressortissants de pays tiers). Pages non ouvertes."
+  },
+  {
+    "semaine": "S16",
+    "debut": "2026-04-16",
+    "fin": "2026-04-22",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "L'URSSAF met à disposition des guides pratiques pour la déclaration des revenus 2025 des travailleurs indépendants, avec des informations sur l'échéancier et le calcul des cotisations (relais Bpifrance Création)",
+        "dateEvenement": "2026-04-17",
+        "natureDate": "publication",
+        "organisme": "URSSAF (relayé par Bpifrance Création)",
+        "url": "https://bpifrance-creation.fr/entrepreneur/actualites/declaration-revenus-lurssaf-accompagne-independants",
+        "titreResultat": "Déclaration de revenus : l'Urssaf accompagne les indépendants",
+        "datePageSelonMoteur": "17/04/2026 (date du relais Bpifrance Création ; la date de mise en ligne des guides sur urssaf.fr n'est pas connue)",
+        "resumeMoteur": "Brève indiquant que l'URSSAF propose aux travailleurs indépendants des guides pratiques pour leur déclaration de revenus 2025, ainsi que des informations sur l'échéancier et le calcul des cotisations. Le moteur n'a pas affiché le détail des guides.",
+        "publicConcerne": "Travailleurs indépendants hors micro-entrepreneurs (déclaration unique) et micro-entrepreneurs pour les informations sur les cotisations",
+        "angle": "« Après la déclaration, vos cotisations : comprendre la régularisation et le nouvel échéancier URSSAF » : la déclaration des revenus 2025 sert à recalculer les cotisations, puis l'URSSAF publie un nouvel échéancier dans l'espace en ligne. Cet angle complète S15 sans le répéter et doit renvoyer aux guides officiels de l'URSSAF.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Une seule source datée, qui relaie l'URSSAF ; le communiqué original n'a pas été vu sur urssaf.fr. Le mécanisme de déclaration unique est confirmé par la brochure IR 2026 de la DGFiP et par economie.gouv.fr.",
+        "sourcesConcordantes": [
+          "https://www.economie.gouv.fr/entreprises/limpot-sur-les-benefices-ir-et/independants-comprendre-la-declaration-sociale-et",
+          "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/11-bis_decla_fusion_fisc_183a196.pdf"
+        ]
+      },
+      {
+        "actualite": "INSEE : les créations d'entreprises augmentent encore en mars 2026 (+2,6 %), en particulier les immatriculations de micro-entrepreneurs (+4,6 %)",
+        "dateEvenement": "2026-04-17",
+        "natureDate": "publication",
+        "organisme": "INSEE",
+        "url": "https://www.insee.fr/fr/statistiques/8990207",
+        "titreResultat": "Informations Rapides : créations d'entreprises (IR114_CreaE_avril26)",
+        "datePageSelonMoteur": "Publication de l'INSEE du 17 avril 2026 selon le moteur (fichier IR114_CreaE_avril26)",
+        "resumeMoteur": "En données corrigées, les créations totales augmentent de 2,6 % en mars 2026, après +0,8 % en février. Les immatriculations de micro-entrepreneurs progressent de 4,6 %, tandis que les créations de sociétés reculent de 0,9 %. Sur douze mois, la hausse est de 9,3 %. Les chiffres de mars ont ensuite été révisés (+2,2 %, et +4,3 % pour les micro-entrepreneurs, selon la publication du 13 mai).",
+        "publicConcerne": "Créateurs et jeunes entreprises ; intérêt indirect pour la clientèle",
+        "angle": "Faible intérêt pratique. À utiliser éventuellement comme introduction d'un article sur les premières démarches administratives d'un nouvel indépendant, sans redire les guides existants.",
+        "sensibilite": "standard",
+        "confiance": "moyenne",
+        "raisonConfiance": "Publication officielle datée, mais les chiffres ont été révisés ensuite et l'intérêt pour la clientèle est faible.",
+        "sourcesConcordantes": [
+          "https://www.lecoindesentrepreneurs.fr/statistiques-creations-entreprises-mars-2026/"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Semaine faible. Le candidat 0 doit être recoupé avec urssaf.fr, et il risque de doubler l'article S15 s'ils sont trop proches. Écarté : la saisine du Conseil constitutionnel sur la loi de simplification (21 avril 2026), qui est une étape de procédure peu utile seule ; une seconde saisine a eu lieu le 28 avril. Pages non ouvertes."
+  },
+  {
+    "semaine": "S17",
+    "debut": "2026-04-23",
+    "fin": "2026-04-29",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Facturation électronique : selon le baromètre OpinionWay pour l'Ordre des experts-comptables et l'ECMA (7e vague), 38 % des entreprises n'ont encore engagé aucune action à quatre mois de l'obligation de réception du 1er septembre 2026",
+        "dateEvenement": "2026-04-29",
+        "natureDate": "publication",
+        "organisme": "Ordre des experts-comptables / ECMA (étude OpinionWay)",
+        "url": "https://www.legifiscal.fr/actualites-fiscales/4560-facturation-electronique-38-entreprises-ne-sont-pretes.html",
+        "titreResultat": "Facturation électronique : 38 % des entreprises ne sont pas prêtes",
+        "datePageSelonMoteur": "Legifiscal date le rapport du 29 avril 2026. Une question écrite à l'Assemblée nationale indique une publication le 28 avril 2026 (contradiction d'un jour, les deux dates tombent dans la semaine).",
+        "resumeMoteur": "Le sondage a été réalisé en février 2026. 62 % des entreprises ont engagé des démarches ou sont opérationnelles, 38 % n'ont rien entrepris, et 35 % seulement ont choisi leur plateforme agréée (Le Journal des Entreprises). L'écart se creuse entre PME et ETI structurées et entrepreneurs individuels isolés. Rappel du calendrier : réception obligatoire pour tous au 1er septembre 2026, émission pour les TPE/PME au 1er septembre 2027.",
+        "publicConcerne": "TPE, indépendants et micro-entrepreneurs assujettis à la TVA, en particulier ceux sans salarié ni expert-comptable",
+        "angle": "« Plus d'un tiers des entreprises n'a encore rien fait : votre plan d'action pour le 1er septembre 2026 » : partir du baromètre d'avril 2026 pour proposer un compte à rebours concret (choisir sa plateforme agréée, vérifier son inscription à l'annuaire, organiser la réception des factures fournisseurs). Le guide général sur la facturation électronique n'est pas redit, seulement l'échéance de réception.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Plusieurs sources concordent sur les chiffres (Legifiscal, Le Journal des Entreprises, Previssima, question écrite AN), mais la date varie d'un jour et le communiqué de l'Ordre ou de l'ECMA n'a pas été vu.",
+        "sourcesConcordantes": [
+          "https://www.lejournaldesentreprises.com/article/facturation-electronique-38-des-entreprises-ne-sont-pas-pretes-mais-letat-fera-preuve-de-tolerance-2146577",
+          "https://www.previssima.fr/actualite/facturation-electronique-pres-de-4-entreprises-sur-10-en-retard-a-lapproche-de-lecheance.html",
+          "https://questions.assemblee-nationale.fr/q17/17-15027QE.htm"
+        ]
+      },
+      {
+        "actualite": "Bpifrance Création publie les chiffres régionaux des créations d'entreprises de mars 2026 : les Pays de la Loire figurent parmi les régions les plus dynamiques",
+        "dateEvenement": "2026-04-23",
+        "natureDate": "publication",
+        "organisme": "Bpifrance Création (Observatoire de la création d'entreprise)",
+        "url": "https://bpifrance-creation.fr/entrepreneur/actualites/creations-dentreprises-mars-2026",
+        "titreResultat": "Les créations d'entreprise en France et dans les régions en mars 2026",
+        "datePageSelonMoteur": "23 avril 2026",
+        "resumeMoteur": "La croissance de mars a concerné tous les statuts juridiques et tous les types de territoires, en particulier les petites villes et les communes urbaines denses. Elle a été particulièrement forte en Pays de la Loire, en Bourgogne-Franche-Comté et dans le quart sud-est. Bpifrance cite 113 000 créations au niveau national, alors qu'une autre source donne 107 663 créations brutes d'après l'INSEE (écart non expliqué).",
+        "publicConcerne": "Créateurs et jeunes entreprises de Vendée et des Pays de la Loire",
+        "angle": "Actualité locale : « Création d'entreprise en Pays de la Loire : un début 2026 dynamique, et les premières obligations à ne pas manquer ». L'intérêt pratique est limité et le chiffre national est contradictoire.",
+        "sensibilite": "standard",
+        "confiance": "moyenne",
+        "raisonConfiance": "Page datée d'un organisme public. Le chiffre national diffère de l'INSEE (113 000 contre 107 663) et aucune donnée propre à la Vendée n'est visible.",
+        "sourcesConcordantes": [
+          "https://bpifrance-creation.fr/observatoire/actualites/creations-dentreprises-mars-2026",
+          "https://www.lecoindesentrepreneurs.fr/statistiques-creations-entreprises-mars-2026/"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Écarté : la fiche les-aides.fr « Pays de la Loire Commerce - Artisanat », mise à jour le 29 avril 2026. Ce n'est qu'une date de mise à jour par un agrégateur, sans annonce de lancement. Seconde saisine du Conseil constitutionnel le 28 avril : procédure, sans intérêt. Pages non ouvertes."
+  },
+  {
+    "semaine": "S18",
+    "debut": "2026-04-30",
+    "fin": "2026-05-06",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Décret n° 2026-340 du 30 avril 2026 relatif aux formalités des entreprises, publié au JO du 5 mai 2026 et entré en vigueur le 6 mai 2026",
+        "dateEvenement": "2026-05-06",
+        "natureDate": "entree-en-vigueur",
+        "organisme": "Gouvernement (Journal officiel) ; fiche DILA sur entreprendre.service-public.gouv.fr",
+        "url": "https://entreprendre.service-public.gouv.fr/actualites/A18904",
+        "titreResultat": "Vie de l'entreprise : Décret du 30 avril 2026, quelles évolutions en matière de formalités d'entreprise ?",
+        "datePageSelonMoteur": "Selon un résultat, l'article d'Entreprendre est publié le 12 mai 2026 (après la publication au JO du 5 mai). Le décret a été signé le 30 avril, publié le 5 mai et est en vigueur depuis le 6 mai 2026.",
+        "resumeMoteur": "Pour les cessions de parts de sociétés civiles, l'opposabilité est alignée sur les sociétés commerciales : déposer les statuts modifiés suffit, le dépôt de l'acte de cession n'est plus obligatoire. Les commerçants et artisans qui reprennent un fonds par succession, acquisition ou donation doivent déclarer l'ancien exploitant au RNE. Les sociétés soumises à la certification de durabilité doivent déclarer le certificateur. Le décret prévoit aussi le dépôt d'extraits de certains actes et précise les effets d'une radiation d'office sur le RNE.",
+        "publicConcerne": "Associés et gérants de sociétés civiles (SCI, SCM, cabinets libéraux en société civile), artisans et commerçants qui reprennent un fonds (notamment par succession), sociétés soumises au reporting de durabilité",
+        "angle": "« Cession de parts de SCI, reprise d'un fonds familial : ce que change le décret du 30 avril 2026 depuis le 6 mai » : avant/après pour la cession de parts de société civile (pièces à déposer, procédure en cas de statuts non mis à jour, mise en demeure et délai de 8 jours), informations à fournir au RNE lors d'une reprise, et liste de pièces à préparer.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Les sources concordent (fiche DILA, Bulletin Joly Sociétés et L'Essentiel Droit des contrats via labase-lextenso, LegalNews, lemondedudroit). Un seul résumé affirme que l'article d'Entreprendre « ne concerne que les micro-entrepreneurs », ce qui contredit toutes les autres sources et semble erroné. Texte non vu sur Légifrance.",
+        "sourcesConcordantes": [
+          "https://www.lemondedudroit.fr/affaires/273-societes/104200-formalites-des-entreprises-2.html",
+          "https://www.labase-lextenso.fr/bulletin-joly-societes/2026-n6/publication-d-un-decret-relatif-aux-formalites-des-entreprises-BJS204p9",
+          "https://www.labase-lextenso.fr/l-essentiel-droit-des-contrats/2026-n7/decret-n-2026-340-du-30-avril-2026-relatif-aux-formalites-des-entreprises-DCO203p5",
+          "https://presseagence.fr/paris-decret-du-30-avril-2026-les-evolutions-en-matiere-de-formalites-dentreprise/"
+        ]
+      },
+      {
+        "actualite": "Étude OpinionWay pour Tiime auprès de 607 dirigeants de TPE de moins de 20 salariés : 5 entrepreneurs sur 10 ne seraient pas prêts pour la facturation électronique en septembre 2026",
+        "dateEvenement": "2026-05-04",
+        "natureDate": "publication",
+        "organisme": "Tiime (éditeur de logiciel) / OpinionWay",
+        "url": "https://blog.tiime.fr/facturation-electronique-2026-etude-tpe-france",
+        "titreResultat": "Facturation électronique 2026 : étude TPE France",
+        "datePageSelonMoteur": "Article de blog daté du 04/05/2026 ; enquête réalisée en mars 2026",
+        "resumeMoteur": "Le panel compte 607 dirigeants d'entreprises de moins de 20 salariés, interrogés en mars 2026. 5 sur 10 ne seraient pas prêts pour septembre 2026, 66 % pensent que la réforme alourdira leur charge administrative, 53 % ne souhaitent pas partager leurs données avec l'État et 20 % y voient une opportunité.",
+        "publicConcerne": "TPE et indépendants",
+        "angle": "Doublon partiel du candidat S17. À utiliser seulement en complément chiffré, en précisant qu'il s'agit d'une étude commanditée par un éditeur.",
+        "sensibilite": "reglementaire",
+        "confiance": "faible",
+        "raisonConfiance": "Source commerciale (éditeur), sans communiqué indépendant visible. À ne pas confondre avec la seconde enquête Tiime d'août 2026.",
+        "sourcesConcordantes": []
+      }
+    ],
+    "recommande": 0,
+    "note": "Également dans la semaine : l'échéance légale papier de la liasse fiscale (exercice clos le 31/12/2025) fixée au 5 mai 2026, avec un délai de 15 jours en EDI jusqu'au 20 mai. Elle est traitée en S20, où tombe l'échéance réelle pour la plupart des entreprises. Je n'ai trouvé aucune obligation nouvelle entrant en vigueur le 1er mai 2026. Pages non ouvertes."
+  },
+  {
+    "semaine": "S19",
+    "debut": "2026-05-07",
+    "fin": "2026-05-13",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "AI Act : accord politique provisoire entre le Parlement européen et le Conseil sur le « Digital Omnibus » IA, qui reporte des échéances du règlement européen sur l'IA",
+        "dateEvenement": "2026-05-07",
+        "natureDate": "annonce",
+        "organisme": "Parlement européen et Conseil de l'UE",
+        "url": "https://www.whitecase.com/insight-alert/eu-agrees-digital-omnibus-deal-simplify-ai-rules",
+        "titreResultat": "EU agrees Digital Omnibus deal to simplify AI rules",
+        "datePageSelonMoteur": "Accord conclu dans la nuit du 6 au 7 mai 2026 ; date de l'article White & Case non affichée. Le communiqué officiel du Conseil n'est pas apparu dans les résultats.",
+        "resumeMoteur": "Les systèmes à haut risque de l'annexe III (dont RH et recrutement, éducation, infrastructures critiques) sont reportés au 2 décembre 2027, et ceux intégrés à des produits (annexe I) au 2 août 2028. Les bacs à sable réglementaires sont décalés à août 2027. Selon des cabinets, l'obligation de marquage de l'article 50(2) passe du 2 août au 2 décembre 2026, et la création de contenus intimes non consentis par IA devient interdite. L'accord devait encore être adopté formellement.",
+        "publicConcerne": "Dirigeants et TPE/PME qui utilisent ou déploient des outils d'IA, notamment pour le recrutement ou la relation client",
+        "angle": "« AI Act : ce que l'accord du 7 mai 2026 reporte, et ce qui ne bouge pas » : nouveau calendrier pour une TPE utilisatrice (non fournisseuse) d'outils d'IA, en rappelant qu'il s'agit d'un accord provisoire à ce stade. Les étapes ultérieures (vote du Parlement le 16 juin, publication au JO de l'UE en juillet) ne doivent pas figurer comme acquises dans un article daté de S19. C'est différent du guide « IA générative et données confidentielles ».",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Date du 7 mai concordante selon plusieurs cabinets (White & Case, Mondaq, Simmons & Simmons, Matheson, Sidley) et la presse française (Banque des Territoires, JDN), mais pas de source officielle UE vue. Contradiction : verifywise.ai dit que les obligations de transparence de l'article 50 s'appliquent depuis le 2 août 2026, alors que des cabinets indiquent que l'article 50(2) est reporté au 2 décembre 2026. Le statut d'adoption diffère aussi selon les sources.",
+        "sourcesConcordantes": [
+          "https://www.mondaq.com/ireland/new-technology/1786126/provisional-agreement-reached-on-ai-digital-omnibus-regulation",
+          "https://www.simmons-simmons.com/en/publications/cmoveo6ke00icuxskpgueb0od/ai-omnibus-update",
+          "https://www.banquedesterritoires.fr/ai-act-des-delais-supplementaires-pour-la-mise-en-conformite-des-ia-haut-risque",
+          "https://verifywise.ai/fr/blog/eu-ai-act-omnibus-what-changed"
+        ]
+      },
+      {
+        "actualite": "Entreprendre.service-public.gouv.fr publie sa fiche sur le décret du 30 avril 2026 relatif aux formalités des entreprises",
+        "dateEvenement": "2026-05-12",
+        "natureDate": "publication",
+        "organisme": "DILA (entreprendre.service-public.gouv.fr)",
+        "url": "https://entreprendre.service-public.gouv.fr/actualites/A18904",
+        "titreResultat": "Décret du 30 avril 2026 : quelles évolutions en matière de formalités d'entreprise ?",
+        "datePageSelonMoteur": "Publié le 12 mai 2026 selon un seul résumé du moteur",
+        "resumeMoteur": "Fiche de vulgarisation officielle sur le décret n° 2026-340 (voir S18) : cessions de parts de sociétés civiles, déclaration de l'origine du fonds au RNE, déclaration du certificateur de durabilité.",
+        "publicConcerne": "Voir S18",
+        "angle": "Solution de repli si le décret n'est pas traité en S18 : même angle, avec la fiche officielle comme source principale.",
+        "sensibilite": "reglementaire",
+        "confiance": "faible",
+        "raisonConfiance": "Date de la fiche donnée par un seul résumé, qui contient aussi une affirmation douteuse (« ne concerne que les micro-entrepreneurs »). Doublon de S18.",
+        "sourcesConcordantes": []
+      }
+    ],
+    "recommande": 0,
+    "note": "INSEE, publication du 13 mai 2026 (créations d'avril : -6,3 %) : intérêt faible, écartée. Le Digital Omnibus a ensuite été voté par le Parlement le 16 juin, puis publié au JO de l'UE le 24 juillet 2026 selon une seule source (règlement 2026/1744). Ces faits sont postérieurs et ne doivent pas être projetés dans S19. Pages non ouvertes."
+  },
+  {
+    "semaine": "S20",
+    "debut": "2026-05-14",
+    "fin": "2026-05-20",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "La CNIL publie son rapport annuel 2025 : 20 150 plaintes (record), 323 contrôles, 83 sanctions pour près de 487 M€",
+        "dateEvenement": "2026-05-18",
+        "natureDate": "publication",
+        "organisme": "CNIL",
+        "url": "https://cnil.fr/fr/rapport-annuel-2025",
+        "titreResultat": "Rapport annuel : le bilan et les actions marquantes de la CNIL en 2025",
+        "datePageSelonMoteur": "18 mai 2026 selon le site officiel. Le PDF porte « Date de publication : Mai 2026 » et se trouve dans /sites/default/files/2026-05/.",
+        "resumeMoteur": "En 2025, la CNIL a reçu 20 150 plaintes (environ +10 %), mené 323 contrôles et rendu 259 décisions, dont 83 sanctions pour près de 487 M€. Deux sanctions pèsent pour l'essentiel du montant (Google 325 M€ et Shein 150 M€ selon une source secondaire non vérifiée). D'après des commentateurs, la cybersécurité est en tête des priorités.",
+        "publicConcerne": "Tous les responsables de traitement : TPE/PME, professions libérales, indépendants",
+        "angle": "« Rapport CNIL 2025 : plaintes record, et ce que ça change pour une petite structure » : les plaintes portent souvent sur l'exercice des droits (accès, effacement, prospection). Il s'agit de vérifier comment on répond à une demande de droits, sans redire le guide sur la sous-traitance RGPD. Il faut rappeler que les montants records concernent de grands groupes.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Page officielle et PDF datés, repris par leto.legal et solutions-numeriques. Contradiction : un site tiers (legiscope.com) parlait d'un rapport annuel « publié en mars 2026 », ce que démentent la page et le PDF officiels. La répartition Google/Shein ne vient que de Luxgap.",
+        "sourcesConcordantes": [
+          "https://cnil.fr/sites/default/files/2026-05/rapport_annuel_2025.pdf",
+          "https://cnil.fr/en/annual-report-2025",
+          "https://www.leto.legal/news/cnil-rapport-annuel-2025-bilan-controles-cybersecurite"
+        ]
+      },
+      {
+        "actualite": "Échéance de télétransmission (EDI) de la liasse fiscale et de la déclaration de résultats pour les exercices clos le 31 décembre 2025 (échéance légale le 5 mai, plus 15 jours en EDI)",
+        "dateEvenement": "2026-05-20",
+        "natureDate": "echeance",
+        "organisme": "DGFiP",
+        "url": "https://www.legifiscal.fr/actualites-fiscales/4503-declaration-resultats-liasse-fiscale-echeance-20-mai-2026.html",
+        "titreResultat": "Déclaration de résultats / liasse fiscale : échéance au 20 mai 2026",
+        "datePageSelonMoteur": "Date de l'article non affichée",
+        "resumeMoteur": "L'échéance légale est fixée au 2e jour ouvré suivant le 1er mai, soit le 5 mai 2026. La télétransmission bénéficie de 15 jours supplémentaires, jusqu'au 20 mai 2026. Pour un exercice décalé, le délai est de 3 mois après la clôture, plus 15 jours en EDI. Une source isolée mentionne le 31 mai pour les formulaires 2031 et 2035, sans confirmation.",
+        "publicConcerne": "Entreprises à l'IS, BIC et BNC au réel (professions libérales 2035, artisans et commerçants 2031), avec exercice clos le 31/12/2025",
+        "angle": "« Liasse fiscale : dernier délai le 20 mai 2026 » : qui est concerné (2065, 2031, 2035), lien avec la déclaration de revenus des indépendants (report sur la 2042-C-PRO), et ce que le dirigeant doit transmettre à son expert-comptable dans les derniers jours. Les dates doivent être vérifiées sur impots.gouv.fr.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Plusieurs sources concordent (Legifiscal, Hayot Expertise, L-expert-comptable.com), mais aucune page impots.gouv.fr ne figure dans les résultats, et une source isolée diverge pour le 31 mai.",
+        "sourcesConcordantes": [
+          "https://hayot-expertise.fr/blog/date-limite-depot-liasse-fiscale-2026",
+          "https://www.l-expert-comptable.com/a/37136-les-grandes-echeances-fiscales-des-professionnels.html"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Aussi dans la semaine : la date limite de la déclaration de revenus papier (19 mai 2026 selon la plupart des sources, 20 mai selon quelles-aides.fr). Elle est liée à S15 et ne mérite pas d'article séparé. L'échéance en ligne de la Vendée (4 juin) tombe hors de la période. La sanction IQVIA (26 mai) est hors période. Pages non ouvertes."
+  }
+]

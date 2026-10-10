@@ -1,0 +1,619 @@
+[
+  {
+    "semaine": "S21",
+    "debut": "2026-05-21",
+    "fin": "2026-05-27",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Publication au Journal officiel de la loi n° 2026-403 du 26 mai 2026 de simplification de la vie économique, après la décision du Conseil constitutionnel n° 2026-903 DC du 21 mai 2026 (censure partielle).",
+        "dateEvenement": "2026-05-27",
+        "natureDate": "publication",
+        "organisme": "Parlement / Journal officiel (Conseil constitutionnel le 21 mai)",
+        "url": "https://www.labase-lextenso.fr/breves/jo-publication-de-la-loi-sur-la-simplification-de-la-vie-economique-BREVEBO425",
+        "titreResultat": "JO : publication de la loi sur la simplification de la vie économique (Lextenso)",
+        "datePageSelonMoteur": "Date de page non affichée ; le résumé du moteur indique « L. n° 2026-403, 26 mai 2026 … JO, 27 mai 2026 ».",
+        "resumeMoteur": "La loi a été promulguée le 26 mai 2026 et publiée au JO du 27 mai, après une décision du Conseil constitutionnel du 21 mai. Une partie des dispositions est entrée en vigueur le 28 mai 2026, d'autres attendent un décret ou une deuxième vague au 1er janvier 2027. Les résumés citent pour les TPE : mensualisation possible des loyers commerciaux à la demande du locataire, dépôt de garantie plafonné à trois mois, relevé annuel gratuit des frais bancaires, clôture gratuite du compte pro, résiliation facilitée de certains contrats d'assurance après un an. La facturation électronique n'y figure pas.",
+        "publicConcerne": "Commerçants et artisans locataires d'un local commercial, TPE et indépendants (banque, assurance), dirigeants envisageant une cession.",
+        "angle": "« Loi de simplification du 26 mai 2026 : les 4 contrats à ressortir du tiroir » : bail commercial (demander la mensualisation, vérifier le dépôt de garantie), convention bancaire (réclamer le relevé annuel des frais), contrats d'assurance (date anniversaire et nouvelle faculté de résiliation), et ce qui n'est PAS encore applicable (mesures en attente de décret, articles censurés). Tableau « applicable depuis le 28 mai / en attente » à vérifier article par article sur Légifrance.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Numéro, dates de promulgation et de publication concordants dans plusieurs éditeurs juridiques (Lextenso, LexisVeille, cabinets). Texte Légifrance non consulté (accès web impossible). Divergence sur le nombre d'articles censurés (23 sur 84 selon une source, 25 selon une autre). Le contenu détaillé des mesures provient de commentaires secondaires.",
+        "sourcesConcordantes": [
+          "https://lexisveille.fr/simplification-de-la-vie-economique-la-loi-est-publiee",
+          "https://hayot-expertise.fr/blog/loi-simplification-vie-economique-mesures-tpe-pme",
+          "https://www.actu-juridique.fr/affaires/loi-de-simplification-de-la-vie-economique-promesse-tenue-ou-catalogue-de-bonnes-intentions/",
+          "https://www.optionfinance.fr/entreprise-expertise/baux-commerciaux-ce-que-la-loi-de-simplification-change-vraiment.html",
+          "https://www.info.gouv.fr/actualite/loi-de-simplification-de-la-vie-economique-ce-qui-change-pour-les-entreprises"
+        ]
+      },
+      {
+        "actualite": "Arrêté du 22 mai 2026 publié au JO du 24 mai 2026 revalorisant le Smic de 2,41 % au 1er juin 2026 (revalorisation automatique liée à l'inflation).",
+        "dateEvenement": "2026-05-24",
+        "natureDate": "publication",
+        "organisme": "Ministère du Travail / Journal officiel",
+        "url": "https://www.editions-tissot.fr/actualite/droit-du-travail/smic",
+        "titreResultat": "SMIC 2026 : une hausse de 2,41 % au 1er juin",
+        "datePageSelonMoteur": "Non affichée ; le résumé du moteur mentionne un arrêté du 22 mai 2026 publié au JO du 24 mai.",
+        "resumeMoteur": "Le Smic horaire brut passe de 12,02 € à 12,31 € au 1er juin 2026, soit 1 867,02 € brut mensuels pour 35 heures. La hausse est déclenchée par une progression de l'indice des prix d'au moins 2 % depuis la dernière revalorisation. Les montants nets cités diffèrent légèrement selon les sites.",
+        "publicConcerne": "Employeurs de TPE (artisans, commerçants, professions libérales avec salariés), gestionnaires de paie.",
+        "angle": "Annonce à anticiper avant la paie de juin : ce que l'employeur doit vérifier d'ici le 1er juin (salaires au Smic, minima de branche dépassés, apprentis, temps partiels) et l'impact sur les devis et tarifs horaires. NB : chevauche S22 (entrée en vigueur le 1er juin) ; ne retenir le sujet qu'une seule fois.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Montants et dates concordants entre plusieurs sources (Tissot, cabinet Voltaire, L'Etudiant, TPE Actu). Arrêté non lu directement. Écart mineur sur le net horaire selon les sites.",
+        "sourcesConcordantes": [
+          "https://www.voltaire-avocats.com/fr/revalorisation-du-smic-241-au-1er-juin-2026/",
+          "https://www.letudiant.fr/jobsstages/le-smic-sera-revalorise-de-2-41-au-1er-juin-2026.html",
+          "https://tpeactu.fr/2026/05/26/tout-ce-qui-change-en-juin-2026-smic-prime-carburant-salaires/"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "WebFetch a échoué (ENOTFOUND) ; tout repose sur les titres, URL et résumés du moteur, aucune page n'a été lue. Une page info.gouv « Loi de simplification… ce qui change pour les entreprises » est datée du 16/04/2026 dans un listing (avant la promulgation, adoption définitive mi-avril) : ne pas la citer comme source datée de la semaine. Autre fait de la semaine écarté (peu pertinent pour la cible) : sanction CNIL de 5 M€ contre IQVIA le 26 mai 2026."
+  },
+  {
+    "semaine": "S22",
+    "debut": "2026-05-28",
+    "fin": "2026-06-03",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Entrée en vigueur de la revalorisation du Smic à 12,31 € brut de l'heure (1 867,02 € brut mensuels pour 35 h).",
+        "dateEvenement": "2026-06-01",
+        "natureDate": "entree-en-vigueur",
+        "organisme": "Gouvernement (info.gouv.fr) / ministère du Travail",
+        "url": "https://www.info.gouv.fr/index.php/actualite/ce-qui-change-en-juin-2026",
+        "titreResultat": "Ce qui change en juin 2026",
+        "datePageSelonMoteur": "Date de publication non affichée par le moteur.",
+        "resumeMoteur": "La page officielle « Ce qui change en juin 2026 » liste la hausse du Smic de 2,41 % au 1er juin, à appliquer dès la paie de juin. Elle mentionne aussi un renforcement des aides à l'achat ou à la location de camionnettes électriques pour les artisans et professionnels, des aides carburant (aides-carburant.gouv.fr) et une baisse du prix repère du gaz.",
+        "publicConcerne": "Employeurs de TPE, artisans, commerçants, professions libérales employeurs.",
+        "angle": "« Paie de juin 2026 : la check-list de l'employeur de TPE après la hausse du Smic » : contrôle des bulletins, minima de branche devenus inférieurs au Smic, contrats d'apprentissage indexés, répercussion sur les tarifs ; encadré sur les aides renforcées pour les camionnettes électriques des artisans annoncées pour le même jour.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Source gouvernementale officielle concordante avec l'arrêté du 22 mai (JO 24 mai) relayé par plusieurs sources. Page non lue directement.",
+        "sourcesConcordantes": [
+          "https://www.editions-tissot.fr/actualite/droit-du-travail/smic",
+          "https://www.voltaire-avocats.com/fr/revalorisation-du-smic-241-au-1er-juin-2026/",
+          "https://tpeactu.fr/2026/05/26/tout-ce-qui-change-en-juin-2026-smic-prime-carburant-salaires/"
+        ]
+      },
+      {
+        "actualite": "Publication au JO du 31 mai 2026 des décrets d'application du congé supplémentaire de naissance, dont le décret n° 2026-426 du 30 mai 2026 qui fixe l'indemnité journalière forfaitaire des travailleurs indépendants (application au 1er juillet 2026).",
+        "dateEvenement": "2026-05-31",
+        "natureDate": "publication",
+        "organisme": "Ministère des Solidarités / Journal officiel",
+        "url": "https://www.legisocial.fr/actualites-sociales/7969-conge-supplementaire-naissance-decrets-sont-publies.html",
+        "titreResultat": "Congé supplémentaire de naissance : les décrets sont publiés",
+        "datePageSelonMoteur": "Non affichée ; le résumé indique une publication du décret 2026-426 au JO du 31 mai 2026.",
+        "resumeMoteur": "Cinq décrets d'application, issus de l'article 99 de la LFSS pour 2026, précisent le congé supplémentaire de naissance. Le décret 2026-426 fixe le montant de l'indemnité journalière forfaitaire des indépendants et la période pendant laquelle la cessation d'activité peut intervenir. Le dispositif s'applique à partir du 1er juillet 2026.",
+        "publicConcerne": "Travailleurs indépendants et dirigeants parents, employeurs de salariés parents.",
+        "angle": "Annonce : les règles sont connues un mois avant l'ouverture du droit ; ce que l'indépendant doit préparer avant le 1er juillet (période de cessation, indemnité forfaitaire, organisation de la continuité de l'activité). À articuler avec S26 (entrée en vigueur) : ne traiter qu'une fois.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Date de publication confirmée par plusieurs résultats, mais les sources divergent sur la répartition du contenu entre les décrets 2026-425 et 2026-426. Textes non lus.",
+        "sourcesConcordantes": [
+          "https://www.lemondedudroit.fr/social/276-protection-sociale-cotisations/104508-conge-supplementaire-de-naissance.html",
+          "https://www.associatheque.fr/fr/fichiers/actualite/decret-2026-426-NOR-SFHS2609386D.pdf",
+          "https://www.actu-juridique.fr/social/travail/conge-supplementaire-de-naissance-modalites-indemnisation-et-obligations-de-lemployeur/"
+        ]
+      },
+      {
+        "actualite": "Décret n° 2026-418 du 29 mai 2026 publié au JO du 31 mai 2026 réorganisant les régimes de retraite complémentaire et d'invalidité-décès des professions libérales (entrée en vigueur le 1er juillet 2026).",
+        "dateEvenement": "2026-05-31",
+        "natureDate": "publication",
+        "organisme": "Journal officiel",
+        "url": "https://www.lemondedudroit.fr/social/276-protection-sociale-cotisations/104514-professions-liberales-assurance-vieillesse-complementaire-invalidite-deces-et-prestations-complementaires.html",
+        "titreResultat": "Professions libérales : assurance vieillesse complémentaire, invalidité-décès et prestations complémentaires",
+        "datePageSelonMoteur": "Non affichée ; date de JO tirée du résumé du moteur.",
+        "resumeMoteur": "Le moteur indique qu'un décret du 29 mai 2026, publié au JO du 31 mai, réorganise les régimes de retraite complémentaire et d'invalidité-décès des professions libérales, avec une entrée en vigueur au 1er juillet 2026. Le détail des changements n'apparaît pas dans les extraits.",
+        "publicConcerne": "Professions libérales (régimes CIPAV / sections professionnelles).",
+        "angle": "Possible sujet « professions libérales : ce que le décret du 29 mai change pour vos cotisations retraite et prévoyance au 1er juillet » — uniquement après lecture du texte, le contenu n'étant pas connu par les extraits.",
+        "sensibilite": "reglementaire",
+        "confiance": "faible",
+        "raisonConfiance": "Une seule source (Le Monde du droit) via le moteur, contenu non détaillé ; impossible de construire l'angle sans lire le décret.",
+        "sourcesConcordantes": []
+      }
+    ],
+    "recommande": 0,
+    "note": "La loi de simplification (S21) est partiellement entrée en vigueur le 28 mai 2026 : ne pas la reprendre ici. Ouverture de l'annuaire central de la facturation électronique « le 1er juin 2026 » selon des sites spécialisés privés, mais Cegid parle d'un lancement en juin 2025 et d'une consultation libre depuis le 18 septembre 2025 : contradiction, sujet écarté. Si le Smic est déjà traité en S21, basculer sur le candidat 1 (décrets congé de naissance) ou garder ce dernier pour S26."
+  },
+  {
+    "semaine": "S23",
+    "debut": "2026-06-04",
+    "fin": "2026-06-10",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Date limite de la déclaration de revenus 2025 en ligne pour les départements 55 à 976, dont la Vendée (jeudi 4 juin 2026, 23h59). Pour les indépendants, cette déclaration unifiée sert aussi au calcul des cotisations sociales (DSI supprimée).",
+        "dateEvenement": "2026-06-04",
+        "natureDate": "echeance",
+        "organisme": "DGFiP / Urssaf",
+        "url": "https://www.moneyvox.fr/impot/actualites/109054/declaration-impots-2026-ultime-date-limite-ce-jeudi-4-juin-pour-paris-lille-ou-strasbourg",
+        "titreResultat": "Déclaration impôts 2026 : ultime date limite ce jeudi 4 juin",
+        "datePageSelonMoteur": "Non affichée (URL et titre font référence au jeudi 4 juin).",
+        "resumeMoteur": "Pour les départements 55 à 976, la déclaration en ligne des revenus 2025 doit être faite au plus tard le 4 juin 2026 à 23h59 ; les autres échéances étaient le 21 mai (01-19) et le 28 mai (20-54), et le 19 mai pour le papier. Un retard entraîne une majoration de 10 % et des intérêts. D'autres résultats rappellent que la déclaration fiscale des indépendants alimente désormais aussi le calcul des cotisations Urssaf et que les revenus déclarés fixent les taux de prélèvement à la source à partir de septembre 2026.",
+        "publicConcerne": "Indépendants, micro-entrepreneurs, gérants et professions libérales domiciliés en Vendée.",
+        "angle": "« Vendée, 4 juin : dernière ligne droite pour les indépendants » : les rubriques professionnelles qui servent à la fois à l'impôt et aux cotisations sociales, les pièces à réunir la veille, et ce qui se passe ensuite (régularisation des cotisations, nouveau taux de prélèvement à la source à partir de septembre). Rédigé comme une échéance datée, pas comme un guide général.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Date concordante dans plusieurs sources (Moneyvox, Que Choisir, Bourse Inside, Propulse by CA). La page impots.gouv n'a pas été lue ; une coquille « 55 à 95 » apparaît chez un média.",
+        "sourcesConcordantes": [
+          "https://www.quechoisir.org/actualite-declaration-des-revenus-2025-les-dates-limites-sont-fixees-n175534/",
+          "https://propulsebyca.fr/actualites/ouverture-declaration-impots-2026",
+          "https://bourseinside.fr/patrimoine/declaration-dimpots-2026-ces-dates-limites-par-departement-a-ne-surtout-pas-rater-entre-le-19-mai-et-le-4-juin-sous-peine-de-lourdes-penalites/",
+          "https://static.impots.gouv.fr/tdir/static/2026-03-30T16:36:08Z/aide/notices/notices2025/2042DRI_TI/notice2042DRI_TI.pdf"
+        ]
+      },
+      {
+        "actualite": "CAP CRÉA'26 : journée consacrée à la création d'entreprise, organisée par Cap emploi 85 avec des partenaires dont la CCI Vendée (mardi 9 juin 2026, salle Audubon).",
+        "dateEvenement": "2026-06-09",
+        "natureDate": "evenement",
+        "organisme": "Cap emploi 85 (partenaire : CCI Vendée)",
+        "url": "https://www.monparcourshandicap.gouv.fr/agenda/2026/06/cap-crea26-journee-dediee-la-creation-dentreprise",
+        "titreResultat": "Le Mardi 9 juin 2026 — CAP CRÉA'26, journée dédiée à la création d'entreprise",
+        "datePageSelonMoteur": "Page d'agenda annonçant l'événement du 9 juin 2026 ; date de publication non affichée.",
+        "resumeMoteur": "Une page d'agenda annonce une journée sur la création d'entreprise organisée par Cap emploi 85 le 9 juin 2026, salle Audubon, avec la CCI Vendée parmi les partenaires. Le moteur ne montre aucun compte rendu de l'événement.",
+        "publicConcerne": "Porteurs de projet et créateurs vendéens, notamment en situation de handicap.",
+        "angle": "Sujet local d'annonce : les interlocuteurs vendéens de la création (Cap emploi 85, CCI Vendée) et les questions administratives à préparer avant un rendez-vous. Ne pas affirmer le déroulé ni les chiffres de l'événement.",
+        "sensibilite": "standard",
+        "confiance": "faible",
+        "raisonConfiance": "Une seule page d'agenda, pas de confirmation que l'événement a eu lieu, intérêt limité pour la clientèle principale.",
+        "sourcesConcordantes": []
+      }
+    ],
+    "recommande": 0,
+    "note": "Également vu : opération de rattrapage du référentiel TVA de l'annuaire de facturation électronique annoncée pour les 8 et 9 juin 2026, mais seulement sur un site commercial (comparatif-facture-electronique.fr) qui renvoie à une plénière du 5 mai : non retenu. Le décret n° 2026-477 du 10 juin 2026 (aide gazole non routier agricole et forestier) est hors cible. Le rapport de la Cour des comptes sur la CNIL (4 juin) est hors cible."
+  },
+  {
+    "semaine": "S24",
+    "debut": "2026-06-11",
+    "fin": "2026-06-17",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Le Parlement européen adopte en première lecture (16 juin 2026) l'« omnibus numérique sur l'IA » qui reporte les obligations des systèmes d'IA à haut risque de l'AI Act ; adoption définitive par le Conseil encore attendue à cette date.",
+        "dateEvenement": "2026-06-16",
+        "natureDate": "vote",
+        "organisme": "Parlement européen",
+        "url": "https://data.europarl.europa.eu/distribution/doc/TA-10-2026-0198_fr.pdf",
+        "titreResultat": "TA-10-2026-0198 (texte adopté, Parlement européen)",
+        "datePageSelonMoteur": "Aucune date de page ; le résumé et une note du Conseil (ST-10599-2026) datent le vote du 16 juin 2026.",
+        "resumeMoteur": "Résolution législative du Parlement en première lecture sur l'omnibus de simplification de l'IA (procédure 2025/0359(COD)), adoptée le 16 juin 2026 sur la base d'un amendement de compromis issu d'un accord avec le Conseil (accord provisoire daté du 7 mai par un suivi). Les commentaires indiquent un report des obligations « haut risque » de l'annexe III au 2 décembre 2027 et de l'annexe I au 2 août 2028, et des règles de transparence de l'article 50 largement maintenues au 2 août 2026. Un média secondaire cite 423 voix pour, 57 contre et 174 abstentions.",
+        "publicConcerne": "Dirigeants et TPE qui utilisent des outils d'IA (chatbot sur le site, génération de contenus, tri de candidatures).",
+        "angle": "« AI Act : ce que le vote du 16 juin reporte, et ce qui reste au 2 août 2026 » : pour une TPE utilisatrice, le report concerne surtout le haut risque ; l'information des personnes qui échangent avec un chatbot et le signalement des contenus générés restent prévus pour le 2 août. Préciser qu'au 16 juin le texte n'était pas encore définitivement adopté. Action : lister ses outils d'IA et repérer ceux qui dialoguent avec des clients ou produisent des contenus publiés.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Document officiel du Parlement et note du Conseil dans les résultats, plusieurs commentaires concordants sur la date. Contenu détaillé connu seulement par des commentaires. Divergence sur la date de l'accord provisoire (7 mai selon Digital Policy Alert, 22 juin selon un cabinet, ce qui est incohérent avec un vote le 16 juin).",
+        "sourcesConcordantes": [
+          "https://data.consilium.europa.eu/doc/document/ST-10599-2026-INIT/fr/pdf",
+          "https://www.thelawyer.com/briefing/european-parliament-approves-digital-omnibus-package-on-ai/",
+          "https://fasi.eu/en/articles/strategies/29051-european-parliament-gives-the-green-light-to-the-digital-omnibus-ai-package.html",
+          "https://digitalpolicyalert.org/event/42391-european-parliament-passed-digital-omnibus-on-ai-regulation-20250359-including-organisational-requirement"
+        ]
+      },
+      {
+        "actualite": "Mise à disposition annoncée par la DGFiP, « à partir de la mi-juin 2026 », d'une consultation hors ligne de l'annuaire de la facturation électronique (fichier CSV jusqu'à 5 000 SIRET).",
+        "dateEvenement": "2026-06-15",
+        "natureDate": "ouverture-annoncee (date approximative « mi-juin »)",
+        "organisme": "DGFiP / AIFE (selon un site privé)",
+        "url": "https://www.comparatif-facture-electronique.fr/consultation-annuaire-hors-ligne-juin-2026/",
+        "titreResultat": "Actualité · Annuaire DGFiP — Publié 12 juin 2026 — Réception obligatoire",
+        "datePageSelonMoteur": "Publié le 12 juin 2026 selon le titre, mais la page cite une date de référence au 13 août 2026 (mise à jour postérieure probable).",
+        "resumeMoteur": "Le service doit permettre à un cabinet ou une entreprise de vérifier par lot si ses clients disposent d'une plateforme agréée et d'une adresse de réception active. L'annonce aurait été faite lors d'une plénière du 5 mai 2026. Le nombre de plateformes immatriculées varie selon les sources (127, 137, 166).",
+        "publicConcerne": "TPE qui facturent beaucoup de clients professionnels, cabinets, assistantes administratives.",
+        "angle": "Outil pratique avant le 1er septembre : vérifier que ses clients et fournisseurs sont joignables dans l'annuaire, sans redire le guide général sur la facturation électronique.",
+        "sensibilite": "reglementaire",
+        "confiance": "faible",
+        "raisonConfiance": "Source unique et commerciale, date d'ouverture imprécise (« mi-juin »), incohérences de dates et de chiffres ; aucune page impots.gouv.fr ou AIFE dans les résultats.",
+        "sourcesConcordantes": []
+      }
+    ],
+    "recommande": 0,
+    "note": "Peu d'actualités françaises datées de la semaine dans les résultats. Si l'IA est déjà traitée en S30 ou S31, prévoir un seul article AI Act ou un angle bien distinct (ici : « ce que le vote reporte »)."
+  },
+  {
+    "semaine": "S25",
+    "debut": "2026-06-18",
+    "fin": "2026-06-24",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Alerte de la CNIL : de faux organismes (« Ligue de défense des données personnelles », « Association de protection des données personnelles ») contactent les victimes de fuites de données en se réclamant parfois de la CNIL.",
+        "dateEvenement": "2026-06-24",
+        "natureDate": "alerte",
+        "organisme": "CNIL",
+        "url": "https://cnil.fr/fr/vigilance-accompagnement-violation-de-donnees",
+        "titreResultat": "Victimes de violations de données : restez vigilants face aux offres d'accompagnement",
+        "datePageSelonMoteur": "24 juin 2026 (date affichée par le moteur pour la page CNIL).",
+        "resumeMoteur": "La CNIL a été alertée sur des courriels adressés aux victimes de violations de données, qui proposent de faire supprimer leurs données des sites de revente. Les messages peuvent contenir de vraies données issues des fichiers volés et citer le numéro de la CNIL, sans aucun lien avec elle. La CNIL conseille de ne pas répondre, de ne pas cliquer et de ne transmettre aucune pièce, et renvoie vers cybermalveillance.gouv.fr. Leto Legal (25 juin) ajoute que l'arnaque vise à obtenir de l'argent, ce qui ne figure pas dans l'extrait CNIL.",
+        "publicConcerne": "Dirigeants, indépendants et salariés de TPE dont les données (ou celles des clients) ont pu fuiter ; secrétariats qui trient les courriels.",
+        "angle": "« Après une fuite de données, la deuxième arnaque » : reconnaître ces messages (nom d'association crédible, vraies données, numéro de la CNIL), consigne interne pour l'accueil et le secrétariat, et comment informer ses propres clients d'une fuite sans être imité. Différent des guides faux RIB et faux président.",
+        "sensibilite": "standard",
+        "confiance": "elevee",
+        "raisonConfiance": "Page officielle CNIL datée par le moteur, recoupée par un média juridique le lendemain.",
+        "sourcesConcordantes": [
+          "https://cnil.fr/fr/node/168648",
+          "https://www.leto.legal/news/cnil-alerte-arnaques-victimes-violations-donnees-2026"
+        ]
+      },
+      {
+        "actualite": "Publication de la page gouvernementale « Ce qui change en juillet 2026 » (congé supplémentaire de naissance, hausse du prix repère du gaz, droit de douane forfaitaire de 3 € sur les petits colis importés, leasing social).",
+        "dateEvenement": "2026-06-24",
+        "natureDate": "publication",
+        "organisme": "Gouvernement (info.gouv.fr)",
+        "url": "https://www.info.gouv.fr/index.php/actualite/ce-qui-change-en-juillet-2026",
+        "titreResultat": "Ce qui change en juillet 2026",
+        "datePageSelonMoteur": "Publiée le 24 juin 2026 et modifiée le 13 août 2026 selon le moteur : le contenu actuel peut différer de la version du 24 juin.",
+        "resumeMoteur": "La page annonce pour le 1er juillet le congé supplémentaire de naissance (un à deux mois par parent, indemnisé à 70 % puis 60 % d'un salaire plafonné), une hausse d'environ 7,4 % du prix repère du gaz, un droit de douane européen forfaitaire de 3 € par catégorie d'article sur les colis importés de 150 € ou moins, et une troisième vague de leasing social le 16 juillet.",
+        "publicConcerne": "Dirigeants et indépendants (congé de naissance), petits commerçants qui importent via des plateformes (colis).",
+        "angle": "Préparer le 1er juillet : les trois changements qui touchent une TPE (absence d'un parent, achats de petits colis hors UE, budget énergie). À n'utiliser que si S26 ne traite pas déjà le 1er juillet.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Source officielle, mais page modifiée le 13 août : impossible de savoir ce qui figurait le 24 juin. Sujet redondant avec S26.",
+        "sourcesConcordantes": [
+          "https://www.service-public.gouv.fr/particuliers/actualites/A18377?lang=fr"
+        ]
+      },
+      {
+        "actualite": "Contenu CNIL destiné aux professionnels : « Sécurité des données : les règles essentielles pour protéger les données et votre activité ».",
+        "dateEvenement": "2026-06-19",
+        "natureDate": "publication (date de listing)",
+        "organisme": "CNIL",
+        "url": "https://cnil.fr/fr/actualite",
+        "titreResultat": "Actualités CNIL (listing) — Sécurité des données : les règles essentielles pour protéger les données et votre activité",
+        "datePageSelonMoteur": "19 juin 2026 d'après une page de listing ; il peut s'agir d'une mise à jour d'un contenu ancien.",
+        "resumeMoteur": "Une page de listing des actualités de la CNIL montre au 19 juin 2026 un contenu pour les professionnels qui rappelle les règles essentielles de sécurité des données. Aucun détail sur le contenu n'apparaît.",
+        "publicConcerne": "TPE et indépendants.",
+        "angle": "À n'utiliser que si la page confirme une nouveauté (guide mis à jour, nouvelle fiche) ; sinon trop proche des guides intemporels.",
+        "sensibilite": "standard",
+        "confiance": "faible",
+        "raisonConfiance": "Visible seulement dans un listing, sans URL propre ni nature (nouvelle publication ou mise à jour) ; contenu inconnu.",
+        "sourcesConcordantes": []
+      }
+    ],
+    "recommande": 0,
+    "note": "Aucune annonce gouvernementale TPE ni dispositif régional nouveau daté de la semaine dans les résultats. La fiche régionale « Prêt Artisans Transition » (Pays de la Loire) porte une date de mise à jour du 19 juin 2026 sur un agrégateur (les-aides.fr) : c'est une mise à jour, pas une création, donc non retenue."
+  },
+  {
+    "semaine": "S26",
+    "debut": "2026-06-25",
+    "fin": "2026-07-01",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Entrée en vigueur du congé supplémentaire de naissance, ouvert aussi aux travailleurs indépendants : de un à deux mois par parent, après les autres congés.",
+        "dateEvenement": "2026-07-01",
+        "natureDate": "entree-en-vigueur",
+        "organisme": "Sécurité sociale (LFSS 2026, art. 99) / décrets du 30 mai 2026",
+        "url": "https://www.service-public.gouv.fr/particuliers/actualites/A18377?lang=fr",
+        "titreResultat": "Congé supplémentaire de naissance - Leasing social - Listes électorales",
+        "datePageSelonMoteur": "Non affichée par le moteur.",
+        "resumeMoteur": "Le congé supplémentaire de naissance démarre au 1er juillet 2026 : un à deux mois par parent, indemnisé à 70 % d'un salaire plafonné le premier mois puis 60 % le second (selon info.gouv). Les indépendants peuvent en bénéficier avec une indemnité journalière forfaitaire fixée par décret, sur demande. Un régime transitoire est prévu pour les naissances antérieures.",
+        "publicConcerne": "Dirigeants, indépendants et professions libérales parents ; employeurs de TPE dont un salarié devient parent.",
+        "angle": "« Congé de naissance au 1er juillet : l'indépendant aussi » : conditions de cessation d'activité, indemnité forfaitaire, démarches, et surtout l'organisation de la continuité (déléguer agenda, relances, suivi clients pendant un à deux mois). Volet employeur : anticiper l'absence d'un salarié.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Plusieurs sources officielles concordantes (service-public, info.gouv) et décrets publiés au JO du 31 mai. Montant de l'indemnité des indépendants non vu dans les extraits, à vérifier. Divergence sur le contenu des décrets 2026-425 et 2026-426.",
+        "sourcesConcordantes": [
+          "https://www.info.gouv.fr/index.php/actualite/ce-qui-change-en-juillet-2026",
+          "https://www.legisocial.fr/actualites-sociales/7969-conge-supplementaire-naissance-decrets-sont-publies.html",
+          "https://anfe.fr/wp-content/uploads/2026/07/conseil-jur-mars-2026.pdf"
+        ]
+      },
+      {
+        "actualite": "Mesures exceptionnelles de l'Urssaf et du CPSTI liées à la canicule pour les employeurs, travailleurs indépendants et praticiens médicaux.",
+        "dateEvenement": "2026-06-29",
+        "natureDate": "annonce",
+        "organisme": "Urssaf / CPSTI",
+        "url": "https://www.editions-tissot.fr/actualite/droit-du-travail/canicule-lurssaf-deploie-des-mesures-durgence-pour-les-entreprises-et-independants",
+        "titreResultat": "Canicule : l'URSSAF déploie des mesures d'urgence pour les entreprises et indépendants",
+        "datePageSelonMoteur": "Non affichée ; le résumé du moteur date l'annonce Urssaf du 29 juin 2026.",
+        "resumeMoteur": "L'Urssaf a annoncé le 29 juin 2026 des mesures pour les cotisants touchés par la canicule : report d'échéances pour les employeurs, déclaration d'une situation exceptionnelle pour les indépendants via la messagerie de leur espace ou par téléphone, et aide d'action sociale du CPSTI.",
+        "publicConcerne": "Indépendants et employeurs dont l'activité est pénalisée par la chaleur (BTP, artisans extérieurs, commerces).",
+        "angle": "« Activité ralentie par la canicule : demander un délai Urssaf en trois étapes » : qui peut demander, par quel canal, quelles pièces garder.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Une seule source secondaire spécialisée (Tissot) dans les résultats, page urssaf.fr non trouvée ; périmètre géographique non précisé.",
+        "sourcesConcordantes": []
+      },
+      {
+        "actualite": "Le Conseil de l'UE adopte formellement l'omnibus numérique sur l'IA, dernière étape avant la publication au JOUE.",
+        "dateEvenement": "2026-06-29",
+        "natureDate": "adoption",
+        "organisme": "Conseil de l'Union européenne",
+        "url": "https://www.wko.at/information-consulting/werbung-marktkommunikation/aig-newsletter-6-july-2026",
+        "titreResultat": "AIG Newsletter 6 July 2026",
+        "datePageSelonMoteur": "Lettre du 6 juillet 2026 qui rapporte l'adoption du 29 juin.",
+        "resumeMoteur": "Selon une lettre d'information de la WKO et le suivi Digital Policy Alert, le Conseil a annoncé le 29 juin avoir formellement adopté le paquet omnibus sur l'IA, dernière étape législative avant la publication au Journal officiel. Le communiqué officiel du Conseil n'apparaît pas dans les résultats.",
+        "publicConcerne": "TPE utilisatrices d'outils d'IA.",
+        "angle": "Doublon possible avec S24 et S30 : à ne retenir que si l'IA n'est pas traitée ailleurs.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Deux sources secondaires concordantes, pas de communiqué officiel du Conseil dans les résultats.",
+        "sourcesConcordantes": [
+          "https://digitalpolicyalert.org/event/41089-council-of-eu-adopted-digital-omnibus-on-ai-regulation-20250359-including-artificial-intelligence-authority-governance"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Également en vigueur le 1er juillet 2026 : le décret n° 2026-418 sur la retraite complémentaire et l'invalidité-décès des professions libérales (contenu non connu), et le droit de douane forfaitaire européen de 3 € sur les petits colis. La liste des plateformes agréées sur data.gouv.fr porte une mise à jour au 25 juin 2026 (mise à jour d'un jeu de données, pas une actualité). Attention : un résultat de presse affirme que la facturation électronique B2B « s'applique à partir du 1er janvier 2026 », ce qui contredit toutes les autres sources (1er septembre 2026)."
+  },
+  {
+    "semaine": "S27",
+    "debut": "2026-07-02",
+    "fin": "2026-07-08",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "La CNIL annonce 23 nouvelles sanctions prononcées depuis janvier 2026 en procédure simplifiée, pour 133 750 € d'amendes au total (vidéosurveillance des salariés, cookies, droits d'accès ou d'effacement non respectés, défaut de coopération).",
+        "dateEvenement": "2026-07-06",
+        "natureDate": "communique",
+        "organisme": "CNIL",
+        "url": "https://cnil.fr/fr/23-nouvelles-sanctions-simplifiees",
+        "titreResultat": "La CNIL a prononcé 23 nouvelles sanctions depuis janvier au titre de la procédure simplifiée",
+        "datePageSelonMoteur": "6 juillet 2026 selon le résumé du moteur.",
+        "resumeMoteur": "19 des 23 sanctions font suite à des plaintes. Elles portent surtout sur la vidéosurveillance excessive des salariés, les cookies et le refus de répondre aux demandes d'accès ou d'effacement, souvent avec un défaut de coopération avec la CNIL. La procédure simplifiée plafonne l'amende à 20 000 € et l'organisme sanctionné n'est pas nommé ; un commentateur calcule une moyenne d'environ 5 800 €.",
+        "publicConcerne": "TPE, commerces, cabinets libéraux, artisans avec salariés ou caméras.",
+        "angle": "« Les petites structures aussi sont sanctionnées : les 4 erreurs relevées par la CNIL au 1er semestre 2026 » : caméra qui filme un poste de travail, bandeau cookies, demande d'accès d'un client ou ex-salarié restée sans réponse, courrier de la CNIL ignoré. Pour chacune, le réflexe pratique. Différent du guide RGPD sous-traitance.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Communiqué CNIL officiel ; chiffres concordants dans plusieurs relais (Journal de l'économie, Economie Matin, Captain Compliance).",
+        "sourcesConcordantes": [
+          "https://www.journaldeleconomie.fr/?p=48067",
+          "https://www.economiematin.fr/?p=227091",
+          "https://captaincompliance.com/education/cnil-steps-up-enforcement-with-23-new-sanctions-under-simplified-procedure/"
+        ]
+      },
+      {
+        "actualite": "Selon le Financial Times, relayé par Euronews, l'UE s'apprêterait à repousser à 2027 le lancement d'ETIAS, l'autorisation de voyage à 20 € pour les visiteurs non européens, après les difficultés de l'EES.",
+        "dateEvenement": "2026-07-08",
+        "natureDate": "information-presse",
+        "organisme": "Presse (Financial Times / Euronews) ; pas d'annonce officielle de la Commission",
+        "url": "https://fr.euronews.com/2026/07/08/etias-apres-le-chaos-dees-le-nouveau-systeme-dautorisation-a-20-sera-t-il-retarde",
+        "titreResultat": "ETIAS : après le chaos d'EES, le nouveau système d'autorisation à 20 € sera-t-il retardé ?",
+        "datePageSelonMoteur": "8 juillet 2026 (date dans l'URL).",
+        "resumeMoteur": "Euronews rapporte, d'après le Financial Times, un report probable d'ETIAS de fin 2026 à 2027, lié aux files d'attente provoquées par le système d'entrée/sortie (EES). D'autres sites précisent qu'aucun report officiel n'avait alors été annoncé par la Commission ou eu-LISA. Une page du gouvernement belge datée du 24 septembre 2026 évoque ensuite un lancement en 2027.",
+        "publicConcerne": "Entreprises qui reçoivent des clients, partenaires ou prestataires hors UE (Royaume-Uni, États-Unis…) ; organisation de déplacements.",
+        "angle": "« Vous recevez des partenaires britanniques ou américains : ETIAS n'est pas pour cet été » : ce qui s'applique déjà (EES aux frontières, temps d'attente), ce qui n'est pas encore en place, et comment l'indiquer dans une invitation. Formuler au conditionnel.",
+        "sensibilite": "standard",
+        "confiance": "faible",
+        "raisonConfiance": "Information de presse sans confirmation officielle dans la semaine ; montants des frais divergents selon les sources (20 € et 7 €).",
+        "sourcesConcordantes": [
+          "https://insideflyer.com/posts/eu-postpones-etias-travel-authorization-to-2027/",
+          "https://visasnews.com/le-lancement-de-letias-pourrait-etre-reporte-a-2027/"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Le règlement omnibus IA a été signé le 8 juillet 2026 (EUR-Lex : règlement du 8 juillet 2026) ; fait réel mais sans effet pratique propre, mieux traité en S30. Rien de vérifiable trouvé côté Vendée ou Pays de la Loire pour la semaine."
+  },
+  {
+    "semaine": "S28",
+    "debut": "2026-07-09",
+    "fin": "2026-07-15",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Facturation électronique : la DGFiP publie le 10 juillet un « guide pratique de démarrage au 1er septembre 2026 » (29 questions), et le ministre David Amiel annonce une phase d'accompagnement sans sanction au démarrage pour les entreprises de bonne foi, sans report de l'obligation.",
+        "dateEvenement": "2026-07-10",
+        "natureDate": "publication (guide DGFiP) ; communiqué ministériel le 11 juillet (date contestée)",
+        "organisme": "DGFiP / ministère des Comptes publics",
+        "url": "https://bpifrance-creation.fr/entrepreneur/actualites/facturation-electronique-guide-pratique-demarrage",
+        "titreResultat": "Facturation électronique : guide pratique de démarrage",
+        "datePageSelonMoteur": "Non affichée ; le 10 juillet vient d'un relais (« guide publié le 10 juillet par la DGFiP »).",
+        "resumeMoteur": "Le guide de la DGFiP décrit la conduite à tenir pendant la phase de démarrage de septembre 2026 : pas de sanction automatique pour une difficulté réelle, documentée et corrigée ; l'usage d'un autre canal n'est que transitoire et devra être régularisé. Le ministre a annoncé une « phase d'écoute et d'accompagnement » pour les entreprises de bonne foi, en précisant que l'obligation n'est ni reportée ni suspendue. La bonne foi suppose de pouvoir montrer une démarche de mise en conformité (contrat avec une plateforme agréée, essais de transmission).",
+        "publicConcerne": "Toutes les TPE et indépendants assujettis à la TVA (réception obligatoire au 1er septembre 2026), leurs assistantes et comptables.",
+        "angle": "« Tolérance ne veut pas dire report : constituer son dossier de bonne foi avant le 1er septembre » : contrat ou devis signé avec une plateforme agréée, adresse de réception inscrite, essais datés, journal des incidents et corrections. Modèle de tableau de suivi. Distinct du guide général déjà publié.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Plusieurs relais concordent sur l'existence du guide et de la tolérance de bonne foi, mais les sources divergent sur la date du communiqué (11 juillet, n° 898, selon un fil Sage ; « lundi 13 juillet » selon Moneyvox, qui cite aussi un « vendredi 10 août » incohérent) et sur sa portée (« aucune sanction en 2026 » selon Sage et Obat, contesté par un commentaire). Aucune page impots.gouv.fr ni economie.gouv.fr lue.",
+        "sourcesConcordantes": [
+          "https://www.ghr.fr/reglementation-fiscalite/1er-septembre-2026-facturation-electronique-publication-par-la-dgfip-du-guide",
+          "https://dext.com/fr/ressources/blog-actualite-comptable/single/demarrage-facturation-electronique-recommandations-dg-fi-p",
+          "https://www.moneyvox.fr/votre-argent/actualites/109667/facturation-electronique-obligatoire-qui-sera-exonere-de-sanction-au-1er-septembre-2026",
+          "https://communityhub.sage.com/fr/sage-x3/f/annonces/272620/facture-electronique---une-phase-d-accompagnement-annoncee-pour-2026"
+        ]
+      },
+      {
+        "actualite": "Fin, le 14 juillet 2026, de la période transitoire de trois mois accordée par la CNIL pour les pixels de suivi dans les courriels envoyés aux adresses déjà collectées (recommandation publiée au JO du 14 avril 2026).",
+        "dateEvenement": "2026-07-14",
+        "natureDate": "fin-de-periode-transitoire",
+        "organisme": "CNIL",
+        "url": "https://www.seban-associes.avocat.fr/le-sursis-accorde-aux-pixels-des-courriels-a-pris-fin/",
+        "titreResultat": "Le sursis accordé aux pixels des courriels a pris fin",
+        "datePageSelonMoteur": "Non affichée.",
+        "resumeMoteur": "La recommandation CNIL sur les pixels dans les courriers électroniques (délibération n° 2026-042 du 12 mars 2026, publiée au JO du 14 avril 2026) prévoyait trois mois de transition pour les adresses déjà collectées, terminés le 14 juillet 2026. Le suivi d'ouverture des courriels relève en principe du consentement, sauf exemptions.",
+        "publicConcerne": "TPE et indépendants qui envoient newsletters, relances ou campagnes par e-mail avec un outil de suivi d'ouverture.",
+        "angle": "Voir S29 (questions-réponses de la CNIL du 22 juillet) : regrouper les deux dans un seul article si besoin.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Date déduite de la publication au JO et confirmée par un cabinet ; le texte CNIL n'a pas été lu.",
+        "sourcesConcordantes": [
+          "https://cnil.fr/fr/faq-recommandation-pixels-courriers-electroniques"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Contradictions à signaler dans l'article : date exacte du communiqué ministériel (11 ou 13 juillet) et durée de la tolérance (fin 2026 selon certains, non précisée selon d'autres). Plus tard (hors semaine, ne pas l'utiliser ici), le ministre a parlé d'« aucune sanction d'ici fin décembre ». Montants des amendes divergents selon les sites (15 € ou 50 € par facture) : ne pas les citer sans le CGI."
+  },
+  {
+    "semaine": "S29",
+    "debut": "2026-07-16",
+    "fin": "2026-07-22",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "La CNIL publie 27 questions-réponses sur l'application de sa recommandation relative aux pixels de suivi dans les courriels.",
+        "dateEvenement": "2026-07-22",
+        "natureDate": "publication",
+        "organisme": "CNIL",
+        "url": "https://cnil.fr/fr/faq-recommandation-pixels-courriers-electroniques",
+        "titreResultat": "Questions-réponses - recommandation relative aux pixels dans les courriers électroniques de la CNIL",
+        "datePageSelonMoteur": "22 juillet 2026 selon le résumé du moteur (listing CNIL).",
+        "resumeMoteur": "La FAQ couvre le champ d'application, les deux exemptions de consentement et le recueil du consentement. Selon l'extrait, la CNIL estime que l'article 82 de la loi Informatique et libertés s'applique même si les données sont anonymes ou agrégées. Un avocat cité par le Journal du Net indique qu'on peut recueillir le consentement dans une newsletter, avec des conditions strictes, et que le retrait doit être aussi simple que l'acceptation. Un webinaire pour les prestataires a été publié le même jour.",
+        "publicConcerne": "TPE, commerçants et indépendants qui envoient des e-mails commerciaux, newsletters ou relances avec un outil (type Brevo, Mailchimp) qui mesure les ouvertures.",
+        "angle": "« Vos e-mails savent-ils si le client les a ouverts ? Ce que la CNIL demande depuis juillet 2026 » : repérer le suivi d'ouverture dans son outil, cas où il reste possible sans consentement, comment recueillir le consentement, lien de retrait en pied de message. Concret et daté, distinct des guides RGPD existants.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Page officielle CNIL datée par le moteur, recoupée par des sources juridiques et le Journal du Net. Interprétations d'avocats à présenter comme telles.",
+        "sourcesConcordantes": [
+          "https://cnil.fr/fr/node/168741",
+          "https://www.journaldunet.com/martech/1549971-pixels-de-suivi-les-12-questions-reponses-pour-se-rendre-conforme/",
+          "https://lexisveille.fr/cnil-un-questions-reponses-precise-les-modalites-dapplication-de-la-recommandation-sur-les-pixels"
+        ]
+      },
+      {
+        "actualite": "La CNIL et le Conseil de l'IA et du numérique publient une note exploratoire sur l'IA agentique et les données personnelles.",
+        "dateEvenement": "2026-07-20",
+        "natureDate": "publication",
+        "organisme": "CNIL / Conseil de l'IA et du numérique",
+        "url": "https://cnil.fr/fr/actualite",
+        "titreResultat": "Actualités CNIL (listing) — note exploratoire IA agentique et données personnelles",
+        "datePageSelonMoteur": "20 juillet 2026 d'après une page de listing ; URL propre de la note non obtenue.",
+        "resumeMoteur": "Le listing des actualités de la CNIL montre au 20 juillet 2026 une note exploratoire, réalisée avec le Conseil de l'IA et du numérique, sur l'IA agentique et les données personnelles, classée pour les professionnels et les particuliers. Le contenu n'apparaît pas dans l'extrait.",
+        "publicConcerne": "Dirigeants et assistantes qui confient des tâches à des agents d'IA (messagerie, agenda, réservations).",
+        "angle": "« Agents IA qui lisent vos mails et réservent vos déplacements : les questions que soulève la CNIL » — à construire seulement après lecture de la note (accès, traçabilité, données des tiers). Distinct du guide IA générative et données confidentielles.",
+        "sensibilite": "standard",
+        "confiance": "moyenne",
+        "raisonConfiance": "Date et existence visibles dans un listing officiel, mais contenu inconnu et URL précise non trouvée.",
+        "sourcesConcordantes": []
+      },
+      {
+        "actualite": "La Commission européenne publie ses lignes directrices finales sur les obligations de transparence de l'article 50 de l'AI Act (chatbots, contenus générés, deepfakes).",
+        "dateEvenement": "2026-07-20",
+        "natureDate": "publication",
+        "organisme": "Commission européenne",
+        "url": "https://www.paulweiss.com/insights/client-memos/eu-finalises-transparency-rules-for-ai-generated-content",
+        "titreResultat": "EU finalises transparency rules for AI-generated content",
+        "datePageSelonMoteur": "Non affichée ; le 20 juillet vient du résumé du moteur.",
+        "resumeMoteur": "Selon un cabinet, la Commission a publié le 20 juillet 2026 ses lignes directrices finales, non contraignantes, sur l'article 50, qui s'applique en grande partie au 2 août 2026. Un projet avait été publié le 8 mai 2026, avec une consultation jusqu'au 3 juin.",
+        "publicConcerne": "TPE qui utilisent un chatbot ou publient des contenus générés par IA.",
+        "angle": "À fusionner avec S31 (application le 2 août) pour éviter deux articles sur l'article 50.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Deux sources secondaires concordantes sur la date ; page officielle de la Commission vue seulement pour le projet.",
+        "sourcesConcordantes": [
+          "https://digital-strategy.ec.europa.eu/fr/library/draft-guidelines-implementation-transparency-obligations-certain-ai-systems-under-article-50-ai-act"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Également vu : annonce Urssaf du 21 juillet 2026 sur des mesures après des intempéries et incendies (Rhône-Alpes, Languedoc-Roussillon, Île-de-France), sans lien avec la Vendée. Leasing social du 16 juillet : hors cible."
+  },
+  {
+    "semaine": "S30",
+    "debut": "2026-07-23",
+    "fin": "2026-07-29",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Décret n° 2026-677 et arrêté du 27 juillet 2026 sur la généralisation de la facturation électronique : abandon du portail public, nouvelle terminologie « plateforme agréée », conditions d'immatriculation (dont une certification ISO/IEC 27001), audits et procédure de changement de plateforme.",
+        "dateEvenement": "2026-07-28",
+        "natureDate": "publication (JO du 28 juillet selon une source, du 29 juillet selon une autre ; entrée en vigueur le lendemain)",
+        "organisme": "Ministère des Comptes publics / Journal officiel",
+        "url": "https://www.legifiscal.fr/actualites-fiscales/4580-facturation-electronique-decret-27-juillet-2026.html",
+        "titreResultat": "Facturation électronique : décret du 27 juillet 2026",
+        "datePageSelonMoteur": "Non affichée ; dates du décret et du JO issues des résumés.",
+        "resumeMoteur": "Le décret modifie l'annexe II du CGI (articles 242 nonies B et suivants) et un arrêté du même jour modifie l'annexe IV, pour tirer les conséquences de l'article 123 de la loi de finances pour 2026. Les textes suppriment toute référence au portail public de facturation et parlent désormais de « plateformes agréées ». Pour être immatriculée, une plateforme doit fournir une attestation ISO/IEC 27001. Les textes encadrent aussi les audits, les échanges de données et le changement de plateforme.",
+        "publicConcerne": "TPE et indépendants qui choisissent ou ont choisi une plateforme agréée, à cinq semaines de l'obligation de réception.",
+        "angle": "« Ce que le décret du 27 juillet vous permet d'exiger de votre plateforme agréée » : numéro d'immatriculation, certification ISO 27001, conditions de changement de plateforme (réversibilité), questions à poser avant de signer ou de renouveler. Angle fournisseur et contrat, distinct du guide général.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Plusieurs sources juridiques concordent sur le numéro, l'objet et la date du 27 juillet (Legifiscal, LexisVeille, Lefebvre Dalloz, Le Mag juridique, PDF Associathèque). La date de publication au JO diverge (28 ou 29 juillet), mais reste dans la semaine. Texte Légifrance non lu.",
+        "sourcesConcordantes": [
+          "https://www.lexisveille.fr/facturation-electronique-le-cadre-reglementaire-de-la-generalisation-est-precise",
+          "https://formation.lefebvre-dalloz.fr/actualite/facturation-electronique-2026-les-nouvelles-regles-connaitre",
+          "https://www.lemag-juridique.com/articles/facturation-electronique-cadre-applicable-plateformes-agreees-est-precise-11908.htm",
+          "https://www.associatheque.fr/fr/fichiers/actualite/decret-2026-677-NOR-CPPE2610307D.pdf"
+        ]
+      },
+      {
+        "actualite": "Publication au JOUE (24 juillet 2026) du règlement (UE) 2026/1744 « omnibus numérique sur l'IA », entré en vigueur le 27 juillet 2026 selon les commentaires.",
+        "dateEvenement": "2026-07-24",
+        "natureDate": "publication (entrée en vigueur annoncée le 27 juillet)",
+        "organisme": "Union européenne (Parlement et Conseil)",
+        "url": "https://eur-lex.europa.eu/eli/reg/2026/1744/oj/fra",
+        "titreResultat": "Règlement (UE) 2026/1744 — EUR-Lex",
+        "datePageSelonMoteur": "JO L du 24.7.2026 selon l'extrait EUR-Lex.",
+        "resumeMoteur": "Règlement du 8 juillet 2026 modifiant notamment le règlement (UE) 2024/1689 (AI Act) pour simplifier sa mise en œuvre. Les commentaires indiquent le report des obligations « haut risque » de l'annexe III au 2 décembre 2027 et de l'annexe I au 2 août 2028, deux nouvelles interdictions (contenus intimes non consentis, pédocriminalité) et un délai au 2 décembre 2026 pour le marquage des contenus des systèmes déjà sur le marché. EUR-Lex propose une version consolidée de l'AI Act au 27 juillet 2026.",
+        "publicConcerne": "TPE utilisatrices d'IA.",
+        "angle": "Doublon avec S24 et S31 : à utiliser seulement si l'IA n'a pas été traitée en S24.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Référence EUR-Lex officielle dans les résultats ; date d'entrée en vigueur (27 juillet) confirmée par une version consolidée EUR-Lex et des commentaires.",
+        "sourcesConcordantes": [
+          "https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/fra",
+          "https://pasqualepillitteri.it/fr/news/8952/reglement-ue-2026-1744-omnibus-numerique-ai-act",
+          "https://www.lemondedudroit.fr/pi-tic/279-technologies-de-l-information/105299-ue-simplification-de-la-mise-en-oeuvre-des-regles-harmonisees-concernant-l-ia.html"
+        ]
+      },
+      {
+        "actualite": "Le Forum national de la facture électronique (FNFE-MPE) met en ligne une liste de contrôle pour le démarrage de la réforme (document daté du 27 juillet 2026).",
+        "dateEvenement": "2026-07-27",
+        "natureDate": "publication (date du nom de fichier)",
+        "organisme": "FNFE-MPE (association)",
+        "url": "https://fnfe-mpe.org/wp-content/uploads/2026/07/2026-07-27-RFE-Check-List-Demarrage-Volet-C-VF.pdf",
+        "titreResultat": "2026 07 27 RFE Check List Demarrage Volet C VF",
+        "datePageSelonMoteur": "Date déduite du nom du fichier (27 juillet 2026), pas d'autre date affichée.",
+        "resumeMoteur": "Le moteur ne montre que le titre du PDF, « RFE Check List Démarrage Volet C », sans résumé du contenu.",
+        "publicConcerne": "TPE et leurs assistantes administratives.",
+        "angle": "Possible encadré pratique pour le candidat 1, après lecture du document.",
+        "sensibilite": "standard",
+        "confiance": "faible",
+        "raisonConfiance": "Seul le nom du fichier est visible ; contenu et public inconnus.",
+        "sourcesConcordantes": []
+      }
+    ],
+    "recommande": 0,
+    "note": "Date de publication au JO du décret 2026-677 contradictoire (28 ou 29 juillet) : écrire « publié fin juillet au JO » ou vérifier sur Légifrance. Des intrusions informatiques à la DGFiP « fin juin et fin juillet » sont évoquées, mais la FAQ officielle impots.gouv et les messages aux entreprises datent d'août (à partir du 24 août) : ne pas les projeter dans cette semaine."
+  },
+  {
+    "semaine": "S31",
+    "debut": "2026-07-30",
+    "fin": "2026-08-05",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Application, le 2 août 2026, des obligations de transparence de l'article 50 de l'AI Act (information des personnes face à un chatbot, signalement des contenus générés et des deepfakes), maintenues par l'omnibus ; seul le marquage lisible par machine (art. 50(2)) des systèmes déjà sur le marché est reporté au 2 décembre 2026.",
+        "dateEvenement": "2026-08-02",
+        "natureDate": "entree-en-application",
+        "organisme": "Union européenne (AI Act, règlement 2024/1689 modifié par le règlement 2026/1744)",
+        "url": "https://www.bakerbotts.com/thought-leadership/publications/2026/september/eu-ai-act-article-50-transparency-obligations-go-live",
+        "titreResultat": "EU AI Act Article 50 Transparency Obligations Go Live",
+        "datePageSelonMoteur": "Publication de septembre 2026 (URL), qui décrit l'échéance du 2 août.",
+        "resumeMoteur": "Les sources s'accordent pour dire que l'article 50 est entré en application le 2 août 2026, quel que soit le niveau de risque du système, y compris pour un simple agent conversationnel de service client. Le report au 2 décembre 2026 ne vise que le marquage et la détectabilité des contenus des systèmes génératifs déjà sur le marché avant le 2 août. Les obligations des fournisseurs et des déployeurs sont distinctes ; les amendes peuvent atteindre 15 M€ ou 3 % du chiffre d'affaires mondial.",
+        "publicConcerne": "TPE et indépendants qui utilisent un chatbot sur leur site ou leur messagerie, ou qui publient images, vidéos ou textes générés par IA.",
+        "angle": "« Depuis le 2 août, votre chatbot doit dire qu'il est une IA » : vérifier l'accueil du chatbot, signaler les visuels et deepfakes générés, demander au prestataire ce qu'il fait pour le marquage d'ici le 2 décembre. Point de vue de l'utilisateur (déployeur), pas du développeur. Distinct du guide IA et données confidentielles.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Plusieurs commentaires juridiques concordants (Baker Botts, IoD Ireland, DPO Centre, donneespersonnelles.fr) et règlement publié sur EUR-Lex ; les obligations propres aux déployeurs ne sont pas détaillées dans les extraits ; texte non lu. Contradiction antérieure : certaines sources parlaient de règles de transparence intégralement maintenues, d'autres d'un report partiel au 2 décembre 2026 ; la version « report limité à l'art. 50(2) pour les systèmes existants » est la plus récurrente.",
+        "sourcesConcordantes": [
+          "https://www.iodireland.ie/images/uploads/downloads/EU_AI_Act_Transparency_Obligations_Take_Effect_on_2_August_2026.pdf",
+          "https://www.dpocentre.com/news/eu-ai-act-updates-omnibus-transparency-rules/",
+          "https://donneespersonnelles.fr/transparence-ia-article-50-ai-act",
+          "https://www.ropesgray.com/en/insights/viewpoints/2026/08/102nfqm/you-talkin-to-me-operationalising-the-eu-ai-acts-transparency-obligations"
+        ]
+      },
+      {
+        "actualite": "L'Urssaf et le CPSTI activent des mesures d'urgence (délais de paiement, baisse des cotisations provisionnelles, aides) pour les professionnels touchés par les incendies de Gironde et des Landes.",
+        "dateEvenement": "2026-07-30",
+        "natureDate": "communique",
+        "organisme": "Urssaf / CPSTI",
+        "url": "https://www.legifiscal.fr/actualites-fiscales/4576-incendies-gironde-landes-urssaf-cpsti-activent-mesures-urgence-independants.html",
+        "titreResultat": "Incendies Gironde-Landes : l'Urssaf et le CPSTI activent des mesures d'urgence pour les indépendants",
+        "datePageSelonMoteur": "Non affichée ; le communiqué est daté du 30 juillet 2026 dans le résumé.",
+        "resumeMoteur": "Les entreprises et professionnels victimes des incendies peuvent demander un délai de paiement de leurs cotisations, et les indépendants une baisse des cotisations provisionnelles s'ils prévoient une activité en recul. Les demandes se font par la messagerie de l'espace en ligne (« Déclarer une situation exceptionnelle ») ou par téléphone (3957 employeurs, 3698 autres). Un communiqué Urssaf/CPSTI en PDF est relayé.",
+        "publicConcerne": "Indépendants et employeurs sinistrés (pas en Vendée selon les extraits).",
+        "angle": "Faible intérêt local ; à la rigueur un encadré « sinistre : les leviers Urssaf à activer », sans redire le guide contrôle Urssaf.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Communiqué officiel relayé (PDF Urssaf/CPSTI sur un site tiers) ; zone géographique hors cible.",
+        "sourcesConcordantes": [
+          "https://cdn.ghr.fr/IMG/pdf/cp-urssaf-cpsti-incendies.pdf"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Un résultat affirme que le Bureau de l'IA a publié le 31 juillet 2026 le code de bonnes pratiques volontaire sur la transparence des contenus générés par IA ; un autre situe la version finale en juin. Date contradictoire : ne pas l'utiliser comme fait daté de la semaine sans vérification. Nominations au collège de la CNIL au 2 août : hors cible. Une annonce Urssaf « du 3 août » est citée par un résumé, sans confirmation."
+  }
+]

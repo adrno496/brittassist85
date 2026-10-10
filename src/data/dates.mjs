@@ -14,7 +14,7 @@
  * Fichier volontairement en .mjs : il est importé à la fois par la config Astro
  * et par un composant .astro.
  */
-import { dateDeRelecture, datePublicationSansRelecture } from './publication.mjs';
+import { articlesInscrits, dateDeRelecture, datePublicationSansRelecture } from './publication.mjs';
 
 /** Pages historiques : accueil, private-office, services, à propos, contact, prestations. */
 export const DATE_SOCLE = '2026-08-20';
@@ -44,6 +44,31 @@ const PAGES_OCTOBRE = new Set(['/guides', '/assistante', '/assistante-independan
 export const DATE_SERIE_SECRETARIAT = '2026-10-06';
 const PAGE_DE_REFERENCE = '/guides/secretariat-externalise';
 
+/** Ouverture de la rubrique « Articles » (/articles). */
+export const DATE_RUBRIQUE_ARTICLES = '2026-10-10';
+
+/**
+ * Modifications significatives d'un article déjà publié — chemin → AAAA-MM-JJ.
+ * Une correction de fond, une mise à jour d'échéance, une source remplacée : oui.
+ * Une coquille, un changement de gabarit ou de menu : non. Le <lastmod> et le
+ * dateModified de l'article prennent cette date ; son frontmatter `dateModified`
+ * doit dire la même (scripts/articles-check.mjs le vérifie).
+ *
+ *   '/articles/facture-electronique-reception-1er-septembre-2026': '2026-10-20',
+ */
+export const MODIFICATIONS_ARTICLES = {};
+
+const ARTICLE = /^\/articles\/[^/]+$/;
+const LISTE_ARTICLES = /^\/articles(\/page\/\d+)?$/;
+
+/** Date de dernière modification d'un article, ou null s'il n'est inscrit dans aucun registre. */
+function lastmodArticle(chemin) {
+  const inscrite = dateDeRelecture(chemin) ?? datePublicationSansRelecture(chemin);
+  if (!inscrite) return null;
+  const modifiee = MODIFICATIONS_ARTICLES[chemin];
+  return modifiee && modifiee > inscrite ? modifiee : inscrite;
+}
+
 /** Préfixes d'URL de la vague de publication de septembre 2026. */
 const CHEMINS_SEPTEMBRE = /^\/(guides|assistante|assistante-independante)(\/|$)/;
 
@@ -58,6 +83,11 @@ function nettoyer(pathname) {
  */
 export function lastmodPour(pathname) {
   const chemin = nettoyer(pathname);
+  // La liste des articles change quand un article paraît ou change ; sinon elle garde la date d'ouverture de la rubrique.
+  if (LISTE_ARTICLES.test(chemin)) {
+    return [DATE_RUBRIQUE_ARTICLES, ...articlesInscrits().map(lastmodArticle)].filter(Boolean).sort().at(-1);
+  }
+  if (ARTICLE.test(chemin)) return lastmodArticle(chemin) ?? DATE_RUBRIQUE_ARTICLES;
   // Une page relue porte la date de sa relecture ; une page publiée sans relecture
   // préalable porte la date de sa mise en ligne.
   const inscrite = dateDeRelecture(chemin) ?? datePublicationSansRelecture(chemin);
@@ -68,8 +98,14 @@ export function lastmodPour(pathname) {
   return CHEMINS_SEPTEMBRE.test(chemin) ? DATE_SEO_METIERS_ZONES_GUIDES : DATE_SOCLE;
 }
 
+/**
+ * Date de première publication d'une page.
+ * Un article non inscrit n'a pas de date de publication : null, et aucune n'est déclarée.
+ */
 export function publicationPour(pathname) {
   const chemin = nettoyer(pathname);
+  if (LISTE_ARTICLES.test(chemin)) return DATE_RUBRIQUE_ARTICLES;
+  if (ARTICLE.test(chemin)) return datePublicationSansRelecture(chemin) ?? dateDeRelecture(chemin);
   // La date de publication ne recule pas quand la page est relue ensuite.
   const inscrite = datePublicationSansRelecture(chemin) ?? dateDeRelecture(chemin);
   if (inscrite) return inscrite;

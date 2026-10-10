@@ -1,0 +1,17 @@
+---
+import ListeArticles from '../../../components/ListeArticles.astro';
+import { ARTICLES_PAR_PAGE, articlesGeneres } from '../../../lib/articles';
+
+// Pages 2 et suivantes de la liste. Aucune page n'est générée tant que la liste tient sur une seule :
+// pas de page vide, pas de doublon de /articles.
+export async function getStaticPaths() {
+  const articles = await articlesGeneres();
+  const pages = Math.ceil(articles.length / ARTICLES_PAR_PAGE);
+  return Array.from({ length: Math.max(0, pages - 1) }, (_, i) => ({ params: { page: String(i + 2) } }));
+}
+
+const articles = await articlesGeneres();
+const page = Number(Astro.params.page);
+---
+
+<ListeArticles articles={articles} page={page} />

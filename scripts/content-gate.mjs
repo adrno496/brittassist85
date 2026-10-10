@@ -22,32 +22,19 @@ import { zones } from '../src/data/zones.ts';
 import { dateDeRelecture, datePublicationSansRelecture, estPubliee, validationDuProprietaire } from '../src/data/publication.mjs';
 import { lastmodPour } from '../src/data/dates.mjs';
 import { validations } from '../src/data/relectures.mjs';
+import { INTERDITS, MARQUEURS_DE_REGLE } from '../src/data/regles-editoriales.mjs';
 
 const SEUILS = { titleMax: 70, descriptionMin: 70, descriptionMax: 165, similarite: 0.55 };
 
 /** Routes connues du site : toute cible de lien interne doit en faire partie. */
 const routes = new Set([
   '/', '/private-office', '/services', '/tarifs', '/guides', '/a-propos', '/contact',
-  '/mentions-legales', '/cgv', '/politique-confidentialite', '/assistante', '/assistante-independante', '/methode-editoriale',
+  '/mentions-legales', '/cgv', '/politique-confidentialite', '/assistante', '/assistante-independante', '/methode-editoriale', '/articles',
   ...bibliotheque.map((g) => `/guides/${g.slug}`),
   ...metiers.map((m) => `/assistante/${m.slug}`),
   ...prestations.map((p) => `/services/${p.slug}`),
   ...zones.map((z) => `/assistante-independante/${z.slug}`),
 ]);
-
-/** Termes qui signalent une règle de droit ou un fait chiffré : une source est alors exigée. */
-const MARQUEURS_DE_REGLE = /\b(amende|mentions? obligatoires?|obligation légale|code (civil|du travail|de commerce|général des impôts)|loi n°|article \d|décret|délai légal|€ (hors taxes|HT)|pénalités de retard)\b/i;
-
-/** Formulations interdites : promesses de résultat et preuves inventées. */
-const INTERDITS = [
-  [/\b(résultats?|classement|position|satisfaction|succès|gains?) garantis?\b|\b(nous|je) (vous )?garanti(ssons|s)\b|garanti(e)? sans risque/i, 'promesse de résultat'],
-  [/premi(er|ère) (sur|dans) google/i, 'promesse de classement'],
-  [/100 ?%/i, 'pourcentage absolu'],
-  [/\b(nos|mes) clients (témoignent|disent|confirment)/i, 'témoignage non sourcé'],
-  [/\d+ ?% des (dirigeants|entreprises|TPE|PME)/i, 'statistique sans source'],
-  [/\bjusqu’à \d+ ?(heures|h) (gagnées|par semaine)/i, 'gain chiffré non mesuré'],
-  [/\b(le|la) meilleure? (assistante|prestataire|service|offre|agence|private office)\b|\bn° ?1\b|\bleader\b/i, 'superlatif commercial'],
-];
 
 const normaliser = (t) => t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
 const grammes = (t, n = 4) => {

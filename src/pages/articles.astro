@@ -1,0 +1,9 @@
+---
+import ListeArticles from '../components/ListeArticles.astro';
+import { articlesGeneres } from '../lib/articles';
+
+// Liste des articles, page 1. Les pages suivantes : src/pages/articles/page/[page].astro.
+const articles = await articlesGeneres();
+---
+
+<ListeArticles articles={articles} page={1} />

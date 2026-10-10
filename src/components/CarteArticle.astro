@@ -1,0 +1,32 @@
+---
+import type { Article } from '../lib/articles';
+import { dateLisible } from '../lib/seo';
+
+interface Props {
+  article: Article;
+  /** Grand format, pour l'article mis en avant */
+  une?: boolean;
+  /** Niveau de l'intitulé, pour garder une hiérarchie de titres continue */
+  niveau?: 'h2' | 'h3';
+}
+
+const { article: a, une = false, niveau = 'h3' } = Astro.props;
+const Titre = niveau;
+---
+
+<a class={une ? 'article-une' : 'carte-article'} href={a.chemin}>
+  <span class={a.brouillon ? 'etiquette etiquette--brouillon' : 'etiquette'}>
+    {a.brouillon ? `Brouillon · ${a.data.editorialStatus}` : a.categorie}
+  </span>
+  <Titre class={une ? 'article-une__titre' : 'carte-article__titre'}>{a.data.h1}</Titre>
+  <p class={une ? 'article-une__chapo' : 'carte-article__chapo'}>{a.data.summary}</p>
+  <p class={une ? 'article-une__meta' : 'carte-article__meta'}>
+    {a.data.datePublished ? (
+      <>Publié le <time datetime={a.data.datePublished}>{dateLisible(a.data.datePublished)}</time></>
+    ) : (
+      <>Non publié</>
+    )}
+    {' · '}Actualité du <time datetime={a.data.dateEvenement}>{dateLisible(a.data.dateEvenement)}</time>
+    {' · '}{a.lecture} min de lecture
+  </p>
+</a>

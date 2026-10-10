@@ -1,0 +1,199 @@
+---
+/**
+ * Page de liste des articles : /articles (page 1) et /articles/page/<n>.
+ * Une page n'est indexable que si elle montre au moins un article publié.
+ */
+import '../styles/articles.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from './Button.astro';
+import CarteArticle from './CarteArticle.astro';
+import Fil from './Fil.astro';
+import Monogram from './Monogram.astro';
+import { ARTICLES_PAR_PAGE, type Article } from '../lib/articles';
+import { CATEGORIES } from '../data/articles.mjs';
+import { estGeneree } from '../data/publication.mjs';
+import { SITE_URL, filDAriane, jsonLd } from '../lib/seo';
+
+interface Props {
+  articles: Article[];
+  page: number;
+}
+
+const { articles, page } = Astro.props;
+const publies = articles.filter((a) => !a.brouillon);
+const pages = Math.max(1, Math.ceil(articles.length / ARTICLES_PAR_PAGE));
+const tranche = articles.slice((page - 1) * ARTICLES_PAR_PAGE, page * ARTICLES_PAR_PAGE);
+// Page 1 : le plus récent en grand, les autres en cartes. Pages suivantes : des cartes seulement.
+const une: Article | undefined = page === 1 ? tranche[0] : undefined;
+const suite: Article[] = page === 1 ? tranche.slice(1) : tranche;
+const cheminPage = (n: number) => (n === 1 ? '/articles' : `/articles/page/${n}`);
+const chemin = cheminPage(page);
+const url = `${SITE_URL}${chemin}`;
+
+// Sans article publié, la page reste accessible depuis le menu mais n'est pas proposée à l'indexation :
+// une liste vide n'apporte rien à un moteur de recherche.
+const indexable = tranche.some((a) => !a.brouillon);
+
+const parTheme = CATEGORIES.map((c) => ({ ...c, articles: publies.filter((a) => a.data.category === c.id) })).filter((c) => c.articles.length > 0);
+
+const title = page === 1
+  ? 'Articles : l’actualité utile aux entrepreneurs · BrittAssist'
+  : `Articles, page ${page} : l’actualité utile aux entrepreneurs · BrittAssist`;
+const description =
+  "Ce qui change pour les dirigeants, indépendants et TPE : une actualité datée par semaine, expliquée, sourcée, avec les actions concrètes à prévoir.";
+
+const etapes = [
+  { nom: 'Articles', href: '/articles' },
+  ...(page > 1 ? [{ nom: `Page ${page}`, href: chemin }] : []),
+];
+
+const donnees = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      '@id': `${url}#page`,
+      url,
+      name: title,
+      description,
+      inLanguage: 'fr-FR',
+      isPartOf: { '@id': `${SITE_URL}/#website` },
+    },
+    ...(publies.length
+      ? [{
+          '@type': 'ItemList',
+          '@id': `${url}#liste`,
+          name: 'Articles BrittAssist',
+          itemListElement: tranche.filter((a) => !a.brouillon).map((a, i) => ({
+            '@type': 'ListItem',
+            position: (page - 1) * ARTICLES_PAR_PAGE + i + 1,
+            name: a.data.h1,
+            url: `${SITE_URL}${a.chemin}`,
+          })),
+        }]
+      : []),
+    filDAriane(url, etapes),
+  ],
+};
+---
+
+<BaseLayout title={title} description={description} noindex={!indexable} suivreLiens>
+  <script type="application/ld+json" slot="head" set:html={jsonLd(donnees)} />
+
+  <header class="hero hero--page">
+    <div class="container">
+      {page > 1 && <Fil etapes={etapes} />}
+      <p class="eyebrow">Articles</p>
+      <h1 class="hero__title">{page === 1 ? 'L’actualité utile aux entrepreneurs.' : `L’actualité utile aux entrepreneurs, page ${page}.`}</h1>
+      <p class="hero__sub">
+        Une actualité par semaine, choisie parce qu’elle change quelque chose pour un dirigeant,
+        un indépendant ou une petite entreprise : ce qui change, pour qui, à partir de quand, et ce
+        qu’il faut faire. Chaque article cite ses sources officielles et indique sa date de publication.
+      </p>
+    </div>
+  </header>
+
+  <section class="band band--noir">
+    <div class="container">
+      {articles.length === 0 ? (
+        <div class="liste-vide reveal">
+          <h2>Les premiers articles sont en préparation.</h2>
+          <p>
+            Un article n’est mis en ligne qu’une fois ses sources ouvertes et vérifiées. En attendant,
+            les guides répondent aux questions de fond : facturation, délégation, organisation,
+            confidentialité.
+          </p>
+          <Button href="/guides" variant="lien">Parcourir les guides</Button>
+        </div>
+      ) : (
+        <>
+          {une && (
+            <div class="reveal">
+              <h2 class="eyebrow">{une.brouillon ? 'Brouillon le plus récent (aperçu)' : 'Le plus récent'}</h2>
+              <CarteArticle article={une} une niveau="h3" />
+            </div>
+          )}
+          {suite.length > 0 && (
+            <>
+              <h2 class="eyebrow">{page === 1 ? 'Tous les articles' : `Articles, page ${page}`}</h2>
+              <div class="cartes-articles reveal">
+                {suite.map((a) => <CarteArticle article={a} />)}
+              </div>
+            </>
+          )}
+          {pages > 1 && (
+            <nav class="pagination" aria-label="Pages de la liste des articles">
+              {Array.from({ length: pages }, (_, i) => i + 1).map((n) =>
+                n === page ? <span aria-current="page">Page {n}</span> : <a href={cheminPage(n)}>Page {n}</a>,
+              )}
+            </nav>
+          )}
+        </>
+      )}
+    </div>
+  </section>
+
+  {parTheme.length > 1 && (
+    <section class="band band--noir-doux band--tight">
+      <div class="container">
+        <div class="band__head reveal">
+          <p class="eyebrow">Par thème</p>
+          <h2>Les articles, rangés par sujet.</h2>
+        </div>
+        <div class="index-prestations reveal">
+          {parTheme.map((t) => (
+            <div class="index-groupe">
+              <h3>{t.nom}</h3>
+              {t.articles.map((a) => <a href={a.chemin}>{a.data.h1}</a>)}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="band band--ivoire band--tight">
+    <div class="container">
+      <div class="band__head band__head--wide reveal">
+        <p class="eyebrow">Comment ces articles sont faits</p>
+        <h2>Daté, sourcé, et dit tel quel.</h2>
+      </div>
+      <ul class="list-plain reveal">
+        <li>La date affichée « Publié le » est celle de la mise en ligne. La date de l’actualité est indiquée à part.</li>
+        <li>Un article écrit après la semaine qu’il couvre se présente comme une rétrospective.</li>
+        <li>Les articles sont préparés par BrittAssist avec l’aide d’un outil d’IA, à partir des sources citées en bas de chaque page. Ils ne remplacent pas l’avis d’un expert-comptable ou d’un avocat.</li>
+        <li>Un sujet juridique, fiscal ou social n’est mis en ligne qu’après validation humaine.</li>
+      </ul>
+      <div class="index-prestations reveal">
+        <div class="index-groupe">
+          <h3>Les guides de fond</h3>
+          <a href="/guides/facturation-electronique-tpe">Facturation électronique : ce qui change pour une TPE</a>
+          <a href="/guides/echeancier-administratif-entreprise">Tenir l’échéancier administratif de l’entreprise</a>
+          <a href="/guides/fraude-au-faux-rib-et-au-president">Fraude au faux RIB et au président</a>
+          <a href="/guides">Tous les guides</a>
+        </div>
+        <div class="index-groupe">
+          <h3>BrittAssist</h3>
+          <a href="/services">Le périmètre couvert</a>
+          <a href="/private-office">Le fonctionnement</a>
+          {estGeneree('/methode-editoriale') && <a href="/methode-editoriale">La méthode éditoriale</a>}
+          <a href="/contact">Échanger sur votre organisation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <Monogram variant="ghost" />
+    <div class="container container--narrow reveal">
+      <h2>Une échéance qui vous concerne, et personne pour la suivre ?</h2>
+      <p class="lede">
+        C’est précisément ce que BrittAssist prend en charge : repérer ce qui arrive,
+        préparer les pièces, relancer, et vous laisser les décisions.
+      </p>
+      <div class="cta-final__actions">
+        <Button href="/contact" variant="ivoire">Échanger avec Brittany</Button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

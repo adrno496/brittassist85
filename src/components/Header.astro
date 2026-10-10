@@ -7,6 +7,7 @@ const links = [
   { href: '/services', label: 'Services' },
   { href: '/tarifs', label: 'Tarifs' },
   { href: '/guides', label: 'Guides' },
+  { href: '/articles', label: 'Articles' },
   { href: '/a-propos', label: 'À propos' },
 ];
 const isActive = (href: string) => currentPath === href || currentPath.startsWith(href + '/');
@@ -56,11 +57,16 @@ const isActive = (href: string) => currentPath === href || currentPath.startsWit
         hamburger.setAttribute('aria-label', 'Fermer le menu');
         links.classList.add('open');
         document.body.classList.add('nav-open');
+        // Les liens précèdent le bouton dans le document : sans cela, Tab partirait vers la page, sous le menu.
+        links.querySelector('a')?.focus();
       }
     });
     links.querySelectorAll('a').forEach((link) => link.addEventListener('click', close));
     document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') close();
+      if (event.key !== 'Escape') return;
+      const ouvert = hamburger.getAttribute('aria-expanded') === 'true';
+      close();
+      if (ouvert) hamburger.focus();
     });
   }
 </script>

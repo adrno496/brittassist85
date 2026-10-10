@@ -11,8 +11,11 @@ import { relectures, validations } from './relectures.mjs';
 // `npm run build:apercu` : génère aussi les pages absentes des deux registres, en noindex. Voir mode.mjs.
 export { APERCU };
 
-/** Deux familles passent par les registres (relectures.mjs, publications.mjs), plus la page qui décrit la méthode. */
-const FAMILLES_RELUES = /^\/(guides|assistante)\/[^/]+$/;
+/**
+ * Trois familles passent par les registres (relectures.mjs, publications.mjs), plus la page qui décrit la méthode.
+ * Les articles (/articles/<slug>) y sont entrés le 10 octobre 2026 : aucun n'est en ligne sans y être inscrit.
+ */
+const FAMILLES_RELUES = /^\/(guides|assistante|articles)\/[^/]+$/;
 const PAGES_RELUES = new Set(['/methode-editoriale']);
 
 /** Pages en ligne avant la création des registres : leur statut ne change pas. */
@@ -94,4 +97,9 @@ export function estBrouillon(chemin) {
  */
 export function liensVisibles(liens) {
   return liens.filter((l) => !l.href.startsWith('/') || estGeneree(l.href));
+}
+
+/** Chemins des articles inscrits dans l'un des deux registres, donc publiés (/articles/<slug>). */
+export function articlesInscrits() {
+  return [...new Set([...Object.keys(publications), ...Object.keys(relectures)])].filter((c) => /^\/articles\/[^/]+$/.test(c)).sort();
 }

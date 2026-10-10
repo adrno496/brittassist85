@@ -12,13 +12,18 @@
     "astro": "astro",
     "check": "astro check",
     "test": "node --test 'scripts/tests/*.test.mjs'",
-    "qa": "node scripts/content-gate.mjs && npm run build && node scripts/seo-audit.mjs --strict",
-    "qa:apercu": "node scripts/content-gate.mjs && npm run build:apercu && node scripts/seo-audit.mjs --strict",
+    "qa": "node scripts/content-gate.mjs && node scripts/articles-check.mjs && npm run build && node scripts/seo-audit.mjs --strict",
+    "qa:apercu": "node scripts/content-gate.mjs && node scripts/articles-check.mjs && npm run build:apercu && node scripts/seo-audit.mjs --strict",
     "qa:navigateur": "node scripts/browser-check.mjs",
+    "qa:menu": "node scripts/menu-check.mjs",
     "qa:similarite": "node scripts/similarity-check.mjs --serie --strict",
+    "articles:check": "node scripts/articles-check.mjs",
+    "article:nouveau": "node scripts/articles-new.mjs",
+    "article:publier": "node scripts/articles-publier.mjs",
     "servir": "node scripts/serve-dist.mjs",
     "docs:seo": "npm run build:apercu && node scripts/docs-seo.mjs && npm run build",
-    "docs:secretariat": "npm run build:apercu && node scripts/docs-secretariat.mjs && npm run build"
+    "docs:secretariat": "npm run build:apercu && node scripts/docs-secretariat.mjs && npm run build",
+    "docs:articles": "node scripts/docs-articles.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.2.1",
@@ -26,6 +31,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
+    "js-yaml": "^4.3.2",
     "typescript": "^5.9.3"
   }
 }

@@ -1,0 +1,539 @@
+[
+  {
+    "semaine": "S32",
+    "debut": "2026-08-06",
+    "fin": "2026-08-12",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Entrée en vigueur du consentement préalable obligatoire pour le démarchage téléphonique des consommateurs (fin du système d'opposition Bloctel)",
+        "dateEvenement": "2026-08-11",
+        "natureDate": "entree-en-vigueur",
+        "organisme": "Législateur (loi n° 2025-594 du 30 juin 2025, art. 13 III) ; décret d'application publié au JO le 25 juillet 2026 selon la presse",
+        "url": "https://www.leclubdesjuristes.com/en-bref/demarchage-telephonique-le-consentement-prealable-devient-obligatoire-a-partir-du-11-aout-2026-17147/",
+        "titreResultat": "Démarchage téléphonique : le consentement préalable devient obligatoire à partir du 11 août 2026",
+        "datePageSelonMoteur": "non affichée précisément ; contenu annonçant l'entrée en vigueur au 11 août 2026",
+        "resumeMoteur": "Selon les extraits, la loi interdisant le démarchage téléphonique non consenti est entrée en vigueur le mardi 11 août 2026. Un décret publié au JO le 25 juillet 2026 définit le consentement (libre, spécifique, éclairé, univoque, révocable ; pas de case pré-cochée ni de renouvellement tacite). La preuve du consentement pèse sur l'entreprise et Bloctel disparaît.",
+        "publicConcerne": "Artisans, commerçants, installateurs, agences et indépendants qui prospectent des particuliers par téléphone, eux-mêmes ou via un prestataire d'appels",
+        "angle": "Depuis le 11 août : faire le tri dans ses fichiers de prospection (quels contacts ont donné un accord prouvable ?), adapter formulaires de devis et de contact pour recueillir un consentement conforme, encadrer contractuellement un centre d'appels sous-traitant, conserver les preuves. Angle prospection consommateurs, distinct du guide RGPD sous-traitance existant.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Plusieurs médias juridiques et généralistes concordent sur la date et la base légale, mais aucune page officielle (service-public, Légifrance, DGCCRF) n'est apparue dans les résultats. Siècle Digital (2 juillet 2026) évoque une annulation partielle de la loi obtenue par Orange et une entrée en vigueur pleine de certaines sanctions au 31 octobre 2027 : périmètre non précisé, à vérifier.",
+        "sourcesConcordantes": [
+          "https://www.journaldunet.com/business/1553607-l-interdiction-du-demarchage-telephonique-non-consenti/",
+          "https://www.sudradio.fr/societe/demarchage-telephonique-le-consommateur-devra-desormais-donner-son-consentement-pour-etre-appele",
+          "https://www.aesio.fr/articles/demarchage-telephonique-un-nouveau-dispositif-entre-en-vigueur",
+          "https://siecledigital.fr/2026/07/02/orange-fait-annuler-une-partie-de-la-loi-contre-le-demarchage-telephonique/"
+        ]
+      },
+      {
+        "actualite": "Le BOSS confirme le doublement du plafond d'exonération sociale de la prime carburant (300 € à 600 € par salarié pour les primes versées jusqu'au 31/12/2026) et suspend la condition liée à la desserte en transports en commun",
+        "dateEvenement": "2026-08-06",
+        "natureDate": "publication (communiqué du Bulletin officiel de la sécurité sociale)",
+        "organisme": "BOSS (Bulletin officiel de la sécurité sociale)",
+        "url": "https://www.legifiscal.fr/actualites-fiscales/4604-doublement-prime-carburant-commente-securite-sociale.html",
+        "titreResultat": "Doublement de la prime carburant commenté par la sécurité sociale (Légifiscal)",
+        "datePageSelonMoteur": "non affichée ; l'extrait date le communiqué BOSS du 6 août 2026",
+        "resumeMoteur": "Selon les extraits, le BOSS a indiqué le 6 août 2026 que le plafond d'exonération sociale de la prime carburant est porté à 600 € par salarié et par an pour les primes versées jusqu'au 31 décembre 2026. La condition de non-desserte du domicile ou du lieu de travail par les transports en commun serait suspendue, les autres critères restant applicables.",
+        "publicConcerne": "Employeurs (TPE/PME, artisans employeurs) dont les salariés utilisent leur véhicule personnel",
+        "angle": "Ce que le BOSS a confirmé le 6 août : nouveau plafond, période couverte, condition assouplie ; comment décider et formaliser le versement (décision unilatérale, bulletin de paie). Ne pas mentionner le plafond de 1 000 €, annoncé seulement le 22 septembre.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Plusieurs sites spécialisés concordent sur la date du 6 août et le montant de 600 €, mais la page du BOSS elle-même n'est pas apparue. Le même sujet est confirmé par l'Urssaf le 19 août (S33) : il faut choisir une seule des deux semaines.",
+        "sourcesConcordantes": [
+          "https://www.legisocial.fr/actualites-sociales/8065-prime-carburant-exoneration-doublee-2026.html",
+          "https://www.capeb.fr/actualites/prime-carburant-le-doublement-du-plafond-confirme-par-le-boss-et-lurssaf"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Sources non ouvertes (WebFetch/curl indisponibles) : uniquement titres, URL et extraits du moteur de recherche. L'échéance AI Act du 2 août 2026 tombe en S31 (hors période) ; selon la presse, un accord européen (« omnibus IA ») reporte les obligations haut risque, mais je n'ai pas trouvé de publication officielle datée dans S32. Le décret GNR BTP n° 2026-720 du 1er août a été publié au JO du 4 août (S31, hors période). Urssaf : actualité du 11 août sur des aides aux artistes-auteurs sinistrés, peu pertinente pour la clientèle."
+  },
+  {
+    "semaine": "S33",
+    "debut": "2026-08-13",
+    "fin": "2026-08-19",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "L'Urssaf publie « Prime de carburant – Mesures applicables en 2026 » : plafond d'exonération porté à 600 € pour 2026",
+        "dateEvenement": "2026-08-19",
+        "natureDate": "publication",
+        "organisme": "Urssaf",
+        "url": "https://urssaf.fr/accueil/actualites.html",
+        "titreResultat": "Actualités - Urssaf.fr (entrée « Prime de carburant - Mesures applicables en 2026, publié le 19 août 2026 »)",
+        "datePageSelonMoteur": "« Publié le 19 août 2026 » (selon l'extrait de la liste des actualités Urssaf)",
+        "resumeMoteur": "La page d'actualités de l'Urssaf liste une mesure sur la prime de carburant publiée le 19 août 2026. Des sites spécialisés indiquent que le doublement du plafond d'exonération (de 300 à 600 € par salarié et par an pour les primes versées jusqu'au 31/12/2026), confirmé par le BOSS le 6 août, a été repris par l'Urssaf le 19 août.",
+        "publicConcerne": "Employeurs de toutes tailles, en particulier TPE, artisans et professions libérales employeurs",
+        "angle": "Prime carburant 2026 : ce que l'Urssaf a confirmé le 19 août, pour quels salariés, quel plafond, quelles conditions assouplies, comment l'inscrire sur le bulletin et quels justificatifs garder. Rester sur le plafond de 600 € connu à cette date.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Date de publication visible sur l'extrait de la page officielle Urssaf, mais contenu détaillé non visible ; le montant de 600 € vient de sites spécialisés concordants. Contradiction ultérieure : plafond de 1 000 € annoncé le 22 septembre (texte non encore publié début octobre selon plusieurs sources), à ne pas projeter dans S33.",
+        "sourcesConcordantes": [
+          "https://www.capeb.fr/actualites/prime-carburant-le-doublement-du-plafond-confirme-par-le-boss-et-lurssaf",
+          "https://www.legisocial.fr/actualites-sociales/8065-prime-carburant-exoneration-doublee-2026.html",
+          "https://www.weblex.fr/weblex-actualite/prime-carburant-un-plafond-d-exoneration-double-en-2026"
+        ]
+      },
+      {
+        "actualite": "Service Public Entreprendre annonce l'évolution des critères environnementaux de la commande publique au 21 août 2026 (loi Climat et Résilience)",
+        "dateEvenement": "2026-08-18",
+        "natureDate": "publication",
+        "organisme": "Service Public Entreprendre (DILA) ; mesure issue de l'article 35 de la loi Climat et Résilience",
+        "url": "https://entreprendre.service-public.gouv.fr/actualites/A19042",
+        "titreResultat": "Environnement - Les critères environnementaux de la commande publique changent le 21 août",
+        "datePageSelonMoteur": "18 août 2026 (selon le résumé du moteur)",
+        "resumeMoteur": "Les critères environnementaux de la commande publique évoluent à partir du 21 août 2026, en application de la loi Climat et Résilience. Les marchés signés avant cette date restent soumis à leurs clauses initiales, reconductions comprises. Le moteur signale aussi une mention « ne concerne que les micro-entrepreneurs », qui paraît incohérente (probablement un filtre de profil de la page).",
+        "publicConcerne": "TPE, artisans et indépendants qui répondent ou veulent répondre à des marchés publics (collectivités vendéennes, etc.)",
+        "angle": "Voir S34 (entrée en vigueur) : sujet à traiter une seule fois.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "URL officielle ; date de publication donnée par le moteur ; cohérent avec Banque des Territoires et plusieurs sites juridiques.",
+        "sourcesConcordantes": [
+          "https://www.banquedesterritoires.fr/criteres-environnementaux-des-marches-publics-quelles-sont-les-nouvelles-obligations"
+        ]
+      },
+      {
+        "actualite": "Décret n° 2026-776 du 14 août 2026 (JO du 15 août) : aide exceptionnelle supprimant le reste à charge d'activité partielle pour les entreprises de moins de 250 salariés touchées par les incendies de forêt",
+        "dateEvenement": "2026-08-15",
+        "natureDate": "publication au Journal officiel",
+        "organisme": "Gouvernement / ASP / préfets",
+        "url": "https://www.editions-tissot.fr/actualite/droit-du-travail/activite-partielle-une-aide-exceptionnelle-pour-les-tpe-pme-sinistrees-par-les-incendies-cet-ete",
+        "titreResultat": "Activité partielle : une aide exceptionnelle pour les TPE-PME sinistrées par les incendies cet été",
+        "datePageSelonMoteur": "non affichée",
+        "resumeMoteur": "Le décret couvre les heures chômées entre le 20 juillet et le 30 août 2026 pour les établissements situés dans des communes listées soumises à évacuation ou confinement. Ces communes sont en Gironde, dans les Landes et dans le Var. Le préfet attribue l'aide et l'ASP la verse. Le texte a été modifié par le décret n° 2026-874 du 17 septembre 2026.",
+        "publicConcerne": "Entreprises de moins de 250 salariés des communes listées (hors Vendée)",
+        "angle": "Peu adapté à une clientèle vendéenne ; tout au plus un encadré « activité partielle et sinistre » sans portée locale.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Plusieurs sources spécialisées concordent (Crowe, Legisocial, les-aides.fr) mais Légifrance n'a pas été consulté ; faible pertinence géographique.",
+        "sourcesConcordantes": [
+          "https://www.crowe.com/fr/groupe-rsa/news/aide-exceptionnelle-incendie",
+          "https://www.legisocial.fr/actualites-sociales/8069-incendies-zero-reste-charge-activite-partielle.html"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Sources non ouvertes (WebFetch/curl indisponibles) : uniquement titres, URL et extraits du moteur de recherche. Si la prime carburant est retenue en S33, ne pas la traiter aussi en S32 (BOSS du 6 août). Le sujet commande publique (publié le 18 août) est recommandé pour S34, semaine de son entrée en vigueur."
+  },
+  {
+    "semaine": "S34",
+    "debut": "2026-08-20",
+    "fin": "2026-08-26",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Entrée en vigueur des nouvelles obligations environnementales dans l'attribution des marchés publics : au moins un critère environnemental, fin du critère unique du prix",
+        "dateEvenement": "2026-08-21",
+        "natureDate": "entree-en-vigueur",
+        "organisme": "Code de la commande publique (art. 35 loi Climat et Résilience) ; annonce Service Public Entreprendre",
+        "url": "https://entreprendre.service-public.gouv.fr/actualites/A19042",
+        "titreResultat": "Environnement - Les critères environnementaux de la commande publique changent le 21 août",
+        "datePageSelonMoteur": "publiée le 18 août 2026 (selon le moteur)",
+        "resumeMoteur": "À partir du 21 août 2026, les acheteurs publics doivent intégrer au moins un critère environnemental, et le prix ne peut plus être le critère unique. Une insuffisance environnementale démontrée peut peser directement sur la note de l'offre. Le critère doit être lié à l'objet du marché, pas à la politique RSE générale. Les marchés signés avant le 21 août conservent leurs clauses.",
+        "publicConcerne": "Artisans du bâtiment, prestataires de services, TPE/PME candidats aux marchés de collectivités et d'établissements publics",
+        "angle": "Depuis le 21 août, ce qui change dans vos réponses aux appels d'offres : préparer une note environnementale liée au marché (matériaux, déplacements, déchets, sous-traitance locale), rassembler les justificatifs, relire les règlements de consultation. Le rôle d'une assistante : veille des consultations, constitution du dossier, preuves.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Source officielle et sources juridiques concordantes sur le fond. Contradiction de date à mentionner : L'Écho du Mardi et d'autres retiennent le 22 août (consultations engagées ou avis envoyés à compter du 22 août), Service Public le 21 août.",
+        "sourcesConcordantes": [
+          "https://www.banquedesterritoires.fr/criteres-environnementaux-des-marches-publics-quelles-sont-les-nouvelles-obligations",
+          "https://www.echodumardi.com/juridique/marches-publics-depuis-le-22-aout-lenvironnement-pese-davantages-dans-vos-offres/?print=pdf",
+          "https://www.weka.fr/actualite/?p=219430"
+        ]
+      },
+      {
+        "actualite": "Bercy publie le récapitulatif des échéances de rentrée pour les entreprises (septembre), avec le rappel du démarrage de la facturation électronique au 1er septembre",
+        "dateEvenement": "2026-08-26",
+        "natureDate": "publication (date « Écrit le » affichée)",
+        "organisme": "Ministère de l'Économie (economie.gouv.fr)",
+        "url": "https://www.economie.gouv.fr/entreprises/entreprises-vos-principales-echeances-du-mois",
+        "titreResultat": "Écrit le 26/08/2026 – Entreprises : vos principales échéances du mois",
+        "datePageSelonMoteur": "« Écrit le 26/08/2026 » (il peut s'agir d'une page récurrente réécrite chaque mois)",
+        "resumeMoteur": "La page rappelle que la réforme de la facturation électronique entre entreprises est mise en œuvre à compter du 1er septembre 2026 (réception pour tous ; émission et transmission des données pour les grandes entreprises et les ETI). Elle rappelle aussi la déclaration mensuelle de chiffre d'affaires des micro-entrepreneurs, obligatoire même à zéro. Elle renvoie au calendrier fiscal d'impots.gouv.fr et à l'Urssaf.",
+        "publicConcerne": "Dirigeants de TPE, micro-entrepreneurs, professions libérales",
+        "angle": "Check-list de rentrée datée : ce qui tombe en septembre 2026 (TVA, DSN, déclaration micro, bascule facturation électronique) et comment l'organiser dans l'agenda. À éviter si l'article de S35 traite déjà la facturation électronique.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Page officielle, mais il s'agit d'une page récurrente : la date « écrit le » peut être une réécriture. Le contenu détaillé des échéances n'est visible que partiellement.",
+        "sourcesConcordantes": [
+          "https://www.impots.gouv.fr/professionnel/calendrier-fiscal/2026-09"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Sources non ouvertes (WebFetch/curl indisponibles) : uniquement titres, URL et extraits du moteur de recherche. CNIL : le 26 août 2026, nouvelle version d'un démonstrateur de généalogie des modèles d'IA open source, sans intérêt pratique pour la clientèle. CAPEB (24 août) : confirmation BOSS/Urssaf de la prime carburant, sujet déjà couvert en S32/S33."
+  },
+  {
+    "semaine": "S35",
+    "debut": "2026-08-27",
+    "fin": "2026-09-02",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Coup d'envoi de la facturation électronique interentreprises : depuis le 1er septembre 2026, toutes les entreprises doivent pouvoir recevoir des factures électroniques via une plateforme agréée ; émission obligatoire pour les grandes entreprises et les ETI",
+        "dateEvenement": "2026-09-01",
+        "natureDate": "entree-en-vigueur",
+        "organisme": "DGFiP / Ministère de l'Économie ; Service Public Entreprendre",
+        "url": "https://www.economie.gouv.fr/actualites/facturation-electronique-entre-entreprises-coup-denvoi-de-la-reforme",
+        "titreResultat": "Facturation électronique entre entreprises : coup d'envoi de la réforme",
+        "datePageSelonMoteur": "1er septembre 2026 (economie.gouv.fr) ; A18953 de Service Public daté du 2 septembre 2026",
+        "resumeMoteur": "La réforme est entrée en vigueur le 1er septembre 2026. Toutes les entreprises reçoivent via une plateforme agréée ; les grandes entreprises et les ETI émettent dès cette date, les PME, TPE et micro-entreprises au 1er septembre 2027. Bercy indique qu'aucune sanction ne sera appliquée pendant la phase de démarrage aux entreprises en difficulté. Le communiqué de presse évoque 66 % d'entreprises ayant choisi leur plateforme, un guide de démarrage et une ligne d'assistance (0 806 807 807).",
+        "publicConcerne": "Toutes les entreprises assujetties à la TVA, y compris TPE, artisans, professions libérales ; fournisseurs de grandes entreprises et d'ETI",
+        "angle": "« Semaine 1 de la réforme » : ce qui est déjà en vigueur (réception), ce qui ne l'est pas encore pour une TPE (émission en 2027), les premières factures électroniques reçues de grands fournisseurs (énergie, télécoms, grossistes) à traiter, la vérification de son inscription à l'annuaire et de sa plateforme, la tolérance annoncée et le numéro d'assistance. Partir des annonces du 1er septembre, sans refaire le guide général déjà publié.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Plusieurs pages officielles concordantes (economie.gouv.fr, presse.economie.gouv.fr, entreprendre.service-public.gouv.fr A18953). Contradictions à signaler : (1) Tide affirme que les micro-entrepreneurs en franchise sont concernés par la réception, alors que la page A18953 porte un bandeau « ne concerne pas les micro-entrepreneurs » (probablement au titre de l'émission) ; (2) « aucune sanction pendant le démarrage / avant fin 2026 » d'un côté, mécanisme LF 2026 (mise en demeure de 3 mois, puis 500 €) selon des sites spécialisés de l'autre.",
+        "sourcesConcordantes": [
+          "https://entreprendre.service-public.gouv.fr/actualites/A18953",
+          "https://presse.economie.gouv.fr/la-facturation-demarre-aujourdhui-priorite-a-laccompagnement-des-entreprises/",
+          "https://www.urssaf.fr/accueil/actualites/facturation-electronique.html"
+        ]
+      },
+      {
+        "actualite": "Après les intrusions dans des fichiers du fisc cet été, le gouvernement convoque les plateformes agréées pour rappeler les exigences de sécurité (hébergement SecNumCloud, preuve continue, suspension possible)",
+        "dateEvenement": "2026-08-27",
+        "natureDate": "annonce (date de l'article de presse ; date exacte de la réunion non visible)",
+        "organisme": "Ministère des Comptes publics (David Amiel) / DGFiP",
+        "url": "https://siecledigital.fr/2026/08/27/facturation-electronique-face-aux-craintes-de-piratage-le-gouvernement-veut-rassurer/",
+        "titreResultat": "Facturation électronique : face aux craintes de piratage, le gouvernement veut rassurer",
+        "datePageSelonMoteur": "27 août 2026 (date dans l'URL)",
+        "resumeMoteur": "Deux intrusions dans des fichiers de l'administration fiscale cet été ont nourri les inquiétudes. Le SDI (Syndicat des indépendants et des TPE) a demandé un moratoire. Le ministre a réuni les plateformes agréées : hébergement des données attendu sous SecNumCloud, preuve continue du respect des obligations, suspension possible d'une plateforme insuffisante. Le calendrier n'est pas modifié.",
+        "publicConcerne": "TPE, indépendants, services comptables ; toute entreprise qui choisit ou utilise une plateforme agréée",
+        "angle": "Sécurité de la bascule : questions à poser à sa plateforme agréée (hébergement, authentification, journalisation), vigilance contre les faux messages « DGFiP » ou « plateforme » demandant de changer d'accès ou de RIB. Partir de l'annonce gouvernementale, sans refaire les guides faux RIB et double authentification.",
+        "sensibilite": "standard",
+        "confiance": "moyenne",
+        "raisonConfiance": "Plusieurs médias concordent (Public Sénat, KultureGeek, Clubic, Journal de l'économie), mais aucun communiqué officiel n'est apparu ; la date précise de la réunion n'est pas visible.",
+        "sourcesConcordantes": [
+          "https://www.publicsenat.fr/actualites/economie/facturation-electronique-apres-le-piratage-du-fisc-le-gouvernement-veut-rassurer-les-entreprises-sur-les-standards-de-securite",
+          "https://kulturegeek.fr/news-357676/facturation-electronique-piratage-ministere-budget-veut-rassurer",
+          "https://www.economiematin.fr/?p=230402"
+        ]
+      },
+      {
+        "actualite": "Arrêts de travail : durée des prescriptions plafonnée à partir du 1er septembre 2026 (31 jours pour une première prescription, 62 jours par prolongation)",
+        "dateEvenement": "2026-09-01",
+        "natureDate": "entree-en-vigueur",
+        "organisme": "Gouvernement (décret du 12 juin 2026, art. R.162-1-7-1 CSS) ; Service Public",
+        "url": "https://www.service-public.gouv.fr/particuliers/actualites/A18962",
+        "titreResultat": "Maladie - La durée des arrêts de travail sera plafonnée à partir du 1er septembre",
+        "datePageSelonMoteur": "non affichée (page annonçant la mesure avant le 1er septembre)",
+        "resumeMoteur": "Un décret du 12 juin 2026 plafonne à 31 jours la première prescription d'arrêt de travail et à 62 jours chaque prolongation, à compter du 1er septembre 2026 (hors Mayotte). Le médecin peut dépasser ces durées si l'état de santé le justifie, et le nombre de prolongations n'est pas limité.",
+        "publicConcerne": "Employeurs (gestion RH et paie des TPE/PME)",
+        "angle": "Côté employeur : davantage d'avis de prolongation à suivre, avec un impact sur la DSN, le maintien de salaire et le planning des remplacements. Comment organiser le suivi des arrêts.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Page officielle service-public.gouv.fr (également A18962 sur entreprendre.service-public.gouv.fr) et presse juridique concordantes.",
+        "sourcesConcordantes": [
+          "https://entreprendre.service-public.gouv.fr/actualites/A18962",
+          "https://www.leclubdesjuristes.com/en-bref/arrets-de-travail-la-duree-des-prescriptions-plafonnee-a-partir-du-1er-septembre-16368/"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Sources non ouvertes (WebFetch/curl indisponibles) : uniquement titres, URL et extraits du moteur de recherche. Nombre de plateformes agréées divergent selon les sources : 101 (première liste citée par economie.gouv.fr), 149 ou 163 candidates au 21-22 septembre, 166 (comparatif) ; ne citer que la liste officielle impots.gouv.fr. Pénalité de 50 € par facture (plafond 15 000 €/an) relevée par des sites spécialisés ; les extraits officiels mentionnent 50 € par facture sans plafond visible."
+  },
+  {
+    "semaine": "S36",
+    "debut": "2026-09-03",
+    "fin": "2026-09-09",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Aide de 100 € aux travailleurs « grands rouleurs » : date limite de demande reportée au 30 septembre 2026 (arrêté du 8 septembre 2026 ; mention modifiée sur impots.gouv.fr le 3 septembre selon Moneyvox)",
+        "dateEvenement": "2026-09-08",
+        "natureDate": "publication (arrêté) ; annonce sur impots.gouv.fr le 2026-09-03 selon une source",
+        "organisme": "DGFiP / Gouvernement",
+        "url": "https://selectra.info/energie/actualites/marche/aide-carburant-dernier-jour-demande-100-euros",
+        "titreResultat": "Aide carburant : dernier jour pour demander les 100 euros (Selectra)",
+        "datePageSelonMoteur": "non affichée",
+        "resumeMoteur": "La date limite, fixée d'abord au 30 juillet puis au 31 août (arrêté du 31 juillet 2026), a été repoussée au 30 septembre 2026 par un arrêté du 8 septembre 2026. L'aide de 100 € couvre avril à septembre, une fois par personne et par véhicule. Les artisans et indépendants peuvent être éligibles sous conditions (revenu d'activité, RFR ≤ 16 880 € par part selon un site spécialisé, usage intensif du véhicule).",
+        "publicConcerne": "Indépendants, artisans et salariés modestes utilisant beaucoup leur véhicule pour leur activité",
+        "angle": "Report du guichet au 30 septembre : qui peut encore demander, quelles pièces préparer (véhicule, revenu d'activité, RFR), comment déposer sur impots.gouv.fr. Attention : au 10 octobre 2026, ce délai est passé ; un article publié en retard doit renvoyer vers la nouvelle aide octobre-décembre annoncée le 22 septembre (demandes à partir du 22 octobre selon impots.gouv.fr).",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Plusieurs sites grand public concordent sur l'arrêté du 8 septembre et la date du 30 septembre, mais le texte n'a pas été consulté. Légère divergence : Moneyvox date le changement sur impots.gouv.fr du 3 septembre, avant l'arrêté. Plafond de revenus cité par des sites non officiels.",
+        "sourcesConcordantes": [
+          "https://www.moneyvox.fr/votre-argent/actualites/110226/prime-carburant-de-100-euros-vous-avez-finalement-jusquau-30-septembre-2026-pour-la-demander",
+          "https://www.impots.gouv.fr/node/28496",
+          "https://www.aide-sociale.fr/aide-carburant-grands-rouleurs/"
+        ]
+      },
+      {
+        "actualite": "Le gouvernement annonce la reconduction des aides au carburant pour les secteurs exposés (dont le BTP) pour septembre et octobre 2026",
+        "dateEvenement": "2026-09-03",
+        "natureDate": "annonce",
+        "organisme": "Gouvernement (ministre M. Brégeon selon la dépêche AFP)",
+        "url": "https://www.connaissancedesenergies.org/afp/aides-au-carburant-aux-secteurs-exposes-reconduites-pour-septembre-et-octobre-bregeon-260903",
+        "titreResultat": "Aides au carburant aux secteurs exposés reconduites pour septembre et octobre (Brégeon) – Un coût mensuel de 70 millions d'euros",
+        "datePageSelonMoteur": "3 septembre 2026 (déduit de l'identifiant « 260903 » de l'URL AFP ; non affiché explicitement)",
+        "resumeMoteur": "Selon le titre de la dépêche AFP, les aides au carburant pour les secteurs exposés sont reconduites pour septembre et octobre, pour un coût mensuel d'environ 70 millions d'euros. Les modalités ne sont pas visibles dans l'extrait.",
+        "publicConcerne": "Artisans et entreprises du BTP, du transport et des autres secteurs exposés",
+        "angle": "Annonce seulement : expliquer ce qui est annoncé et ce qui reste à publier. Le décret d'application pour le BTP (n° 2026-921) n'est paru que le 2 octobre (S40) et ne doit pas être projeté dans S36.",
+        "sensibilite": "reglementaire",
+        "confiance": "faible",
+        "raisonConfiance": "Une seule dépêche relayée ; contenu et date déduits du titre et de l'URL ; pas de source officielle visible pour cette semaine.",
+        "sourcesConcordantes": []
+      }
+    ],
+    "recommande": 0,
+    "note": "Sources non ouvertes (WebFetch/curl indisponibles) : uniquement titres, URL et extraits du moteur de recherche. Semaine pauvre en actualités officielles datées : aucune publication pertinente trouvée sur service-public Entreprendre, la CNIL, l'ANSSI ou Cybermalveillance datée du 3 au 9 septembre. Le décret GNR BTP n° 2026-850 est daté du 9 septembre, mais sa publication et la mise à jour de la fiche A18905 datent du 10 septembre (S37). Si l'article publié tard est jugé inutile (délai expiré), basculer en SOURCES_INSUFFISANTES."
+  },
+  {
+    "semaine": "S37",
+    "debut": "2026-09-10",
+    "fin": "2026-09-16",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "La CNIL publie une fiche « Facturation électronique : quels enjeux pour la protection des données personnelles ? »",
+        "dateEvenement": "2026-09-10",
+        "natureDate": "publication",
+        "organisme": "CNIL",
+        "url": "https://www.cnil.fr/fr/facturation-electronique-quels-enjeux",
+        "titreResultat": "Facturation électronique : quels enjeux pour la protection des données personnelles ?",
+        "datePageSelonMoteur": "10 septembre 2026 (selon le résumé du moteur)",
+        "resumeMoteur": "La CNIL rappelle que la réforme est entrée en vigueur le 1er septembre 2026 et aide les entreprises à comprendre les enjeux et à sécuriser les données traitées. Selon des sites tiers, elle rappelle que le RGPD s'applique dès qu'une personne physique est identifiable, y compris en B2B (entrepreneurs individuels, contacts). La plateforme agréée est en principe sous-traitante et ne peut réutiliser les données que dans des conditions strictes. La CNIL encourage une authentification protectrice des données.",
+        "publicConcerne": "Entrepreneurs individuels, professions libérales, TPE (émetteurs et destinataires de factures contenant des données personnelles)",
+        "angle": "Ce que dit la CNIL le 10 septembre : relire le contrat et les CGU de sa plateforme agréée (rôle de sous-traitant, réutilisation des données, localisation et durée de conservation), et ce que cela change pour un entrepreneur individuel dont le nom figure sur les factures. Application concrète à la plateforme agréée, distincte du guide générique RGPD sous-traitance.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "URL officielle cnil.fr, date donnée par le moteur, plusieurs relais concordants. Les points de détail (conservation 10 ans, réutilisation) viennent de sites tiers aux résumés parfois divergents : à vérifier dans la fiche.",
+        "sourcesConcordantes": [
+          "https://veille.portail-rgpd.com/actu/facturation-electronique-enjeux-protection-donnees-personnelles/",
+          "https://www.leto.legal/news/cnil-facturation-electronique-donnees-personnelles-2026",
+          "https://kohenavocats.fr/2026/09/10/facturation-electronique-pdp-rgpd-contrat-reutilisation-cnil-2026/"
+        ]
+      },
+      {
+        "actualite": "Décret n° 2026-850 du 9 septembre 2026 : l'aide au gazole non routier (GNR) des entreprises du BTP est reconduite pour les achats d'août 2026 (0,20 €/litre, plafond 4 000 €, demande sur impots.gouv.fr jusqu'au 30 septembre)",
+        "dateEvenement": "2026-09-10",
+        "natureDate": "mise à jour de la fiche officielle (décret daté du 9 septembre)",
+        "organisme": "Gouvernement / DGFiP ; Service Public Entreprendre",
+        "url": "https://entreprendre.service-public.gouv.fr/actualites/A18905",
+        "titreResultat": "Subvention - L'aide au carburant pour les entreprises du bâtiment et des travaux publics est prolongée",
+        "datePageSelonMoteur": "Publié le 11 mai 2026 – Mis à jour le 10 septembre 2026",
+        "resumeMoteur": "L'aide de 20 centimes par litre de GNR facturé en août 2026, plafonnée à 4 000 € par entreprise, vise les entreprises du BTP d'au plus 50 salariés à jour de leurs obligations fiscales et sociales. La demande se fait depuis l'espace professionnel impots.gouv.fr du 1er au 30 septembre 2026, avec les factures et un tableau récapitulatif selon le modèle fourni.",
+        "publicConcerne": "Artisans et TPE du BTP (≤ 50 salariés), nombreux en Vendée",
+        "angle": "Aide GNR d'août : qui y a droit, quelles factures rassembler, comment remplir le tableau récapitulatif, échéance du 30 septembre. Préciser que la date d'actualité est la mise à jour du 10 septembre et non une nouvelle page.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Page officielle (date de mise à jour visible) et Légifiscal/Assurup concordants sur le décret et les montants. La date du décret (9 septembre) et sa publication au JO n'ont pas été vérifiées sur Légifrance.",
+        "sourcesConcordantes": [
+          "https://www.legifiscal.fr/actualites-fiscales/4635-btp-aide-carburant-prorogee-mois-aout-2026.html",
+          "https://www.assurup.com/blog/articles/aide-gnr-btp"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Sources non ouvertes (WebFetch/curl indisponibles) : uniquement titres, URL et extraits du moteur de recherche. Autres éléments de la semaine, de moindre intérêt : communiqué Net-entreprises du 10 septembre (participation au congrès de l'Ordre des experts-comptables, 16-18 septembre) ; article CCI Vendée relayé par les-aides.fr le 15/09/2026 sur la facturation électronique (contenu non visible) ; CCI Vendée, événement jeunes entreprises « IA & développement durable » le 15 septembre à La Roche-sur-Yon (agenda, pas une actualité)."
+  },
+  {
+    "semaine": "S38",
+    "debut": "2026-09-17",
+    "fin": "2026-09-23",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "impots.gouv.fr annonce la suppression du régime simplifié d'imposition (RSI) à la TVA au 1er janvier 2027, avec bascule automatique vers le réel normal",
+        "dateEvenement": "2026-09-22",
+        "natureDate": "publication (mesure entrant en vigueur le 2027-01-01)",
+        "organisme": "DGFiP (impots.gouv.fr) ; base légale : art. 38 de la loi de finances pour 2025",
+        "url": "https://www.impots.gouv.fr/actualite/le-regime-simplifie-dimposition-la-tva-est-supprime-compter-du-1er-janvier-2027",
+        "titreResultat": "Le régime simplifié d'imposition à la TVA est supprimé à compter du 1er janvier 2027",
+        "datePageSelonMoteur": "22 septembre 2026 (selon le résumé du moteur)",
+        "resumeMoteur": "Le RSI TVA est supprimé au 1er janvier 2027 (sauf régime agricole). La DGFiP basculera automatiquement les entreprises vers le régime réel normal, sans démarche. Les déclarations CA3 remplacent la CA12 annuelle ; elles sont trimestrielles sous un seuil de taxe (1 000 000 € N-1 / 1 100 000 € N selon la source officielle) et, par défaut, trimestrielles d'office. Selon des cabinets, une dernière CA12 reste due et les acomptes de juillet et décembre disparaissent.",
+        "publicConcerne": "TPE/PME, artisans, commerçants et professions libérales actuellement au régime simplifié de TVA (hors franchise en base)",
+        "angle": "Annonce du 22 septembre : ce qui change le 1er janvier 2027 (fin de la CA12 et des acomptes, déclarations CA3 trimestrielles ou mensuelles), actions d'ici décembre (choix de périodicité, calendrier déclaratif, trésorerie, information de sa plateforme de facturation électronique et de son comptable). Distinct du guide TVA franchise en base.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Page officielle impots.gouv.fr et nombreuses sources concordantes (Légifiscal, CCI Lyon Métropole, cabinets relayant WebLex le 8 octobre). Le seuil exact et le sort des acomptes viennent en partie de synthèses tierces : à vérifier sur la page officielle.",
+        "sourcesConcordantes": [
+          "https://www.legifiscal.fr/actualites-fiscales/4655-tva-fin-regime-simplifie-1er-janvier-2027-mode-emploi.html",
+          "https://www.lyon-metropole.cci.fr/actualite/le-regime-simplifie-tva-quels-changements-au-1er-janvier-2027",
+          "https://www.agex.fr/2026/10/08/tva-le-regime-simplifie-dimposition-tire-sa-reverence/"
+        ]
+      },
+      {
+        "actualite": "Nouveau plan carburant (environ 450 M€) : annonce d'un plafond d'exonération de la prime carburant porté à 1 000 €, du maintien de l'aide GNR BTP jusqu'au 31 décembre et d'une nouvelle aide de 100 € « grands rouleurs » pour octobre-décembre",
+        "dateEvenement": "2026-09-22",
+        "natureDate": "annonce (communiqué de presse n° 1054 selon une source)",
+        "organisme": "Gouvernement / Ministère de l'Économie",
+        "url": "https://code.travail.gouv.fr/actualite/prime-carburant-jusqua-1-000-exoneres-en-2026",
+        "titreResultat": "Prime carburant : jusqu'à 1 000 € exonérés en 2026 (Code du travail numérique)",
+        "datePageSelonMoteur": "23 septembre 2026 (selon le résumé du moteur)",
+        "resumeMoteur": "Le 22 septembre 2026, le gouvernement a annoncé un relèvement exceptionnel du plafond de la prime carburant à 1 000 € par salarié pour les primes versées jusqu'au 31 décembre 2026, avec des conditions d'accès assouplies. Il a aussi annoncé le maintien de l'aide GNR BTP jusqu'à fin 2026 et un second versement de 100 € aux grands rouleurs (automatique pour les bénéficiaires déjà payés ; simulateur le 12 octobre et demandes à partir du 22 octobre selon impots.gouv.fr).",
+        "publicConcerne": "Employeurs, artisans du BTP, indépendants grands rouleurs",
+        "angle": "Distinguer l'annonce du droit applicable : ce qui est annoncé le 22 septembre, ce qui attend un décret, ce qu'un employeur peut faire dès maintenant (600 € toléré) et ce qu'il doit attendre (1 000 €).",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "Annonce confirmée par une page officielle (Code du travail numérique) et la presse, mais les sources divergent sur l'état du droit : plusieurs indiquent qu'aucun décret n'était publié début octobre, le CGI limiterait encore l'exonération à 600 € au 6 octobre, et un texte déposé le 1er octobre porterait le plafond.",
+        "sourcesConcordantes": [
+          "https://www.legisocial.fr/actualites-sociales/8153-prime-carburant-1000-exoneres-2026.html",
+          "https://www.legifiscal.fr/actualites-fiscales/4646-nouveau-plan-aide-face-hausse-carburant.html",
+          "https://kohenavocats.com/prime-carburant-1000-euros-annonce-texte-qui-touche-texte-reel/"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Sources non ouvertes (WebFetch/curl indisponibles) : uniquement titres, URL et extraits du moteur de recherche. Autres textes de la semaine : décret n° 2026-874 du 17 septembre (modification de l'aide incendies, hors Vendée) ; deux décrets du 16 septembre réduisant de 3 à 1 an la durée maximale d'indemnisation dérogatoire de certains arrêts longs à compter du 15 octobre 2026 (service-public A19066, à vérifier) ; CPME Pays de la Loire renommée « Les Entrepreneurs Pays de la Loire » (date du 21/09/2026 sur la page cpme85.fr, sans portée pratique)."
+  },
+  {
+    "semaine": "S39",
+    "debut": "2026-09-24",
+    "fin": "2026-09-30",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Publication du Baromètre France Num 2026 (DGE/Crédoc) : 40 % des TPE-PME utilisent au moins une solution d'IA (+14 points), 39 % ont subi un incident de cybersécurité dans l'année",
+        "dateEvenement": "2026-09-28",
+        "natureDate": "publication (date « Écrit le » d'economie.gouv.fr ; relais Service Public le 2 octobre)",
+        "organisme": "DGE / France Num / Crédoc",
+        "url": "https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence",
+        "titreResultat": "Baromètre France Num 2026 : quatre TPE-PME sur dix utilisent désormais l'intelligence artificielle",
+        "datePageSelonMoteur": "date du communiqué DGE non affichée ; economie.gouv.fr « Écrit le 28/09/2026 » ; entreprendre.service-public A19079 daté du 2 octobre 2026",
+        "resumeMoteur": "Selon le baromètre, 40 % des TPE-PME utilisent une solution d'IA (53 % des PME), 19 % une solution payante, et 68 % des utilisatrices jugent l'impact positif. La part de dirigeants qui voient un bénéfice réel dans le numérique recule de 7 points. 78 % ont des projets numériques pour 2026-2027 (facturation électronique 39 %, IA 18 %). Service Public cite 39 % d'entreprises confrontées à un incident cyber.",
+        "publicConcerne": "Dirigeants de TPE, indépendants, professions libérales",
+        "angle": "Se situer par rapport aux chiffres 2026 : où en sont les TPE sur l'IA, la cybersécurité et la facturation électronique, et quelles priorités concrètes en tirer pour le dernier trimestre (charte d'usage de l'IA, sauvegardes, projet facturation). Partir des chiffres datés, pas d'un guide IA générique.",
+        "sensibilite": "standard",
+        "confiance": "moyenne",
+        "raisonConfiance": "Sources officielles concordantes sur les chiffres, mais la date de publication est incertaine (28 septembre sur economie.gouv.fr, 2 octobre sur Service Public). La taille de l'échantillon diffère selon les sources (plus de 9 000 / 9 600 / 9 655). Le chiffre cyber de 39 % ne figure que dans l'extrait Service Public.",
+        "sourcesConcordantes": [
+          "https://www.economie.gouv.fr/node/3242215",
+          "https://entreprendre.service-public.gouv.fr/actualites/A19079",
+          "https://www.blogdumoderateur.com/ia-cyber-budgets-10-chiffres-numerique-tpe-pme-2026/"
+        ]
+      },
+      {
+        "actualite": "L'espace connecté du site Net-entreprises évolue pour centraliser l'accès à l'ensemble des services et simplifier les déclarations",
+        "dateEvenement": "2026-09-29",
+        "natureDate": "publication",
+        "organisme": "Service Public Entreprendre (DILA) / Net-entreprises",
+        "url": "https://entreprendre.service-public.gouv.fr/actualites/A19076",
+        "titreResultat": "Déclarations et cotisations sociales - Le site Net-entreprises évolue",
+        "datePageSelonMoteur": "Publié le 29 septembre 2026",
+        "resumeMoteur": "L'espace connecté de Net-entreprises évolue pour offrir un accès centralisé à tous les services et simplifier les déclarations. Les extraits ne détaillent pas les changements concrets (accès, habilitations, calendrier).",
+        "publicConcerne": "Employeurs et indépendants qui déclarent via Net-entreprises (DSN, DPAE, etc.), et leurs assistants ou gestionnaires",
+        "angle": "Ce qui change dans l'accès à Net-entreprises : vérifier ses identifiants et habilitations, les délégations à un tiers (assistante, comptable), les nouveaux parcours. Détail à confirmer dans la page.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "URL et date officielles, mais le contenu visible est trop mince pour un article sans lire la page ; une recherche directe sur net-entreprises.fr n'a rien donné.",
+        "sourcesConcordantes": []
+      },
+      {
+        "actualite": "Publication d'un guide national pour amorcer un plan de décarbonation (déclinaison volontaire de la SNBC 3)",
+        "dateEvenement": "2026-09-29",
+        "natureDate": "publication",
+        "organisme": "Ministère de la Transition écologique ; relais Service Public Entreprendre",
+        "url": "https://entreprendre.service-public.gouv.fr/actualites/A19072",
+        "titreResultat": "Environnement - Amorcer un plan de décarbonation : un guide national vient d'être publié pour aider les entreprises",
+        "datePageSelonMoteur": "29 septembre 2026",
+        "resumeMoteur": "À l'occasion de la SNBC 3, le ministère a publié un guide pour aider les organisations à fixer et suivre des objectifs de réduction de gaz à effet de serre au regard des trajectoires sectorielles.",
+        "publicConcerne": "PME et TPE volontaires",
+        "angle": "Peu prioritaire pour la clientèle ; possible lien avec les critères environnementaux des marchés publics (S34).",
+        "sensibilite": "standard",
+        "confiance": "elevee",
+        "raisonConfiance": "Page officielle datée ; pertinence limitée.",
+        "sourcesConcordantes": []
+      }
+    ],
+    "recommande": 0,
+    "note": "Sources non ouvertes (WebFetch/curl indisponibles) : uniquement titres, URL et extraits du moteur de recherche. Les échéances du 30 septembre (aide GNR d'août, grands rouleurs) tombent dans cette semaine mais ont été annoncées plus tôt. CCI France : moral des chefs d'entreprise en baisse de 12 points en septembre (page mise à jour le 30/09/2026), donnée nationale non vendéenne. CNIL : Rencontres Informatique & Libertés le 29 septembre (événement)."
+  },
+  {
+    "semaine": "S40",
+    "debut": "2026-10-01",
+    "fin": "2026-10-07",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Présentation du projet de loi de finances (PLF) pour 2027 en Conseil des ministres, avec le PLFSS",
+        "dateEvenement": "2026-10-01",
+        "natureDate": "annonce / dépôt du projet (non adopté)",
+        "organisme": "Gouvernement (Ministère de l'Économie et des Comptes publics)",
+        "url": "https://www.efl.fr/actualite/projet-loi-finances-2027-apercu-principales-mesures-fiscales_f7d46138d-445c-48bd-a0df-3cb4816a2023",
+        "titreResultat": "Projet de loi de finances pour 2027 : aperçu des principales mesures fiscales (Éditions Francis Lefebvre)",
+        "datePageSelonMoteur": "non affichée ; KPMG classe sa synthèse en 2026/10",
+        "resumeMoteur": "Le PLF 2027 a été présenté le 1er octobre 2026. Mesures citées : un pacte « Papin » facilitant la reprise de TPE/PME (suramortissement pour cessions 2027-2029 : 60 % pour les micro-entreprises, 30 % pour les PME, sur certains biens), un suramortissement pour l'investissement productif des PME/ETI industrielles, un dégrèvement de CFE et de taxes foncières pour les entreprises sinistrées par les incendies de l'été, et la reconduction de la contribution exceptionnelle des grandes entreprises. L'UNAPL relève le maintien du pacte Dutreil et des aides à l'apprentissage.",
+        "publicConcerne": "Dirigeants de TPE/PME, repreneurs et cédants, professions libérales",
+        "angle": "« PLF 2027 : ce que le projet prévoit pour les petites entreprises, et ce qui n'est pas encore acquis » : mesures à surveiller (transmission, investissement), calendrier parlementaire jusqu'en décembre, rien à appliquer avant le vote.",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Date de présentation concordante dans de nombreuses sources (EFL, CMS, KPMG, UNAPL, Légifiscal). Les numéros d'articles et certains détails varient selon les sources ; le texte officiel n'a pas été consulté.",
+        "sourcesConcordantes": [
+          "https://cms.law/fr/fra/publication/projet-loi-de-finances-pour-2027",
+          "https://unapl.fr/actualites/budget-2027-ce-que-contient-le-texte-presente-en-conseil-des-ministres/",
+          "https://www.legifiscal.fr/actualites-fiscales/4656-presentation-plf-2027.html",
+          "https://kpmg.com/av/fr/avocats/eclairages/2026/10/publication-du-plf-2027.html"
+        ]
+      },
+      {
+        "actualite": "Lancement du Cybermois 2026 (14e édition) et publication d'un dépliant CNIL/Cybermalveillance « Violation de données personnelles, que faire en 3 étapes clés ? »",
+        "dateEvenement": "2026-10-01",
+        "natureDate": "annonce / lancement de campagne",
+        "organisme": "Cybermalveillance.gouv.fr ; CNIL",
+        "url": "https://tpeactu.fr/2026/10/01/cybermois-2026-outils-rendez-vous-tpe/",
+        "titreResultat": "Cybermois 2026 : les outils et rendez-vous à saisir pour protéger votre petite entreprise",
+        "datePageSelonMoteur": "1er octobre 2026 (date dans l'URL)",
+        "resumeMoteur": "Le Cybermois 2026 a été lancé le 1er octobre à Biarritz, du 1er au 31 octobre, sur le thème « Se Cyber Protéger, ce n'est pas si bête ». Il compte plus de 2 400 partenaires et plus de 360 événements. Cybermalveillance.gouv.fr et la CNIL ont publié le même jour un dépliant sur la conduite à tenir après une violation de données personnelles.",
+        "publicConcerne": "Dirigeants de TPE, indépendants, professions libérales",
+        "angle": "Profiter du Cybermois : quoi faire en octobre (sensibiliser l'équipe, tester sa sauvegarde, repérer les ateliers proches de la Vendée) et que faire dans les 72 heures si une donnée client fuit, en s'appuyant sur le dépliant du 1er octobre.",
+        "sensibilite": "standard",
+        "confiance": "moyenne",
+        "raisonConfiance": "Source secondaire (TPE Actu), concordante avec Carenews et Solutions Numériques. Supports officiels du Cybermois visibles (PDF cybermalveillance.gouv.fr de mai 2026), mais le communiqué de lancement n'a pas été vu directement.",
+        "sourcesConcordantes": [
+          "https://www.carenews.com/aema-groupe/news/cybermois-2026-aema-groupe-mobilise-aux-cotes-de-cybermalveillance-gouv-fr-pour",
+          "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/page/lettre-information-septembre-2026"
+        ]
+      },
+      {
+        "actualite": "Décret n° 2026-921 du 2 octobre 2026 : aide GNR étendue aux achats de septembre et d'octobre 2026 pour les entreprises du BTP",
+        "dateEvenement": "2026-10-02",
+        "natureDate": "signature du décret (date de publication au JO non vérifiée)",
+        "organisme": "Gouvernement (Légifrance)",
+        "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054945438",
+        "titreResultat": "Décret n° 2026-921 du 2 octobre 2026 instituant une aide aux entreprises du secteur du bâtiment et des travaux publics utilisant du gazole non routier - Légifrance",
+        "datePageSelonMoteur": "non affichée",
+        "resumeMoteur": "Selon un résumé du moteur, ce décret étend l'aide GNR BTP aux mois de septembre et octobre 2026. Les modalités (montant, plafond, guichet) ne sont pas visibles dans l'extrait.",
+        "publicConcerne": "Artisans et TPE du BTP",
+        "angle": "Suite de S37 : nouveaux mois couverts et calendrier de dépôt, une fois les modalités vérifiées.",
+        "sensibilite": "reglementaire",
+        "confiance": "moyenne",
+        "raisonConfiance": "URL Légifrance avec titre explicite, mais contenu non lu ; périmètre « septembre et octobre » issu du seul résumé du moteur.",
+        "sourcesConcordantes": []
+      }
+    ],
+    "recommande": 0,
+    "note": "Sources non ouvertes (WebFetch/curl indisponibles) : uniquement titres, URL et extraits du moteur de recherche. Le PLF n'est qu'un projet : aucune mesure n'est en vigueur. Prime carburant à 1 000 € : une source évoque un texte déposé le 1er octobre (article 2), non vérifié. Le baromètre France Num est relayé par Service Public le 2 octobre (voir S39 pour la date d'origine)."
+  },
+  {
+    "semaine": "S41",
+    "debut": "2026-10-08",
+    "fin": "2026-10-10",
+    "statut": "CANDIDATS_IDENTIFIES",
+    "candidats": [
+      {
+        "actualite": "Le 0 806 807 807 devient le numéro national unique d'accueil téléphonique de la DGFiP pour les professionnels",
+        "dateEvenement": "2026-10-08",
+        "natureDate": "entree-en-vigueur / annonce",
+        "organisme": "DGFiP / Ministère de l'Économie",
+        "url": "https://www.impots.gouv.fr/actualite/un-numero-national-dedie-pour-accompagner-les-entreprises",
+        "titreResultat": "Un numéro national dédié pour accompagner les entreprises | impots.gouv.fr",
+        "datePageSelonMoteur": "8 octobre 2026 (selon le résumé ; communiqué presse.economie.gouv.fr de la même date)",
+        "resumeMoteur": "Depuis le 8 octobre 2026, le 0 806 807 807 (auparavant dédié à la facturation électronique) est le numéro national des entreprises de métropole et d'outre-mer, y compris artisans, commerçants et professions libérales. Il est ouvert du lundi au vendredi de 8 h 30 à 18 h, gratuit hors coût d'appel. Les conseillers traitent TVA, IS, impôts locaux professionnels et services en ligne. La facturation électronique reste accessible par le choix 4, et les dossiers complexes sont transmis au SIE avec rendez-vous si besoin.",
+        "publicConcerne": "Toutes les entreprises, artisans, commerçants, professions libérales",
+        "angle": "Joindre le fisc pro à partir du 8 octobre : à quoi sert ce numéro, quoi préparer avant d'appeler (SIREN, références d'avis, question écrite), quand préférer la messagerie sécurisée ou le rendez-vous SIE, et rappel anti-fraude (la DGFiP ne demande jamais de coordonnées bancaires par téléphone ou SMS). Lien possible avec la fin du RSI TVA (S38).",
+        "sensibilite": "reglementaire",
+        "confiance": "elevee",
+        "raisonConfiance": "Page officielle impots.gouv.fr et communiqué presse.economie.gouv.fr concordants, relayés par la presse locale le 9 octobre.",
+        "sourcesConcordantes": [
+          "https://presse.economie.gouv.fr/simplification-le-0806-807-807-devient-pour-les-professionnels-le-numero-unique-pour-joindre-la-dgfip-partout-en-france/",
+          "https://www.economie.gouv.fr/actualites/impots-un-numero-unique-dedie-aux-professionnels",
+          "https://toulouse7.com/2026/10/09/un-numero-unique-pour-les-entreprises-avec-les-services-des-impots/"
+        ]
+      }
+    ],
+    "recommande": 0,
+    "note": "Sources non ouvertes (WebFetch/curl indisponibles) : uniquement titres, URL et extraits du moteur de recherche. Semaine partielle (3 jours). Autres éléments vus : article TPE Actu du 8 octobre sur le gel de la prime d'activité prévu au PLF 2027 (projet, concerne surtout les particuliers) ; relais par des cabinets, le 8 octobre, de la fin du RSI TVA (S38). Le simulateur de la nouvelle aide grands rouleurs est annoncé pour le 12 octobre, hors période."
+  }
+]
