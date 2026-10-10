@@ -1,66 +1,71 @@
 ---
-title: "Bilan Cybermalveillance 2025 : priorités d’une TPE · BrittAssist"
-description: "Le 26 mars 2026, Cybermalveillance.gouv.fr a publié son bilan 2025. Ce qu’une petite structure peut en retenir, et trois priorités concrètes pour le printemps."
-h1: "Bilan 2025 de Cybermalveillance.gouv.fr : ce qu’une petite structure en retient"
-summary: "Le dispositif national d’assistance aux victimes de cybermalveillance a publié son rapport d’activité le 26 mars 2026 : plus d’un demi-million de victimes accompagnées en 2025. Ce qu’il faut en retenir quand on dirige une petite entreprise, sans dramatiser ni minimiser."
+title: "Bilan cyber 2025 : trois priorités pour votre TPE · BrittAssist"
+description: "Le bilan publié en mars 2026 signale une hausse des demandes d’assistance. Transformez ce constat en actions sur les comptes, les paiements et les sauvegardes."
+h1: "Bilan cyber 2025 : choisir trois priorités pour votre TPE"
+summary: "Le bilan publié en mars 2026 signale une hausse des demandes d’assistance. Transformez ce constat en actions sur les comptes, les paiements et les sauvegardes."
 category: "donnees-securite"
-audience: ["Dirigeants de TPE et PME", "Indépendants", "Professions libérales"]
-intention: "bilan Cybermalveillance 2025 TPE"
-keywords: ["Cybermalveillance.gouv.fr", "rapport d’activité 2025", "cybersécurité TPE", "hameçonnage"]
+audience:
+  - "Dirigeants de TPE et PME"
+  - "Indépendants"
+intention: "bilan cyber 2025 : choisir trois priorités pour votre tpe"
+keywords: []
 semaineEditoriale: "S13"
 periodeDebut: "2026-03-26"
 periodeFin: "2026-04-01"
 dateEvenement: "2026-03-26"
-natureEvenement: "Publication d’un rapport d’activité"
+natureEvenement: "Publication officielle"
 sources:
-  - titre: "Communiqué de presse — rapport d’activité 2025 de Cybermalveillance.gouv.fr"
-    organisme: "Cybermalveillance.gouv.fr (GIP ACYMA)"
+  - titre: "Cybermalveillance.gouv.fr publie son rapport d’activité 2025"
+    organisme: "Cybermalveillance.gouv.fr"
     url: "https://www.cybermalveillance.gouv.fr/medias/2026/03/CP-RA2026.pdf"
     type: "primaire"
     datePublication: "2026-03-26"
-    ouverte: false
-    extrait: "Présente le bilan 2025 : plus de 500 000 victimes assistées, en hausse d’environ 20 % sur un an (selon l’extrait du moteur de recherche)."
-  - titre: "Rapport d’activité 2025 de Cybermalveillance.gouv.fr"
-    organisme: "Vie-publique.fr (DILA)"
-    url: "https://www.vie-publique.fr/files/rapport/pdf/302708.pdf"
-    type: "officielle"
-    ouverte: false
-    extrait: "Version intégrale du rapport, mise à disposition par la DILA (date de mise en ligne non relevée)."
+    ouverte: true
+    consulteeLe: "2026-10-10"
+    extrait: "Le communiqué du 26 mars recense plus de 500 000 victimes ayant demandé assistance en 2025, en hausse de 20 %. Les évolutions mesurent l’activité du dispositif, pas toutes les attaques en France."
 createdAt: "2026-10-10"
-editorialStatus: "SOURCES_A_VERIFIER"
+datePublished: "2026-10-10"
+editorialStatus: "PUBLIE"
 sensibilite: "standard"
-relatedGuides: ["fraude-au-faux-rib-et-au-president", "double-authentification-et-delegation", "sauvegarde-des-documents-entreprise"]
-relatedArticles: ["cnil-alerte-faux-organismes-fuite-de-donnees"]
-notesInternes: "Sources non ouvertes. Ne citer que les chiffres du communiqué officiel. Les tendances par type de menace (hameçonnage en tête, violations de données en hausse) ne viennent que d’une source secondaire : ne pas les reprendre sans lecture du rapport."
+relatedGuides:
+  - "fraude-au-faux-rib-et-au-president"
+  - "double-authentification-et-delegation"
+  - "sauvegarde-des-documents-entreprise"
+relatedArticles: []
+notesInternes: "Sources ouvertes et contenu rédigé le 10 octobre 2026. Toute validation antérieure à cette rédaction ne couvre pas ce nouveau texte."
 ---
 
-Le **26 mars 2026**, Cybermalveillance.gouv.fr, le dispositif public d’assistance aux victimes d’actes de cybermalveillance, a publié son rapport d’activité pour l’année 2025. Le chiffre mis en avant par son communiqué : **plus de 500 000 victimes assistées** en 2025, soit une hausse d’environ 20 % par rapport à 2024.
+Le 26 mars 2026, Cybermalveillance.gouv.fr a présenté son rapport d’activité 2025. Plus de 500 000 victimes ont sollicité son assistance, soit une progression de 20 % par rapport à l’année précédente.
 
-## Ce qui a été publié
-
-- Un communiqué de presse et un rapport d’activité présentant l’assistance apportée en 2025 aux particuliers, aux entreprises et aux collectivités.
-- Une lecture des tendances de la menace observées au cours de l’année.
-- Le rapport intégral, mis à disposition sur vie-publique.fr.
-
-Les chiffres détaillés par type d’attaque et par public figurent dans le rapport ; ils sont à lire à la source avant d’être cités.
+Ces chiffres décrivent les demandes adressées au dispositif. Ils ne représentent ni un recensement exhaustif des attaques en France ni la probabilité individuelle qu’une TPE subisse un incident. Leur intérêt pratique est de rappeler que la préparation ne peut pas attendre une urgence.
 
 ## Ce que cela change pour vous
 
-Un bilan annuel ne crée aucune obligation. Il dit en revanche une chose utile : la hausse des demandes d’aide montre que les attaques visent tout le monde, et pas seulement les grandes organisations. Une petite structure est rarement visée pour elle-même ; elle l’est parce qu’elle reçoit des courriels, paie des factures et donne des accès à des tiers.
+Pour une petite structure, trois sujets peuvent servir de point de départ : la protection des comptes, la vérification des changements de paiement et la récupération des documents. Ils concernent des gestes quotidiens, même lorsque l’entreprise ne dispose pas d’un service informatique interne.
 
-D’où une approche simple : plutôt que d’empiler des outils, sécuriser les trois gestes par lesquels passent la plupart des dommages — **payer**, **se connecter**, **conserver**.
+La messagerie mérite une attention particulière. Elle contient des échanges clients, des factures et des liens de réinitialisation. Demandez au responsable technique comment les comptes sont protégés et comment l’entreprise récupère un accès si une personne est absente.
 
-## Checklist : trois priorités pour le printemps
+## Mettre des actions derrière les intentions
 
-1. **Payer** : aucun changement de coordonnées bancaires d’un fournisseur n’est appliqué sans un rappel au numéro habituel. Le guide [fraude au faux RIB et au président](/guides/fraude-au-faux-rib-et-au-president) décrit la procédure.
-2. **Se connecter** : activer la double authentification sur la messagerie, la banque et les outils de facturation, et donner aux collaborateurs ou à l’assistante leurs propres accès plutôt que les vôtres, comme l’explique le guide [double authentification et délégation](/guides/double-authentification-et-delegation).
-3. **Conserver** : vérifier qu’une sauvegarde des documents de l’entreprise existe hors du poste principal, et qu’elle a été restaurée au moins une fois avec succès, selon la méthode du guide sur la [sauvegarde des documents](/guides/sauvegarde-des-documents-entreprise).
-4. Noter le site Cybermalveillance.gouv.fr dans les contacts d’urgence de l’entreprise, à côté de l’assureur et du prestataire informatique.
+Une sauvegarde annoncée dans un contrat n’est pas encore un dossier récupéré. Faites prévoir un test sur une pièce non sensible et notez la personne qui sait le réaliser. Pour les paiements, formalisez le circuit de vérification d’un nouveau RIB avec un contact déjà connu.
 
-## Exemple fictif : le courriel du fournisseur habituel
+L’assistante peut suivre ces actions dans un tableau court : mesure, responsable, état, prochaine étape. Les réglages techniques et les décisions de sécurité restent confiés aux personnes habilitées. Évitez de centraliser les mots de passe dans ce tableau de suivi.
 
-Un cabinet d’architecture reçoit, de l’adresse d’un fournisseur connu, un courriel annonçant un changement de banque. L’assistante applique la règle du cabinet : elle appelle le fournisseur au numéro de la fiche, qui n’est au courant de rien. Le virement n’est pas modifié, l’incident est noté et signalé. Le cas est inventé pour illustrer la règle.
+## Checklist des trois priorités
 
-## Ce que BrittAssist peut prendre en charge
+1. Identifier les comptes dont la perte d’accès arrêterait l’activité.
+2. Faire vérifier leur protection et les moyens de récupération.
+3. Écrire la procédure de validation d’un changement de coordonnées bancaires.
+4. Localiser les sauvegardes et confirmer qui peut restaurer une pièce.
+5. Tester un scénario simple avec les personnes concernées.
+6. Conserver les coordonnées du support et un circuit d’alerte accessible hors de la messagerie.
 
-Une assistante de direction n’est pas un prestataire de cybersécurité. Elle applique en revanche, chaque jour, les règles qui comptent : vérifier avant de payer, travailler avec ses propres accès, classer et sauvegarder. Pour les questions techniques, le relais est votre prestataire informatique.
+## Exemple fictif : un courriel de changement de RIB
+
+Une entreprise reçoit un message au ton habituel demandant de payer sur un nouveau compte. L’assistante suspend la modification et appelle le fournisseur sur sa coordonnée enregistrée. Le dirigeant décide ensuite à partir du retour obtenu. Ce cas est inventé et ne promet pas que toute fraude sera détectée.
+
+Choisissez des actions réalisables, puis vérifiez qu’elles sont terminées. Une longue liste jamais testée aide moins qu’un petit circuit compris par toute l’équipe.
+
+## Prolonger les actions dans vos dossiers
+
+Pour organiser la suite, consultez les guides [Fraude au faux RIB et fraude au président : la vérification qui les arrête.](/guides/fraude-au-faux-rib-et-au-president) et [Double authentification : déléguer sans y renoncer.](/guides/double-authentification-et-delegation) et [Sauvegarder les documents de l’entreprise : quatre questions à se poser.](/guides/sauvegarde-des-documents-entreprise). Ils prolongent cette actualité par des méthodes de travail. Choisissez les étapes utiles à votre dossier et faites valider les décisions qui relèvent de vos interlocuteurs compétents.

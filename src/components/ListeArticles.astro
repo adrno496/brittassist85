@@ -39,8 +39,9 @@ const parTheme = CATEGORIES.map((c) => ({ ...c, articles: publies.filter((a) => 
 const title = page === 1
   ? 'Articles : l’actualité utile aux entrepreneurs · BrittAssist'
   : `Articles, page ${page} : l’actualité utile aux entrepreneurs · BrittAssist`;
-const description =
-  "Ce qui change pour les dirigeants, indépendants et TPE : une actualité datée par semaine, expliquée, sourcée, avec les actions concrètes à prévoir.";
+const description = page === 1
+  ? "Ce qui change pour les dirigeants, indépendants et TPE : des actualités datées, expliquées et sourcées, avec les actions concrètes à prévoir."
+  : `Page ${page} des articles BrittAssist : retrouvez les actualités antérieures pour les dirigeants et TPE, leurs sources et les actions à prévoir.`;
 
 const etapes = [
   { nom: 'Articles', href: '/articles' },
@@ -86,7 +87,7 @@ const donnees = {
       <p class="eyebrow">Articles</p>
       <h1 class="hero__title">{page === 1 ? 'L’actualité utile aux entrepreneurs.' : `L’actualité utile aux entrepreneurs, page ${page}.`}</h1>
       <p class="hero__sub">
-        Une actualité par semaine, choisie parce qu’elle change quelque chose pour un dirigeant,
+        Des actualités choisies parce qu’elles changent quelque chose pour un dirigeant,
         un indépendant ou une petite entreprise : ce qui change, pour qui, à partir de quand, et ce
         qu’il faut faire. Chaque article cite ses sources officielles et indique sa date de publication.
       </p>

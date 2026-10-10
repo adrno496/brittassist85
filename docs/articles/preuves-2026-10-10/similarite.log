@@ -1,0 +1,14 @@
+
+> brittassist@1.0.0 qa:similarite
+> node scripts/similarity-check.mjs --serie --strict
+
+Similarité — paires où figure un guide de la série : 154 fiches (50 de la série), 6425 paires comparées
+Maxima observés : titre 0.375 · lede 0.044 · reponseCourte 0.076 · cloture 0.118 · corps 0.029 · faq 0.019 · sujet 0.495 · requete 0.667
+Blocages : 0 · alertes : 5 · phrases reprises : 0
+
+ALERTES :
+  requete-proche         externaliser-son-assistanat ↔ erreur-de-son-assistante-externalisee (0.667)
+  requete-proche         externaliser-son-assistanat ↔ telesecretariat-et-assistante-externalisee (0.667)
+  requete-proche         externaliser-son-assistanat ↔ assistante-commerciale-externalisee (0.667)
+  requete-proche         secretariat-externalise-charge-deductible ↔ cahier-des-charges-secretariat-externalise (0.6)
+  sujet-proche           dossier-permanent-entreprise ↔ obligation-de-vigilance-prestataire-independant (0.495)

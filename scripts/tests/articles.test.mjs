@@ -255,7 +255,8 @@ test('un article non inscrit est un brouillon, sans date de publication', () => 
 
 test('les routes historiques ne changent pas de statut avec la rubrique', () => {
   for (const c of ['/', '/guides', '/guides/comment-deleguer', '/assistante/artisans-btp', '/contact', '/tarifs']) assert.equal(estPubliee(c), true, c);
-  assert.equal(lastmodPour('/guides/secretariat-externalise'), '2026-10-06');
+  // Le maillage de cette page a été complété lors de l'intégration des articles.
+  assert.equal(lastmodPour('/guides/secretariat-externalise'), '2026-10-10');
   assert.equal(publicationPour('/'), '2026-08-20');
 });
 
@@ -333,13 +334,18 @@ test('article:publier refuse un brouillon et ne modifie alors aucun fichier', as
   const { dossier, plan, registre } = bacASable();
   const { mkdirSync } = await import('node:fs');
   mkdirSync(dossier);
-  copyFileSync('src/content/articles/numero-unique-dgfip-professionnels.md', join(dossier, 'numero-unique-dgfip-professionnels.md'));
-  const avant = [readFileSync(join(dossier, 'numero-unique-dgfip-professionnels.md'), 'utf8'), readFileSync(registre, 'utf8'), readFileSync(plan, 'utf8')];
-  const r = publier({ slug: 'numero-unique-dgfip-professionnels', confirmer: true, aujourdhui: '2026-10-10', dossier, plan, registre });
+  // Le test reste indépendant de l'état éditorial des vrais articles du site.
+  const d = fiche({ editorialStatus: 'BROUILLON', datePublished: undefined });
+  d.sources = d.sources.map((s) => ({ ...s, ouverte: false, consulteeLe: undefined }));
+  const yaml = (await import('js-yaml')).default;
+  const fichier = join(dossier, 'brouillon-sans-source.md');
+  writeFileSync(fichier, `---\n${yaml.dump(d)}---\n${CORPS}`);
+  const avant = [readFileSync(fichier, 'utf8'), readFileSync(registre, 'utf8'), readFileSync(plan, 'utf8')];
+  const r = publier({ slug: 'brouillon-sans-source', confirmer: true, aujourdhui: '2026-10-10', dossier, plan, registre });
   assert.equal(r.publie, false);
   assert.ok(r.blocages.some((b) => b.regle === 'preuve-absente'));
   assert.ok(r.blocages.some((b) => b.regle === 'statut-non-pret'));
-  assert.deepEqual([readFileSync(join(dossier, 'numero-unique-dgfip-professionnels.md'), 'utf8'), readFileSync(registre, 'utf8'), readFileSync(plan, 'utf8')], avant);
+  assert.deepEqual([readFileSync(fichier, 'utf8'), readFileSync(registre, 'utf8'), readFileSync(plan, 'utf8')], avant);
 });
 
 test('article:publier inscrit un article prêt une fois, à la date du jour, puis ne fait plus rien', async () => {

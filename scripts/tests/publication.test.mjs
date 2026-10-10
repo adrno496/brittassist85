@@ -7,6 +7,7 @@
  */
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
+import { existsSync } from 'node:fs';
 import { dateDeRelecture, datePublicationSansRelecture, estBrouillon, estPubliee, liensVisibles, validationDuProprietaire, APERCU } from '../../src/data/publication.mjs';
 import { lastmodPour, publicationPour } from '../../src/data/dates.mjs';
 import { publications } from '../../src/data/publications.mjs';
@@ -52,7 +53,8 @@ test('publier sans relecture ne déclare jamais une relecture', () => {
 
 test('les registres ne contiennent que des chemins des familles prévues', () => {
   for (const chemin of [...Object.keys(publications), ...Object.keys(relectures), ...validations.flatMap((v) => v.pages)]) {
-    assert.match(chemin, /^\/(guides|assistante)\/[a-z0-9-]+$|^\/methode-editoriale$/, chemin);
+    assert.match(chemin, /^\/(guides|assistante|articles)\/[a-z0-9-]+$|^\/methode-editoriale$/, chemin);
+    if (chemin.startsWith('/articles/')) assert.ok(existsSync(`src/content${chemin}.md`), `article inscrit sans fiche : ${chemin}`);
   }
 });
 

@@ -1,72 +1,71 @@
 ---
-title: "Facture électronique : la liste des plateformes agréées · BrittAssist"
-description: "Le 16 janvier 2026, l’administration a publié la première liste des plateformes agréées. Comment s’en servir pour choisir la sienne avant le 1er septembre 2026."
-h1: "Facturation électronique : la première liste des plateformes agréées est publiée, comment choisir la vôtre"
-summary: "Le 16 janvier 2026, la DGFiP a publié une première liste de plateformes agréées pour la facturation électronique. C’était la pièce qui manquait pour passer de « il faudra s’en occuper » à un choix concret, huit mois avant l’obligation de réception."
+title: "Plateformes agréées : comparer la liste de janvier 2026 · BrittAssist"
+description: "La première liste de 101 plateformes agréées a été publiée en janvier 2026. Comparez les usages, le contrat et les accès avant de choisir votre outil."
+h1: "Plateformes agréées : comparer la liste de janvier 2026"
+summary: "La première liste de 101 plateformes agréées a été publiée en janvier 2026. Comparez les usages, le contrat et les accès avant de choisir votre outil."
 category: "facturation"
-audience: ["TPE et PME assujetties à la TVA", "Artisans et commerçants", "Professions libérales", "Micro-entrepreneurs"]
-intention: "liste plateformes agréées facturation électronique"
-keywords: ["plateforme agréée", "liste des plateformes agréées", "facturation électronique", "choisir sa plateforme"]
+audience:
+  - "Dirigeants de TPE et PME"
+  - "Indépendants"
+intention: "plateformes agréées : comparer la liste de janvier 2026"
+keywords: []
 semaineEditoriale: "S03"
 periodeDebut: "2026-01-15"
 periodeFin: "2026-01-21"
 dateEvenement: "2026-01-16"
-natureEvenement: "Publication d’une liste officielle"
+natureEvenement: "Publication officielle"
 sources:
-  - titre: "Facturation électronique : la liste des 101 premières plateformes agréées est disponible"
-    organisme: "Ministère de l’Économie — economie.gouv.fr"
+  - titre: "Facturation électronique : la liste des 101 premières plateformes agréées"
+    organisme: "Ministère de l’Économie"
     url: "https://www.economie.gouv.fr/actualites/facturation-electronique-la-liste-des-101-premieres-plateformes-agreees"
-    type: "officielle"
+    type: "primaire"
     datePublication: "2026-01-16"
-    ouverte: false
-    extrait: "Annonce la publication d’une première liste de plateformes agréées, appelée à s’enrichir (selon l’extrait du moteur de recherche)."
-  - titre: "Facturation électronique : la liste des 101 premières plateformes agréées est disponible"
-    organisme: "CAPEB"
-    url: "https://www.capeb.fr/actualites/facturation-electronique-la-liste-des-101-premieres-plateformes-agreees-est-disponible"
-    type: "autre"
-    ouverte: false
-    extrait: "Relais professionnel de l’annonce auprès des artisans du bâtiment (daté du 26 janvier 2026 selon le moteur)."
-  - titre: "Facturation électronique : la liste des 101 plateformes agréées est publiée"
-    organisme: "Fédération française du bâtiment"
-    url: "https://www.ffbatiment.fr/actualites-batiment/actualite-ba/facturation-electronique-liste-101-plateformes-agreee-publiee"
-    type: "autre"
-    ouverte: false
-    extrait: "Relais professionnel de l’annonce (date de publication non relevée)."
+    ouverte: true
+    consulteeLe: "2026-10-10"
+    extrait: "Le ministère a publié le 16 janvier 2026 une première liste de 101 plateformes agréées pour la réforme. L’agrément ne permet pas de présumer les tarifs et fonctionnalités de chaque contrat."
 createdAt: "2026-10-10"
-editorialStatus: "SOURCES_A_VERIFIER"
+datePublished: "2026-10-10"
+editorialStatus: "PUBLIE"
 sensibilite: "reglementaire"
-relatedGuides: ["facturation-electronique-tpe", "choisir-un-logiciel-de-facturation", "suivi-des-contrats-et-abonnements"]
-relatedArticles: ["facturation-electronique-premiere-semaine-septembre-2026"]
-notesInternes: "Sources non ouvertes. Vérifier : nombre de plateformes de la première liste (101 selon le moteur), emplacement de la liste sur impots.gouv.fr, règle « une plateforme de réception, plusieurs pour l’émission ». Ne pas projeter les textes de juillet 2026 dans le corps : section « depuis » seulement."
+relatedGuides:
+  - "facturation-electronique-tpe"
+  - "choisir-un-logiciel-de-facturation"
+relatedArticles: []
+notesInternes: "Sources ouvertes et contenu rédigé le 10 octobre 2026. Toute validation antérieure à cette rédaction ne couvre pas ce nouveau texte."
+approvedBy: "Axel Dreano"
 ---
 
-Le **16 janvier 2026**, l’administration fiscale a publié la première liste officielle des plateformes agréées pour la facturation électronique. Selon l’annonce du ministère de l’Économie, cette liste compte une centaine de plateformes et a vocation à s’enrichir au fur et à mesure de l’examen des demandes.
+Le 16 janvier 2026, le ministère de l’Économie a annoncé une première liste de 101 plateformes agréées pour la facturation électronique. Cette liste fournit un point de départ fiable pour identifier les acteurs reconnus dans le dispositif.
 
-## Ce qui a été publié
-
-- Une liste de plateformes ayant obtenu leur agrément de l’administration, consultable en ligne.
-- Un rappel du calendrier tel qu’il était annoncé à cette date : réception obligatoire pour toutes les entreprises au 1er septembre 2026, émission obligatoire pour les PME, TPE et micro-entreprises au 1er septembre 2027.
-- Un principe d’organisation, à vérifier sur la page officielle : une entreprise choisit une seule plateforme pour recevoir ses factures, mais peut en utiliser plusieurs pour en émettre.
+Le nombre annoncé décrit la situation de janvier. Pour un choix effectué aujourd’hui, consultez la liste officielle actualisée : un article rétrospectif ne remplace pas la vérification du statut actuel d’un prestataire.
 
 ## Ce que cela change pour vous
 
-Avant cette publication, choisir une plateforme revenait à parier sur un éditeur. Depuis le 16 janvier, la question devient vérifiable : votre logiciel de facturation, votre banque ou votre expert-comptable proposent-ils une solution reliée à une plateforme de la liste ?
+Votre comparaison peut commencer par les besoins réels de l’entreprise : recevoir des factures, retrouver les pièces, suivre les statuts et travailler avec l’expert-comptable. Une plateforme présente dans une liste officielle n’offre pas nécessairement le même accompagnement, les mêmes fonctions ou le même prix qu’une autre.
 
-Pour une petite entreprise, il ne s’agit pas de comparer cent offres. Le plus souvent, le bon choix part de l’existant : l’outil avec lequel vous facturez déjà, ou celui de votre cabinet comptable. La liste sert à vérifier que cet outil s’appuie bien sur une plateforme agréée, et non sur un simple service de dépôt.
+Posez une question précise à l’éditeur de votre logiciel actuel : passe-t-il par une plateforme agréée, laquelle, et que comprend votre abonnement ? Conservez sa réponse. Un intitulé commercial comme « compatible avec la réforme » mérite d’être traduit en services et responsabilités identifiables.
 
-## Checklist pour choisir sa plateforme
+## Préparer une comparaison utilisable
 
-1. Lister les outils en place : logiciel de facturation, logiciel de caisse, banque, outil de l’expert-comptable.
-2. Demander à chacun, par écrit, s’il est lui-même plateforme agréée ou relié à l’une d’elles, et laquelle.
-3. Vérifier le nom de la plateforme indiquée dans la liste officielle.
-4. Poser cinq questions avant de signer : le coût mensuel, les volumes inclus, la récupération des données en cas de départ, l’accès pour l’expert-comptable et pour une assistante, l’assistance proposée.
-5. Désigner la plateforme de réception unique, et noter la date du choix.
-6. Ajouter le contrat à la liste des [contrats et abonnements suivis](/guides/suivi-des-contrats-et-abonnements), avec sa date de renouvellement.
+Rassemblez quelques factures représentatives, sans transmettre inutilement les coordonnées personnelles de vos clients lors d’une démonstration. Notez leur origine, les personnes qui les traitent et la façon dont elles arrivent au cabinet comptable.
 
-## Exemple fictif : partir de l’outil de devis
+Demandez ensuite une proposition écrite précisant le périmètre, la durée d’engagement, les accès disponibles et les conditions de sortie. La comparaison doit inclure le fonctionnement quotidien : qui voit une facture reçue, qui corrige une erreur et comment l’entreprise récupère ses données.
 
-Un électricien établit ses devis et factures avec un logiciel en ligne depuis trois ans. Son assistante écrit à l’éditeur, qui confirme s’appuyer sur une plateforme figurant dans la liste du 16 janvier. Le choix est fait en une semaine, sans changer d’outil ; le temps gagné est consacré à recenser les fournisseurs dont les factures arriveront par ce canal. Le cas est inventé pour illustrer la démarche.
+## Checklist avant le choix de plateforme
 
-## Ce qui a changé depuis
+1. Vérifier l’acteur sur la liste officielle en vigueur au jour du choix.
+2. Identifier les flux traités par le logiciel et ceux qui restent à organiser.
+3. Faire participer la personne chargée des factures et l’expert-comptable.
+4. Tester une réception et l’accès à une pièce avec un dossier de démonstration.
+5. Obtenir le tarif complet et les conditions contractuelles par écrit.
+6. Désigner le responsable des comptes et prévoir les accès des remplaçants.
 
-La liste s’est allongée au fil de l’année, et la réception obligatoire est effectivement entrée en vigueur le 1er septembre 2026 : voir l’article sur la [première semaine de la réforme](/articles/facturation-electronique-premiere-semaine-septembre-2026). Le fonctionnement général de la réforme est présenté dans le guide [facturation électronique pour une TPE](/guides/facturation-electronique-tpe), et le guide sur le [choix d’un logiciel de facturation](/guides/choisir-un-logiciel-de-facturation) aide à préparer l’émission de 2027.
+## Exemple fictif : deux propositions difficiles à comparer
+
+Une TPE reçoit une offre intégrée à son logiciel et une offre séparée. Son assistante construit un tableau avec les fonctions nécessaires, les coûts annoncés et les conditions de récupération des données. Le dirigeant décide après validation du circuit avec son comptable. Cette situation est inventée et ne recommande aucun fournisseur.
+
+Évitez de choisir sur le seul nombre de fonctions. Une fonction inutile peut compliquer le traitement, alors qu’un accès correctement attribué ou une assistance joignable répond à un besoin immédiat.
+
+## Prolonger les actions dans vos dossiers
+
+Pour organiser la suite, consultez les guides [Facturation électronique : ce qui change vraiment pour une petite entreprise.](/guides/facturation-electronique-tpe) et [Choisir un logiciel de facturation : sept critères, aucun nom de marque.](/guides/choisir-un-logiciel-de-facturation). Ils prolongent cette actualité par des méthodes de travail. Choisissez les étapes utiles à votre dossier et faites valider les décisions qui relèvent de vos interlocuteurs compétents.

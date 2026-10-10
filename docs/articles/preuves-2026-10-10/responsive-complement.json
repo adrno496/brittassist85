@@ -1,0 +1,859 @@
+{
+  "date": "2026-10-10T17:24:07.085Z",
+  "largeurs": [
+    375,
+    921,
+    1024,
+    1280
+  ],
+  "pages": 42,
+  "affichages": 168,
+  "failures": [],
+  "results": [
+    {
+      "path": "/articles/acre-2026-exoneration-25-pour-cent",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/ai-act-accord-omnibus-mai-2026",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/ai-act-transparence-chatbot-2-aout-2026",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/assurance-professionnelle-contre-expertise-loi-mai-2026",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/barometre-france-num-2026-ia-tpe",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/bilan-cybermalveillance-2025-priorites-tpe",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-alerte-faux-organismes-fuite-de-donnees",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-cameras-captation-sonore",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-controles-2026-recrutement",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-facturation-electronique-donnees-personnelles",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-pixels-suivi-emails",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-recommandation-proxy-filtrage-web",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-sanction-fichier-clients-reseau-social",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-sanctions-simplifiees-juillet-2026",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/conge-de-naissance-independants-juillet-2026",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/creations-entreprises-pays-loire-mars-2026",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cybermois-2026-suivi-fuite-donnees",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/declaration-revenus-2025-independants-ouverture",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/declaration-revenus-date-limite-vendee-2026",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/decret-27-juillet-2026-plateforme-agreee",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/decret-formalites-30-avril-2026",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/defaillances-entreprises-surveiller-clients-fournisseurs",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/demarchage-telephonique-consentement-11-aout-2026",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/donnees-sante-habilitations-alerte-septembre-2026",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/facturation-electronique-premiere-semaine-septembre-2026",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/france-travail-acces-partenaires-janvier-2026",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/futur-code-ape-naf-2025-consultation",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/liste-plateformes-agreees-facturation-electronique",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/loi-de-finances-2026-mesures-tpe",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/marches-publics-criteres-environnementaux-aout-2026",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/numero-masque-appels-etranger-janvier-2026",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/numero-unique-dgfip-professionnels",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/page/2",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/piratage-impots-vigilance-messages-aout-2026",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/pixels-emails-anciennes-listes-delai-juillet-2026",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/place-marches-publics-elargissement-juin-2026",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/rapport-annuel-cnil-2025-petites-structures",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/regularisation-cotisations-independants-2026",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/smic-juin-2026-checklist-employeur",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/tva-fin-regime-simplifie-1er-janvier-2027",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles",
+      "width": 375,
+      "debordement": 0
+    },
+    {
+      "path": "/articles",
+      "width": 375,
+      "menu": true
+    },
+    {
+      "path": "/articles/acre-2026-exoneration-25-pour-cent",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/ai-act-accord-omnibus-mai-2026",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/ai-act-transparence-chatbot-2-aout-2026",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/assurance-professionnelle-contre-expertise-loi-mai-2026",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/barometre-france-num-2026-ia-tpe",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/bilan-cybermalveillance-2025-priorites-tpe",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-alerte-faux-organismes-fuite-de-donnees",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-cameras-captation-sonore",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-controles-2026-recrutement",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-facturation-electronique-donnees-personnelles",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-pixels-suivi-emails",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-recommandation-proxy-filtrage-web",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-sanction-fichier-clients-reseau-social",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-sanctions-simplifiees-juillet-2026",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/conge-de-naissance-independants-juillet-2026",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/creations-entreprises-pays-loire-mars-2026",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cybermois-2026-suivi-fuite-donnees",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/declaration-revenus-2025-independants-ouverture",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/declaration-revenus-date-limite-vendee-2026",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/decret-27-juillet-2026-plateforme-agreee",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/decret-formalites-30-avril-2026",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/defaillances-entreprises-surveiller-clients-fournisseurs",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/demarchage-telephonique-consentement-11-aout-2026",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/donnees-sante-habilitations-alerte-septembre-2026",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/facturation-electronique-premiere-semaine-septembre-2026",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/france-travail-acces-partenaires-janvier-2026",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/futur-code-ape-naf-2025-consultation",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/liste-plateformes-agreees-facturation-electronique",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/loi-de-finances-2026-mesures-tpe",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/marches-publics-criteres-environnementaux-aout-2026",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/numero-masque-appels-etranger-janvier-2026",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/numero-unique-dgfip-professionnels",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/page/2",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/piratage-impots-vigilance-messages-aout-2026",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/pixels-emails-anciennes-listes-delai-juillet-2026",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/place-marches-publics-elargissement-juin-2026",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/rapport-annuel-cnil-2025-petites-structures",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/regularisation-cotisations-independants-2026",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/smic-juin-2026-checklist-employeur",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/tva-fin-regime-simplifie-1er-janvier-2027",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles",
+      "width": 921,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/acre-2026-exoneration-25-pour-cent",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/ai-act-accord-omnibus-mai-2026",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/ai-act-transparence-chatbot-2-aout-2026",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/assurance-professionnelle-contre-expertise-loi-mai-2026",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/barometre-france-num-2026-ia-tpe",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/bilan-cybermalveillance-2025-priorites-tpe",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-alerte-faux-organismes-fuite-de-donnees",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-cameras-captation-sonore",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-controles-2026-recrutement",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-facturation-electronique-donnees-personnelles",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-pixels-suivi-emails",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-recommandation-proxy-filtrage-web",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-sanction-fichier-clients-reseau-social",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-sanctions-simplifiees-juillet-2026",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/conge-de-naissance-independants-juillet-2026",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/creations-entreprises-pays-loire-mars-2026",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cybermois-2026-suivi-fuite-donnees",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/declaration-revenus-2025-independants-ouverture",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/declaration-revenus-date-limite-vendee-2026",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/decret-27-juillet-2026-plateforme-agreee",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/decret-formalites-30-avril-2026",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/defaillances-entreprises-surveiller-clients-fournisseurs",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/demarchage-telephonique-consentement-11-aout-2026",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/donnees-sante-habilitations-alerte-septembre-2026",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/facturation-electronique-premiere-semaine-septembre-2026",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/france-travail-acces-partenaires-janvier-2026",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/futur-code-ape-naf-2025-consultation",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/liste-plateformes-agreees-facturation-electronique",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/loi-de-finances-2026-mesures-tpe",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/marches-publics-criteres-environnementaux-aout-2026",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/numero-masque-appels-etranger-janvier-2026",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/numero-unique-dgfip-professionnels",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/page/2",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/piratage-impots-vigilance-messages-aout-2026",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/pixels-emails-anciennes-listes-delai-juillet-2026",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/place-marches-publics-elargissement-juin-2026",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/rapport-annuel-cnil-2025-petites-structures",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/regularisation-cotisations-independants-2026",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/smic-juin-2026-checklist-employeur",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/tva-fin-regime-simplifie-1er-janvier-2027",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles",
+      "width": 1024,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/acre-2026-exoneration-25-pour-cent",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/ai-act-accord-omnibus-mai-2026",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/ai-act-transparence-chatbot-2-aout-2026",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/assurance-professionnelle-contre-expertise-loi-mai-2026",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/barometre-france-num-2026-ia-tpe",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/bilan-cybermalveillance-2025-priorites-tpe",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-alerte-faux-organismes-fuite-de-donnees",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-cameras-captation-sonore",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-controles-2026-recrutement",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-facturation-electronique-donnees-personnelles",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-pixels-suivi-emails",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-recommandation-proxy-filtrage-web",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-sanction-fichier-clients-reseau-social",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cnil-sanctions-simplifiees-juillet-2026",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/conge-de-naissance-independants-juillet-2026",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/creations-entreprises-pays-loire-mars-2026",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/cybermois-2026-suivi-fuite-donnees",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/declaration-revenus-2025-independants-ouverture",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/declaration-revenus-date-limite-vendee-2026",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/decret-27-juillet-2026-plateforme-agreee",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/decret-formalites-30-avril-2026",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/defaillances-entreprises-surveiller-clients-fournisseurs",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/demarchage-telephonique-consentement-11-aout-2026",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/donnees-sante-habilitations-alerte-septembre-2026",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/facturation-electronique-premiere-semaine-septembre-2026",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/france-travail-acces-partenaires-janvier-2026",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/futur-code-ape-naf-2025-consultation",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/liste-plateformes-agreees-facturation-electronique",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/loi-de-finances-2026-mesures-tpe",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/marches-publics-criteres-environnementaux-aout-2026",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/numero-masque-appels-etranger-janvier-2026",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/numero-unique-dgfip-professionnels",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/page/2",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/piratage-impots-vigilance-messages-aout-2026",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/pixels-emails-anciennes-listes-delai-juillet-2026",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/place-marches-publics-elargissement-juin-2026",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/rapport-annuel-cnil-2025-petites-structures",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/regularisation-cotisations-independants-2026",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/smic-juin-2026-checklist-employeur",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles/tva-fin-regime-simplifie-1er-janvier-2027",
+      "width": 1280,
+      "debordement": 0
+    },
+    {
+      "path": "/articles",
+      "width": 1280,
+      "debordement": 0
+    }
+  ]
+}

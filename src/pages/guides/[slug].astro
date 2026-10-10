@@ -4,6 +4,7 @@ import Blocs from '../../components/Blocs.astro';
 import Button from '../../components/Button.astro';
 import Fil from '../../components/Fil.astro';
 import Monogram from '../../components/Monogram.astro';
+import { articlesGeneres } from '../../lib/articles';
 import {
   cheminDuGuide,
   dossierDe,
@@ -57,6 +58,11 @@ const fratrie = voisins(g, 5);
 const suite = fratrie.length ? fratrie : guidesGeneres().filter((x) => x.slug !== g.slug).slice(0, 5);
 const suiteDuDossier = fratrie.length > 0;
 const liens = liensVisibles(g.liens);
+// Les actualités liées à ce guide complètent la méthode ; les brouillons ne sont
+// jamais proposés depuis une page publiée, y compris dans le build d'aperçu.
+const actualites = (await articlesGeneres())
+  .filter((a) => !a.brouillon && a.data.relatedGuides.includes(g.slug))
+  .slice(0, 3);
 // « Pour approfondir » : comme pour le maillage, une cible encore en brouillon n'est pas affichée.
 // Un groupe vide disparaît ; sans aucun groupe, la rubrique n'est pas rendue.
 const approfondir = (g.approfondir?.groupes ?? [])
@@ -338,6 +344,8 @@ const donnees = {
         <div class="index-groupe">
           <h3>Pour aller plus loin</h3>
           {liens.map((l) => <a href={l.href}>{l.label}</a>)}
+          {actualites.length > 0 && <h3>Actualités liées à ce guide</h3>}
+          {actualites.map((a) => <a href={a.chemin}>{a.data.h1}</a>)}
         </div>
         <div class="index-groupe">
           <h3>{nouvelleGeneration && suiteDuDossier ? 'Dans le même dossier' : 'Les autres guides'}</h3>

@@ -1,0 +1,439 @@
+{
+  "base": "d41dcd4",
+  "sourceClaude": "522c480",
+  "branche": "integration/articles-relecture-20261010",
+  "fichiers": [
+    {
+      "statut": "A",
+      "fichier": ".github/copilot-instructions.md"
+    },
+    {
+      "statut": "A",
+      "fichier": ".github/prompts/nouvel-article.prompt.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "AGENTS.md"
+    },
+    {
+      "statut": "M",
+      "fichier": "astro.config.mjs"
+    },
+    {
+      "statut": "A",
+      "fichier": "CLAUDE.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/COMPARAISON_ROUTES_2026-10-10.json"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/CONTROLE_SIMILARITE_40_ARTICLES.json"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/INVENTAIRE_INTEGRATION_2026-10-10.json"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/MESURES_LOCALES_2026-10-10.json"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/PLAN_EDITORIAL_2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/plan-editorial-2026.json"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/articles-check.log"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/check.log"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/menu.log"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/navigateur-brouillons.json"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/navigateur-final.json"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/navigateur-final.log"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/nouvel-article.log"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/npm-audit.json"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/publications.log"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/qa-apercu.log"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/qa.log"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/responsive-complement.json"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/similarite.log"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/tests.log"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/PROCEDURE_NOUVEL_ARTICLE.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/RAPPORT_IMPLEMENTATION.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/RAPPORT_INTEGRATION_VSCODE_PRODUCTION.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/recherche/S01-S10.json"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/recherche/S11-S20.json"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/recherche/S21-S31.json"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/recherche/S32-S41.json"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/RELECTURE_40_ARTICLES_2026-10-10.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/SOURCES_VERIFIEES_2026-10-10.json"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/SOURCES_VERIFIEES.md"
+    },
+    {
+      "statut": "M",
+      "fichier": "package-lock.json"
+    },
+    {
+      "statut": "M",
+      "fichier": "package.json"
+    },
+    {
+      "statut": "M",
+      "fichier": "README.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "scripts/articles-check.mjs"
+    },
+    {
+      "statut": "A",
+      "fichier": "scripts/articles-new.mjs"
+    },
+    {
+      "statut": "A",
+      "fichier": "scripts/articles-publier.mjs"
+    },
+    {
+      "statut": "M",
+      "fichier": "scripts/content-gate.mjs"
+    },
+    {
+      "statut": "A",
+      "fichier": "scripts/docs-articles.mjs"
+    },
+    {
+      "statut": "A",
+      "fichier": "scripts/lib/articles-fichiers.mjs"
+    },
+    {
+      "statut": "A",
+      "fichier": "scripts/menu-check.mjs"
+    },
+    {
+      "statut": "M",
+      "fichier": "scripts/seo-audit.mjs"
+    },
+    {
+      "statut": "A",
+      "fichier": "scripts/tests/articles.test.mjs"
+    },
+    {
+      "statut": "M",
+      "fichier": "scripts/tests/publication.test.mjs"
+    },
+    {
+      "statut": "M",
+      "fichier": "scripts/tests/seo-audit.test.mjs"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/components/CarteArticle.astro"
+    },
+    {
+      "statut": "M",
+      "fichier": "src/components/Header.astro"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/components/ListeArticles.astro"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content.config.ts"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/acre-2026-exoneration-25-pour-cent.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/ai-act-accord-omnibus-mai-2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/ai-act-transparence-chatbot-2-aout-2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/amendes-facturation-electronique-loi-de-finances-2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/assurance-professionnelle-contre-expertise-loi-mai-2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/barometre-france-num-2026-ia-tpe.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/bilan-cybermalveillance-2025-priorites-tpe.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/cnil-alerte-faux-organismes-fuite-de-donnees.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/cnil-cameras-captation-sonore.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/cnil-controles-2026-recrutement.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/cnil-facturation-electronique-donnees-personnelles.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/cnil-pixels-suivi-emails.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/cnil-recommandation-proxy-filtrage-web.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/cnil-sanction-fichier-clients-reseau-social.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/cnil-sanctions-simplifiees-juillet-2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/conge-de-naissance-independants-juillet-2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/creations-entreprises-pays-loire-mars-2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/cybermois-2026-suivi-fuite-donnees.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/declaration-revenus-2025-independants-ouverture.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/declaration-revenus-date-limite-vendee-2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/decret-27-juillet-2026-plateforme-agreee.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/decret-formalites-30-avril-2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/defaillances-entreprises-surveiller-clients-fournisseurs.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/demarchage-telephonique-consentement-11-aout-2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/donnees-sante-habilitations-alerte-septembre-2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/facturation-electronique-premiere-semaine-septembre-2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/france-travail-acces-partenaires-janvier-2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/futur-code-ape-naf-2025-consultation.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/liste-plateformes-agreees-facturation-electronique.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/loi-de-finances-2026-mesures-tpe.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/marches-publics-criteres-environnementaux-aout-2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/numero-masque-appels-etranger-janvier-2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/numero-unique-dgfip-professionnels.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/piratage-impots-vigilance-messages-aout-2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/pixels-emails-anciennes-listes-delai-juillet-2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/place-marches-publics-elargissement-juin-2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/rapport-annuel-cnil-2025-petites-structures.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/regularisation-cotisations-independants-2026.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/smic-juin-2026-checklist-employeur.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/content/articles/tva-fin-regime-simplifie-1er-janvier-2027.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/data/articles.mjs"
+    },
+    {
+      "statut": "M",
+      "fichier": "src/data/bibliotheque.ts"
+    },
+    {
+      "statut": "M",
+      "fichier": "src/data/dates.mjs"
+    },
+    {
+      "statut": "M",
+      "fichier": "src/data/guides.ts"
+    },
+    {
+      "statut": "M",
+      "fichier": "src/data/publication.mjs"
+    },
+    {
+      "statut": "M",
+      "fichier": "src/data/publications.mjs"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/data/regles-editoriales.mjs"
+    },
+    {
+      "statut": "M",
+      "fichier": "src/data/relectures.mjs"
+    },
+    {
+      "statut": "M",
+      "fichier": "src/layouts/BaseLayout.astro"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/lib/articles.ts"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/pages/articles.astro"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/pages/articles/[slug].astro"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/pages/articles/page/[page].astro"
+    },
+    {
+      "statut": "M",
+      "fichier": "src/pages/guides/[slug].astro"
+    },
+    {
+      "statut": "A",
+      "fichier": "src/styles/articles.css"
+    }
+  ]
+}

@@ -23,6 +23,7 @@ import { dateDeRelecture, datePublicationSansRelecture, estPubliee, validationDu
 import { lastmodPour } from '../src/data/dates.mjs';
 import { validations } from '../src/data/relectures.mjs';
 import { INTERDITS, MARQUEURS_DE_REGLE } from '../src/data/regles-editoriales.mjs';
+import { lireArticles } from './lib/articles-fichiers.mjs';
 
 const SEUILS = { titleMax: 70, descriptionMin: 70, descriptionMax: 165, similarite: 0.55 };
 
@@ -34,6 +35,9 @@ const routes = new Set([
   ...metiers.map((m) => `/assistante/${m.slug}`),
   ...prestations.map((p) => `/services/${p.slug}`),
   ...zones.map((z) => `/assistante-independante/${z.slug}`),
+  // La rubrique possède ses propres contrôles de fond dans articles-check.mjs.
+  // Une validation doit néanmoins désigner une fiche réellement présente et lisible.
+  ...lireArticles().filter((a) => !a.erreur).map((a) => `/articles/${a.slug}`),
 ]);
 
 const normaliser = (t) => t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();

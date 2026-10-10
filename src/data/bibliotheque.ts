@@ -28,7 +28,7 @@ import { secretariatPilotage } from './dossiers/secretariat-pilotage.ts';
 import { secretariatRisques } from './dossiers/secretariat-risques.ts';
 import { secretariatProcessus } from './dossiers/secretariat-processus.ts';
 import { secretariatRelation } from './dossiers/secretariat-relation.ts';
-import { estBrouillon, estGeneree, estPubliee } from './publication.mjs';
+import { dateDeRelecture, estBrouillon, estGeneree, estPubliee } from './publication.mjs';
 
 export interface Dossier {
   /** Slug du pilier : la page /guides/<slug> ouvre le dossier */
@@ -148,7 +148,12 @@ export const bibliotheque: Guide[] = [
   ...secretariatRisques,
   ...secretariatProcessus,
   ...secretariatRelation,
-];
+].map((g) => {
+  // La relecture publiée modifie aussi la date visible et le JSON-LD du guide,
+  // comme le <lastmod> du sitemap ; la première publication est conservée.
+  const relecture = dateDeRelecture(`/guides/${g.slug}`);
+  return relecture && relecture > (g.dateModified ?? '') ? { ...g, dateModified: relecture } : g;
+});
 
 export const cheminDuGuide = (g: Guide) => `/guides/${g.slug}`;
 export const guideEstBrouillon = (g: Guide) => estBrouillon(cheminDuGuide(g));

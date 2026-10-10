@@ -42,6 +42,8 @@ const PAGES_OCTOBRE = new Set(['/guides', '/assistante', '/assistante-independan
 
 /** Page de référence de la série « secrétariat externalisé » : sa rubrique « Pour approfondir » est apparue à la mise en ligne de la série. */
 export const DATE_SERIE_SECRETARIAT = '2026-10-06';
+/** Ajout du lien vers les actualités et revue du maillage de la page de référence. */
+export const DATE_REFERENCE_SECRETARIAT = '2026-10-10';
 const PAGE_DE_REFERENCE = '/guides/secretariat-externalise';
 
 /** Ouverture de la rubrique « Articles » (/articles). */
@@ -92,7 +94,7 @@ export function lastmodPour(pathname) {
   // préalable porte la date de sa mise en ligne.
   const inscrite = dateDeRelecture(chemin) ?? datePublicationSansRelecture(chemin);
   if (inscrite) return inscrite;
-  if (chemin === PAGE_DE_REFERENCE) return DATE_SERIE_SECRETARIAT;
+  if (chemin === PAGE_DE_REFERENCE) return DATE_REFERENCE_SECRETARIAT;
   if (PAGES_OCTOBRE.has(chemin)) return DATE_HUBS;
   if (NOUVEAUX_GUIDES.has(chemin) || GUIDES_REVISES.has(chemin) || PAGES_REVISEES.has(chemin)) return DATE_NOUVEAUX_GUIDES;
   return CHEMINS_SEPTEMBRE.test(chemin) ? DATE_SEO_METIERS_ZONES_GUIDES : DATE_SOCLE;

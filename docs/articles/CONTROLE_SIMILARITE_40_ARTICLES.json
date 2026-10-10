@@ -1,0 +1,1286 @@
+{
+  "date": "2026-10-10",
+  "methode": "Jaccard des mots d’intention (outil du dépôt) et 4-grammes du corps. Comparaison aux guides de la bibliothèque et entre les 40 articles ; la navigation commune est exclue. Repères, pas une preuve sémantique exhaustive.",
+  "articles": [
+    {
+      "slug": "numero-masque-appels-etranger-janvier-2026",
+      "intention": "appels masqués depuis l’étranger : le changement de 2026",
+      "voisins": [
+        {
+          "chemin": "/articles/ai-act-transparence-chatbot-2-aout-2026",
+          "score": 0.09
+        },
+        {
+          "chemin": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+          "score": 0.09
+        },
+        {
+          "chemin": "/articles/assurance-professionnelle-contre-expertise-loi-mai-2026",
+          "score": 0.09
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/pixels-emails-anciennes-listes-delai-juillet-2026",
+          "score": 0.0435
+        },
+        {
+          "chemin": "/articles/ai-act-transparence-chatbot-2-aout-2026",
+          "score": 0.0405
+        },
+        {
+          "chemin": "/articles/creations-entreprises-pays-loire-mars-2026",
+          "score": 0.0402
+        }
+      ]
+    },
+    {
+      "slug": "futur-code-ape-naf-2025-consultation",
+      "intention": "code ape 2027 : consulter le futur classement",
+      "voisins": [
+        {
+          "chemin": "/articles/tva-fin-regime-simplifie-1er-janvier-2027",
+          "score": 0.11
+        },
+        {
+          "chemin": "/guides/acces-bancaire-pour-son-assistante",
+          "score": 0.06
+        },
+        {
+          "chemin": "/guides/assistante-independante-ou-salariee",
+          "score": 0
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/decret-formalites-30-avril-2026",
+          "score": 0.0588
+        },
+        {
+          "chemin": "/articles/creations-entreprises-pays-loire-mars-2026",
+          "score": 0.056
+        },
+        {
+          "chemin": "/articles/declaration-revenus-2025-independants-ouverture",
+          "score": 0.0557
+        }
+      ]
+    },
+    {
+      "slug": "liste-plateformes-agreees-facturation-electronique",
+      "intention": "plateformes agréées : comparer la liste de janvier 2026",
+      "voisins": [
+        {
+          "chemin": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+          "score": 0.09
+        },
+        {
+          "chemin": "/articles/assurance-professionnelle-contre-expertise-loi-mai-2026",
+          "score": 0.09
+        },
+        {
+          "chemin": "/articles/barometre-france-num-2026-ia-tpe",
+          "score": 0.09
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/facturation-electronique-premiere-semaine-septembre-2026",
+          "score": 0.0593
+        },
+        {
+          "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+          "score": 0.0573
+        },
+        {
+          "chemin": "/articles/cnil-facturation-electronique-donnees-personnelles",
+          "score": 0.0572
+        }
+      ]
+    },
+    {
+      "slug": "cnil-sanction-fichier-clients-reseau-social",
+      "intention": "fichier clients et publicité : la sanction cnil de janvier",
+      "voisins": [
+        {
+          "chemin": "/guides/tenir-son-fichier-clients-a-jour",
+          "score": 0.14
+        },
+        {
+          "chemin": "/articles/cnil-controles-2026-recrutement",
+          "score": 0.09
+        },
+        {
+          "chemin": "/guides/presenter-son-assistante-a-ses-clients",
+          "score": 0.08
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/rapport-annuel-cnil-2025-petites-structures",
+          "score": 0.0871
+        },
+        {
+          "chemin": "/articles/pixels-emails-anciennes-listes-delai-juillet-2026",
+          "score": 0.0612
+        },
+        {
+          "chemin": "/articles/cnil-pixels-suivi-emails",
+          "score": 0.0602
+        }
+      ]
+    },
+    {
+      "slug": "france-travail-acces-partenaires-janvier-2026",
+      "intention": "france travail : revoir les accès des partenaires",
+      "voisins": [
+        {
+          "chemin": "/guides/secretariat-externalise-france-ou-offshore",
+          "score": 0.1
+        },
+        {
+          "chemin": "/articles/barometre-france-num-2026-ia-tpe",
+          "score": 0.1
+        },
+        {
+          "chemin": "/articles/cnil-facturation-electronique-donnees-personnelles",
+          "score": 0.1
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/donnees-sante-habilitations-alerte-septembre-2026",
+          "score": 0.0588
+        },
+        {
+          "chemin": "/articles/cnil-recommandation-proxy-filtrage-web",
+          "score": 0.0587
+        },
+        {
+          "chemin": "/articles/bilan-cybermalveillance-2025-priorites-tpe",
+          "score": 0.053
+        }
+      ]
+    },
+    {
+      "slug": "acre-2026-exoneration-25-pour-cent",
+      "intention": "acre 2026 : vérifier la date et préparer la demande",
+      "voisins": [
+        {
+          "chemin": "/articles/cybermois-2026-suivi-fuite-donnees",
+          "score": 0.18
+        },
+        {
+          "chemin": "/articles/declaration-revenus-date-limite-vendee-2026",
+          "score": 0.18
+        },
+        {
+          "chemin": "/articles/loi-de-finances-2026-mesures-tpe",
+          "score": 0.18
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/regularisation-cotisations-independants-2026",
+          "score": 0.0421
+        },
+        {
+          "chemin": "/articles/marches-publics-criteres-environnementaux-aout-2026",
+          "score": 0.041
+        },
+        {
+          "chemin": "/articles/smic-juin-2026-checklist-employeur",
+          "score": 0.0409
+        }
+      ]
+    },
+    {
+      "slug": "amendes-facturation-electronique-loi-de-finances-2026",
+      "intention": "facturation électronique : comprendre les sanctions 2026",
+      "voisins": [
+        {
+          "chemin": "/guides/facturation-electronique-tpe",
+          "score": 0.18
+        },
+        {
+          "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+          "score": 0.11
+        },
+        {
+          "chemin": "/articles/assurance-professionnelle-contre-expertise-loi-mai-2026",
+          "score": 0.1
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/facturation-electronique-premiere-semaine-septembre-2026",
+          "score": 0.0687
+        },
+        {
+          "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+          "score": 0.0596
+        },
+        {
+          "chemin": "/articles/liste-plateformes-agreees-facturation-electronique",
+          "score": 0.0571
+        }
+      ]
+    },
+    {
+      "slug": "loi-de-finances-2026-mesures-tpe",
+      "intention": "loi de finances 2026 : préparer la revue de votre dossier",
+      "voisins": [
+        {
+          "chemin": "/articles/acre-2026-exoneration-25-pour-cent",
+          "score": 0.18
+        },
+        {
+          "chemin": "/articles/cybermois-2026-suivi-fuite-donnees",
+          "score": 0.18
+        },
+        {
+          "chemin": "/guides/dossier-de-rendez-vous",
+          "score": 0.13
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/regularisation-cotisations-independants-2026",
+          "score": 0.06
+        },
+        {
+          "chemin": "/articles/declaration-revenus-date-limite-vendee-2026",
+          "score": 0.0586
+        },
+        {
+          "chemin": "/articles/smic-juin-2026-checklist-employeur",
+          "score": 0.0422
+        }
+      ]
+    },
+    {
+      "slug": "defaillances-entreprises-surveiller-clients-fournisseurs",
+      "intention": "défaillances : organiser la veille clients et fournisseurs",
+      "voisins": [
+        {
+          "chemin": "/guides/organiser-l-administratif-de-son-entreprise",
+          "score": 0.1
+        },
+        {
+          "chemin": "/guides/organiser-un-deplacement-professionnel",
+          "score": 0.1
+        },
+        {
+          "chemin": "/guides/organiser-un-seminaire-d-equipe",
+          "score": 0.1
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/barometre-france-num-2026-ia-tpe",
+          "score": 0.0428
+        },
+        {
+          "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+          "score": 0.0416
+        },
+        {
+          "chemin": "/articles/rapport-annuel-cnil-2025-petites-structures",
+          "score": 0.0414
+        }
+      ]
+    },
+    {
+      "slug": "cnil-recommandation-proxy-filtrage-web",
+      "intention": "proxy web filtrant : préparer les bonnes questions",
+      "voisins": [
+        {
+          "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+          "score": 0.11
+        },
+        {
+          "chemin": "/articles/tva-fin-regime-simplifie-1er-janvier-2027",
+          "score": 0.11
+        },
+        {
+          "chemin": "/articles/conge-de-naissance-independants-juillet-2026",
+          "score": 0.1
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/donnees-sante-habilitations-alerte-septembre-2026",
+          "score": 0.0818
+        },
+        {
+          "chemin": "/articles/cnil-alerte-faux-organismes-fuite-de-donnees",
+          "score": 0.0609
+        },
+        {
+          "chemin": "/articles/france-travail-acces-partenaires-janvier-2026",
+          "score": 0.0587
+        }
+      ]
+    },
+    {
+      "slug": "cnil-cameras-captation-sonore",
+      "intention": "caméras avec microphone : le rappel cnil de mars",
+      "voisins": [
+        {
+          "chemin": "/articles/cnil-controles-2026-recrutement",
+          "score": 0.09
+        },
+        {
+          "chemin": "/guides/premier-mois-assistante-externalisee",
+          "score": 0.08
+        },
+        {
+          "chemin": "/guides/periode-d-essai-assistante-independante",
+          "score": 0.08
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/cnil-sanctions-simplifiees-juillet-2026",
+          "score": 0.0626
+        },
+        {
+          "chemin": "/articles/demarchage-telephonique-consentement-11-aout-2026",
+          "score": 0.0421
+        },
+        {
+          "chemin": "/articles/declaration-revenus-date-limite-vendee-2026",
+          "score": 0.0419
+        }
+      ]
+    },
+    {
+      "slug": "bilan-cybermalveillance-2025-priorites-tpe",
+      "intention": "bilan cyber 2025 : choisir trois priorités pour votre tpe",
+      "voisins": [
+        {
+          "chemin": "/guides/choisir-un-lieu-de-seminaire",
+          "score": 0.13
+        },
+        {
+          "chemin": "/guides/delegation-d-acces-messagerie-et-agenda",
+          "score": 0.11
+        },
+        {
+          "chemin": "/guides/conjoint-qui-fait-l-administratif",
+          "score": 0.11
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/piratage-impots-vigilance-messages-aout-2026",
+          "score": 0.0603
+        },
+        {
+          "chemin": "/articles/cnil-alerte-faux-organismes-fuite-de-donnees",
+          "score": 0.0596
+        },
+        {
+          "chemin": "/articles/cybermois-2026-suivi-fuite-donnees",
+          "score": 0.0583
+        }
+      ]
+    },
+    {
+      "slug": "cnil-controles-2026-recrutement",
+      "intention": "recrutement : les priorités de contrôle cnil en 2026",
+      "voisins": [
+        {
+          "chemin": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+          "score": 0.1
+        },
+        {
+          "chemin": "/articles/assurance-professionnelle-contre-expertise-loi-mai-2026",
+          "score": 0.1
+        },
+        {
+          "chemin": "/articles/barometre-france-num-2026-ia-tpe",
+          "score": 0.1
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/cnil-facturation-electronique-donnees-personnelles",
+          "score": 0.0455
+        },
+        {
+          "chemin": "/articles/facturation-electronique-premiere-semaine-septembre-2026",
+          "score": 0.0454
+        },
+        {
+          "chemin": "/articles/cnil-recommandation-proxy-filtrage-web",
+          "score": 0.0449
+        }
+      ]
+    },
+    {
+      "slug": "declaration-revenus-2025-independants-ouverture",
+      "intention": "revenus 2025 : préparer les pièces dès l’ouverture",
+      "voisins": [
+        {
+          "chemin": "/guides/pieces-pour-l-expert-comptable",
+          "score": 0.18
+        },
+        {
+          "chemin": "/guides/preparer-une-reunion",
+          "score": 0.13
+        },
+        {
+          "chemin": "/guides/controle-urssaf-preparer-les-pieces",
+          "score": 0.13
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/futur-code-ape-naf-2025-consultation",
+          "score": 0.0557
+        },
+        {
+          "chemin": "/articles/tva-fin-regime-simplifie-1er-janvier-2027",
+          "score": 0.0556
+        },
+        {
+          "chemin": "/articles/creations-entreprises-pays-loire-mars-2026",
+          "score": 0.0428
+        }
+      ]
+    },
+    {
+      "slug": "regularisation-cotisations-independants-2026",
+      "intention": "indépendants : rapprocher les cotisations et les revenus",
+      "voisins": [
+        {
+          "chemin": "/articles/declaration-revenus-2025-independants-ouverture",
+          "score": 0.11
+        },
+        {
+          "chemin": "/articles/declaration-revenus-date-limite-vendee-2026",
+          "score": 0.1
+        },
+        {
+          "chemin": "/guides/assistante-independante-ou-salariee",
+          "score": 0
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/declaration-revenus-date-limite-vendee-2026",
+          "score": 0.0606
+        },
+        {
+          "chemin": "/articles/loi-de-finances-2026-mesures-tpe",
+          "score": 0.06
+        },
+        {
+          "chemin": "/articles/marches-publics-criteres-environnementaux-aout-2026",
+          "score": 0.0438
+        }
+      ]
+    },
+    {
+      "slug": "creations-entreprises-pays-loire-mars-2026",
+      "intention": "créations en pays de la loire : préparer le démarrage",
+      "voisins": [
+        {
+          "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+          "score": 0.11
+        },
+        {
+          "chemin": "/articles/tva-fin-regime-simplifie-1er-janvier-2027",
+          "score": 0.11
+        },
+        {
+          "chemin": "/articles/cnil-recommandation-proxy-filtrage-web",
+          "score": 0.1
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/futur-code-ape-naf-2025-consultation",
+          "score": 0.056
+        },
+        {
+          "chemin": "/articles/decret-formalites-30-avril-2026",
+          "score": 0.055
+        },
+        {
+          "chemin": "/articles/donnees-sante-habilitations-alerte-septembre-2026",
+          "score": 0.0472
+        }
+      ]
+    },
+    {
+      "slug": "decret-formalites-30-avril-2026",
+      "intention": "formalités : le décret du 30 avril entre en vigueur",
+      "voisins": [
+        {
+          "chemin": "/guides/delais-de-paiement-et-penalites-de-retard",
+          "score": 0.08
+        },
+        {
+          "chemin": "/guides/deplacement-a-l-etranger-formalites",
+          "score": 0.08
+        },
+        {
+          "chemin": "/guides/premiere-embauche-formalites-administratives",
+          "score": 0.08
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/futur-code-ape-naf-2025-consultation",
+          "score": 0.0588
+        },
+        {
+          "chemin": "/articles/creations-entreprises-pays-loire-mars-2026",
+          "score": 0.055
+        },
+        {
+          "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+          "score": 0.0496
+        }
+      ]
+    },
+    {
+      "slug": "ai-act-accord-omnibus-mai-2026",
+      "intention": "ai act : suivre l’accord provisoire annoncé en mai",
+      "voisins": [
+        {
+          "chemin": "/articles/place-marches-publics-elargissement-juin-2026",
+          "score": 0.11
+        },
+        {
+          "chemin": "/guides/suivi-des-contrats-et-abonnements",
+          "score": 0.08
+        },
+        {
+          "chemin": "/guides/suivi-demandes-assistante-externalisee",
+          "score": 0.07
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/barometre-france-num-2026-ia-tpe",
+          "score": 0.0886
+        },
+        {
+          "chemin": "/articles/ai-act-transparence-chatbot-2-aout-2026",
+          "score": 0.0868
+        },
+        {
+          "chemin": "/articles/piratage-impots-vigilance-messages-aout-2026",
+          "score": 0.0423
+        }
+      ]
+    },
+    {
+      "slug": "rapport-annuel-cnil-2025-petites-structures",
+      "intention": "rapport cnil 2025 : organiser une revue des données",
+      "voisins": [
+        {
+          "chemin": "/guides/organiser-l-administratif-de-son-entreprise",
+          "score": 0.09
+        },
+        {
+          "chemin": "/guides/organiser-un-deplacement-professionnel",
+          "score": 0.09
+        },
+        {
+          "chemin": "/guides/organiser-un-seminaire-d-equipe",
+          "score": 0.09
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/cnil-sanction-fichier-clients-reseau-social",
+          "score": 0.0871
+        },
+        {
+          "chemin": "/articles/pixels-emails-anciennes-listes-delai-juillet-2026",
+          "score": 0.0622
+        },
+        {
+          "chemin": "/articles/cnil-facturation-electronique-donnees-personnelles",
+          "score": 0.0591
+        }
+      ]
+    },
+    {
+      "slug": "assurance-professionnelle-contre-expertise-loi-mai-2026",
+      "intention": "assurance pro : le droit à la contre-expertise en 2026",
+      "voisins": [
+        {
+          "chemin": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+          "score": 0.1
+        },
+        {
+          "chemin": "/articles/barometre-france-num-2026-ia-tpe",
+          "score": 0.1
+        },
+        {
+          "chemin": "/articles/cnil-controles-2026-recrutement",
+          "score": 0.1
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+          "score": 0.0602
+        },
+        {
+          "chemin": "/articles/cnil-facturation-electronique-donnees-personnelles",
+          "score": 0.0419
+        },
+        {
+          "chemin": "/articles/cnil-controles-2026-recrutement",
+          "score": 0.0418
+        }
+      ]
+    },
+    {
+      "slug": "smic-juin-2026-checklist-employeur",
+      "intention": "smic au 1er juin 2026 : vérifier les pièces de paie",
+      "voisins": [
+        {
+          "chemin": "/articles/acre-2026-exoneration-25-pour-cent",
+          "score": 0.18
+        },
+        {
+          "chemin": "/articles/declaration-revenus-date-limite-vendee-2026",
+          "score": 0.18
+        },
+        {
+          "chemin": "/articles/ai-act-transparence-chatbot-2-aout-2026",
+          "score": 0.09
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/marches-publics-criteres-environnementaux-aout-2026",
+          "score": 0.0425
+        },
+        {
+          "chemin": "/articles/loi-de-finances-2026-mesures-tpe",
+          "score": 0.0422
+        },
+        {
+          "chemin": "/articles/cnil-sanctions-simplifiees-juillet-2026",
+          "score": 0.0417
+        }
+      ]
+    },
+    {
+      "slug": "declaration-revenus-date-limite-vendee-2026",
+      "intention": "revenus en vendée : la date limite du 4 juin 2026",
+      "voisins": [
+        {
+          "chemin": "/articles/acre-2026-exoneration-25-pour-cent",
+          "score": 0.18
+        },
+        {
+          "chemin": "/articles/smic-juin-2026-checklist-employeur",
+          "score": 0.18
+        },
+        {
+          "chemin": "/articles/regularisation-cotisations-independants-2026",
+          "score": 0.1
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/regularisation-cotisations-independants-2026",
+          "score": 0.0606
+        },
+        {
+          "chemin": "/articles/loi-de-finances-2026-mesures-tpe",
+          "score": 0.0586
+        },
+        {
+          "chemin": "/articles/demarchage-telephonique-consentement-11-aout-2026",
+          "score": 0.042
+        }
+      ]
+    },
+    {
+      "slug": "place-marches-publics-elargissement-juin-2026",
+      "intention": "marchés publics : suivre l’élargissement de place",
+      "voisins": [
+        {
+          "chemin": "/articles/marches-publics-criteres-environnementaux-aout-2026",
+          "score": 0.22
+        },
+        {
+          "chemin": "/articles/ai-act-accord-omnibus-mai-2026",
+          "score": 0.11
+        },
+        {
+          "chemin": "/guides/suivi-des-contrats-et-abonnements",
+          "score": 0.08
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/marches-publics-criteres-environnementaux-aout-2026",
+          "score": 0.0704
+        },
+        {
+          "chemin": "/articles/cnil-sanctions-simplifiees-juillet-2026",
+          "score": 0.0419
+        },
+        {
+          "chemin": "/articles/demarchage-telephonique-consentement-11-aout-2026",
+          "score": 0.0419
+        }
+      ]
+    },
+    {
+      "slug": "cnil-alerte-faux-organismes-fuite-de-donnees",
+      "intention": "fuite de données : reconnaître les faux accompagnateurs",
+      "voisins": [
+        {
+          "chemin": "/articles/cnil-facturation-electronique-donnees-personnelles",
+          "score": 0.1
+        },
+        {
+          "chemin": "/guides/fraude-au-faux-rib-et-au-president",
+          "score": 0.09
+        },
+        {
+          "chemin": "/articles/cybermois-2026-suivi-fuite-donnees",
+          "score": 0.09
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/cybermois-2026-suivi-fuite-donnees",
+          "score": 0.0738
+        },
+        {
+          "chemin": "/articles/piratage-impots-vigilance-messages-aout-2026",
+          "score": 0.0714
+        },
+        {
+          "chemin": "/articles/donnees-sante-habilitations-alerte-septembre-2026",
+          "score": 0.0621
+        }
+      ]
+    },
+    {
+      "slug": "conge-de-naissance-independants-juillet-2026",
+      "intention": "congé de naissance : préparer l’absence d’un indépendant",
+      "voisins": [
+        {
+          "chemin": "/guides/preparer-son-absence",
+          "score": 0.15
+        },
+        {
+          "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+          "score": 0.11
+        },
+        {
+          "chemin": "/articles/tva-fin-regime-simplifie-1er-janvier-2027",
+          "score": 0.11
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/piratage-impots-vigilance-messages-aout-2026",
+          "score": 0.043
+        },
+        {
+          "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+          "score": 0.0425
+        },
+        {
+          "chemin": "/articles/cnil-facturation-electronique-donnees-personnelles",
+          "score": 0.0425
+        }
+      ]
+    },
+    {
+      "slug": "cnil-sanctions-simplifiees-juillet-2026",
+      "intention": "sanctions cnil de juillet : vérifier les points courants",
+      "voisins": [
+        {
+          "chemin": "/articles/ai-act-transparence-chatbot-2-aout-2026",
+          "score": 0.09
+        },
+        {
+          "chemin": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+          "score": 0.09
+        },
+        {
+          "chemin": "/articles/cnil-controles-2026-recrutement",
+          "score": 0.09
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/cnil-cameras-captation-sonore",
+          "score": 0.0626
+        },
+        {
+          "chemin": "/articles/marches-publics-criteres-environnementaux-aout-2026",
+          "score": 0.043
+        },
+        {
+          "chemin": "/articles/place-marches-publics-elargissement-juin-2026",
+          "score": 0.0419
+        }
+      ]
+    },
+    {
+      "slug": "pixels-emails-anciennes-listes-delai-juillet-2026",
+      "intention": "pixels d’email : le repère des trois mois en juillet",
+      "voisins": [
+        {
+          "chemin": "/articles/cnil-pixels-suivi-emails",
+          "score": 0.2
+        },
+        {
+          "chemin": "/guides/echeancier-administratif-entreprise",
+          "score": 0.14
+        },
+        {
+          "chemin": "/guides/participer-a-un-salon-professionnel",
+          "score": 0.13
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/cnil-pixels-suivi-emails",
+          "score": 0.0818
+        },
+        {
+          "chemin": "/articles/rapport-annuel-cnil-2025-petites-structures",
+          "score": 0.0622
+        },
+        {
+          "chemin": "/articles/cnil-sanction-fichier-clients-reseau-social",
+          "score": 0.0612
+        }
+      ]
+    },
+    {
+      "slug": "cnil-pixels-suivi-emails",
+      "intention": "pixels d’email : vérifier le rôle du prestataire",
+      "voisins": [
+        {
+          "chemin": "/articles/pixels-emails-anciennes-listes-delai-juillet-2026",
+          "score": 0.2
+        },
+        {
+          "chemin": "/articles/ai-act-transparence-chatbot-2-aout-2026",
+          "score": 0.1
+        },
+        {
+          "chemin": "/articles/piratage-impots-vigilance-messages-aout-2026",
+          "score": 0.1
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/pixels-emails-anciennes-listes-delai-juillet-2026",
+          "score": 0.0818
+        },
+        {
+          "chemin": "/articles/cnil-sanction-fichier-clients-reseau-social",
+          "score": 0.0602
+        },
+        {
+          "chemin": "/articles/rapport-annuel-cnil-2025-petites-structures",
+          "score": 0.0589
+        }
+      ]
+    },
+    {
+      "slug": "decret-27-juillet-2026-plateforme-agreee",
+      "intention": "plateforme de facturation : préparer la mobilité",
+      "voisins": [
+        {
+          "chemin": "/articles/tva-fin-regime-simplifie-1er-janvier-2027",
+          "score": 0.13
+        },
+        {
+          "chemin": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+          "score": 0.11
+        },
+        {
+          "chemin": "/articles/cnil-recommandation-proxy-filtrage-web",
+          "score": 0.11
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/assurance-professionnelle-contre-expertise-loi-mai-2026",
+          "score": 0.0602
+        },
+        {
+          "chemin": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+          "score": 0.0596
+        },
+        {
+          "chemin": "/articles/facturation-electronique-premiere-semaine-septembre-2026",
+          "score": 0.0596
+        }
+      ]
+    },
+    {
+      "slug": "ai-act-transparence-chatbot-2-aout-2026",
+      "intention": "ia et transparence : vérifier les usages depuis août",
+      "voisins": [
+        {
+          "chemin": "/articles/cnil-pixels-suivi-emails",
+          "score": 0.1
+        },
+        {
+          "chemin": "/articles/piratage-impots-vigilance-messages-aout-2026",
+          "score": 0.1
+        },
+        {
+          "chemin": "/articles/acre-2026-exoneration-25-pour-cent",
+          "score": 0.09
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/ai-act-accord-omnibus-mai-2026",
+          "score": 0.0868
+        },
+        {
+          "chemin": "/articles/barometre-france-num-2026-ia-tpe",
+          "score": 0.0867
+        },
+        {
+          "chemin": "/articles/pixels-emails-anciennes-listes-delai-juillet-2026",
+          "score": 0.0426
+        }
+      ]
+    },
+    {
+      "slug": "demarchage-telephonique-consentement-11-aout-2026",
+      "intention": "démarchage téléphonique : revoir les fichiers particuliers",
+      "voisins": [
+        {
+          "chemin": "/articles/france-travail-acces-partenaires-janvier-2026",
+          "score": 0.1
+        },
+        {
+          "chemin": "/guides/regles-de-nommage-des-fichiers",
+          "score": 0.06
+        },
+        {
+          "chemin": "/guides/assistante-independante-ou-salariee",
+          "score": 0
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/regularisation-cotisations-independants-2026",
+          "score": 0.043
+        },
+        {
+          "chemin": "/articles/cnil-cameras-captation-sonore",
+          "score": 0.0421
+        },
+        {
+          "chemin": "/articles/declaration-revenus-date-limite-vendee-2026",
+          "score": 0.042
+        }
+      ]
+    },
+    {
+      "slug": "piratage-impots-vigilance-messages-aout-2026",
+      "intention": "piratage des impôts : vérifier les messages reçus",
+      "voisins": [
+        {
+          "chemin": "/articles/ai-act-transparence-chatbot-2-aout-2026",
+          "score": 0.1
+        },
+        {
+          "chemin": "/articles/cnil-pixels-suivi-emails",
+          "score": 0.1
+        },
+        {
+          "chemin": "/guides/presenter-son-assistante-a-ses-clients",
+          "score": 0.09
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/numero-unique-dgfip-professionnels",
+          "score": 0.0766
+        },
+        {
+          "chemin": "/articles/cnil-alerte-faux-organismes-fuite-de-donnees",
+          "score": 0.0714
+        },
+        {
+          "chemin": "/articles/bilan-cybermalveillance-2025-priorites-tpe",
+          "score": 0.0603
+        }
+      ]
+    },
+    {
+      "slug": "marches-publics-criteres-environnementaux-aout-2026",
+      "intention": "marchés publics : préparer les preuves environnementales",
+      "voisins": [
+        {
+          "chemin": "/articles/place-marches-publics-elargissement-juin-2026",
+          "score": 0.22
+        },
+        {
+          "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+          "score": 0.11
+        },
+        {
+          "chemin": "/articles/tva-fin-regime-simplifie-1er-janvier-2027",
+          "score": 0.11
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/place-marches-publics-elargissement-juin-2026",
+          "score": 0.0704
+        },
+        {
+          "chemin": "/articles/regularisation-cotisations-independants-2026",
+          "score": 0.0438
+        },
+        {
+          "chemin": "/articles/cnil-sanctions-simplifiees-juillet-2026",
+          "score": 0.043
+        }
+      ]
+    },
+    {
+      "slug": "facturation-electronique-premiere-semaine-septembre-2026",
+      "intention": "facturation : organiser le circuit après le 1er septembre",
+      "voisins": [
+        {
+          "chemin": "/guides/devis-factures-relances",
+          "score": 0.14
+        },
+        {
+          "chemin": "/guides/boite-mail-partagee-entreprise",
+          "score": 0.13
+        },
+        {
+          "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+          "score": 0.11
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+          "score": 0.0687
+        },
+        {
+          "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+          "score": 0.0596
+        },
+        {
+          "chemin": "/articles/liste-plateformes-agreees-facturation-electronique",
+          "score": 0.0593
+        }
+      ]
+    },
+    {
+      "slug": "donnees-sante-habilitations-alerte-septembre-2026",
+      "intention": "données de santé : limiter les accès et préparer l’alerte",
+      "voisins": [
+        {
+          "chemin": "/articles/cnil-facturation-electronique-donnees-personnelles",
+          "score": 0.2
+        },
+        {
+          "chemin": "/guides/confidentialite-assistante-externalisee",
+          "score": 0.13
+        },
+        {
+          "chemin": "/guides/acces-bancaire-pour-son-assistante",
+          "score": 0.13
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/cnil-recommandation-proxy-filtrage-web",
+          "score": 0.0818
+        },
+        {
+          "chemin": "/articles/cnil-alerte-faux-organismes-fuite-de-donnees",
+          "score": 0.0621
+        },
+        {
+          "chemin": "/articles/france-travail-acces-partenaires-janvier-2026",
+          "score": 0.0588
+        }
+      ]
+    },
+    {
+      "slug": "cnil-facturation-electronique-donnees-personnelles",
+      "intention": "factures électroniques : contrôler les accès aux données",
+      "voisins": [
+        {
+          "chemin": "/articles/donnees-sante-habilitations-alerte-septembre-2026",
+          "score": 0.18
+        },
+        {
+          "chemin": "/guides/confidentialite-assistante-externalisee",
+          "score": 0.13
+        },
+        {
+          "chemin": "/articles/cnil-alerte-faux-organismes-fuite-de-donnees",
+          "score": 0.1
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/rapport-annuel-cnil-2025-petites-structures",
+          "score": 0.0591
+        },
+        {
+          "chemin": "/articles/cnil-sanction-fichier-clients-reseau-social",
+          "score": 0.0581
+        },
+        {
+          "chemin": "/articles/liste-plateformes-agreees-facturation-electronique",
+          "score": 0.0572
+        }
+      ]
+    },
+    {
+      "slug": "tva-fin-regime-simplifie-1er-janvier-2027",
+      "intention": "tva 2027 : préparer la fin du régime simplifié",
+      "voisins": [
+        {
+          "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+          "score": 0.13
+        },
+        {
+          "chemin": "/articles/cnil-recommandation-proxy-filtrage-web",
+          "score": 0.11
+        },
+        {
+          "chemin": "/articles/conge-de-naissance-independants-juillet-2026",
+          "score": 0.11
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/declaration-revenus-2025-independants-ouverture",
+          "score": 0.0556
+        },
+        {
+          "chemin": "/articles/futur-code-ape-naf-2025-consultation",
+          "score": 0.0551
+        },
+        {
+          "chemin": "/articles/cnil-facturation-electronique-donnees-personnelles",
+          "score": 0.0421
+        }
+      ]
+    },
+    {
+      "slug": "barometre-france-num-2026-ia-tpe",
+      "intention": "france num 2026 : choisir un usage concret de l’ia",
+      "voisins": [
+        {
+          "chemin": "/guides/choisir-assistante-externalisee",
+          "score": 0.1
+        },
+        {
+          "chemin": "/guides/secretariat-externalise-france-ou-offshore",
+          "score": 0.1
+        },
+        {
+          "chemin": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+          "score": 0.1
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/ai-act-accord-omnibus-mai-2026",
+          "score": 0.0886
+        },
+        {
+          "chemin": "/articles/ai-act-transparence-chatbot-2-aout-2026",
+          "score": 0.0867
+        },
+        {
+          "chemin": "/articles/defaillances-entreprises-surveiller-clients-fournisseurs",
+          "score": 0.0428
+        }
+      ]
+    },
+    {
+      "slug": "cybermois-2026-suivi-fuite-donnees",
+      "intention": "cybermois 2026 : préparer le suivi après une fuite",
+      "voisins": [
+        {
+          "chemin": "/articles/acre-2026-exoneration-25-pour-cent",
+          "score": 0.18
+        },
+        {
+          "chemin": "/articles/loi-de-finances-2026-mesures-tpe",
+          "score": 0.18
+        },
+        {
+          "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+          "score": 0.1
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/cnil-alerte-faux-organismes-fuite-de-donnees",
+          "score": 0.0738
+        },
+        {
+          "chemin": "/articles/numero-unique-dgfip-professionnels",
+          "score": 0.0629
+        },
+        {
+          "chemin": "/articles/bilan-cybermalveillance-2025-priorites-tpe",
+          "score": 0.0583
+        }
+      ]
+    },
+    {
+      "slug": "numero-unique-dgfip-professionnels",
+      "intention": "dgfip : un numéro unique pour les professionnels",
+      "voisins": [
+        {
+          "chemin": "/guides/modele-brief-assistante-externalisee",
+          "score": 0.08
+        },
+        {
+          "chemin": "/guides/pieces-pour-l-expert-comptable",
+          "score": 0.08
+        },
+        {
+          "chemin": "/guides/facturation-electronique-tpe",
+          "score": 0.08
+        }
+      ],
+      "corpsVoisins": [
+        {
+          "chemin": "/articles/piratage-impots-vigilance-messages-aout-2026",
+          "score": 0.0766
+        },
+        {
+          "chemin": "/articles/cybermois-2026-suivi-fuite-donnees",
+          "score": 0.0629
+        },
+        {
+          "chemin": "/articles/bilan-cybermalveillance-2025-priorites-tpe",
+          "score": 0.0569
+        }
+      ]
+    }
+  ]
+}

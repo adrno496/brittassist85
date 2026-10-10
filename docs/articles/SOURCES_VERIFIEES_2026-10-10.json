@@ -1,0 +1,868 @@
+{
+  "consulteLe": "2026-10-10",
+  "methode": "Pages officielles ouvertes via navigation web ou requête HTTP suivie de lecture du texte ; les extraits sont reformulés. Les pistes non retenues du plan restent des pistes, pas des sources consultées.",
+  "articles": [
+    {
+      "semaine": "S01",
+      "slug": "numero-masque-appels-etranger-janvier-2026",
+      "dateEvenement": "2026-01-01",
+      "natureEvenement": "Entrée en vigueur annoncée par l’Arcep",
+      "sources": [
+        {
+          "titre": "Information et protection accrue des consommateurs, gestion efficace des numéros : l’Arcep adopte une décision modifiant le plan national de numérotation",
+          "organisme": "Arcep",
+          "url": "https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/plan-de-numerotation-021225.html",
+          "type": "primaire",
+          "datePublication": "2025-12-02",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Au 1er janvier 2026, les opérateurs doivent masquer les numéros mobiles français non authentifiés des appels provenant de l’étranger. Le masquage ne prouve pas une fraude."
+        }
+      ],
+      "mots": 493,
+      "sha256Corps": "b538b07e197701173ac041f5705f586da557ea5abb515b404639d20fc8e48196",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S02",
+      "slug": "futur-code-ape-naf-2025-consultation",
+      "dateEvenement": "2026-01-14",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Nouveau code APE : les entreprises peuvent le consulter dès aujourd’hui sur sirene.gouv.fr",
+          "organisme": "Insee",
+          "url": "https://www.insee.fr/fr/information/8727948",
+          "type": "primaire",
+          "datePublication": "2026-01-14",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le communiqué du 14 janvier 2026 annonce la consultation du futur code APE sur Sirene. Le nouveau code entre en vigueur le 1er janvier 2027 ; l’ancien reste officiel en 2026."
+        }
+      ],
+      "mots": 489,
+      "sha256Corps": "65a154ee04127d29014dcf2614ac789fa4937d65c392a9965980e756b690772e",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S03",
+      "slug": "liste-plateformes-agreees-facturation-electronique",
+      "dateEvenement": "2026-01-16",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Facturation électronique : la liste des 101 premières plateformes agréées",
+          "organisme": "Ministère de l’Économie",
+          "url": "https://www.economie.gouv.fr/actualites/facturation-electronique-la-liste-des-101-premieres-plateformes-agreees",
+          "type": "primaire",
+          "datePublication": "2026-01-16",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le ministère a publié le 16 janvier 2026 une première liste de 101 plateformes agréées pour la réforme. L’agrément ne permet pas de présumer les tarifs et fonctionnalités de chaque contrat."
+        }
+      ],
+      "mots": 481,
+      "sha256Corps": "2737655b0d2de0ce1eea551770f9ba29f19278d6df2d9cb359c890843adfebb9",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S04",
+      "slug": "cnil-sanction-fichier-clients-reseau-social",
+      "dateEvenement": "2026-01-22",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Transmission de données à un réseau social à des fins publicitaires : la CNIL prononce une sanction de 3,5 millions d’euros",
+          "organisme": "CNIL",
+          "url": "https://cnil.fr/fr/transmission-de-donnees-un-reseau-social-des-fins-publicitaires-sanction",
+          "type": "primaire",
+          "datePublication": "2026-01-22",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "L’annonce du 22 janvier décrit une sanction décidée le 30 décembre 2025 pour le transfert de données d’un programme de fidélité à un réseau social sans consentement valable."
+        }
+      ],
+      "mots": 492,
+      "sha256Corps": "a5757b1a217361af2d7eabb38152e358eea26457aca50fbb2ce6f3955c6b51de",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S05",
+      "slug": "france-travail-acces-partenaires-janvier-2026",
+      "dateEvenement": "2026-01-29",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Violation de données : sanction de 5 millions d’euros à l’encontre de FRANCE TRAVAIL",
+          "organisme": "CNIL",
+          "url": "https://www.cnil.fr/fr/violation-de-donnees-sanction-5millions-france-travail",
+          "type": "primaire",
+          "datePublication": "2026-01-29",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La CNIL annonce le 29 janvier une sanction décidée le 22 janvier. Elle relève une authentification insuffisante, des accès trop larges de partenaires et une journalisation insuffisante."
+        }
+      ],
+      "mots": 476,
+      "sha256Corps": "b4bf10846b2ab9ed5db180d7e2f8cd62e6492574a41ea1578461ed64e042dfbe",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S06",
+      "slug": "acre-2026-exoneration-25-pour-cent",
+      "dateEvenement": "2026-02-11",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "ACRE : les conditions d’exonération évoluent en 2026",
+          "organisme": "DILA — Service Public Entreprendre",
+          "url": "https://entreprendre.service-public.gouv.fr/actualites/A18795?lang=fr",
+          "type": "primaire",
+          "datePublication": "2026-02-11",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La fiche publiée le 11 février distingue les évolutions du 1er janvier et celles applicables aux micro-entrepreneurs créant à compter du 1er juillet, avec une demande dans les 60 jours."
+        }
+      ],
+      "mots": 467,
+      "sha256Corps": "aee7db84c411878e4e2a2a040adcd66be0981ec6e80b5e803d0f7acb2e13d535",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S08",
+      "slug": "amendes-facturation-electronique-loi-de-finances-2026",
+      "dateEvenement": "2026-02-20",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Facturation électronique : les sanctions évoluent",
+          "organisme": "DILA — Service Public Entreprendre",
+          "url": "https://entreprendre.service-public.gouv.fr/actualites/A18802?lang=fr",
+          "type": "primaire",
+          "datePublication": "2026-02-20",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "L’annonce du 20 février distingue les sanctions d’émission, de réception via une plateforme et de transmission des données, ainsi qu’une exception de première infraction régularisée."
+        },
+        {
+          "titre": "La facturation démarre aujourd’hui : priorité à l’accompagnement des entreprises",
+          "organisme": "Ministère de l’Économie",
+          "url": "https://presse.economie.gouv.fr/la-facturation-demarre-aujourdhui-priorite-a-laccompagnement-des-entreprises/",
+          "type": "primaire",
+          "datePublication": "2026-09-01",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le communiqué du démarrage annonce l’absence de sanctions en 2026 et rappelle le calendrier des obligations. Source postérieure citée pour actualiser la rétrospective."
+        }
+      ],
+      "mots": 480,
+      "sha256Corps": "3da40f1a673756693143a17a0860d3cd589c3274296b3ee089f9cace62f39c3b",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S09",
+      "slug": "loi-de-finances-2026-mesures-tpe",
+      "dateEvenement": "2026-02-27",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Loi de finances pour 2026 : ce qui change pour les entreprises",
+          "organisme": "DILA — Service Public Entreprendre",
+          "url": "https://entreprendre.service-public.gouv.fr/actualites/A18821?lang=fr",
+          "type": "primaire",
+          "datePublication": "2026-02-27",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le récapitulatif du 27 février présente les changements de seuils, zonages, dispositifs d’innovation, transmission et transports. Chaque mesure renvoie à ses conditions spécifiques."
+        }
+      ],
+      "mots": 472,
+      "sha256Corps": "f03c4e3325345dbad7ea1eea697159903bb510c4484bfda78cafa5f29a53c395",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S10",
+      "slug": "defaillances-entreprises-surveiller-clients-fournisseurs",
+      "dateEvenement": "2026-03-06",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Défaillances d’entreprises — Janvier 2026",
+          "organisme": "Banque de France",
+          "url": "https://www.banque-france.fr/system/files/webstats/Defaillances_dentreprises_en_France_202601_20260305/FR_Stat_Info_Defaillances_d%27Entreprises_202601.pdf",
+          "type": "primaire",
+          "datePublication": "2026-03-06",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le bulletin daté du 6 mars 2026 recense 68 961 défaillances sur douze mois à fin janvier, en hausse de 4,1 %. Ce total national ne prédit pas la situation d’un partenaire donné."
+        }
+      ],
+      "mots": 471,
+      "sha256Corps": "34f951c5423b95355b3bb98d37bb831d79b630713e38da8e3180faf83174f7ca",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S11",
+      "slug": "cnil-recommandation-proxy-filtrage-web",
+      "dateEvenement": "2026-03-13",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Serveur mandataire web filtrant : les recommandations de la CNIL",
+          "organisme": "CNIL",
+          "url": "https://www.cnil.fr/fr/recommandation-serveur-mandataire-web-filtrant",
+          "type": "primaire",
+          "datePublication": "2026-03-13",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La recommandation concerne la sécurisation des accès internet professionnels. Elle traite notamment du filtrage, des journaux et des garanties pour les personnes utilisatrices."
+        }
+      ],
+      "mots": 461,
+      "sha256Corps": "03a4d1a3ffd7e063ac06f60f3739723f6279f324b157838e19adcfed501166c6",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S12",
+      "slug": "cnil-cameras-captation-sonore",
+      "dateEvenement": "2026-03-20",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Les dispositifs de captation sonore couplés à la vidéoprotection",
+          "organisme": "CNIL",
+          "url": "https://www.cnil.fr/fr/les-dispositifs-de-captation-sonore-couples-la-videoprotection",
+          "type": "primaire",
+          "datePublication": "2026-03-20",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Dans les lieux ouverts au public et sur la voie publique, l’enregistrement sonore par un système de vidéoprotection est interdit. Des dispositifs distincts, manuels et exceptionnels relèvent d’une analyse spécifique."
+        }
+      ],
+      "mots": 426,
+      "sha256Corps": "3478a26f8d8dd06d9743ca2024a194a7a334944e955cc7a3f03790a8e52864d1",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S13",
+      "slug": "bilan-cybermalveillance-2025-priorites-tpe",
+      "dateEvenement": "2026-03-26",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Cybermalveillance.gouv.fr publie son rapport d’activité 2025",
+          "organisme": "Cybermalveillance.gouv.fr",
+          "url": "https://www.cybermalveillance.gouv.fr/medias/2026/03/CP-RA2026.pdf",
+          "type": "primaire",
+          "datePublication": "2026-03-26",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le communiqué du 26 mars recense plus de 500 000 victimes ayant demandé assistance en 2025, en hausse de 20 %. Les évolutions mesurent l’activité du dispositif, pas toutes les attaques en France."
+        }
+      ],
+      "mots": 477,
+      "sha256Corps": "d0d0f6e27d0c5e386aa8ee6c6423bff9dad7966156d614cb0abd76d0b315811e",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S14",
+      "slug": "cnil-controles-2026-recrutement",
+      "dateEvenement": "2026-04-03",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Contrôles prioritaires 2026",
+          "organisme": "CNIL",
+          "url": "https://cnil.fr/fr/controles-prioritaires-2026",
+          "type": "primaire",
+          "datePublication": "2026-04-03",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le programme publié le 3 avril vise notamment le recrutement, en priorité dans les grandes entreprises et cabinets : décisions automatisées, information des candidats et durées de conservation."
+        }
+      ],
+      "mots": 455,
+      "sha256Corps": "cbac2734fbe0bdd499ef488fe7a4291c8aeb651217a4b5b199ca05526f09aa27",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S15",
+      "slug": "declaration-revenus-2025-independants-ouverture",
+      "dateEvenement": "2026-04-09",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Campagne 2026 de l’impôt sur les revenus 2025",
+          "organisme": "DGFiP — Ministère de l’Économie",
+          "url": "https://presse.economie.gouv.fr/campagne-2026-de-limpot-sur-les-revenus-2025/",
+          "type": "primaire",
+          "datePublication": "2026-04-09",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le dossier de presse du 9 avril présente l’ouverture de la campagne 2026 sur les revenus 2025 et son calendrier. La déclaration du foyer se distingue des déclarations propres à l’entreprise."
+        }
+      ],
+      "mots": 469,
+      "sha256Corps": "bcebefc9fda1d6ba9a5a01de326f99a2ba8e08ce7f7949b905e51ae6e9d7db4a",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S16",
+      "slug": "regularisation-cotisations-independants-2026",
+      "dateEvenement": "2026-04-17",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Déclaration de revenus : l’Urssaf accompagne les indépendants",
+          "organisme": "Bpifrance Création",
+          "url": "https://bpifrance-creation.fr/entrepreneur/actualites/declaration-revenus-lurssaf-accompagne-independants",
+          "type": "primaire",
+          "datePublication": "2026-04-17",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le relais du 17 avril annonce des guides Urssaf pour la déclaration des revenus 2025 et des informations sur l’échéancier et le calcul des cotisations."
+        }
+      ],
+      "mots": 437,
+      "sha256Corps": "707e7b973f5bc1b7e6f46da2510de2c4e797e6fa50bdd131c7178144a47e37a7",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S17",
+      "slug": "creations-entreprises-pays-loire-mars-2026",
+      "dateEvenement": "2026-04-23",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Les créations d’entreprise en France et dans les régions en mars 2026",
+          "organisme": "Bpifrance Création — Observatoire de la création d’entreprise",
+          "url": "https://bpifrance-creation.fr/entrepreneur/actualites/creations-dentreprises-mars-2026",
+          "type": "primaire",
+          "datePublication": "2026-04-23",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La publication du 23 avril recense environ 113 000 créations en mars en France, en hausse de 18 %, et signale une dynamique particulièrement intense en Pays de la Loire. Il ne s’agit pas d’un chiffre propre à la Vendée."
+        }
+      ],
+      "mots": 477,
+      "sha256Corps": "8669fc4e6e7344900a94a0e05bc08681188361c44cf08a04b451bbc4c78d586a",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S18",
+      "slug": "decret-formalites-30-avril-2026",
+      "dateEvenement": "2026-05-06",
+      "natureEvenement": "Entrée en vigueur après publication au Journal officiel",
+      "sources": [
+        {
+          "titre": "Décret n° 2026-340 du 30 avril 2026 relatif aux formalités des entreprises",
+          "organisme": "Journal officiel — Légifrance",
+          "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054027039",
+          "type": "primaire",
+          "datePublication": "2026-05-05",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Publié au Journal officiel le 5 mai, applicable le lendemain, le décret encadre notamment la copie des actes, l’origine d’un fonds transmis et la publicité des cessions de parts de sociétés civiles."
+        }
+      ],
+      "mots": 463,
+      "sha256Corps": "0a41fb1e369c85171fb57e1e9cbf2f3fe4a8e2929837e8f1a888f1a0ffed030b",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S19",
+      "slug": "ai-act-accord-omnibus-mai-2026",
+      "dateEvenement": "2026-05-07",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Artificial Intelligence: Council and Parliament agree to simplify and streamline rules",
+          "organisme": "Conseil de l’Union européenne",
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/",
+          "type": "primaire",
+          "datePublication": "2026-05-07",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le communiqué du 7 mai annonce un accord provisoire sur la simplification de règles de l’IA, avec des échéances proposées pour le haut risque. Il précise que l’adoption formelle reste nécessaire."
+        }
+      ],
+      "mots": 473,
+      "sha256Corps": "14aaa34270bc7677e7cff476d0cc1d23985e0237820a664e041ba56956d27fbd",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S20",
+      "slug": "rapport-annuel-cnil-2025-petites-structures",
+      "dateEvenement": "2026-05-18",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Rapport annuel 2025 : une mobilisation face aux défis numériques",
+          "organisme": "CNIL",
+          "url": "https://cnil.fr/fr/rapport-annuel-2025",
+          "type": "primaire",
+          "datePublication": "2026-05-18",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La CNIL présente son bilan 2025 le 18 mai 2026, avec plus de 20 000 plaintes, les enjeux de violations de données et un renforcement des contrôles de sécurité en 2026."
+        }
+      ],
+      "mots": 488,
+      "sha256Corps": "9ff6e41accfa56e13623100aee37a25dfc509886ac9d337b49a93e3c832acbc3",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S21",
+      "slug": "assurance-professionnelle-contre-expertise-loi-mai-2026",
+      "dateEvenement": "2026-05-27",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Loi n° 2026-403 du 26 mai 2026 de simplification de la vie économique — article 31",
+          "organisme": "Journal officiel — Légifrance",
+          "url": "https://www.legifrance.gouv.fr/eli/loi/2026/5/26/ECOM2409377L/jo/texte",
+          "type": "primaire",
+          "datePublication": "2026-05-27",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "L’article 31 impose à l’assureur d’informer l’assuré du droit de demander une contre-expertise par un expert de son choix, aux frais de l’assuré. Les autres mesures d’assurance ont leurs propres conditions d’application."
+        }
+      ],
+      "mots": 473,
+      "sha256Corps": "495a427fa2d54cb0f44cf3b245fdc2af7a1a91057391319cc6aeba3b45e2a094",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S22",
+      "slug": "smic-juin-2026-checklist-employeur",
+      "dateEvenement": "2026-06-01",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Le Smic : montant et plafond pour le calcul des indemnités journalières",
+          "organisme": "Assurance Maladie — ameli.fr",
+          "url": "https://www.ameli.fr/entreprise/vos-salaries/montants-reference/smic",
+          "type": "primaire",
+          "datePublication": "2026-06-01",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La page datée du 1er juin 2026 indique un Smic horaire brut de 12,31 euros. Ce montant horaire ne permet pas à lui seul de déterminer un salaire net ou le calcul d’un dossier individuel."
+        }
+      ],
+      "mots": 452,
+      "sha256Corps": "ea99ff5a6eb428b2b0ce54763fe205edef955d38a2fbbdde990b3f50942ec7f8",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S23",
+      "slug": "declaration-revenus-date-limite-vendee-2026",
+      "dateEvenement": "2026-06-04",
+      "natureEvenement": "Date limite annoncée de déclaration en ligne",
+      "sources": [
+        {
+          "titre": "Déclaration des revenus de 2025 : quelle est la date limite dans votre département ?",
+          "organisme": "DILA — Service Public",
+          "url": "https://www.service-public.gouv.fr/particuliers/actualites/A15597?lang=fr",
+          "type": "primaire",
+          "datePublication": "2026-04-08",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le calendrier publié le 8 avril fixe au 4 juin à 23 h 59 la limite en ligne pour les départements 55 à 974 et 976, dont la Vendée (85). La date papier est distincte."
+        }
+      ],
+      "mots": 464,
+      "sha256Corps": "f0a7894db726844665198a6a18c6ed686f8947cd4403e92ad60ccb9af9843d0e",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S24",
+      "slug": "place-marches-publics-elargissement-juin-2026",
+      "dateEvenement": "2026-06-11",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Loi de simplification de la vie économique : un élargissement de l’utilisation de la plateforme PLACE",
+          "organisme": "Direction des Achats de l’État",
+          "url": "https://www.economie.gouv.fr/dae/loi-de-simplification-de-la-vie-economique-un-elargissement-de-lutilisation-de-la-plateforme-place",
+          "type": "primaire",
+          "datePublication": "2026-06-11",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La DAE présente le 11 juin un élargissement de PLACE aux établissements publics de l’État, de santé et organismes de sécurité sociale d’ici 2030, selon un calendrier fixé par décret. L’usage par les collectivités reste facultatif."
+        }
+      ],
+      "mots": 452,
+      "sha256Corps": "2cb72939d5e5fe132d2349aaa0500f44e89d91d1f383303282856bc4b1be5c27",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S25",
+      "slug": "cnil-alerte-faux-organismes-fuite-de-donnees",
+      "dateEvenement": "2026-06-24",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Victimes de violations de données : restez vigilants face aux offres d’accompagnement",
+          "organisme": "CNIL",
+          "url": "https://www.cnil.fr/fr/vigilance-accompagnement-violation-de-donnees",
+          "type": "primaire",
+          "datePublication": "2026-06-24",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La CNIL alerte le 24 juin sur de faux organismes proposant un accompagnement après une fuite de données. Des informations exactes dérobées peuvent être utilisées pour rendre le contact crédible."
+        }
+      ],
+      "mots": 473,
+      "sha256Corps": "f82dec8deffdce329b4d351e989b48d2d11715df2e7d94ac76f15372bfd8494f",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S26",
+      "slug": "conge-de-naissance-independants-juillet-2026",
+      "dateEvenement": "2026-07-01",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Ce qui change en juillet 2026",
+          "organisme": "DILA — Service Public",
+          "url": "https://www.service-public.gouv.fr/particuliers/actualites/A18377?lang=fr",
+          "type": "primaire",
+          "datePublication": "2026-06-24",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le panorama publié le 24 juin annonce la mise en œuvre du congé supplémentaire de naissance au 1er juillet. La FAQ officielle du 3 juillet détaille les démarches des indépendants et la cessation d’activité."
+        },
+        {
+          "titre": "Congé supplémentaire de naissance : les réponses à toutes vos questions",
+          "organisme": "DILA — Service Public",
+          "url": "https://www.service-public.gouv.fr/particuliers/actualites/A18982?lang=fr",
+          "type": "officielle",
+          "datePublication": "2026-07-03",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La FAQ, postérieure au démarrage, précise les demandes des indépendants, la cessation temporaire d’activité et les conditions d’indemnisation. Elle est utilisée pour actualiser cette rétrospective."
+        }
+      ],
+      "mots": 462,
+      "sha256Corps": "5174774663f17ec885c6062e05b0d0c717e2401a93458ae186ba36419f27a232",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S27",
+      "slug": "cnil-sanctions-simplifiees-juillet-2026",
+      "dateEvenement": "2026-07-06",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "23 nouvelles sanctions dans le cadre de la procédure simplifiée",
+          "organisme": "CNIL",
+          "url": "https://cnil.fr/fr/23-nouvelles-sanctions-simplifiees",
+          "type": "primaire",
+          "datePublication": "2026-07-06",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le bilan du 6 juillet décrit 23 sanctions simplifiées depuis janvier, notamment sur la surveillance des salariés, les cookies, les droits des personnes et la coopération avec la CNIL."
+        }
+      ],
+      "mots": 453,
+      "sha256Corps": "fd351b9472eccbf52d3136f8b3fdf815831a645712cd516b664a263cf634ddae",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S28",
+      "slug": "pixels-emails-anciennes-listes-delai-juillet-2026",
+      "dateEvenement": "2026-07-14",
+      "natureEvenement": "Repère calculé : trois mois après la publication de la recommandation",
+      "sources": [
+        {
+          "titre": "Pixels de suivi dans les courriers électroniques : la CNIL publie ses recommandations pour mieux protéger la vie privée",
+          "organisme": "CNIL",
+          "url": "https://www.cnil.fr/fr/recommandation-pixel-suivi-courriels",
+          "type": "primaire",
+          "datePublication": "2026-04-14",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La recommandation publiée le 14 avril prévoit, pour les adresses collectées avant sa publication, une information claire et une opposition facile dans un délai de trois mois. Le 14 juillet est le repère calendaire calculé à partir de ce délai."
+        }
+      ],
+      "mots": 470,
+      "sha256Corps": "9967bf9b8ff4b7a1dcecc8ae82b565823f825d22602c3e89b3575e91acee387b",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S29",
+      "slug": "cnil-pixels-suivi-emails",
+      "dateEvenement": "2026-07-22",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Questions-réponses — recommandation relative aux pixels dans les courriers électroniques de la CNIL",
+          "organisme": "CNIL",
+          "url": "https://www.cnil.fr/fr/faq-recommandation-pixels-courriers-electroniques",
+          "type": "primaire",
+          "datePublication": "2026-07-22",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La FAQ distingue les prestataires agissant pour l’expéditeur et ceux utilisant les pixels pour leurs propres finalités. Elle souligne les fonctionnalités de désactivation et la nécessité de démontrer un consentement valablement recueilli."
+        }
+      ],
+      "mots": 457,
+      "sha256Corps": "02997c51a0b2b54def2228c17bf5eafc6fcae4030092f24d769b61ea9ae3a4ef",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S30",
+      "slug": "decret-27-juillet-2026-plateforme-agreee",
+      "dateEvenement": "2026-07-29",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Décret n° 2026-677 du 27 juillet 2026 relatif à la facturation électronique",
+          "organisme": "Journal officiel — Légifrance",
+          "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054499487",
+          "type": "primaire",
+          "datePublication": "2026-07-28",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le texte publié le 28 juillet prévoit notamment un accord formalisé pour l’annuaire et des services gratuits de mobilité entre plateformes. Il entre en vigueur le lendemain de sa publication."
+        }
+      ],
+      "mots": 444,
+      "sha256Corps": "3c441750070fbcdcf27d2aec12e167832c40d9a42e6500c86dc5624c5d64346c",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S31",
+      "slug": "ai-act-transparence-chatbot-2-aout-2026",
+      "dateEvenement": "2026-08-02",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
+          "organisme": "Commission européenne",
+          "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
+          "type": "primaire",
+          "datePublication": "2026-07-31",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "L’annonce du 31 juillet présente des exigences de transparence applicables le 2 août, notamment pour les interactions avec des chatbots et certains contenus artificiels. Les obligations diffèrent selon l’acteur et le contenu."
+        }
+      ],
+      "mots": 464,
+      "sha256Corps": "64c4df754eb50639a51bddde03b5aad4d818b73275cb67c06ac198b152cd93d2",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S32",
+      "slug": "demarchage-telephonique-consentement-11-aout-2026",
+      "dateEvenement": "2026-08-11",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Démarchage téléphonique : le consentement préalable devient obligatoire",
+          "organisme": "DILA — Service Public",
+          "url": "https://www.service-public.gouv.fr/particuliers/actualites/A19003?lang=fr",
+          "type": "primaire",
+          "datePublication": "2026-07-21",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La publication du 21 juillet, mise à jour le 11 août, décrit l’interdiction de démarcher un consommateur sans consentement préalable, avec des exceptions notamment liées à un contrat en cours. Elle ne définit pas une interdiction générale de tous les appels B2B.",
+          "dateMiseAJour": "2026-08-11"
+        }
+      ],
+      "mots": 459,
+      "sha256Corps": "cf11b923ee3cfb8bb65a77d1bd6f80c8a43af89fa383e4e69d795ad413642f30",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S33",
+      "slug": "piratage-impots-vigilance-messages-aout-2026",
+      "dateEvenement": "2026-08-18",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Piratage du système d’information des impôts : les vérifications sont en cours",
+          "organisme": "CNIL",
+          "url": "https://www.cnil.fr/fr/piratage-du-systeme-dinformation-des-impots-les-verifications-sont-en-cours",
+          "type": "primaire",
+          "datePublication": "2026-08-18",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La CNIL indique le 18 août avoir reçu des notifications après l’annonce ministérielle du 14 août. Les investigations sont en cours et certaines données fiscales et d’entreprise sont concernées."
+        }
+      ],
+      "mots": 462,
+      "sha256Corps": "96e51a2ace4966c245db880d197f917f70b228cefa26899b9184dddd5fba3cd9",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S34",
+      "slug": "marches-publics-criteres-environnementaux-aout-2026",
+      "dateEvenement": "2026-08-21",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Marchés publics : des critères environnementaux obligatoires à partir du 21 août 2026",
+          "organisme": "DILA — Service Public Entreprendre",
+          "url": "https://entreprendre.service-public.gouv.fr/actualites/A19042",
+          "type": "primaire",
+          "datePublication": "2026-08-18",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La fiche du 18 août présente l’exigence d’au moins un critère d’attribution environnemental et d’une condition d’exécution environnementale, avec des règles transitoires pour les consultations antérieures."
+        }
+      ],
+      "mots": 438,
+      "sha256Corps": "9c54fc1c9beb81f5486b3c420fcb81310aeb7adb0248f624b12af9402ef7c22d",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S35",
+      "slug": "facturation-electronique-premiere-semaine-septembre-2026",
+      "dateEvenement": "2026-09-01",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "La facturation démarre aujourd’hui : priorité à l’accompagnement des entreprises",
+          "organisme": "Ministère de l’Économie",
+          "url": "https://presse.economie.gouv.fr/la-facturation-demarre-aujourdhui-priorite-a-laccompagnement-des-entreprises/",
+          "type": "primaire",
+          "datePublication": "2026-09-01",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le communiqué du 1er septembre rappelle la réception pour les assujettis concernés, l’émission des grandes entreprises et ETI en 2026, puis des PME et microentreprises en 2027. Il annonce l’absence de sanctions en 2026."
+        }
+      ],
+      "mots": 457,
+      "sha256Corps": "90e8ded950306b604aae9b529d6fef22d45413ada3881515c1f24d81b9559886",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S36",
+      "slug": "donnees-sante-habilitations-alerte-septembre-2026",
+      "dateEvenement": "2026-09-03",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Violation de données en matière de santé : sanction de 500 000 euros à l’encontre de l’HÔPITAL PRIVÉ DE LA LOIRE",
+          "organisme": "CNIL",
+          "url": "https://www.cnil.fr/fr/sanction-hopital-prive-loire",
+          "type": "primaire",
+          "datePublication": "2026-09-03",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "L’annonce du 3 septembre relève des accès externes insuffisamment protégés, des habilitations trop larges, une détection insuffisante et une information incomplète des personnes touchées."
+        }
+      ],
+      "mots": 460,
+      "sha256Corps": "0147b49549b016f113a713252d61120c9b5502c8ef41500a8c4e2ea4f93411bc",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S37",
+      "slug": "cnil-facturation-electronique-donnees-personnelles",
+      "dateEvenement": "2026-09-10",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Facturation électronique : quels enjeux pour la protection des données personnelles ?",
+          "organisme": "CNIL",
+          "url": "https://www.cnil.fr/fr/facturation-electronique-quels-enjeux",
+          "type": "primaire",
+          "datePublication": "2026-09-10",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La CNIL rappelle le 10 septembre que certaines factures contiennent des données de personnes physiques et recommande des comptes individuels, la maîtrise des habilitations et des protections d’authentification."
+        }
+      ],
+      "mots": 452,
+      "sha256Corps": "0f9f6cc1e2c032c6a7337aef3a59e19f7342dd21f1aa397680bb15e237f23354",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S38",
+      "slug": "tva-fin-regime-simplifie-1er-janvier-2027",
+      "dateEvenement": "2026-09-22",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Le régime simplifié d’imposition à la TVA est supprimé à compter du 1er janvier 2027",
+          "organisme": "DGFiP — impots.gouv.fr",
+          "url": "https://www.impots.gouv.fr/actualite/le-regime-simplifie-dimposition-la-tva-est-supprime-compter-du-1er-janvier-2027",
+          "type": "primaire",
+          "datePublication": "2026-09-22",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La publication du 22 septembre, actualisée le 23, décrit le passage aux CA3, les seuils de périodicité trimestrielle et la transition CA12 selon la clôture. Le régime agricole n’est pas concerné par cette suppression.",
+          "dateMiseAJour": "2026-09-23"
+        }
+      ],
+      "mots": 453,
+      "sha256Corps": "80d48943143799a2fffd1a8d5c111bb661fc3150aac48795e53f206055dd6e03",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S39",
+      "slug": "barometre-france-num-2026-ia-tpe",
+      "dateEvenement": "2026-09-28",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Baromètre France Num 2026 : quatre TPE-PME sur dix utilisent désormais l’intelligence artificielle",
+          "organisme": "Direction générale des Entreprises — France Num",
+          "url": "https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence",
+          "type": "primaire",
+          "datePublication": "2026-09-28",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le baromètre publié le 28 septembre estime la part des TPE-PME utilisant l’IA à 40 %, en progression de 14 points sur un an. Les usages observés ne prouvent pas un gain automatique pour chaque entreprise."
+        }
+      ],
+      "mots": 468,
+      "sha256Corps": "2109c5b74e408ec78ba0f0d308b2552a7187bac61b19ea741f933a67bf6024eb",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S40",
+      "slug": "cybermois-2026-suivi-fuite-donnees",
+      "dateEvenement": "2026-10-01",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Cybermois 2026 : la CNIL et Cybermalveillance.gouv.fr publient une nouvelle ressource pour adopter les bons réflexes face à une violation de données",
+          "organisme": "CNIL et Cybermalveillance.gouv.fr",
+          "url": "https://www.cnil.fr/fr/cybermois-2026",
+          "type": "primaire",
+          "datePublication": "2026-10-01",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "L’annonce du 1er octobre présente un dépliant destiné aux personnes victimes d’une violation, avec des actions de la découverte à J+30. Il ne remplace pas les procédures réglementaires propres à l’entreprise."
+        }
+      ],
+      "mots": 473,
+      "sha256Corps": "d1dd16d5c561bde56e27d16346a461cbe8f780e6d2931fd5f8d7ec2ca1ad6237",
+      "datePublication": "2026-10-10"
+    },
+    {
+      "semaine": "S41",
+      "slug": "numero-unique-dgfip-professionnels",
+      "dateEvenement": "2026-10-08",
+      "natureEvenement": "Publication officielle",
+      "sources": [
+        {
+          "titre": "Simplification : le 0806 807 807 devient, pour les professionnels, le numéro unique pour joindre la DGFiP partout en France",
+          "organisme": "Ministère de l’Économie — DGFiP",
+          "url": "https://presse.economie.gouv.fr/simplification-le-0806-807-807-devient-pour-les-professionnels-le-numero-unique-pour-joindre-la-dgfip-partout-en-france/",
+          "type": "primaire",
+          "datePublication": "2026-10-08",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le communiqué du 8 octobre étend le numéro aux questions fiscales professionnelles, en métropole et outre-mer, de 8 h 30 à 18 h du lundi au vendredi (horaires métropolitains). Le service est gratuit, plus le coût de l’appel."
+        }
+      ],
+      "mots": 481,
+      "sha256Corps": "fdea2cfc3d20fe2f485917795e3d97ca238e30e6e286b097535b7a1666582676",
+      "datePublication": "2026-10-10"
+    }
+  ]
+}

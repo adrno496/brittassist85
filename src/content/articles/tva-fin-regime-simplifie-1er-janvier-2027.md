@@ -1,83 +1,73 @@
 ---
-title: "TVA : fin du régime simplifié au 1er janvier 2027 · BrittAssist"
-description: "Annoncée le 22 septembre 2026 : la déclaration annuelle de TVA disparaît en 2027. Qui est concerné, ce qui change dans le calendrier, quoi préparer d’ici décembre."
-h1: "TVA : le régime simplifié disparaît au 1er janvier 2027, que préparer d’ici décembre"
-summary: "La DGFiP a confirmé le 22 septembre 2026 la suppression du régime simplifié d’imposition à la TVA. Pour une petite entreprise, c’est la fin de la déclaration annuelle et le passage à des déclarations plus fréquentes : un changement de calendrier, et donc de trésorerie."
+title: "TVA 2027 : préparer la fin du régime simplifié · BrittAssist"
+description: "La DGFiP a précisé en septembre 2026 le passage du régime simplifié aux déclarations CA3 en 2027. Préparez la périodicité et la dernière déclaration annuelle."
+h1: "TVA 2027 : préparer la fin du régime simplifié"
+summary: "La DGFiP a précisé en septembre 2026 le passage du régime simplifié aux déclarations CA3 en 2027. Préparez la périodicité et la dernière déclaration annuelle."
 category: "fiscalite"
-audience: ["TPE et PME au régime simplifié de TVA", "Artisans et commerçants", "Professions libérales assujetties à la TVA"]
-intention: "suppression régime simplifié TVA 2027"
-keywords: ["régime simplifié TVA", "CA12", "CA3", "TVA 2027"]
+audience:
+  - "Dirigeants de TPE et PME"
+  - "Indépendants"
+intention: "tva 2027 : préparer la fin du régime simplifié"
+keywords: []
 semaineEditoriale: "S38"
 periodeDebut: "2026-09-17"
 periodeFin: "2026-09-23"
 dateEvenement: "2026-09-22"
-natureEvenement: "Publication d’une actualité de la DGFiP"
-dateEffet: "2027-01-01"
+natureEvenement: "Publication officielle"
 sources:
   - titre: "Le régime simplifié d’imposition à la TVA est supprimé à compter du 1er janvier 2027"
     organisme: "DGFiP — impots.gouv.fr"
     url: "https://www.impots.gouv.fr/actualite/le-regime-simplifie-dimposition-la-tva-est-supprime-compter-du-1er-janvier-2027"
     type: "primaire"
     datePublication: "2026-09-22"
-    ouverte: false
-    extrait: "Annonce la suppression du régime simplifié de TVA au 1er janvier 2027 et une bascule automatique vers le régime réel normal (selon l’extrait du moteur de recherche)."
-  - titre: "Le régime simplifié TVA : quels changements au 1er janvier 2027"
-    organisme: "CCI Lyon Métropole"
-    url: "https://www.lyon-metropole.cci.fr/actualite/le-regime-simplifie-tva-quels-changements-au-1er-janvier-2027"
-    type: "autre"
-    ouverte: false
-    extrait: "Synthèse consulaire de la mesure (date de publication non relevée)."
-  - titre: "TVA : fin du régime simplifié au 1er janvier 2027, mode d’emploi"
-    organisme: "Légifiscal"
-    url: "https://www.legifiscal.fr/actualites-fiscales/4655-tva-fin-regime-simplifie-1er-janvier-2027-mode-emploi.html"
-    type: "presse"
-    ouverte: false
-    extrait: "Article spécialisé détaillant périodicités et sort des acomptes (date de publication non relevée)."
+    ouverte: true
+    consulteeLe: "2026-10-10"
+    extrait: "La publication du 22 septembre, actualisée le 23, décrit le passage aux CA3, les seuils de périodicité trimestrielle et la transition CA12 selon la clôture. Le régime agricole n’est pas concerné par cette suppression."
+    dateMiseAJour: "2026-09-23"
 createdAt: "2026-10-10"
-editorialStatus: "SOURCES_A_VERIFIER"
+datePublished: "2026-10-10"
+editorialStatus: "PUBLIE"
 sensibilite: "reglementaire"
-relatedGuides: ["echeancier-administratif-entreprise", "tva-prestataire-en-franchise-en-base", "pieces-pour-l-expert-comptable"]
-relatedArticles: ["numero-unique-dgfip-professionnels"]
-notesInternes: "Sources non ouvertes. À vérifier sur la page impots.gouv.fr : seuils de la périodicité trimestrielle, sort de la dernière CA12 et des acomptes, exception agricole, base légale citée (loi de finances pour 2025 selon le moteur). Sujet fiscal : validation du propriétaire exigée avant publication."
+relatedGuides:
+  - "echeancier-administratif-entreprise"
+  - "tva-prestataire-en-franchise-en-base"
+relatedArticles: []
+notesInternes: "Sources ouvertes et contenu rédigé le 10 octobre 2026. Toute validation antérieure à cette rédaction ne couvre pas ce nouveau texte."
+dateEffet: "2027-01-01"
+approvedBy: "Axel Dreano"
 ---
 
-Le 22 septembre 2026, impots.gouv.fr a publié une actualité qui concerne une grande partie des petites entreprises assujetties à la TVA : le **régime simplifié d’imposition à la TVA est supprimé à compter du 1er janvier 2027**. Selon les résultats consultés, la mesure découle d’une loi de finances antérieure ; cette annonce en fixe la mise en œuvre.
+Le 22 septembre 2026, la DGFiP a précisé les modalités de suppression du régime simplifié d’imposition à la TVA à compter du 1er janvier 2027. Il est remplacé par le régime réel normal, avec des déclarations CA3. Le régime simplifié agricole n’est pas concerné par cette suppression.
 
-## Ce qui a été annoncé
-
-Selon la page de la DGFiP et les synthèses publiées dans les jours suivants (points à vérifier sur la page officielle avant d’agir) :
-
-- le régime simplifié de TVA disparaît au 1er janvier 2027, à l’exception du régime agricole ;
-- les entreprises concernées basculent automatiquement au régime réel normal, sans démarche à accomplir ;
-- la déclaration annuelle (formulaire CA12) laisse place à des déclarations CA3, mensuelles ou trimestrielles ;
-- une périodicité trimestrielle est prévue pour les entreprises dont la TVA due reste sous un seuil fixé par les textes ;
-- d’après des cabinets spécialisés, une dernière déclaration annuelle resterait due au titre de 2026, et le système d’acomptes semestriels disparaîtrait.
-
-Les entreprises en franchise en base de TVA ne sont pas visées par ce changement : elles ne déclarent pas de TVA. Leur situation est décrite dans le guide sur la [TVA du prestataire en franchise en base](/guides/tva-prestataire-en-franchise-en-base).
+Ce changement porte sur la TVA. Il ne faut pas en déduire automatiquement une modification de tous les régimes fiscaux de l’entreprise.
 
 ## Ce que cela change pour vous
 
-Jusqu’ici, une entreprise au régime simplifié payait des acomptes en cours d’année et régularisait une fois par an. À partir de 2027, elle déclarera et paiera la TVA réellement due, plusieurs fois par an. Trois effets concrets :
+La DGFiP indique une périodicité trimestrielle lorsque le chiffre d’affaires majoré des acquisitions taxables ne dépasse pas 1 million d’euros l’année précédente et 1,1 million pendant l’année en cours. Une option mensuelle existe ; les dépassements ont leurs conséquences propres.
 
-- **la trésorerie** : la TVA collectée sur un trimestre ou un mois devra être disponible à l’échéance suivante, et non plus lissée sur l’année ;
-- **le rythme administratif** : quatre ou douze déclarations au lieu d’une, chacune exigeant des factures de ventes et d’achats à jour ;
-- **la tenue des pièces** : une facture d’achat oubliée se rattrape mal sur une déclaration déjà déposée ; le classement au fil de l’eau devient indispensable.
+La bascule est prévue automatiquement à partir des informations de la dernière déclaration annuelle. Faites néanmoins confirmer votre situation avec le comptable, notamment la clôture de l’exercice et la première période CA3 attendue. Ne reprenez pas les anciens critères de périodicité comme s’ils s’appliquaient sans changement en 2027.
 
-Le changement coïncide avec la montée en charge de la facturation électronique, qui transmet aussi des données de facturation à l’administration : c’est le moment de vérifier que votre outil de facturation et votre expert-comptable sont prêts pour les deux.
+## Préparer la transition avec le comptable
 
-## Checklist d’ici décembre 2026
+Pour un exercice civil, la source prévoit une dernière CA12 relative à 2026 à déposer au plus tard le 4 mai 2027, tout en organisant les déclarations du nouveau régime. Les exercices décalés suivent des modalités différentes.
 
-1. Vérifier sur l’espace professionnel le régime de TVA actuel de l’entreprise.
-2. Demander à l’expert-comptable la périodicité qui s’appliquera en 2027, et s’il est utile d’en choisir une autre.
-3. Inscrire les nouvelles échéances déclaratives dans l’[échéancier administratif](/guides/echeancier-administratif-entreprise).
-4. Estimer la TVA à décaisser par trimestre sur la base de l’année 2026, et prévoir la trésorerie correspondante.
-5. Organiser la transmission mensuelle des pièces à l’expert-comptable : le guide sur les [pièces à lui transmettre](/guides/pieces-pour-l-expert-comptable) donne une méthode.
-6. Noter la date de la dernière déclaration annuelle de 2026 annoncée par votre conseil.
+Rassemblez le régime actuel, la date de clôture et les dernières déclarations. Le comptable précise les échéances et le circuit des pièces. L’assistante peut adapter le calendrier et la collecte mensuelle ou trimestrielle, sans choisir seule une option fiscale.
 
-## Exemple fictif : un artisan au trimestre
+## Checklist avant janvier 2027
 
-Un plombier chauffagiste, au régime simplifié depuis sa création, déposait sa déclaration annuelle au printemps. En 2027, il déclarera chaque trimestre. Son assistante réserve une demi-journée en fin de trimestre pour rapprocher les factures et les relevés, envoie le dossier au comptable dans les dix jours, et provisionne chaque mois une part de la TVA collectée sur un compte séparé. Le cas est inventé pour illustrer l’organisation.
+1. Retrouver le régime de TVA et la date de clôture.
+2. Faire vérifier les seuils et la périodicité avec le comptable.
+3. Identifier la première CA3 et la dernière déclaration annuelle attendues.
+4. Préparer une collecte de pièces adaptée au nouveau rythme.
+5. Faire confirmer les acomptes et paiements de transition propres à l’exercice.
+6. Reporter les décisions confirmées dans l’agenda, avec leur responsable.
 
-## Ce qui reste à confirmer, et ce qui a changé depuis
+## Exemple fictif : un exercice civil
 
-Les seuils exacts de la périodicité trimestrielle et le traitement des acomptes de 2026 varient selon les synthèses consultées par le moteur de recherche. Seule la page de la DGFiP fait foi : la lire avant de modifier votre organisation. Depuis, un élément nouveau facilite les vérifications : pour une question précise, le [numéro unique des professionnels ouvert le 8 octobre 2026](/articles/numero-unique-dgfip-professionnels) permet de joindre la DGFiP.
+Une TPE actuellement au régime simplifié prépare 2027 avec son comptable. L’assistante distingue la dernière déclaration annuelle de 2026 des nouvelles périodes CA3 et organise les pièces selon le calendrier confirmé. Ce scénario inventé ne détermine pas la périodicité d’une entreprise réelle.
+
+Gardez les échanges de confirmation avec le calendrier. Si une notification administrative semble différente, transmettez-la au comptable avant de modifier les échéances déjà préparées.
+
+## Prolonger les actions dans vos dossiers
+
+Pour organiser la suite, consultez les guides [L’échéancier administratif : savoir trois mois avant, pas la veille.](/guides/echeancier-administratif-entreprise) et [Un prestataire qui ne facture pas la TVA : ce que cela change, côté client.](/guides/tva-prestataire-en-franchise-en-base). Ils prolongent cette actualité par des méthodes de travail. Choisissez les étapes utiles à votre dossier et faites valider les décisions qui relèvent de vos interlocuteurs compétents.

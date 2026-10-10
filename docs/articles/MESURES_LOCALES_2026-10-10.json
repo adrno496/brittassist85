@@ -1,0 +1,406 @@
+{
+  "date": "2026-10-10T17:17:24.165Z",
+  "conditions": "Chromium local, sans limitation réseau ni CPU ; audit navigateur complet concurrent. Mesures indicatives de laboratoire, pas Lighthouse ni Core Web Vitals de terrain. INP non mesuré.",
+  "results": [
+    {
+      "path": "/",
+      "width": 390,
+      "lcpMs": 164,
+      "cls": 0.005289184472934473,
+      "domContentLoadedMs": 132,
+      "loadMs": 149,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4322/fonts/instrument-serif-latin-400-normal.woff2",
+          "octets": 21332
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-400-normal.woff2",
+          "octets": 14408
+        },
+        {
+          "url": "http://127.0.0.1:4322/consent.js",
+          "octets": 6981
+        },
+        {
+          "url": "http://127.0.0.1:4322/_astro/articles.CG8y7KXF.css",
+          "octets": 68993
+        },
+        {
+          "url": "http://127.0.0.1:4322/images/brittany-pro-1-800.webp",
+          "octets": 18056
+        },
+        {
+          "url": "http://127.0.0.1:4322/axdia-forms.js",
+          "octets": 4604
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-300-normal.woff2",
+          "octets": 14460
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-600-normal.woff2",
+          "octets": 14472
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-500-normal.woff2",
+          "octets": 14344
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/instrument-serif-latin-400-italic.woff2",
+          "octets": 22428
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-ext-600-normal.woff2",
+          "octets": 8604
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-ext-400-normal.woff2",
+          "octets": 8592
+        }
+      ],
+      "cookies": ""
+    },
+    {
+      "path": "/articles",
+      "width": 390,
+      "lcpMs": 144,
+      "cls": 0.02668402777777778,
+      "domContentLoadedMs": 131,
+      "loadMs": 132,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4322/fonts/instrument-serif-latin-400-normal.woff2",
+          "octets": 21332
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-400-normal.woff2",
+          "octets": 14408
+        },
+        {
+          "url": "http://127.0.0.1:4322/consent.js",
+          "octets": 6981
+        },
+        {
+          "url": "http://127.0.0.1:4322/_astro/articles.CG8y7KXF.css",
+          "octets": 68993
+        },
+        {
+          "url": "http://127.0.0.1:4322/axdia-forms.js",
+          "octets": 4604
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-300-normal.woff2",
+          "octets": 14460
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-500-normal.woff2",
+          "octets": 14344
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-600-normal.woff2",
+          "octets": 14472
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-ext-400-normal.woff2",
+          "octets": 8592
+        }
+      ],
+      "cookies": ""
+    },
+    {
+      "path": "/articles/numero-unique-dgfip-professionnels",
+      "width": 390,
+      "lcpMs": 144,
+      "cls": 0.000825925925925926,
+      "domContentLoadedMs": 113,
+      "loadMs": 139,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4322/fonts/instrument-serif-latin-400-normal.woff2",
+          "octets": 21332
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-400-normal.woff2",
+          "octets": 14408
+        },
+        {
+          "url": "http://127.0.0.1:4322/consent.js",
+          "octets": 6981
+        },
+        {
+          "url": "http://127.0.0.1:4322/_astro/articles.CG8y7KXF.css",
+          "octets": 68993
+        },
+        {
+          "url": "http://127.0.0.1:4322/axdia-forms.js",
+          "octets": 4604
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-300-normal.woff2",
+          "octets": 14460
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-500-normal.woff2",
+          "octets": 14344
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-600-normal.woff2",
+          "octets": 14472
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-ext-400-normal.woff2",
+          "octets": 8592
+        }
+      ],
+      "cookies": ""
+    },
+    {
+      "path": "/contact",
+      "width": 390,
+      "lcpMs": 136,
+      "cls": 0.000825925925925926,
+      "domContentLoadedMs": 116,
+      "loadMs": 121,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4322/fonts/instrument-serif-latin-400-normal.woff2",
+          "octets": 21332
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-400-normal.woff2",
+          "octets": 14408
+        },
+        {
+          "url": "http://127.0.0.1:4322/consent.js",
+          "octets": 6981
+        },
+        {
+          "url": "http://127.0.0.1:4322/_astro/articles.CG8y7KXF.css",
+          "octets": 68993
+        },
+        {
+          "url": "http://127.0.0.1:4322/axdia-forms.js",
+          "octets": 4604
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-300-normal.woff2",
+          "octets": 14460
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-500-normal.woff2",
+          "octets": 14344
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-600-normal.woff2",
+          "octets": 14472
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-ext-400-normal.woff2",
+          "octets": 8592
+        }
+      ],
+      "cookies": ""
+    },
+    {
+      "path": "/",
+      "width": 1366,
+      "lcpMs": 180,
+      "cls": 0.0005672397658060771,
+      "domContentLoadedMs": 131,
+      "loadMs": 141,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4322/fonts/instrument-serif-latin-400-normal.woff2",
+          "octets": 21332
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-400-normal.woff2",
+          "octets": 14408
+        },
+        {
+          "url": "http://127.0.0.1:4322/consent.js",
+          "octets": 6981
+        },
+        {
+          "url": "http://127.0.0.1:4322/_astro/articles.CG8y7KXF.css",
+          "octets": 68993
+        },
+        {
+          "url": "http://127.0.0.1:4322/images/brittany-pro-1-800.webp",
+          "octets": 18056
+        },
+        {
+          "url": "http://127.0.0.1:4322/axdia-forms.js",
+          "octets": 4604
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-300-normal.woff2",
+          "octets": 14460
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-600-normal.woff2",
+          "octets": 14472
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-500-normal.woff2",
+          "octets": 14344
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/instrument-serif-latin-400-italic.woff2",
+          "octets": 22428
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-ext-600-normal.woff2",
+          "octets": 8604
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-ext-400-normal.woff2",
+          "octets": 8592
+        }
+      ],
+      "cookies": ""
+    },
+    {
+      "path": "/articles",
+      "width": 1366,
+      "lcpMs": 212,
+      "cls": 0,
+      "domContentLoadedMs": 95,
+      "loadMs": 190,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4322/fonts/instrument-serif-latin-400-normal.woff2",
+          "octets": 21332
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-400-normal.woff2",
+          "octets": 14408
+        },
+        {
+          "url": "http://127.0.0.1:4322/consent.js",
+          "octets": 6981
+        },
+        {
+          "url": "http://127.0.0.1:4322/_astro/articles.CG8y7KXF.css",
+          "octets": 68993
+        },
+        {
+          "url": "http://127.0.0.1:4322/axdia-forms.js",
+          "octets": 4604
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-300-normal.woff2",
+          "octets": 14460
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-500-normal.woff2",
+          "octets": 14344
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-600-normal.woff2",
+          "octets": 14472
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-ext-400-normal.woff2",
+          "octets": 8592
+        }
+      ],
+      "cookies": ""
+    },
+    {
+      "path": "/articles/numero-unique-dgfip-professionnels",
+      "width": 1366,
+      "lcpMs": 168,
+      "cls": 0.02308011021636571,
+      "domContentLoadedMs": 45,
+      "loadMs": 52,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4322/fonts/instrument-serif-latin-400-normal.woff2",
+          "octets": 21332
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-400-normal.woff2",
+          "octets": 14408
+        },
+        {
+          "url": "http://127.0.0.1:4322/consent.js",
+          "octets": 6981
+        },
+        {
+          "url": "http://127.0.0.1:4322/_astro/articles.CG8y7KXF.css",
+          "octets": 68993
+        },
+        {
+          "url": "http://127.0.0.1:4322/axdia-forms.js",
+          "octets": 4604
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-300-normal.woff2",
+          "octets": 14460
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-500-normal.woff2",
+          "octets": 14344
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-600-normal.woff2",
+          "octets": 14472
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-ext-400-normal.woff2",
+          "octets": 8592
+        }
+      ],
+      "cookies": ""
+    },
+    {
+      "path": "/contact",
+      "width": 1366,
+      "lcpMs": 216,
+      "cls": 0,
+      "domContentLoadedMs": 98,
+      "loadMs": 105,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4322/fonts/instrument-serif-latin-400-normal.woff2",
+          "octets": 21332
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-400-normal.woff2",
+          "octets": 14408
+        },
+        {
+          "url": "http://127.0.0.1:4322/consent.js",
+          "octets": 6981
+        },
+        {
+          "url": "http://127.0.0.1:4322/_astro/articles.CG8y7KXF.css",
+          "octets": 68993
+        },
+        {
+          "url": "http://127.0.0.1:4322/axdia-forms.js",
+          "octets": 4604
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-300-normal.woff2",
+          "octets": 14460
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-500-normal.woff2",
+          "octets": 14344
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-600-normal.woff2",
+          "octets": 14472
+        },
+        {
+          "url": "http://127.0.0.1:4322/fonts/manrope-latin-ext-400-normal.woff2",
+          "octets": 8592
+        }
+      ],
+      "cookies": ""
+    }
+  ]
+}

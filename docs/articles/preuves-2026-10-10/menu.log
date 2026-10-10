@@ -1,0 +1,27 @@
+PASS — bureau 921px : une ligne, sans débordement, « Articles » visible
+PASS — bureau 960px : une ligne, sans débordement, « Articles » visible
+PASS — bureau 1024px : une ligne, sans débordement, « Articles » visible
+PASS — bureau 1100px : une ligne, sans débordement, « Articles » visible
+PASS — bureau 1280px : une ligne, sans débordement, « Articles » visible
+PASS — bureau 1366px : une ligne, sans débordement, « Articles » visible
+PASS — bureau 1920px : une ligne, sans débordement, « Articles » visible
+PASS — zoom 200 % (1280 px) : menu ouvert, « Articles » visible, sans débordement
+PASS — zoom 200 % (1280 px) : à l’ouverture, le focus passe dans le menu
+PASS — zoom 200 % (1280 px) : « Articles » atteint au clavier (Tab), focus visible
+PASS — zoom 200 % (1280 px) : Échap ferme le menu et rend le focus au bouton
+PASS — zoom 200 % (1280 px) : Entrée mène à /articles
+PASS — zoom 200 % (1280 px) : lien actif signalé (aria-current)
+PASS — mobile 320 px : menu ouvert, « Articles » visible, sans débordement
+PASS — mobile 320 px : à l’ouverture, le focus passe dans le menu
+PASS — mobile 320 px : « Articles » atteint au clavier (Tab), focus visible
+PASS — mobile 320 px : Échap ferme le menu et rend le focus au bouton
+PASS — mobile 320 px : Entrée mène à /articles
+PASS — mobile 320 px : lien actif signalé (aria-current)
+PASS — mobile 390 px : menu ouvert, « Articles » visible, sans débordement
+PASS — mobile 390 px : à l’ouverture, le focus passe dans le menu
+PASS — mobile 390 px : « Articles » atteint au clavier (Tab), focus visible
+PASS — mobile 390 px : Échap ferme le menu et rend le focus au bouton
+PASS — mobile 390 px : Entrée mène à /articles
+PASS — mobile 390 px : lien actif signalé (aria-current)
+PASS — bureau : clic sur « Articles » → /articles (200)
+26/26 contrôles réussis

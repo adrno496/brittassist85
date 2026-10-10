@@ -1,80 +1,72 @@
 ---
-title: "Facture électronique : le démarrage du 1er septembre · BrittAssist"
-description: "Depuis le 1er septembre 2026, toute entreprise doit pouvoir recevoir des factures électroniques. Ce qui s’applique déjà, ce qui attend 2027, quoi faire."
-h1: "Facturation électronique : ce qui s’applique depuis le 1er septembre 2026, et ce qui attend 2027"
-summary: "Le 1er septembre 2026, la réforme de la facturation électronique entre entreprises est entrée dans sa première phase. Pour une petite entreprise, l’obligation du moment est de recevoir ; l’émission viendra plus tard. Le point sur les premiers jours, et sur ce qu’il faut faire des premières factures reçues."
+title: "Facturation : le circuit après le 1er septembre · BrittAssist"
+description: "La réception électronique a démarré en septembre 2026 pour les entreprises concernées. Vérifiez les accès, les notifications et le suivi des factures reçues."
+h1: "Facturation : organiser le circuit après le 1er septembre"
+summary: "La réception électronique a démarré en septembre 2026 pour les entreprises concernées. Vérifiez les accès, les notifications et le suivi des factures reçues."
 category: "facturation"
-audience: ["TPE et PME assujetties à la TVA", "Artisans et commerçants", "Professions libérales", "Fournisseurs de grandes entreprises"]
-intention: "facturation électronique 1er septembre 2026"
-keywords: ["facturation électronique", "1er septembre 2026", "plateforme agréée", "réception des factures"]
+audience:
+  - "Dirigeants de TPE et PME"
+  - "Indépendants"
+intention: "facturation : organiser le circuit après le 1er septembre"
+keywords: []
 semaineEditoriale: "S35"
 periodeDebut: "2026-08-27"
 periodeFin: "2026-09-02"
 dateEvenement: "2026-09-01"
-natureEvenement: "Entrée en vigueur de la première phase de la réforme"
-dateEffet: "2026-09-01"
+natureEvenement: "Publication officielle"
 sources:
-  - titre: "Facturation électronique entre entreprises : coup d’envoi de la réforme"
-    organisme: "Ministère de l’Économie — economie.gouv.fr"
-    url: "https://www.economie.gouv.fr/actualites/facturation-electronique-entre-entreprises-coup-denvoi-de-la-reforme"
-    type: "officielle"
-    datePublication: "2026-09-01"
-    ouverte: false
-    extrait: "Annonce l’entrée en vigueur au 1er septembre 2026 : réception pour toutes les entreprises, émission pour les grandes entreprises et les ETI (selon l’extrait du moteur de recherche)."
-  - titre: "Actualité A18953 — facturation électronique"
-    organisme: "Entreprendre.Service-Public.gouv.fr (DILA)"
-    url: "https://entreprendre.service-public.gouv.fr/actualites/A18953"
-    type: "primaire"
-    datePublication: "2026-09-02"
-    ouverte: false
-    extrait: "Fiche d’actualité du service public consacrée au démarrage de la réforme ; elle porterait une mention sur les micro-entrepreneurs, à lire précisément."
   - titre: "La facturation démarre aujourd’hui : priorité à l’accompagnement des entreprises"
-    organisme: "Ministère de l’Économie — espace presse"
+    organisme: "Ministère de l’Économie"
     url: "https://presse.economie.gouv.fr/la-facturation-demarre-aujourdhui-priorite-a-laccompagnement-des-entreprises/"
-    type: "officielle"
+    type: "primaire"
     datePublication: "2026-09-01"
-    ouverte: false
-    extrait: "Communiqué évoquant un guide de démarrage, une ligne d’assistance et une approche d’accompagnement pendant la phase de démarrage (selon l’extrait du moteur de recherche)."
+    ouverte: true
+    consulteeLe: "2026-10-10"
+    extrait: "Le communiqué du 1er septembre rappelle la réception pour les assujettis concernés, l’émission des grandes entreprises et ETI en 2026, puis des PME et microentreprises en 2027. Il annonce l’absence de sanctions en 2026."
 createdAt: "2026-10-10"
-editorialStatus: "SOURCES_A_VERIFIER"
+datePublished: "2026-10-10"
+editorialStatus: "PUBLIE"
 sensibilite: "reglementaire"
-relatedGuides: ["facturation-electronique-tpe", "circuit-des-factures-fournisseurs", "choisir-un-logiciel-de-facturation"]
-relatedArticles: ["liste-plateformes-agreees-facturation-electronique", "numero-unique-dgfip-professionnels"]
-notesInternes: "Sources non ouvertes. Contradictions relevées par la recherche : (1) micro-entrepreneurs et réception (bandeau de la fiche A18953) ; (2) « aucune sanction pendant le démarrage » contre mise en demeure puis amende selon des sites spécialisés ; (3) nombre de plateformes agréées (101 à 166). Ne rien affirmer sur ces trois points sans le texte officiel."
+relatedGuides:
+  - "facturation-electronique-tpe"
+  - "circuit-des-factures-fournisseurs"
+relatedArticles: []
+notesInternes: "Sources ouvertes et contenu rédigé le 10 octobre 2026. Toute validation antérieure à cette rédaction ne couvre pas ce nouveau texte."
+dateEffet: "2026-09-01"
+approvedBy: "Axel Dreano"
 ---
 
-Le **1er septembre 2026**, la réforme de la facturation électronique entre entreprises est entrée en vigueur. Le ministère de l’Économie l’a annoncé le jour même ; le service public a publié sa fiche d’actualité le lendemain. Pour une petite entreprise, cette première étape porte sur une obligation : **être en mesure de recevoir** des factures électroniques.
+Le 1er septembre 2026 marque le démarrage de la facturation électronique selon le calendrier de la réforme. Le communiqué ministériel rappelle la réception pour les entreprises assujetties concernées et l’émission par les grandes entreprises et les ETI à cette étape.
 
-## Ce qui s’applique depuis le 1er septembre 2026
-
-D’après les annonces officielles du 1er et du 2 septembre (à relire sur les pages citées en sources) :
-
-- toutes les entreprises assujetties à la TVA doivent pouvoir recevoir leurs factures sous forme électronique, par l’intermédiaire d’une plateforme agréée ;
-- les grandes entreprises et les entreprises de taille intermédiaire doivent, elles, émettre leurs factures sous cette forme dès cette date ;
-- les PME, TPE et micro-entreprises n’émettront de factures électroniques qu’à partir du 1er septembre 2027 ;
-- le ministère met en avant l’accompagnement pendant la phase de démarrage, avec un guide et une ligne d’assistance.
-
-Deux points font l’objet d’informations divergentes dans les sources repérées et doivent être vérifiés avant toute décision : la situation exacte des micro-entrepreneurs, et le régime des sanctions pendant les premiers mois.
+Pour les PME et microentreprises, le calendrier d’émission prévoit le 1er septembre 2027. Ce décalage ne signifie pas qu’une petite entreprise concernée peut attendre 2027 pour organiser la réception.
 
 ## Ce que cela change pour vous
 
-Concrètement, une TPE ne change rien à sa manière de facturer ses clients avant 2027. En revanche, ses fournisseurs les plus importants — énergie, télécoms, grossistes, loueurs — sont souvent de grandes entreprises ou des ETI : leurs factures arrivent désormais par la plateforme choisie, et plus forcément par courriel.
+Une facture peut arriver dans un circuit différent de l’ancienne boîte de réception. Il faut savoir qui la voit, comment elle est attribuée et ce qui permet de la rapprocher d’une commande ou d’un paiement.
 
-Le risque n’est pas tant l’amende que la facture qui n’arrive nulle part : une plateforme non choisie, une adresse de réception non déclarée, ou une plateforme que personne ne consulte. Une facture fournisseur non vue, c’est un paiement en retard, puis des pénalités et une relance.
+Le ministère annonce qu’aucune entreprise ne sera sanctionnée en 2026 lors de ce démarrage. Cette priorité à l’accompagnement ne remplace pas la mise en place du circuit. Vérifiez avec votre comptable le périmètre de vos opérations et vos échéances au lieu de généraliser le calendrier à toutes les factures sans distinction.
 
-## Checklist de la rentrée
+## Faire une revue des premières réceptions
 
-1. Vérifier que l’entreprise a bien choisi une plateforme agréée et que son adresse de réception est active.
-2. Se connecter à la plateforme et repérer où arrivent les factures reçues.
-3. Lister les fournisseurs grandes entreprises et ETI, et vérifier que leurs factures de septembre sont bien arrivées.
-4. Décider qui consulte la plateforme, et à quelle fréquence : une fois par semaine au minimum.
-5. Adapter le [circuit des factures fournisseurs](/guides/circuit-des-factures-fournisseurs) : réception, contrôle, validation, paiement, classement.
-6. Inscrire dans l’agenda l’échéance d’émission du 1er septembre 2027, et la préparation de l’outil de facturation pour le premier semestre 2027.
+Prenez quelques dossiers réellement reçus et vérifiez leur chemin : notification, lecture, traitement, transmission comptable et classement. Repérez les doubles arrivées, les pièces manquantes et les factures encore visibles seulement dans un ancien outil.
 
-## Exemple fictif : la facture d’énergie qui n’est jamais arrivée
+L’assistante peut préparer le suivi et les demandes au support. Le dirigeant valide les décisions de paiement ; le cabinet comptable examine les traitements fiscaux et comptables. Une facture reçue ne doit pas être payée simplement parce qu’elle apparaît dans la plateforme.
 
-Un cabinet de kinésithérapie ne reçoit pas sa facture d’électricité de septembre par courriel, comme d’habitude. Personne ne s’en inquiète. En octobre, une relance arrive : la facture avait été déposée sur la plateforme choisie au printemps, que personne ne consultait. Depuis, son assistante vérifie la plateforme chaque lundi et compare la liste des factures reçues à celle des abonnements en cours. Le cas est inventé pour illustrer le risque.
+## Checklist du circuit de réception
 
-## Pour aller plus loin
+1. Vérifier l’accès effectif de l’entreprise à sa plateforme.
+2. Désigner la personne qui suit les nouvelles factures et son remplaçant.
+3. Tester les notifications et l’accès aux pièces.
+4. Rapprocher les factures des commandes et signaler les anomalies.
+5. Confirmer la transmission au comptable et la conservation des documents.
+6. Suivre les incidents avec leur date, leur responsable et leur résolution.
 
-Le guide [facturation électronique pour une TPE](/guides/facturation-electronique-tpe) présente la réforme dans son ensemble ; celui sur le [choix d’un logiciel de facturation](/guides/choisir-un-logiciel-de-facturation) aide à préparer l’étape de 2027. Pour une question sur votre situation, le numéro d’assistance cité par le ministère est présenté dans l’article sur le [numéro unique des professionnels](/articles/numero-unique-dgfip-professionnels).
+## Exemple fictif : deux versions d’une facture
+
+Une TPE reçoit un document par courriel puis voit la même facture dans son nouveau circuit. L’assistante rapproche les références et signale le doublon au responsable avant le paiement. Le dossier conserve une trace du traitement retenu. Cette situation est inventée.
+
+Au début de la réforme, une revue courte et régulière des dossiers en attente peut suffire à repérer les étapes mal comprises. Ajustez les consignes à partir des incidents constatés, sans multiplier les outils de suivi.
+
+## Prolonger les actions dans vos dossiers
+
+Pour organiser la suite, consultez les guides [Facturation électronique : ce qui change vraiment pour une petite entreprise.](/guides/facturation-electronique-tpe) et [Les factures fournisseurs : cinq étapes, une seule personne qui décide.](/guides/circuit-des-factures-fournisseurs). Ils prolongent cette actualité par des méthodes de travail. Choisissez les étapes utiles à votre dossier et faites valider les décisions qui relèvent de vos interlocuteurs compétents.

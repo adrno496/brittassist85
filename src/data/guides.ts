@@ -669,6 +669,7 @@ export const guides: Guide[] = [
       { href: '/guides/qu-est-ce-qu-un-private-office', label: 'Qu’est-ce qu’un Private Office' },
       { href: '/guides/assistante-virtuelle-ou-private-office', label: 'Assistante virtuelle ou Private Office' },
       { href: '/services', label: 'Le périmètre couvert par BrittAssist' },
+      { href: '/articles', label: 'Les actualités qui accompagnent ces méthodes de travail' },
     ],
     // Liens vers la série « secrétariat externalisé » (octobre 2026). Ils n'apparaissent
     // qu'à mesure que ces pages sont publiées : tant qu'aucune ne l'est, la page ne change pas.
@@ -709,7 +710,7 @@ export const guides: Guide[] = [
       ],
     },
     cloture: 'Le bon prestataire commence par vous dire ce qu’il ne fait pas.',
-    dateModified: '2026-10-06',
+    dateModified: '2026-10-10',
   },
 
   {

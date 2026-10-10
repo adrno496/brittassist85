@@ -1,0 +1,47 @@
+
+> brittassist@1.0.0 articles:check
+> node scripts/articles-check.mjs
+
+Articles : 40 fiche(s) · 40 publiée(s) · 0 prête(s) à publier · contrôle au 2026-10-10
+Plan : 41 créneau(x) · PUBLIE 40 · SOURCES_INSUFFISANTES 1
+Blocages : 0 · avertissements : 38
+
+AVERTISSEMENTS :
+  une-seule-source                 acre-2026-exoneration-25-pour-cent — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 ai-act-accord-omnibus-mai-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 ai-act-transparence-chatbot-2-aout-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 assurance-professionnelle-contre-expertise-loi-mai-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 barometre-france-num-2026-ia-tpe — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 bilan-cybermalveillance-2025-priorites-tpe — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 cnil-alerte-faux-organismes-fuite-de-donnees — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 cnil-cameras-captation-sonore — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 cnil-controles-2026-recrutement — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 cnil-facturation-electronique-donnees-personnelles — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 cnil-pixels-suivi-emails — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 cnil-recommandation-proxy-filtrage-web — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 cnil-sanction-fichier-clients-reseau-social — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 cnil-sanctions-simplifiees-juillet-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 creations-entreprises-pays-loire-mars-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 cybermois-2026-suivi-fuite-donnees — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 declaration-revenus-2025-independants-ouverture — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 declaration-revenus-date-limite-vendee-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 decret-27-juillet-2026-plateforme-agreee — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 decret-formalites-30-avril-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 defaillances-entreprises-surveiller-clients-fournisseurs — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 demarchage-telephonique-consentement-11-aout-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 donnees-sante-habilitations-alerte-septembre-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 facturation-electronique-premiere-semaine-septembre-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 france-travail-acces-partenaires-janvier-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 futur-code-ape-naf-2025-consultation — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 liste-plateformes-agreees-facturation-electronique — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 loi-de-finances-2026-mesures-tpe — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 marches-publics-criteres-environnementaux-aout-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 numero-masque-appels-etranger-janvier-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 numero-unique-dgfip-professionnels — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 piratage-impots-vigilance-messages-aout-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 pixels-emails-anciennes-listes-delai-juillet-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 place-marches-publics-elargissement-juin-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 rapport-annuel-cnil-2025-petites-structures — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 regularisation-cotisations-independants-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 smic-juin-2026-checklist-employeur — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 tva-fin-regime-simplifie-1er-janvier-2027 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables

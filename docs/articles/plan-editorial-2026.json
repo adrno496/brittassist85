@@ -7,7 +7,7 @@
       "semaine": "S01",
       "debut": "2026-01-01",
       "fin": "2026-01-07",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Entrée en vigueur de la règle Arcep : les opérateurs doivent afficher « numéro masqué » pour les appels émis depuis l'étranger avec un numéro mobile français non authentifié (lutte contre l'usurpation de numéros).",
@@ -37,65 +37,71 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "Entrée en vigueur de la règle Arcep : les opérateurs doivent afficher « numéro masqué » pour les appels émis depuis l'étranger avec un numéro mobile français non authentifié (lutte contre l'usurpation de numéros).",
+      "actualiteRetenue": "Au 1er janvier 2026, les opérateurs doivent masquer les numéros mobiles français non authentifiés des appels provenant de l’étranger. Le masquage ne prouve pas une fraude.",
       "dateActualite": "2026-01-01",
-      "dateAttestee": false,
-      "titrePrevu": "Appel « numéro masqué » depuis l’étranger : ce qui change depuis le 1er janvier 2026",
-      "intention": "appel numéro masqué client à l’étranger 2026",
+      "dateAttestee": true,
+      "titrePrevu": "Appels masqués depuis l’étranger : le changement de 2026",
+      "intention": "appels masqués depuis l’étranger : le changement de 2026",
       "sensibilite": "standard",
       "sources": [
         {
+          "titre": "Information et protection accrue des consommateurs, gestion efficace des numéros : l’Arcep adopte une décision modifiant le plan national de numérotation",
+          "organisme": "Arcep",
           "url": "https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/plan-de-numerotation-021225.html",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.sudradio.fr/societe/arnaques-au-telephone-ce-qui-va-changer-a-partir-de-janvier-2026",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.mac4ever.com/iphone/193431-usurpation-de-numeros-ce-qui-va-changer-au-1er-janvier-2026",
-          "ouverte": false
-        },
-        {
-          "url": "https://siecledigital.fr/2025/12/04/arnaques-telephoniques-pourquoi-vous-verrez-beaucoup-plus-dappels-masques-des-2026/",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.blogdumoderateur.com/arcep-renforce-lutte-arnaques-telephoniques/",
-          "ouverte": false
-        },
-        {
-          "url": "https://next.ink/222060/usurpation-de-numero-spam-larcep-ouvre-une-enquete-contre-lensemble-des-operateurs/",
-          "ouverte": false
+          "type": "primaire",
+          "datePublication": "2025-12-02",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Au 1er janvier 2026, les opérateurs doivent masquer les numéros mobiles français non authentifiés des appels provenant de l’étranger. Le masquage ne prouve pas une fraude."
         }
       ],
       "lienBrittAssist": "Filtrage des appels et gestion des messages du dirigeant.",
       "slug": "numero-masque-appels-etranger-janvier-2026",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/filtrer-les-appels-et-messages",
           "/guides/appels-manques-entreprise"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/filtrer-les-appels-et-messages",
+          "/guides/appels-manques-entreprise"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": ""
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/ai-act-transparence-chatbot-2-aout-2026",
+            "score": 0.09
+          },
+          {
+            "chemin": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+            "score": 0.09
+          },
+          {
+            "chemin": "/articles/assurance-professionnelle-contre-expertise-loi-mai-2026",
+            "score": 0.09
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S01-S10.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S02",
       "debut": "2026-01-08",
       "fin": "2026-01-14",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Communiqué Insee : les entreprises peuvent consulter dès maintenant sur sirene.gouv.fr leur futur code APE (nomenclature NAF 2025), qui sera attribué à toutes les unités du répertoire Sirene au 1er janvier 2027.",
@@ -125,32 +131,22 @@
           "sensibilite": "standard"
         }
       ],
-      "actualiteRetenue": "Communiqué Insee : les entreprises peuvent consulter dès maintenant sur sirene.gouv.fr leur futur code APE (nomenclature NAF 2025), qui sera attribué à toutes les unités du répertoire Sirene au 1er janvier 2027.",
+      "actualiteRetenue": "Le communiqué du 14 janvier 2026 annonce la consultation du futur code APE sur Sirene. Le nouveau code entre en vigueur le 1er janvier 2027 ; l’ancien reste officiel en 2026.",
       "dateActualite": "2026-01-14",
-      "dateAttestee": false,
-      "titrePrevu": "Code APE 2027 : consulter dès maintenant le futur code de son entreprise",
-      "intention": "futur code APE NAF 2025 consulter",
+      "dateAttestee": true,
+      "titrePrevu": "Code APE 2027 : consulter le futur classement",
+      "intention": "code ape 2027 : consulter le futur classement",
       "sensibilite": "reglementaire",
       "sources": [
         {
+          "titre": "Nouveau code APE : les entreprises peuvent le consulter dès aujourd’hui sur sirene.gouv.fr",
+          "organisme": "Insee",
           "url": "https://www.insee.fr/fr/information/8727948",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.info.gouv.fr/actualite/entreprises-un-nouveau-code-ape",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.economie.gouv.fr/node/3238995",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.lyon-metropole.cci.fr/actualite/nouveau-code-ape-evolution-majeure-classification-des-activites",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.capeb.fr/actualites/nouveau-code-ape-en-2027",
-          "ouverte": false
+          "type": "primaire",
+          "datePublication": "2026-01-14",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le communiqué du 14 janvier 2026 annonce la consultation du futur code APE sur Sirene. Le nouveau code entre en vigueur le 1er janvier 2027 ; l’ancien reste officiel en 2026."
         }
       ],
       "lienBrittAssist": "Tenue du dossier permanent et mise à jour des documents qui citent le code APE.",
@@ -162,24 +158,44 @@
           "/guides/echeancier-administratif-entreprise"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/dossier-permanent-entreprise",
+          "/guides/echeancier-administratif-entreprise"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": "Aucun guide ne traite la nomenclature NAF."
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/tva-fin-regime-simplifie-1er-janvier-2027",
+            "score": 0.11
+          },
+          {
+            "chemin": "/guides/acces-bancaire-pour-son-assistante",
+            "score": 0.06
+          },
+          {
+            "chemin": "/guides/assistante-independante-ou-salariee",
+            "score": 0
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S01-S10.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S03",
       "debut": "2026-01-15",
       "fin": "2026-01-21",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Facturation électronique : la DGFiP publie la première liste de 101 plateformes agréées (PA). La liste a vocation à s'enrichir au fil de l'instruction des demandes.",
@@ -209,32 +225,22 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "Facturation électronique : la DGFiP publie la première liste de 101 plateformes agréées (PA). La liste a vocation à s'enrichir au fil de l'instruction des demandes.",
+      "actualiteRetenue": "Le ministère a publié le 16 janvier 2026 une première liste de 101 plateformes agréées pour la réforme. L’agrément ne permet pas de présumer les tarifs et fonctionnalités de chaque contrat.",
       "dateActualite": "2026-01-16",
-      "dateAttestee": false,
-      "titrePrevu": "Facturation électronique : la première liste des plateformes agréées est publiée",
-      "intention": "liste plateformes agréées facturation électronique",
+      "dateAttestee": true,
+      "titrePrevu": "Plateformes agréées : comparer la liste de janvier 2026",
+      "intention": "plateformes agréées : comparer la liste de janvier 2026",
       "sensibilite": "reglementaire",
       "sources": [
         {
+          "titre": "Facturation électronique : la liste des 101 premières plateformes agréées",
+          "organisme": "Ministère de l’Économie",
           "url": "https://www.economie.gouv.fr/actualites/facturation-electronique-la-liste-des-101-premieres-plateformes-agreees",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.economie.gouv.fr/node/3238965",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.ffbatiment.fr/actualites-batiment/actualite-ba/facturation-electronique-liste-101-plateformes-agreee-publiee",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.capeb.fr/actualites/facturation-electronique-la-liste-des-101-premieres-plateformes-agreees-est-disponible",
-          "ouverte": false
-        },
-        {
-          "url": "https://tpeactu.fr/2026/01/17/facturation-electronique-liste-101-plateformes-agreees/",
-          "ouverte": false
+          "type": "primaire",
+          "datePublication": "2026-01-16",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le ministère a publié le 16 janvier 2026 une première liste de 101 plateformes agréées pour la réforme. L’agrément ne permet pas de présumer les tarifs et fonctionnalités de chaque contrat."
         }
       ],
       "lienBrittAssist": "Préparation de la réception des factures, choix d’outil avec le dirigeant.",
@@ -246,24 +252,44 @@
           "/guides/choisir-un-logiciel-de-facturation"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/facturation-electronique-tpe",
+          "/guides/choisir-un-logiciel-de-facturation"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "moyen",
-        "note": "Guide /guides/facturation-electronique-tpe : l’article se limite au choix de la plateforme à partir de la liste officielle."
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+            "score": 0.09
+          },
+          {
+            "chemin": "/articles/assurance-professionnelle-contre-expertise-loi-mai-2026",
+            "score": 0.09
+          },
+          {
+            "chemin": "/articles/barometre-france-num-2026-ia-tpe",
+            "score": 0.09
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S01-S10.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S04",
       "debut": "2026-01-22",
       "fin": "2026-01-28",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "La CNIL sanctionne de 3,5 M€ une entreprise (non nommée) qui transmettait les emails et téléphones des membres de son programme de fidélité à un réseau social pour du ciblage publicitaire, sans consentement valable.",
@@ -293,49 +319,71 @@
           "sensibilite": "standard"
         }
       ],
-      "actualiteRetenue": "La CNIL sanctionne de 3,5 M€ une entreprise (non nommée) qui transmettait les emails et téléphones des membres de son programme de fidélité à un réseau social pour du ciblage publicitaire, sans consentement valable.",
+      "actualiteRetenue": "L’annonce du 22 janvier décrit une sanction décidée le 30 décembre 2025 pour le transfert de données d’un programme de fidélité à un réseau social sans consentement valable.",
       "dateActualite": "2026-01-22",
-      "dateAttestee": false,
-      "titrePrevu": "Fichier clients transmis à un réseau social : la sanction de la CNIL expliquée",
-      "intention": "fichier clients audience personnalisée réseau social CNIL",
+      "dateAttestee": true,
+      "titrePrevu": "Fichier clients et publicité : la sanction CNIL de janvier",
+      "intention": "fichier clients et publicité : la sanction cnil de janvier",
       "sensibilite": "reglementaire",
       "sources": [
         {
+          "titre": "Transmission de données à un réseau social à des fins publicitaires : la CNIL prononce une sanction de 3,5 millions d’euros",
+          "organisme": "CNIL",
           "url": "https://cnil.fr/fr/transmission-de-donnees-un-reseau-social-des-fins-publicitaires-sanction",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.cnil.fr/fr/node/168058",
-          "ouverte": false
+          "type": "primaire",
+          "datePublication": "2026-01-22",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "L’annonce du 22 janvier décrit une sanction décidée le 30 décembre 2025 pour le transfert de données d’un programme de fidélité à un réseau social sans consentement valable."
         }
       ],
       "lienBrittAssist": "Tenue du fichier clients et des preuves de consentement.",
       "slug": "cnil-sanction-fichier-clients-reseau-social",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/tenir-son-fichier-clients-a-jour",
           "/guides/rgpd-sous-traitance-assistante-externalisee"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/tenir-son-fichier-clients-a-jour",
+          "/guides/rgpd-sous-traitance-assistante-externalisee"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": "Ne pas nommer l’entreprise sanctionnée : la CNIL ne la nomme pas."
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/guides/tenir-son-fichier-clients-a-jour",
+            "score": 0.14
+          },
+          {
+            "chemin": "/articles/cnil-controles-2026-recrutement",
+            "score": 0.09
+          },
+          {
+            "chemin": "/guides/presenter-son-assistante-a-ses-clients",
+            "score": 0.08
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S01-S10.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S05",
       "debut": "2026-01-29",
       "fin": "2026-02-04",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Application au 1er février 2026 des nouveaux tarifs réglementés de vente d'électricité (TRVE). Le tarif Bleu non résidentiel (≤ 36 kVA) baisse en moyenne de 1,29 % HT (−1,58 % TTC), selon la proposition de la CRE.",
@@ -365,56 +413,71 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "Application au 1er février 2026 des nouveaux tarifs réglementés de vente d'électricité (TRVE). Le tarif Bleu non résidentiel (≤ 36 kVA) baisse en moyenne de 1,29 % HT (−1,58 % TTC), selon la proposition de la CRE.",
-      "dateActualite": "2026-02-01",
-      "dateAttestee": false,
-      "titrePrevu": "Électricité pro : ce que change le tarif Bleu du 1er février 2026",
-      "intention": "tarif Bleu non résidentiel février 2026",
-      "sensibilite": "standard",
+      "actualiteRetenue": "La CNIL annonce le 29 janvier une sanction décidée le 22 janvier. Elle relève une authentification insuffisante, des accès trop larges de partenaires et une journalisation insuffisante.",
+      "dateActualite": "2026-01-29",
+      "dateAttestee": true,
+      "titrePrevu": "France Travail : revoir les accès des partenaires",
+      "intention": "france travail : revoir les accès des partenaires",
+      "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://www.edf.fr/entreprises/decryptages/normes-et-reglementations/trv-fevrier-2026",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.cre.fr/fileadmin/Documents/Deliberations/2026/260114_2026-06_TRVE_2026.pdf",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.hellowatt.fr/blog/trv-stable-fevrier-2026/",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.moneyvox.fr/energie/actualites/106192/tarif-reglemente-edf-ce-qui-va-changer-en-fevrier-2026",
-          "ouverte": false
+          "titre": "Violation de données : sanction de 5 millions d’euros à l’encontre de FRANCE TRAVAIL",
+          "organisme": "CNIL",
+          "url": "https://www.cnil.fr/fr/violation-de-donnees-sanction-5millions-france-travail",
+          "type": "primaire",
+          "datePublication": "2026-01-29",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La CNIL annonce le 29 janvier une sanction décidée le 22 janvier. Elle relève une authentification insuffisante, des accès trop larges de partenaires et une journalisation insuffisante."
         }
       ],
       "lienBrittAssist": "Suivi des contrats d’énergie et contrôle des factures.",
-      "slug": "tarif-bleu-electricite-pro-fevrier-2026",
-      "ficheRedigee": false,
+      "slug": "france-travail-acces-partenaires-janvier-2026",
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
-          "/guides/suivi-des-contrats-et-abonnements"
+          "/guides/confidentialite-acces-et-outils",
+          "/guides/double-authentification-et-delegation"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/confidentialite-acces-et-outils",
+          "/guides/double-authentification-et-delegation"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": "Chiffres issus d’EDF citant la CRE : application officielle à confirmer."
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/guides/secretariat-externalise-france-ou-offshore",
+            "score": 0.1
+          },
+          {
+            "chemin": "/articles/barometre-france-num-2026-ia-tpe",
+            "score": 0.1
+          },
+          {
+            "chemin": "/articles/cnil-facturation-electronique-donnees-personnelles",
+            "score": 0.1
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S01-S10.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S06",
       "debut": "2026-02-05",
       "fin": "2026-02-11",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "ACRE : le décret n° 2026-69 du 6 février 2026 (JO du 8 février) fixe l'exonération à 25 % des cotisations pour les créations et reprises à partir du 1er janvier 2026. Pour les micro-entrepreneurs, la baisse s'applique au 1er juillet 2026 (taux minoré porté de 50 % à 75 % des taux normaux).",
@@ -444,54 +507,63 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "ACRE : le décret n° 2026-69 du 6 février 2026 (JO du 8 février) fixe l'exonération à 25 % des cotisations pour les créations et reprises à partir du 1er janvier 2026. Pour les micro-entrepreneurs, la baisse s'applique au 1er juillet 2026 (taux minoré porté de 50 % à 75 % des taux normaux).",
-      "dateActualite": "2026-02-08",
-      "dateAttestee": false,
-      "titrePrevu": "ACRE 2026 : exonération ramenée à 25 % et calendrier pour les créateurs",
-      "intention": "ACRE 2026 25 %",
+      "actualiteRetenue": "La fiche publiée le 11 février distingue les évolutions du 1er janvier et celles applicables aux micro-entrepreneurs créant à compter du 1er juillet, avec une demande dans les 60 jours.",
+      "dateActualite": "2026-02-11",
+      "dateAttestee": true,
+      "titrePrevu": "ACRE 2026 : vérifier la date et préparer la demande",
+      "intention": "acre 2026 : vérifier la date et préparer la demande",
       "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://legifrance.gouv.fr/eli/decret/2026/2/6/CPPS2535327D/jo/texte",
-          "ouverte": false
-        },
-        {
+          "titre": "ACRE : les conditions d’exonération évoluent en 2026",
+          "organisme": "DILA — Service Public Entreprendre",
           "url": "https://entreprendre.service-public.gouv.fr/actualites/A18795?lang=fr",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.legifiscal.fr/actualites-fiscales/4422-publication-decret-reduisant-exoneration-acre-createurs-repreneurs-entreprise.html",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.centre-inffo.fr/site-droit-formation/actualites-droit/fixation-du-taux-dexoneration-acre",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.portail-autoentrepreneur.fr/actualites/acre-2026",
-          "ouverte": false
+          "type": "primaire",
+          "datePublication": "2026-02-11",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La fiche publiée le 11 février distingue les évolutions du 1er janvier et celles applicables aux micro-entrepreneurs créant à compter du 1er juillet, avec une demande dans les 60 jours."
         }
       ],
       "lienBrittAssist": "Suivi des démarches de création et des délais de demande.",
       "slug": "acre-2026-exoneration-25-pour-cent",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/administratif-a-la-creation-d-entreprise"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/administratif-a-la-creation-d-entreprise"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": ""
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/cybermois-2026-suivi-fuite-donnees",
+            "score": 0.18
+          },
+          {
+            "chemin": "/articles/declaration-revenus-date-limite-vendee-2026",
+            "score": 0.18
+          },
+          {
+            "chemin": "/articles/loi-de-finances-2026-mesures-tpe",
+            "score": 0.18
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S01-S10.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S07",
@@ -539,7 +611,7 @@
       "semaine": "S08",
       "debut": "2026-02-19",
       "fin": "2026-02-25",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Promulgation de la loi n° 2026-103 du 19 février 2026 de finances pour 2026, après la décision n° 2026-901 DC du Conseil constitutionnel du même jour. Entreprendre publie le 20 février une actualité sur les sanctions de la facturation électronique.",
@@ -560,69 +632,81 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "Promulgation de la loi n° 2026-103 du 19 février 2026 de finances pour 2026, après la décision n° 2026-901 DC du Conseil constitutionnel du même jour. Entreprendre publie le 20 février une actualité sur les sanctions de la facturation électronique.",
-      "dateActualite": "2026-02-19",
-      "dateAttestee": false,
-      "titrePrevu": "Loi de finances 2026 : les amendes de la facturation électronique",
-      "intention": "amende facture électronique 2026",
+      "actualiteRetenue": "L’annonce du 20 février distingue les sanctions d’émission, de réception via une plateforme et de transmission des données, ainsi qu’une exception de première infraction régularisée.",
+      "dateActualite": "2026-02-20",
+      "dateAttestee": true,
+      "titrePrevu": "Facturation électronique : comprendre les sanctions 2026",
+      "intention": "facturation électronique : comprendre les sanctions 2026",
       "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://www.legifiscal.fr/actualites-fiscales/4433-publication-loi-finances-2026.html",
-          "ouverte": false
+          "titre": "Facturation électronique : les sanctions évoluent",
+          "organisme": "DILA — Service Public Entreprendre",
+          "url": "https://entreprendre.service-public.gouv.fr/actualites/A18802?lang=fr",
+          "type": "primaire",
+          "datePublication": "2026-02-20",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "L’annonce du 20 février distingue les sanctions d’émission, de réception via une plateforme et de transmission des données, ainsi qu’une exception de première infraction régularisée."
         },
         {
-          "url": "https://www.banquedesterritoires.fr/apres-sa-validation-quasi-integrale-par-le-conseil-constitutionnel-le-budget-2026-est-publie",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.goodwinlaw.com/en/insights/publications/2026/02/alerts-practices-tax-loi-de-finances-pour-2026",
-          "ouverte": false
-        },
-        {
-          "url": "https://lcp.fr/actualites/budget-2026-le-conseil-constitutionnel-valide-l-essentiel-de-la-loi-de-finances-431533",
-          "ouverte": false
-        },
-        {
-          "url": "https://blog.landot-avocats.net/2026/02/19/le-conseil-constitutionnel-havre-de-paix-pour-la-loi-de-finances-pour-2026-apres-la-tempete-parlementaire/",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.cegid.com/fr/blog/nouveautes-fiscales-loi-de-finances-2026/",
-          "ouverte": false
-        },
-        {
-          "url": "https://entreprendre.service-public.gouv.fr/actualites?lang=en",
-          "ouverte": false
+          "titre": "La facturation démarre aujourd’hui : priorité à l’accompagnement des entreprises",
+          "organisme": "Ministère de l’Économie",
+          "url": "https://presse.economie.gouv.fr/la-facturation-demarre-aujourdhui-priorite-a-laccompagnement-des-entreprises/",
+          "type": "primaire",
+          "datePublication": "2026-09-01",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le communiqué du démarrage annonce l’absence de sanctions en 2026 et rappelle le calendrier des obligations. Source postérieure citée pour actualiser la rétrospective."
         }
       ],
       "lienBrittAssist": "Constitution des preuves de mise en conformité.",
       "slug": "amendes-facturation-electronique-loi-de-finances-2026",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/facturation-electronique-tpe",
           "/guides/mentions-obligatoires-facture"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/facturation-electronique-tpe",
+          "/guides/mentions-obligatoires-facture"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "moyen",
-        "note": "Proche de S09 (même loi) et du guide facturation électronique. Montants à lire dans le texte publié."
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/guides/facturation-electronique-tpe",
+            "score": 0.18
+          },
+          {
+            "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+            "score": 0.11
+          },
+          {
+            "chemin": "/articles/assurance-professionnelle-contre-expertise-loi-mai-2026",
+            "score": 0.1
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S01-S10.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S09",
       "debut": "2026-02-26",
       "fin": "2026-03-04",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Entreprendre publie le récapitulatif « Loi de finances 2026 : ce qui change pour les entreprises » : fiscalité (seuils micro, zones de revitalisation rurale, fin des ZFU-TE), facturation électronique (amendes modifiées) et transport.",
@@ -652,52 +736,69 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "Entreprendre publie le récapitulatif « Loi de finances 2026 : ce qui change pour les entreprises » : fiscalité (seuils micro, zones de revitalisation rurale, fin des ZFU-TE), facturation électronique (amendes modifiées) et transport.",
+      "actualiteRetenue": "Le récapitulatif du 27 février présente les changements de seuils, zonages, dispositifs d’innovation, transmission et transports. Chaque mesure renvoie à ses conditions spécifiques.",
       "dateActualite": "2026-02-27",
-      "dateAttestee": false,
-      "titrePrevu": "Loi de finances 2026 : les mesures qui concernent une TPE",
-      "intention": "loi de finances 2026 ce qui change TPE",
+      "dateAttestee": true,
+      "titrePrevu": "Loi de finances 2026 : préparer la revue de votre dossier",
+      "intention": "loi de finances 2026 : préparer la revue de votre dossier",
       "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://entreprendre.service-public.gouv.fr/actualites/A18821?lang=en",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.legifiscal.fr/actualites-fiscales/4433-publication-loi-finances-2026.html",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.banquedesterritoires.fr/apres-sa-validation-quasi-integrale-par-le-conseil-constitutionnel-le-budget-2026-est-publie",
-          "ouverte": false
+          "titre": "Loi de finances pour 2026 : ce qui change pour les entreprises",
+          "organisme": "DILA — Service Public Entreprendre",
+          "url": "https://entreprendre.service-public.gouv.fr/actualites/A18821?lang=fr",
+          "type": "primaire",
+          "datePublication": "2026-02-27",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le récapitulatif du 27 février présente les changements de seuils, zonages, dispositifs d’innovation, transmission et transports. Chaque mesure renvoie à ses conditions spécifiques."
         }
       ],
       "lienBrittAssist": "Mise à jour de l’échéancier administratif.",
       "slug": "loi-de-finances-2026-mesures-tpe",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/echeancier-administratif-entreprise"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/echeancier-administratif-entreprise"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "moyen",
-        "note": "Ne pas reprendre les amendes traitées en S08."
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/acre-2026-exoneration-25-pour-cent",
+            "score": 0.18
+          },
+          {
+            "chemin": "/articles/cybermois-2026-suivi-fuite-donnees",
+            "score": 0.18
+          },
+          {
+            "chemin": "/guides/dossier-de-rendez-vous",
+            "score": 0.13
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S01-S10.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S10",
       "debut": "2026-03-05",
       "fin": "2026-03-11",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Consultation sur le projet de guide HAS-CNIL « Accompagner le bon usage des systèmes d'intelligence artificielle en contexte de soins » (version provisoire datée de février 2026), destiné aux établissements et aux professionnels libéraux de santé.",
@@ -718,53 +819,71 @@
           "sensibilite": "standard"
         }
       ],
-      "actualiteRetenue": "La Banque de France publie les statistiques de défaillances d'entreprises à fin janvier 2026 : 68 961 défaillances en cumul sur 12 mois (+4,1 %), une hausse qui concerne très majoritairement les microentreprises.",
-      "dateActualite": "2026-03-05",
-      "dateAttestee": false,
-      "titrePrevu": "Défaillances d’entreprises : surveiller ses clients et fournisseurs en 2026",
-      "intention": "défaillances entreprises surveiller client fournisseur",
+      "actualiteRetenue": "Le bulletin daté du 6 mars 2026 recense 68 961 défaillances sur douze mois à fin janvier, en hausse de 4,1 %. Ce total national ne prédit pas la situation d’un partenaire donné.",
+      "dateActualite": "2026-03-06",
+      "dateAttestee": true,
+      "titrePrevu": "Défaillances : organiser la veille clients et fournisseurs",
+      "intention": "défaillances : organiser la veille clients et fournisseurs",
       "sensibilite": "standard",
       "sources": [
         {
-          "url": "https://www.banque-france.fr/fr/statistiques/entreprises/defaillances-dentreprises-2026-01",
-          "ouverte": false
-        },
-        {
+          "titre": "Défaillances d’entreprises — Janvier 2026",
+          "organisme": "Banque de France",
           "url": "https://www.banque-france.fr/system/files/webstats/Defaillances_dentreprises_en_France_202601_20260305/FR_Stat_Info_Defaillances_d%27Entreprises_202601.pdf",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.optionfinance.fr/actualites/le-nombre-de-defaillances-de-pme-continue-daugmenter.html",
-          "ouverte": false
+          "type": "primaire",
+          "datePublication": "2026-03-06",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le bulletin daté du 6 mars 2026 recense 68 961 défaillances sur douze mois à fin janvier, en hausse de 4,1 %. Ce total national ne prédit pas la situation d’un partenaire donné."
         }
       ],
       "lienBrittAssist": "Suivi des encaissements et veille sur les partenaires.",
       "slug": "defaillances-entreprises-surveiller-clients-fournisseurs",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/relancer-une-facture-impayee",
           "/guides/delais-de-paiement-et-penalites-de-retard"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/relancer-une-facture-impayee",
+          "/guides/delais-de-paiement-et-penalites-de-retard"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "moyen",
-        "note": "Distinct des guides relance et délais : angle prévention à partir du chiffre publié."
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/guides/organiser-l-administratif-de-son-entreprise",
+            "score": 0.1
+          },
+          {
+            "chemin": "/guides/organiser-un-deplacement-professionnel",
+            "score": 0.1
+          },
+          {
+            "chemin": "/guides/organiser-un-seminaire-d-equipe",
+            "score": 0.1
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S01-S10.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S11",
       "debut": "2026-03-12",
       "fin": "2026-03-18",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "La CNIL publie sa recommandation finale sur les serveurs mandataires (proxys) web filtrants, après une consultation publique tenue du 28 juillet au 30 septembre 2025",
@@ -776,61 +895,71 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "La CNIL publie sa recommandation finale sur les serveurs mandataires (proxys) web filtrants, après une consultation publique tenue du 28 juillet au 30 septembre 2025",
+      "actualiteRetenue": "La recommandation concerne la sécurisation des accès internet professionnels. Elle traite notamment du filtrage, des journaux et des garanties pour les personnes utilisatrices.",
       "dateActualite": "2026-03-13",
-      "dateAttestee": false,
-      "titrePrevu": "Filtrage web des postes : la recommandation de la CNIL pour les petites structures",
-      "intention": "CNIL recommandation proxy filtrant",
+      "dateAttestee": true,
+      "titrePrevu": "Proxy web filtrant : préparer les bonnes questions",
+      "intention": "proxy web filtrant : préparer les bonnes questions",
       "sensibilite": "reglementaire",
       "sources": [
         {
+          "titre": "Serveur mandataire web filtrant : les recommandations de la CNIL",
+          "organisme": "CNIL",
           "url": "https://www.cnil.fr/fr/recommandation-serveur-mandataire-web-filtrant",
-          "ouverte": false
-        },
-        {
-          "url": "https://cnil.fr/fr/node/168310",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.cnil.fr/sites/default/files/2026-03/synthese_consult-web-filtrant.pdf",
-          "ouverte": false
-        },
-        {
-          "url": "https://cnil.fr/fr/ordre-du-jour-de-la-seance-pleniere-du-29-janvier-2026",
-          "ouverte": false
-        },
-        {
-          "url": "https://webiis10.mondaq.com/france/data-protection/1763362/the-cnil-publishes-its-recommendation-on-web-filtering-proxies",
-          "ouverte": false
+          "type": "primaire",
+          "datePublication": "2026-03-13",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La recommandation concerne la sécurisation des accès internet professionnels. Elle traite notamment du filtrage, des journaux et des garanties pour les personnes utilisatrices."
         }
       ],
       "lienBrittAssist": "Coordination avec le prestataire informatique.",
       "slug": "cnil-recommandation-proxy-filtrage-web",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/confidentialite-acces-et-outils",
           "/guides/incident-de-securite-chez-un-prestataire"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/confidentialite-acces-et-outils",
+          "/guides/incident-de-securite-chez-un-prestataire"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": "Date de publication à confirmer (13 ou 19 mars)."
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+            "score": 0.11
+          },
+          {
+            "chemin": "/articles/tva-fin-regime-simplifie-1er-janvier-2027",
+            "score": 0.11
+          },
+          {
+            "chemin": "/articles/conge-de-naissance-independants-juillet-2026",
+            "score": 0.1
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S12",
       "debut": "2026-03-19",
       "fin": "2026-03-25",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "La CNIL publie une note sur les dispositifs de captation sonore couplés à la vidéoprotection : enregistrer le son avec une caméra reste interdit, mais il existe des exceptions encadrées",
@@ -842,60 +971,69 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "La CNIL publie une note sur les dispositifs de captation sonore couplés à la vidéoprotection : enregistrer le son avec une caméra reste interdit, mais il existe des exceptions encadrées",
+      "actualiteRetenue": "Dans les lieux ouverts au public et sur la voie publique, l’enregistrement sonore par un système de vidéoprotection est interdit. Des dispositifs distincts, manuels et exceptionnels relèvent d’une analyse spécifique.",
       "dateActualite": "2026-03-20",
-      "dateAttestee": false,
-      "titrePrevu": "Caméras qui enregistrent le son : la note de la CNIL de mars 2026",
-      "intention": "caméra avec micro commerce CNIL",
+      "dateAttestee": true,
+      "titrePrevu": "Caméras avec microphone : le rappel CNIL de mars",
+      "intention": "caméras avec microphone : le rappel cnil de mars",
       "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://www.cnil.fr/fr/videoprotection",
-          "ouverte": false
-        },
-        {
-          "url": "https://cnil.fr/fr/actualites?page=2",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.clubic.com/actualite-605614-vos-conversations-peuvent-elles-etre-enregistrees-par-une-camera-de-surveillance-la-cnil-repond.html",
-          "ouverte": false
-        },
-        {
-          "url": "https://kurrant.com/kurrantly-news/france-draws-a-hard-line-on-audio-capture-in-video-monitored-public-spaces/",
-          "ouverte": false
-        },
-        {
-          "url": "https://blog.landot-avocats.net/2026/03/30/videoprotection-intelligente-algorithmique-et-autres-dispositifs-analogues-y-compris-les-captations-de-vibrations-un-etat-du-droit-au-30-mars-2026-videos-et-article/",
-          "ouverte": false
+          "titre": "Les dispositifs de captation sonore couplés à la vidéoprotection",
+          "organisme": "CNIL",
+          "url": "https://www.cnil.fr/fr/les-dispositifs-de-captation-sonore-couples-la-videoprotection",
+          "type": "primaire",
+          "datePublication": "2026-03-20",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Dans les lieux ouverts au public et sur la voie publique, l’enregistrement sonore par un système de vidéoprotection est interdit. Des dispositifs distincts, manuels et exceptionnels relèvent d’une analyse spécifique."
         }
       ],
       "lienBrittAssist": "Vérification des équipements et de l’affichage.",
       "slug": "cnil-cameras-captation-sonore",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/confidentialite-acces-et-outils"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/confidentialite-acces-et-outils"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": "URL exacte de la note non identifiée."
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/cnil-controles-2026-recrutement",
+            "score": 0.09
+          },
+          {
+            "chemin": "/guides/premier-mois-assistante-externalisee",
+            "score": 0.08
+          },
+          {
+            "chemin": "/guides/periode-d-essai-assistante-independante",
+            "score": 0.08
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S13",
       "debut": "2026-03-26",
       "fin": "2026-04-01",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Cybermalveillance.gouv.fr publie son rapport d'activité 2025 et les tendances de la menace : plus de 500 000 victimes assistées, soit +20 % par rapport à 2024",
@@ -907,28 +1045,22 @@
           "sensibilite": "standard"
         }
       ],
-      "actualiteRetenue": "Cybermalveillance.gouv.fr publie son rapport d'activité 2025 et les tendances de la menace : plus de 500 000 victimes assistées, soit +20 % par rapport à 2024",
+      "actualiteRetenue": "Le communiqué du 26 mars recense plus de 500 000 victimes ayant demandé assistance en 2025, en hausse de 20 %. Les évolutions mesurent l’activité du dispositif, pas toutes les attaques en France.",
       "dateActualite": "2026-03-26",
-      "dateAttestee": false,
-      "titrePrevu": "Bilan 2025 de Cybermalveillance.gouv.fr : les priorités d’une petite structure",
-      "intention": "bilan Cybermalveillance 2025 TPE",
+      "dateAttestee": true,
+      "titrePrevu": "Bilan cyber 2025 : choisir trois priorités pour votre TPE",
+      "intention": "bilan cyber 2025 : choisir trois priorités pour votre tpe",
       "sensibilite": "standard",
       "sources": [
         {
+          "titre": "Cybermalveillance.gouv.fr publie son rapport d’activité 2025",
+          "organisme": "Cybermalveillance.gouv.fr",
           "url": "https://www.cybermalveillance.gouv.fr/medias/2026/03/CP-RA2026.pdf",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.maire-info.com/cybermalveillance/fraude-au-virement-cyberharcelement-piratage-face-%C3%A0-une-menace-cyber-qui-se-diversifie-les-collectivites-ont-besoin-d'assistance-article-30628",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.vie-publique.fr/files/rapport/pdf/302708.pdf",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.journaldeleconomie.fr/cyberattaques-en-france-en-2025-explosion-des-demandes-daide-que-faire-pour-se-proteger/",
-          "ouverte": false
+          "type": "primaire",
+          "datePublication": "2026-03-26",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le communiqué du 26 mars recense plus de 500 000 victimes ayant demandé assistance en 2025, en hausse de 20 %. Les évolutions mesurent l’activité du dispositif, pas toutes les attaques en France."
         }
       ],
       "lienBrittAssist": "Hygiène numérique au quotidien : accès, sauvegardes, vérification des demandes de paiement.",
@@ -941,24 +1073,45 @@
           "/guides/sauvegarde-des-documents-entreprise"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/fraude-au-faux-rib-et-au-president",
+          "/guides/double-authentification-et-delegation",
+          "/guides/sauvegarde-des-documents-entreprise"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "moyen",
-        "note": "Renvoyer aux guides fraude et double authentification sans les redire."
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/guides/choisir-un-lieu-de-seminaire",
+            "score": 0.13
+          },
+          {
+            "chemin": "/guides/delegation-d-acces-messagerie-et-agenda",
+            "score": 0.11
+          },
+          {
+            "chemin": "/guides/conjoint-qui-fait-l-administratif",
+            "score": 0.11
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S14",
       "debut": "2026-04-02",
       "fin": "2026-04-08",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "La CNIL annonce ses thèmes de contrôle prioritaires pour 2026 : recrutement, répertoire électoral unique et fédérations sportives",
@@ -988,57 +1141,71 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "La CNIL annonce ses thèmes de contrôle prioritaires pour 2026 : recrutement, répertoire électoral unique et fédérations sportives",
+      "actualiteRetenue": "Le programme publié le 3 avril vise notamment le recrutement, en priorité dans les grandes entreprises et cabinets : décisions automatisées, information des candidats et durées de conservation.",
       "dateActualite": "2026-04-03",
-      "dateAttestee": false,
-      "titrePrevu": "Recrutement : la CNIL en fait un thème de contrôle 2026",
-      "intention": "CNIL contrôles 2026 recrutement",
+      "dateAttestee": true,
+      "titrePrevu": "Recrutement : les priorités de contrôle CNIL en 2026",
+      "intention": "recrutement : les priorités de contrôle cnil en 2026",
       "sensibilite": "reglementaire",
       "sources": [
         {
+          "titre": "Contrôles prioritaires 2026",
+          "organisme": "CNIL",
           "url": "https://cnil.fr/fr/controles-prioritaires-2026",
-          "ouverte": false
-        },
-        {
-          "url": "https://cnil.fr/fr/node/168316",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.legisocial.fr/actualites-sociales/7873-controles-2026-cnil-recrutement-ligne-mire.html",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.dpo-consulting.com/fr-fr/blog/priorites-cnil-2026-les-nouveaux-axes-de-controle-a-anticiper-pour-votre-conformite-rgpd",
-          "ouverte": false
+          "type": "primaire",
+          "datePublication": "2026-04-03",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le programme publié le 3 avril vise notamment le recrutement, en priorité dans les grandes entreprises et cabinets : décisions automatisées, information des candidats et durées de conservation."
         }
       ],
       "lienBrittAssist": "Organisation des recrutements et conservation des candidatures.",
       "slug": "cnil-controles-2026-recrutement",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/coordonner-des-entretiens-de-recrutement",
           "/guides/premiere-embauche-formalites-administratives"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/coordonner-des-entretiens-de-recrutement",
+          "/guides/premiere-embauche-formalites-administratives"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": ""
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+            "score": 0.1
+          },
+          {
+            "chemin": "/articles/assurance-professionnelle-contre-expertise-loi-mai-2026",
+            "score": 0.1
+          },
+          {
+            "chemin": "/articles/barometre-france-num-2026-ia-tpe",
+            "score": 0.1
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S15",
       "debut": "2026-04-09",
       "fin": "2026-04-15",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Ouverture du service de déclaration en ligne des revenus 2025, utilisé aussi par les indépendants au régime réel pour leurs cotisations",
@@ -1068,61 +1235,71 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "Ouverture du service de déclaration en ligne des revenus 2025, utilisé aussi par les indépendants au régime réel pour leurs cotisations",
+      "actualiteRetenue": "Le dossier de presse du 9 avril présente l’ouverture de la campagne 2026 sur les revenus 2025 et son calendrier. La déclaration du foyer se distingue des déclarations propres à l’entreprise.",
       "dateActualite": "2026-04-09",
-      "dateAttestee": false,
-      "titrePrevu": "Déclaration des revenus 2025 : ce que l’indépendant prépare dès l’ouverture",
-      "intention": "déclaration revenus 2025 indépendant",
+      "dateAttestee": true,
+      "titrePrevu": "Revenus 2025 : préparer les pièces dès l’ouverture",
+      "intention": "revenus 2025 : préparer les pièces dès l’ouverture",
       "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://www.toutsurmesfinances.com/actualites/a/impots-2026-la-declaration-en-ligne-ouverte-le-9-avril",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.economie.gouv.fr/particuliers/date-reception-avis-impot",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.actu-juridique.fr/fiscalite/fiscal-finances/ouverture-de-la-campagne-de-limpot-sur-le-revenu-2026/",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.comparateurbanque.com/?p=168234",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/11-bis_decla_fusion_fisc_183a196.pdf",
-          "ouverte": false
+          "titre": "Campagne 2026 de l’impôt sur les revenus 2025",
+          "organisme": "DGFiP — Ministère de l’Économie",
+          "url": "https://presse.economie.gouv.fr/campagne-2026-de-limpot-sur-les-revenus-2025/",
+          "type": "primaire",
+          "datePublication": "2026-04-09",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le dossier de presse du 9 avril présente l’ouverture de la campagne 2026 sur les revenus 2025 et son calendrier. La déclaration du foyer se distingue des déclarations propres à l’entreprise."
         }
       ],
       "lienBrittAssist": "Rassemblement des pièces et suivi de l’échéance.",
       "slug": "declaration-revenus-2025-independants-ouverture",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/pieces-pour-l-expert-comptable",
           "/guides/echeancier-administratif-entreprise"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/pieces-pour-l-expert-comptable",
+          "/guides/echeancier-administratif-entreprise"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "eleve",
-        "note": "Recoupe S23 (date limite) : un seul article sur la déclaration ; dates à lire sur impots.gouv.fr."
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/guides/pieces-pour-l-expert-comptable",
+            "score": 0.18
+          },
+          {
+            "chemin": "/guides/preparer-une-reunion",
+            "score": 0.13
+          },
+          {
+            "chemin": "/guides/controle-urssaf-preparer-les-pieces",
+            "score": 0.13
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S16",
       "debut": "2026-04-16",
       "fin": "2026-04-22",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "L'URSSAF met à disposition des guides pratiques pour la déclaration des revenus 2025 des travailleurs indépendants, avec des informations sur l'échéancier et le calcul des cotisations (relais Bpifrance Création)",
@@ -1143,52 +1320,69 @@
           "sensibilite": "standard"
         }
       ],
-      "actualiteRetenue": "L'URSSAF met à disposition des guides pratiques pour la déclaration des revenus 2025 des travailleurs indépendants, avec des informations sur l'échéancier et le calcul des cotisations (relais Bpifrance Création)",
+      "actualiteRetenue": "Le relais du 17 avril annonce des guides Urssaf pour la déclaration des revenus 2025 et des informations sur l’échéancier et le calcul des cotisations.",
       "dateActualite": "2026-04-17",
-      "dateAttestee": false,
-      "titrePrevu": "Après la déclaration : la régularisation des cotisations de l’indépendant",
-      "intention": "régularisation cotisations indépendant URSSAF",
+      "dateAttestee": true,
+      "titrePrevu": "Indépendants : rapprocher les cotisations et les revenus",
+      "intention": "indépendants : rapprocher les cotisations et les revenus",
       "sensibilite": "reglementaire",
       "sources": [
         {
+          "titre": "Déclaration de revenus : l’Urssaf accompagne les indépendants",
+          "organisme": "Bpifrance Création",
           "url": "https://bpifrance-creation.fr/entrepreneur/actualites/declaration-revenus-lurssaf-accompagne-independants",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.economie.gouv.fr/entreprises/limpot-sur-les-benefices-ir-et/independants-comprendre-la-declaration-sociale-et",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/11-bis_decla_fusion_fisc_183a196.pdf",
-          "ouverte": false
+          "type": "primaire",
+          "datePublication": "2026-04-17",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le relais du 17 avril annonce des guides Urssaf pour la déclaration des revenus 2025 et des informations sur l’échéancier et le calcul des cotisations."
         }
       ],
       "lienBrittAssist": "Suivi de l’échéancier URSSAF.",
       "slug": "regularisation-cotisations-independants-2026",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/echeancier-administratif-entreprise"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/echeancier-administratif-entreprise"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "moyen",
-        "note": "Source connue par relais Bpifrance seulement ; complémentaire de S15."
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/declaration-revenus-2025-independants-ouverture",
+            "score": 0.11
+          },
+          {
+            "chemin": "/articles/declaration-revenus-date-limite-vendee-2026",
+            "score": 0.1
+          },
+          {
+            "chemin": "/guides/assistante-independante-ou-salariee",
+            "score": 0
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S17",
       "debut": "2026-04-23",
       "fin": "2026-04-29",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Facturation électronique : selon le baromètre OpinionWay pour l'Ordre des experts-comptables et l'ECMA (7e vague), 38 % des entreprises n'ont encore engagé aucune action à quatre mois de l'obligation de réception du 1er septembre 2026",
@@ -1209,56 +1403,71 @@
           "sensibilite": "standard"
         }
       ],
-      "actualiteRetenue": "Facturation électronique : selon le baromètre OpinionWay pour l'Ordre des experts-comptables et l'ECMA (7e vague), 38 % des entreprises n'ont encore engagé aucune action à quatre mois de l'obligation de réception du 1er septembre 2026",
-      "dateActualite": "2026-04-29",
-      "dateAttestee": false,
-      "titrePrevu": "Facturation électronique : un tiers des entreprises n’a encore rien engagé",
-      "intention": "baromètre facturation électronique avril 2026",
-      "sensibilite": "reglementaire",
+      "actualiteRetenue": "La publication du 23 avril recense environ 113 000 créations en mars en France, en hausse de 18 %, et signale une dynamique particulièrement intense en Pays de la Loire. Il ne s’agit pas d’un chiffre propre à la Vendée.",
+      "dateActualite": "2026-04-23",
+      "dateAttestee": true,
+      "titrePrevu": "Créations en Pays de la Loire : préparer le démarrage",
+      "intention": "créations en pays de la loire : préparer le démarrage",
+      "sensibilite": "standard",
       "sources": [
         {
-          "url": "https://www.legifiscal.fr/actualites-fiscales/4560-facturation-electronique-38-entreprises-ne-sont-pretes.html",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.lejournaldesentreprises.com/article/facturation-electronique-38-des-entreprises-ne-sont-pas-pretes-mais-letat-fera-preuve-de-tolerance-2146577",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.previssima.fr/actualite/facturation-electronique-pres-de-4-entreprises-sur-10-en-retard-a-lapproche-de-lecheance.html",
-          "ouverte": false
-        },
-        {
-          "url": "https://questions.assemblee-nationale.fr/q17/17-15027QE.htm",
-          "ouverte": false
+          "titre": "Les créations d’entreprise en France et dans les régions en mars 2026",
+          "organisme": "Bpifrance Création — Observatoire de la création d’entreprise",
+          "url": "https://bpifrance-creation.fr/entrepreneur/actualites/creations-dentreprises-mars-2026",
+          "type": "primaire",
+          "datePublication": "2026-04-23",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La publication du 23 avril recense environ 113 000 créations en mars en France, en hausse de 18 %, et signale une dynamique particulièrement intense en Pays de la Loire. Il ne s’agit pas d’un chiffre propre à la Vendée."
         }
       ],
       "lienBrittAssist": "Plan d’action de mise en conformité.",
-      "slug": "barometre-facturation-electronique-avril-2026",
-      "ficheRedigee": false,
+      "slug": "creations-entreprises-pays-loire-mars-2026",
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
-          "/guides/facturation-electronique-tpe"
+          "/guides/administratif-a-la-creation-d-entreprise",
+          "/guides/dossier-permanent-entreprise"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/administratif-a-la-creation-d-entreprise",
+          "/guides/dossier-permanent-entreprise"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "eleve",
-        "note": "Septième sujet facturation de l’année : alternative à étudier (créations d’entreprises en Pays de la Loire, 23 avril)."
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+            "score": 0.11
+          },
+          {
+            "chemin": "/articles/tva-fin-regime-simplifie-1er-janvier-2027",
+            "score": 0.11
+          },
+          {
+            "chemin": "/articles/cnil-recommandation-proxy-filtrage-web",
+            "score": 0.1
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S18",
       "debut": "2026-04-30",
       "fin": "2026-05-06",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Décret n° 2026-340 du 30 avril 2026 relatif aux formalités des entreprises, publié au JO du 5 mai 2026 et entré en vigueur le 6 mai 2026",
@@ -1279,32 +1488,22 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "Décret n° 2026-340 du 30 avril 2026 relatif aux formalités des entreprises, publié au JO du 5 mai 2026 et entré en vigueur le 6 mai 2026",
+      "actualiteRetenue": "Publié au Journal officiel le 5 mai, applicable le lendemain, le décret encadre notamment la copie des actes, l’origine d’un fonds transmis et la publicité des cessions de parts de sociétés civiles.",
       "dateActualite": "2026-05-06",
-      "dateAttestee": false,
-      "titrePrevu": "Formalités : ce que change le décret du 30 avril 2026 pour les sociétés civiles et les reprises",
-      "intention": "décret 2026-340 formalités entreprises",
+      "dateAttestee": true,
+      "titrePrevu": "Formalités : le décret du 30 avril entre en vigueur",
+      "intention": "formalités : le décret du 30 avril entre en vigueur",
       "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://entreprendre.service-public.gouv.fr/actualites/A18904",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.lemondedudroit.fr/affaires/273-societes/104200-formalites-des-entreprises-2.html",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.labase-lextenso.fr/bulletin-joly-societes/2026-n6/publication-d-un-decret-relatif-aux-formalites-des-entreprises-BJS204p9",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.labase-lextenso.fr/l-essentiel-droit-des-contrats/2026-n7/decret-n-2026-340-du-30-avril-2026-relatif-aux-formalites-des-entreprises-DCO203p5",
-          "ouverte": false
-        },
-        {
-          "url": "https://presseagence.fr/paris-decret-du-30-avril-2026-les-evolutions-en-matiere-de-formalites-dentreprise/",
-          "ouverte": false
+          "titre": "Décret n° 2026-340 du 30 avril 2026 relatif aux formalités des entreprises",
+          "organisme": "Journal officiel — Légifrance",
+          "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054027039",
+          "type": "primaire",
+          "datePublication": "2026-05-05",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Publié au Journal officiel le 5 mai, applicable le lendemain, le décret encadre notamment la copie des actes, l’origine d’un fonds transmis et la publicité des cessions de parts de sociétés civiles."
         }
       ],
       "lienBrittAssist": "Préparation des pièces de formalités.",
@@ -1316,24 +1515,44 @@
           "/guides/reprise-d-entreprise-administratif"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/dossier-permanent-entreprise",
+          "/guides/reprise-d-entreprise-administratif"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": ""
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/guides/delais-de-paiement-et-penalites-de-retard",
+            "score": 0.08
+          },
+          {
+            "chemin": "/guides/deplacement-a-l-etranger-formalites",
+            "score": 0.08
+          },
+          {
+            "chemin": "/guides/premiere-embauche-formalites-administratives",
+            "score": 0.08
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S19",
       "debut": "2026-05-07",
       "fin": "2026-05-13",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "AI Act : accord politique provisoire entre le Parlement européen et le Conseil sur le « Digital Omnibus » IA, qui reporte des échéances du règlement européen sur l'IA",
@@ -1354,61 +1573,71 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "AI Act : accord politique provisoire entre le Parlement européen et le Conseil sur le « Digital Omnibus » IA, qui reporte des échéances du règlement européen sur l'IA",
+      "actualiteRetenue": "Le communiqué du 7 mai annonce un accord provisoire sur la simplification de règles de l’IA, avec des échéances proposées pour le haut risque. Il précise que l’adoption formelle reste nécessaire.",
       "dateActualite": "2026-05-07",
-      "dateAttestee": false,
-      "titrePrevu": "AI Act : ce que l’accord du 7 mai 2026 reporte pour les utilisateurs d’IA",
-      "intention": "AI Act report omnibus",
+      "dateAttestee": true,
+      "titrePrevu": "AI Act : suivre l’accord provisoire annoncé en mai",
+      "intention": "ai act : suivre l’accord provisoire annoncé en mai",
       "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://www.whitecase.com/insight-alert/eu-agrees-digital-omnibus-deal-simplify-ai-rules",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.mondaq.com/ireland/new-technology/1786126/provisional-agreement-reached-on-ai-digital-omnibus-regulation",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.simmons-simmons.com/en/publications/cmoveo6ke00icuxskpgueb0od/ai-omnibus-update",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.banquedesterritoires.fr/ai-act-des-delais-supplementaires-pour-la-mise-en-conformite-des-ia-haut-risque",
-          "ouverte": false
-        },
-        {
-          "url": "https://verifywise.ai/fr/blog/eu-ai-act-omnibus-what-changed",
-          "ouverte": false
+          "titre": "Artificial Intelligence: Council and Parliament agree to simplify and streamline rules",
+          "organisme": "Conseil de l’Union européenne",
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/",
+          "type": "primaire",
+          "datePublication": "2026-05-07",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le communiqué du 7 mai annonce un accord provisoire sur la simplification de règles de l’IA, avec des échéances proposées pour le haut risque. Il précise que l’adoption formelle reste nécessaire."
         }
       ],
       "lienBrittAssist": "Inventaire des outils d’IA utilisés.",
       "slug": "ai-act-accord-omnibus-mai-2026",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/assistante-externalisee-et-ia",
           "/guides/ia-generative-et-donnees-confidentielles"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/assistante-externalisee-et-ia",
+          "/guides/ia-generative-et-donnees-confidentielles"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "eleve",
-        "note": "Recoupe S24 et S31 : un seul article sur le calendrier de l’AI Act. Pas de communiqué officiel vu."
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/place-marches-publics-elargissement-juin-2026",
+            "score": 0.11
+          },
+          {
+            "chemin": "/guides/suivi-des-contrats-et-abonnements",
+            "score": 0.08
+          },
+          {
+            "chemin": "/guides/suivi-demandes-assistante-externalisee",
+            "score": 0.07
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S20",
       "debut": "2026-05-14",
       "fin": "2026-05-20",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "La CNIL publie son rapport annuel 2025 : 20 150 plaintes (record), 323 contrôles, 83 sanctions pour près de 487 M€",
@@ -1429,57 +1658,71 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "La CNIL publie son rapport annuel 2025 : 20 150 plaintes (record), 323 contrôles, 83 sanctions pour près de 487 M€",
+      "actualiteRetenue": "La CNIL présente son bilan 2025 le 18 mai 2026, avec plus de 20 000 plaintes, les enjeux de violations de données et un renforcement des contrôles de sécurité en 2026.",
       "dateActualite": "2026-05-18",
-      "dateAttestee": false,
-      "titrePrevu": "Rapport annuel 2025 de la CNIL : les plaintes, et ce qu’une petite structure en retient",
-      "intention": "rapport annuel CNIL 2025",
+      "dateAttestee": true,
+      "titrePrevu": "Rapport CNIL 2025 : organiser une revue des données",
+      "intention": "rapport cnil 2025 : organiser une revue des données",
       "sensibilite": "reglementaire",
       "sources": [
         {
+          "titre": "Rapport annuel 2025 : une mobilisation face aux défis numériques",
+          "organisme": "CNIL",
           "url": "https://cnil.fr/fr/rapport-annuel-2025",
-          "ouverte": false
-        },
-        {
-          "url": "https://cnil.fr/sites/default/files/2026-05/rapport_annuel_2025.pdf",
-          "ouverte": false
-        },
-        {
-          "url": "https://cnil.fr/en/annual-report-2025",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.leto.legal/news/cnil-rapport-annuel-2025-bilan-controles-cybersecurite",
-          "ouverte": false
+          "type": "primaire",
+          "datePublication": "2026-05-18",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La CNIL présente son bilan 2025 le 18 mai 2026, avec plus de 20 000 plaintes, les enjeux de violations de données et un renforcement des contrôles de sécurité en 2026."
         }
       ],
       "lienBrittAssist": "Traitement des demandes d’accès et d’effacement.",
       "slug": "rapport-annuel-cnil-2025-petites-structures",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/tenir-son-fichier-clients-a-jour",
           "/guides/rgpd-sous-traitance-assistante-externalisee"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/tenir-son-fichier-clients-a-jour",
+          "/guides/rgpd-sous-traitance-assistante-externalisee"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": ""
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/guides/organiser-l-administratif-de-son-entreprise",
+            "score": 0.09
+          },
+          {
+            "chemin": "/guides/organiser-un-deplacement-professionnel",
+            "score": 0.09
+          },
+          {
+            "chemin": "/guides/organiser-un-seminaire-d-equipe",
+            "score": 0.09
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S21",
       "debut": "2026-05-21",
       "fin": "2026-05-27",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Publication au Journal officiel de la loi n° 2026-403 du 26 mai 2026 de simplification de la vie économique, après la décision du Conseil constitutionnel n° 2026-903 DC du 21 mai 2026 (censure partielle).",
@@ -1500,64 +1743,71 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "Publication au Journal officiel de la loi n° 2026-403 du 26 mai 2026 de simplification de la vie économique, après la décision du Conseil constitutionnel n° 2026-903 DC du 21 mai 2026 (censure partielle).",
+      "actualiteRetenue": "L’article 31 impose à l’assureur d’informer l’assuré du droit de demander une contre-expertise par un expert de son choix, aux frais de l’assuré. Les autres mesures d’assurance ont leurs propres conditions d’application.",
       "dateActualite": "2026-05-27",
-      "dateAttestee": false,
-      "titrePrevu": "Loi de simplification du 26 mai 2026 : les contrats à revoir",
-      "intention": "loi simplification vie économique 2026",
+      "dateAttestee": true,
+      "titrePrevu": "Assurance pro : le droit à la contre-expertise en 2026",
+      "intention": "assurance pro : le droit à la contre-expertise en 2026",
       "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://www.labase-lextenso.fr/breves/jo-publication-de-la-loi-sur-la-simplification-de-la-vie-economique-BREVEBO425",
-          "ouverte": false
-        },
-        {
-          "url": "https://lexisveille.fr/simplification-de-la-vie-economique-la-loi-est-publiee",
-          "ouverte": false
-        },
-        {
-          "url": "https://hayot-expertise.fr/blog/loi-simplification-vie-economique-mesures-tpe-pme",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.actu-juridique.fr/affaires/loi-de-simplification-de-la-vie-economique-promesse-tenue-ou-catalogue-de-bonnes-intentions/",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.optionfinance.fr/entreprise-expertise/baux-commerciaux-ce-que-la-loi-de-simplification-change-vraiment.html",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.info.gouv.fr/actualite/loi-de-simplification-de-la-vie-economique-ce-qui-change-pour-les-entreprises",
-          "ouverte": false
+          "titre": "Loi n° 2026-403 du 26 mai 2026 de simplification de la vie économique — article 31",
+          "organisme": "Journal officiel — Légifrance",
+          "url": "https://www.legifrance.gouv.fr/eli/loi/2026/5/26/ECOM2409377L/jo/texte",
+          "type": "primaire",
+          "datePublication": "2026-05-27",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "L’article 31 impose à l’assureur d’informer l’assuré du droit de demander une contre-expertise par un expert de son choix, aux frais de l’assuré. Les autres mesures d’assurance ont leurs propres conditions d’application."
         }
       ],
       "lienBrittAssist": "Revue des contrats (bail, banque, assurance).",
-      "slug": "loi-simplification-vie-economique-mai-2026",
-      "ficheRedigee": false,
+      "slug": "assurance-professionnelle-contre-expertise-loi-mai-2026",
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
+          "/guides/declarer-un-sinistre-professionnel",
           "/guides/suivi-des-contrats-et-abonnements"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/declarer-un-sinistre-professionnel",
+          "/guides/suivi-des-contrats-et-abonnements"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": "Vérifier les articles censurés et les mesures en attente de décret."
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+            "score": 0.1
+          },
+          {
+            "chemin": "/articles/barometre-france-num-2026-ia-tpe",
+            "score": 0.1
+          },
+          {
+            "chemin": "/articles/cnil-controles-2026-recrutement",
+            "score": 0.1
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S22",
       "debut": "2026-05-28",
       "fin": "2026-06-03",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Entrée en vigueur de la revalorisation du Smic à 12,31 € brut de l'heure (1 867,02 € brut mensuels pour 35 h).",
@@ -1587,56 +1837,69 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "Entrée en vigueur de la revalorisation du Smic à 12,31 € brut de l'heure (1 867,02 € brut mensuels pour 35 h).",
+      "actualiteRetenue": "La page datée du 1er juin 2026 indique un Smic horaire brut de 12,31 euros. Ce montant horaire ne permet pas à lui seul de déterminer un salaire net ou le calcul d’un dossier individuel.",
       "dateActualite": "2026-06-01",
-      "dateAttestee": false,
-      "titrePrevu": "Smic au 1er juin 2026 : la check-list de paie de l’employeur",
-      "intention": "Smic 1er juin 2026",
+      "dateAttestee": true,
+      "titrePrevu": "Smic au 1er juin 2026 : vérifier les pièces de paie",
+      "intention": "smic au 1er juin 2026 : vérifier les pièces de paie",
       "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://www.info.gouv.fr/index.php/actualite/ce-qui-change-en-juin-2026",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.editions-tissot.fr/actualite/droit-du-travail/smic",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.voltaire-avocats.com/fr/revalorisation-du-smic-241-au-1er-juin-2026/",
-          "ouverte": false
-        },
-        {
-          "url": "https://tpeactu.fr/2026/05/26/tout-ce-qui-change-en-juin-2026-smic-prime-carburant-salaires/",
-          "ouverte": false
+          "titre": "Le Smic : montant et plafond pour le calcul des indemnités journalières",
+          "organisme": "Assurance Maladie — ameli.fr",
+          "url": "https://www.ameli.fr/entreprise/vos-salaries/montants-reference/smic",
+          "type": "primaire",
+          "datePublication": "2026-06-01",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La page datée du 1er juin 2026 indique un Smic horaire brut de 12,31 euros. Ce montant horaire ne permet pas à lui seul de déterminer un salaire net ou le calcul d’un dossier individuel."
         }
       ],
       "lienBrittAssist": "Contrôle des bulletins et transmission au gestionnaire de paie.",
       "slug": "smic-juin-2026-checklist-employeur",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/premiere-embauche-formalites-administratives"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/premiere-embauche-formalites-administratives"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": ""
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/acre-2026-exoneration-25-pour-cent",
+            "score": 0.18
+          },
+          {
+            "chemin": "/articles/declaration-revenus-date-limite-vendee-2026",
+            "score": 0.18
+          },
+          {
+            "chemin": "/articles/ai-act-transparence-chatbot-2-aout-2026",
+            "score": 0.09
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S23",
       "debut": "2026-06-04",
       "fin": "2026-06-10",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Date limite de la déclaration de revenus 2025 en ligne pour les départements 55 à 976, dont la Vendée (jeudi 4 juin 2026, 23h59). Pour les indépendants, cette déclaration unifiée sert aussi au calcul des cotisations sociales (DSI supprimée).",
@@ -1657,60 +1920,69 @@
           "sensibilite": "standard"
         }
       ],
-      "actualiteRetenue": "Date limite de la déclaration de revenus 2025 en ligne pour les départements 55 à 976, dont la Vendée (jeudi 4 juin 2026, 23h59). Pour les indépendants, cette déclaration unifiée sert aussi au calcul des cotisations sociales (DSI supprimée).",
+      "actualiteRetenue": "Le calendrier publié le 8 avril fixe au 4 juin à 23 h 59 la limite en ligne pour les départements 55 à 974 et 976, dont la Vendée (85). La date papier est distincte.",
       "dateActualite": "2026-06-04",
-      "dateAttestee": false,
-      "titrePrevu": "Déclaration de revenus : le 4 juin, dernière date en Vendée",
-      "intention": "date limite déclaration revenus Vendée 2026",
+      "dateAttestee": true,
+      "titrePrevu": "Revenus en Vendée : la date limite du 4 juin 2026",
+      "intention": "revenus en vendée : la date limite du 4 juin 2026",
       "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://www.moneyvox.fr/impot/actualites/109054/declaration-impots-2026-ultime-date-limite-ce-jeudi-4-juin-pour-paris-lille-ou-strasbourg",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.quechoisir.org/actualite-declaration-des-revenus-2025-les-dates-limites-sont-fixees-n175534/",
-          "ouverte": false
-        },
-        {
-          "url": "https://propulsebyca.fr/actualites/ouverture-declaration-impots-2026",
-          "ouverte": false
-        },
-        {
-          "url": "https://bourseinside.fr/patrimoine/declaration-dimpots-2026-ces-dates-limites-par-departement-a-ne-surtout-pas-rater-entre-le-19-mai-et-le-4-juin-sous-peine-de-lourdes-penalites/",
-          "ouverte": false
-        },
-        {
-          "url": "https://static.impots.gouv.fr/tdir/static/2026-03-30T16:36:08Z/aide/notices/notices2025/2042DRI_TI/notice2042DRI_TI.pdf",
-          "ouverte": false
+          "titre": "Déclaration des revenus de 2025 : quelle est la date limite dans votre département ?",
+          "organisme": "DILA — Service Public",
+          "url": "https://www.service-public.gouv.fr/particuliers/actualites/A15597?lang=fr",
+          "type": "primaire",
+          "datePublication": "2026-04-08",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le calendrier publié le 8 avril fixe au 4 juin à 23 h 59 la limite en ligne pour les départements 55 à 974 et 976, dont la Vendée (85). La date papier est distincte."
         }
       ],
       "lienBrittAssist": "Rappel d’échéance.",
       "slug": "declaration-revenus-date-limite-vendee-2026",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/echeancier-administratif-entreprise"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/echeancier-administratif-entreprise"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "eleve",
-        "note": "Recoupe S15 : à ne publier que si S15 ne l’est pas, sinon SOURCES_INSUFFISANTES."
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/acre-2026-exoneration-25-pour-cent",
+            "score": 0.18
+          },
+          {
+            "chemin": "/articles/smic-juin-2026-checklist-employeur",
+            "score": 0.18
+          },
+          {
+            "chemin": "/articles/regularisation-cotisations-independants-2026",
+            "score": 0.1
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S24",
       "debut": "2026-06-11",
       "fin": "2026-06-17",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Le Parlement européen adopte en première lecture (16 juin 2026) l'« omnibus numérique sur l'IA » qui reporte les obligations des systèmes d'IA à haut risque de l'AI Act ; adoption définitive par le Conseil encore attendue à cette date.",
@@ -1731,45 +2003,69 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "Mise à disposition annoncée par la DGFiP, « à partir de la mi-juin 2026 », d'une consultation hors ligne de l'annuaire de la facturation électronique (fichier CSV jusqu'à 5 000 SIRET).",
-      "dateActualite": "2026-06-15",
-      "dateAttestee": false,
-      "titrePrevu": "Annuaire de la facturation électronique : la consultation hors ligne",
-      "intention": "annuaire facturation électronique fichier CSV",
+      "actualiteRetenue": "La DAE présente le 11 juin un élargissement de PLACE aux établissements publics de l’État, de santé et organismes de sécurité sociale d’ici 2030, selon un calendrier fixé par décret. L’usage par les collectivités reste facultatif.",
+      "dateActualite": "2026-06-11",
+      "dateAttestee": true,
+      "titrePrevu": "Marchés publics : suivre l’élargissement de PLACE",
+      "intention": "marchés publics : suivre l’élargissement de place",
       "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://www.comparatif-facture-electronique.fr/consultation-annuaire-hors-ligne-juin-2026/",
-          "ouverte": false
+          "titre": "Loi de simplification de la vie économique : un élargissement de l’utilisation de la plateforme PLACE",
+          "organisme": "Direction des Achats de l’État",
+          "url": "https://www.economie.gouv.fr/dae/loi-de-simplification-de-la-vie-economique-un-elargissement-de-lutilisation-de-la-plateforme-place",
+          "type": "primaire",
+          "datePublication": "2026-06-11",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La DAE présente le 11 juin un élargissement de PLACE aux établissements publics de l’État, de santé et organismes de sécurité sociale d’ici 2030, selon un calendrier fixé par décret. L’usage par les collectivités reste facultatif."
         }
       ],
       "lienBrittAssist": "Vérification des adresses de facturation des clients.",
-      "slug": "annuaire-facturation-electronique-consultation-csv",
-      "ficheRedigee": false,
+      "slug": "place-marches-publics-elargissement-juin-2026",
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
-          "/guides/facturation-electronique-tpe",
-          "/guides/tenir-son-fichier-clients-a-jour"
+          "/guides/appel-d-offres-dossier-de-candidature"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/appel-d-offres-dossier-de-candidature"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "moyen",
-        "note": "Candidat de confiance faible ; le candidat principal (vote AI Act du 16 juin) recoupe S19 et S31."
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/marches-publics-criteres-environnementaux-aout-2026",
+            "score": 0.22
+          },
+          {
+            "chemin": "/articles/ai-act-accord-omnibus-mai-2026",
+            "score": 0.11
+          },
+          {
+            "chemin": "/guides/suivi-des-contrats-et-abonnements",
+            "score": 0.08
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S25",
       "debut": "2026-06-18",
       "fin": "2026-06-24",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Alerte de la CNIL : de faux organismes (« Ligue de défense des données personnelles », « Association de protection des données personnelles ») contactent les victimes de fuites de données en se réclamant parfois de la CNIL.",
@@ -1799,24 +2095,22 @@
           "sensibilite": "standard"
         }
       ],
-      "actualiteRetenue": "Alerte de la CNIL : de faux organismes (« Ligue de défense des données personnelles », « Association de protection des données personnelles ») contactent les victimes de fuites de données en se réclamant parfois de la CNIL.",
+      "actualiteRetenue": "La CNIL alerte le 24 juin sur de faux organismes proposant un accompagnement après une fuite de données. Des informations exactes dérobées peuvent être utilisées pour rendre le contact crédible.",
       "dateActualite": "2026-06-24",
-      "dateAttestee": false,
-      "titrePrevu": "Après une fuite de données, la seconde arnaque : l’alerte de la CNIL",
-      "intention": "faux organisme fuite de données CNIL alerte",
+      "dateAttestee": true,
+      "titrePrevu": "Fuite de données : reconnaître les faux accompagnateurs",
+      "intention": "fuite de données : reconnaître les faux accompagnateurs",
       "sensibilite": "standard",
       "sources": [
         {
-          "url": "https://cnil.fr/fr/vigilance-accompagnement-violation-de-donnees",
-          "ouverte": false
-        },
-        {
-          "url": "https://cnil.fr/fr/node/168648",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.leto.legal/news/cnil-alerte-arnaques-victimes-violations-donnees-2026",
-          "ouverte": false
+          "titre": "Victimes de violations de données : restez vigilants face aux offres d’accompagnement",
+          "organisme": "CNIL",
+          "url": "https://www.cnil.fr/fr/vigilance-accompagnement-violation-de-donnees",
+          "type": "primaire",
+          "datePublication": "2026-06-24",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La CNIL alerte le 24 juin sur de faux organismes proposant un accompagnement après une fuite de données. Des informations exactes dérobées peuvent être utilisées pour rendre le contact crédible."
         }
       ],
       "lienBrittAssist": "Tri du courrier et des courriels, consignes à l’accueil.",
@@ -1828,24 +2122,44 @@
           "/guides/incident-de-securite-chez-un-prestataire"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/fraude-au-faux-rib-et-au-president",
+          "/guides/incident-de-securite-chez-un-prestataire"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "moyen",
-        "note": "Distinct des guides fraude au faux RIB et au président."
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/cnil-facturation-electronique-donnees-personnelles",
+            "score": 0.1
+          },
+          {
+            "chemin": "/guides/fraude-au-faux-rib-et-au-president",
+            "score": 0.09
+          },
+          {
+            "chemin": "/articles/cybermois-2026-suivi-fuite-donnees",
+            "score": 0.09
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S26",
       "debut": "2026-06-25",
       "fin": "2026-07-01",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Entrée en vigueur du congé supplémentaire de naissance, ouvert aussi aux travailleurs indépendants : de un à deux mois par parent, après les autres congés.",
@@ -1875,57 +2189,81 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "Entrée en vigueur du congé supplémentaire de naissance, ouvert aussi aux travailleurs indépendants : de un à deux mois par parent, après les autres congés.",
+      "actualiteRetenue": "Le panorama publié le 24 juin annonce la mise en œuvre du congé supplémentaire de naissance au 1er juillet. La FAQ officielle du 3 juillet détaille les démarches des indépendants et la cessation d’activité.",
       "dateActualite": "2026-07-01",
-      "dateAttestee": false,
-      "titrePrevu": "Congé de naissance au 1er juillet 2026 : l’indépendant aussi",
-      "intention": "congé de naissance indépendant",
+      "dateAttestee": true,
+      "titrePrevu": "Congé de naissance : préparer l’absence d’un indépendant",
+      "intention": "congé de naissance : préparer l’absence d’un indépendant",
       "sensibilite": "reglementaire",
       "sources": [
         {
+          "titre": "Ce qui change en juillet 2026",
+          "organisme": "DILA — Service Public",
           "url": "https://www.service-public.gouv.fr/particuliers/actualites/A18377?lang=fr",
-          "ouverte": false
+          "type": "primaire",
+          "datePublication": "2026-06-24",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le panorama publié le 24 juin annonce la mise en œuvre du congé supplémentaire de naissance au 1er juillet. La FAQ officielle du 3 juillet détaille les démarches des indépendants et la cessation d’activité."
         },
         {
-          "url": "https://www.info.gouv.fr/index.php/actualite/ce-qui-change-en-juillet-2026",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.legisocial.fr/actualites-sociales/7969-conge-supplementaire-naissance-decrets-sont-publies.html",
-          "ouverte": false
-        },
-        {
-          "url": "https://anfe.fr/wp-content/uploads/2026/07/conseil-jur-mars-2026.pdf",
-          "ouverte": false
+          "titre": "Congé supplémentaire de naissance : les réponses à toutes vos questions",
+          "organisme": "DILA — Service Public",
+          "url": "https://www.service-public.gouv.fr/particuliers/actualites/A18982?lang=fr",
+          "type": "officielle",
+          "datePublication": "2026-07-03",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La FAQ, postérieure au démarrage, précise les demandes des indépendants, la cessation temporaire d’activité et les conditions d’indemnisation. Elle est utilisée pour actualiser cette rétrospective."
         }
       ],
       "lienBrittAssist": "Continuité de l’activité pendant l’absence du dirigeant.",
       "slug": "conge-de-naissance-independants-juillet-2026",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/preparer-son-absence",
           "/guides/dirigeant-indisponible-du-jour-au-lendemain"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/preparer-son-absence",
+          "/guides/dirigeant-indisponible-du-jour-au-lendemain"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": ""
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/guides/preparer-son-absence",
+            "score": 0.15
+          },
+          {
+            "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+            "score": 0.11
+          },
+          {
+            "chemin": "/articles/tva-fin-regime-simplifie-1er-janvier-2027",
+            "score": 0.11
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S27",
       "debut": "2026-07-02",
       "fin": "2026-07-08",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "La CNIL annonce 23 nouvelles sanctions prononcées depuis janvier 2026 en procédure simplifiée, pour 133 750 € d'amendes au total (vidéosurveillance des salariés, cookies, droits d'accès ou d'effacement non respectés, défaut de coopération).",
@@ -1946,56 +2284,69 @@
           "sensibilite": "standard"
         }
       ],
-      "actualiteRetenue": "La CNIL annonce 23 nouvelles sanctions prononcées depuis janvier 2026 en procédure simplifiée, pour 133 750 € d'amendes au total (vidéosurveillance des salariés, cookies, droits d'accès ou d'effacement non respectés, défaut de coopération).",
+      "actualiteRetenue": "Le bilan du 6 juillet décrit 23 sanctions simplifiées depuis janvier, notamment sur la surveillance des salariés, les cookies, les droits des personnes et la coopération avec la CNIL.",
       "dateActualite": "2026-07-06",
-      "dateAttestee": false,
-      "titrePrevu": "Sanctions simplifiées de la CNIL : les erreurs relevées chez les petites structures",
-      "intention": "sanctions simplifiées CNIL 2026",
+      "dateAttestee": true,
+      "titrePrevu": "Sanctions CNIL de juillet : vérifier les points courants",
+      "intention": "sanctions cnil de juillet : vérifier les points courants",
       "sensibilite": "reglementaire",
       "sources": [
         {
+          "titre": "23 nouvelles sanctions dans le cadre de la procédure simplifiée",
+          "organisme": "CNIL",
           "url": "https://cnil.fr/fr/23-nouvelles-sanctions-simplifiees",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.journaldeleconomie.fr/?p=48067",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.economiematin.fr/?p=227091",
-          "ouverte": false
-        },
-        {
-          "url": "https://captaincompliance.com/education/cnil-steps-up-enforcement-with-23-new-sanctions-under-simplified-procedure/",
-          "ouverte": false
+          "type": "primaire",
+          "datePublication": "2026-07-06",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le bilan du 6 juillet décrit 23 sanctions simplifiées depuis janvier, notamment sur la surveillance des salariés, les cookies, les droits des personnes et la coopération avec la CNIL."
         }
       ],
       "lienBrittAssist": "Réponse aux demandes d’accès, suivi des courriers de la CNIL.",
       "slug": "cnil-sanctions-simplifiees-juillet-2026",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/confidentialite-acces-et-outils"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/confidentialite-acces-et-outils"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "moyen",
-        "note": "Proche de S20 (CNIL) : angle « erreurs concrètes »."
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/ai-act-transparence-chatbot-2-aout-2026",
+            "score": 0.09
+          },
+          {
+            "chemin": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+            "score": 0.09
+          },
+          {
+            "chemin": "/articles/cnil-controles-2026-recrutement",
+            "score": 0.09
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S28",
       "debut": "2026-07-09",
       "fin": "2026-07-15",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Facturation électronique : la DGFiP publie le 10 juillet un « guide pratique de démarrage au 1er septembre 2026 » (29 questions), et le ministre David Amiel annonce une phase d'accompagnement sans sanction au démarrage pour les entreprises de bonne foi, sans report de l'obligation.",
@@ -2016,61 +2367,71 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "Facturation électronique : la DGFiP publie le 10 juillet un « guide pratique de démarrage au 1er septembre 2026 » (29 questions), et le ministre David Amiel annonce une phase d'accompagnement sans sanction au démarrage pour les entreprises de bonne foi, sans report de l'obligation.",
-      "dateActualite": "2026-07-10",
-      "dateAttestee": false,
-      "titrePrevu": "Facturation électronique : tolérance ne veut pas dire report",
-      "intention": "facturation électronique tolérance bonne foi",
+      "actualiteRetenue": "La recommandation publiée le 14 avril prévoit, pour les adresses collectées avant sa publication, une information claire et une opposition facile dans un délai de trois mois. Le 14 juillet est le repère calendaire calculé à partir de ce délai.",
+      "dateActualite": "2026-07-14",
+      "dateAttestee": true,
+      "titrePrevu": "Pixels d’email : le repère des trois mois en juillet",
+      "intention": "pixels d’email : le repère des trois mois en juillet",
       "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://bpifrance-creation.fr/entrepreneur/actualites/facturation-electronique-guide-pratique-demarrage",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.ghr.fr/reglementation-fiscalite/1er-septembre-2026-facturation-electronique-publication-par-la-dgfip-du-guide",
-          "ouverte": false
-        },
-        {
-          "url": "https://dext.com/fr/ressources/blog-actualite-comptable/single/demarrage-facturation-electronique-recommandations-dg-fi-p",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.moneyvox.fr/votre-argent/actualites/109667/facturation-electronique-obligatoire-qui-sera-exonere-de-sanction-au-1er-septembre-2026",
-          "ouverte": false
-        },
-        {
-          "url": "https://communityhub.sage.com/fr/sage-x3/f/annonces/272620/facture-electronique---une-phase-d-accompagnement-annoncee-pour-2026",
-          "ouverte": false
+          "titre": "Pixels de suivi dans les courriers électroniques : la CNIL publie ses recommandations pour mieux protéger la vie privée",
+          "organisme": "CNIL",
+          "url": "https://www.cnil.fr/fr/recommandation-pixel-suivi-courriels",
+          "type": "primaire",
+          "datePublication": "2026-04-14",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La recommandation publiée le 14 avril prévoit, pour les adresses collectées avant sa publication, une information claire et une opposition facile dans un délai de trois mois. Le 14 juillet est le repère calendaire calculé à partir de ce délai."
         }
       ],
       "lienBrittAssist": "Dossier de preuves de mise en conformité.",
-      "slug": "facturation-electronique-tolerance-bonne-foi",
-      "ficheRedigee": false,
+      "slug": "pixels-emails-anciennes-listes-delai-juillet-2026",
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
-          "/guides/facturation-electronique-tpe",
-          "/guides/circuit-des-factures-fournisseurs"
+          "/guides/tenir-son-fichier-clients-a-jour",
+          "/guides/reponses-types-emails"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/tenir-son-fichier-clients-a-jour",
+          "/guides/reponses-types-emails"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "eleve",
-        "note": "Portée de la tolérance contestée selon les sources ; proche de S35."
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/cnil-pixels-suivi-emails",
+            "score": 0.2
+          },
+          {
+            "chemin": "/guides/echeancier-administratif-entreprise",
+            "score": 0.14
+          },
+          {
+            "chemin": "/guides/participer-a-un-salon-professionnel",
+            "score": 0.13
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S29",
       "debut": "2026-07-16",
       "fin": "2026-07-22",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "La CNIL publie 27 questions-réponses sur l'application de sa recommandation relative aux pixels de suivi dans les courriels.",
@@ -2100,57 +2461,71 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "La CNIL publie 27 questions-réponses sur l'application de sa recommandation relative aux pixels de suivi dans les courriels.",
+      "actualiteRetenue": "La FAQ distingue les prestataires agissant pour l’expéditeur et ceux utilisant les pixels pour leurs propres finalités. Elle souligne les fonctionnalités de désactivation et la nécessité de démontrer un consentement valablement recueilli.",
       "dateActualite": "2026-07-22",
-      "dateAttestee": false,
-      "titrePrevu": "Pixels de suivi dans les e-mails : ce que demande la CNIL",
-      "intention": "pixel suivi ouverture email CNIL",
+      "dateAttestee": true,
+      "titrePrevu": "Pixels d’email : vérifier le rôle du prestataire",
+      "intention": "pixels d’email : vérifier le rôle du prestataire",
       "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://cnil.fr/fr/faq-recommandation-pixels-courriers-electroniques",
-          "ouverte": false
-        },
-        {
-          "url": "https://cnil.fr/fr/node/168741",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.journaldunet.com/martech/1549971-pixels-de-suivi-les-12-questions-reponses-pour-se-rendre-conforme/",
-          "ouverte": false
-        },
-        {
-          "url": "https://lexisveille.fr/cnil-un-questions-reponses-precise-les-modalites-dapplication-de-la-recommandation-sur-les-pixels",
-          "ouverte": false
+          "titre": "Questions-réponses — recommandation relative aux pixels dans les courriers électroniques de la CNIL",
+          "organisme": "CNIL",
+          "url": "https://www.cnil.fr/fr/faq-recommandation-pixels-courriers-electroniques",
+          "type": "primaire",
+          "datePublication": "2026-07-22",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La FAQ distingue les prestataires agissant pour l’expéditeur et ceux utilisant les pixels pour leurs propres finalités. Elle souligne les fonctionnalités de désactivation et la nécessité de démontrer un consentement valablement recueilli."
         }
       ],
       "lienBrittAssist": "Paramétrage de l’outil d’envoi et des modèles de messages.",
       "slug": "cnil-pixels-suivi-emails",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/reponses-types-emails",
           "/guides/tenir-son-fichier-clients-a-jour"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/reponses-types-emails",
+          "/guides/tenir-son-fichier-clients-a-jour"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": ""
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/pixels-emails-anciennes-listes-delai-juillet-2026",
+            "score": 0.2
+          },
+          {
+            "chemin": "/articles/ai-act-transparence-chatbot-2-aout-2026",
+            "score": 0.1
+          },
+          {
+            "chemin": "/articles/piratage-impots-vigilance-messages-aout-2026",
+            "score": 0.1
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S30",
       "debut": "2026-07-23",
       "fin": "2026-07-29",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Décret n° 2026-677 et arrêté du 27 juillet 2026 sur la généralisation de la facturation électronique : abandon du portail public, nouvelle terminologie « plateforme agréée », conditions d'immatriculation (dont une certification ISO/IEC 27001), audits et procédure de changement de plateforme.",
@@ -2180,61 +2555,71 @@
           "sensibilite": "standard"
         }
       ],
-      "actualiteRetenue": "Décret n° 2026-677 et arrêté du 27 juillet 2026 sur la généralisation de la facturation électronique : abandon du portail public, nouvelle terminologie « plateforme agréée », conditions d'immatriculation (dont une certification ISO/IEC 27001), audits et procédure de changement de plateforme.",
-      "dateActualite": "2026-07-28",
-      "dateAttestee": false,
-      "titrePrevu": "Décret du 27 juillet 2026 : ce que vous pouvez exiger de votre plateforme agréée",
-      "intention": "décret 27 juillet 2026 plateforme agréée",
+      "actualiteRetenue": "Le texte publié le 28 juillet prévoit notamment un accord formalisé pour l’annuaire et des services gratuits de mobilité entre plateformes. Il entre en vigueur le lendemain de sa publication.",
+      "dateActualite": "2026-07-29",
+      "dateAttestee": true,
+      "titrePrevu": "Plateforme de facturation : préparer la mobilité",
+      "intention": "plateforme de facturation : préparer la mobilité",
       "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://www.legifiscal.fr/actualites-fiscales/4580-facturation-electronique-decret-27-juillet-2026.html",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.lexisveille.fr/facturation-electronique-le-cadre-reglementaire-de-la-generalisation-est-precise",
-          "ouverte": false
-        },
-        {
-          "url": "https://formation.lefebvre-dalloz.fr/actualite/facturation-electronique-2026-les-nouvelles-regles-connaitre",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.lemag-juridique.com/articles/facturation-electronique-cadre-applicable-plateformes-agreees-est-precise-11908.htm",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.associatheque.fr/fr/fichiers/actualite/decret-2026-677-NOR-CPPE2610307D.pdf",
-          "ouverte": false
+          "titre": "Décret n° 2026-677 du 27 juillet 2026 relatif à la facturation électronique",
+          "organisme": "Journal officiel — Légifrance",
+          "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054499487",
+          "type": "primaire",
+          "datePublication": "2026-07-28",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le texte publié le 28 juillet prévoit notamment un accord formalisé pour l’annuaire et des services gratuits de mobilité entre plateformes. Il entre en vigueur le lendemain de sa publication."
         }
       ],
       "lienBrittAssist": "Revue du contrat avec la plateforme.",
       "slug": "decret-27-juillet-2026-plateforme-agreee",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/facturation-electronique-tpe",
           "/guides/suivi-des-contrats-et-abonnements"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/facturation-electronique-tpe",
+          "/guides/suivi-des-contrats-et-abonnements"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "eleve",
-        "note": "Proche de S03 (choix de plateforme) : angle contrat et réversibilité."
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/tva-fin-regime-simplifie-1er-janvier-2027",
+            "score": 0.13
+          },
+          {
+            "chemin": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+            "score": 0.11
+          },
+          {
+            "chemin": "/articles/cnil-recommandation-proxy-filtrage-web",
+            "score": 0.11
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S31",
       "debut": "2026-07-30",
       "fin": "2026-08-05",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Application, le 2 août 2026, des obligations de transparence de l'article 50 de l'AI Act (information des personnes face à un chatbot, signalement des contenus générés et des deepfakes), maintenues par l'omnibus ; seul le marquage lisible par machine (art. 50(2)) des systèmes déjà sur le marché est reporté au 2 décembre 2026.",
@@ -2255,61 +2640,71 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "Application, le 2 août 2026, des obligations de transparence de l'article 50 de l'AI Act (information des personnes face à un chatbot, signalement des contenus générés et des deepfakes), maintenues par l'omnibus ; seul le marquage lisible par machine (art. 50(2)) des systèmes déjà sur le marché est reporté au 2 décembre 2026.",
+      "actualiteRetenue": "L’annonce du 31 juillet présente des exigences de transparence applicables le 2 août, notamment pour les interactions avec des chatbots et certains contenus artificiels. Les obligations diffèrent selon l’acteur et le contenu.",
       "dateActualite": "2026-08-02",
-      "dateAttestee": false,
-      "titrePrevu": "Depuis le 2 août 2026, votre chatbot doit dire qu’il est une IA",
-      "intention": "AI Act article 50 chatbot",
+      "dateAttestee": true,
+      "titrePrevu": "IA et transparence : vérifier les usages depuis août",
+      "intention": "ia et transparence : vérifier les usages depuis août",
       "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://www.bakerbotts.com/thought-leadership/publications/2026/september/eu-ai-act-article-50-transparency-obligations-go-live",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.iodireland.ie/images/uploads/downloads/EU_AI_Act_Transparency_Obligations_Take_Effect_on_2_August_2026.pdf",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.dpocentre.com/news/eu-ai-act-updates-omnibus-transparency-rules/",
-          "ouverte": false
-        },
-        {
-          "url": "https://donneespersonnelles.fr/transparence-ia-article-50-ai-act",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.ropesgray.com/en/insights/viewpoints/2026/08/102nfqm/you-talkin-to-me-operationalising-the-eu-ai-acts-transparency-obligations",
-          "ouverte": false
+          "titre": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
+          "organisme": "Commission européenne",
+          "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
+          "type": "primaire",
+          "datePublication": "2026-07-31",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "L’annonce du 31 juillet présente des exigences de transparence applicables le 2 août, notamment pour les interactions avec des chatbots et certains contenus artificiels. Les obligations diffèrent selon l’acteur et le contenu."
         }
       ],
       "lienBrittAssist": "Vérification des outils publics (site, messagerie).",
       "slug": "ai-act-transparence-chatbot-2-aout-2026",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/assistante-externalisee-et-ia",
           "/guides/ia-generative-et-donnees-confidentielles"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/assistante-externalisee-et-ia",
+          "/guides/ia-generative-et-donnees-confidentielles"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "moyen",
-        "note": "Sources secondaires seulement."
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/cnil-pixels-suivi-emails",
+            "score": 0.1
+          },
+          {
+            "chemin": "/articles/piratage-impots-vigilance-messages-aout-2026",
+            "score": 0.1
+          },
+          {
+            "chemin": "/articles/acre-2026-exoneration-25-pour-cent",
+            "score": 0.09
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S32",
       "debut": "2026-08-06",
       "fin": "2026-08-12",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Entrée en vigueur du consentement préalable obligatoire pour le démarchage téléphonique des consommateurs (fin du système d'opposition Bloctel)",
@@ -2330,60 +2725,70 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "Entrée en vigueur du consentement préalable obligatoire pour le démarchage téléphonique des consommateurs (fin du système d'opposition Bloctel)",
+      "actualiteRetenue": "La publication du 21 juillet, mise à jour le 11 août, décrit l’interdiction de démarcher un consommateur sans consentement préalable, avec des exceptions notamment liées à un contrat en cours. Elle ne définit pas une interdiction générale de tous les appels B2B.",
       "dateActualite": "2026-08-11",
-      "dateAttestee": false,
-      "titrePrevu": "Démarchage téléphonique : le consentement préalable depuis le 11 août 2026",
-      "intention": "démarchage téléphonique consentement 11 août 2026",
+      "dateAttestee": true,
+      "titrePrevu": "Démarchage téléphonique : revoir les fichiers particuliers",
+      "intention": "démarchage téléphonique : revoir les fichiers particuliers",
       "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://www.leclubdesjuristes.com/en-bref/demarchage-telephonique-le-consentement-prealable-devient-obligatoire-a-partir-du-11-aout-2026-17147/",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.journaldunet.com/business/1553607-l-interdiction-du-demarchage-telephonique-non-consenti/",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.sudradio.fr/societe/demarchage-telephonique-le-consommateur-devra-desormais-donner-son-consentement-pour-etre-appele",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.aesio.fr/articles/demarchage-telephonique-un-nouveau-dispositif-entre-en-vigueur",
-          "ouverte": false
-        },
-        {
-          "url": "https://siecledigital.fr/2026/07/02/orange-fait-annuler-une-partie-de-la-loi-contre-le-demarchage-telephonique/",
-          "ouverte": false
+          "titre": "Démarchage téléphonique : le consentement préalable devient obligatoire",
+          "organisme": "DILA — Service Public",
+          "url": "https://www.service-public.gouv.fr/particuliers/actualites/A19003?lang=fr",
+          "type": "primaire",
+          "datePublication": "2026-07-21",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La publication du 21 juillet, mise à jour le 11 août, décrit l’interdiction de démarcher un consommateur sans consentement préalable, avec des exceptions notamment liées à un contrat en cours. Elle ne définit pas une interdiction générale de tous les appels B2B.",
+          "dateMiseAJour": "2026-08-11"
         }
       ],
       "lienBrittAssist": "Tri des fichiers de prospection.",
       "slug": "demarchage-telephonique-consentement-11-aout-2026",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/tenir-son-fichier-clients-a-jour"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/tenir-son-fichier-clients-a-jour"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": "Portée d’une annulation partielle évoquée : à vérifier."
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/france-travail-acces-partenaires-janvier-2026",
+            "score": 0.1
+          },
+          {
+            "chemin": "/guides/regles-de-nommage-des-fichiers",
+            "score": 0.06
+          },
+          {
+            "chemin": "/guides/assistante-independante-ou-salariee",
+            "score": 0
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S33",
       "debut": "2026-08-13",
       "fin": "2026-08-19",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "L'Urssaf publie « Prime de carburant – Mesures applicables en 2026 » : plafond d'exonération porté à 600 € pour 2026",
@@ -2413,56 +2818,71 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "L'Urssaf publie « Prime de carburant – Mesures applicables en 2026 » : plafond d'exonération porté à 600 € pour 2026",
-      "dateActualite": "2026-08-19",
-      "dateAttestee": false,
-      "titrePrevu": "Prime carburant 2026 : ce que l’Urssaf a confirmé le 19 août",
-      "intention": "prime carburant 2026 employeur",
-      "sensibilite": "reglementaire",
+      "actualiteRetenue": "La CNIL indique le 18 août avoir reçu des notifications après l’annonce ministérielle du 14 août. Les investigations sont en cours et certaines données fiscales et d’entreprise sont concernées.",
+      "dateActualite": "2026-08-18",
+      "dateAttestee": true,
+      "titrePrevu": "Piratage des impôts : vérifier les messages reçus",
+      "intention": "piratage des impôts : vérifier les messages reçus",
+      "sensibilite": "standard",
       "sources": [
         {
-          "url": "https://urssaf.fr/accueil/actualites.html",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.capeb.fr/actualites/prime-carburant-le-doublement-du-plafond-confirme-par-le-boss-et-lurssaf",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.legisocial.fr/actualites-sociales/8065-prime-carburant-exoneration-doublee-2026.html",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.weblex.fr/weblex-actualite/prime-carburant-un-plafond-d-exoneration-double-en-2026",
-          "ouverte": false
+          "titre": "Piratage du système d’information des impôts : les vérifications sont en cours",
+          "organisme": "CNIL",
+          "url": "https://www.cnil.fr/fr/piratage-du-systeme-dinformation-des-impots-les-verifications-sont-en-cours",
+          "type": "primaire",
+          "datePublication": "2026-08-18",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La CNIL indique le 18 août avoir reçu des notifications après l’annonce ministérielle du 14 août. Les investigations sont en cours et certaines données fiscales et d’entreprise sont concernées."
         }
       ],
       "lienBrittAssist": "Préparation des éléments de paie.",
-      "slug": "prime-carburant-2026-urssaf",
-      "ficheRedigee": false,
+      "slug": "piratage-impots-vigilance-messages-aout-2026",
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
-          "/guides/vehicules-de-societe-suivi-administratif"
+          "/guides/fraude-au-faux-rib-et-au-president",
+          "/guides/delegations-aupres-des-organismes"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/fraude-au-faux-rib-et-au-president",
+          "/guides/delegations-aupres-des-organismes"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": "Ne pas mentionner le plafond annoncé ensuite."
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/ai-act-transparence-chatbot-2-aout-2026",
+            "score": 0.1
+          },
+          {
+            "chemin": "/articles/cnil-pixels-suivi-emails",
+            "score": 0.1
+          },
+          {
+            "chemin": "/guides/presenter-son-assistante-a-ses-clients",
+            "score": 0.09
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S34",
       "debut": "2026-08-20",
       "fin": "2026-08-26",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Entrée en vigueur des nouvelles obligations environnementales dans l'attribution des marchés publics : au moins un critère environnemental, fin du critère unique du prix",
@@ -2483,56 +2903,69 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "Entrée en vigueur des nouvelles obligations environnementales dans l'attribution des marchés publics : au moins un critère environnemental, fin du critère unique du prix",
+      "actualiteRetenue": "La fiche du 18 août présente l’exigence d’au moins un critère d’attribution environnemental et d’une condition d’exécution environnementale, avec des règles transitoires pour les consultations antérieures.",
       "dateActualite": "2026-08-21",
-      "dateAttestee": false,
-      "titrePrevu": "Marchés publics : les critères environnementaux obligatoires depuis le 21 août",
-      "intention": "marchés publics critère environnemental 2026",
+      "dateAttestee": true,
+      "titrePrevu": "Marchés publics : préparer les preuves environnementales",
+      "intention": "marchés publics : préparer les preuves environnementales",
       "sensibilite": "reglementaire",
       "sources": [
         {
+          "titre": "Marchés publics : des critères environnementaux obligatoires à partir du 21 août 2026",
+          "organisme": "DILA — Service Public Entreprendre",
           "url": "https://entreprendre.service-public.gouv.fr/actualites/A19042",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.banquedesterritoires.fr/criteres-environnementaux-des-marches-publics-quelles-sont-les-nouvelles-obligations",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.echodumardi.com/juridique/marches-publics-depuis-le-22-aout-lenvironnement-pese-davantages-dans-vos-offres/?print=pdf",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.weka.fr/actualite/?p=219430",
-          "ouverte": false
+          "type": "primaire",
+          "datePublication": "2026-08-18",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La fiche du 18 août présente l’exigence d’au moins un critère d’attribution environnemental et d’une condition d’exécution environnementale, avec des règles transitoires pour les consultations antérieures."
         }
       ],
       "lienBrittAssist": "Veille des consultations et constitution des dossiers.",
       "slug": "marches-publics-criteres-environnementaux-aout-2026",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/appel-d-offres-dossier-de-candidature"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/appel-d-offres-dossier-de-candidature"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "moyen",
-        "note": "Date 21 ou 22 août selon les sources."
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/place-marches-publics-elargissement-juin-2026",
+            "score": 0.22
+          },
+          {
+            "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+            "score": 0.11
+          },
+          {
+            "chemin": "/articles/tva-fin-regime-simplifie-1er-janvier-2027",
+            "score": 0.11
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S35",
       "debut": "2026-08-27",
       "fin": "2026-09-02",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Coup d'envoi de la facturation électronique interentreprises : depuis le 1er septembre 2026, toutes les entreprises doivent pouvoir recevoir des factures électroniques via une plateforme agréée ; émission obligatoire pour les grandes entreprises et les ETI",
@@ -2562,28 +2995,22 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "Coup d'envoi de la facturation électronique interentreprises : depuis le 1er septembre 2026, toutes les entreprises doivent pouvoir recevoir des factures électroniques via une plateforme agréée ; émission obligatoire pour les grandes entreprises et les ETI",
+      "actualiteRetenue": "Le communiqué du 1er septembre rappelle la réception pour les assujettis concernés, l’émission des grandes entreprises et ETI en 2026, puis des PME et microentreprises en 2027. Il annonce l’absence de sanctions en 2026.",
       "dateActualite": "2026-09-01",
-      "dateAttestee": false,
-      "titrePrevu": "Facturation électronique : la première semaine de la réforme",
-      "intention": "facturation électronique 1er septembre 2026",
+      "dateAttestee": true,
+      "titrePrevu": "Facturation : organiser le circuit après le 1er septembre",
+      "intention": "facturation : organiser le circuit après le 1er septembre",
       "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://www.economie.gouv.fr/actualites/facturation-electronique-entre-entreprises-coup-denvoi-de-la-reforme",
-          "ouverte": false
-        },
-        {
-          "url": "https://entreprendre.service-public.gouv.fr/actualites/A18953",
-          "ouverte": false
-        },
-        {
+          "titre": "La facturation démarre aujourd’hui : priorité à l’accompagnement des entreprises",
+          "organisme": "Ministère de l’Économie",
           "url": "https://presse.economie.gouv.fr/la-facturation-demarre-aujourdhui-priorite-a-laccompagnement-des-entreprises/",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.urssaf.fr/accueil/actualites/facturation-electronique.html",
-          "ouverte": false
+          "type": "primaire",
+          "datePublication": "2026-09-01",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le communiqué du 1er septembre rappelle la réception pour les assujettis concernés, l’émission des grandes entreprises et ETI en 2026, puis des PME et microentreprises en 2027. Il annonce l’absence de sanctions en 2026."
         }
       ],
       "lienBrittAssist": "Réception et classement des premières factures électroniques.",
@@ -2595,24 +3022,44 @@
           "/guides/circuit-des-factures-fournisseurs"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/facturation-electronique-tpe",
+          "/guides/circuit-des-factures-fournisseurs"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "moyen",
-        "note": "Situation des micro-entrepreneurs et sanctions : sources contradictoires."
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/guides/devis-factures-relances",
+            "score": 0.14
+          },
+          {
+            "chemin": "/guides/boite-mail-partagee-entreprise",
+            "score": 0.13
+          },
+          {
+            "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+            "score": 0.11
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S36",
       "debut": "2026-09-03",
       "fin": "2026-09-09",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Aide de 100 € aux travailleurs « grands rouleurs » : date limite de demande reportée au 30 septembre 2026 (arrêté du 8 septembre 2026 ; mention modifiée sur impots.gouv.fr le 3 septembre selon Moneyvox)",
@@ -2633,56 +3080,71 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "Aide de 100 € aux travailleurs « grands rouleurs » : date limite de demande reportée au 30 septembre 2026 (arrêté du 8 septembre 2026 ; mention modifiée sur impots.gouv.fr le 3 septembre selon Moneyvox)",
-      "dateActualite": "2026-09-08",
-      "dateAttestee": false,
-      "titrePrevu": "Aide de 100 € aux grands rouleurs : le délai reporté au 30 septembre",
-      "intention": "aide carburant 100 euros grands rouleurs",
+      "actualiteRetenue": "L’annonce du 3 septembre relève des accès externes insuffisamment protégés, des habilitations trop larges, une détection insuffisante et une information incomplète des personnes touchées.",
+      "dateActualite": "2026-09-03",
+      "dateAttestee": true,
+      "titrePrevu": "Données de santé : limiter les accès et préparer l’alerte",
+      "intention": "données de santé : limiter les accès et préparer l’alerte",
       "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://selectra.info/energie/actualites/marche/aide-carburant-dernier-jour-demande-100-euros",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.moneyvox.fr/votre-argent/actualites/110226/prime-carburant-de-100-euros-vous-avez-finalement-jusquau-30-septembre-2026-pour-la-demander",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.impots.gouv.fr/node/28496",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.aide-sociale.fr/aide-carburant-grands-rouleurs/",
-          "ouverte": false
+          "titre": "Violation de données en matière de santé : sanction de 500 000 euros à l’encontre de l’HÔPITAL PRIVÉ DE LA LOIRE",
+          "organisme": "CNIL",
+          "url": "https://www.cnil.fr/fr/sanction-hopital-prive-loire",
+          "type": "primaire",
+          "datePublication": "2026-09-03",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "L’annonce du 3 septembre relève des accès externes insuffisamment protégés, des habilitations trop larges, une détection insuffisante et une information incomplète des personnes touchées."
         }
       ],
       "lienBrittAssist": "Rappel d’échéance.",
-      "slug": "aide-100-euros-grands-rouleurs-report",
-      "ficheRedigee": false,
+      "slug": "donnees-sante-habilitations-alerte-septembre-2026",
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
-          "/guides/vehicules-de-societe-suivi-administratif"
+          "/guides/confidentialite-acces-et-outils",
+          "/guides/incident-de-securite-chez-un-prestataire"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/confidentialite-acces-et-outils",
+          "/guides/incident-de-securite-chez-un-prestataire"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": "Échéance passée au 10 octobre : utilité faible pour une publication tardive."
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/cnil-facturation-electronique-donnees-personnelles",
+            "score": 0.2
+          },
+          {
+            "chemin": "/guides/confidentialite-assistante-externalisee",
+            "score": 0.13
+          },
+          {
+            "chemin": "/guides/acces-bancaire-pour-son-assistante",
+            "score": 0.13
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S37",
       "debut": "2026-09-10",
       "fin": "2026-09-16",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "La CNIL publie une fiche « Facturation électronique : quels enjeux pour la protection des données personnelles ? »",
@@ -2703,57 +3165,71 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "La CNIL publie une fiche « Facturation électronique : quels enjeux pour la protection des données personnelles ? »",
+      "actualiteRetenue": "La CNIL rappelle le 10 septembre que certaines factures contiennent des données de personnes physiques et recommande des comptes individuels, la maîtrise des habilitations et des protections d’authentification.",
       "dateActualite": "2026-09-10",
-      "dateAttestee": false,
-      "titrePrevu": "Facturation électronique et données personnelles : la fiche de la CNIL",
-      "intention": "CNIL facturation électronique données personnelles",
+      "dateAttestee": true,
+      "titrePrevu": "Factures électroniques : contrôler les accès aux données",
+      "intention": "factures électroniques : contrôler les accès aux données",
       "sensibilite": "reglementaire",
       "sources": [
         {
+          "titre": "Facturation électronique : quels enjeux pour la protection des données personnelles ?",
+          "organisme": "CNIL",
           "url": "https://www.cnil.fr/fr/facturation-electronique-quels-enjeux",
-          "ouverte": false
-        },
-        {
-          "url": "https://veille.portail-rgpd.com/actu/facturation-electronique-enjeux-protection-donnees-personnelles/",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.leto.legal/news/cnil-facturation-electronique-donnees-personnelles-2026",
-          "ouverte": false
-        },
-        {
-          "url": "https://kohenavocats.fr/2026/09/10/facturation-electronique-pdp-rgpd-contrat-reutilisation-cnil-2026/",
-          "ouverte": false
+          "type": "primaire",
+          "datePublication": "2026-09-10",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La CNIL rappelle le 10 septembre que certaines factures contiennent des données de personnes physiques et recommande des comptes individuels, la maîtrise des habilitations et des protections d’authentification."
         }
       ],
       "lienBrittAssist": "Relecture du contrat de la plateforme agréée.",
       "slug": "cnil-facturation-electronique-donnees-personnelles",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/rgpd-sous-traitance-assistante-externalisee",
           "/guides/facturation-electronique-tpe"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/rgpd-sous-traitance-assistante-externalisee",
+          "/guides/facturation-electronique-tpe"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "moyen",
-        "note": ""
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/donnees-sante-habilitations-alerte-septembre-2026",
+            "score": 0.18
+          },
+          {
+            "chemin": "/guides/confidentialite-assistante-externalisee",
+            "score": 0.13
+          },
+          {
+            "chemin": "/articles/cnil-alerte-faux-organismes-fuite-de-donnees",
+            "score": 0.1
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S38",
       "debut": "2026-09-17",
       "fin": "2026-09-23",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "impots.gouv.fr annonce la suppression du régime simplifié d'imposition (RSI) à la TVA au 1er janvier 2027, avec bascule automatique vers le réel normal",
@@ -2774,28 +3250,23 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "impots.gouv.fr annonce la suppression du régime simplifié d'imposition (RSI) à la TVA au 1er janvier 2027, avec bascule automatique vers le réel normal",
+      "actualiteRetenue": "La publication du 22 septembre, actualisée le 23, décrit le passage aux CA3, les seuils de périodicité trimestrielle et la transition CA12 selon la clôture. Le régime agricole n’est pas concerné par cette suppression.",
       "dateActualite": "2026-09-22",
-      "dateAttestee": false,
-      "titrePrevu": "TVA : le régime simplifié disparaît au 1er janvier 2027",
-      "intention": "suppression régime simplifié TVA 2027",
+      "dateAttestee": true,
+      "titrePrevu": "TVA 2027 : préparer la fin du régime simplifié",
+      "intention": "tva 2027 : préparer la fin du régime simplifié",
       "sensibilite": "reglementaire",
       "sources": [
         {
+          "titre": "Le régime simplifié d’imposition à la TVA est supprimé à compter du 1er janvier 2027",
+          "organisme": "DGFiP — impots.gouv.fr",
           "url": "https://www.impots.gouv.fr/actualite/le-regime-simplifie-dimposition-la-tva-est-supprime-compter-du-1er-janvier-2027",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.legifiscal.fr/actualites-fiscales/4655-tva-fin-regime-simplifie-1er-janvier-2027-mode-emploi.html",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.lyon-metropole.cci.fr/actualite/le-regime-simplifie-tva-quels-changements-au-1er-janvier-2027",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.agex.fr/2026/10/08/tva-le-regime-simplifie-dimposition-tire-sa-reverence/",
-          "ouverte": false
+          "type": "primaire",
+          "datePublication": "2026-09-22",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "La publication du 22 septembre, actualisée le 23, décrit le passage aux CA3, les seuils de périodicité trimestrielle et la transition CA12 selon la clôture. Le régime agricole n’est pas concerné par cette suppression.",
+          "dateMiseAJour": "2026-09-23"
         }
       ],
       "lienBrittAssist": "Nouveau calendrier déclaratif et trésorerie.",
@@ -2807,24 +3278,44 @@
           "/guides/tva-prestataire-en-franchise-en-base"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/echeancier-administratif-entreprise",
+          "/guides/tva-prestataire-en-franchise-en-base"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": "Distinct du guide franchise en base."
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+            "score": 0.13
+          },
+          {
+            "chemin": "/articles/cnil-recommandation-proxy-filtrage-web",
+            "score": 0.11
+          },
+          {
+            "chemin": "/articles/conge-de-naissance-independants-juillet-2026",
+            "score": 0.11
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S39",
       "debut": "2026-09-24",
       "fin": "2026-09-30",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Publication du Baromètre France Num 2026 (DGE/Crédoc) : 40 % des TPE-PME utilisent au moins une solution d'IA (+14 points), 39 % ont subi un incident de cybersécurité dans l'année",
@@ -2854,57 +3345,71 @@
           "sensibilite": "standard"
         }
       ],
-      "actualiteRetenue": "Publication du Baromètre France Num 2026 (DGE/Crédoc) : 40 % des TPE-PME utilisent au moins une solution d'IA (+14 points), 39 % ont subi un incident de cybersécurité dans l'année",
+      "actualiteRetenue": "Le baromètre publié le 28 septembre estime la part des TPE-PME utilisant l’IA à 40 %, en progression de 14 points sur un an. Les usages observés ne prouvent pas un gain automatique pour chaque entreprise.",
       "dateActualite": "2026-09-28",
-      "dateAttestee": false,
-      "titrePrevu": "Baromètre France Num 2026 : où en sont les TPE sur l’IA",
-      "intention": "baromètre France Num 2026",
+      "dateAttestee": true,
+      "titrePrevu": "France Num 2026 : choisir un usage concret de l’IA",
+      "intention": "france num 2026 : choisir un usage concret de l’ia",
       "sensibilite": "standard",
       "sources": [
         {
+          "titre": "Baromètre France Num 2026 : quatre TPE-PME sur dix utilisent désormais l’intelligence artificielle",
+          "organisme": "Direction générale des Entreprises — France Num",
           "url": "https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.economie.gouv.fr/node/3242215",
-          "ouverte": false
-        },
-        {
-          "url": "https://entreprendre.service-public.gouv.fr/actualites/A19079",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.blogdumoderateur.com/ia-cyber-budgets-10-chiffres-numerique-tpe-pme-2026/",
-          "ouverte": false
+          "type": "primaire",
+          "datePublication": "2026-09-28",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le baromètre publié le 28 septembre estime la part des TPE-PME utilisant l’IA à 40 %, en progression de 14 points sur un an. Les usages observés ne prouvent pas un gain automatique pour chaque entreprise."
         }
       ],
       "lienBrittAssist": "Charte d’usage des outils d’IA.",
       "slug": "barometre-france-num-2026-ia-tpe",
-      "ficheRedigee": false,
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
           "/guides/assistante-externalisee-et-ia",
           "/guides/ia-generative-et-donnees-confidentielles"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/assistante-externalisee-et-ia",
+          "/guides/ia-generative-et-donnees-confidentielles"
         ]
       },
       "risqueCannibalisation": {
-        "niveau": "moyen",
-        "note": "Date 28 septembre ou 2 octobre selon les sources."
+        "niveau": "faible",
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/guides/choisir-assistante-externalisee",
+            "score": 0.1
+          },
+          {
+            "chemin": "/guides/secretariat-externalise-france-ou-offshore",
+            "score": 0.1
+          },
+          {
+            "chemin": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+            "score": 0.1
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S40",
       "debut": "2026-10-01",
       "fin": "2026-10-07",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Présentation du projet de loi de finances (PLF) pour 2027 en Conseil des ministres, avec le PLFSS",
@@ -2934,60 +3439,71 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "Présentation du projet de loi de finances (PLF) pour 2027 en Conseil des ministres, avec le PLFSS",
+      "actualiteRetenue": "L’annonce du 1er octobre présente un dépliant destiné aux personnes victimes d’une violation, avec des actions de la découverte à J+30. Il ne remplace pas les procédures réglementaires propres à l’entreprise.",
       "dateActualite": "2026-10-01",
-      "dateAttestee": false,
-      "titrePrevu": "Projet de loi de finances 2027 : ce qui est proposé, rien n’est voté",
-      "intention": "PLF 2027 TPE",
-      "sensibilite": "reglementaire",
+      "dateAttestee": true,
+      "titrePrevu": "Cybermois 2026 : préparer le suivi après une fuite",
+      "intention": "cybermois 2026 : préparer le suivi après une fuite",
+      "sensibilite": "standard",
       "sources": [
         {
-          "url": "https://www.efl.fr/actualite/projet-loi-finances-2027-apercu-principales-mesures-fiscales_f7d46138d-445c-48bd-a0df-3cb4816a2023",
-          "ouverte": false
-        },
-        {
-          "url": "https://cms.law/fr/fra/publication/projet-loi-de-finances-pour-2027",
-          "ouverte": false
-        },
-        {
-          "url": "https://unapl.fr/actualites/budget-2027-ce-que-contient-le-texte-presente-en-conseil-des-ministres/",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.legifiscal.fr/actualites-fiscales/4656-presentation-plf-2027.html",
-          "ouverte": false
-        },
-        {
-          "url": "https://kpmg.com/av/fr/avocats/eclairages/2026/10/publication-du-plf-2027.html",
-          "ouverte": false
+          "titre": "Cybermois 2026 : la CNIL et Cybermalveillance.gouv.fr publient une nouvelle ressource pour adopter les bons réflexes face à une violation de données",
+          "organisme": "CNIL et Cybermalveillance.gouv.fr",
+          "url": "https://www.cnil.fr/fr/cybermois-2026",
+          "type": "primaire",
+          "datePublication": "2026-10-01",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "L’annonce du 1er octobre présente un dépliant destiné aux personnes victimes d’une violation, avec des actions de la découverte à J+30. Il ne remplace pas les procédures réglementaires propres à l’entreprise."
         }
       ],
       "lienBrittAssist": "Veille, sans action avant le vote.",
-      "slug": "projet-loi-de-finances-2027-tpe",
-      "ficheRedigee": false,
+      "slug": "cybermois-2026-suivi-fuite-donnees",
+      "ficheRedigee": true,
       "liensInternes": {
         "sortants": [
-          "/guides/echeancier-administratif-entreprise"
+          "/guides/incident-de-securite-chez-un-prestataire",
+          "/guides/fraude-au-faux-rib-et-au-president"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/incident-de-securite-chez-un-prestataire",
+          "/guides/fraude-au-faux-rib-et-au-president"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": "Projet seulement : ne rien présenter comme applicable."
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/articles/acre-2026-exoneration-25-pour-cent",
+            "score": 0.18
+          },
+          {
+            "chemin": "/articles/loi-de-finances-2026-mesures-tpe",
+            "score": 0.18
+          },
+          {
+            "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+            "score": 0.1
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     },
     {
       "semaine": "S41",
       "debut": "2026-10-08",
       "fin": "2026-10-10",
-      "statut": "SOURCES_A_VERIFIER",
+      "statut": "PUBLIE",
       "sujetsEnvisages": [
         {
           "actualite": "Le 0 806 807 807 devient le numéro national unique d'accueil téléphonique de la DGFiP pour les professionnels",
@@ -2999,28 +3515,22 @@
           "sensibilite": "reglementaire"
         }
       ],
-      "actualiteRetenue": "Le 0 806 807 807 devient le numéro national unique d'accueil téléphonique de la DGFiP pour les professionnels",
+      "actualiteRetenue": "Le communiqué du 8 octobre étend le numéro aux questions fiscales professionnelles, en métropole et outre-mer, de 8 h 30 à 18 h du lundi au vendredi (horaires métropolitains). Le service est gratuit, plus le coût de l’appel.",
       "dateActualite": "2026-10-08",
-      "dateAttestee": false,
-      "titrePrevu": "DGFiP : un numéro unique pour les professionnels depuis le 8 octobre",
-      "intention": "numéro téléphone DGFiP professionnels",
+      "dateAttestee": true,
+      "titrePrevu": "DGFiP : un numéro unique pour les professionnels",
+      "intention": "dgfip : un numéro unique pour les professionnels",
       "sensibilite": "reglementaire",
       "sources": [
         {
-          "url": "https://www.impots.gouv.fr/actualite/un-numero-national-dedie-pour-accompagner-les-entreprises",
-          "ouverte": false
-        },
-        {
+          "titre": "Simplification : le 0806 807 807 devient, pour les professionnels, le numéro unique pour joindre la DGFiP partout en France",
+          "organisme": "Ministère de l’Économie — DGFiP",
           "url": "https://presse.economie.gouv.fr/simplification-le-0806-807-807-devient-pour-les-professionnels-le-numero-unique-pour-joindre-la-dgfip-partout-en-france/",
-          "ouverte": false
-        },
-        {
-          "url": "https://www.economie.gouv.fr/actualites/impots-un-numero-unique-dedie-aux-professionnels",
-          "ouverte": false
-        },
-        {
-          "url": "https://toulouse7.com/2026/10/09/un-numero-unique-pour-les-entreprises-avec-les-services-des-impots/",
-          "ouverte": false
+          "type": "primaire",
+          "datePublication": "2026-10-08",
+          "ouverte": true,
+          "consulteeLe": "2026-10-10",
+          "extrait": "Le communiqué du 8 octobre étend le numéro aux questions fiscales professionnelles, en métropole et outre-mer, de 8 h 30 à 18 h du lundi au vendredi (horaires métropolitains). Le service est gratuit, plus le coût de l’appel."
         }
       ],
       "lienBrittAssist": "Démarches auprès des organismes, en lien avec le dirigeant.",
@@ -3032,18 +3542,38 @@
           "/guides/fraude-au-faux-rib-et-au-president"
         ],
         "entrants": [
-          "/articles"
+          "/articles",
+          "/guides/delegations-aupres-des-organismes",
+          "/guides/fraude-au-faux-rib-et-au-president"
         ]
       },
       "risqueCannibalisation": {
         "niveau": "faible",
-        "note": ""
+        "note": "Article daté consacré à une actualité précise ; les guides liés expliquent les procédures durables.",
+        "voisins": [
+          {
+            "chemin": "/guides/modele-brief-assistante-externalisee",
+            "score": 0.08
+          },
+          {
+            "chemin": "/guides/pieces-pour-l-expert-comptable",
+            "score": 0.08
+          },
+          {
+            "chemin": "/guides/facturation-electronique-tpe",
+            "score": 0.08
+          }
+        ]
       },
-      "datePublication": null,
-      "indexable": false,
-      "deploiement": null,
+      "datePublication": "2026-10-10",
+      "indexable": true,
+      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
-      "note": "Candidat repéré par moteur de recherche le 10/10/2026 ; aucune page source ouverte (accès web bloqué dans l’environnement). Ouvrir les sources avant toute rédaction définitive."
+      "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
+      "actionsEffectuees": [
+        "Source officielle ouverte et lue le 10 octobre 2026",
+        "Article original rédigé le 10 octobre 2026"
+      ]
     }
   ],
   "suite": []

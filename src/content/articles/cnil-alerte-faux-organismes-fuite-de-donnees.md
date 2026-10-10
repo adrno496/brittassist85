@@ -1,70 +1,70 @@
 ---
-title: "Fuite de données : la CNIL alerte sur de faux organismes · BrittAssist"
-description: "Le 24 juin 2026, la CNIL a alerté sur de faux organismes qui contactent les victimes de fuites de données. Les reconnaître, et la consigne à donner à l’accueil."
-h1: "Après une fuite de données, la seconde arnaque : l’alerte de la CNIL du 24 juin 2026"
-summary: "La CNIL a signalé le 24 juin 2026 des messages envoyés aux victimes de fuites de données par de prétendues associations de défense, qui proposent de « faire supprimer » les données volées. Ce que dit l’alerte, et comment protéger une petite structure de cette seconde vague."
+title: "Fuite de données : reconnaître les faux accompagnateurs · BrittAssist"
+description: "La CNIL a alerté en juin 2026 sur de faux organismes contactant des victimes. Vérifiez l’interlocuteur avant de répondre, transmettre une pièce ou payer."
+h1: "Fuite de données : reconnaître les faux accompagnateurs"
+summary: "La CNIL a alerté en juin 2026 sur de faux organismes contactant des victimes. Vérifiez l’interlocuteur avant de répondre, transmettre une pièce ou payer."
 category: "donnees-securite"
-audience: ["Dirigeants de TPE et PME", "Indépendants", "Secrétariats et accueils", "Professions libérales"]
-intention: "faux organisme fuite de données CNIL alerte"
-keywords: ["fuite de données", "arnaque", "CNIL", "faux organisme", "hameçonnage"]
+audience:
+  - "Dirigeants de TPE et PME"
+  - "Indépendants"
+intention: "fuite de données : reconnaître les faux accompagnateurs"
+keywords: []
 semaineEditoriale: "S25"
 periodeDebut: "2026-06-18"
 periodeFin: "2026-06-24"
 dateEvenement: "2026-06-24"
-natureEvenement: "Alerte publiée par la CNIL"
+natureEvenement: "Publication officielle"
 sources:
   - titre: "Victimes de violations de données : restez vigilants face aux offres d’accompagnement"
     organisme: "CNIL"
-    url: "https://cnil.fr/fr/vigilance-accompagnement-violation-de-donnees"
+    url: "https://www.cnil.fr/fr/vigilance-accompagnement-violation-de-donnees"
     type: "primaire"
     datePublication: "2026-06-24"
-    ouverte: false
-    extrait: "Alerte sur des courriels de prétendus organismes qui proposent aux victimes de fuites de faire supprimer leurs données ; conseils de ne pas répondre ni cliquer (selon l’extrait du moteur de recherche)."
-  - titre: "La CNIL alerte sur les arnaques visant les victimes de violations de données"
-    organisme: "Leto"
-    url: "https://www.leto.legal/news/cnil-alerte-arnaques-victimes-violations-donnees-2026"
-    type: "presse"
-    datePublication: "2026-06-25"
-    ouverte: false
-    extrait: "Relais de l’alerte le lendemain (selon le moteur de recherche)."
+    ouverte: true
+    consulteeLe: "2026-10-10"
+    extrait: "La CNIL alerte le 24 juin sur de faux organismes proposant un accompagnement après une fuite de données. Des informations exactes dérobées peuvent être utilisées pour rendre le contact crédible."
 createdAt: "2026-10-10"
-editorialStatus: "SOURCES_A_VERIFIER"
+datePublished: "2026-10-10"
+editorialStatus: "PUBLIE"
 sensibilite: "standard"
-relatedGuides: ["fraude-au-faux-rib-et-au-president", "incident-de-securite-chez-un-prestataire", "traitement-du-courrier-entrant"]
-relatedArticles: ["bilan-cybermalveillance-2025-priorites-tpe"]
-notesInternes: "Sources non ouvertes. Vérifier sur la page CNIL : noms des faux organismes cités, recommandations exactes, renvoi vers Cybermalveillance.gouv.fr. Ne pas affirmer que l’arnaque vise à obtenir de l’argent : seule une source secondaire le dit."
+relatedGuides:
+  - "fraude-au-faux-rib-et-au-president"
+  - "incident-de-securite-chez-un-prestataire"
+relatedArticles: []
+notesInternes: "Sources ouvertes et contenu rédigé le 10 octobre 2026. Toute validation antérieure à cette rédaction ne couvre pas ce nouveau texte."
 ---
 
-Le **24 juin 2026**, la CNIL a publié une alerte à l’attention des victimes de violations de données. Des messages circulent, envoyés par des organismes au nom rassurant — se présentant comme des ligues ou des associations de protection des données personnelles — qui proposent de faire supprimer les données volées des sites où elles seraient revendues. Ces organismes n’ont aucun lien avec la CNIL, même lorsqu’ils citent ses coordonnées.
+Le 24 juin 2026, la CNIL a alerté sur des offres d’accompagnement adressées à des victimes de violations de données par de faux organismes. Les messages peuvent exploiter des informations réellement dérobées pour paraître crédibles.
 
-## Ce que dit l’alerte
-
-D’après la page de la CNIL (à relire à la source) :
-
-- les messages visent des personnes dont les données ont fuité lors d’une violation de données ;
-- ils peuvent contenir de vraies informations issues des fichiers dérobés, ce qui les rend crédibles ;
-- ils peuvent mentionner la CNIL ou ses coordonnées sans aucun lien avec elle ;
-- la CNIL recommande de ne pas répondre, de ne pas cliquer sur les liens et de ne transmettre aucun document, et oriente les victimes vers Cybermalveillance.gouv.fr.
+Le fait qu’un interlocuteur connaisse votre nom, votre adresse ou un détail bancaire ne démontre donc pas qu’il agit pour une autorité ou un organisme légitime. Cette vigilance concerne aussi la réception des courriers et messages d’une petite entreprise.
 
 ## Ce que cela change pour vous
 
-Les fuites de données touchent des prestataires de toute taille : un site marchand, un fournisseur d’énergie, une mutuelle, un outil en ligne. Après chaque annonce de fuite, une seconde vague de messages exploite l’inquiétude des personnes concernées. Le dirigeant, ses salariés et ses clients peuvent être visés.
+Une proposition non sollicitée promettant une aide, une indemnisation ou une intervention urgente mérite une vérification indépendante. Ne transmettez pas une pièce d’identité ou des informations supplémentaires pour « compléter le dossier » avant de comprendre qui les demande et pour quelle raison.
 
-Pour une petite structure, le point sensible est souvent l’accueil : la boîte de réception générique, le secrétariat ou l’assistante qui trie les messages. Un courriel qui cite des informations exactes et un organisme officiel paraît légitime ; c’est précisément le ressort de l’arnaque.
+Accédez vous-même au site officiel de l’organisme mentionné. Utilisez ses coordonnées publiées, plutôt que le lien, le numéro ou le bouton présent dans le message. La CNIL souligne notamment les risques liés aux prétendus accompagnateurs qui invoquent son nom.
 
-## Checklist : la consigne à donner à l’accueil
+## Préparer une consigne de réception
 
-1. Aucun organisme officiel ne propose spontanément, contre une démarche ou un paiement, de « faire supprimer » des données volées.
-2. Ne pas répondre, ne pas cliquer, ne transmettre aucune pièce d’identité ni coordonnée bancaire.
-3. Vérifier l’adresse de l’expéditeur et comparer avec le site officiel, ouvert par soi-même.
-4. Signaler le message au dirigeant, puis le supprimer ; noter la date dans le registre des incidents.
-5. Si l’entreprise a elle-même subi une fuite chez un prestataire, suivre la procédure du guide [incident de sécurité chez un prestataire](/guides/incident-de-securite-chez-un-prestataire).
-6. Ajouter ce cas aux règles de tri du [courrier et des courriels entrants](/guides/traitement-du-courrier-entrant).
+Convenez avec l’équipe de la personne qui reçoit ces alertes et de celle qui décide de répondre. Conservez le message sans activer ses liens ni ouvrir une pièce jointe douteuse. Pour un courriel suspect, votre responsable informatique peut indiquer comment le transmettre au support sans augmenter le risque.
 
-## Exemple fictif : le courriel qui citait la bonne adresse
+Si des informations ont déjà été communiquées ou un paiement effectué, notez les faits, les dates et les pièces disponibles puis demandez l’aide adaptée par un canal officiel. Ne poursuivez pas la conversation pour tenter de récupérer vous-même les données.
 
-Une agence immobilière apprend par la presse qu’un de ses fournisseurs a subi une fuite. Une semaine plus tard, la gérante reçoit un message d’une « association » qui cite son adresse et son numéro de portable exacts et propose une procédure de suppression. Son assistante reconnaît le scénario décrit par la CNIL, ne répond pas, et prévient l’équipe. Le cas est inventé pour illustrer le réflexe.
+## Checklist face à une offre reçue
 
-## Ce que BrittAssist peut prendre en charge
+1. Noter le nom revendiqué par l’expéditeur et la demande exacte.
+2. Suspendre l’envoi de pièces et tout paiement lié au message.
+3. Retrouver les coordonnées officielles par un accès indépendant.
+4. Faire vérifier l’offre et son origine auprès de l’interlocuteur compétent.
+5. Conserver les éléments nécessaires au signalement, sans les diffuser inutilement.
+6. Si une action a déjà eu lieu, transmettre rapidement les faits au responsable du dossier.
 
-Trier les messages, repérer ceux qui ne suivent pas les circuits habituels, vérifier avant de transmettre : c’est le quotidien d’une assistante de direction. Les mêmes réflexes protègent contre les demandes de changement de RIB, décrites dans le guide [fraude au faux RIB et au président](/guides/fraude-au-faux-rib-et-au-president).
+## Exemple fictif : une demande de pièce d’identité
+
+Un artisan reçoit un message proposant une indemnisation après une fuite et demandant une pièce d’identité. Son assistante suspend la réponse et vérifie l’organisme à partir de ses coordonnées officielles. Elle signale ensuite le message selon les consignes reçues. Ce scénario est inventé.
+
+Ajoutez cette consigne à la procédure d’accueil. Un remplaçant doit savoir qu’une information exacte dans un message peut provenir précisément de la fuite évoquée.
+
+## Prolonger les actions dans vos dossiers
+
+Pour organiser la suite, consultez les guides [Fraude au faux RIB et fraude au président : la vérification qui les arrête.](/guides/fraude-au-faux-rib-et-au-president) et [Compte piraté, ordinateur perdu chez votre prestataire : les premières heures.](/guides/incident-de-securite-chez-un-prestataire). Ils prolongent cette actualité par des méthodes de travail. Choisissez les étapes utiles à votre dossier et faites valider les décisions qui relèvent de vos interlocuteurs compétents.
