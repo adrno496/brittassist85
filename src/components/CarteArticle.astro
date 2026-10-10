@@ -21,12 +21,8 @@ const Titre = niveau;
   <Titre class={une ? 'article-une__titre' : 'carte-article__titre'}>{a.data.h1}</Titre>
   <p class={une ? 'article-une__chapo' : 'carte-article__chapo'}>{a.data.summary}</p>
   <p class={une ? 'article-une__meta' : 'carte-article__meta'}>
-    {a.data.datePublished ? (
-      <>Publié le <time datetime={a.data.datePublished}>{dateLisible(a.data.datePublished)}</time></>
-    ) : (
-      <>Non publié</>
-    )}
-    {' · '}Actualité du <time datetime={a.data.dateEvenement}>{dateLisible(a.data.dateEvenement)}</time>
+    {a.brouillon && <>Non publié{' · '}</>}
+    Actualité du <time datetime={a.data.dateEvenement}>{dateLisible(a.data.dateEvenement)}</time>
     {' · '}{a.lecture} min de lecture
   </p>
 </a>

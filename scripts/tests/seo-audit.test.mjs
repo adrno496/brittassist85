@@ -121,7 +121,7 @@ function article({ publie = '2026-10-10', modifie = publie, pageModifiee = modif
     titre: 'Un article du site de test',
     h1: 'Article',
     description: 'Une description d’article différente des autres, et assez longue pour le seuil minimal.',
-    corps: `<p>Publié le <time datetime="${visible}">ce jour</time></p>${lien('/')}`,
+    corps: `${visible ? `<p>Publié le <time itemprop="datePublished" datetime="${visible}">ce jour</time></p>` : ''}${lien('/')}`,
     extra: `<script type="application/ld+json">${JSON.stringify(ld)}</script>`,
   };
 }
@@ -137,9 +137,11 @@ test('article : dates contradictoires entre la page et le BlogPosting', () => {
   assert.ok(regles(r).has('dates-contradictoires'));
 });
 
-test('article : date de publication invisible, future ou postérieure à la modification', () => {
-  const invisible = auditer(site([{ chemin: '/', titre: 'Accueil du site de test', h1: 'Accueil', corps: lien('/articles/a') }, article({ visible: '2026-01-01' })]));
-  assert.ok(regles(invisible).has('article-date-invisible'));
+test('article : affichage facultatif de la date, sans contradiction ni date future ou inversée', () => {
+  const sansDateAffichee = auditer(site([{ chemin: '/', titre: 'Accueil du site de test', h1: 'Accueil', corps: lien('/articles/a') }, article({ publie: '2026-10-03', visible: null })]));
+  assert.deepEqual([...regles(sansDateAffichee)].filter((x) => x.startsWith('article') || x.startsWith('dates') || x.startsWith('sitemap-lastmod-article')), []);
+  const contradictoire = auditer(site([{ chemin: '/', titre: 'Accueil du site de test', h1: 'Accueil', corps: lien('/articles/a') }, article({ visible: '2026-01-01' })]));
+  assert.ok(regles(contradictoire).has('article-date-contradictoire'));
   const future = auditer(site([{ chemin: '/', titre: 'Accueil du site de test', h1: 'Accueil', corps: lien('/articles/a') }, article({ publie: '2099-01-01' })]));
   assert.ok(regles(future).has('article-date-future'));
   const inversee = auditer(site([{ chemin: '/', titre: 'Accueil du site de test', h1: 'Accueil', corps: lien('/articles/a') }, article({ modifie: '2026-10-01', pageModifiee: '2026-10-01' })]));

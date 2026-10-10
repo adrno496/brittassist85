@@ -97,13 +97,7 @@ const donnees = {
       <h1 class="hero__title">{d.h1}</h1>
       <p class="hero__sub">{d.summary}</p>
       <p class="article-meta">
-        <span>
-          {d.datePublished ? (
-            <>Publié le <strong><time datetime={d.datePublished}>{dateLisible(d.datePublished)}</time></strong></>
-          ) : (
-            <>Non publié</>
-          )}
-        </span>
+        {a.brouillon && <span>Non publié</span>}
         {dateModifiee && <span>Mis à jour le <time datetime={dateModifiee}>{dateLisible(dateModifiee)}</time></span>}
         <span>Actualité du <time datetime={d.dateEvenement}>{dateLisible(d.dateEvenement)}</time></span>
         <span>{a.lecture} min de lecture</span>
@@ -117,7 +111,7 @@ const donnees = {
       {a.retrospectif && (
         <p class="note-article reveal">
           <strong>Rétrospective de la semaine {semaine}.</strong>{' '}
-          {d.datePublished ? <>Cet article a été rédigé et publié le {dateLisible(d.datePublished)}</> : <>Cet article est rédigé après coup</>},
+          Cet article est rédigé après coup,
           après la semaine qu’il couvre. Les faits y sont présentés tels qu’ils étaient connus cette semaine-là ;
           ce qui a pu changer depuis est signalé à part. Vérifiez la règle en vigueur aujourd’hui avant d’agir.
         </p>

@@ -1,0 +1,5 @@
+42 pages × 5 écrans = 210 chargements en 126 s
+Pages avec au moins un problème : 0 · violations axe-core : 0
+  PASS — Tab atteint d’abord le lien d’évitement ({"classe":"skip-link","href":"#main-content"})
+  PASS — Menu mobile : ouverture au clic, fermeture à Échap (aria-expanded true → false)
+  PASS — Bandeau de consentement affiché, aucun cookie de mesure avant choix (bandeau 1, cookies [])

@@ -217,7 +217,10 @@ function analyserPage(dist, fichier) {
     verifier(/<style\b([^>]*)>([\s\S]*?)<\/style>/gi, 'style');
   }
 
-  const datesVisibles = new Set([...principal.matchAll(/<time\b[^>]*\sdatetime\s*=\s*["']([^"']+)["']/gi)].map((m) => m[1]));
+  const datesPublicationVisibles = new Set([...principal.matchAll(/<time\b([^>]*)>/gi)]
+    .filter((m) => /\bitemprop\s*=\s*["']datePublished["']/i.test(m[1]))
+    .map((m) => m[1].match(/\bdatetime\s*=\s*["']([^"']+)["']/i)?.[1])
+    .filter(Boolean));
   const identifiants = new Set([...html.matchAll(/\sid\s*=\s*["']([^"']+)["']/gi)].map((m) => m[1]));
   const texte = texteBrut(principal);
 
@@ -252,7 +255,7 @@ function analyserPage(dist, fichier) {
     stylesInline: (html.match(/<[a-z][^>]*\sstyle\s*=\s*["']/gi) ?? []).length,
     csp: { presente: Boolean(csp), empreintesManquantes },
     identifiants,
-    datesVisibles,
+    datesPublicationVisibles,
     texte,
     mots: texte ? texte.split(/\s+/).length : 0,
   };
@@ -356,8 +359,10 @@ export function auditer(dist) {
         // Une date de publication ne peut pas être dans le futur, ni précéder la mise à jour déclarée.
         if (n.datePublished && Date.parse(n.datePublished) > Date.now() + 86_400_000) bloquer('article-date-future', p.chemin, n.datePublished);
         if (n.datePublished && n.dateModified && n.dateModified < n.datePublished) bloquer('article-dates-inversees', p.chemin, `${n.dateModified} < ${n.datePublished}`);
-        // Les données structurées et la page disent la même date : celle-ci doit être visible.
-        if (type.includes('BlogPosting') && n.datePublished && !p.datesVisibles.has(n.datePublished)) bloquer('article-date-invisible', p.chemin, `${n.datePublished} absente des <time> de la page`);
+        // Affichage facultatif à la demande du propriétaire ; toute date affichée doit rester exacte.
+        for (const date of p.datesPublicationVisibles) {
+          if (n.datePublished && date !== n.datePublished) bloquer('article-date-contradictoire', p.chemin, `${date} affichée ≠ ${n.datePublished} déclarée`);
+        }
       }
       if (type.includes('FAQPage')) {
         const visible = normaliser(p.texte);

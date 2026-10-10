@@ -1,0 +1,1448 @@
+{
+  "genere": "2026-10-10T17:41:19.569Z",
+  "base": "http://127.0.0.1:4322",
+  "dureeSecondes": 126,
+  "pages": 42,
+  "chargements": 210,
+  "ecrans": [
+    {
+      "nom": "mobile étroit",
+      "width": 320,
+      "height": 640
+    },
+    {
+      "nom": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "nom": "tablette",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "nom": "bureau",
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "nom": "grand écran",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "reglesAxe": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21a",
+    "wcag21aa",
+    "wcag22aa"
+  ],
+  "pagesEnEchec": 0,
+  "violationsAxe": 0,
+  "parcours": [
+    {
+      "test": "Tab atteint d’abord le lien d’évitement",
+      "ok": true,
+      "detail": "{\"classe\":\"skip-link\",\"href\":\"#main-content\"}"
+    },
+    {
+      "test": "Menu mobile : ouverture au clic, fermeture à Échap",
+      "ok": true,
+      "detail": "aria-expanded true → false"
+    },
+    {
+      "test": "Bandeau de consentement affiché, aucun cookie de mesure avant choix",
+      "ok": true,
+      "detail": "bandeau 1, cookies []"
+    }
+  ],
+  "resultats": [
+    {
+      "chemin": "/articles/acre-2026-exoneration-25-pour-cent",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/ai-act-accord-omnibus-mai-2026",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/ai-act-transparence-chatbot-2-aout-2026",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/assurance-professionnelle-contre-expertise-loi-mai-2026",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/barometre-france-num-2026-ia-tpe",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/bilan-cybermalveillance-2025-priorites-tpe",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/cnil-alerte-faux-organismes-fuite-de-donnees",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/cnil-cameras-captation-sonore",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/cnil-controles-2026-recrutement",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/cnil-facturation-electronique-donnees-personnelles",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/cnil-pixels-suivi-emails",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/cnil-recommandation-proxy-filtrage-web",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/cnil-sanction-fichier-clients-reseau-social",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/cnil-sanctions-simplifiees-juillet-2026",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/conge-de-naissance-independants-juillet-2026",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/creations-entreprises-pays-loire-mars-2026",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/cybermois-2026-suivi-fuite-donnees",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/declaration-revenus-2025-independants-ouverture",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/declaration-revenus-date-limite-vendee-2026",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/decret-27-juillet-2026-plateforme-agreee",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/decret-formalites-30-avril-2026",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/defaillances-entreprises-surveiller-clients-fournisseurs",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/demarchage-telephonique-consentement-11-aout-2026",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/donnees-sante-habilitations-alerte-septembre-2026",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/facturation-electronique-premiere-semaine-septembre-2026",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/france-travail-acces-partenaires-janvier-2026",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/futur-code-ape-naf-2025-consultation",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/liste-plateformes-agreees-facturation-electronique",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/loi-de-finances-2026-mesures-tpe",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/marches-publics-criteres-environnementaux-aout-2026",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/numero-masque-appels-etranger-janvier-2026",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/numero-unique-dgfip-professionnels",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/page/2",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/piratage-impots-vigilance-messages-aout-2026",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/pixels-emails-anciennes-listes-delai-juillet-2026",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/place-marches-publics-elargissement-juin-2026",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/rapport-annuel-cnil-2025-petites-structures",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/regularisation-cotisations-independants-2026",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/smic-juin-2026-checklist-employeur",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles/tva-fin-regime-simplifie-1er-janvier-2027",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    },
+    {
+      "chemin": "/articles",
+      "statut": 200,
+      "ecrans": [
+        {
+          "ecran": "mobile étroit",
+          "largeur": 320,
+          "problemes": []
+        },
+        {
+          "ecran": "mobile",
+          "largeur": 390,
+          "problemes": []
+        },
+        {
+          "ecran": "tablette",
+          "largeur": 768,
+          "problemes": []
+        },
+        {
+          "ecran": "bureau",
+          "largeur": 1366,
+          "problemes": []
+        },
+        {
+          "ecran": "grand écran",
+          "largeur": 1920,
+          "problemes": []
+        }
+      ],
+      "axe": [],
+      "erreurs": []
+    }
+  ]
+}

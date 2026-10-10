@@ -1,0 +1,383 @@
+{
+  "base": "http://127.0.0.1:4322",
+  "date": "2026-10-10T17:40:33.923Z",
+  "pages": 42,
+  "articles": 40,
+  "errors": [],
+  "results": [
+    {
+      "path": "/articles/acre-2026-exoneration-25-pour-cent",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/ai-act-accord-omnibus-mai-2026",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/ai-act-transparence-chatbot-2-aout-2026",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/amendes-facturation-electronique-loi-de-finances-2026",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/assurance-professionnelle-contre-expertise-loi-mai-2026",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/barometre-france-num-2026-ia-tpe",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/bilan-cybermalveillance-2025-priorites-tpe",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/cnil-alerte-faux-organismes-fuite-de-donnees",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/cnil-cameras-captation-sonore",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/cnil-controles-2026-recrutement",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/cnil-facturation-electronique-donnees-personnelles",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/cnil-pixels-suivi-emails",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/cnil-recommandation-proxy-filtrage-web",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/cnil-sanction-fichier-clients-reseau-social",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/cnil-sanctions-simplifiees-juillet-2026",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/conge-de-naissance-independants-juillet-2026",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/creations-entreprises-pays-loire-mars-2026",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/cybermois-2026-suivi-fuite-donnees",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/declaration-revenus-2025-independants-ouverture",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/declaration-revenus-date-limite-vendee-2026",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/decret-27-juillet-2026-plateforme-agreee",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/decret-formalites-30-avril-2026",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/defaillances-entreprises-surveiller-clients-fournisseurs",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/demarchage-telephonique-consentement-11-aout-2026",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/donnees-sante-habilitations-alerte-septembre-2026",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/facturation-electronique-premiere-semaine-septembre-2026",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/france-travail-acces-partenaires-janvier-2026",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/futur-code-ape-naf-2025-consultation",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/liste-plateformes-agreees-facturation-electronique",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/loi-de-finances-2026-mesures-tpe",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/marches-publics-criteres-environnementaux-aout-2026",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/numero-masque-appels-etranger-janvier-2026",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/numero-unique-dgfip-professionnels",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/page/2",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": []
+    },
+    {
+      "path": "/articles/piratage-impots-vigilance-messages-aout-2026",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/pixels-emails-anciennes-listes-delai-juillet-2026",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/place-marches-publics-elargissement-juin-2026",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/rapport-annuel-cnil-2025-petites-structures",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/regularisation-cotisations-independants-2026",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/smic-juin-2026-checklist-employeur",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles/tva-fin-regime-simplifie-1er-janvier-2027",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": [
+        "2026-10-10"
+      ]
+    },
+    {
+      "path": "/articles",
+      "status": 200,
+      "mentionRetiree": true,
+      "dateRetrospectiveRetiree": true,
+      "datesSeo": []
+    }
+  ]
+}
