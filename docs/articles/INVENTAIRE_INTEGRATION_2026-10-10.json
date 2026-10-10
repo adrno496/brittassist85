@@ -16,16 +16,24 @@
       "fichier": "AGENTS.md"
     },
     {
+      "statut": "A",
+      "fichier": "CLAUDE.md"
+    },
+    {
+      "statut": "M",
+      "fichier": "README.md"
+    },
+    {
       "statut": "M",
       "fichier": "astro.config.mjs"
     },
     {
       "statut": "A",
-      "fichier": "CLAUDE.md"
+      "fichier": "docs/articles/COMPARAISON_ROUTES_2026-10-10.json"
     },
     {
       "statut": "A",
-      "fichier": "docs/articles/COMPARAISON_ROUTES_2026-10-10.json"
+      "fichier": "docs/articles/CONTROLE_HTTP_PRODUCTION_2026-10-10.json"
     },
     {
       "statut": "A",
@@ -45,6 +53,30 @@
     },
     {
       "statut": "A",
+      "fichier": "docs/articles/PROCEDURE_NOUVEL_ARTICLE.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/RAPPORT_IMPLEMENTATION.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/RAPPORT_INTEGRATION_VSCODE_PRODUCTION.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/RELECTURE_40_ARTICLES_2026-10-10.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/SOURCES_VERIFIEES.md"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/SOURCES_VERIFIEES_2026-10-10.json"
+    },
+    {
+      "statut": "A",
       "fichier": "docs/articles/plan-editorial-2026.json"
     },
     {
@@ -53,7 +85,23 @@
     },
     {
       "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/check-livraison.log"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/check-sans-date-visible.log"
+    },
+    {
+      "statut": "A",
       "fichier": "docs/articles/preuves-2026-10-10/check.log"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/date-visible-locale.json"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/date-visible-production.json"
     },
     {
       "statut": "A",
@@ -73,6 +121,14 @@
     },
     {
       "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/navigateur-sans-date-visible.json"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/navigateur-sans-date-visible.log"
+    },
+    {
+      "statut": "A",
       "fichier": "docs/articles/preuves-2026-10-10/nouvel-article.log"
     },
     {
@@ -85,7 +141,23 @@
     },
     {
       "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/qa-apercu-livraison.log"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/qa-apercu-sans-date-visible.log"
+    },
+    {
+      "statut": "A",
       "fichier": "docs/articles/preuves-2026-10-10/qa-apercu.log"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/qa-livraison.log"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/qa-sans-date-visible.log"
     },
     {
       "statut": "A",
@@ -97,7 +169,19 @@
     },
     {
       "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/search-console.json"
+    },
+    {
+      "statut": "A",
       "fichier": "docs/articles/preuves-2026-10-10/similarite.log"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/tests-livraison.log"
+    },
+    {
+      "statut": "A",
+      "fichier": "docs/articles/preuves-2026-10-10/tests-sans-date-visible.log"
     },
     {
       "statut": "A",
@@ -105,15 +189,7 @@
     },
     {
       "statut": "A",
-      "fichier": "docs/articles/PROCEDURE_NOUVEL_ARTICLE.md"
-    },
-    {
-      "statut": "A",
-      "fichier": "docs/articles/RAPPORT_IMPLEMENTATION.md"
-    },
-    {
-      "statut": "A",
-      "fichier": "docs/articles/RAPPORT_INTEGRATION_VSCODE_PRODUCTION.md"
+      "fichier": "docs/articles/preuves-2026-10-10/vercel-production.json"
     },
     {
       "statut": "A",
@@ -132,28 +208,12 @@
       "fichier": "docs/articles/recherche/S32-S41.json"
     },
     {
-      "statut": "A",
-      "fichier": "docs/articles/RELECTURE_40_ARTICLES_2026-10-10.md"
-    },
-    {
-      "statut": "A",
-      "fichier": "docs/articles/SOURCES_VERIFIEES_2026-10-10.json"
-    },
-    {
-      "statut": "A",
-      "fichier": "docs/articles/SOURCES_VERIFIEES.md"
-    },
-    {
       "statut": "M",
       "fichier": "package-lock.json"
     },
     {
       "statut": "M",
       "fichier": "package.json"
-    },
-    {
-      "statut": "M",
-      "fichier": "README.md"
     },
     {
       "statut": "A",
@@ -435,5 +495,7 @@
       "statut": "A",
       "fichier": "src/styles/articles.css"
     }
-  ]
+  ],
+  "commitContenu": "edd799425d8fe24a968a6f05e361776f5b63095f",
+  "commitAffichage": "8fc378eb31ddaa0bfe89d0b518a7992249ef9239"
 }

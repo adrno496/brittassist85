@@ -1,0 +1,355 @@
+
+> brittassist@1.0.0 qa:apercu
+> node scripts/content-gate.mjs && node scripts/articles-check.mjs && npm run build:apercu && node scripts/seo-audit.mjs --strict
+
+Fiches : 154 guides (142 nouveaux) · 14 métiers · 8 dossiers
+Nouveaux guides par nature : pilier 8 · guide 19 · situation 18 · reference 16 · methode 53 · comparatif 11 · modele 17
+Brouillons non publiés : 0 · nouveaux guides non relus : 0 · requêtes principales distinctes : 142
+Série secrétariat : 50 guides · lot A 10 · lot B 10 · lot C 15 · lot D 15 · en ligne : 50 · validées par le propriétaire : 50 · relues par Brittany Dreano : 50
+Blocages : 0 · avertissements : 0
+Articles : 40 fiche(s) · 40 publiée(s) · 0 prête(s) à publier · contrôle au 2026-10-10
+Plan : 41 créneau(x) · PUBLIE 40 · SOURCES_INSUFFISANTES 1
+Blocages : 0 · avertissements : 38
+
+AVERTISSEMENTS :
+  une-seule-source                 acre-2026-exoneration-25-pour-cent — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 ai-act-accord-omnibus-mai-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 ai-act-transparence-chatbot-2-aout-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 assurance-professionnelle-contre-expertise-loi-mai-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 barometre-france-num-2026-ia-tpe — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 bilan-cybermalveillance-2025-priorites-tpe — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 cnil-alerte-faux-organismes-fuite-de-donnees — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 cnil-cameras-captation-sonore — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 cnil-controles-2026-recrutement — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 cnil-facturation-electronique-donnees-personnelles — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 cnil-pixels-suivi-emails — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 cnil-recommandation-proxy-filtrage-web — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 cnil-sanction-fichier-clients-reseau-social — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 cnil-sanctions-simplifiees-juillet-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 creations-entreprises-pays-loire-mars-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 cybermois-2026-suivi-fuite-donnees — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 declaration-revenus-2025-independants-ouverture — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 declaration-revenus-date-limite-vendee-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 decret-27-juillet-2026-plateforme-agreee — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 decret-formalites-30-avril-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 defaillances-entreprises-surveiller-clients-fournisseurs — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 demarchage-telephonique-consentement-11-aout-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 donnees-sante-habilitations-alerte-septembre-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 facturation-electronique-premiere-semaine-septembre-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 france-travail-acces-partenaires-janvier-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 futur-code-ape-naf-2025-consultation — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 liste-plateformes-agreees-facturation-electronique — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 loi-de-finances-2026-mesures-tpe — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 marches-publics-criteres-environnementaux-aout-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 numero-masque-appels-etranger-janvier-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 numero-unique-dgfip-professionnels — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 piratage-impots-vigilance-messages-aout-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 pixels-emails-anciennes-listes-delai-juillet-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 place-marches-publics-elargissement-juin-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 rapport-annuel-cnil-2025-petites-structures — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 regularisation-cotisations-independants-2026 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 smic-juin-2026-checklist-employeur — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+  une-seule-source                 tva-fin-regime-simplifie-1er-janvier-2027 — 1 source(s) ouverte(s) : deux sources indépendantes sont préférables
+
+> brittassist@1.0.0 build:apercu
+> BROUILLONS=1 astro build
+
+19:47:42 [content] Syncing content
+19:47:42 [content] Synced content
+19:47:42 [types] Generated 1.58s
+19:47:42 [build] output: "static"
+19:47:42 [build] mode: "static"
+19:47:42 [build] directory: /private/tmp/brittassist-integration-20261010/dist/
+19:47:42 [build] Collecting build info...
+19:47:42 [build] ✓ Completed in 1.64s.
+19:47:42 [build] Building static entrypoints...
+19:47:46 [vite] ✓ built in 3.54s
+19:47:46 [build] ✓ Completed in 3.64s.
+
+ building client (vite)
+19:47:46 [vite] transforming...
+19:47:46 [vite] ✓ 3 modules transformed.
+19:47:46 [vite] rendering chunks...
+19:47:46 [vite] ✓ built in 25ms
+
+ generating static routes
+19:47:46 ▶ src/pages/404.astro
+19:47:46   └─ /404.html (+15ms)
+19:47:46 ▶ src/pages/[editorial].astro
+19:47:46   └─ /methode-editoriale.html (+9ms)
+19:47:46 ▶ src/pages/a-propos.astro
+19:47:46   └─ /a-propos.html (+14ms)
+19:47:46 ▶ src/pages/articles/[slug].astro
+19:47:46   ├─ /articles/numero-unique-dgfip-professionnels.html (+56ms)
+19:47:46   ├─ /articles/cybermois-2026-suivi-fuite-donnees.html (+15ms)
+19:47:46   ├─ /articles/barometre-france-num-2026-ia-tpe.html (+8ms)
+19:47:46   ├─ /articles/tva-fin-regime-simplifie-1er-janvier-2027.html (+6ms)
+19:47:46   ├─ /articles/cnil-facturation-electronique-donnees-personnelles.html (+9ms)
+19:47:46   ├─ /articles/donnees-sante-habilitations-alerte-septembre-2026.html (+6ms)
+19:47:46   ├─ /articles/facturation-electronique-premiere-semaine-septembre-2026.html (+5ms)
+19:47:46   ├─ /articles/marches-publics-criteres-environnementaux-aout-2026.html (+5ms)
+19:47:46   ├─ /articles/piratage-impots-vigilance-messages-aout-2026.html (+5ms)
+19:47:46   ├─ /articles/demarchage-telephonique-consentement-11-aout-2026.html (+5ms)
+19:47:46   ├─ /articles/ai-act-transparence-chatbot-2-aout-2026.html (+5ms)
+19:47:46   ├─ /articles/decret-27-juillet-2026-plateforme-agreee.html (+4ms)
+19:47:46   ├─ /articles/cnil-pixels-suivi-emails.html (+5ms)
+19:47:46   ├─ /articles/pixels-emails-anciennes-listes-delai-juillet-2026.html (+5ms)
+19:47:46   ├─ /articles/cnil-sanctions-simplifiees-juillet-2026.html (+5ms)
+19:47:46   ├─ /articles/conge-de-naissance-independants-juillet-2026.html (+5ms)
+19:47:46   ├─ /articles/cnil-alerte-faux-organismes-fuite-de-donnees.html (+5ms)
+19:47:46   ├─ /articles/place-marches-publics-elargissement-juin-2026.html (+5ms)
+19:47:46   ├─ /articles/declaration-revenus-date-limite-vendee-2026.html (+5ms)
+19:47:46   ├─ /articles/smic-juin-2026-checklist-employeur.html (+5ms)
+19:47:46   ├─ /articles/assurance-professionnelle-contre-expertise-loi-mai-2026.html (+6ms)
+19:47:46   ├─ /articles/rapport-annuel-cnil-2025-petites-structures.html (+6ms)
+19:47:46   ├─ /articles/ai-act-accord-omnibus-mai-2026.html (+6ms)
+19:47:46   ├─ /articles/decret-formalites-30-avril-2026.html (+13ms)
+19:47:46   ├─ /articles/creations-entreprises-pays-loire-mars-2026.html (+12ms)
+19:47:46   ├─ /articles/regularisation-cotisations-independants-2026.html (+9ms)
+19:47:46   ├─ /articles/declaration-revenus-2025-independants-ouverture.html (+19ms)
+19:47:46   ├─ /articles/cnil-controles-2026-recrutement.html (+7ms)
+19:47:46   ├─ /articles/bilan-cybermalveillance-2025-priorites-tpe.html (+8ms)
+19:47:46   ├─ /articles/cnil-cameras-captation-sonore.html (+7ms)
+19:47:46   ├─ /articles/cnil-recommandation-proxy-filtrage-web.html (+5ms)
+19:47:46   ├─ /articles/defaillances-entreprises-surveiller-clients-fournisseurs.html (+5ms)
+19:47:46   ├─ /articles/loi-de-finances-2026-mesures-tpe.html (+4ms)
+19:47:46   ├─ /articles/amendes-facturation-electronique-loi-de-finances-2026.html (+5ms)
+19:47:46   ├─ /articles/acre-2026-exoneration-25-pour-cent.html (+4ms)
+19:47:46   ├─ /articles/france-travail-acces-partenaires-janvier-2026.html (+4ms)
+19:47:46   ├─ /articles/cnil-sanction-fichier-clients-reseau-social.html (+6ms)
+19:47:46   ├─ /articles/liste-plateformes-agreees-facturation-electronique.html (+5ms)
+19:47:46   ├─ /articles/futur-code-ape-naf-2025-consultation.html (+5ms)
+19:47:46   └─ /articles/numero-masque-appels-etranger-janvier-2026.html (+4ms)
+19:47:46 ▶ src/pages/articles/page/[page].astro
+19:47:46   └─ /articles/page/2.html (+24ms)
+19:47:46 ▶ src/pages/articles.astro
+19:47:46   └─ /articles.html (+12ms)
+19:47:46 ▶ src/pages/assistante-independante/[slug].astro
+19:47:46   ├─ /assistante-independante/la-roche-sur-yon.html (+4ms)
+19:47:46   ├─ /assistante-independante/nantes.html (+3ms)
+19:47:46   ├─ /assistante-independante/les-sables-d-olonne.html (+3ms)
+19:47:46   ├─ /assistante-independante/vendee.html (+6ms)
+19:47:46   └─ /assistante-independante/a-distance.html (+4ms)
+19:47:46 ▶ src/pages/assistante-independante/index.astro
+19:47:46   └─ /assistante-independante.html (+6ms)
+19:47:46 ▶ src/pages/assistante/[slug].astro
+19:47:46   ├─ /assistante/artisans-btp.html (+14ms)
+19:47:46   ├─ /assistante/dirigeants-pme.html (+6ms)
+19:47:46   ├─ /assistante/consultants-independants.html (+5ms)
+19:47:46   ├─ /assistante/professions-liberales.html (+16ms)
+19:47:46   ├─ /assistante/agents-immobiliers.html (+4ms)
+19:47:46   ├─ /assistante/e-commerce.html (+15ms)
+19:47:46   ├─ /assistante/dirigeants-multi-societes.html (+7ms)
+19:47:46   ├─ /assistante/professionnels-sante.html (+8ms)
+19:47:46   ├─ /assistante/organismes-de-formation.html (+5ms)
+19:47:46   ├─ /assistante/architectes-maitres-d-oeuvre.html (+5ms)
+19:47:46   ├─ /assistante/hotellerie-restauration.html (+5ms)
+19:47:46   ├─ /assistante/fondateurs-de-startup.html (+5ms)
+19:47:46   ├─ /assistante/agences-et-studios.html (+6ms)
+19:47:46   └─ /assistante/organisateurs-d-evenements.html (+5ms)
+19:47:46 ▶ src/pages/assistante/index.astro
+19:47:46   └─ /assistante.html (+8ms)
+19:47:46 ▶ src/pages/cgv.astro
+19:47:46   └─ /cgv.html (+7ms)
+19:47:46 ▶ src/pages/contact.astro
+19:47:46   └─ /contact.html (+4ms)
+19:47:46 ▶ src/pages/guides/[slug].astro
+19:47:46   ├─ /guides/assistante-independante-ou-salariee.html (+6ms)
+19:47:46   ├─ /guides/prix-assistante-de-direction-externalisee.html (+4ms)
+19:47:46   ├─ /guides/qu-est-ce-qu-un-private-office.html (+4ms)
+19:47:46   ├─ /guides/assistante-virtuelle-ou-private-office.html (+4ms)
+19:47:46   ├─ /guides/secretariat-externalise.html (+5ms)
+19:47:46   ├─ /guides/comment-deleguer.html (+5ms)
+19:47:46   ├─ /guides/executive-assistant-role.html (+5ms)
+19:47:46   ├─ /guides/confidentialite-assistante-externalisee.html (+4ms)
+19:47:46   ├─ /guides/premier-mois-assistante-externalisee.html (+4ms)
+19:47:46   ├─ /guides/choisir-assistante-externalisee.html (+4ms)
+19:47:46   ├─ /guides/modele-brief-assistante-externalisee.html (+4ms)
+19:47:46   ├─ /guides/suivi-demandes-assistante-externalisee.html (+4ms)
+19:47:46   ├─ /guides/externaliser-son-assistanat.html (+5ms)
+19:47:46   ├─ /guides/quelles-taches-deleguer-a-une-assistante.html (+6ms)
+19:47:46   ├─ /guides/quand-prendre-une-assistante.html (+10ms)
+19:47:46   ├─ /guides/contrat-de-prestation-assistante-independante.html (+7ms)
+19:47:46   ├─ /guides/requalification-assistante-independante-salariat.html (+5ms)
+19:47:46   ├─ /guides/niveaux-d-autonomie-delegation.html (+5ms)
+19:47:46   ├─ /guides/erreurs-de-delegation.html (+5ms)
+19:47:46   ├─ /guides/fin-de-collaboration-assistante-externalisee.html (+5ms)
+19:47:46   ├─ /guides/ce-qu-une-assistante-externalisee-ne-fait-pas.html (+4ms)
+19:47:46   ├─ /guides/rentabilite-assistante-externalisee.html (+4ms)
+19:47:46   ├─ /guides/point-hebdomadaire-avec-son-assistante.html (+4ms)
+19:47:46   ├─ /guides/assistante-externalisee-et-ia.html (+4ms)
+19:47:46   ├─ /guides/conciergerie-privee-ou-lifestyle-assistant.html (+5ms)
+19:47:46   ├─ /guides/chief-of-staff-ou-executive-assistant.html (+4ms)
+19:47:46   ├─ /guides/canal-pour-transmettre-ses-demandes.html (+6ms)
+19:47:46   ├─ /guides/organiser-l-administratif-de-son-entreprise.html (+5ms)
+19:47:46   ├─ /guides/arborescence-dossiers-entreprise.html (+9ms)
+19:47:46   ├─ /guides/regles-de-nommage-des-fichiers.html (+7ms)
+19:47:46   ├─ /guides/duree-de-conservation-documents-entreprise.html (+5ms)
+19:47:46   ├─ /guides/echeancier-administratif-entreprise.html (+6ms)
+19:47:46   ├─ /guides/pieces-pour-l-expert-comptable.html (+5ms)
+19:47:46   ├─ /guides/notes-de-frais-justificatifs.html (+4ms)
+19:47:46   ├─ /guides/suivi-des-contrats-et-abonnements.html (+5ms)
+19:47:46   ├─ /guides/traitement-du-courrier-entrant.html (+5ms)
+19:47:46   ├─ /guides/dossier-permanent-entreprise.html (+4ms)
+19:47:46   ├─ /guides/rediger-une-procedure-interne.html (+8ms)
+19:47:46   ├─ /guides/administratif-a-la-creation-d-entreprise.html (+4ms)
+19:47:46   ├─ /guides/devis-factures-relances.html (+5ms)
+19:47:46   ├─ /guides/mentions-obligatoires-facture.html (+5ms)
+19:47:46   ├─ /guides/facturation-electronique-tpe.html (+5ms)
+19:47:46   ├─ /guides/relancer-une-facture-impayee.html (+4ms)
+19:47:46   ├─ /guides/delais-de-paiement-et-penalites-de-retard.html (+4ms)
+19:47:46   ├─ /guides/mise-en-demeure-et-injonction-de-payer.html (+8ms)
+19:47:46   ├─ /guides/relancer-un-devis-sans-reponse.html (+5ms)
+19:47:46   ├─ /guides/devis-contenu-et-validite.html (+6ms)
+19:47:47   ├─ /guides/acompte-ou-arrhes.html (+6ms)
+19:47:47   ├─ /guides/numerotation-des-factures-et-avoirs.html (+6ms)
+19:47:47   ├─ /guides/facture-de-situation-et-retenue-de-garantie.html (+7ms)
+19:47:47   ├─ /guides/choisir-un-logiciel-de-facturation.html (+6ms)
+19:47:47   ├─ /guides/circuit-des-factures-fournisseurs.html (+7ms)
+19:47:47   ├─ /guides/agenda-emails-reunions.html (+7ms)
+19:47:47   ├─ /guides/organiser-sa-boite-mail-de-dirigeant.html (+15ms)
+19:47:47   ├─ /guides/deleguer-sa-boite-mail.html (+8ms)
+19:47:47   ├─ /guides/tenir-un-agenda-de-dirigeant.html (+6ms)
+19:47:47   ├─ /guides/preparer-une-reunion.html (+6ms)
+19:47:47   ├─ /guides/compte-rendu-de-reunion.html (+9ms)
+19:47:47   ├─ /guides/reponses-types-emails.html (+9ms)
+19:47:47   ├─ /guides/gerer-les-demandes-de-rendez-vous.html (+13ms)
+19:47:47   ├─ /guides/preparer-son-absence.html (+5ms)
+19:47:47   ├─ /guides/filtrer-les-appels-et-messages.html (+5ms)
+19:47:47   ├─ /guides/dossier-de-rendez-vous.html (+4ms)
+19:47:47   ├─ /guides/reunions-et-fuseaux-horaires.html (+6ms)
+19:47:47   ├─ /guides/deplacements-et-evenements-professionnels.html (+4ms)
+19:47:47   ├─ /guides/organiser-un-deplacement-professionnel.html (+5ms)
+19:47:47   ├─ /guides/feuille-de-route-de-deplacement.html (+5ms)
+19:47:47   ├─ /guides/organiser-un-seminaire-d-equipe.html (+4ms)
+19:47:47   ├─ /guides/organiser-un-diner-client.html (+4ms)
+19:47:47   ├─ /guides/politique-voyage-petite-entreprise.html (+4ms)
+19:47:47   ├─ /guides/deplacement-a-l-etranger-formalites.html (+5ms)
+19:47:47   ├─ /guides/gerer-un-imprevu-en-deplacement.html (+6ms)
+19:47:47   ├─ /guides/choisir-un-lieu-de-seminaire.html (+28ms)
+19:47:47   ├─ /guides/confidentialite-acces-et-outils.html (+7ms)
+19:47:47   ├─ /guides/partager-un-mot-de-passe-en-securite.html (+25ms)
+19:47:47   ├─ /guides/delegation-d-acces-messagerie-et-agenda.html (+18ms)
+19:47:47   ├─ /guides/double-authentification-et-delegation.html (+8ms)
+19:47:47   ├─ /guides/signature-electronique-niveaux-et-usages.html (+11ms)
+19:47:47   ├─ /guides/ia-generative-et-donnees-confidentielles.html (+9ms)
+19:47:47   ├─ /guides/choisir-un-outil-de-suivi-des-taches.html (+6ms)
+19:47:47   ├─ /guides/choisir-un-espace-de-stockage-partage.html (+4ms)
+19:47:47   ├─ /guides/registre-des-acces-entreprise.html (+4ms)
+19:47:47   ├─ /guides/fraude-au-faux-rib-et-au-president.html (+4ms)
+19:47:47   ├─ /guides/sauvegarde-des-documents-entreprise.html (+5ms)
+19:47:47   ├─ /guides/situations-de-dirigeant.html (+7ms)
+19:47:47   ├─ /guides/rattraper-un-retard-administratif.html (+7ms)
+19:47:47   ├─ /guides/dirigeant-goulot-d-etranglement.html (+18ms)
+19:47:47   ├─ /guides/remplacer-une-assistante-absente.html (+6ms)
+19:47:47   ├─ /guides/reprise-d-entreprise-administratif.html (+8ms)
+19:47:47   ├─ /guides/pic-d-activite-saisonnier.html (+6ms)
+19:47:47   ├─ /guides/premiere-embauche-formalites-administratives.html (+8ms)
+19:47:47   ├─ /guides/demenagement-de-bureaux.html (+8ms)
+19:47:47   ├─ /guides/appel-d-offres-dossier-de-candidature.html (+6ms)
+19:47:47   ├─ /guides/dirigeant-souvent-en-deplacement.html (+5ms)
+19:47:47   ├─ /guides/changer-d-outil-de-gestion.html (+7ms)
+19:47:47   ├─ /guides/modeles-et-checklists.html (+40ms)
+19:47:47   ├─ /guides/modele-tableau-de-suivi-des-factures.html (+19ms)
+19:47:47   ├─ /guides/modele-releve-du-temps-administratif.html (+33ms)
+19:47:47   ├─ /guides/modele-fiche-de-preferences-dirigeant.html (+10ms)
+19:47:47   ├─ /guides/checklist-cloture-annuelle-administrative.html (+7ms)
+19:47:47   ├─ /guides/modele-fiche-prestataire.html (+10ms)
+19:47:47   ├─ /guides/modele-note-de-passation.html (+9ms)
+19:47:47   ├─ /guides/modele-tableau-de-bord-hebdomadaire.html (+8ms)
+19:47:47   ├─ /guides/checklist-ouverture-dossier-client.html (+5ms)
+19:47:47   ├─ /guides/inconvenients-secretariat-externalise.html (+5ms)
+19:47:47   ├─ /guides/mission-ponctuelle-de-secretariat.html (+5ms)
+19:47:47   ├─ /guides/periode-d-essai-assistante-independante.html (+7ms)
+19:47:47   ├─ /guides/temps-partage-interim-alternance-ou-prestataire.html (+10ms)
+19:47:47   ├─ /guides/secretariat-externalise-france-ou-offshore.html (+5ms)
+19:47:47   ├─ /guides/secretariat-externalise-charge-deductible.html (+5ms)
+19:47:47   ├─ /guides/domiciliation-ou-secretariat-externalise.html (+7ms)
+19:47:47   ├─ /guides/cahier-des-charges-secretariat-externalise.html (+5ms)
+19:47:47   ├─ /guides/comparer-devis-secretariat-externalise.html (+5ms)
+19:47:47   ├─ /guides/tva-prestataire-en-franchise-en-base.html (+8ms)
+19:47:47   ├─ /guides/delais-de-reponse-assistante-externalisee.html (+7ms)
+19:47:47   ├─ /guides/forfait-secretariat-externalise-depassement.html (+9ms)
+19:47:47   ├─ /guides/evaluer-un-secretariat-externalise.html (+5ms)
+19:47:47   ├─ /guides/revue-trimestrielle-assistance-externalisee.html (+13ms)
+19:47:47   ├─ /guides/changer-d-assistante-externalisee.html (+32ms)
+19:47:47   ├─ /guides/recruter-apres-avoir-externalise.html (+16ms)
+19:47:47   ├─ /guides/assistante-partagee-entre-associes.html (+15ms)
+19:47:47   ├─ /guides/presenter-son-assistante-a-ses-clients.html (+9ms)
+19:47:47   ├─ /guides/absence-de-son-assistante-independante.html (+7ms)
+19:47:47   ├─ /guides/erreur-de-son-assistante-externalisee.html (+7ms)
+19:47:47   ├─ /guides/obligation-de-vigilance-prestataire-independant.html (+6ms)
+19:47:47   ├─ /guides/rgpd-sous-traitance-assistante-externalisee.html (+8ms)
+19:47:47   ├─ /guides/incident-de-securite-chez-un-prestataire.html (+6ms)
+19:47:47   ├─ /guides/acces-bancaire-pour-son-assistante.html (+5ms)
+19:47:47   ├─ /guides/moyens-de-paiement-delegues.html (+4ms)
+19:47:47   ├─ /guides/delegations-aupres-des-organismes.html (+5ms)
+19:47:47   ├─ /guides/sous-traitance-par-son-assistante.html (+5ms)
+19:47:47   ├─ /guides/dirigeant-indisponible-du-jour-au-lendemain.html (+6ms)
+19:47:47   ├─ /guides/conjoint-qui-fait-l-administratif.html (+5ms)
+19:47:47   ├─ /guides/controle-urssaf-preparer-les-pieces.html (+4ms)
+19:47:47   ├─ /guides/depart-d-un-salarie-checklist-administrative.html (+11ms)
+19:47:47   ├─ /guides/lettre-recommandee-electronique.html (+9ms)
+19:47:47   ├─ /guides/mentions-obligatoires-courriers-et-emails.html (+5ms)
+19:47:47   ├─ /guides/collecter-des-pieces-aupres-de-ses-clients.html (+5ms)
+19:47:47   ├─ /guides/tenir-son-fichier-clients-a-jour.html (+9ms)
+19:47:47   ├─ /guides/assemblee-generale-annuelle-retroplanning.html (+5ms)
+19:47:47   ├─ /guides/numeriser-ses-archives-papier.html (+4ms)
+19:47:47   ├─ /guides/declarer-un-sinistre-professionnel.html (+6ms)
+19:47:47   ├─ /guides/vehicules-de-societe-suivi-administratif.html (+5ms)
+19:47:47   ├─ /guides/dicter-ses-courriers.html (+5ms)
+19:47:47   ├─ /guides/checklist-administrative-mensuelle.html (+5ms)
+19:47:47   ├─ /guides/appels-manques-entreprise.html (+40ms)
+19:47:47   ├─ /guides/annonce-de-repondeur-professionnel.html (+12ms)
+19:47:47   ├─ /guides/boite-mail-partagee-entreprise.html (+7ms)
+19:47:47   ├─ /guides/telesecretariat-et-assistante-externalisee.html (+8ms)
+19:47:47   ├─ /guides/coordonner-des-entretiens-de-recrutement.html (+13ms)
+19:47:47   ├─ /guides/participer-a-un-salon-professionnel.html (+6ms)
+19:47:47   ├─ /guides/modele-note-d-aide-a-la-decision.html (+5ms)
+19:47:47   ├─ /guides/assistante-commerciale-externalisee.html (+5ms)
+19:47:47   └─ /guides/traiter-les-demandes-de-devis-entrantes.html (+5ms)
+19:47:47 ▶ src/pages/guides.astro
+19:47:47   └─ /guides.html (+10ms)
+19:47:47 ▶ src/pages/index.astro
+19:47:47   └─ /index.html (+5ms)
+19:47:47 ▶ src/pages/mentions-legales.astro
+19:47:47   └─ /mentions-legales.html (+4ms)
+19:47:47 ▶ src/pages/politique-confidentialite.astro
+19:47:47   └─ /politique-confidentialite.html (+5ms)
+19:47:47 ▶ src/pages/private-office.astro
+19:47:47   └─ /private-office.html (+4ms)
+19:47:47 ▶ src/pages/questionnaire.astro
+19:47:47   └─ /questionnaire.html (+4ms)
+19:47:47 ▶ src/pages/services/[slug].astro
+19:47:47   ├─ /services/gestion-administrative.html (+6ms)
+19:47:47   ├─ /services/facturation.html (+4ms)
+19:47:47   ├─ /services/gestion-des-contrats.html (+4ms)
+19:47:48   ├─ /services/coordination.html (+4ms)
+19:47:48   ├─ /services/gestion-agenda.html (+4ms)
+19:47:48   ├─ /services/organisation-deplacements.html (+4ms)
+19:47:48   ├─ /services/reservations.html (+3ms)
+19:47:48   ├─ /services/organisation-personnelle.html (+3ms)
+19:47:48   ├─ /services/suivi-prestataires.html (+4ms)
+19:47:48   ├─ /services/support-equipes.html (+4ms)
+19:47:48   ├─ /services/recherches.html (+4ms)
+19:47:48   ├─ /services/assistanat-anglais.html (+4ms)
+19:47:48   └─ /services/reporting.html (+4ms)
+19:47:48 ▶ src/pages/services.astro
+19:47:48   └─ /services.html (+7ms)
+19:47:48 ▶ src/pages/tarifs.astro
+19:47:48   └─ /tarifs.html (+6ms)
+19:47:48 ✓ Completed in 1.96s.
+
+19:47:48 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+19:47:50 [brittassist-quality-gate] 243 pages (241 indexables, 0 brouillons) · 0 blocage(s) · 2 avertissement(s)
+19:47:50 [build] 243 page(s) built in 10.16s
+19:47:50 [build] Complete!
+Pages : 243 (241 indexables, 0 brouillons en attente de relecture, 2 non indexables) · sitemap : 241 URL
+Contenu principal : 864 mots en moyenne · profondeur maximale : 2 clic(s)
+Blocages : 0 · avertissements : 2
+
+AVERTISSEMENTS par règle :
+     1  contenu-mince
+          /contact — 150 mots
+     1  sans-lien-contextuel
+          /mentions-legales — liée seulement depuis la navigation ou le pied de page

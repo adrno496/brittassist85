@@ -1,0 +1,12 @@
+
+> brittassist@1.0.0 check
+> astro check
+
+19:47:39 [content] Syncing content
+19:47:39 [content] Synced content
+19:47:39 [types] Generated 811ms
+19:47:39 [check] Getting diagnostics for Astro files in /private/tmp/brittassist-integration-20261010...
+Result (91 files):
+- 0 errors
+- 0 warnings
+- 0 hints

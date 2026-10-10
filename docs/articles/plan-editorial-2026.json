@@ -89,13 +89,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S01-S10.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S02",
@@ -183,13 +184,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S01-S10.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S03",
@@ -277,13 +279,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S01-S10.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S04",
@@ -371,13 +374,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S01-S10.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S05",
@@ -465,13 +469,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S01-S10.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S06",
@@ -557,13 +562,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S01-S10.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S07",
@@ -694,13 +700,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S01-S10.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S09",
@@ -786,13 +793,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S01-S10.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S10",
@@ -871,13 +879,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S01-S10.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S11",
@@ -947,13 +956,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S12",
@@ -1021,13 +1031,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S13",
@@ -1099,13 +1110,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S14",
@@ -1193,13 +1205,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S15",
@@ -1287,13 +1300,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S16",
@@ -1370,13 +1384,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S17",
@@ -1455,13 +1470,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S18",
@@ -1540,13 +1556,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S19",
@@ -1625,13 +1642,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S20",
@@ -1710,13 +1728,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S11-S20.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S21",
@@ -1795,13 +1814,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S22",
@@ -1887,13 +1907,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S23",
@@ -1970,13 +1991,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S24",
@@ -2053,13 +2075,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S25",
@@ -2147,13 +2170,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S26",
@@ -2251,13 +2275,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S27",
@@ -2334,13 +2359,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S28",
@@ -2419,13 +2445,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S29",
@@ -2513,13 +2540,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S30",
@@ -2607,13 +2635,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S31",
@@ -2692,13 +2721,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S21-S31.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S32",
@@ -2776,13 +2806,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S33",
@@ -2870,13 +2901,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S34",
@@ -2953,13 +2985,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S35",
@@ -3047,13 +3080,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S36",
@@ -3132,13 +3166,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S37",
@@ -3217,13 +3252,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S38",
@@ -3303,13 +3339,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S39",
@@ -3397,13 +3434,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S40",
@@ -3491,13 +3529,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     },
     {
       "semaine": "S41",
@@ -3567,13 +3606,14 @@
       },
       "datePublication": "2026-10-10",
       "indexable": true,
-      "deploiement": "DEPLOIEMENT_NON_CONFIRME",
+      "deploiement": "EN_LIGNE_VERIFIE",
       "dossierDeRecherche": "docs/articles/recherche/S32-S41.json",
       "note": "Source(s) officielle(s) ouverte(s) et lue(s) le 10 octobre 2026 ; article original rédigé ensuite. Les sujets envisagés non retenus restent des pistes historiques.",
       "actionsEffectuees": [
         "Source officielle ouverte et lue le 10 octobre 2026",
         "Article original rédigé le 10 octobre 2026"
-      ]
+      ],
+      "verifieEnProductionLe": "2026-10-10"
     }
   ],
   "suite": []

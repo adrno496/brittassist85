@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-10",
+  "propriete": "https://www.brittassist.fr/",
+  "methode": "Interface Google Search Console authentifiée dans Chrome ; réponses visibles lues avec cua_repl, sans API privée ni contournement de quota.",
+  "sitemap": {
+    "url": "https://www.brittassist.fr/sitemap-index.xml",
+    "urlsDansLeFichierPublic": 241,
+    "action": "Sitemap renvoyé via Ajouter un sitemap / ENVOYER",
+    "confirmationObservee": "Sitemap envoyé",
+    "messageObserve": "Google le traitera régulièrement pour chercher des modifications. Si un problème se pose à l'avenir, vous en serez averti.",
+    "statut": "SOUMISSION_CONFIRMEE"
+  },
+  "demandesIndexation": [
+    {
+      "url": "https://www.brittassist.fr/articles",
+      "avantDemande": "Cette URL n'a pas été indexée par Google ; Google ne reconnaît pas cette URL",
+      "confirmationObservee": "Indexation demandée",
+      "statut": "DEMANDE_ACCEPTEE"
+    },
+    {
+      "url": "https://www.brittassist.fr/articles/numero-unique-dgfip-professionnels",
+      "avantDemande": "Cette URL n'a pas été indexée par Google ; Google ne reconnaît pas cette URL",
+      "confirmationObservee": "Indexation demandée",
+      "statut": "DEMANDE_ACCEPTEE"
+    },
+    {
+      "url": "https://www.brittassist.fr/articles/facturation-electronique-premiere-semaine-septembre-2026",
+      "avantDemande": "Cette URL n'a pas été indexée par Google ; Google ne reconnaît pas cette URL",
+      "confirmationObservee": "Indexation demandée",
+      "statut": "DEMANDE_ACCEPTEE"
+    }
+  ],
+  "messageConfirmationIndexation": "Cette URL a été ajoutée à une file d'attente d'exploration prioritaire. Le fait d'envoyer une page à plusieurs reprises ne modifiera pas sa priorité ni sa position dans la file d'attente.",
+  "etatAnterieurObserve": {
+    "pagesIndexees": 56,
+    "pagesNonIndexees": 25,
+    "pagesDecouvertesSitemaps": 149,
+    "portee": "Rapports antérieurs à la livraison du nouveau lot ; ne prouvent pas son indexation."
+  },
+  "indexationEffectiveNouveauLot": "NON_ATTESTEE_A_CE_STADE"
+}
